@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="NBA Fantasy">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#1d428a">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icone-180.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ce soir, aligne ces cinq.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700;800&family=Barlow:wght@400;500;600&display=swap">
+<style>
+:root {
+  --fond: #eef1f5; --surface: #ffffff; --encre: #16213d; --doux: #5b6680; --trait: #d6dbe5;
+  --parquet: #e3b678; --parquet-2: #d7a764; --ligne: rgba(255,255,255,.85);
+  --maillot: #1b2a52; --maillot-txt: #ffffff; --cap: #f2a516; --cap-txt: #16213d;
+  --action: #2453e6; --action-doux: #e5ecff; --vert: #198a5a; --vert-doux: #e2f4eb;
+  --alerte: #b5650b; --alerte-doux: #fff3df; --repos: #f4f6f9;
+  --fc: #b82a35; --bc: #24407f; --entete-txt: #ffffff; --rouge: #b42318; --rouge-doux: #fdecea;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fond: #0f1526; --surface: #18213a; --encre: #e8ecf5; --doux: #9aa5bf; --trait: #2a3552;
+    --parquet: #8a6a3f; --parquet-2: #7d5f37; --ligne: rgba(255,255,255,.6);
+    --maillot: #e8ecf5; --maillot-txt: #16213d; --cap: #f2a516; --cap-txt: #16213d;
+    --action: #7d9bff; --action-doux: #1f2c55; --vert: #4cc792; --vert-doux: #163a2c;
+    --alerte: #f2b45a; --alerte-doux: #3a2a12; --repos: #141b30;
+    --fc: #9e2630; --bc: #2b4a91; --entete-txt: #ffffff; --rouge: #ff8a80; --rouge-doux: #3d1715;
+    color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fond); color: var(--encre);
+  font: 16px/1.5 Barlow, "Helvetica Neue", Arial, sans-serif; }
+main { max-width: 980px; margin: 0 auto; padding: 32px 20px 48px; }
+h1, h2, .chiffre { font-family: "Barlow Condensed", "Arial Narrow", sans-serif; }
+h1 { font-size: clamp(2rem, 5vw, 3.1rem); line-height: 1.02; font-weight: 800; margin: 4px 0 10px; letter-spacing: -.01em; }
+h2 { font-size: 1.45rem; font-weight: 700; margin: 0 0 10px; }
+.sous { color: var(--doux); margin: 0; font-weight: 500; }
+.deadline { display: inline-flex; gap: 10px; align-items: baseline; margin-top: 14px; padding: 8px 14px;
+  background: var(--surface); border: 1px solid var(--trait); border-radius: 10px; }
+.deadline { flex-wrap: wrap; } .deadline .chiffre { font-size: 1.6rem; font-weight: 700; white-space: nowrap; }
+.deadline.proche { border-color: var(--alerte); background: var(--alerte-doux); }
+.deadline.passee { border-color: var(--doux); opacity: .8; }
+
+.soir { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 28px; margin-top: 28px; align-items: start; }
+@media (max-width: 760px) { .soir { grid-template-columns: 1fr; } }
+.terrain { width: 100%; height: auto; display: block; }
+.cadre { margin: 0; } .cadre figcaption { color: var(--doux); font-size: .85rem; margin-top: 8px; }
+.parquet { fill: var(--parquet); }
+.lignes * { stroke: var(--ligne); stroke-width: 3; fill: none; }
+.maillot { fill: var(--maillot); stroke: var(--surface); stroke-width: 3; }
+.pts { fill: var(--maillot-txt); font: 700 24px "Barlow Condensed", sans-serif; text-anchor: middle; }
+.nom { fill: #16213d; font: 700 20px "Barlow Condensed", sans-serif; text-anchor: middle; paint-order: stroke; stroke: var(--parquet); stroke-width: 4px; }
+.adv { fill: #3a2c17; font: 500 15px Barlow, sans-serif; text-anchor: middle; }
+@media (prefers-color-scheme: dark) { .nom { fill: #fff; } .adv { fill: #f3e2c6; } }
+.cap-badge { fill: var(--cap); stroke: var(--surface); stroke-width: 3; }
+.cap-txt { fill: var(--cap-txt); font: 800 15px "Barlow Condensed", sans-serif; text-anchor: middle; }
+.capitaine .maillot { stroke: var(--cap); stroke-width: 5; }
+.jeton:focus { outline: none; } .jeton:focus .maillot { stroke: var(--action); stroke-width: 5; }
+
+.colonne > section + section { margin-top: 22px; }
+.banc ul, .alertes ul { list-style: none; padding: 0; margin: 0; }
+.banc li { display: grid; grid-template-columns: 34px 1fr; column-gap: 8px; padding: 7px 0; border-top: 1px solid var(--trait); }
+.banc li:first-child { border-top: 0; }
+.banc .pourquoi { grid-column: 2; color: var(--doux); font-size: .9rem; }
+.qui small, .vend small, .achete small { color: var(--doux); font-weight: 500; }
+.poste { display: inline-block; font: 700 .75rem Barlow, sans-serif; color: var(--doux); border: 1px solid var(--trait);
+  border-radius: 4px; padding: 0 4px; margin-right: 6px; line-height: 1.5; }
+.banc .poste { margin: 3px 0 0; justify-self: start; }
+
+.transferts { margin-top: 34px; padding: 20px 22px; background: var(--surface); border-radius: 14px; border: 1px solid var(--trait); }
+.transferts.urgent { border: 2px solid var(--action); }
+.transferts.calme { background: transparent; }
+.quand { margin: 0 0 14px; }
+.echanges { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.echanges li { display: grid; grid-template-columns: 1fr 44px 1fr; align-items: center; gap: 8px; }
+.echanges li > div { padding: 10px 14px; border-radius: 10px; display: flex; flex-direction: column; }
+.echanges span { font-size: .8rem; color: var(--doux); }
+.echanges b { font: 700 1.25rem "Barlow Condensed", sans-serif; }
+.vend { background: var(--repos); } .vend b { text-decoration: line-through; text-decoration-thickness: 2px; text-decoration-color: var(--doux); }
+.achete { background: var(--vert-doux); } .achete b { color: var(--vert); }
+.fleche path { stroke: var(--doux); stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+@media (max-width: 560px) { .echanges li { grid-template-columns: 1fr; } .fleche { transform: rotate(90deg); width: 28px; justify-self: center; } }
+.note { color: var(--doux); font-size: .92rem; margin: 12px 0 0; }
+.alerte-txt { color: var(--alerte); }
+
+.alertes { margin-top: 22px; padding: 14px 18px; border-radius: 12px; background: var(--alerte-doux); }
+.alertes h2 { color: var(--alerte); font-size: 1.2rem; margin-bottom: 4px; }
+.alertes li { padding: 3px 0; }
+
+.semaine { margin-top: 34px; }
+.defile { overflow-x: auto; border: 1px solid var(--trait); border-radius: 12px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; min-width: 560px; }
+th, td { padding: 0; text-align: center; }
+thead th { font: 700 1rem "Barlow Condensed", sans-serif; padding: 10px 6px 8px; border-bottom: 1px solid var(--trait); }
+thead th small { display: block; font: 500 .78rem Barlow, sans-serif; color: var(--doux); }
+thead th.auj { color: var(--action); }
+tbody th, thead th:first-child, tfoot th { position: sticky; left: 0; background: var(--surface); z-index: 1; }
+tbody th { text-align: left; font-weight: 600; padding: 8px 12px; white-space: nowrap; }
+@media (max-width: 560px) { tbody th { padding: 8px 8px; font-size: .92rem; } .tag { display: none; } }
+tbody tr + tr > * { border-top: 1px solid var(--trait); }
+tbody tr.sort th { color: var(--doux); }
+td { height: 40px; min-width: 48px; }
+td span { display: inline-block; width: 22px; height: 22px; border-radius: 50%; vertical-align: middle; }
+td.tit span { background: var(--maillot); }
+td.banc span { border: 2px solid var(--maillot); opacity: .55; }
+td.cap span { background: var(--cap); color: var(--cap-txt); font: 800 .85rem/22px "Barlow Condensed", sans-serif; }
+td.repos { background: transparent; }
+td.hors { background: repeating-linear-gradient(-45deg, transparent 0 5px, var(--repos) 5px 10px); }
+tfoot th, tfoot td { padding: 8px 6px; border-top: 1px solid var(--trait); font: 700 1.05rem "Barlow Condensed", sans-serif; }
+tfoot th { text-align: left; padding-left: 12px; font-weight: 600; font-family: Barlow, sans-serif; font-size: .9rem; color: var(--doux); }
+.tag { font-style: normal; font-size: .72rem; font-weight: 600; padding: 1px 6px; border-radius: 4px; margin-left: 4px; }
+.tag.sort { background: var(--repos); color: var(--doux); }
+.tag.entre { background: var(--vert-doux); color: var(--vert); }
+.legende { display: flex; flex-wrap: wrap; gap: 16px; margin: 10px 2px 0; color: var(--doux); font-size: .88rem; }
+.legende i { display: inline-block; width: 14px; height: 14px; border-radius: 50%; vertical-align: -2px; margin-right: 6px; }
+.l-tit { background: var(--maillot); } .l-banc { border: 2px solid var(--maillot); opacity: .55; } .l-cap { background: var(--cap); }
+.l-hors { border-radius: 3px !important; background: repeating-linear-gradient(-45deg, transparent 0 3px, var(--doux) 3px 5px); opacity: .5; }
+.semaine .defile + .defile { margin-top: 14px; }
+.effectif-t { min-width: 720px; }
+.effectif-t thead th { background: var(--fc); color: var(--entete-txt); border-bottom: 0; padding: 12px 8px; font-size: 1.05rem; letter-spacing: .02em; }
+.effectif-t.bc thead th { background: var(--bc); }
+.effectif-t thead th small { color: rgba(255,255,255,.75); }
+.effectif-t thead th.auj { color: var(--entete-txt); box-shadow: inset 0 -4px 0 var(--cap); }
+.effectif-t thead th.titre-t { text-align: left; padding-left: 16px; font-size: 1.5rem; min-width: 210px; }
+.effectif-t tbody th { padding: 8px 12px; }
+.joueur { display: flex; align-items: center; gap: 10px; }
+.tete { width: 64px; height: 47px; object-fit: cover; object-position: top; border-radius: 6px; background: var(--repos); flex: none; }
+.joueur > div { display: flex; flex-direction: column; line-height: 1.15; }
+.prenom { font-weight: 500; font-size: .92rem; }
+.nomf { font: 700 1.1rem "Barlow Condensed", sans-serif; }
+.eq { font: 700 .95rem "Barlow Condensed", sans-serif; color: var(--doux); margin-top: 2px; }
+.statut { font-style: italic; font-weight: 600; margin-left: 4px; }
+.s-ok { color: var(--alerte); } .s-doute { color: var(--alerte); font-style: normal; } .s-out { color: var(--fc); font-style: normal; }
+.effectif-t td.num { font: 500 1.05rem "Barlow Condensed", sans-serif; min-width: 52px; padding: 0 6px; }
+.effectif-t td.fort { font-weight: 700; }
+.effectif-t td { height: 66px; }
+.effectif-t td.m { position: relative; }
+.effectif-t td span.adv-logo { display: block; width: 34px; height: 34px; margin: 0 auto; border-radius: 0; background: none; border: 0; font: 700 .8rem/34px Barlow, sans-serif; }
+.adv-logo img { width: 34px; height: 34px; object-fit: contain; }
+.effectif-t td.m small { display: block; color: var(--doux); font-size: .72rem; line-height: 1; }
+.effectif-t td span.tiret { width: 26px; height: 4px; border-radius: 2px; background: var(--doux); opacity: .55; }
+.role { position: absolute; top: 5px; right: 5px; width: 10px; height: 10px; border-radius: 50%; font-style: normal; }
+td.tit .role { background: var(--maillot); }
+td.banc .role { border: 2px solid var(--maillot); opacity: .55; }
+td.cap .role { width: 17px; height: 17px; top: 3px; right: 3px; background: var(--cap); color: var(--cap-txt); font: 800 .75rem/17px "Barlow Condensed", sans-serif; }
+td.banc .adv-logo { opacity: .5; }
+.effectif-t tfoot td { padding: 8px 6px; }
+.effectif-t thead th.suiv { filter: saturate(.35) brightness(.85); }
+.effectif-t td.suiv { background-color: var(--repos); }
+.effectif-t .sep { border-left: 3px solid var(--trait); }
+.resume { display: flex; flex-wrap: wrap; gap: 28px; margin-top: 18px; }
+.resume div { display: flex; flex-direction: column; }
+.resume .chiffre { font-size: 1.9rem; font-weight: 700; line-height: 1.1; }
+.resume span { color: var(--doux); font-size: .9rem; }
+
+.afaire { background: var(--surface); border: 2px solid var(--action); border-radius: 16px; padding: 16px 18px;
+  margin: 0 0 22px; font-size: 1.05rem; }
+.afaire .ech { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; align-items: baseline;
+  padding-bottom: 10px; border-bottom: 1px solid var(--trait); }
+.afaire .ech .chiffre { font-size: 1.5rem; font-weight: 700; white-space: nowrap; }
+.afaire .ech.proche .chiffre { color: var(--alerte); }
+.afaire .ech.passee .chiffre { color: var(--doux); font-size: 1.1rem; }
+.alerte-site { list-style: none; margin: 12px 0 0; padding: 10px 12px; border-radius: 10px;
+  background: var(--rouge-doux); color: var(--rouge); font-weight: 600; }
+.alerte-site li + li { margin-top: 6px; }
+.alerte-site.verifier { background: var(--alerte-doux); color: var(--alerte); }
+.actions { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 12px; }
+.actions > li { display: grid; grid-template-columns: 28px 1fr; gap: 8px; align-items: start; }
+.actions .ic { font-size: 1.25rem; line-height: 1.3; }
+.tits { list-style: none; padding: 0; margin: 4px 0 0; display: grid; gap: 3px; }
+.tits small { color: var(--doux); }
+.tits .vide { color: var(--alerte); }
+.force { display: inline-block; font-size: .85rem; font-weight: 600; padding: 0 6px; border-radius: 6px;
+  background: var(--repos); white-space: nowrap; }
+.discret { color: var(--doux); font-size: .9rem; margin: 10px 0 0; }
+details.semaine > summary, #gw2 > summary { cursor: pointer; }
+details.semaine > summary h2 { display: inline; }
+#gw2 { margin: 0 0 10px; color: var(--action); font-weight: 600; }
+body:not(:has(#gw2[open])) .suiv { display: none; }
+.construction { margin-top: 26px; padding: 20px 22px; border-radius: 14px; border: 2px solid var(--action); background: var(--surface); }
+.construction > p { margin: 0 0 12px; max-width: 70ch; }
+.effectif { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px; }
+.effectif li { padding: 8px 12px; border-radius: 10px; background: var(--repos); display: flex; flex-direction: column; }
+.effectif li.neuf { background: var(--vert-doux); }
+.effectif b { font: 700 1.15rem "Barlow Condensed", sans-serif; }
+.effectif small { color: var(--doux); }
+.effectif .poste { align-self: flex-start; margin-bottom: 2px; }
+.effectif .tag { align-self: flex-start; margin: 4px 0 0; }
+footer { margin-top: 40px; color: var(--doux); font-size: .85rem; }
+footer ul { list-style: none; padding: 0; margin: 6px 0 0; display: flex; flex-wrap: wrap; gap: 4px 18px; }
+@media (prefers-reduced-motion: no-preference) {
+  .jeton { animation: entree .5s ease-out both; }
+  .jeton:nth-of-type(2) { animation-delay: .06s; } .jeton:nth-of-type(3) { animation-delay: .12s; }
+  .jeton:nth-of-type(4) { animation-delay: .18s; } .jeton:nth-of-type(5) { animation-delay: .24s; }
+  @keyframes entree { from { opacity: 0; transform: translateY(8px); } }
+}
+</style>
+</head>
+<body>
+<main>
+  
+  <section class="afaire" aria-label="À faire avant la prochaine deadline">
+    <div class="ech" id="deadline" data-iso="2026-10-21T22:30:00+00:00">
+      <span>Avant <b>Gameweek 1 - Day 2</b>, jeu. 22/10 à 0h30</span>
+      <span class="chiffre" id="compte">…</span>
+    </div>
+    
+    <ul class="actions">
+      <li><span class="ic">✅</span><div><b>Titulaires</b><ul class="tits"><li><b>D.Acuff Jr.</b> <small>@ LAC 4h30</small></li><li><b>N.Traore</b> <small>vs CHA 1h30</small></li><li><b>B.Burries</b> <small>@ WAS 1h00</small></li><li><b>C.Wilson</b> <small>@ TOR 1h30</small></li><li><b>D.Wolf</b> <small>vs CHA 1h30</small></li></ul></div></li>
+      <li><span class="ic">🔁</span><div><b>Transferts</b> Aucun avant cette deadline</div></li>
+      <li><span class="ic">⭐</span><div><b>Capitaine</b> Non, garder pour le jour 4 (L.Doncic) <span class="force">⚪ Au choix (autre jour ≈ pareil) +0</span></div></li>
+    </ul>
+    <p class="discret">Transfert(s) prévu(s) avant le jour 4 (sam. 24/10 à 0h30) : S.Gilgeous-Alexander → L.Doncic <span class="force">🟡 Léger +22</span> ; V.Edgecombe → T.Jerome <span class="force">🟡 Léger +16</span></p><p class="discret">titulaires et capitaine non vérifiables avant la deadline sans cookie (équipe lue : Gameweek 1 - Day 1)</p>
+  </section>
+  <header>
+    <p class="sous">Gameweek 1, jour 2 sur 6</p>
+    <h1>Ce soir, aligne ces cinq.</h1>
+  </header>
+
+  
+  
+
+  <div class="soir">
+    <figure class="cadre">
+      
+    <svg class="terrain" viewBox="0 0 500 470" role="img" aria-label="Cinq de départ placé sur un demi-terrain">
+      <rect x="4" y="4" width="492" height="462" rx="6" class="parquet"/>
+      <g class="lignes">
+        <rect x="4" y="4" width="492" height="462" rx="6" fill="none"/>
+        <path d="M34 466 V362 A216 216 0 0 1 466 362 V466"/>
+        <rect x="190" y="276" width="120" height="190" fill="none"/>
+        <path d="M190 276 A60 60 0 0 1 310 276"/>
+        <path d="M190 276 A60 60 0 0 0 310 276" stroke-dasharray="8 7"/>
+        <circle cx="250" cy="426" r="11" fill="none"/>
+        <line x1="222" y1="444" x2="278" y2="444"/>
+        <path d="M190 4 A60 60 0 0 0 310 4"/>
+      </g>
+      
+      <g class="jeton" tabindex="0">
+        <title>Nolan Traore (BKN) : 24.9 pts projetés</title>
+        <circle cx="250" cy="95" r="30" class="maillot"/>
+        <text x="250" y="102" class="pts">25</text>
+        
+        <text x="250" y="149" class="nom">Traore</text>
+        <text x="250" y="168" class="adv">vs CHA 1h30</text>
+      </g>
+      <g class="jeton" tabindex="0">
+        <title>Brayden Burries (MIL) : 24.6 pts projetés</title>
+        <circle cx="105" cy="175" r="30" class="maillot"/>
+        <text x="105" y="182" class="pts">25</text>
+        
+        <text x="105" y="229" class="nom">Burries</text>
+        <text x="105" y="248" class="adv">@ WAS 1h00</text>
+      </g>
+      <g class="jeton" tabindex="0">
+        <title>Darius Acuff Jr. (SAC) : 33.9 pts projetés</title>
+        <circle cx="395" cy="175" r="30" class="maillot"/>
+        <text x="395" y="182" class="pts">34</text>
+        
+        <text x="395" y="229" class="nom">Acuff Jr.</text>
+        <text x="395" y="248" class="adv">@ LAC 4h30</text>
+      </g>
+      <g class="jeton" tabindex="0">
+        <title>Danny Wolf (BKN) : 24.9 pts projetés</title>
+        <circle cx="150" cy="335" r="30" class="maillot"/>
+        <text x="150" y="342" class="pts">25</text>
+        
+        <text x="150" y="389" class="nom">Wolf</text>
+        <text x="150" y="408" class="adv">vs CHA 1h30</text>
+      </g>
+      <g class="jeton" tabindex="0">
+        <title>Caleb Wilson (CHI) : 38.0 pts projetés</title>
+        <circle cx="350" cy="335" r="30" class="maillot"/>
+        <text x="350" y="342" class="pts">38</text>
+        
+        <text x="350" y="389" class="nom">Wilson</text>
+        <text x="350" y="408" class="adv">@ TOR 1h30</text>
+      </g>
+    </svg>
+      <figcaption>Le chiffre sur chaque maillot : points projetés ce soir (doublés pour le capitaine). Heures de Paris.</figcaption>
+    </figure>
+    <div class="colonne">
+      <section>
+        <h2>Capitaine</h2>
+        <p><strong>Garde-le pour le jour 4</strong> (sam. 24/10 à 0h30) sur L.Doncic, vs LAC 4h00.</p>
+      </section>
+      <section class="banc">
+        <h2>Sur le banc ce soir</h2>
+        <ul><li><span class="poste">BC</span><span class="qui">S.Gilgeous-Alexander <small>OKC</small></span><span class="pourquoi">ne joue pas ce soir</span></li><li><span class="poste">BC</span><span class="qui">V.Edgecombe <small>PHI</small></span><span class="pourquoi">ne joue pas ce soir</span></li><li><span class="poste">FC</span><span class="qui">V.Wembanyama <small>SAS</small></span><span class="pourquoi">ne joue pas ce soir</span></li><li><span class="poste">FC</span><span class="qui">J.Williams <small>OKC</small></span><span class="pourquoi">ne joue pas ce soir</span></li><li><span class="poste">FC</span><span class="qui">J.Walsh <small>BOS</small></span><span class="pourquoi">ne joue pas ce soir</span></li></ul>
+      </section>
+    </div>
+  </div>
+
+  <section class="transferts prevu">
+    <h2>Transferts</h2>
+    <p class="quand">Gain attendu <strong>+166 pts</strong> (cette semaine + la suivante pondérée) par rapport à ne rien faire.</p><p class="quand"><strong>Avant le jour 4, sam. 24/10 à 0h30</strong></p><ul class="echanges">
+          <li>
+            <div class="vend"><span>Vendre</span><b>S.Gilgeous-Alexander</b><small>OKC, 18,5 M$</small></div>
+            <svg class="fleche" viewBox="0 0 40 16" aria-hidden="true"><path d="M2 8h32M28 2l7 6-7 6"/></svg>
+            <div class="achete"><span>Acheter</span><b>L.Doncic</b><small>LAL, 21,0 M$, 66 pts/match</small></div>
+          </li>
+          <li>
+            <div class="vend"><span>Vendre</span><b>V.Edgecombe</b><small>PHI, 12,0 M$</small></div>
+            <svg class="fleche" viewBox="0 0 40 16" aria-hidden="true"><path d="M2 8h32M28 2l7 6-7 6"/></svg>
+            <div class="achete"><span>Acheter</span><b>T.Jerome</b><small>MEM, 9,5 M$, 40 pts/match</small></div>
+          </li></ul><p class="note">Prévu la semaine suivante (indicatif) : jour 4 : V.Wembanyama → J.Johnson ; jour 7 : J.Johnson → J.Tatum.</p><p class="note">Relance l’assistant avant chaque deadline : le conseil est recalculé avec les dernières blessures.</p>
+  </section>
+
+  <details class="semaine" open>
+    <summary><h2>Ton effectif, jour par jour</h2></summary>
+    <details id="gw2"><summary>Afficher aussi la semaine suivante</summary></details>
+    
+    <div class="defile">
+      <table class="effectif-t fc">
+        <thead><tr><th scope="col" class="titre-t">Front Court</th>
+          <th scope="col" title="Prix (M$)">$</th><th scope="col" title="Points fantasy projetés par match">PROJ</th>
+          <th scope="col" title="Points projetés par M$">VAL</th><th scope="col" title="Total de points la saison passée">TP</th><th scope="col" class="jour auj">J2<small>mer.</small></th><th scope="col" class="jour">J3<small>jeu.</small></th><th scope="col" class="jour">J4<small>ven.</small></th><th scope="col" class="jour">J5<small>sam.</small></th><th scope="col" class="jour">J6<small>dim.</small></th><th scope="col" class="jour suiv sep" title="Semaine suivante (avant ses transferts)">J1<small>lun. · GW2</small></th><th scope="col" class="jour suiv" title="Semaine suivante (avant ses transferts)">J2<small>mar. · GW2</small></th><th scope="col" class="jour suiv" title="Semaine suivante (avant ses transferts)">J3<small>mer. · GW2</small></th><th scope="col" class="jour suiv" title="Semaine suivante (avant ses transferts)">J4<small>jeu. · GW2</small></th><th scope="col" class="jour suiv" title="Semaine suivante (avant ses transferts)">J5<small>ven. · GW2</small></th><th scope="col" class="jour suiv" title="Semaine suivante (avant ses transferts)">J6<small>sam. · GW2</small></th><th scope="col" class="jour suiv" title="Semaine suivante (avant ses transferts)">J7<small>dim. · GW2</small></th></tr></thead>
+        <tbody><tr class=""><th scope="row"><div class="joueur"><img class="tete" src="https://cdn.nba.com/headshots/nba/latest/260x190/1641705.png" alt="" onerror="this.style.visibility='hidden'"><div><span class="prenom">Victor</span><span class="nomf">Wembanyama</span><span class="eq">SAS <em class="statut s-ok">AV</em></span></div></div></th><td class="num">19,5</td><td class="num fort">58.9</td><td class="num">3.0</td><td class="num">0</td><td class="repos " title="Pas de match"><span class="tiret"></span></td><td class="repos " title="Pas de match"><span class="tiret"></span></td><td class="m tit " title="Titulaire : vs HOU 3h30"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612745/global/L/logo.svg" alt="HOU" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>vs</small><i class="role"></i></td><td class="m tit " title="Titulaire (2e soir d’affilée, B2B) : @ DAL 2h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612742/global/L/logo.svg" alt="DAL" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>@ · B2B</small><i class="role"></i></td><td class="repos " title="Pas de match"><span class="tiret"></span></td><td class="repos suiv sep" title="Pas de match"><span class="tiret"></span></td><td class="m tit suiv" title="Titulaire : vs SAC 1h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612758/global/L/logo.svg" alt="SAC" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>vs</small><i class="role"></i></td><td class="m tit suiv" title="Titulaire (2e soir d’affilée, B2B) : @ UTA 2h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612762/global/L/logo.svg" alt="UTA" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>@ · B2B</small><i class="role"></i></td><td class="hors suiv" title="Pas dans ton équipe ce jour-là"></td><td class="hors suiv" title="Pas dans ton équipe ce jour-là"></td><td class="hors suiv" title="Pas dans ton équipe ce jour-là"></td><td class="hors suiv" title="Pas dans ton équipe ce jour-là"></td></tr><tr class=""><th scope="row"><div class="joueur"><img class="tete" src="https://cdn.nba.com/headshots/nba/latest/260x190/1643410.png" alt="" onerror="this.style.visibility='hidden'"><div><span class="prenom">Caleb</span><span class="nomf">Wilson</span><span class="eq">CHI <em class="statut s-ok">AV</em></span></div></div></th><td class="num">10,5</td><td class="num fort">38.0</td><td class="num">3.6</td><td class="num">0</td><td class="m tit " title="Titulaire : @ TOR 1h30"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612761/global/L/logo.svg" alt="TOR" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>@</small><i class="role"></i></td><td class="m tit " title="Titulaire : @ MIL 22h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612749/global/L/logo.svg" alt="MIL" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>@</small><i class="role"></i></td><td class="repos " title="Pas de match"><span class="tiret"></span></td><td class="m tit " title="Titulaire (2e soir d’affilée, B2B) : vs WAS 2h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612764/global/L/logo.svg" alt="WAS" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>vs · B2B</small><i class="role"></i></td><td class="repos " title="Pas de match"><span class="tiret"></span></td><td class="m tit suiv sep" title="Titulaire : @ BOS 0h30"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612738/global/L/logo.svg" alt="BOS" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>@</small><i class="role"></i></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td><td class="m tit suiv" title="Titulaire : vs NYK 1h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612752/global/L/logo.svg" alt="NYK" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>vs</small><i class="role"></i></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td><td class="m tit suiv" title="Titulaire : @ BOS 0h30"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612738/global/L/logo.svg" alt="BOS" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>@</small><i class="role"></i></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td></tr><tr class=""><th scope="row"><div class="joueur"><img class="tete" src="https://cdn.nba.com/headshots/nba/latest/260x190/1642874.png" alt="" onerror="this.style.visibility='hidden'"><div><span class="prenom">Danny</span><span class="nomf">Wolf</span><span class="eq">BKN <em class="statut s-ok">AV</em></span></div></div></th><td class="num">6,5</td><td class="num fort">24.9</td><td class="num">3.8</td><td class="num">0</td><td class="m tit " title="Titulaire : vs CHA 1h30"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612766/global/L/logo.svg" alt="CHA" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>vs</small><i class="role"></i></td><td class="repos " title="Pas de match"><span class="tiret"></span></td><td class="repos " title="Pas de match"><span class="tiret"></span></td><td class="m tit " title="Titulaire : @ CLE 1h30"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612739/global/L/logo.svg" alt="CLE" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>@</small><i class="role"></i></td><td class="m tit " title="Titulaire (2e soir d’affilée, B2B) : vs IND 23h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612754/global/L/logo.svg" alt="IND" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>vs · B2B</small><i class="role"></i></td><td class="repos suiv sep" title="Pas de match"><span class="tiret"></span></td><td class="m tit suiv" title="Titulaire : @ BOS 0h30"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612738/global/L/logo.svg" alt="BOS" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>@</small><i class="role"></i></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td><td class="m tit suiv" title="Titulaire : vs DET 0h30"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612765/global/L/logo.svg" alt="DET" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>vs</small><i class="role"></i></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td><td class="m tit suiv" title="Titulaire : @ IND 23h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612754/global/L/logo.svg" alt="IND" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>@</small><i class="role"></i></td></tr><tr class=""><th scope="row"><div class="joueur"><img class="tete" src="https://cdn.nba.com/headshots/nba/latest/260x190/1631119.png" alt="" onerror="this.style.visibility='hidden'"><div><span class="prenom">Jaylin</span><span class="nomf">Williams</span><span class="eq">OKC <em class="statut s-ok">AV</em></span></div></div></th><td class="num">6,5</td><td class="num fort">20.6</td><td class="num">3.2</td><td class="num">0</td><td class="repos " title="Pas de match"><span class="tiret"></span></td><td class="m tit " title="Titulaire : vs DEN 3h30"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612743/global/L/logo.svg" alt="DEN" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>vs</small><i class="role"></i></td><td class="repos " title="Pas de match"><span class="tiret"></span></td><td class="repos " title="Pas de match"><span class="tiret"></span></td><td class="m tit " title="Titulaire : vs LAC 0h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612746/global/L/logo.svg" alt="LAC" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>vs</small><i class="role"></i></td><td class="m tit suiv sep" title="Titulaire (2e soir d’affilée, B2B) : vs PHX 1h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612756/global/L/logo.svg" alt="PHX" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>vs · B2B</small><i class="role"></i></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td><td class="m tit suiv" title="Titulaire : @ DAL 2h30"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612742/global/L/logo.svg" alt="DAL" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>@</small><i class="role"></i></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td><td class="m tit suiv" title="Titulaire : @ HOU 1h30"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612745/global/L/logo.svg" alt="HOU" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>@</small><i class="role"></i></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td></tr><tr class=""><th scope="row"><div class="joueur"><img class="tete" src="https://cdn.nba.com/headshots/nba/latest/260x190/1641775.png" alt="" onerror="this.style.visibility='hidden'"><div><span class="prenom">Jordan</span><span class="nomf">Walsh</span><span class="eq">BOS <em class="statut s-ok">AV</em></span></div></div></th><td class="num">5,0</td><td class="num fort">16.9</td><td class="num">3.4</td><td class="num">14</td><td class="repos " title="Pas de match"><span class="tiret"></span></td><td class="repos " title="Pas de match"><span class="tiret"></span></td><td class="m tit " title="Titulaire : vs NYK 1h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612752/global/L/logo.svg" alt="NYK" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>vs</small><i class="role"></i></td><td class="repos " title="Pas de match"><span class="tiret"></span></td><td class="repos " title="Pas de match"><span class="tiret"></span></td><td class="m tit suiv sep" title="Titulaire : vs CHI 0h30"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612741/global/L/logo.svg" alt="CHI" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>vs</small><i class="role"></i></td><td class="m banc suiv" title="Sur le banc (2e soir d’affilée, B2B) : vs BKN 0h30"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612751/global/L/logo.svg" alt="BKN" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>vs · B2B</small><i class="role"></i></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td><td class="m tit suiv" title="Titulaire : vs CHI 0h30"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612741/global/L/logo.svg" alt="CHI" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>vs</small><i class="role"></i></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td><td class="m tit suiv" title="Titulaire : @ ORL 21h30"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612753/global/L/logo.svg" alt="ORL" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>@</small><i class="role"></i></td></tr><tr class="entre"><th scope="row"><div class="joueur"><img class="tete" src="https://cdn.nba.com/headshots/nba/latest/260x190/1630552.png" alt="" onerror="this.style.visibility='hidden'"><div><span class="prenom">Jalen</span><span class="nomf">Johnson</span><span class="eq">ATL <em class="statut s-ok">AV</em><em class="tag entre">acheté</em></span></div></div></th><td class="num">17,5</td><td class="num fort">53.4</td><td class="num">3.1</td><td class="num">0</td><td class="hors " title="Pas dans ton équipe ce jour-là"></td><td class="hors " title="Pas dans ton équipe ce jour-là"></td><td class="hors " title="Pas dans ton équipe ce jour-là"></td><td class="hors " title="Pas dans ton équipe ce jour-là"></td><td class="hors " title="Pas dans ton équipe ce jour-là"></td><td class="hors suiv sep" title="Pas dans ton équipe ce jour-là"></td><td class="hors suiv" title="Pas dans ton équipe ce jour-là"></td><td class="hors suiv" title="Pas dans ton équipe ce jour-là"></td><td class="m tit suiv" title="Titulaire (2e soir d’affilée, B2B) : vs CLE 0h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612739/global/L/logo.svg" alt="CLE" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>vs · B2B</small><i class="role"></i></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td><td class="m tit suiv" title="Titulaire : @ NOP 0h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612740/global/L/logo.svg" alt="NOP" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>@</small><i class="role"></i></td><td class="hors suiv" title="Pas dans ton équipe ce jour-là"></td></tr><tr class="entre"><th scope="row"><div class="joueur"><img class="tete" src="https://cdn.nba.com/headshots/nba/latest/260x190/1628369.png" alt="" onerror="this.style.visibility='hidden'"><div><span class="prenom">Jayson</span><span class="nomf">Tatum</span><span class="eq">BOS <em class="statut s-ok">AV</em><em class="tag entre">acheté</em></span></div></div></th><td class="num">16,0</td><td class="num fort">51.5</td><td class="num">3.2</td><td class="num">39</td><td class="hors " title="Pas dans ton équipe ce jour-là"></td><td class="hors " title="Pas dans ton équipe ce jour-là"></td><td class="hors " title="Pas dans ton équipe ce jour-là"></td><td class="hors " title="Pas dans ton équipe ce jour-là"></td><td class="hors " title="Pas dans ton équipe ce jour-là"></td><td class="hors suiv sep" title="Pas dans ton équipe ce jour-là"></td><td class="hors suiv" title="Pas dans ton équipe ce jour-là"></td><td class="hors suiv" title="Pas dans ton équipe ce jour-là"></td><td class="hors suiv" title="Pas dans ton équipe ce jour-là"></td><td class="hors suiv" title="Pas dans ton équipe ce jour-là"></td><td class="hors suiv" title="Pas dans ton équipe ce jour-là"></td><td class="m tit suiv" title="Titulaire : @ ORL 21h30"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612753/global/L/logo.svg" alt="ORL" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>@</small><i class="role"></i></td></tr></tbody>
+      </table>
+    </div>
+    <div class="defile">
+      <table class="effectif-t bc">
+        <thead><tr><th scope="col" class="titre-t">Back Court</th>
+          <th scope="col" title="Prix (M$)">$</th><th scope="col" title="Points fantasy projetés par match">PROJ</th>
+          <th scope="col" title="Points projetés par M$">VAL</th><th scope="col" title="Total de points la saison passée">TP</th><th scope="col" class="jour auj">J2<small>mer.</small></th><th scope="col" class="jour">J3<small>jeu.</small></th><th scope="col" class="jour">J4<small>ven.</small></th><th scope="col" class="jour">J5<small>sam.</small></th><th scope="col" class="jour">J6<small>dim.</small></th><th scope="col" class="jour suiv sep" title="Semaine suivante (avant ses transferts)">J1<small>lun. · GW2</small></th><th scope="col" class="jour suiv" title="Semaine suivante (avant ses transferts)">J2<small>mar. · GW2</small></th><th scope="col" class="jour suiv" title="Semaine suivante (avant ses transferts)">J3<small>mer. · GW2</small></th><th scope="col" class="jour suiv" title="Semaine suivante (avant ses transferts)">J4<small>jeu. · GW2</small></th><th scope="col" class="jour suiv" title="Semaine suivante (avant ses transferts)">J5<small>ven. · GW2</small></th><th scope="col" class="jour suiv" title="Semaine suivante (avant ses transferts)">J6<small>sam. · GW2</small></th><th scope="col" class="jour suiv" title="Semaine suivante (avant ses transferts)">J7<small>dim. · GW2</small></th></tr></thead>
+        <tbody><tr class="sort"><th scope="row"><div class="joueur"><img class="tete" src="https://cdn.nba.com/headshots/nba/latest/260x190/1628983.png" alt="" onerror="this.style.visibility='hidden'"><div><span class="prenom">Shai</span><span class="nomf">Gilgeous-Alexander</span><span class="eq">OKC <em class="statut s-ok">AV</em><em class="tag sort">vendu</em></span></div></div></th><td class="num">18,5</td><td class="num fort">55.4</td><td class="num">3.0</td><td class="num">0</td><td class="repos " title="Pas de match"><span class="tiret"></span></td><td class="m tit " title="Titulaire : vs DEN 3h30"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612743/global/L/logo.svg" alt="DEN" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>vs</small><i class="role"></i></td><td class="hors " title="Pas dans ton équipe ce jour-là"></td><td class="hors " title="Pas dans ton équipe ce jour-là"></td><td class="hors " title="Pas dans ton équipe ce jour-là"></td><td class="hors suiv sep" title="Pas dans ton équipe ce jour-là"></td><td class="hors suiv" title="Pas dans ton équipe ce jour-là"></td><td class="hors suiv" title="Pas dans ton équipe ce jour-là"></td><td class="hors suiv" title="Pas dans ton équipe ce jour-là"></td><td class="hors suiv" title="Pas dans ton équipe ce jour-là"></td><td class="hors suiv" title="Pas dans ton équipe ce jour-là"></td><td class="hors suiv" title="Pas dans ton équipe ce jour-là"></td></tr><tr class="sort"><th scope="row"><div class="joueur"><img class="tete" src="https://cdn.nba.com/headshots/nba/latest/260x190/1642845.png" alt="" onerror="this.style.visibility='hidden'"><div><span class="prenom">VJ</span><span class="nomf">Edgecombe</span><span class="eq">PHI <em class="statut s-ok">AV</em><em class="tag sort">vendu</em></span></div></div></th><td class="num">12,0</td><td class="num fort">35.1</td><td class="num">2.9</td><td class="num">0</td><td class="repos " title="Pas de match"><span class="tiret"></span></td><td class="m tit " title="Titulaire : vs CLE 1h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612739/global/L/logo.svg" alt="CLE" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>vs</small><i class="role"></i></td><td class="hors " title="Pas dans ton équipe ce jour-là"></td><td class="hors " title="Pas dans ton équipe ce jour-là"></td><td class="hors " title="Pas dans ton équipe ce jour-là"></td><td class="hors suiv sep" title="Pas dans ton équipe ce jour-là"></td><td class="hors suiv" title="Pas dans ton équipe ce jour-là"></td><td class="hors suiv" title="Pas dans ton équipe ce jour-là"></td><td class="hors suiv" title="Pas dans ton équipe ce jour-là"></td><td class="hors suiv" title="Pas dans ton équipe ce jour-là"></td><td class="hors suiv" title="Pas dans ton équipe ce jour-là"></td><td class="hors suiv" title="Pas dans ton équipe ce jour-là"></td></tr><tr class=""><th scope="row"><div class="joueur"><img class="tete" src="https://cdn.nba.com/headshots/nba/latest/260x190/1643411.png" alt="" onerror="this.style.visibility='hidden'"><div><span class="prenom">Darius</span><span class="nomf">Acuff Jr.</span><span class="eq">SAC <em class="statut s-ok">AV</em></span></div></div></th><td class="num">8,0</td><td class="num fort">33.9</td><td class="num">4.2</td><td class="num">0</td><td class="m tit " title="Titulaire : @ LAC 4h30"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612746/global/L/logo.svg" alt="LAC" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>@</small><i class="role"></i></td><td class="repos " title="Pas de match"><span class="tiret"></span></td><td class="m tit " title="Titulaire : vs POR 4h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612757/global/L/logo.svg" alt="POR" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>vs</small><i class="role"></i></td><td class="repos " title="Pas de match"><span class="tiret"></span></td><td class="m tit " title="Titulaire : vs MEM 2h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612763/global/L/logo.svg" alt="MEM" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>vs</small><i class="role"></i></td><td class="repos suiv sep" title="Pas de match"><span class="tiret"></span></td><td class="m tit suiv" title="Titulaire : @ SAS 1h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612759/global/L/logo.svg" alt="SAS" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>@</small><i class="role"></i></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td><td class="m tit suiv" title="Titulaire : @ NOP 1h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612740/global/L/logo.svg" alt="NOP" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>@</small><i class="role"></i></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td><td class="m tit suiv" title="Titulaire : @ MEM 1h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612763/global/L/logo.svg" alt="MEM" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>@</small><i class="role"></i></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td></tr><tr class=""><th scope="row"><div class="joueur"><img class="tete" src="https://cdn.nba.com/headshots/nba/latest/260x190/1642849.png" alt="" onerror="this.style.visibility='hidden'"><div><span class="prenom">Nolan</span><span class="nomf">Traore</span><span class="eq">BKN <em class="statut s-ok">AV</em></span></div></div></th><td class="num">6,5</td><td class="num fort">24.9</td><td class="num">3.8</td><td class="num">0</td><td class="m tit " title="Titulaire : vs CHA 1h30"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612766/global/L/logo.svg" alt="CHA" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>vs</small><i class="role"></i></td><td class="repos " title="Pas de match"><span class="tiret"></span></td><td class="repos " title="Pas de match"><span class="tiret"></span></td><td class="m tit " title="Titulaire : @ CLE 1h30"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612739/global/L/logo.svg" alt="CLE" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>@</small><i class="role"></i></td><td class="m banc " title="Sur le banc (2e soir d’affilée, B2B) : vs IND 23h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612754/global/L/logo.svg" alt="IND" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>vs · B2B</small><i class="role"></i></td><td class="repos suiv sep" title="Pas de match"><span class="tiret"></span></td><td class="m tit suiv" title="Titulaire : @ BOS 0h30"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612738/global/L/logo.svg" alt="BOS" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>@</small><i class="role"></i></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td><td class="m tit suiv" title="Titulaire : vs DET 0h30"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612765/global/L/logo.svg" alt="DET" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>vs</small><i class="role"></i></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td><td class="m tit suiv" title="Titulaire : @ IND 23h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612754/global/L/logo.svg" alt="IND" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>@</small><i class="role"></i></td></tr><tr class=""><th scope="row"><div class="joueur"><img class="tete" src="https://cdn.nba.com/headshots/nba/latest/260x190/1643415.png" alt="" onerror="this.style.visibility='hidden'"><div><span class="prenom">Brayden</span><span class="nomf">Burries</span><span class="eq">MIL <em class="statut s-ok">AV</em></span></div></div></th><td class="num">7,0</td><td class="num fort">24.6</td><td class="num">3.5</td><td class="num">0</td><td class="m tit " title="Titulaire : @ WAS 1h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612764/global/L/logo.svg" alt="WAS" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>@</small><i class="role"></i></td><td class="m tit " title="Titulaire : vs CHI 22h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612741/global/L/logo.svg" alt="CHI" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>vs</small><i class="role"></i></td><td class="repos " title="Pas de match"><span class="tiret"></span></td><td class="m tit " title="Titulaire (2e soir d’affilée, B2B) : @ PHI 1h30"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612755/global/L/logo.svg" alt="PHI" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>@ · B2B</small><i class="role"></i></td><td class="repos " title="Pas de match"><span class="tiret"></span></td><td class="m tit suiv sep" title="Titulaire : vs IND 1h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612754/global/L/logo.svg" alt="IND" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>vs</small><i class="role"></i></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td><td class="m tit suiv" title="Titulaire : vs HOU 1h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612745/global/L/logo.svg" alt="HOU" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>vs</small><i class="role"></i></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td><td class="m tit suiv" title="Titulaire : vs CLE 1h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612739/global/L/logo.svg" alt="CLE" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>vs</small><i class="role"></i></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td></tr><tr class="entre"><th scope="row"><div class="joueur"><img class="tete" src="https://cdn.nba.com/headshots/nba/latest/260x190/1629029.png" alt="" onerror="this.style.visibility='hidden'"><div><span class="prenom">Luka</span><span class="nomf">Doncic</span><span class="eq">LAL <em class="statut s-ok">AV</em><em class="tag entre">acheté</em></span></div></div></th><td class="num">21,0</td><td class="num fort">65.5</td><td class="num">3.1</td><td class="num">0</td><td class="hors " title="Pas dans ton équipe ce jour-là"></td><td class="hors " title="Pas dans ton équipe ce jour-là"></td><td class="m cap " title="Titulaire et capitaine : vs LAC 4h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612746/global/L/logo.svg" alt="LAC" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>vs</small><i class="role">C</i></td><td class="repos " title="Pas de match"><span class="tiret"></span></td><td class="m tit " title="Titulaire : @ UTA 22h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612762/global/L/logo.svg" alt="UTA" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>@</small><i class="role"></i></td><td class="repos suiv sep" title="Pas de match"><span class="tiret"></span></td><td class="m tit suiv" title="Titulaire : vs POR 4h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612757/global/L/logo.svg" alt="POR" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>vs</small><i class="role"></i></td><td class="m cap suiv" title="Titulaire et capitaine (2e soir d’affilée, B2B) : @ LAC 3h30"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612746/global/L/logo.svg" alt="LAC" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>@ · B2B</small><i class="role">C</i></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td><td class="m tit suiv" title="Titulaire : @ GSW 3h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612744/global/L/logo.svg" alt="GSW" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>@</small><i class="role"></i></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td><td class="m tit suiv" title="Titulaire : vs TOR 3h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612761/global/L/logo.svg" alt="TOR" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>vs</small><i class="role"></i></td></tr><tr class="entre"><th scope="row"><div class="joueur"><img class="tete" src="https://cdn.nba.com/headshots/nba/latest/260x190/1629660.png" alt="" onerror="this.style.visibility='hidden'"><div><span class="prenom">Ty</span><span class="nomf">Jerome</span><span class="eq">MEM <em class="statut s-ok">AV</em><em class="tag entre">acheté</em></span></div></div></th><td class="num">9,5</td><td class="num fort">40.4</td><td class="num">4.3</td><td class="num">0</td><td class="hors " title="Pas dans ton équipe ce jour-là"></td><td class="hors " title="Pas dans ton équipe ce jour-là"></td><td class="m tit " title="Titulaire : @ GSW 4h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612744/global/L/logo.svg" alt="GSW" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>@</small><i class="role"></i></td><td class="repos " title="Pas de match"><span class="tiret"></span></td><td class="m tit " title="Titulaire : @ SAC 2h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612758/global/L/logo.svg" alt="SAC" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>@</small><i class="role"></i></td><td class="m tit suiv sep" title="Titulaire (2e soir d’affilée, B2B) : @ UTA 2h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612762/global/L/logo.svg" alt="UTA" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>@ · B2B</small><i class="role"></i></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td><td class="m tit suiv" title="Titulaire : @ POR 3h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612757/global/L/logo.svg" alt="POR" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>@</small><i class="role"></i></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td><td class="m tit suiv" title="Titulaire : vs SAC 1h00"><span class="adv-logo"><img src="https://cdn.nba.com/logos/nba/1610612758/global/L/logo.svg" alt="SAC" onerror="this.replaceWith(document.createTextNode(this.alt))"></span><small>vs</small><i class="role"></i></td><td class="repos suiv" title="Pas de match"><span class="tiret"></span></td></tr></tbody><tfoot><tr><th scope="row">Points projetés de l’équipe</th><td colspan="4"></td><td class="pts-j">128</td><td class="pts-j">154</td><td class="pts-j">233</td><td class="pts-j">146</td><td class="pts-j">156</td><td class="pts-j suiv sep">113</td><td class="pts-j suiv">176</td><td class="pts-j suiv">228</td><td class="pts-j suiv">107</td><td class="pts-j suiv">145</td><td class="pts-j suiv">147</td><td class="pts-j suiv">156</td></tr></tfoot>
+      </table>
+    </div>
+    <p class="note suiv">Les colonnes grisées à droite sont la semaine suivante, avec ton équipe après les transferts de cette semaine : ~1073 pts projetés, avant ses propres transferts.</p>
+    <div class="legende">
+      <span><i class="l-tit"></i>titulaire</span><span><i class="l-cap"></i>capitaine</span>
+      <span><i class="l-banc"></i>joue, mais sur le banc</span><span><i class="l-hors"></i>pas dans ton équipe ce jour-là</span>
+      <span>— : pas de match</span><span>B2B : 2e soir d’affilée (effet mesuré pour chaque joueur la saison passée)</span><span>VAL : points projetés par M$</span><span>TP : total de points la saison passée</span>
+    </div>
+    <div class="resume">
+      <div><span class="chiffre">817</span><span>pts projetés d’ici la fin de semaine</span></div>
+      <div><span class="chiffre">734</span><span>sans aucun transfert</span></div>
+      <div><span class="chiffre">0,0 M$</span><span>en banque</span></div>
+      <div><span class="chiffre">2</span><span>transferts gratuits restants</span></div>
+    </div>
+  </details>
+
+  <footer>
+    Généré le mar. 20/10 à 23h33. Équipe lue depuis : API publique (picks du Gameweek 1 - Day 1 + 0 transfert(s) cette semaine). Projections indicatives : vérifie les blessures de dernière minute avant de valider.
+    <ul><li>joueurs : en ligne</li><li>calendrier (fantasy) : en ligne</li><li>calendrier (NBA) : non utilisé</li><li>mon équipe : API publique (picks du Gameweek 1 - Day 1 + 0 transfert(s) cette semaine)</li></ul>
+  </footer>
+</main>
+<script>
+(function () {
+  var box = document.getElementById("deadline"), out = document.getElementById("compte");
+  var fin = new Date(box.dataset.iso).getTime();
+  function maj() {
+    var ms = fin - Date.now();
+    if (ms <= 0) { out.textContent = "deadline passée : recalcule"; box.classList.add("passee"); return; }
+    var h = Math.floor(ms / 3600000), m = Math.floor(ms % 3600000 / 60000);
+    out.textContent = "dans " + (h >= 24 ? Math.floor(h / 24) + " j " + (h % 24) + " h" : h + " h " + String(m).padStart(2, "0"));
+    box.classList.toggle("proche", ms < 3 * 3600000);
+  }
+  maj(); setInterval(maj, 60000);
+})();
+</script>
+
+<div id="aa-barre" style="position:fixed;left:0;right:0;bottom:0;z-index:99999;
+  display:flex;align-items:center;gap:12px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));
+  background:#1d428a;color:#fff;font:15px -apple-system,system-ui,sans-serif;box-shadow:0 -2px 8px rgba(0,0,0,.2)">
+  <span style="flex:1;min-width:0">Rapport du 20/10 à 23:33 · <a href="journal.html" style="color:#fff">journal</a></span>
+  
+</div>
+<div style="height:80px"></div>
+</body>
+</html>

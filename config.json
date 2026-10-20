@@ -1,0 +1,34 @@
+{
+  "_aide": "Voir LISEZMOI.md. Équipe lue automatiquement si requete_mon_equipe.txt existe ; sinon equipe_manuelle (10 noms tels qu'affichés dans le jeu).",
+  "id_equipe": 32607,
+  "cookie": null,
+  "equipe_manuelle": [
+    "S.Gilgeous-Alexander",
+    "T.Maxey",
+    "J.Fears",
+    "W.Clayton Jr.",
+    "S.James",
+    "D.Queen",
+    "I.Hartenstein",
+    "J.Collins",
+    "D.Wolf",
+    "D.Barlow"
+  ],
+  "banque": 1.5,
+  "transferts_restants_cette_semaine": null,
+  "capitaine_deja_utilise_cette_semaine": false,
+  "transferts_gratuits_par_defaut": 2,
+  "poids_futur": 0.5,
+  "projection_min": 12,
+  "joueurs_exclus": [
+    "R.Rupert",
+    "M.Bagley III"
+  ],
+  "joueurs_bloques": [],
+  "ajustements": {},
+  "imposer_au_depart": ["V.Wembanyama"],
+  "malus_back_to_back": 0.92,
+  "seuil_changement_plan": 5,
+  "force_fort": 25,
+  "force_leger": 8
+}

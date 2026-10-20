@@ -1,0 +1,19 @@
+# secrets (jamais dans le dépôt)
+secret_cookie.txt
+requete_mon_equipe.txt
+config_local.json
+donnees/my_team_api.json
+donnees/mon_equipe.json
+# caches et fichiers générés localement
+donnees/*.json
+rapport.html
+rapport/.verrou
+rapport/serveur.log
+rapport/launchd.log
+__pycache__/
+.DS_Store
+# sauvegardes
+*.bak*
+*.bak_*
+priors_avant_*.json
+sauvegarde_*/

@@ -1,0 +1,45 @@
+# Assistant NBA Fantasy dans le cloud : le planificateur passe toutes les 10 min,
+# calcule avant chaque deadline, envoie les notifications et publie la page (GitHub Pages, dossier docs/).
+name: assistant
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+    inputs:
+      forcer:
+        description: "Recalculer maintenant"
+        type: boolean
+        default: true
+permissions:
+  contents: write
+concurrency:
+  group: assistant
+  cancel-in-progress: false
+jobs:
+  passage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      TZ: Europe/Paris
+      NUAGE: "1"
+      NTFY_SUJET: ${{ secrets.NTFY_SUJET }}
+      NBA_COOKIE: ${{ secrets.NBA_COOKIE }}
+      ADRESSE_PAGE: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+      RECALCUL_URL: https://github.com/${{ github.repository }}/actions/workflows/assistant.yml
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Planificateur
+        run: python planificateur.py ${{ (github.event_name == 'workflow_dispatch' && inputs.forcer) && '--forcer' || '' }}
+      - name: Page
+        run: python publier.py
+      - name: Garder l'état et la page
+        run: |
+          git config user.name "assistant-nba"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A rapport docs priors.json
+          git diff --cached --quiet || (git commit -qm "Calcul $(date '+%d/%m %H:%M')" && git push -q)
