@@ -1,11 +1,8 @@
-Calcul lancé le 20/10/2026 à 23:33:03
+Calcul lancé le 21/10/2026 à 00:13:59
 ----------------------------------------
-/Users/hugo/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
-  warnings.warn(
 Récupération des données…
-  ! donnees/mon_equipe.json date d'avant la dernière deadline : ignoré.
 Optimisation (jusqu'à deux minutes)…
-  (force des conseils : 34 s)
+  (force des conseils : 42 s)
 
 === Gameweek 1 — prochaine deadline : Gameweek 1 - Day 2 le jeu. 22/10 00h30 (heure de Paris) ===
 Équipe lue depuis : API publique (picks du Gameweek 1 - Day 1 + 0 transfert(s) cette semaine) | Banque : 0.0 M$ | Transferts gratuits restants : 2 | Capitaine dispo : oui
@@ -37,6 +34,6 @@ Optimisation (jusqu'à deux minutes)…
 Projection Gameweek (jours restants) : ~817 pts  |  sans transfert : ~734 pts
 Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) = non utilisé, mon équipe = API publique (picks du Gameweek 1 - Day 1 + 0 transfert(s) cette semaine)
 
-Rapport enregistré : /Users/hugo/assistant-nba-fantasy/rapport.html
+Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 20/10/2026 à 23:33:42 (code de sortie : 0)
+Terminé le 21/10/2026 à 00:14:47 (code de sortie : 0)
