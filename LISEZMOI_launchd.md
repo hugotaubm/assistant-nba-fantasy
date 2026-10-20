@@ -1,3 +1,15 @@
+# Version cloud (GitHub) — celle utilisée depuis le 21/10/2026
+
+L'assistant tourne sur GitHub Actions (dépôt hugotaubm/assistant-nba-fantasy), même Mac éteint :
+- **Page** : https://hugotaubm.github.io/assistant-nba-fantasy/ (ajoute-la à l'écran d'accueil de l'iPhone via Safari → Partager).
+- **Planificateur** : `.github/workflows/assistant.yml` passe toutes les 10 min (GitHub peut retarder de quelques minutes) ; calcul complet 2 h 30 à 1 h avant chaque deadline, contrôle 50 à 15 min avant. Chaque calcul est enregistré dans le dépôt (dossiers `rapport/` et `docs/`).
+- **Recalculer** : bouton en bas de la page → « Run workflow » (ou appli GitHub → Actions → assistant → Run workflow).
+- **Secrets** (Settings → Secrets and variables → Actions) : `NTFY_SUJET` (sujet ntfy) et, si tu le veux, `NBA_COOKIE`. Pour le cookie : copie sa valeur (voir étape « cookie » ci-dessous), puis dans le Terminal :
+  `pbpaste | gh secret set NBA_COOKIE -R hugotaubm/assistant-nba-fantasy`
+- Sur le Mac, `config_local.json` garde le sujet ntfy (jamais envoyé sur GitHub). Les tâches launchd du Mac sont désinstallées ; `bash installer.sh` les remet si besoin (attention aux notifications en double).
+
+---
+
 # Lancer l'assistant automatiquement (Mac)
 
 ## Les fichiers
