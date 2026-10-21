@@ -5,8 +5,11 @@ L'assistant tourne sur GitHub Actions (dépôt hugotaubm/assistant-nba-fantasy),
 - **Planificateur** : `.github/workflows/assistant.yml` lance le planificateur toutes les 10 min ; calcul complet 2 h 30 à 1 h avant chaque deadline, contrôle 50 à 15 min avant. Chaque calcul est enregistré dans le dépôt (dossiers `rapport/` et `docs/`).
 - **Recalculer** : bouton en bas de la page → « Run workflow » (ou appli GitHub → Actions → assistant → Run workflow, « Recalculer maintenant » coché).
 - **Veilleur** : la tâche `assistant` tourne ~5 h 50 puis se relance elle-même (le cron toutes les 3 h ne sert qu’à la redémarrer si besoin).
-- **Secrets** (Settings → Secrets and variables → Actions) : `NTFY_SUJET` (sujet ntfy) et, si tu le veux, `NBA_COOKIE`. Pour le cookie : copie sa valeur (voir étape « cookie » ci-dessous), puis dans le Terminal :
-  `pbpaste | gh secret set NBA_COOKIE -R hugotaubm/assistant-nba-fantasy`
+- **Secrets** (Settings → Secrets and variables → Actions) : `NTFY_SUJET` (sujet ntfy) et `NBA_COOKIE` (cookie de session `sessionid`, seul nécessaire).
+- **Renouveler le cookie** (quand le rapport affiche « my-team refusé » / « Cookie expiré ») :
+  1. Terminal : `bash ~/assistant-nba-fantasy/capturer_requete.sh` (il attend) ;
+  2. Chrome, page de ton équipe : Cmd + Option + I → Network → filtre `my-team` → Cmd + R → clic droit sur `32607/` → Copy → Copy as cURL (bash) ;
+  3. le Terminal affiche ✅ deux fois : requête enregistrée et cookie mis à jour sur GitHub.
 - Sur le Mac, `config_local.json` garde le sujet ntfy (jamais envoyé sur GitHub). Les tâches launchd du Mac sont désinstallées ; `bash installer.sh` les remet si besoin (attention aux notifications en double).
 
 ---
