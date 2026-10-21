@@ -1,8 +1,8 @@
-Calcul lancé le 21/10/2026 à 19:05:06
+Calcul lancé le 21/10/2026 à 19:06:21
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
-  (force des conseils : 31 s)
+  (force des conseils : 29 s)
 
 === Gameweek 1 — prochaine deadline : Gameweek 1 - Day 2 le jeu. 22/10 00h30 (heure de Paris) ===
 Équipe lue depuis : API publique (picks du Gameweek 1 - Day 1 + 0 transfert(s) cette semaine) | Banque : 0.0 M$ | Transferts gratuits restants : 2 | Capitaine dispo : oui
@@ -37,4 +37,4 @@ Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) 
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 21/10/2026 à 19:06:01 (code de sortie : 0)
+Terminé le 21/10/2026 à 19:07:11 (code de sortie : 0)
