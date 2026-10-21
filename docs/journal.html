@@ -6,7 +6,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="theme-color" content="#1d428a">
 <link rel="manifest" href="manifest.json">
-<link rel="apple-touch-icon" href="icone-180.png"><meta charset="utf-8"><title>Journal</title></head><body style="font-family:-apple-system,system-ui,sans-serif;padding:16px"><p><a href="./">← Retour au rapport</a></p><pre style="white-space:pre-wrap;font-size:13px">Calcul lancé le 21/10/2026 à 23:32:16
+<link rel="apple-touch-icon" href="icone-180.png"><meta charset="utf-8"><title>Journal</title></head><body style="font-family:-apple-system,system-ui,sans-serif;padding:16px"><p><a href="./">← Retour au rapport</a></p><pre style="white-space:pre-wrap;font-size:13px">Calcul lancé le 21/10/2026 à 23:43:44
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu&#x27;à deux minutes)…
@@ -44,12 +44,12 @@ Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) 
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 21/10/2026 à 23:33:40 (code de sortie : 0)
+Terminé le 21/10/2026 à 23:45:08 (code de sortie : 0)
 </pre>
 <div id="aa-barre" style="position:fixed;left:0;right:0;bottom:0;z-index:99999;
   display:flex;align-items:center;gap:12px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));
   background:#1d428a;color:#fff;font:15px -apple-system,system-ui,sans-serif;box-shadow:0 -2px 8px rgba(0,0,0,.2)">
-  <span style="flex:1;min-width:0"><span id="aa-info">Rapport du 21/10 à 23:33</span> · <a href="journal.html" style="color:#fff">journal</a></span>
+  <span style="flex:1;min-width:0"><span id="aa-info">Rapport du 21/10 à 23:45</span> · <a href="journal.html" style="color:#fff">journal</a></span>
   <a id="aa-recalculer" href="https://github.com/hugotaubm/assistant-nba-fantasy/actions/workflows/assistant.yml" style="font:600 15px -apple-system,system-ui,sans-serif;padding:10px 16px;border-radius:10px;background:#fff;color:#1d428a;text-decoration:none;white-space:nowrap">Recalculer</a>
 </div>
 <div style="height:80px"></div>
@@ -70,7 +70,7 @@ Terminé le 21/10/2026 à 23:33:40 (code de sortie : 0)
   }
   // Ouverte par le raccourci avec ?attente=1 : on attend le nouveau rapport puis on recharge.
   if (!/[?&]attente=/.test(location.search)) return;
-  var info = document.getElementById("aa-info"), depart = Date.now(), actuel = "2026-10-21T23:33:40";
+  var info = document.getElementById("aa-info"), depart = Date.now(), actuel = "2026-10-21T23:45:08";
   info.textContent = "⏳ Calcul en cours… (2 à 4 min)";
   var minuteur = setInterval(function () {
     fetch("etat.json?t=" + Date.now(), {cache: "no-store"}).then(function (r) { return r.json(); }).then(function (e) {
