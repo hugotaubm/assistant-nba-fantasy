@@ -1,15 +1,12 @@
-Calcul lancé le 21/10/2026 à 19:16:15
+Calcul lancé le 21/10/2026 à 19:24:28
 ----------------------------------------
 Récupération des données…
-  ! my-team refusé (code 403, réponse de l'API : detail:authentication credentials were not provided.). Autre source utilisée.
-    Cookie expiré ou insuffisant : refais l'étape « cookie » du LISEZMOI_launchd.md.
 Optimisation (jusqu'à deux minutes)…
-  (force des conseils : 55 s)
+  (force des conseils : 54 s)
 
 === Gameweek 1 — prochaine deadline : Gameweek 1 - Day 2 le jeu. 22/10 00h30 (heure de Paris) ===
-Équipe lue depuis : API publique (picks du Gameweek 1 - Day 1 + 0 transfert(s) cette semaine) | Banque : 0.0 M$ | Transferts gratuits restants : 2 | Capitaine dispo : oui
+Équipe lue depuis : my-team (connecté, à jour en direct) | Banque : 0.0 M$ | Transferts gratuits restants : 2 | Capitaine dispo : oui
 
-  (titulaires et capitaine non vérifiables avant la deadline sans cookie (équipe lue : Gameweek 1 - Day 1))
 (Conseil précédent conservé : le nouveau plan ne gagnait que +3 pts.)
 ▶ CINQ DE DÉPART POUR LE PROCHAIN GAMEDAY
   BC  N.Traore (BKN)               proj. 24.9
@@ -35,8 +32,8 @@ Optimisation (jusqu'à deux minutes)…
   → Garde ton capitaine pour Gameweek 1 - Day 6 (L.Doncic (LAL)).  [⚪ Au choix (autre jour ≈ pareil) : +0 pts]
 
 Projection Gameweek (jours restants) : ~777 pts  |  sans transfert : ~729 pts
-Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) = non utilisé, mon équipe = API publique (picks du Gameweek 1 - Day 1 + 0 transfert(s) cette semaine)
+Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) = non utilisé, mon équipe = my-team (connecté, à jour en direct)
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 21/10/2026 à 19:17:49 (code de sortie : 0)
+Terminé le 21/10/2026 à 19:26:00 (code de sortie : 0)
