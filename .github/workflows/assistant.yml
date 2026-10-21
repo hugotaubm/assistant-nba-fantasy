@@ -1,31 +1,29 @@
-# Assistant NBA Fantasy dans le cloud : le planificateur passe toutes les 10 min,
-# calcule avant chaque deadline, envoie les notifications et publie la page (GitHub Pages, dossier docs/).
+# Veilleur : tourne ~5 h 50, lance le planificateur toutes les 10 min (calcul avant chaque deadline,
+# notifications, page GitHub Pages), puis se relance lui-même. Le cron ne sert qu'à redémarrer la chaîne
+# si elle s'est arrêtée (GitHub ne garantit pas la fréquence des cron).
 name: assistant
 on:
   schedule:
-    - cron: "*/10 * * * *"
+    - cron: "7 */3 * * *"
   workflow_dispatch:
-    inputs:
-      forcer:
-        description: "Recalculer maintenant"
-        type: boolean
-        default: true
 permissions:
   contents: write
+  actions: write
 concurrency:
-  group: assistant
+  group: veilleur
   cancel-in-progress: false
 jobs:
-  passage:
+  veille:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 358
     env:
       TZ: Europe/Paris
       NUAGE: "1"
       NTFY_SUJET: ${{ secrets.NTFY_SUJET }}
       NBA_COOKIE: ${{ secrets.NBA_COOKIE }}
       ADRESSE_PAGE: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
-      RECALCUL_URL: https://github.com/${{ github.repository }}/actions/workflows/assistant.yml
+      RECALCUL_URL: https://github.com/${{ github.repository }}/actions/workflows/recalculer.yml
+      GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -33,13 +31,22 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
-      - name: Planificateur
-        run: python planificateur.py ${{ (github.event_name == 'workflow_dispatch' && inputs.forcer) && '--forcer' || '' }}
-      - name: Page
-        run: python publier.py
-      - name: Garder l'état et la page
+      - name: Veille (toutes les 10 min pendant ~5 h 40)
         run: |
           git config user.name "assistant-nba"
           git config user.email "actions@users.noreply.github.com"
-          git add -A rapport docs priors.json
-          git diff --cached --quiet || (git commit -qm "Calcul $(date '+%d/%m %H:%M')" && git push -q)
+          fin=$(( $(date +%s) + 340*60 ))
+          while [ "$(date +%s)" -lt "$fin" ]; do
+            git pull -q --rebase -X theirs || true
+            python planificateur.py || true
+            python publier.py || true
+            git add -A rapport docs
+            if ! git diff --cached --quiet; then
+              git commit -qm "Calcul $(date '+%d/%m %H:%M')"
+              for essai in 1 2 3; do git pull -q --rebase -X theirs && git push -q && break; sleep 5; done
+            fi
+            sleep 600
+          done
+      - name: Relance du veilleur suivant
+        if: always()
+        run: gh workflow run assistant.yml --ref main -R "${{ github.repository }}"
