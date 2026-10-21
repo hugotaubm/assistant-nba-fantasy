@@ -3,7 +3,7 @@
 L'assistant tourne sur GitHub Actions (dépôt hugotaubm/assistant-nba-fantasy), même Mac éteint :
 - **Page** : https://hugotaubm.github.io/assistant-nba-fantasy/ (ajoute-la à l'écran d'accueil de l'iPhone via Safari → Partager).
 - **Planificateur** : `.github/workflows/assistant.yml` lance le planificateur toutes les 10 min ; calcul complet 2 h 30 à 1 h avant chaque deadline, contrôle 50 à 15 min avant. Chaque calcul est enregistré dans le dépôt (dossiers `rapport/` et `docs/`).
-- **Recalculer** : bouton en bas de la page → « Run workflow » (ou appli GitHub → Actions → recalculer → Run workflow).
+- **Recalculer** : bouton en bas de la page → « Run workflow » (ou appli GitHub → Actions → assistant → Run workflow, « Recalculer maintenant » coché).
 - **Veilleur** : la tâche `assistant` tourne ~5 h 50 puis se relance elle-même (le cron toutes les 3 h ne sert qu’à la redémarrer si besoin).
 - **Secrets** (Settings → Secrets and variables → Actions) : `NTFY_SUJET` (sujet ntfy) et, si tu le veux, `NBA_COOKIE`. Pour le cookie : copie sa valeur (voir étape « cookie » ci-dessous), puis dans le Terminal :
   `pbpaste | gh secret set NBA_COOKIE -R hugotaubm/assistant-nba-fantasy`
