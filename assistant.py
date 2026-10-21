@@ -14,7 +14,7 @@ Usage :
     python assistant.py --hors-ligne   # réutilise les derniers fichiers de ./donnees
     python assistant.py --pas-de-navigateur
 """
-import argparse, datetime as dt, json, os, sys, webbrowser, html
+import argparse, datetime as dt, json, os, re, sys, webbrowser, html
 from pathlib import Path
 
 import numpy as np
@@ -324,7 +324,11 @@ def equipe_cookie(eid, cookie, hors_ligne):
         print(f"  ! my-team inaccessible ({ex.__class__.__name__}) : autre source utilisée.")
         return None, f"my-team inaccessible ({ex.__class__.__name__})"
     if r.status_code in (401, 403):
-        print("  ! Cookie expiré : refais l'étape « cookie » du LISEZMOI_launchd.md. Autre source utilisée.")
+        corps = r.text[:300].lower()
+        genre = ("page de blocage (Cloudflare ?)" if "<html" in corps or "cloudflare" in corps
+                 else "réponse de l'API : " + re.sub(r"[^a-z .:'é-]", "", corps)[:80])
+        print(f"  ! my-team refusé (code {r.status_code}, {genre}). Autre source utilisée.")
+        print("    Cookie expiré ou insuffisant : refais l'étape « cookie » du LISEZMOI_launchd.md.")
         return None, "cookie expiré : refais l'étape « cookie » du LISEZMOI_launchd.md"
     if not r.ok:
         return None, f"my-team : erreur {r.status_code}"
