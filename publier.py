@@ -4,7 +4,7 @@
 
 Utilisé par GitHub Actions après chaque passage du planificateur. Il réutilise les balises « appli »
 et l'icône de serveur.py. Le bouton « Recalculer » lance le raccourci iPhone « Recalculer NBA »
-(sur iPhone/iPad) ou ouvre la page GitHub du calcul (Run workflow) ailleurs. Le raccourci rouvre
+(sur iPhone/iPad, si "raccourci_iphone": true dans config.json) ou ouvre la page GitHub du calcul. Le raccourci rouvre
 la page avec ?attente=1 : elle attend alors toute seule le nouveau rapport (etat.json).
 """
 import html, json, os, re
@@ -17,6 +17,9 @@ ICI = Path(__file__).resolve().parent
 DOCS = ICI / "docs"
 RECALCUL = os.environ.get("RECALCUL_URL", "")
 RACCOURCI = "shortcuts://run-shortcut?name=" + "Recalculer%20NBA"
+# Le raccourci n'est utilisé que s'il existe ("raccourci_iphone": true dans config.json),
+# sinon iOS afficherait une erreur : le bouton ouvre alors la page GitHub.
+AVEC_RACCOURCI = json.loads((ICI / "config.json").read_text(encoding="utf-8")).get("raccourci_iphone", False)
 
 BARRE = """
 <div id="aa-barre" style="position:fixed;left:0;right:0;bottom:0;z-index:99999;
@@ -30,7 +33,7 @@ BARRE = """
 (function () {
   // Sur iPhone/iPad, le bouton lance le raccourci « Recalculer NBA » ; ailleurs, la page GitHub.
   var bouton = document.getElementById("aa-recalculer");
-  if (bouton && /iPhone|iPad|iPod/.test(navigator.userAgent)) bouton.href = "__RACCOURCI__";
+  if (bouton && __AVEC_RACCOURCI__ && /iPhone|iPad|iPod/.test(navigator.userAgent)) bouton.href = "__RACCOURCI__";
   // Ouverte par le raccourci avec ?attente=1 : on attend le nouveau rapport puis on recharge.
   if (!/[?&]attente=/.test(location.search)) return;
   var info = document.getElementById("aa-info"), depart = Date.now(), actuel = __DERNIER__;
@@ -66,7 +69,8 @@ def barre():
               if RECALCUL else "")
     dernier = json.dumps(t.isoformat() if t else None)
     return (BARRE.replace("__INFO__", info).replace("__BOUTON__", bouton)
-            .replace("__RACCOURCI__", RACCOURCI).replace("__DERNIER__", dernier))
+            .replace("__RACCOURCI__", RACCOURCI)
+            .replace("__AVEC_RACCOURCI__", "true" if AVEC_RACCOURCI else "false").replace("__DERNIER__", dernier))
 
 
 def avec_appli(contenu):

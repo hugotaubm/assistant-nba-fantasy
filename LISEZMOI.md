@@ -14,25 +14,31 @@ L'assistant tourne sur GitHub Actions (`.github/workflows/assistant.yml`) et pub
 https://hugotaubm.github.io/assistant-nba-fantasy/. À chaque passage, `planificateur.py` décide s'il
 faut calculer (avant chaque deadline), envoie les notifications ntfy, et `publier.py` met la page à jour.
 
-Les passages programmés de GitHub (`schedule`) sont souvent retardés ou sautés. Deux réglages les
-rendent fiables, avec une **clé d'accès GitHub** (fine-grained token limité à ce dépôt,
-permission **Actions : Read and write**, à ne jamais mettre dans le dépôt ni dans un chat) :
+Les passages programmés de GitHub (`schedule`) sont souvent retardés ou sautés : ils n'arrivaient que
+toutes les 2 à 5 h. Le workflow tourne donc en **veilleur** : une tâche reste active environ 5 h 40, lance
+le planificateur toutes les 10 min, puis se relance elle-même. Le cron (`7 */3 * * *`) ne sert plus qu'à
+redémarrer la chaîne si elle s'arrête. Aucun réglage extérieur n'est nécessaire.
 
-**Réveil toutes les 10 min, sur cron-job.org**
-- URL : `https://api.github.com/repos/hugotaubm/assistant-nba-fantasy/actions/workflows/assistant.yml/dispatches`
-- Toutes les 10 minutes, méthode POST
-- En-têtes : `Authorization: Bearer <clé>` et `Accept: application/vnd.github+json`
-- Corps : `{"ref":"main","inputs":{"forcer":"false"}}`. Sans `"forcer":"false"`, chaque passage ferait un calcul complet.
-- Réponse attendue : 204
+Pour vérifier : onglet **Actions** du dépôt → une tâche « assistant » doit toujours être en cours
+(icône jaune). Dans `rapport/planificateur.log`, chaque calcul est noté avec son heure.
 
-**Bouton « Recalculer » sur iPhone : raccourci « Recalculer NBA »** (appli Raccourcis)
+**Bouton « Recalculer » sur iPhone : raccourci « Recalculer NBA »** (facultatif, appli Raccourcis)
+
+Il faut une **clé d'accès GitHub** : un fine-grained token limité à ce dépôt, avec la permission
+**Actions : Read and write**. Ne la mets jamais dans le dépôt ni dans un chat.
+
 1. Action « Obtenir le contenu de l'URL » :
-   - même URL, méthode POST, mêmes deux en-têtes ;
-   - corps JSON : `ref` = `main`.
+   - URL : `https://api.github.com/repos/hugotaubm/assistant-nba-fantasy/actions/workflows/assistant.yml/dispatches` ;
+   - méthode POST ;
+   - en-têtes : `Authorization: Bearer <clé>` et `Accept: application/vnd.github+json` ;
+   - corps JSON : `ref` = `main` (forcer vaut true par défaut : calcul immédiat).
 2. Action « Ouvrir les URL » : `https://hugotaubm.github.io/assistant-nba-fantasy/?attente=1`.
 
-Sur iPhone, le bouton de la page lance ce raccourci. La page attend ensuite le nouveau rapport et se
-recharge toute seule. Ailleurs, le bouton ouvre la page GitHub du calcul (« Run workflow »).
+3. Dans `config.json`, mets `"raccourci_iphone": true`.
+
+Sur iPhone, le bouton de la page lance alors ce raccourci. La page attend ensuite le nouveau rapport et se
+recharge toute seule. Sans raccourci, ou sur ordinateur, le bouton ouvre la page GitHub du calcul :
+connecte-toi à GitHub, puis « Run workflow » (case « Recalculer maintenant » cochée).
 
 Le planificateur rattrape un passage en retard : tant qu'il reste au moins 8 min avant la deadline,
 le calcul complet est fait.
