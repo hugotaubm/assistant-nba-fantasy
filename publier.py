@@ -3,9 +3,11 @@
     python3 publier.py
 
 Utilisé par GitHub Actions après chaque passage du planificateur. Il réutilise les balises « appli »
-et l'icône de serveur.py ; le bouton « Recalculer » ouvre la page GitHub du calcul (Run workflow).
+et l'icône de serveur.py. Le bouton « Recalculer » lance le raccourci iPhone « Recalculer NBA »
+(sur iPhone/iPad) ou ouvre la page GitHub du calcul (Run workflow) ailleurs. Le raccourci rouvre
+la page avec ?attente=1 : elle attend alors toute seule le nouveau rapport (etat.json).
 """
-import html, os
+import html, json, os, re
 from datetime import datetime
 from pathlib import Path
 
@@ -14,25 +16,57 @@ import serveur
 ICI = Path(__file__).resolve().parent
 DOCS = ICI / "docs"
 RECALCUL = os.environ.get("RECALCUL_URL", "")
+RACCOURCI = "shortcuts://run-shortcut?name=" + "Recalculer%20NBA"
 
 BARRE = """
 <div id="aa-barre" style="position:fixed;left:0;right:0;bottom:0;z-index:99999;
   display:flex;align-items:center;gap:12px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));
   background:#1d428a;color:#fff;font:15px -apple-system,system-ui,sans-serif;box-shadow:0 -2px 8px rgba(0,0,0,.2)">
-  <span style="flex:1;min-width:0">__INFO__ · <a href="journal.html" style="color:#fff">journal</a></span>
+  <span style="flex:1;min-width:0"><span id="aa-info">__INFO__</span> · <a href="journal.html" style="color:#fff">journal</a></span>
   __BOUTON__
 </div>
 <div style="height:80px"></div>
+<script>
+(function () {
+  // Sur iPhone/iPad, le bouton lance le raccourci « Recalculer NBA » ; ailleurs, la page GitHub.
+  var bouton = document.getElementById("aa-recalculer");
+  if (bouton && /iPhone|iPad|iPod/.test(navigator.userAgent)) bouton.href = "__RACCOURCI__";
+  // Ouverte par le raccourci avec ?attente=1 : on attend le nouveau rapport puis on recharge.
+  if (!/[?&]attente=/.test(location.search)) return;
+  var info = document.getElementById("aa-info"), depart = Date.now(), actuel = __DERNIER__;
+  info.textContent = "⏳ Calcul en cours… (2 à 4 min)";
+  var minuteur = setInterval(function () {
+    fetch("etat.json?t=" + Date.now(), {cache: "no-store"}).then(function (r) { return r.json(); }).then(function (e) {
+      if (e.dernier && e.dernier !== actuel) { clearInterval(minuteur); location.replace(location.pathname); }
+    }).catch(function () {});
+    if (Date.now() - depart > 8 * 60 * 1000) {
+      clearInterval(minuteur);
+      info.innerHTML = 'Toujours rien après 8 min : regarde le <a href="journal.html" style="color:#fff">journal</a>';
+    }
+  }, 15000);
+})();
+</script>
 """
 
 
+def date_rapport():
+    """Heure de fin du dernier calcul, lue dans le rapport texte (sur GitHub, la date du fichier
+    est celle du checkout : elle changerait à chaque passage)."""
+    if not serveur.RAPPORT_TEXTE.exists():
+        return None
+    m = re.findall(r"Terminé le (\d\d/\d\d/\d{4}) à (\d\d:\d\d:\d\d)", serveur.RAPPORT_TEXTE.read_text(errors="replace"))
+    return datetime.strptime(" ".join(m[-1]), "%d/%m/%Y %H:%M:%S") if m else serveur.date_dernier_rapport()
+
+
 def barre():
-    t = serveur.date_dernier_rapport()
+    t = date_rapport()
     info = f"Rapport du {t:%d/%m à %H:%M}" if t else "Aucun rapport"
-    bouton = (f'<a href="{RECALCUL}" style="font:600 15px -apple-system,system-ui,sans-serif;padding:10px 16px;'
+    bouton = (f'<a id="aa-recalculer" href="{RECALCUL}" style="font:600 15px -apple-system,system-ui,sans-serif;padding:10px 16px;'
               f'border-radius:10px;background:#fff;color:#1d428a;text-decoration:none;white-space:nowrap">Recalculer</a>'
               if RECALCUL else "")
-    return BARRE.replace("__INFO__", info).replace("__BOUTON__", bouton)
+    dernier = json.dumps(t.isoformat() if t else None)
+    return (BARRE.replace("__INFO__", info).replace("__BOUTON__", bouton)
+            .replace("__RACCOURCI__", RACCOURCI).replace("__DERNIER__", dernier))
 
 
 def avec_appli(contenu):
@@ -59,6 +93,8 @@ def main():
         f = DOCS / f"icone-{taille}.png"
         if not f.exists():
             f.write_bytes(serveur.icone(taille))
+    t = date_rapport()
+    (DOCS / "etat.json").write_text(json.dumps({"dernier": t.isoformat() if t else None}), encoding="utf-8")
     (DOCS / ".nojekyll").write_text("")
     print(f"Page publiée dans docs/ ({datetime.now():%H:%M})")
 

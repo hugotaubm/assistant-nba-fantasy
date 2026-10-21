@@ -8,6 +8,35 @@ Chaque jour, le programme récupère les données de NBA Fantasy, projette les p
 
 Il affiche tout dans le terminal et ouvre un rapport `rapport.html` dans ton navigateur.
 
+## 0. Version cloud (iPhone, Mac éteint)
+
+L'assistant tourne sur GitHub Actions (`.github/workflows/assistant.yml`) et publie la page sur
+https://hugotaubm.github.io/assistant-nba-fantasy/. À chaque passage, `planificateur.py` décide s'il
+faut calculer (avant chaque deadline), envoie les notifications ntfy, et `publier.py` met la page à jour.
+
+Les passages programmés de GitHub (`schedule`) sont souvent retardés ou sautés. Deux réglages les
+rendent fiables, avec une **clé d'accès GitHub** (fine-grained token limité à ce dépôt,
+permission **Actions : Read and write**, à ne jamais mettre dans le dépôt ni dans un chat) :
+
+**Réveil toutes les 10 min, sur cron-job.org**
+- URL : `https://api.github.com/repos/hugotaubm/assistant-nba-fantasy/actions/workflows/assistant.yml/dispatches`
+- Toutes les 10 minutes, méthode POST
+- En-têtes : `Authorization: Bearer <clé>` et `Accept: application/vnd.github+json`
+- Corps : `{"ref":"main","inputs":{"forcer":"false"}}`. Sans `"forcer":"false"`, chaque passage ferait un calcul complet.
+- Réponse attendue : 204
+
+**Bouton « Recalculer » sur iPhone : raccourci « Recalculer NBA »** (appli Raccourcis)
+1. Action « Obtenir le contenu de l'URL » :
+   - même URL, méthode POST, mêmes deux en-têtes ;
+   - corps JSON : `ref` = `main`.
+2. Action « Ouvrir les URL » : `https://hugotaubm.github.io/assistant-nba-fantasy/?attente=1`.
+
+Sur iPhone, le bouton de la page lance ce raccourci. La page attend ensuite le nouveau rapport et se
+recharge toute seule. Ailleurs, le bouton ouvre la page GitHub du calcul (« Run workflow »).
+
+Le planificateur rattrape un passage en retard : tant qu'il reste au moins 8 min avant la deadline,
+le calcul complet est fait.
+
 ## 1. Installation (une seule fois)
 
 1. Installe Python 3.10 ou plus récent depuis python.org. Sous Windows, coche « Add Python to PATH » pendant l'installation.

@@ -1,14 +1,16 @@
-"""Planificateur : lancé toutes les 10 min par launchd, il décide s'il faut calculer.
+"""Planificateur : lancé toutes les 10 min (launchd ou GitHub Actions), il décide s'il faut calculer.
 
     python3 planificateur.py                          # décision réelle (et calcul si besoin)
     python3 planificateur.py --simuler                # montre les décisions pour les 3 prochaines deadlines
     python3 planificateur.py --maintenant 2026-10-21T21:00:00Z --simuler
 
 Règles (pour la prochaine deadline) :
-  - entre 100 et 70 min avant : calcul complet (une fois) → notification « à faire »
-  - entre 30 et 15 min avant : calcul de contrôle (une fois) → notification seulement si le conseil
-    a changé, ou en priorité haute si ton équipe sur le site n'est pas en ordre
-  - moins de 15 min avant sans calcul fait (Mac réveillé trop tard) : on saute, avec une ligne au journal
+  - entre 100 et 70 min avant (cloud : 150 et 60) : calcul complet (une fois) → notification « à faire ».
+    Un passage en retard le rattrape tant qu'il reste au moins 15 min (cloud : 8 min).
+  - entre 30 et 15 min avant (cloud : 50 et 15) : calcul de contrôle (une fois, au moins 20 min après
+    le complet) → notification seulement si le conseil a changé, ou en priorité haute si ton équipe
+    sur le site n'est pas en ordre
+  - plus tard sans calcul fait : on saute, avec une ligne au journal
   - calcul de secours vers 12h s'il n'y en a pas eu depuis 12 h
 lancer_assistant.sh garde le verrou : jamais deux calculs en même temps.
 """
@@ -24,7 +26,8 @@ ADRESSE = os.environ.get("ADRESSE_PAGE", "https://hugos-macbook-pro.tail81f2b6.t
 NUAGE = os.environ.get("NUAGE") == "1"   # GitHub Actions : lancements moins ponctuels → fenêtres plus larges
 FENETRE_COMPLET = (60, 150) if NUAGE else (70, 100)    # minutes avant la deadline
 FENETRE_CONTROLE = (15, 50) if NUAGE else (15, 30)
-TROP_TARD = 15
+TROP_TARD = 8 if NUAGE else 15   # en dessous, un calcul n'arriverait plus à temps
+ECART_CONTROLE = 20              # minutes minimum entre le calcul complet et le contrôle
 
 
 def z(s):
@@ -73,9 +76,13 @@ def decider(maintenant, etat, prochaines):
         e = prochaines[0]
         m = (z(e["deadline_time"]) - maintenant).total_seconds() / 60
         cle = str(e["id"])
-        if FENETRE_COMPLET[0] <= m <= FENETRE_COMPLET[1] and cle not in etat["complet"]:
+        # Rattrapage : un passage en retard (Mac réveillé tard, GitHub qui saute des passages)
+        # fait quand même le calcul complet, tant qu'il reste le temps d'agir.
+        if TROP_TARD <= m <= FENETRE_COMPLET[1] and cle not in etat["complet"]:
             return "complet", e, m
-        if FENETRE_CONTROLE[0] <= m <= FENETRE_CONTROLE[1] and cle not in etat["controle"]:
+        fait = etat["complet"].get(cle)
+        if (FENETRE_CONTROLE[0] <= m <= FENETRE_CONTROLE[1] and cle not in etat["controle"]
+                and fait and maintenant - z(fait) >= dt.timedelta(minutes=ECART_CONTROLE)):
             return "controle", e, m
         if 0 < m < TROP_TARD and cle not in etat["complet"] and cle not in etat["controle"] and cle not in etat["sautes"]:
             return "saute", e, m
