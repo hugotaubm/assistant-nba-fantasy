@@ -380,13 +380,23 @@ footer ul { list-style: none; padding: 0; margin: 6px 0 0; display: flex; flex-w
   // Sur iPhone/iPad, le bouton lance le raccourci « Recalculer NBA » ; ailleurs, la page GitHub.
   var bouton = document.getElementById("aa-recalculer");
   if (bouton && false && /iPhone|iPad|iPod/.test(navigator.userAgent)) bouton.href = "shortcuts://run-shortcut?name=Recalculer%20NBA";
+  else if (bouton && "nba-recalcul-da74154d082f") {
+    // Un appui : demande envoyée au veilleur (canal ntfy), puis la page attend le nouveau rapport.
+    bouton.addEventListener("click", function (ev) {
+      ev.preventDefault();
+      bouton.style.opacity = ".5"; bouton.style.pointerEvents = "none";
+      fetch("https://ntfy.sh/" + "nba-recalcul-da74154d082f", {method: "POST", body: "recalculer"})
+        .then(function () { location.replace(location.pathname + "?attente=1"); })
+        .catch(function () { location.href = bouton.href; });
+    });
+  }
   // Ouverte par le raccourci avec ?attente=1 : on attend le nouveau rapport puis on recharge.
   if (!/[?&]attente=/.test(location.search)) return;
   var info = document.getElementById("aa-info"), depart = Date.now(), actuel = "2026-10-21T19:26:00";
   info.textContent = "⏳ Calcul en cours… (2 à 4 min)";
   var minuteur = setInterval(function () {
     fetch("etat.json?t=" + Date.now(), {cache: "no-store"}).then(function (r) { return r.json(); }).then(function (e) {
-      if (e.dernier && e.dernier !== actuel) { clearInterval(minuteur); location.replace(location.pathname); }
+      if (e.dernier && e.dernier !== actuel) { clearInterval(minuteur); location.replace(location.pathname + "?v=" + Date.now()); }
     }).catch(function () {});
     if (Date.now() - depart > 8 * 60 * 1000) {
       clearInterval(minuteur);

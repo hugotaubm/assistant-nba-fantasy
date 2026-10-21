@@ -30,5 +30,6 @@
   "malus_back_to_back": 0.92,
   "seuil_changement_plan": 5,
   "force_fort": 25,
-  "force_leger": 8
+  "force_leger": 8,
+  "ntfy_recalcul": "nba-recalcul-da74154d082f"
 }
