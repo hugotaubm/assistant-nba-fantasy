@@ -15,7 +15,7 @@ import serveur
 
 ICI = Path(__file__).resolve().parent
 DOCS = ICI / "docs"
-RECALCUL = os.environ.get("RECALCUL_URL", "")
+RECALCUL = os.environ.get("RECALCUL_URL", "https://github.com/hugotaubm/assistant-nba-fantasy/actions/workflows/assistant.yml")
 RACCOURCI = "shortcuts://run-shortcut?name=" + "Recalculer%20NBA"
 # Le raccourci n'est utilisé que s'il existe ("raccourci_iphone": true dans config.json),
 # sinon iOS afficherait une erreur : le bouton ouvre alors la page GitHub.
