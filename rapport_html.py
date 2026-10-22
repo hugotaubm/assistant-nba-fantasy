@@ -323,6 +323,8 @@ def rendre(ctx):
     al_html += f'<ul class="alerte-site verifier">{av}</ul>' if av else ""
     note = f'<p class="discret">{_e(suivi["note_alertes"])}</p>' if suivi.get("note_alertes") else ""
     chg = "".join(f'<p class="discret">{_e(suivi[k])}</p>' for k in ("changements", "stabilite") if suivi.get(k))
+    if suivi.get("maintenant"):
+        chg += f'<p class="option">💡 {_e(suivi["maintenant"])}</p>'
     afaire_html = f'''
   <section class="afaire" aria-label="À faire avant la prochaine deadline">
     <div class="ech" id="deadline" data-iso="{dl0.isoformat()}">
@@ -515,6 +517,7 @@ td.banc .adv-logo {{ opacity: .5; }}
 .force {{ display: inline-block; font-size: .85rem; font-weight: 600; padding: 0 6px; border-radius: 6px;
   background: var(--repos); white-space: nowrap; }}
 .discret {{ color: var(--doux); font-size: .9rem; margin: 10px 0 0; }}
+.option {{ font-size: .95rem; margin: 10px 0 0; padding: 8px 10px; border-radius: 8px; background: var(--fond); }}
 details.semaine > summary, #gw2 > summary {{ cursor: pointer; }}
 details.semaine > summary h2 {{ display: inline; }}
 #gw2 {{ margin: 0 0 10px; color: var(--action); font-weight: 600; }}

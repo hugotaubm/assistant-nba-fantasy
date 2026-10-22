@@ -498,7 +498,8 @@ def mon_equipe(mt, cfg, joueurs, boot, gw):
 
 # ----------------------------------------------------------------------------- optimisation
 def optimiser(joueurs, equipe, banque, prix_vente, gratuits, cap_dispo, jours, joue, gw_suiv, cfg,
-              transferts=True, libre=False, assurance=None, interdits=(), forcer=(), jours_transfert=None):
+              transferts=True, libre=False, assurance=None, interdits=(), forcer=(), jours_transfert=None,
+              entree_jour0=False):
     """Plan jour par jour sur la Gameweek en cours + la suivante (pondérée par poids_futur).
 
     Variables : effectif de chaque jour (s), entrées (in), titulaires (y), capitaine (c).
@@ -508,6 +509,7 @@ def optimiser(joueurs, equipe, banque, prix_vente, gratuits, cap_dispo, jours, j
     transferts=False : aucun transfert (référence « ne rien faire »).
     interdits : joueurs qu'on s'interdit d'acheter cette semaine (mesure de la force d'un conseil).
     forcer : [(sortant, entrant, id_event)] transferts imposés (stabilité du conseil d'un calcul à l'autre).
+    entree_jour0 : impose au moins un transfert avant la prochaine deadline (voir option_maintenant).
     assurance : {id_event: [V1, V2, …]} = valeur, à partir de ce jour, d'avoir encore au moins 1, 2, …
     transferts en réserve pour remplacer un blessé (voir valeur_reserve). Le transfert qui fait passer
     la réserve de k à k-1 coûte V_k du jour où il est fait."""
@@ -616,6 +618,8 @@ def optimiser(joueurs, equipe, banque, prix_vente, gratuits, cap_dispo, jours, j
         if co:
             co[h] = -1
             row(co, -np.inf, g)
+    if entree_jour0 and transferts and not libre:
+        row({idx[("in", i, 0)]: 1 for i in range(n)}, 1, np.inf)
 
     for d, e in enumerate(tous):
         ys = [i for i in range(n) if ("y", i, d) in idx]
@@ -725,6 +729,27 @@ def meilleur_plan(*args, libre=False):
 def paires(sortants, entrants, joueurs):
     """Associe chaque sortant à un entrant du même poste (pour l'affichage)."""
     return list(zip(sorted(sortants, key=lambda q: joueurs[q]["poste"]), sorted(entrants, key=lambda q: joueurs[q]["poste"])))
+
+
+def option_maintenant(plan, args_plan, base, cfg, joueurs):
+    """Quand des places de titulaires restent vides au prochain jour et qu'aucun transfert n'y est prévu,
+    compare le plan avec « au moins un transfert dès ce jour-là », pour montrer l'arbitrage :
+    points gagnés tout de suite contre transfert(s) gardé(s) en réserve pour un blessé."""
+    j0 = plan["plan"][0]
+    if j0["entrants"] or len(j0["titulaires"]) >= 5 or args_plan[4] <= 0:
+        return ""
+    f = optimiser(*args_plan, transferts=True, assurance=base["assurance"], entree_jour0=True)
+    if not f:
+        return ""
+    pts = lambda r: r["pts_semaine"] + cfg["poids_futur"] * sum(jp["points"] for jp in r["plan2"]) - 100 * r["hits"]
+    jour = lambda ev: ev["name"].split(" - ")[-1]
+    tr = " ; ".join(f"{jour(ev)} : " + ", ".join(f"{nom(joueurs, a)} → {nom(joueurs, b)}" for a, b in paires(so, en, joueurs))
+                    for ev, so, en in f["transferts"])
+    d_pts, d_score = pts(f) - pts(plan), f["score"] - plan["score"]
+    verdict = "les deux se valent, à toi de choisir" if d_score > -5 else "l'assistant préfère attendre"
+    return (f"Option « transférer dès {jour(j0['event'])} » (seulement {len(j0['titulaires'])} titulaire(s) ce jour-là) : {tr}. "
+            f"Points projetés {d_pts:+.0f} par rapport au plan conseillé, mais avec moins de transferts en réserve "
+            f"pour remplacer un blessé : bilan {d_score:+.0f} pts → {verdict}.")
 
 
 def quand_txt(ev):
@@ -910,6 +935,8 @@ def rapport(joueurs, equipe, banque, gratuits, cap_dispo, gw, jours, joue, match
         P(suivi["changements"])
     if suivi.get("stabilite"):
         P(suivi["stabilite"])
+    if suivi.get("maintenant"):
+        P(suivi["maintenant"])
     alertes = [pid for pid in equipe if joueurs[pid]["dispo"] < 1 or joueurs[pid]["news"]]
     if alertes:
         P("⚠ ALERTES")
@@ -1038,8 +1065,14 @@ def main():
                 plan = f
     t_force = dt.datetime.now()
     forces = forces_conseils(plan, args_plan, construction, cfg, joueurs, joue)
+    try:   # simple éclairage : ne doit jamais faire échouer le calcul
+        maintenant_txt = "" if construction else option_maintenant(plan, args_plan, base, cfg, joueurs)
+    except Exception as ex:
+        maintenant_txt = ""
+        print(f"  (option « transférer maintenant » non calculée : {ex!r})")
     alertes, a_verifier, note_alertes = alertes_equipe(mt, plan, joueurs, joue)
     suivi = dict(forces=forces, alertes=alertes, a_verifier=a_verifier, note_alertes=note_alertes, stabilite=stabilite,
+                 maintenant=maintenant_txt,
                  changements=changements(prec, plan, joueurs, boot, gw), source_equipe=src_equipe)
     print(f"  (force des conseils : {(dt.datetime.now() - t_force).seconds} s)")
     texte, page = rapport(joueurs, equipe, banque, gratuits, cap_dispo, gw, jours, joue, matchs, plan, base, sources, src_equipe, boot,
