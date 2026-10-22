@@ -8,6 +8,12 @@ Pour chaque Gameday terminé :
   - le meilleur cinq possible avec ton effectif (après coup) : points laissés sur le banc ;
 Puis, sur toute la ligue, la qualité des projections : biais, erreur moyenne, joueurs projetés
 qui n'ont pas joué, plus grosses erreurs, et vérification du barème de points.
+
+Calibration : assistant.py enregistre avant chaque deadline les points attendus par le modèle
+(rapport/projections/<event>.json, sans calibration). Ici, on les compare aux points réels par groupe
+de rang (titulaire, 1er remplaçant, fin de rotation) et on écrit rapport/calibration.json, que
+assistant.py applique ensuite aux projections. Les facteurs sont tirés vers 1 tant qu'il y a peu de
+matchs (CALIB_K) et bornés (CALIB_MIN, CALIB_MAX).
 """
 import json, statistics as st, urllib.request
 from pathlib import Path
@@ -15,6 +21,15 @@ from pathlib import Path
 ICI = Path(__file__).resolve().parent
 API = "https://nbafantasy.nba.com/api/"
 UA = {"User-Agent": "Mozilla/5.0 (assistant-nba-fantasy perso)"}
+CALIB_K = 400                  # pts projetés « fictifs » à 100 % : environ 15 matchs avant de trop bouger
+CALIB_MIN, CALIB_MAX = 0.75, 1.15
+
+
+def projections_modele(event_id):
+    try:
+        return json.loads((ICI / "rapport" / "projections" / f"{event_id}.json").read_text(encoding="utf-8"))["projections"]
+    except Exception:
+        return None
 
 
 def get(chemin):
@@ -57,6 +72,7 @@ def main():
     nom = lambda pid: f"{el[pid]['web_name']} ({eq[el[pid]['team']]})"
 
     tous = []          # (pid, event, proj, réel, minutes, points du jeu, points formule)
+    calib = {}         # groupe → [réel, projeté par le modèle, matchs]
     exemple = None
     print("=" * 70)
     print("BILAN DES GAMEDAYS JOUÉS")
@@ -67,6 +83,13 @@ def main():
         exemple = exemple or next((s for s in stats.values() if s.get("minutes")), None)
         fixtures = get(f"fixtures/?event={e['id']}")
         equipes_jouent = {f["team_h"] for f in fixtures} | {f["team_a"] for f in fixtures}
+        modele = projections_modele(e["id"])
+        if modele:
+            for pid_s, (v, grp) in modele.items():
+                c = calib.setdefault(grp, [0.0, 0.0, 0])
+                c[0] += stats.get(int(pid_s), {}).get("total_points", 0) / 10
+                c[1] += v
+                c[2] += 1
         for pid, s in stats.items():
             if pid in el and el[pid]["team"] in equipes_jouent:
                 tous.append((pid, e["id"], proj(pid), s.get("total_points", 0) / 10, s.get("minutes", 0),
@@ -92,7 +115,7 @@ def main():
             liste.append((pts, el[pid]["element_type"]))
             role = "TITULAIRE" if p["multiplier"] > 0 else "banc"
             cap = " (CAPITAINE x%d)" % p["multiplier"] if p.get("is_captain") and p["multiplier"] > 1 else ""
-            pr = proj(pid) if joue else 0
+            pr = (modele.get(str(pid), [0])[0] if modele else proj(pid)) if joue else 0
             if p["multiplier"] > 0:
                 reel += pts * p["multiplier"]
                 tit_sans_cap += pts
@@ -100,7 +123,8 @@ def main():
             etat = f"{s.get('minutes', 0):>2} min" if joue else "pas de match"
             print(f"  {role:<9} {nom(pid):<28} {etat:<13} réel {pts:5.1f} | projeté {pr:5.1f}{cap}")
         best = meilleur_cinq(liste)
-        print(f"  → Titulaires : {reel:.1f} pts réels pour {proj_tit:.1f} projetés ({reel - proj_tit:+.1f}).")
+        print(f"  → Titulaires : {reel:.1f} pts réels pour {proj_tit:.1f} projetés ({reel - proj_tit:+.1f}) "
+              f"[{'projection du modèle' if modele else 'projection d avant-saison, modèle non enregistré'}].")
         print(f"  → Meilleur cinq possible après coup : {best:.1f} pts (hors capitaine), "
               f"soit {best - tit_sans_cap:.1f} pts laissés sur le banc.")
 
@@ -145,6 +169,23 @@ def main():
     print("Plus grosses sous-estimations :")
     for t in sorted(joues, key=lambda t: t[2] - t[3])[:8]:
         print(f"  - {nom(t[0])} (event {t[1]}) : projeté {t[2]:.1f}, réel {t[3]:.1f} en {t[4]} min")
+
+    # Calibration à partir des projections réellement utilisées par le modèle
+    print("\n" + "=" * 70)
+    print("CALIBRATION DU MODÈLE (points réels / points attendus, par rang)")
+    print("=" * 70)
+    facteurs = {}
+    for grp, (r, pr_, n) in sorted(calib.items()):
+        f = min(CALIB_MAX, max(CALIB_MIN, (r + CALIB_K) / (pr_ + CALIB_K)))
+        facteurs[grp] = round(f, 3)
+        print(f"  rang {grp:<3} : {n:>4} joueurs-matchs | réel {r:7.0f} / attendu {pr_:7.0f} = {r / pr_ if pr_ else 0:.2f} "
+              f"→ facteur appliqué {f:.3f}")
+    if facteurs:
+        (ICI / "rapport" / "calibration.json").write_text(json.dumps(
+            {"facteurs": facteurs, "detail": {g: [round(a, 1), round(b, 1), n] for g, (a, b, n) in calib.items()},
+             "k": CALIB_K}, ensure_ascii=False), encoding="utf-8")
+    else:
+        print("  Pas encore de projections du modèle enregistrées : la calibration démarre au prochain Gameday.")
 
     # Barème : les points du jeu correspondent-ils à notre formule ?
     print("\nVérification du barème (points du jeu vs formule des projections) :")

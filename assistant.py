@@ -53,6 +53,7 @@ def lire_config():
     cfg.setdefault("poids_presence_avant_saison", 2)   # matchs « fictifs » donnés à la fiabilité d'avant-saison
     cfg.setdefault("poids_minutes_avant_saison", 3)    # matchs « fictifs » donnés aux minutes projetées
     cfg.setdefault("fiabilite_rang", {"3": 0.9, "4+": 0.75})   # 3e ou au-delà dans la hiérarchie de son poste
+    cfg.setdefault("calibration_auto", True)    # corrige les projections avec leurs erreurs passées (bilan.py)
     cfg.setdefault("seuil_changement_plan", 5)  # pts mini pour changer un transfert déjà conseillé
     cfg.setdefault("force_fort", 25)            # badge 🟢 Fort à partir de ce gain (pts)
     cfg.setdefault("force_leger", 8)            # badge 🟡 Léger à partir de ce gain, sinon ⚪ Facultatif # pts de gain mini pour proposer une autre équipe avant la 1re deadline
@@ -280,9 +281,25 @@ def minutes_saison(boot, hors_ligne):
     return res
 
 
+def groupe_rang(rang):
+    """Groupe de calibration d'un joueur selon son rang dans la hiérarchie ESPN de son poste."""
+    return "1" if rang == 1 else "2" if rang == 2 else "3+" if rang else "?"
+
+
+def lire_calibration(cfg):
+    """Facteurs calculés par bilan.py : points réels / points projetés par le modèle, par groupe de rang."""
+    if not cfg.get("calibration_auto"):
+        return {}
+    try:
+        return json.loads((ICI / "rapport" / "calibration.json").read_text(encoding="utf-8"))["facteurs"]
+    except Exception:
+        return {}
+
+
 def projeter(boot, cfg, saison_commencee, saison=None):
     priors = json.loads((ICI / "priors.json").read_text(encoding="utf-8"))["joueurs"]
     equipes = {t["id"]: t["short_name"] for t in boot["teams"]}
+    calibration = lire_calibration(cfg)
     joueurs = {}
     for e in boot["elements"]:
         pid = e["id"]
@@ -320,6 +337,10 @@ def projeter(boot, cfg, saison_commencee, saison=None):
             w = joues / (joues + cfg["poids_minutes_avant_saison"])
             proj *= (1 - w) + w * min(1.3, (minutes / joues) / v["min_proj"])
         # Hiérarchie de l'équipe (ESPN) : en fin de rotation, risque de ne pas entrer en jeu
+        # Calibration : erreurs passées du modèle pour les joueurs du même rang (voir bilan.py)
+        grp = groupe_rang(rang)
+        calib = calibration.get(grp, 1.0)
+        proj *= calib
         if rang and rang >= 4:
             fiab *= cfg["fiabilite_rang"]["4+"]
         elif rang == 3:
@@ -342,8 +363,24 @@ def projeter(boot, cfg, saison_commencee, saison=None):
         joueurs[pid] = dict(id=pid, nom=e["web_name"], nom_complet=f"{e['first_name']} {e['second_name']}",
                             equipe_id=e["team"], equipe=equipes[e["team"]], poste=e["element_type"],
                             prix=e["now_cost"], proj=proj, dispo=dispo, fiabilite=fiab, b2b=b2b, retour=retour, statut=statut,
-                            news=news, g=g_cur, possede=float(e.get("selected_by_percent") or 0))
+                            news=news, g=g_cur, possede=float(e.get("selected_by_percent") or 0),
+                            rang=grp, calib=calib)
     return joueurs
+
+
+def enregistrer_projections(ev, joueurs, joue):
+    """Garde les points attendus de chaque joueur pour le prochain Gameday (dernier calcul avant la deadline),
+    sans la calibration, pour que bilan.py mesure les erreurs du modèle après coup."""
+    date = (z(ev["deadline_time"]) - dt.timedelta(hours=4)).date()
+    proj = {}
+    for pid, p in joueurs.items():
+        v = ev_jour(p, ev["id"], joue, date)
+        if v > 0:
+            proj[str(pid)] = [round(v / p["calib"], 2), p["rang"]]
+    dossier = ICI / "rapport" / "projections"
+    dossier.mkdir(parents=True, exist_ok=True)
+    (dossier / f"{ev['id']}.json").write_text(json.dumps(
+        {"event": ev["id"], "calcul": dt.datetime.now(dt.timezone.utc).isoformat(), "projections": proj}), encoding="utf-8")
 
 
 def ev_jour(p, ev_id, joue, date_event):
@@ -1065,6 +1102,10 @@ def main():
                 plan = f
     t_force = dt.datetime.now()
     forces = forces_conseils(plan, args_plan, construction, cfg, joueurs, joue)
+    try:
+        enregistrer_projections(jours[0], joueurs, joue)
+    except Exception as ex:
+        print(f"  (projections non enregistrées : {ex!r})")
     try:   # simple éclairage : ne doit jamais faire échouer le calcul
         maintenant_txt = "" if construction else option_maintenant(plan, args_plan, base, cfg, joueurs)
     except Exception as ex:
