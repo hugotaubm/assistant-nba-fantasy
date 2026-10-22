@@ -1,8 +1,8 @@
-Calcul lancé le 22/10/2026 à 15:31:43
+Calcul lancé le 22/10/2026 à 16:02:34
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
-  (force des conseils : 49 s)
+  (force des conseils : 159 s)
 
 === Gameweek 1 — prochaine deadline : Gameweek 1 - Day 3 le ven. 23/10 00h30 (heure de Paris) ===
 Équipe lue depuis : my-team (connecté, à jour en direct) | Banque : 0.0 M$ | Transferts gratuits restants : 2 | Capitaine dispo : oui
@@ -13,6 +13,7 @@ Optimisation (jusqu'à deux minutes)…
   - Active le capitaine le Day 3 sur S.Gilgeous-Alexander
 
 Option « transférer dès Day 3 » (seulement 3 titulaire(s) ce jour-là) : Day 3 : D.Wolf (BKN) → T.da Silva (ORL) ; Day 6 : V.Edgecombe (PHI) → T.Jerome (MEM). Points projetés -28 par rapport au plan conseillé, mais avec moins de transferts en réserve pour remplacer un blessé : bilan -23 pts → l'assistant préfère attendre.
+Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait +105 pts sur cette semaine et la suivante, avec 7 joueur(s) changé(s) (T.Maxey (PHI), T.Jerome (MEM), P.Watson (CLE), J.Kuminga (MIN), A.Gordon (DEN), Y.Lendeborg (GSW), K.Ellis (BKN)) → garde-le (seuil conseillé : +150 pts).
 ▶ CINQ DE DÉPART POUR LE PROCHAIN GAMEDAY
   BC  S.Gilgeous-Alexander (OKC)   proj. 57.3  ← CAPITAINE
   BC  V.Edgecombe (PHI)            proj. 33.4
@@ -38,4 +39,4 @@ Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) 
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 22/10/2026 à 15:32:49 (code de sortie : 0)
+Terminé le 22/10/2026 à 16:05:33 (code de sortie : 0)
