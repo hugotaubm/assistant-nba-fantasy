@@ -1,8 +1,8 @@
-Calcul lancé le 22/10/2026 à 16:02:34
+Calcul lancé le 22/10/2026 à 17:18:42
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
-  (force des conseils : 159 s)
+  (force des conseils : 78 s)
 
 === Gameweek 1 — prochaine deadline : Gameweek 1 - Day 3 le ven. 23/10 00h30 (heure de Paris) ===
 Équipe lue depuis : my-team (connecté, à jour en direct) | Banque : 0.0 M$ | Transferts gratuits restants : 2 | Capitaine dispo : oui
@@ -10,33 +10,46 @@ Optimisation (jusqu'à deux minutes)…
 ⚠ À CORRIGER SUR LE SITE AVANT LA DEADLINE
   - D.Wolf est titulaire mais BKN ne joue pas le Day 3
   - C.Wilson est titulaire mais CHI ne joue pas le Day 3
-  - Active le capitaine le Day 3 sur S.Gilgeous-Alexander
 
-Option « transférer dès Day 3 » (seulement 3 titulaire(s) ce jour-là) : Day 3 : D.Wolf (BKN) → T.da Silva (ORL) ; Day 6 : V.Edgecombe (PHI) → T.Jerome (MEM). Points projetés -28 par rapport au plan conseillé, mais avec moins de transferts en réserve pour remplacer un blessé : bilan -23 pts → l'assistant préfère attendre.
-Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait +105 pts sur cette semaine et la suivante, avec 7 joueur(s) changé(s) (T.Maxey (PHI), T.Jerome (MEM), P.Watson (CLE), J.Kuminga (MIN), A.Gordon (DEN), Y.Lendeborg (GSW), K.Ellis (BKN)) → garde-le (seuil conseillé : +150 pts).
+Changements depuis le calcul de 16h05 : capitaine : S.Gilgeous-Alexander. Raison probable : pas de nouvelle info : simple écart entre plans presque équivalents.
+Option « transférer dès Day 3 » (seulement 3 titulaire(s) ce jour-là) : Day 3 : D.Wolf (BKN) → T.da Silva (ORL) ; Day 6 : V.Edgecombe (PHI) → T.Jerome (MEM). Points projetés -29 par rapport au plan conseillé, mais avec moins de transferts en réserve pour remplacer un blessé : bilan -22 pts → l'assistant préfère attendre.
+Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait +124 pts sur cette semaine et la suivante, avec 7 joueur(s) changé(s) (T.Maxey (PHI), T.Jerome (MEM), N.Reid (CHA), P.Watson (CLE), C.Johnson (DEN), P.Achiuwa (SAC), K.Ellis (BKN)) → garde-le (seuil conseillé : +150 pts).
 ▶ CINQ DE DÉPART POUR LE PROCHAIN GAMEDAY
-  BC  S.Gilgeous-Alexander (OKC)   proj. 57.3  ← CAPITAINE
+  BC  S.Gilgeous-Alexander (OKC)   proj. 57.3
   BC  V.Edgecombe (PHI)            proj. 33.4
   FC  J.Williams (OKC)             proj. 18.7
   (seulement 3 de tes joueurs jouent ce jour-là)
 
 ▶ TRANSFERTS
   Avant la deadline de Gameweek 1 - Day 6 (dim. 25/10 21h30) :
-  - Vendre D.Wolf (BKN)               → Acheter W.Kessler (LAL) (11.0 M$, proj. 38.0)  [⚪ Facultatif : +3 pts]
-  - Vendre V.Wembanyama (SAS)         → Acheter D.Sabonis (SAC) (15.0 M$, proj. 48.7)  [⚪ Facultatif : +3 pts]
-  Gain attendu (cette semaine + suivante pondérée) : +141 pts vs ne rien faire
+  - Vendre D.Wolf (BKN)               → Acheter W.Kessler (LAL) (11.0 M$, proj. 38.0)  [⚪ Facultatif : +4 pts]
+  - Vendre V.Wembanyama (SAS)         → Acheter D.Sabonis (SAC) (15.0 M$, proj. 48.7)  [🟡 Léger : +10 pts]
+  Gain attendu (cette semaine + suivante pondérée) : +200 pts vs ne rien faire
   Relance l'assistant avant chaque deadline : le conseil est recalculé avec les dernières blessures.
   Prévu la semaine suivante (indicatif) : Day 1 : V.Edgecombe→T.Jerome ; Day 2 : S.Gilgeous-Alexander→L.Doncic
 
+▶ TES JOUEURS, DU MOINS UTILE AU PLUS UTILE (points attendus ; semaine suivante pondérée × 0.8)
+  D.Wolf (BKN)                  6.5 M$ | 20.1 pts/match, fiabilité 0.52 | cette semaine 2 m.   22 pts | suivante 3 m.   32 pts |  7.2 pts/M$
+  N.Traore (BKN)                6.5 M$ | 18.8 pts/match, fiabilité 0.82 | cette semaine 2 m.   32 pts | suivante 3 m.   46 pts | 10.6 pts/M$
+  J.Williams (OKC)              6.5 M$ | 18.7 pts/match, fiabilité 0.88 | cette semaine 2 m.   33 pts | suivante 3 m.   50 pts | 11.3 pts/M$
+  J.Walsh (BOS)                 5.0 M$ | 14.9 pts/match, fiabilité 0.91 | cette semaine 1 m.   14 pts | suivante 4 m.   55 pts | 11.5 pts/M$
+  V.Wembanyama (SAS)           19.5 M$ | 58.8 pts/match, fiabilité 0.88 | cette semaine 2 m.  102 pts | suivante 3 m.  154 pts | 11.6 pts/M$
+  B.Burries (MIL)               7.0 M$ | 21.2 pts/match, fiabilité 0.91 | cette semaine 2 m.   39 pts | suivante 3 m.   58 pts | 12.2 pts/M$
+  S.Gilgeous-Alexander (OKC)   18.5 M$ | 57.3 pts/match, fiabilité 0.95 | cette semaine 2 m.  109 pts | suivante 3 m.  162 pts | 12.9 pts/M$
+  V.Edgecombe (PHI)            12.0 M$ | 33.4 pts/match, fiabilité 0.92 | cette semaine 3 m.   92 pts | suivante 3 m.   92 pts | 13.8 pts/M$
+  C.Wilson (CHI)               10.5 M$ | 37.3 pts/match, fiabilité 0.91 | cette semaine 2 m.   69 pts | suivante 3 m.  102 pts | 14.3 pts/M$
+  D.Acuff Jr. (SAC)             8.0 M$ | 34.4 pts/match, fiabilité 0.93 | cette semaine 2 m.   64 pts | suivante 3 m.   96 pts | 17.5 pts/M$
+
 ▶ PLAN JOUR PAR JOUR (cette Gameweek)
-  Day 3  deadline ven. 23/10 00h30 : S.Gilgeous-Alexander (C), J.Williams, V.Edgecombe  [~156 pts]
+  Day 3  deadline ven. 23/10 00h30 : S.Gilgeous-Alexander, J.Williams, V.Edgecombe  [~102 pts]
   Day 4  deadline ven. 23/10 21h30 : J.Walsh, C.Wilson, B.Burries, D.Acuff Jr., V.Wembanyama  [~151 pts]
   Day 5  deadline sam. 24/10 23h30 : N.Traore, C.Wilson (B2B), B.Burries (B2B), V.Edgecombe, V.Wembanyama (B2B)  [~151 pts]
-  Day 6  deadline dim. 25/10 21h30 : W.Kessler, S.Gilgeous-Alexander, V.Edgecombe (B2B), D.Sabonis, D.Acuff Jr.  [~193 pts]
+  Day 6  deadline dim. 25/10 21h30 : W.Kessler, S.Gilgeous-Alexander (C), V.Edgecombe (B2B), D.Sabonis, D.Acuff Jr.  [~248 pts]
+  → Garde ton capitaine pour Gameweek 1 - Day 6 (S.Gilgeous-Alexander (OKC)).  [⚪ Au choix (autre jour ≈ pareil) : +0 pts]
 
 Projection Gameweek (jours restants) : ~652 pts  |  sans transfert : ~603 pts
 Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) = non utilisé, mon équipe = my-team (connecté, à jour en direct)
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 22/10/2026 à 16:05:33 (code de sortie : 0)
+Terminé le 22/10/2026 à 17:20:07 (code de sortie : 0)
