@@ -16,7 +16,8 @@
 "b2b_n": 12,
 "b2b_presence": 0.83,
 "presence": 0.95,
-"age": 25
+"age": 25,
+"min_proj": 30.6
 },
 "2": {
 "nom": "J.Johnson",
@@ -32,7 +33,8 @@
 "b2b_n": 13,
 "b2b_presence": 0.69,
 "presence": 0.89,
-"age": 24
+"age": 24,
+"min_proj": 36.7
 },
 "3": {
 "nom": "M.Gueye",
@@ -48,7 +50,8 @@
 "b2b_n": 12,
 "b2b_presence": 1.0,
 "presence": 0.95,
-"age": 23
+"age": 23,
+"min_proj": 15.4
 },
 "4": {
 "nom": "D.Daniels",
@@ -64,7 +67,8 @@
 "b2b_n": 13,
 "b2b_presence": 0.92,
 "presence": 0.93,
-"age": 23
+"age": 23,
+"min_proj": 32.4
 },
 "5": {
 "nom": "A.Newell",
@@ -80,7 +84,8 @@
 "b2b_n": 6,
 "b2b_presence": 1.0,
 "presence": 0.67,
-"age": 21
+"age": 21,
+"min_proj": 14.1
 },
 "6": {
 "nom": "N.Alexander-Walker",
@@ -96,7 +101,8 @@
 "b2b_n": 13,
 "b2b_presence": 0.92,
 "presence": 0.97,
-"age": 28
+"age": 28,
+"min_proj": 32.3
 },
 "7": {
 "nom": "J.Wilson",
@@ -112,7 +118,8 @@
 "b2b_n": 12,
 "b2b_presence": 1.0,
 "presence": 0.64,
-"age": 25
+"age": 25,
+"min_proj": 18.0
 },
 "8": {
 "nom": "R.Nembhard",
@@ -142,7 +149,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.91,
 "presence": 0.82,
-"age": 33
+"age": 33,
+"min_proj": 18.2
 },
 "10": {
 "nom": "R.Dennis",
@@ -185,7 +193,8 @@
 "b2b_n": 13,
 "b2b_presence": 0.77,
 "presence": 0.91,
-"age": 27
+"age": 27,
+"min_proj": 28.1
 },
 "13": {
 "nom": "A.Wiggins",
@@ -201,7 +210,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.91,
 "presence": 0.92,
-"age": 27
+"age": 27,
+"min_proj": 20.3
 },
 "14": {
 "nom": "Z.Ejiofor",
@@ -224,7 +234,8 @@
 "nb_sources": 1,
 "malus_b2b": 1.022,
 "age": 19,
-"b2b_n": 0
+"b2b_n": 0,
+"min_proj": 24.8
 },
 "16": {
 "nom": "K.Gilbert",
@@ -247,7 +258,8 @@
 "b2b_n": 6,
 "b2b_presence": 1.0,
 "presence": 0.93,
-"age": 27
+"age": 27,
+"min_proj": 20.3
 },
 "18": {
 "nom": "C.McCollum",
@@ -263,7 +275,8 @@
 "b2b_n": 9,
 "b2b_presence": 1.0,
 "presence": 1.0,
-"age": 35
+"age": 35,
+"min_proj": 30.2
 },
 "19": {
 "nom": "H.Veesaar",
@@ -310,7 +323,8 @@
 "b2b_n": 1,
 "b2b_presence": 0.0,
 "presence": 0.87,
-"age": 28
+"age": 28,
+"min_proj": 36.2
 },
 "23": {
 "nom": "D.White",
@@ -326,7 +340,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.91,
 "presence": 0.95,
-"age": 32
+"age": 32,
+"min_proj": 34.3
 },
 "24": {
 "nom": "P.Pritchard",
@@ -342,7 +357,8 @@
 "b2b_n": 13,
 "b2b_presence": 1.0,
 "presence": 0.97,
-"age": 28
+"age": 28,
+"min_proj": 30.8
 },
 "25": {
 "nom": "S.Hauser",
@@ -358,7 +374,8 @@
 "b2b_n": 13,
 "b2b_presence": 0.85,
 "presence": 0.96,
-"age": 28
+"age": 28,
+"min_proj": 25.3
 },
 "26": {
 "nom": "J.Walsh",
@@ -374,7 +391,8 @@
 "b2b_n": 11,
 "b2b_presence": 1.0,
 "presence": 0.9,
-"age": 22
+"age": 22,
+"min_proj": 21.5
 },
 "27": {
 "nom": "N.Queta",
@@ -390,7 +408,8 @@
 "b2b_n": 13,
 "b2b_presence": 0.77,
 "presence": 0.93,
-"age": 27
+"age": 27,
+"min_proj": 23.6
 },
 "28": {
 "nom": "B.Scheierman",
@@ -406,7 +425,8 @@
 "b2b_n": 11,
 "b2b_presence": 1.0,
 "presence": 0.97,
-"age": 26
+"age": 26,
+"min_proj": 25.1
 },
 "29": {
 "nom": "H.González",
@@ -422,7 +442,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.91,
 "presence": 0.93,
-"age": 20
+"age": 20,
+"min_proj": 21.7
 },
 "30": {
 "nom": "A.Williams",
@@ -479,7 +500,8 @@
 "b2b_n": 10,
 "b2b_presence": 0.7,
 "presence": 0.79,
-"age": 39
+"age": 39,
+"min_proj": 17.6
 },
 "34": {
 "nom": "M.Robinson",
@@ -495,7 +517,8 @@
 "b2b_n": 8,
 "b2b_presence": 0.0,
 "presence": 0.77,
-"age": 28
+"age": 28,
+"min_proj": 25.4
 },
 "35": {
 "nom": "P.George",
@@ -511,7 +534,8 @@
 "b2b_n": 3,
 "b2b_presence": 0.67,
 "presence": 0.78,
-"age": 36
+"age": 36,
+"min_proj": 33.2
 },
 "36": {
 "nom": "C.Cenac Jr.",
@@ -575,7 +599,8 @@
 "b2b_n": 9,
 "b2b_presence": 0.89,
 "presence": 0.82,
-"age": 30
+"age": 30,
+"min_proj": 23.8
 },
 "42": {
 "nom": "D.Sharpe",
@@ -591,7 +616,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.91,
 "presence": 0.97,
-"age": 24
+"age": 24,
+"min_proj": 22.0
 },
 "43": {
 "nom": "N.Clowney",
@@ -607,7 +633,8 @@
 "b2b_n": 11,
 "b2b_presence": 1.0,
 "presence": 0.94,
-"age": 22
+"age": 22,
+"min_proj": 19.6
 },
 "44": {
 "nom": "E.Dëmin",
@@ -623,7 +650,8 @@
 "b2b_n": 9,
 "b2b_presence": 0.56,
 "presence": 0.86,
-"age": 20
+"age": 20,
+"min_proj": 32.3
 },
 "45": {
 "nom": "D.Powell",
@@ -667,7 +695,8 @@
 "b2b_n": 8,
 "b2b_presence": 1.0,
 "presence": 0.84,
-"age": 20
+"age": 20,
+"min_proj": 25.0
 },
 "48": {
 "nom": "D.Wolf",
@@ -683,7 +712,8 @@
 "b2b_n": 9,
 "b2b_presence": 1.0,
 "presence": 0.95,
-"age": 22
+"age": 22,
+"min_proj": 24.1
 },
 "49": {
 "nom": "M.Porter Jr.",
@@ -699,7 +729,8 @@
 "b2b_n": 7,
 "b2b_presence": 0.57,
 "presence": 0.82,
-"age": 28
+"age": 28,
+"min_proj": 33.5
 },
 "50": {
 "nom": "C.Johnson",
@@ -728,7 +759,8 @@
 "b2b_n": 13,
 "b2b_presence": 1.0,
 "presence": 0.99,
-"age": 31
+"age": 31,
+"min_proj": 34.3
 },
 "52": {
 "nom": "M.Wagner",
@@ -744,7 +776,8 @@
 "b2b_n": 5,
 "b2b_presence": 1.0,
 "presence": 0.91,
-"age": 29
+"age": 29,
+"min_proj": 13.3
 },
 "53": {
 "nom": "T.Bilodeau",
@@ -767,7 +800,8 @@
 "nb_sources": 1,
 "malus_b2b": 1.022,
 "age": 20,
-"b2b_n": 0
+"b2b_n": 0,
+"min_proj": 30.2
 },
 "55": {
 "nom": "K.Ellis",
@@ -783,7 +817,8 @@
 "b2b_n": 14,
 "b2b_presence": 1.0,
 "presence": 0.94,
-"age": 26
+"age": 26,
+"min_proj": 21.0
 },
 "56": {
 "nom": "J.Jefferson",
@@ -823,7 +858,8 @@
 "b2b_n": 13,
 "b2b_presence": 0.92,
 "presence": 0.93,
-"age": 24
+"age": 24,
+"min_proj": 24.6
 },
 "60": {
 "nom": "G.Williams",
@@ -839,7 +875,8 @@
 "b2b_n": 8,
 "b2b_presence": 0.0,
 "presence": 0.77,
-"age": 27
+"age": 27,
+"min_proj": 19.4
 },
 "61": {
 "nom": "B.Miller",
@@ -855,7 +892,8 @@
 "b2b_n": 13,
 "b2b_presence": 0.85,
 "presence": 0.94,
-"age": 23
+"age": 23,
+"min_proj": 34.0
 },
 "62": {
 "nom": "T.Salaun",
@@ -899,7 +937,8 @@
 "b2b_n": 12,
 "b2b_presence": 0.83,
 "presence": 0.94,
-"age": 24
+"age": 24,
+"min_proj": 23.2
 },
 "65": {
 "nom": "K.Knueppel",
@@ -915,7 +954,8 @@
 "b2b_n": 16,
 "b2b_presence": 1.0,
 "presence": 0.99,
-"age": 21
+"age": 21,
+"min_proj": 34.2
 },
 "66": {
 "nom": "L.McNeeley",
@@ -931,7 +971,8 @@
 "b2b_n": 7,
 "b2b_presence": 0.86,
 "presence": 0.77,
-"age": 21
+"age": 21,
+"min_proj": 19.5
 },
 "67": {
 "nom": "P.Connaughton",
@@ -947,7 +988,8 @@
 "b2b_n": 7,
 "b2b_presence": 0.86,
 "presence": 0.73,
-"age": 33
+"age": 33,
+"min_proj": 9.4
 },
 "68": {
 "nom": "C.White",
@@ -963,7 +1005,8 @@
 "b2b_n": 6,
 "b2b_presence": 0.67,
 "presence": 0.79,
-"age": 26
+"age": 26,
+"min_proj": 33.5
 },
 "69": {
 "nom": "D.Finney-Smith",
@@ -979,7 +1022,8 @@
 "b2b_n": 4,
 "b2b_presence": 0.0,
 "presence": 0.69,
-"age": 33
+"age": 33,
+"min_proj": 18.1
 },
 "70": {
 "nom": "P.Hall",
@@ -1008,7 +1052,8 @@
 "b2b_n": 14,
 "b2b_presence": 0.93,
 "presence": 0.96,
-"age": 27
+"age": 27,
+"min_proj": 31.7
 },
 "72": {
 "nom": "G.Allen",
@@ -1024,7 +1069,8 @@
 "b2b_n": 8,
 "b2b_presence": 0.62,
 "presence": 0.8,
-"age": 31
+"age": 31,
+"min_proj": 26.1
 },
 "73": {
 "nom": "R.O'Neale",
@@ -1040,7 +1086,8 @@
 "b2b_n": 15,
 "b2b_presence": 1.0,
 "presence": 0.99,
-"age": 33
+"age": 33,
+"min_proj": 24.5
 },
 "74": {
 "nom": "M.Ajayi",
@@ -1080,7 +1127,8 @@
 "b2b_n": 14,
 "b2b_presence": 1.0,
 "presence": 0.97,
-"age": 33
+"age": 33,
+"min_proj": 24.7
 },
 "78": {
 "nom": "H.Steinbach",
@@ -1093,7 +1141,8 @@
 "nb_sources": 1,
 "malus_b2b": 1.022,
 "age": 20,
-"b2b_n": 0
+"b2b_n": 0,
+"min_proj": 17.9
 },
 "79": {
 "nom": "D.Armstrong",
@@ -1123,7 +1172,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.91,
 "presence": 0.93,
-"age": 27
+"age": 27,
+"min_proj": 27.8
 },
 "82": {
 "nom": "P.Williams",
@@ -1139,7 +1189,8 @@
 "b2b_n": 13,
 "b2b_presence": 0.85,
 "presence": 0.92,
-"age": 25
+"age": 25,
+"min_proj": 20.0
 },
 "83": {
 "nom": "J.Smith",
@@ -1155,7 +1206,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.73,
 "presence": 0.87,
-"age": 26
+"age": 26,
+"min_proj": 19.5
 },
 "84": {
 "nom": "J.Giddey",
@@ -1171,7 +1223,8 @@
 "b2b_n": 10,
 "b2b_presence": 0.9,
 "presence": 0.91,
-"age": 24
+"age": 24,
+"min_proj": 35.5
 },
 "85": {
 "nom": "M.Buzelis",
@@ -1187,7 +1240,8 @@
 "b2b_n": 14,
 "b2b_presence": 0.93,
 "presence": 0.96,
-"age": 22
+"age": 22,
+"min_proj": 30.5
 },
 "86": {
 "nom": "T.Jones",
@@ -1203,7 +1257,8 @@
 "b2b_n": 12,
 "b2b_presence": 0.92,
 "presence": 0.94,
-"age": 26
+"age": 26,
+"min_proj": 22.3
 },
 "87": {
 "nom": "Z.Collins",
@@ -1219,7 +1274,8 @@
 "b2b_n": 1,
 "b2b_presence": 1.0,
 "presence": 1.0,
-"age": 28
+"age": 28,
+"min_proj": 14.7
 },
 "88": {
 "nom": "N.Essengue",
@@ -1232,7 +1288,8 @@
 "nb_sources": 1,
 "malus_b2b": 1.022,
 "age": 19,
-"b2b_n": 0
+"b2b_n": 0,
+"min_proj": 7.9
 },
 "89": {
 "nom": "I.Okoro",
@@ -1248,7 +1305,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.82,
 "presence": 0.94,
-"age": 25
+"age": 25,
+"min_proj": 21.6
 },
 "90": {
 "nom": "N.Powell",
@@ -1264,7 +1322,8 @@
 "b2b_n": 13,
 "b2b_presence": 0.69,
 "presence": 0.81,
-"age": 33
+"age": 33,
+"min_proj": 33.8
 },
 "91": {
 "nom": "L.Miller",
@@ -1280,7 +1339,8 @@
 "b2b_n": 9,
 "b2b_presence": 0.44,
 "presence": 0.66,
-"age": 22
+"age": 22,
+"min_proj": 13.6
 },
 "92": {
 "nom": "R.Dillingham",
@@ -1296,7 +1356,8 @@
 "b2b_n": 10,
 "b2b_presence": 0.9,
 "presence": 0.87,
-"age": 21
+"age": 21,
+"min_proj": 20.5
 },
 "93": {
 "nom": "T.Awaka",
@@ -1333,7 +1394,8 @@
 "nb_sources": 1,
 "malus_b2b": 1.022,
 "age": 20,
-"b2b_n": 0
+"b2b_n": 0,
+"min_proj": 32.1
 },
 "97": {
 "nom": "H.Mallette",
@@ -1376,7 +1438,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.82,
 "presence": 0.91,
-"age": 25
+"age": 25,
+"min_proj": 33.3
 },
 "101": {
 "nom": "J.Allen",
@@ -1392,7 +1455,8 @@
 "b2b_n": 7,
 "b2b_presence": 1.0,
 "presence": 0.87,
-"age": 28
+"age": 28,
+"min_proj": 30.3
 },
 "102": {
 "nom": "D.Mitchell",
@@ -1408,7 +1472,8 @@
 "b2b_n": 13,
 "b2b_presence": 0.85,
 "presence": 0.9,
-"age": 30
+"age": 30,
+"min_proj": 33.9
 },
 "103": {
 "nom": "S.Merrill",
@@ -1424,7 +1489,8 @@
 "b2b_n": 9,
 "b2b_presence": 0.89,
 "presence": 0.86,
-"age": 30
+"age": 30,
+"min_proj": 23.0
 },
 "104": {
 "nom": "C.Porter",
@@ -1454,7 +1520,8 @@
 "b2b_n": 10,
 "b2b_presence": 1.0,
 "presence": 0.95,
-"age": 23
+"age": 23,
+"min_proj": 26.7
 },
 "106": {
 "nom": "N.Tomlin",
@@ -1498,7 +1565,8 @@
 "b2b_n": 10,
 "b2b_presence": 0.9,
 "presence": 0.8,
-"age": 29
+"age": 29,
+"min_proj": 12.6
 },
 "109": {
 "nom": "P.Watson",
@@ -1514,7 +1582,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.91,
 "presence": 0.92,
-"age": 24
+"age": 24,
+"min_proj": 30.7
 },
 "110": {
 "nom": "J.Harden",
@@ -1530,7 +1599,8 @@
 "b2b_n": 13,
 "b2b_presence": 0.85,
 "presence": 0.93,
-"age": 37
+"age": 37,
+"min_proj": 33.6
 },
 "111": {
 "nom": "K.Diop",
@@ -1593,7 +1663,8 @@
 "b2b_n": 11,
 "b2b_presence": 1.0,
 "presence": 0.94,
-"age": 21
+"age": 21,
+"min_proj": 22.8
 },
 "117": {
 "nom": "N.Marshall",
@@ -1609,7 +1680,8 @@
 "b2b_n": 14,
 "b2b_presence": 0.86,
 "presence": 0.95,
-"age": 28
+"age": 28,
+"min_proj": 24.2
 },
 "118": {
 "nom": "K.Irving",
@@ -1622,7 +1694,8 @@
 "nb_sources": 3,
 "malus_b2b": 0.881,
 "age": 34,
-"b2b_n": 0
+"b2b_n": 0,
+"min_proj": 34.6
 },
 "119": {
 "nom": "D.Lively II",
@@ -1638,7 +1711,8 @@
 "b2b_n": 2,
 "b2b_presence": 0.0,
 "presence": 0.67,
-"age": 22
+"age": 22,
+"min_proj": 23.6
 },
 "120": {
 "nom": "D.Gafford",
@@ -1654,7 +1728,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.45,
 "presence": 0.81,
-"age": 28
+"age": 28,
+"min_proj": 22.5
 },
 "121": {
 "nom": "P.Washington",
@@ -1670,7 +1745,8 @@
 "b2b_n": 12,
 "b2b_presence": 0.58,
 "presence": 0.82,
-"age": 28
+"age": 28,
+"min_proj": 29.0
 },
 "122": {
 "nom": "M.Christie",
@@ -1686,7 +1762,8 @@
 "b2b_n": 14,
 "b2b_presence": 0.93,
 "presence": 0.95,
-"age": 23
+"age": 23,
+"min_proj": 28.2
 },
 "123": {
 "nom": "C.Martin",
@@ -1702,7 +1779,8 @@
 "b2b_n": 13,
 "b2b_presence": 0.77,
 "presence": 0.86,
-"age": 31
+"age": 31,
+"min_proj": 17.0
 },
 "124": {
 "nom": "M.Cisse",
@@ -1732,7 +1810,8 @@
 "b2b_n": 14,
 "b2b_presence": 0.86,
 "presence": 0.94,
-"age": 19
+"age": 19,
+"min_proj": 35.5
 },
 "126": {
 "nom": "M.Sasser",
@@ -1748,7 +1827,8 @@
 "b2b_n": 6,
 "b2b_presence": 0.83,
 "presence": 0.68,
-"age": 26
+"age": 26,
+"min_proj": 13.1
 },
 "127": {
 "nom": "J.Poulakidas",
@@ -1771,7 +1851,8 @@
 "b2b_n": 5,
 "b2b_presence": 1.0,
 "presence": 0.95,
-"age": 25
+"age": 25,
+"min_proj": 23.7
 },
 "129": {
 "nom": "J.Howard",
@@ -1787,7 +1868,8 @@
 "b2b_n": 12,
 "b2b_presence": 1.0,
 "presence": 0.78,
-"age": 23
+"age": 23,
+"min_proj": 12.4
 },
 "130": {
 "nom": "T.Biberovic",
@@ -1820,7 +1902,8 @@
 "nb_sources": 1,
 "malus_b2b": 1.022,
 "age": 20,
-"b2b_n": 0
+"b2b_n": 0,
+"min_proj": 24.7
 },
 "133": {
 "nom": "T.Lawal",
@@ -1859,7 +1942,8 @@
 "b2b_n": 10,
 "b2b_presence": 0.9,
 "presence": 0.94,
-"age": 30
+"age": 30,
+"min_proj": 28.8
 },
 "136": {
 "nom": "N.Jokic",
@@ -1875,7 +1959,8 @@
 "b2b_n": 12,
 "b2b_presence": 1.0,
 "presence": 0.97,
-"age": 31
+"age": 31,
+"min_proj": 35.6
 },
 "137": {
 "nom": "A.Gordon",
@@ -1891,7 +1976,8 @@
 "b2b_n": 10,
 "b2b_presence": 0.3,
 "presence": 0.71,
-"age": 31
+"age": 31,
+"min_proj": 29.3
 },
 "138": {
 "nom": "J.Murray",
@@ -1907,7 +1993,8 @@
 "b2b_n": 17,
 "b2b_presence": 0.82,
 "presence": 0.95,
-"age": 29
+"age": 29,
+"min_proj": 35.0
 },
 "139": {
 "nom": "Z.Nnaji",
@@ -1937,7 +2024,8 @@
 "b2b_n": 10,
 "b2b_presence": 0.9,
 "presence": 0.93,
-"age": 25
+"age": 25,
+"min_proj": 27.5
 },
 "141": {
 "nom": "J.Strawther",
@@ -1953,7 +2041,8 @@
 "b2b_n": 12,
 "b2b_presence": 1.0,
 "presence": 0.8,
-"age": 24
+"age": 24,
+"min_proj": 16.0
 },
 "142": {
 "nom": "D.Holmes II",
@@ -1997,7 +2086,8 @@
 "b2b_n": 14,
 "b2b_presence": 0.93,
 "presence": 0.97,
-"age": 37
+"age": 37,
+"min_proj": 28.9
 },
 "145": {
 "nom": "M.Bagley III",
@@ -2013,7 +2103,8 @@
 "b2b_n": 10,
 "b2b_presence": 0.8,
 "presence": 0.9,
-"age": 27
+"age": 27,
+"min_proj": 19.1
 },
 "146": {
 "nom": "T.Brazile",
@@ -2059,7 +2150,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.91,
 "presence": 0.89,
-"age": 30
+"age": 30,
+"min_proj": 17.5
 },
 "150": {
 "nom": "L.Walker IV",
@@ -2112,7 +2204,8 @@
 "b2b_n": 15,
 "b2b_presence": 0.87,
 "presence": 0.9,
-"age": 28
+"age": 28,
+"min_proj": 23.6
 },
 "155": {
 "nom": "J.Green",
@@ -2142,7 +2235,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.82,
 "presence": 0.78,
-"age": 27
+"age": 27,
+"min_proj": 13.8
 },
 "157": {
 "nom": "C.Cunningham",
@@ -2158,7 +2252,8 @@
 "b2b_n": 9,
 "b2b_presence": 1.0,
 "presence": 0.92,
-"age": 25
+"age": 25,
+"min_proj": 34.8
 },
 "158": {
 "nom": "J.Duren",
@@ -2174,7 +2269,8 @@
 "b2b_n": 12,
 "b2b_presence": 0.83,
 "presence": 0.91,
-"age": 22
+"age": 22,
+"min_proj": 31.0
 },
 "159": {
 "nom": "A.Thompson",
@@ -2190,7 +2286,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.91,
 "presence": 0.97,
-"age": 23
+"age": 23,
+"min_proj": 26.8
 },
 "160": {
 "nom": "R.Holland II",
@@ -2206,7 +2303,8 @@
 "b2b_n": 13,
 "b2b_presence": 1.0,
 "presence": 0.97,
-"age": 21
+"age": 21,
+"min_proj": 18.5
 },
 "161": {
 "nom": "D.Jenkins",
@@ -2263,7 +2361,8 @@
 "b2b_n": 13,
 "b2b_presence": 0.92,
 "presence": 0.95,
-"age": 32
+"age": 32,
+"min_proj": 26.2
 },
 "165": {
 "nom": "J.Collins",
@@ -2279,7 +2378,8 @@
 "b2b_n": 13,
 "b2b_presence": 0.92,
 "presence": 0.93,
-"age": 29
+"age": 29,
+"min_proj": 30.6
 },
 "166": {
 "nom": "T.Prince",
@@ -2295,7 +2395,8 @@
 "b2b_n": 5,
 "b2b_presence": 0.8,
 "presence": 0.92,
-"age": 32
+"age": 32,
+"min_proj": 16.4
 },
 "167": {
 "nom": "G.Harris",
@@ -2311,7 +2412,8 @@
 "b2b_n": 8,
 "b2b_presence": 0.88,
 "presence": 0.72,
-"age": 32
+"age": 32,
+"min_proj": 14.5
 },
 "168": {
 "nom": "I.Joe",
@@ -2327,7 +2429,8 @@
 "b2b_n": 13,
 "b2b_presence": 1.0,
 "presence": 0.99,
-"age": 27
+"age": 27,
+"min_proj": 21.1
 },
 "169": {
 "nom": "E.Harkless",
@@ -2394,7 +2497,8 @@
 "b2b_n": 6,
 "b2b_presence": 0.0,
 "presence": 0.57,
-"age": 31
+"age": 31,
+"min_proj": 27.7
 },
 "175": {
 "nom": "C.Bassey",
@@ -2410,7 +2514,8 @@
 "b2b_n": 2,
 "b2b_presence": 1.0,
 "presence": 0.67,
-"age": 25
+"age": 25,
+"min_proj": 11.3
 },
 "176": {
 "nom": "B.Williams",
@@ -2440,7 +2545,8 @@
 "b2b_n": 8,
 "b2b_presence": 0.62,
 "presence": 0.81,
-"age": 38
+"age": 38,
+"min_proj": 32.0
 },
 "178": {
 "nom": "D.Green",
@@ -2456,7 +2562,8 @@
 "b2b_n": 12,
 "b2b_presence": 0.67,
 "presence": 0.84,
-"age": 36
+"age": 36,
+"min_proj": 27.9
 },
 "179": {
 "nom": "M.Moody",
@@ -2472,7 +2579,8 @@
 "b2b_n": 10,
 "b2b_presence": 1.0,
 "presence": 0.97,
-"age": 24
+"age": 24,
+"min_proj": 24.7
 },
 "180": {
 "nom": "G.Payton II",
@@ -2502,7 +2610,8 @@
 "b2b_n": 16,
 "b2b_presence": 1.0,
 "presence": 0.99,
-"age": 23
+"age": 23,
+"min_proj": 30.9
 },
 "182": {
 "nom": "G.Santos",
@@ -2518,7 +2627,8 @@
 "b2b_n": 10,
 "b2b_presence": 0.9,
 "presence": 0.85,
-"age": 24
+"age": 24,
+"min_proj": 23.9
 },
 "183": {
 "nom": "J.Butler",
@@ -2534,7 +2644,8 @@
 "b2b_n": 6,
 "b2b_presence": 0.67,
 "presence": 0.86,
-"age": 37
+"age": 37,
+"min_proj": 32.4
 },
 "184": {
 "nom": "W.Richard",
@@ -2581,7 +2692,8 @@
 "b2b_n": 6,
 "b2b_presence": 0.0,
 "presence": 0.66,
-"age": 40
+"age": 40,
+"min_proj": 25.4
 },
 "188": {
 "nom": "Y.Lendeborg",
@@ -2594,7 +2706,8 @@
 "nb_sources": 1,
 "malus_b2b": 1.022,
 "age": 24,
-"b2b_n": 0
+"b2b_n": 0,
+"min_proj": 24.6
 },
 "189": {
 "nom": "M.Leons",
@@ -2617,7 +2730,8 @@
 "b2b_n": 5,
 "b2b_presence": 0.4,
 "presence": 0.75,
-"age": 28
+"age": 28,
+"min_proj": 23.1
 },
 "191": {
 "nom": "G.Niang",
@@ -2678,7 +2792,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.73,
 "presence": 0.72,
-"age": 22
+"age": 22,
+"min_proj": 10.1
 },
 "197": {
 "nom": "C.Capela",
@@ -2694,7 +2809,8 @@
 "b2b_n": 12,
 "b2b_presence": 0.92,
 "presence": 0.91,
-"age": 32
+"age": 32,
+"min_proj": 16.8
 },
 "198": {
 "nom": "A.Sengun",
@@ -2710,7 +2826,8 @@
 "b2b_n": 13,
 "b2b_presence": 1.0,
 "presence": 0.94,
-"age": 24
+"age": 24,
+"min_proj": 32.7
 },
 "199": {
 "nom": "J.Tate",
@@ -2726,7 +2843,8 @@
 "b2b_n": 7,
 "b2b_presence": 0.71,
 "presence": 0.73,
-"age": 30
+"age": 30,
+"min_proj": 12.1
 },
 "200": {
 "nom": "J.Smith Jr.",
@@ -2742,7 +2860,8 @@
 "b2b_n": 14,
 "b2b_presence": 0.93,
 "presence": 0.96,
-"age": 23
+"age": 23,
+"min_proj": 32.1
 },
 "201": {
 "nom": "T.Eason",
@@ -2758,7 +2877,8 @@
 "b2b_n": 10,
 "b2b_presence": 0.7,
 "presence": 0.92,
-"age": 25
+"age": 25,
+"min_proj": 24.9
 },
 "202": {
 "nom": "F.VanVleet",
@@ -2771,7 +2891,8 @@
 "nb_sources": 1,
 "malus_b2b": 0.958,
 "age": 32,
-"b2b_n": 0
+"b2b_n": 0,
+"min_proj": 32.2
 },
 "203": {
 "nom": "A.Thompson",
@@ -2787,7 +2908,8 @@
 "b2b_n": 13,
 "b2b_presence": 1.0,
 "presence": 0.97,
-"age": 23
+"age": 23,
+"min_proj": 36.5
 },
 "204": {
 "nom": "S.Adams",
@@ -2803,7 +2925,8 @@
 "b2b_n": 4,
 "b2b_presence": 0.0,
 "presence": 0.77,
-"age": 33
+"age": 33,
+"min_proj": 12.0
 },
 "205": {
 "nom": "R.Sheppard",
@@ -2819,7 +2942,8 @@
 "b2b_n": 14,
 "b2b_presence": 1.0,
 "presence": 1.0,
-"age": 22
+"age": 22,
+"min_proj": 26.7
 },
 "206": {
 "nom": "K.Durant",
@@ -2835,7 +2959,8 @@
 "b2b_n": 14,
 "b2b_presence": 1.0,
 "presence": 0.97,
-"age": 38
+"age": 38,
+"min_proj": 34.6
 },
 "207": {
 "nom": "I.Crawford",
@@ -2864,7 +2989,8 @@
 "b2b_n": 2,
 "b2b_presence": 1.0,
 "presence": 0.59,
-"age": 34
+"age": 34,
+"min_proj": 17.6
 },
 "209": {
 "nom": "M.Smart",
@@ -2880,7 +3006,8 @@
 "b2b_n": 10,
 "b2b_presence": 0.7,
 "presence": 0.9,
-"age": 32
+"age": 32,
+"min_proj": 24.4
 },
 "210": {
 "nom": "O.Tshiebwe",
@@ -2941,7 +3068,8 @@
 "b2b_n": 7,
 "b2b_presence": 0.57,
 "presence": 0.62,
-"age": 33
+"age": 33,
+"min_proj": 17.8
 },
 "216": {
 "nom": "Q.Jackson",
@@ -2971,7 +3099,8 @@
 "b2b_n": 3,
 "b2b_presence": 0.67,
 "presence": 0.87,
-"age": 28
+"age": 28,
+"min_proj": 20.0
 },
 "218": {
 "nom": "T.Haliburton",
@@ -2984,7 +3113,8 @@
 "nb_sources": 3,
 "malus_b2b": 0.955,
 "age": 26,
-"b2b_n": 0
+"b2b_n": 0,
+"min_proj": 33.1
 },
 "219": {
 "nom": "T.McConnell",
@@ -3000,7 +3130,8 @@
 "b2b_n": 6,
 "b2b_presence": 0.33,
 "presence": 0.87,
-"age": 34
+"age": 34,
+"min_proj": 17.8
 },
 "220": {
 "nom": "A.Nesmith",
@@ -3016,7 +3147,8 @@
 "b2b_n": 8,
 "b2b_presence": 0.38,
 "presence": 0.84,
-"age": 27
+"age": 27,
+"min_proj": 28.2
 },
 "221": {
 "nom": "A.Nembhard",
@@ -3032,7 +3164,8 @@
 "b2b_n": 8,
 "b2b_presence": 0.5,
 "presence": 0.82,
-"age": 26
+"age": 26,
+"min_proj": 30.7
 },
 "222": {
 "nom": "B.Sheppard",
@@ -3048,7 +3181,8 @@
 "b2b_n": 10,
 "b2b_presence": 1.0,
 "presence": 0.97,
-"age": 25
+"age": 25,
+"min_proj": 18.7
 },
 "223": {
 "nom": "J.Walker",
@@ -3064,7 +3198,8 @@
 "b2b_n": 12,
 "b2b_presence": 1.0,
 "presence": 0.97,
-"age": 23
+"age": 23,
+"min_proj": 18.6
 },
 "224": {
 "nom": "P.Siakam",
@@ -3080,7 +3215,8 @@
 "b2b_n": 9,
 "b2b_presence": 0.56,
 "presence": 0.9,
-"age": 32
+"age": 32,
+"min_proj": 34.8
 },
 "225": {
 "nom": "J.Furphy",
@@ -3096,7 +3232,8 @@
 "b2b_n": 4,
 "b2b_presence": 1.0,
 "presence": 0.94,
-"age": 21
+"age": 21,
+"min_proj": 16.1
 },
 "226": {
 "nom": "J.Huff",
@@ -3139,7 +3276,8 @@
 "b2b_n": 10,
 "b2b_presence": 1.0,
 "presence": 0.96,
-"age": 29
+"age": 29,
+"min_proj": 31.1
 },
 "229": {
 "nom": "K.Brown",
@@ -3155,7 +3293,8 @@
 "b2b_n": 9,
 "b2b_presence": 0.78,
 "presence": 0.79,
-"age": 26
+"age": 26,
+"min_proj": 10.8
 },
 "230": {
 "nom": "K.Oubre Jr.",
@@ -3171,7 +3310,8 @@
 "b2b_n": 11,
 "b2b_presence": 1.0,
 "presence": 0.94,
-"age": 30
+"age": 30,
+"min_proj": 26.3
 },
 "231": {
 "nom": "B.Smith",
@@ -3224,7 +3364,8 @@
 "b2b_n": 6,
 "b2b_presence": 0.17,
 "presence": 0.79,
-"age": 26
+"age": 26,
+"min_proj": 35.2
 },
 "236": {
 "nom": "M.Strus",
@@ -3240,7 +3381,8 @@
 "b2b_n": 2,
 "b2b_presence": 0.0,
 "presence": 0.73,
-"age": 30
+"age": 30,
+"min_proj": 25.9
 },
 "237": {
 "nom": "Jal.Pickett",
@@ -3256,7 +3398,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.73,
 "presence": 0.65,
-"age": 26
+"age": 26,
+"min_proj": 11.3
 },
 "238": {
 "nom": "I.Jackson",
@@ -3272,7 +3415,8 @@
 "b2b_n": 12,
 "b2b_presence": 0.67,
 "presence": 0.92,
-"age": 24
+"age": 24,
+"min_proj": 18.4
 },
 "239": {
 "nom": "D.Jones Jr.",
@@ -3288,7 +3432,8 @@
 "b2b_n": 9,
 "b2b_presence": 0.89,
 "presence": 0.96,
-"age": 29
+"age": 29,
+"min_proj": 25.4
 },
 "240": {
 "nom": "J.Miller",
@@ -3318,7 +3463,8 @@
 "b2b_n": 15,
 "b2b_presence": 1.0,
 "presence": 1.0,
-"age": 32
+"age": 32,
+"min_proj": 22.0
 },
 "242": {
 "nom": "C.Christie",
@@ -3376,7 +3522,8 @@
 "b2b_n": 13,
 "b2b_presence": 1.0,
 "presence": 0.97,
-"age": 38
+"age": 38,
+"min_proj": 26.2
 },
 "246": {
 "nom": "B.Beal",
@@ -3392,7 +3539,8 @@
 "b2b_n": 1,
 "b2b_presence": 0.0,
 "presence": 0.6,
-"age": 33
+"age": 33,
+"min_proj": 25.3
 },
 "247": {
 "nom": "R.Hachimura",
@@ -3408,7 +3556,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.91,
 "presence": 0.93,
-"age": 28
+"age": 28,
+"min_proj": 30.6
 },
 "248": {
 "nom": "J.Broome",
@@ -3421,7 +3570,8 @@
 "nb_sources": 1,
 "malus_b2b": 1.022,
 "age": 24,
-"b2b_n": 0
+"b2b_n": 0,
+"min_proj": 8.3
 },
 "249": {
 "nom": "N.Martinelli",
@@ -3461,7 +3611,8 @@
 "nb_sources": 1,
 "malus_b2b": 1.022,
 "age": 19,
-"b2b_n": 0
+"b2b_n": 0,
+"min_proj": 28.1
 },
 "253": {
 "nom": "B.Ingram",
@@ -3477,7 +3628,8 @@
 "b2b_n": 14,
 "b2b_presence": 0.86,
 "presence": 0.95,
-"age": 29
+"age": 29,
+"min_proj": 35.3
 },
 "254": {
 "nom": "G.Dick",
@@ -3493,7 +3645,8 @@
 "b2b_n": 15,
 "b2b_presence": 0.87,
 "presence": 0.95,
-"age": 22
+"age": 22,
+"min_proj": 25.8
 },
 "255": {
 "nom": "Z.Williams",
@@ -3509,7 +3662,8 @@
 "b2b_n": 10,
 "b2b_presence": 0.6,
 "presence": 0.84,
-"age": 25
+"age": 25,
+"min_proj": 23.0
 },
 "256": {
 "nom": "C.Sexton",
@@ -3525,7 +3679,8 @@
 "b2b_n": 14,
 "b2b_presence": 1.0,
 "presence": 0.94,
-"age": 27
+"age": 27,
+"min_proj": 25.8
 },
 "257": {
 "nom": "L.Doncic",
@@ -3541,7 +3696,8 @@
 "b2b_n": 8,
 "b2b_presence": 0.88,
 "presence": 0.89,
-"age": 27
+"age": 27,
+"min_proj": 36.7
 },
 "258": {
 "nom": "A.Reaves",
@@ -3557,7 +3713,8 @@
 "b2b_n": 10,
 "b2b_presence": 0.8,
 "presence": 0.92,
-"age": 28
+"age": 28,
+"min_proj": 36.6
 },
 "259": {
 "nom": "J.Vanderbilt",
@@ -3573,7 +3730,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.82,
 "presence": 0.92,
-"age": 27
+"age": 27,
+"min_proj": 17.6
 },
 "260": {
 "nom": "B.James",
@@ -3589,7 +3747,8 @@
 "b2b_n": 5,
 "b2b_presence": 1.0,
 "presence": 0.56,
-"age": 22
+"age": 22,
+"min_proj": 11.9
 },
 "261": {
 "nom": "D.Knecht",
@@ -3605,7 +3764,8 @@
 "b2b_n": 11,
 "b2b_presence": 1.0,
 "presence": 0.77,
-"age": 25
+"age": 25,
+"min_proj": 12.0
 },
 "262": {
 "nom": "C.Mañon",
@@ -3648,7 +3808,8 @@
 "b2b_n": 14,
 "b2b_presence": 1.0,
 "presence": 1.0,
-"age": 24
+"age": 24,
+"min_proj": 29.2
 },
 "265": {
 "nom": "K.Looney",
@@ -3664,7 +3825,8 @@
 "b2b_n": 2,
 "b2b_presence": 1.0,
 "presence": 0.55,
-"age": 30
+"age": 30,
+"min_proj": 15.4
 },
 "266": {
 "nom": "Q.Grimes",
@@ -3680,7 +3842,8 @@
 "b2b_n": 16,
 "b2b_presence": 0.94,
 "presence": 0.93,
-"age": 26
+"age": 26,
+"min_proj": 30.8
 },
 "267": {
 "nom": "M.Thybulle",
@@ -3696,7 +3859,8 @@
 "b2b_n": 4,
 "b2b_presence": 0.75,
 "presence": 0.93,
-"age": 29
+"age": 29,
+"min_proj": 19.1
 },
 "268": {
 "nom": "S.Mamukelashvili",
@@ -3723,7 +3887,8 @@
 "nb_sources": 1,
 "malus_b2b": 0.955,
 "age": 25,
-"b2b_n": 0
+"b2b_n": 0,
+"min_proj": 31.4
 },
 "270": {
 "nom": "C.Carr",
@@ -3749,7 +3914,8 @@
 "b2b_n": 13,
 "b2b_presence": 0.92,
 "presence": 0.73,
-"age": 24
+"age": 24,
+"min_proj": 15.3
 },
 "272": {
 "nom": "A.Kaluma",
@@ -3773,7 +3939,8 @@
 "proj_2027": 24.9,
 "reel_2026": null,
 "matchs_proj": 71.0,
-"nb_sources": 1
+"nb_sources": 1,
+"min_proj": 24.7
 },
 "275": {
 "nom": "C.Ross",
@@ -3796,7 +3963,8 @@
 "b2b_n": 10,
 "b2b_presence": 1.0,
 "presence": 0.93,
-"age": 25
+"age": 25,
+"min_proj": 24.7
 },
 "277": {
 "nom": "Q.Post",
@@ -3826,7 +3994,8 @@
 "b2b_n": 12,
 "b2b_presence": 0.92,
 "presence": 0.73,
-"age": 24
+"age": 24,
+"min_proj": 17.1
 },
 "279": {
 "nom": "T.Jerome",
@@ -3842,7 +4011,8 @@
 "b2b_n": 2,
 "b2b_presence": 0.0,
 "presence": 0.36,
-"age": 29
+"age": 29,
+"min_proj": 26.7
 },
 "280": {
 "nom": "S.Pippen Jr.",
@@ -3858,7 +4028,8 @@
 "b2b_n": 2,
 "b2b_presence": 0.0,
 "presence": 0.67,
-"age": 25
+"age": 25,
+"min_proj": 25.1
 },
 "281": {
 "nom": "G.Jackson",
@@ -3874,7 +4045,8 @@
 "b2b_n": 10,
 "b2b_presence": 0.9,
 "presence": 0.83,
-"age": 21
+"age": 21,
+"min_proj": 23.0
 },
 "282": {
 "nom": "Z.Edey",
@@ -3887,7 +4059,8 @@
 "nb_sources": 1,
 "malus_b2b": 1.022,
 "age": 24,
-"b2b_n": 0
+"b2b_n": 0,
+"min_proj": 26.4
 },
 "283": {
 "nom": "C.Spencer",
@@ -3917,7 +4090,8 @@
 "b2b_n": 12,
 "b2b_presence": 0.83,
 "presence": 0.96,
-"age": 23
+"age": 23,
+"min_proj": 25.0
 },
 "285": {
 "nom": "C.Coward",
@@ -3933,7 +4107,8 @@
 "b2b_n": 8,
 "b2b_presence": 0.62,
 "presence": 0.84,
-"age": 23
+"age": 23,
+"min_proj": 28.5
 },
 "286": {
 "nom": "J.Small",
@@ -3963,7 +4138,8 @@
 "b2b_n": 7,
 "b2b_presence": 1.0,
 "presence": 0.72,
-"age": 24
+"age": 24,
+"min_proj": 15.4
 },
 "288": {
 "nom": "M.Peavy",
@@ -3993,7 +4169,8 @@
 "b2b_n": 10,
 "b2b_presence": 0.9,
 "presence": 0.93,
-"age": 32
+"age": 32,
+"min_proj": 29.4
 },
 "290": {
 "nom": "K.Murray",
@@ -4009,7 +4186,8 @@
 "b2b_n": 9,
 "b2b_presence": 0.78,
 "presence": 0.89,
-"age": 26
+"age": 26,
+"min_proj": 21.9
 },
 "291": {
 "nom": "C.Boozer",
@@ -4022,7 +4200,8 @@
 "nb_sources": 1,
 "malus_b2b": 1.022,
 "age": 19,
-"b2b_n": 0
+"b2b_n": 0,
+"min_proj": 31.7
 },
 "292": {
 "nom": "W.Clayton Jr.",
@@ -4038,7 +4217,8 @@
 "b2b_n": 16,
 "b2b_presence": 0.94,
 "presence": 0.91,
-"age": 23
+"age": 23,
+"min_proj": 25.1
 },
 "293": {
 "nom": "T.Hendricks",
@@ -4092,7 +4272,8 @@
 "b2b_n": 4,
 "b2b_presence": 1.0,
 "presence": 0.76,
-"age": 30
+"age": 30,
+"min_proj": 17.2
 },
 "297": {
 "nom": "K.Thompson",
@@ -4108,7 +4289,8 @@
 "b2b_n": 13,
 "b2b_presence": 0.46,
 "presence": 0.84,
-"age": 36
+"age": 36,
+"min_proj": 23.0
 },
 "298": {
 "nom": "T.Hardaway Jr.",
@@ -4124,7 +4306,8 @@
 "b2b_n": 17,
 "b2b_presence": 0.94,
 "presence": 0.97,
-"age": 34
+"age": 34,
+"min_proj": 26.9
 },
 "299": {
 "nom": "S.Fontecchio",
@@ -4140,7 +4323,8 @@
 "b2b_n": 14,
 "b2b_presence": 1.0,
 "presence": 0.87,
-"age": 30
+"age": 30,
+"min_proj": 17.1
 },
 "300": {
 "nom": "A.Wiggins",
@@ -4156,7 +4340,8 @@
 "b2b_n": 16,
 "b2b_presence": 0.88,
 "presence": 0.91,
-"age": 31
+"age": 31,
+"min_proj": 30.4
 },
 "301": {
 "nom": "D.Smith",
@@ -4186,7 +4371,8 @@
 "b2b_n": 15,
 "b2b_presence": 1.0,
 "presence": 0.94,
-"age": 29
+"age": 29,
+"min_proj": 32.4
 },
 "303": {
 "nom": "N.Jovic",
@@ -4202,7 +4388,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.82,
 "presence": 0.84,
-"age": 23
+"age": 23,
+"min_proj": 22.9
 },
 "304": {
 "nom": "K.Johnson",
@@ -4246,7 +4433,8 @@
 "b2b_n": 14,
 "b2b_presence": 0.71,
 "presence": 0.9,
-"age": 28
+"age": 28,
+"min_proj": 27.7
 },
 "307": {
 "nom": "M.Gardner",
@@ -4289,7 +4477,8 @@
 "b2b_n": 5,
 "b2b_presence": 0.8,
 "presence": 0.8,
-"age": 31
+"age": 31,
+"min_proj": 33.6
 },
 "310": {
 "nom": "B.Portis",
@@ -4305,7 +4494,8 @@
 "b2b_n": 11,
 "b2b_presence": 1.0,
 "presence": 0.94,
-"age": 31
+"age": 31,
+"min_proj": 24.3
 },
 "311": {
 "nom": "R.Conwell",
@@ -4359,7 +4549,8 @@
 "b2b_n": 10,
 "b2b_presence": 0.5,
 "presence": 0.85,
-"age": 32
+"age": 32,
+"min_proj": 20.7
 },
 "316": {
 "nom": "K.Jones",
@@ -4389,7 +4580,8 @@
 "b2b_n": 5,
 "b2b_presence": 0.8,
 "presence": 0.78,
-"age": 26
+"age": 26,
+"min_proj": 34.0
 },
 "318": {
 "nom": "J.Jaquez Jr.",
@@ -4405,7 +4597,8 @@
 "b2b_n": 17,
 "b2b_presence": 0.94,
 "presence": 0.95,
-"age": 25
+"age": 25,
+"min_proj": 27.3
 },
 "319": {
 "nom": "K.Ware",
@@ -4421,7 +4614,8 @@
 "b2b_n": 16,
 "b2b_presence": 0.94,
 "presence": 0.96,
-"age": 22
+"age": 22,
+"min_proj": 26.6
 },
 "320": {
 "nom": "K.Jakučionis",
@@ -4437,7 +4631,8 @@
 "b2b_n": 13,
 "b2b_presence": 0.92,
 "presence": 0.9,
-"age": 20
+"age": 20,
+"min_proj": 22.6
 },
 "321": {
 "nom": "M.Turner",
@@ -4453,7 +4648,8 @@
 "b2b_n": 14,
 "b2b_presence": 0.79,
 "presence": 0.87,
-"age": 30
+"age": 30,
+"min_proj": 27.4
 },
 "322": {
 "nom": "P.Nance",
@@ -4483,7 +4679,8 @@
 "b2b_n": 6,
 "b2b_presence": 0.83,
 "presence": 0.89,
-"age": 26
+"age": 26,
+"min_proj": 26.8
 },
 "324": {
 "nom": "A.Green",
@@ -4499,7 +4696,8 @@
 "b2b_n": 15,
 "b2b_presence": 0.93,
 "presence": 0.97,
-"age": 27
+"age": 27,
+"min_proj": 25.4
 },
 "325": {
 "nom": "R.Rollins",
@@ -4515,7 +4713,8 @@
 "b2b_n": 13,
 "b2b_presence": 0.85,
 "presence": 0.93,
-"age": 24
+"age": 24,
+"min_proj": 28.0
 },
 "326": {
 "nom": "G.Trent Jr.",
@@ -4531,7 +4730,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.91,
 "presence": 0.88,
-"age": 27
+"age": 27,
+"min_proj": 22.3
 },
 "327": {
 "nom": "J.Sims",
@@ -4547,7 +4747,8 @@
 "b2b_n": 13,
 "b2b_presence": 1.0,
 "presence": 0.85,
-"age": 28
+"age": 28,
+"min_proj": 18.5
 },
 "328": {
 "nom": "K.Kuzma",
@@ -4563,7 +4764,8 @@
 "b2b_n": 13,
 "b2b_presence": 0.77,
 "presence": 0.87,
-"age": 31
+"age": 31,
+"min_proj": 25.7
 },
 "329": {
 "nom": "C.Ryan",
@@ -4583,7 +4785,8 @@
 "nb_sources": 1,
 "malus_b2b": 1.022,
 "age": 19,
-"b2b_n": 0
+"b2b_n": 0,
+"min_proj": 17.7
 },
 "331": {
 "nom": "B.Burries",
@@ -4596,7 +4799,8 @@
 "nb_sources": 1,
 "malus_b2b": 1.022,
 "age": 21,
-"b2b_n": 0
+"b2b_n": 0,
+"min_proj": 25.8
 },
 "332": {
 "nom": "J.Butler Jr.",
@@ -4650,7 +4854,8 @@
 "b2b_n": 16,
 "b2b_presence": 0.81,
 "presence": 0.94,
-"age": 25
+"age": 25,
+"min_proj": 32.9
 },
 "337": {
 "nom": "A.Dosunmu",
@@ -4666,7 +4871,8 @@
 "b2b_n": 15,
 "b2b_presence": 0.8,
 "presence": 0.9,
-"age": 26
+"age": 26,
+"min_proj": 29.4
 },
 "338": {
 "nom": "Z.Pullin",
@@ -4699,7 +4905,8 @@
 "b2b_n": 12,
 "b2b_presence": 0.92,
 "presence": 0.94,
-"age": 26
+"age": 26,
+"min_proj": 16.2
 },
 "341": {
 "nom": "R.Gobert",
@@ -4715,7 +4922,8 @@
 "b2b_n": 13,
 "b2b_presence": 0.92,
 "presence": 0.95,
-"age": 34
+"age": 34,
+"min_proj": 32.5
 },
 "342": {
 "nom": "A.Edwards",
@@ -4731,7 +4939,8 @@
 "b2b_n": 10,
 "b2b_presence": 0.8,
 "presence": 0.87,
-"age": 25
+"age": 25,
+"min_proj": 35.8
 },
 "343": {
 "nom": "J.McDaniels",
@@ -4747,7 +4956,8 @@
 "b2b_n": 12,
 "b2b_presence": 1.0,
 "presence": 0.94,
-"age": 26
+"age": 26,
+"min_proj": 31.7
 },
 "344": {
 "nom": "J.Clark",
@@ -4763,7 +4973,8 @@
 "b2b_n": 12,
 "b2b_presence": 0.92,
 "presence": 0.85,
-"age": 25
+"age": 25,
+"min_proj": 13.1
 },
 "345": {
 "nom": "T.Shannon Jr.",
@@ -4779,7 +4990,8 @@
 "b2b_n": 5,
 "b2b_presence": 1.0,
 "presence": 0.88,
-"age": 26
+"age": 26,
+"min_proj": 20.7
 },
 "346": {
 "nom": "D.DiVincenzo",
@@ -4795,7 +5007,8 @@
 "b2b_n": 14,
 "b2b_presence": 1.0,
 "presence": 0.99,
-"age": 29
+"age": 29,
+"min_proj": 24.1
 },
 "347": {
 "nom": "J.Beringer",
@@ -4835,7 +5048,8 @@
 "b2b_n": 12,
 "b2b_presence": 0.67,
 "presence": 0.85,
-"age": 21
+"age": 21,
+"min_proj": 22.8
 },
 "350": {
 "nom": "I.Evans",
@@ -4861,7 +5075,8 @@
 "b2b_n": 6,
 "b2b_presence": 0.67,
 "presence": 0.79,
-"age": 24
+"age": 24,
+"min_proj": 27.3
 },
 "352": {
 "nom": "T.Lyles",
@@ -4874,7 +5089,8 @@
 "nb_sources": 1,
 "malus_b2b": 0.958,
 "age": 30,
-"b2b_n": 0
+"b2b_n": 0,
+"min_proj": 19.7
 },
 "353": {
 "nom": "J.Crutcher",
@@ -4897,7 +5113,8 @@
 "b2b_n": 10,
 "b2b_presence": 0.9,
 "presence": 0.94,
-"age": 24
+"age": 24,
+"min_proj": 29.2
 },
 "355": {
 "nom": "C.Houstan",
@@ -4953,7 +5170,8 @@
 "b2b_n": 2,
 "b2b_presence": 0.0,
 "presence": 0.62,
-"age": 30
+"age": 30,
+"min_proj": 32.4
 },
 "359": {
 "nom": "Z.Williamson",
@@ -4969,7 +5187,8 @@
 "b2b_n": 13,
 "b2b_presence": 0.77,
 "presence": 0.92,
-"age": 26
+"age": 26,
+"min_proj": 30.9
 },
 "360": {
 "nom": "H.Jones",
@@ -4985,7 +5204,8 @@
 "b2b_n": 12,
 "b2b_presence": 0.75,
 "presence": 0.95,
-"age": 28
+"age": 28,
+"min_proj": 27.1
 },
 "361": {
 "nom": "T.Murphy III",
@@ -5001,7 +5221,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.91,
 "presence": 0.92,
-"age": 26
+"age": 26,
+"min_proj": 32.5
 },
 "362": {
 "nom": "K.Matkovic",
@@ -5031,7 +5252,8 @@
 "b2b_n": 12,
 "b2b_presence": 1.0,
 "presence": 0.92,
-"age": 22
+"age": 22,
+"min_proj": 25.1
 },
 "364": {
 "nom": "J.Fears",
@@ -5047,7 +5269,8 @@
 "b2b_n": 15,
 "b2b_presence": 1.0,
 "presence": 1.0,
-"age": 20
+"age": 20,
+"min_proj": 26.4
 },
 "365": {
 "nom": "D.Queen",
@@ -5063,7 +5286,8 @@
 "b2b_n": 15,
 "b2b_presence": 1.0,
 "presence": 0.99,
-"age": 21
+"age": 21,
+"min_proj": 26.4
 },
 "366": {
 "nom": "B.McGowens",
@@ -5093,7 +5317,8 @@
 "b2b_n": 14,
 "b2b_presence": 0.93,
 "presence": 0.97,
-"age": 27
+"age": 27,
+"min_proj": 27.1
 },
 "368": {
 "nom": "J.Poole",
@@ -5109,7 +5334,8 @@
 "b2b_n": 7,
 "b2b_presence": 0.57,
 "presence": 0.82,
-"age": 27
+"age": 27,
+"min_proj": 22.1
 },
 "369": {
 "nom": "T.Watford",
@@ -5204,7 +5430,8 @@
 "b2b_n": 13,
 "b2b_presence": 0.92,
 "presence": 0.96,
-"age": 28
+"age": 28,
+"min_proj": 20.4
 },
 "377": {
 "nom": "K.Towns",
@@ -5220,7 +5447,8 @@
 "b2b_n": 12,
 "b2b_presence": 1.0,
 "presence": 0.92,
-"age": 30
+"age": 30,
+"min_proj": 32.7
 },
 "378": {
 "nom": "M.Bridges",
@@ -5236,7 +5464,8 @@
 "b2b_n": 14,
 "b2b_presence": 1.0,
 "presence": 1.0,
-"age": 30
+"age": 30,
+"min_proj": 33.6
 },
 "379": {
 "nom": "J.Brunson",
@@ -5252,7 +5481,8 @@
 "b2b_n": 14,
 "b2b_presence": 0.86,
 "presence": 0.93,
-"age": 30
+"age": 30,
+"min_proj": 35.3
 },
 "380": {
 "nom": "M.McBride",
@@ -5268,7 +5498,8 @@
 "b2b_n": 8,
 "b2b_presence": 0.62,
 "presence": 0.85,
-"age": 26
+"age": 26,
+"min_proj": 22.2
 },
 "381": {
 "nom": "J.Hart",
@@ -5284,7 +5515,8 @@
 "b2b_n": 12,
 "b2b_presence": 0.92,
 "presence": 0.91,
-"age": 31
+"age": 31,
+"min_proj": 31.5
 },
 "382": {
 "nom": "O.Anunoby",
@@ -5300,7 +5532,8 @@
 "b2b_n": 12,
 "b2b_presence": 1.0,
 "presence": 0.96,
-"age": 29
+"age": 29,
+"min_proj": 33.8
 },
 "383": {
 "nom": "P.Dadiet",
@@ -5316,7 +5549,8 @@
 "b2b_n": 5,
 "b2b_presence": 0.4,
 "presence": 0.41,
-"age": 21
+"age": 21,
+"min_proj": 9.0
 },
 "384": {
 "nom": "T.Kolek",
@@ -5346,7 +5580,8 @@
 "b2b_n": 9,
 "b2b_presence": 1.0,
 "presence": 0.96,
-"age": 29
+"age": 29,
+"min_proj": 20.8
 },
 "386": {
 "nom": "M.Diawara",
@@ -5362,7 +5597,8 @@
 "b2b_n": 10,
 "b2b_presence": 0.9,
 "presence": 0.87,
-"age": 21
+"age": 21,
+"min_proj": 9.2
 },
 "387": {
 "nom": "J.Clarkson",
@@ -5378,7 +5614,8 @@
 "b2b_n": 11,
 "b2b_presence": 1.0,
 "presence": 0.94,
-"age": 34
+"age": 34,
+"min_proj": 19.0
 },
 "388": {
 "nom": "A.Drummond",
@@ -5394,7 +5631,8 @@
 "b2b_n": 12,
 "b2b_presence": 0.75,
 "presence": 0.81,
-"age": 33
+"age": 33,
+"min_proj": 19.4
 },
 "389": {
 "nom": "O.Agbaji",
@@ -5465,7 +5703,8 @@
 "b2b_n": 12,
 "b2b_presence": 0.67,
 "presence": 0.78,
-"age": 32
+"age": 32,
+"min_proj": 24.3
 },
 "394": {
 "nom": "I.Hartenstein",
@@ -5481,7 +5720,8 @@
 "b2b_n": 10,
 "b2b_presence": 0.4,
 "presence": 0.76,
-"age": 28
+"age": 28,
+"min_proj": 25.0
 },
 "395": {
 "nom": "S.Gilgeous-Alexander",
@@ -5497,7 +5737,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.91,
 "presence": 0.94,
-"age": 28
+"age": 28,
+"min_proj": 33.8
 },
 "396": {
 "nom": "C.Holmgren",
@@ -5513,7 +5754,8 @@
 "b2b_n": 13,
 "b2b_presence": 0.69,
 "presence": 0.88,
-"age": 24
+"age": 24,
+"min_proj": 28.9
 },
 "397": {
 "nom": "K.Williams",
@@ -5529,7 +5771,8 @@
 "b2b_n": 8,
 "b2b_presence": 1.0,
 "presence": 0.91,
-"age": 31
+"age": 31,
+"min_proj": 15.4
 },
 "398": {
 "nom": "J.Williams",
@@ -5545,7 +5788,8 @@
 "b2b_n": 6,
 "b2b_presence": 0.67,
 "presence": 0.88,
-"age": 25
+"age": 25,
+"min_proj": 32.8
 },
 "399": {
 "nom": "J.Williams",
@@ -5561,7 +5805,8 @@
 "b2b_n": 10,
 "b2b_presence": 1.0,
 "presence": 0.95,
-"age": 24
+"age": 24,
+"min_proj": 19.0
 },
 "400": {
 "nom": "C.Wallace",
@@ -5577,7 +5822,8 @@
 "b2b_n": 14,
 "b2b_presence": 1.0,
 "presence": 0.96,
-"age": 22
+"age": 22,
+"min_proj": 26.4
 },
 "401": {
 "nom": "A.Mitchell",
@@ -5593,7 +5839,8 @@
 "b2b_n": 10,
 "b2b_presence": 0.9,
 "presence": 0.95,
-"age": 24
+"age": 24,
+"min_proj": 23.5
 },
 "402": {
 "nom": "N.Topic",
@@ -5646,7 +5893,8 @@
 "b2b_n": 14,
 "b2b_presence": 0.86,
 "presence": 0.94,
-"age": 22
+"age": 22,
+"min_proj": 24.7
 },
 "406": {
 "nom": "J.Dix",
@@ -5706,7 +5954,8 @@
 "b2b_n": 12,
 "b2b_presence": 0.92,
 "presence": 0.94,
-"age": 35
+"age": 35,
+"min_proj": 25.1
 },
 "412": {
 "nom": "J.Davison",
@@ -5736,7 +5985,8 @@
 "b2b_n": 10,
 "b2b_presence": 0.9,
 "presence": 0.82,
-"age": 31
+"age": 31,
+"min_proj": 15.4
 },
 "414": {
 "nom": "D.Bane",
@@ -5752,7 +6002,8 @@
 "b2b_n": 14,
 "b2b_presence": 1.0,
 "presence": 1.0,
-"age": 28
+"age": 28,
+"min_proj": 33.7
 },
 "415": {
 "nom": "J.Cain",
@@ -5768,7 +6019,8 @@
 "b2b_n": 8,
 "b2b_presence": 0.88,
 "presence": 0.72,
-"age": 27
+"age": 27,
+"min_proj": 19.3
 },
 "416": {
 "nom": "F.Wagner",
@@ -5784,7 +6036,8 @@
 "b2b_n": 5,
 "b2b_presence": 0.8,
 "presence": 0.88,
-"age": 25
+"age": 25,
+"min_proj": 34.0
 },
 "417": {
 "nom": "W.Carter Jr.",
@@ -5800,7 +6053,8 @@
 "b2b_n": 14,
 "b2b_presence": 0.93,
 "presence": 0.95,
-"age": 27
+"age": 27,
+"min_proj": 25.4
 },
 "418": {
 "nom": "J.Isaac",
@@ -5816,7 +6070,8 @@
 "b2b_n": 7,
 "b2b_presence": 1.0,
 "presence": 0.8,
-"age": 29
+"age": 29,
+"min_proj": 11.3
 },
 "419": {
 "nom": "P.Banchero",
@@ -5832,7 +6087,8 @@
 "b2b_n": 13,
 "b2b_presence": 1.0,
 "presence": 0.99,
-"age": 23
+"age": 23,
+"min_proj": 35.2
 },
 "420": {
 "nom": "J.Suggs",
@@ -5848,7 +6104,8 @@
 "b2b_n": 9,
 "b2b_presence": 0.56,
 "presence": 0.84,
-"age": 25
+"age": 25,
+"min_proj": 26.3
 },
 "421": {
 "nom": "G.Bitadze",
@@ -5864,7 +6121,8 @@
 "b2b_n": 12,
 "b2b_presence": 0.75,
 "presence": 0.87,
-"age": 27
+"age": 27,
+"min_proj": 13.3
 },
 "422": {
 "nom": "A.Black",
@@ -5880,7 +6138,8 @@
 "b2b_n": 9,
 "b2b_presence": 0.89,
 "presence": 0.97,
-"age": 22
+"age": 22,
+"min_proj": 28.9
 },
 "423": {
 "nom": "T.da Silva",
@@ -5896,7 +6155,8 @@
 "b2b_n": 13,
 "b2b_presence": 1.0,
 "presence": 0.97,
-"age": 25
+"age": 25,
+"min_proj": 21.4
 },
 "424": {
 "nom": "A.Morales",
@@ -5933,7 +6193,8 @@
 "b2b_n": 7,
 "b2b_presence": 0.57,
 "presence": 0.72,
-"age": 21
+"age": 21,
+"min_proj": 10.9
 },
 "427": {
 "nom": "C.Castleton",
@@ -5983,7 +6244,8 @@
 "b2b_n": 9,
 "b2b_presence": 0.67,
 "presence": 0.87,
-"age": 29
+"age": 29,
+"min_proj": 32.4
 },
 "431": {
 "nom": "A.Simons",
@@ -5999,7 +6261,8 @@
 "b2b_n": 8,
 "b2b_presence": 1.0,
 "presence": 1.0,
-"age": 27
+"age": 27,
+"min_proj": 25.1
 },
 "432": {
 "nom": "D.Wade",
@@ -6015,7 +6278,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.82,
 "presence": 0.88,
-"age": 29
+"age": 29,
+"min_proj": 21.5
 },
 "433": {
 "nom": "L.James",
@@ -6031,7 +6295,8 @@
 "b2b_n": 10,
 "b2b_presence": 0.6,
 "presence": 0.9,
-"age": 41
+"age": 41,
+"min_proj": 30.7
 },
 "434": {
 "nom": "K.Caldwell-Pope",
@@ -6047,7 +6312,8 @@
 "b2b_n": 6,
 "b2b_presence": 1.0,
 "presence": 0.94,
-"age": 33
+"age": 33,
+"min_proj": 23.6
 },
 "435": {
 "nom": "A.Hukporti",
@@ -6104,7 +6370,8 @@
 "b2b_n": 6,
 "b2b_presence": 0.0,
 "presence": 0.57,
-"age": 32
+"age": 32,
+"min_proj": 31.6
 },
 "439": {
 "nom": "T.Maxey",
@@ -6120,7 +6387,8 @@
 "b2b_n": 14,
 "b2b_presence": 1.0,
 "presence": 0.97,
-"age": 25
+"age": 25,
+"min_proj": 34.2
 },
 "440": {
 "nom": "A.Bona",
@@ -6136,7 +6404,8 @@
 "b2b_n": 15,
 "b2b_presence": 1.0,
 "presence": 0.93,
-"age": 23
+"age": 23,
+"min_proj": 17.2
 },
 "441": {
 "nom": "J.Edwards",
@@ -6166,7 +6435,8 @@
 "b2b_n": 15,
 "b2b_presence": 0.93,
 "presence": 0.96,
-"age": 21
+"age": 21,
+"min_proj": 33.3
 },
 "443": {
 "nom": "J.Walker",
@@ -6251,7 +6521,8 @@
 "b2b_n": 15,
 "b2b_presence": 0.8,
 "presence": 0.84,
-"age": 22
+"age": 22,
+"min_proj": 15.7
 },
 "451": {
 "nom": "L.Kennard",
@@ -6267,7 +6538,8 @@
 "b2b_n": 14,
 "b2b_presence": 0.86,
 "presence": 0.93,
-"age": 30
+"age": 30,
+"min_proj": 21.8
 },
 "452": {
 "nom": "M.Bridges",
@@ -6283,7 +6555,8 @@
 "b2b_n": 15,
 "b2b_presence": 1.0,
 "presence": 0.97,
-"age": 28
+"age": 28,
+"min_proj": 33.1
 },
 "453": {
 "nom": "P.Spencer",
@@ -6340,7 +6613,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.55,
 "presence": 0.88,
-"age": 24
+"age": 24,
+"min_proj": 24.9
 },
 "457": {
 "nom": "J.Green",
@@ -6356,7 +6630,8 @@
 "b2b_n": 8,
 "b2b_presence": 0.88,
 "presence": 0.87,
-"age": 24
+"age": 24,
+"min_proj": 32.4
 },
 "458": {
 "nom": "D.Brooks",
@@ -6372,7 +6647,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.91,
 "presence": 0.95,
-"age": 30
+"age": 30,
+"min_proj": 30.7
 },
 "459": {
 "nom": "J.Goodwin",
@@ -6402,7 +6678,8 @@
 "b2b_n": 16,
 "b2b_presence": 1.0,
 "presence": 0.99,
-"age": 27
+"age": 27,
+"min_proj": 26.8
 },
 "461": {
 "nom": "D.Booker",
@@ -6418,7 +6695,8 @@
 "b2b_n": 14,
 "b2b_presence": 0.93,
 "presence": 0.92,
-"age": 29
+"age": 29,
+"min_proj": 35.8
 },
 "462": {
 "nom": "R.Dunn",
@@ -6434,7 +6712,8 @@
 "b2b_n": 13,
 "b2b_presence": 0.77,
 "presence": 0.91,
-"age": 23
+"age": 23,
+"min_proj": 22.6
 },
 "463": {
 "nom": "O.Ighodaro",
@@ -6450,7 +6729,8 @@
 "b2b_n": 16,
 "b2b_presence": 1.0,
 "presence": 1.0,
-"age": 24
+"age": 24,
+"min_proj": 27.6
 },
 "464": {
 "nom": "K.Brea",
@@ -6466,7 +6746,8 @@
 "b2b_n": 2,
 "b2b_presence": 0.0,
 "presence": 0.27,
-"age": 23
+"age": 23,
+"min_proj": 10.2
 },
 "465": {
 "nom": "R.Fleming",
@@ -6509,7 +6790,8 @@
 "b2b_n": 8,
 "b2b_presence": 1.0,
 "presence": 0.62,
-"age": 20
+"age": 20,
+"min_proj": 23.0
 },
 "468": {
 "nom": "K.Peat",
@@ -6535,7 +6817,8 @@
 "b2b_n": 2,
 "b2b_presence": 0.5,
 "presence": 0.74,
-"age": 27
+"age": 27,
+"min_proj": 29.5
 },
 "470": {
 "nom": "J.Sochan",
@@ -6551,7 +6834,8 @@
 "b2b_n": 8,
 "b2b_presence": 0.75,
 "presence": 0.71,
-"age": 23
+"age": 23,
+"min_proj": 21.3
 },
 "471": {
 "nom": "B.Carlson",
@@ -6581,7 +6865,8 @@
 "b2b_n": 14,
 "b2b_presence": 0.93,
 "presence": 0.97,
-"age": 26
+"age": 26,
+"min_proj": 25.7
 },
 "473": {
 "nom": "C.Youngblood",
@@ -6611,7 +6896,8 @@
 "b2b_n": 9,
 "b2b_presence": 0.89,
 "presence": 0.94,
-"age": 36
+"age": 36,
+"min_proj": 28.2
 },
 "475": {
 "nom": "D.Lillard",
@@ -6624,7 +6910,8 @@
 "nb_sources": 1,
 "malus_b2b": 0.881,
 "age": 36,
-"b2b_n": 0
+"b2b_n": 0,
+"min_proj": 31.4
 },
 "476": {
 "nom": "R.Williams III",
@@ -6640,7 +6927,8 @@
 "b2b_n": 12,
 "b2b_presence": 0.0,
 "presence": 0.71,
-"age": 29
+"age": 29,
+"min_proj": 20.0
 },
 "477": {
 "nom": "T.Camara",
@@ -6656,7 +6944,8 @@
 "b2b_n": 15,
 "b2b_presence": 1.0,
 "presence": 1.0,
-"age": 26
+"age": 26,
+"min_proj": 29.4
 },
 "478": {
 "nom": "S.Sharpe",
@@ -6672,7 +6961,8 @@
 "b2b_n": 10,
 "b2b_presence": 0.8,
 "presence": 0.96,
-"age": 23
+"age": 23,
+"min_proj": 25.4
 },
 "479": {
 "nom": "S.Henderson",
@@ -6688,7 +6978,8 @@
 "b2b_n": 5,
 "b2b_presence": 0.8,
 "presence": 0.97,
-"age": 22
+"age": 22,
+"min_proj": 27.0
 },
 "480": {
 "nom": "D.Avdija",
@@ -6704,7 +6995,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.82,
 "presence": 0.92,
-"age": 25
+"age": 25,
+"min_proj": 33.7
 },
 "481": {
 "nom": "D.Clingan",
@@ -6720,7 +7012,8 @@
 "b2b_n": 15,
 "b2b_presence": 1.0,
 "presence": 0.96,
-"age": 22
+"age": 22,
+"min_proj": 26.2
 },
 "482": {
 "nom": "S.Cissoko",
@@ -6736,7 +7029,8 @@
 "b2b_n": 13,
 "b2b_presence": 1.0,
 "presence": 0.96,
-"age": 22
+"age": 22,
+"min_proj": 16.2
 },
 "483": {
 "nom": "Y.Hansen",
@@ -6752,7 +7046,8 @@
 "b2b_n": 9,
 "b2b_presence": 1.0,
 "presence": 0.6,
-"age": 21
+"age": 21,
+"min_proj": 12.7
 },
 "484": {
 "nom": "J.Kent",
@@ -6799,7 +7094,8 @@
 "b2b_n": 13,
 "b2b_presence": 1.0,
 "presence": 0.97,
-"age": 27
+"age": 27,
+"min_proj": 24.3
 },
 "488": {
 "nom": "D.Plowden",
@@ -6829,7 +7125,8 @@
 "b2b_n": 6,
 "b2b_presence": 0.83,
 "presence": 0.87,
-"age": 31
+"age": 31,
+"min_proj": 32.8
 },
 "490": {
 "nom": "D.Sabonis",
@@ -6845,7 +7142,8 @@
 "b2b_n": 4,
 "b2b_presence": 0.5,
 "presence": 0.78,
-"age": 30
+"age": 30,
+"min_proj": 34.8
 },
 "491": {
 "nom": "M.Monk",
@@ -6861,7 +7159,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.55,
 "presence": 0.85,
-"age": 28
+"age": 28,
+"min_proj": 26.2
 },
 "492": {
 "nom": "K.Murray",
@@ -6877,7 +7176,8 @@
 "b2b_n": 2,
 "b2b_presence": 1.0,
 "presence": 0.91,
-"age": 26
+"age": 26,
+"min_proj": 34.1
 },
 "493": {
 "nom": "D.Cardwell",
@@ -6907,7 +7207,8 @@
 "b2b_n": 13,
 "b2b_presence": 1.0,
 "presence": 0.96,
-"age": 24
+"age": 24,
+"min_proj": 27.4
 },
 "495": {
 "nom": "M.Raynaud",
@@ -6947,7 +7248,8 @@
 "b2b_n": 7,
 "b2b_presence": 0.71,
 "presence": 0.59,
-"age": 24
+"age": 24,
+"min_proj": 12.6
 },
 "498": {
 "nom": "D.Acuff Jr.",
@@ -6960,7 +7262,8 @@
 "nb_sources": 1,
 "malus_b2b": 1.022,
 "age": 19,
-"b2b_n": 0
+"b2b_n": 0,
+"min_proj": 30.6
 },
 "499": {
 "nom": "D.Hunter",
@@ -6976,7 +7279,8 @@
 "b2b_n": 8,
 "b2b_presence": 0.75,
 "presence": 0.91,
-"age": 28
+"age": 28,
+"min_proj": 27.6
 },
 "500": {
 "nom": "A.Karaban",
@@ -7009,7 +7313,8 @@
 "nb_sources": 1,
 "malus_b2b": 0.958,
 "age": 30,
-"b2b_n": 0
+"b2b_n": 0,
+"min_proj": 21.2
 },
 "503": {
 "nom": "E.Payton",
@@ -7035,7 +7340,8 @@
 "b2b_n": 9,
 "b2b_presence": 0.78,
 "presence": 0.89,
-"age": 34
+"age": 34,
+"min_proj": 30.5
 },
 "505": {
 "nom": "T.Peter",
@@ -7058,7 +7364,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.91,
 "presence": 0.9,
-"age": 31
+"age": 31,
+"min_proj": 15.6
 },
 "507": {
 "nom": "J.McLaughlin",
@@ -7074,7 +7381,8 @@
 "b2b_n": 9,
 "b2b_presence": 0.44,
 "presence": 0.65,
-"age": 30
+"age": 30,
+"min_proj": 10.1
 },
 "508": {
 "nom": "D.Fox",
@@ -7090,7 +7398,8 @@
 "b2b_n": 13,
 "b2b_presence": 1.0,
 "presence": 0.97,
-"age": 28
+"age": 28,
+"min_proj": 31.3
 },
 "509": {
 "nom": "H.Barnes",
@@ -7106,7 +7415,8 @@
 "b2b_n": 14,
 "b2b_presence": 1.0,
 "presence": 0.99,
-"age": 34
+"age": 34,
+"min_proj": 20.5
 },
 "510": {
 "nom": "J.Champagnie",
@@ -7122,7 +7432,8 @@
 "b2b_n": 15,
 "b2b_presence": 1.0,
 "presence": 1.0,
-"age": 25
+"age": 25,
+"min_proj": 26.7
 },
 "511": {
 "nom": "K.Johnson",
@@ -7138,7 +7449,8 @@
 "b2b_n": 15,
 "b2b_presence": 1.0,
 "presence": 1.0,
-"age": 27
+"age": 27,
+"min_proj": 25.1
 },
 "512": {
 "nom": "D.Vassell",
@@ -7154,7 +7466,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.91,
 "presence": 0.96,
-"age": 26
+"age": 26,
+"min_proj": 27.5
 },
 "513": {
 "nom": "V.Wembanyama",
@@ -7170,7 +7483,8 @@
 "b2b_n": 13,
 "b2b_presence": 0.92,
 "presence": 0.92,
-"age": 22
+"age": 22,
+"min_proj": 32.5
 },
 "514": {
 "nom": "S.Castle",
@@ -7186,7 +7500,8 @@
 "b2b_n": 14,
 "b2b_presence": 0.93,
 "presence": 0.94,
-"age": 21
+"age": 21,
+"min_proj": 32.7
 },
 "515": {
 "nom": "C.Bryant",
@@ -7216,7 +7531,8 @@
 "b2b_n": 12,
 "b2b_presence": 1.0,
 "presence": 0.96,
-"age": 20
+"age": 20,
+"min_proj": 29.3
 },
 "517": {
 "nom": "D.Jones",
@@ -7293,7 +7609,8 @@
 "b2b_n": 12,
 "b2b_presence": 0.83,
 "presence": 0.92,
-"age": 35
+"age": 35,
+"min_proj": 32.8
 },
 "525": {
 "nom": "A.Jackson Jr.",
@@ -7336,7 +7653,8 @@
 "b2b_n": 8,
 "b2b_presence": 0.88,
 "presence": 0.66,
-"age": 26
+"age": 26,
+"min_proj": 15.9
 },
 "528": {
 "nom": "R.Barrett",
@@ -7352,7 +7670,8 @@
 "b2b_n": 10,
 "b2b_presence": 0.6,
 "presence": 0.91,
-"age": 26
+"age": 26,
+"min_proj": 30.8
 },
 "529": {
 "nom": "I.Quickley",
@@ -7368,7 +7687,8 @@
 "b2b_n": 14,
 "b2b_presence": 0.86,
 "presence": 0.94,
-"age": 27
+"age": 27,
+"min_proj": 31.4
 },
 "530": {
 "nom": "J.Poeltl",
@@ -7384,7 +7704,8 @@
 "b2b_n": 6,
 "b2b_presence": 0.5,
 "presence": 0.78,
-"age": 31
+"age": 31,
+"min_proj": 27.0
 },
 "531": {
 "nom": "S.Barnes",
@@ -7400,7 +7721,8 @@
 "b2b_n": 15,
 "b2b_presence": 1.0,
 "presence": 0.97,
-"age": 25
+"age": 25,
+"min_proj": 33.8
 },
 "532": {
 "nom": "J.Battle",
@@ -7430,7 +7752,8 @@
 "b2b_n": 15,
 "b2b_presence": 1.0,
 "presence": 1.0,
-"age": 24
+"age": 24,
+"min_proj": 23.3
 },
 "534": {
 "nom": "J.Walter",
@@ -7446,7 +7769,8 @@
 "b2b_n": 13,
 "b2b_presence": 0.92,
 "presence": 0.99,
-"age": 22
+"age": 22,
+"min_proj": 21.6
 },
 "535": {
 "nom": "C.Hepburn",
@@ -7485,7 +7809,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.91,
 "presence": 0.86,
-"age": 21
+"age": 21,
+"min_proj": 22.9
 },
 "538": {
 "nom": "K.Anderson",
@@ -7501,7 +7826,8 @@
 "b2b_n": 9,
 "b2b_presence": 0.78,
 "presence": 0.7,
-"age": 33
+"age": 33,
+"min_proj": 17.7
 },
 "539": {
 "nom": "N.Bittle",
@@ -7551,7 +7877,8 @@
 "b2b_n": 11,
 "b2b_presence": 1.0,
 "presence": 1.0,
-"age": 25
+"age": 25,
+"min_proj": 18.3
 },
 "544": {
 "nom": "T.Bates",
@@ -7591,7 +7918,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.91,
 "presence": 0.91,
-"age": 26
+"age": 26,
+"min_proj": 16.8
 },
 "547": {
 "nom": "T.Alexander",
@@ -7624,7 +7952,8 @@
 "b2b_n": 6,
 "b2b_presence": 0.83,
 "presence": 0.93,
-"age": 27
+"age": 27,
+"min_proj": 31.4
 },
 "550": {
 "nom": "M.Bamba",
@@ -7653,7 +7982,8 @@
 "b2b_n": 8,
 "b2b_presence": 0.75,
 "presence": 0.78,
-"age": 32
+"age": 32,
+"min_proj": 23.1
 },
 "552": {
 "nom": "S.Mykhailiuk",
@@ -7683,7 +8013,8 @@
 "b2b_n": 10,
 "b2b_presence": 0.8,
 "presence": 0.8,
-"age": 29
+"age": 29,
+"min_proj": 34.0
 },
 "554": {
 "nom": "K.George",
@@ -7699,7 +8030,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.91,
 "presence": 0.91,
-"age": 22
+"age": 22,
+"min_proj": 33.2
 },
 "555": {
 "nom": "B.Sensabaugh",
@@ -7715,7 +8047,8 @@
 "b2b_n": 14,
 "b2b_presence": 0.86,
 "presence": 0.93,
-"age": 22
+"age": 22,
+"min_proj": 21.6
 },
 "556": {
 "nom": "I.Collier",
@@ -7731,7 +8064,8 @@
 "b2b_n": 12,
 "b2b_presence": 1.0,
 "presence": 0.98,
-"age": 22
+"age": 22,
+"min_proj": 22.7
 },
 "557": {
 "nom": "K.Filipowski",
@@ -7747,7 +8081,8 @@
 "b2b_n": 15,
 "b2b_presence": 1.0,
 "presence": 0.96,
-"age": 22
+"age": 22,
+"min_proj": 22.0
 },
 "558": {
 "nom": "A.Bailey",
@@ -7763,7 +8098,8 @@
 "b2b_n": 15,
 "b2b_presence": 0.87,
 "presence": 0.93,
-"age": 20
+"age": 20,
+"min_proj": 28.2
 },
 "559": {
 "nom": "B.Hinson",
@@ -7789,7 +8125,8 @@
 "nb_sources": 1,
 "malus_b2b": 1.022,
 "age": 19,
-"b2b_n": 0
+"b2b_n": 0,
+"min_proj": 29.7
 },
 "561": {
 "nom": "T.Young",
@@ -7805,7 +8142,8 @@
 "b2b_n": 3,
 "b2b_presence": 0.67,
 "presence": 0.77,
-"age": 28
+"age": 28,
+"min_proj": 34.5
 },
 "562": {
 "nom": "T.Mann",
@@ -7821,7 +8159,8 @@
 "b2b_n": 10,
 "b2b_presence": 0.9,
 "presence": 0.79,
-"age": 25
+"age": 25,
+"min_proj": 16.3
 },
 "563": {
 "nom": "D.Ayton",
@@ -7837,7 +8176,8 @@
 "b2b_n": 12,
 "b2b_presence": 0.83,
 "presence": 0.89,
-"age": 28
+"age": 28,
+"min_proj": 23.8
 },
 "564": {
 "nom": "A.Davis",
@@ -7853,7 +8193,8 @@
 "b2b_n": 4,
 "b2b_presence": 0.75,
 "presence": 0.79,
-"age": 33
+"age": 33,
+"min_proj": 32.2
 },
 "565": {
 "nom": "J.Champagnie",
@@ -7897,7 +8238,8 @@
 "b2b_n": 11,
 "b2b_presence": 0.73,
 "presence": 0.84,
-"age": 22
+"age": 22,
+"min_proj": 24.0
 },
 "568": {
 "nom": "T.Vukcevic",
@@ -7913,7 +8255,8 @@
 "b2b_n": 8,
 "b2b_presence": 0.88,
 "presence": 0.79,
-"age": 23
+"age": 23,
+"min_proj": 13.8
 },
 "569": {
 "nom": "C.Carrington",
@@ -7936,7 +8279,8 @@
 "b2b_n": 6,
 "b2b_presence": 0.83,
 "presence": 0.87,
-"age": 22
+"age": 22,
+"min_proj": 29.4
 },
 "571": {
 "nom": "A.Sarr",
@@ -7946,7 +8290,8 @@
 "proj_2027": 38.1,
 "reel_2026": 37.5,
 "matchs_proj": 66.0,
-"nb_sources": 1
+"nb_sources": 1,
+"min_proj": 28.6
 },
 "572": {
 "nom": "T.Johnson",
@@ -7962,7 +8307,8 @@
 "b2b_n": 10,
 "b2b_presence": 0.8,
 "presence": 0.93,
-"age": 20
+"age": 20,
+"min_proj": 25.3
 },
 "573": {
 "nom": "W.Riley",
@@ -8003,7 +8349,8 @@
 "nb_sources": 1,
 "malus_b2b": 1.022,
 "age": 19,
-"b2b_n": 0
+"b2b_n": 0,
+"min_proj": 32.2
 },
 "576": {
 "nom": "K.Middleton",
@@ -8019,7 +8366,8 @@
 "b2b_n": 13,
 "b2b_presence": 0.46,
 "presence": 0.8,
-"age": 35
+"age": 35,
+"min_proj": 20.3
 },
 "577": {
 "nom": "F.Okpara",

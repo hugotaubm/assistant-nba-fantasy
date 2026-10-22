@@ -48,7 +48,7 @@ def espn():
         stats = lambda a: points(a.get("0", 0), a.get("6", 0), a.get("3", 0), a.get("2", 0), a.get("1", 0))
         res[norm(p["fullName"])] = dict(
             nom=p["fullName"], cle_courte=norm(p.get("firstName", ""))[:1] + norm(p.get("lastName", "")),
-            proj=stats(pr) if pr.get("42") else None, gp_proj=pr.get("42"),
+            proj=stats(pr) if pr.get("42") else None, gp_proj=pr.get("42"), min_proj=pr.get("40"),
             reel_formule=stats(ac) if ac.get("42") else None, gp_reel=ac.get("42"))
     return res
 
@@ -115,7 +115,8 @@ def main():
         fiab = min(0.97, max(0.55, j["gp_proj"] / 82))
         joueurs[pid] = dict(info, fppg=round(fppg, 2), fiabilite=round(fiab, 2),
                             proj_2027=round(proj, 1), reel_2026=round(reel, 1) if reel else None,
-                            matchs_proj=j["gp_proj"], nb_sources=len(sources))
+                            matchs_proj=j["gp_proj"], min_proj=round(j["min_proj"], 1) if j.get("min_proj") else None,
+                            nb_sources=len(sources))
 
     # garde l'effet back-to-back mesuré par maj_b2b.py
     for pid, v in joueurs.items():

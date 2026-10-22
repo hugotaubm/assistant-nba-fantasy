@@ -50,6 +50,8 @@ def lire_config():
     cfg.setdefault("bonus_attente", 0.5)        # pts par jour de retard d'un transfert : à gain égal, on attend
     cfg.setdefault("temps_max_calcul", 100)     # secondes max par optimisation
     cfg.setdefault("seuil_nouvelle_equipe", 20)
+    cfg.setdefault("poids_presence_avant_saison", 2)   # matchs « fictifs » donnés à la fiabilité d'avant-saison
+    cfg.setdefault("poids_minutes_avant_saison", 3)    # matchs « fictifs » donnés aux minutes projetées
     cfg.setdefault("seuil_changement_plan", 5)  # pts mini pour changer un transfert déjà conseillé
     cfg.setdefault("force_fort", 25)            # badge 🟢 Fort à partir de ce gain (pts)
     cfg.setdefault("force_leger", 8)            # badge 🟡 Léger à partir de ce gain, sinon ⚪ Facultatif # pts de gain mini pour proposer une autre équipe avant la 1re deadline
@@ -242,7 +244,42 @@ def gameweek_courante(boot, maintenant):
 
 
 # ----------------------------------------------------------------------------- projections
-def projeter(boot, cfg, saison_commencee):
+def minutes_saison(boot, hors_ligne):
+    """Pour chaque joueur, sur les Gamedays terminés : matchs de son équipe, matchs où il est entré en jeu,
+    minutes totales (routes publiques /event/N/live/, gardées en cache une fois le Gameday terminé)."""
+    import requests
+    res = {}
+    equipe = {e["id"]: e["team"] for e in boot["elements"]}
+    maintenant = dt.datetime.now(dt.timezone.utc)
+    for ev in (e for e in boot["events"] if z(e["deadline_time"]) < maintenant):
+        chemin = DONNEES / f"live_{ev['id']}.json"   # gardé en cache seulement une fois le Gameday validé
+        if chemin.exists() and ev.get("finished"):
+            live = json.loads(chemin.read_text(encoding="utf-8"))
+        elif hors_ligne:
+            continue
+        else:
+            try:
+                r = requests.get(f"{BASE}/event/{ev['id']}/live/", headers=UA, timeout=30)
+                r.raise_for_status()
+                live = r.json()
+                if ev.get("finished"):
+                    chemin.write_text(json.dumps(live), encoding="utf-8")
+            except Exception as ex:
+                print(f"  ! minutes du {ev['name']} indisponibles ({ex.__class__.__name__})")
+                continue
+        stats = {x["id"]: x["stats"] for x in live.get("elements", [])}
+        ont_joue = {equipe[pid] for pid, st in stats.items() if st.get("minutes", 0) > 0 and pid in equipe}
+        for pid, eq in equipe.items():
+            if eq in ont_joue:
+                m = stats.get(pid, {}).get("minutes", 0)
+                r_ = res.setdefault(pid, dict(matchs_equipe=0, joues=0, minutes=0))
+                r_["matchs_equipe"] += 1
+                r_["joues"] += m > 0
+                r_["minutes"] += m
+    return res
+
+
+def projeter(boot, cfg, saison_commencee, saison=None):
     priors = json.loads((ICI / "priors.json").read_text(encoding="utf-8"))["joueurs"]
     equipes = {t["id"]: t["short_name"] for t in boot["teams"]}
     joueurs = {}
@@ -264,6 +301,17 @@ def projeter(boot, cfg, saison_commencee):
         proj *= cfg["ajustements"].get(e["web_name"], 1.0)
         fiab = priors.get(str(pid), {}).get("fiabilite", 0.92)
         b2b = priors.get(str(pid), {}).get("malus_b2b")   # effet mesuré sur la saison passée (maj_b2b.py)
+        # Saison en cours : un joueur qui n'entre pas en jeu alors que son équipe joue (choix de l'entraîneur)
+        # voit sa probabilité de jouer baisser tout de suite ; ses minutes réelles corrigent sa projection.
+        s = (saison or {}).get(pid)
+        if s and s["matchs_equipe"]:
+            k = cfg["poids_presence_avant_saison"]
+            fiab = (s["joues"] + k * fiab) / (s["matchs_equipe"] + k)
+            min_proj = priors.get(str(pid), {}).get("min_proj")
+            if s["joues"] and min_proj:
+                w = s["joues"] / (s["joues"] + cfg["poids_minutes_avant_saison"])
+                ratio = min(1.3, (s["minutes"] / s["joues"]) / min_proj)
+                proj *= (1 - w) + w * ratio
         statut = e["status"]
         chance = e.get("chance_of_playing_next_round")
         if statut in ("i", "u", "s", "n") or e.get("removed"):
@@ -928,7 +976,8 @@ def main():
         gw_suiv = dict(gw_suiv, events=[e for e in boot["events"] if gw_suiv["start_event"] <= e["id"] <= gw_suiv["stop_event"]])
     joue, matchs = construire_calendrier(boot, fixtures, sched)
     MALUS_B2B[0] = cfg["malus_back_to_back"]
-    joueurs = projeter(boot, cfg, saison_commencee)
+    saison = minutes_saison(boot, args.hors_ligne) if saison_commencee else {}
+    joueurs = projeter(boot, cfg, saison_commencee, saison)
     equipe, banque, prix_vente, gratuits, cap_dispo, src_equipe = mon_equipe(mt, cfg, joueurs, boot, gw)
     premier = min(e["id"] for e in boot["events"])
     construction = jours[0]["id"] == premier
