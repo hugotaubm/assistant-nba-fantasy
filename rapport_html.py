@@ -325,6 +325,22 @@ def rendre(ctx):
     chg = "".join(f'<p class="discret">{_e(suivi[k])}</p>' for k in ("changements", "stabilite") if suivi.get(k))
     if suivi.get("maintenant"):
         chg += f'<p class="option">💡 {_e(suivi["maintenant"])}</p>'
+    val_html = ""
+    if suivi.get("valeurs"):
+        lignes = "".join(
+            f'<tr class="{"poids-mort" if i == 0 else ""}"><td>{_e(l["nom"])}</td><td>{_m(l["prix"])}</td>'
+            f'<td>{_m(l["proj"])}</td><td>{l["n1"]} · {l["pts1"]:.0f}</td><td>{l["n2"]} · {l["pts2"]:.0f}</td>'
+            f'<td><b>{_m(l["par_m"])}</b></td></tr>' for i, l in enumerate(suivi["valeurs"]))
+        val_html = f'''
+  <details class="valeurs">
+    <summary><h2>Tes joueurs, du moins utile au plus utile</h2></summary>
+    <div class="defile"><table class="tab-valeurs">
+      <tr><th>Joueur</th><th>M$</th><th>pts/match</th><th>Cette sem. (matchs · pts)</th><th>Suivante (matchs · pts)</th><th>pts/M$</th></tr>
+      {lignes}
+    </table></div>
+    <p class="discret">Points attendus (projection × probabilité de jouer × fiabilité). La semaine suivante compte
+    pour {_m(suivi.get("poids_futur", 0.5))}. En rouge : le joueur qui rapporte le moins pour son prix.</p>
+  </details>'''
     if suivi.get("joker"):
         chg += f'<p class="discret">🃏 {_e(suivi["joker"])}</p>'
     afaire_html = f'''
@@ -519,6 +535,10 @@ td.banc .adv-logo {{ opacity: .5; }}
 .force {{ display: inline-block; font-size: .85rem; font-weight: 600; padding: 0 6px; border-radius: 6px;
   background: var(--repos); white-space: nowrap; }}
 .discret {{ color: var(--doux); font-size: .9rem; margin: 10px 0 0; }}
+.tab-valeurs {{ border-collapse: collapse; width: 100%; font-size: .9rem; }}
+.tab-valeurs th, .tab-valeurs td {{ padding: 6px 8px; border-bottom: 1px solid var(--trait); text-align: left; white-space: nowrap; }}
+.tab-valeurs tr.poids-mort td {{ color: #c0392b; font-weight: 600; }}
+.defile {{ overflow-x: auto; }}
 .option {{ font-size: .95rem; margin: 10px 0 0; padding: 8px 10px; border-radius: 8px; background: var(--fond); }}
 details.semaine > summary, #gw2 > summary {{ cursor: pointer; }}
 details.semaine > summary h2 {{ display: inline; }}
@@ -575,6 +595,8 @@ footer ul {{ list-style: none; padding: 0; margin: 6px 0 0; display: flex; flex-
     <h2>Transferts</h2>
     {tr_html}
   </section>
+
+  {val_html}
 
   <details class="semaine" open>
     <summary><h2>Ton effectif, jour par jour</h2></summary>

@@ -18,7 +18,7 @@
   "transferts_restants_cette_semaine": null,
   "capitaine_deja_utilise_cette_semaine": false,
   "transferts_gratuits_par_defaut": 2,
-  "poids_futur": 0.5,
+  "poids_futur": 0.8,
   "projection_min": 12,
   "joueurs_exclus": [
     "R.Rupert",

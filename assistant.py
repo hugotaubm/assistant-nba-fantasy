@@ -809,6 +809,24 @@ def option_joker(plan, args_plan, base, cfg, joueurs):
             f"sur cette semaine et la suivante, avec {changes} joueur(s) changé(s) ({entrants}) → {avis}.")
 
 
+def valeurs_equipe(equipe, joueurs, jours, gw_suiv, joue, cfg):
+    """Points attendus de chacun de tes joueurs d'ici la fin de la semaine et la semaine suivante,
+    du moins utile au plus utile (repère pour savoir de qui se séparer en premier)."""
+    date = lambda e: (z(e["deadline_time"]) - dt.timedelta(hours=4)).date()
+    suiv = (gw_suiv or {}).get("events", [])
+    lignes = []
+    for q in equipe:
+        p = joueurs[q]
+        v1 = [ev_jour(p, e["id"], joue, date(e)) for e in jours]
+        v2 = [ev_jour(p, e["id"], joue, date(e)) for e in suiv]
+        total = sum(v1) + cfg["poids_futur"] * sum(v2)
+        lignes.append(dict(id=q, nom=nom(joueurs, q), prix=p["prix"] / 10, proj=p["proj"], fiab=p["fiabilite"],
+                           n1=sum(1 for e in jours if e["id"] in joue.get(p["equipe_id"], ())), pts1=sum(v1),
+                           n2=sum(1 for e in suiv if e["id"] in joue.get(p["equipe_id"], ())), pts2=sum(v2),
+                           total=total, par_m=total / max(p["prix"] / 10, 1)))
+    return sorted(lignes, key=lambda l: l["par_m"])
+
+
 def quand_txt(ev):
     """« ce soir » si la deadline tombe aujourd'hui (heure de Paris), sinon « le Day N »."""
     d = z(ev["deadline_time"]).astimezone(PARIS).date()
@@ -1032,6 +1050,14 @@ def rapport(joueurs, equipe, banque, gratuits, cap_dispo, gw, jours, joue, match
             for a_, b_ in zip(sorted(so, key=lambda q: joueurs[q]["poste"]), sorted(en, key=lambda q: joueurs[q]["poste"])))
             for ev, so, en in plan["transferts_suiv"]))
     P("")
+    if suivi and suivi.get("valeurs"):
+        P("▶ TES JOUEURS, DU MOINS UTILE AU PLUS UTILE (points attendus ; semaine suivante pondérée × "
+          f"{suivi['poids_futur']})")
+        for l in suivi["valeurs"]:
+            P(f"  {l['nom']:<28} {l['prix']:4.1f} M$ | {l['proj']:4.1f} pts/match, fiabilité {l['fiab']:.2f} | "
+              f"cette semaine {l['n1']} m. {l['pts1']:4.0f} pts | suivante {l['n2']} m. {l['pts2']:4.0f} pts | "
+              f"{l['par_m']:4.1f} pts/M$")
+        P("")
     P("▶ PLAN JOUR PAR JOUR (cette Gameweek)")
     for jp in plan["plan"]:
         e = jp["event"]
@@ -1140,7 +1166,8 @@ def main():
         print(f"  (option « transférer maintenant » non calculée : {ex!r})")
     alertes, a_verifier, note_alertes = alertes_equipe(mt, plan, joueurs, joue)
     suivi = dict(forces=forces, alertes=alertes, a_verifier=a_verifier, note_alertes=note_alertes, stabilite=stabilite,
-                 maintenant=maintenant_txt, joker=joker_txt,
+                 maintenant=maintenant_txt, joker=joker_txt, poids_futur=cfg["poids_futur"],
+                 valeurs=valeurs_equipe(equipe, joueurs, jours, gw_suiv, joue, cfg),
                  changements=changements(prec, plan, joueurs, boot, gw), source_equipe=src_equipe)
     print(f"  (force des conseils : {(dt.datetime.now() - t_force).seconds} s)")
     texte, page = rapport(joueurs, equipe, banque, gratuits, cap_dispo, gw, jours, joue, matchs, plan, base, sources, src_equipe, boot,
