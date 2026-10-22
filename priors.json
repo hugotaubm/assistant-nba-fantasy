@@ -2403,9 +2403,11 @@
 "presence": 0.67,
 "age": 22,
 "min_proj": 23.6,
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "C",
-"devant": []
+"devant": [
+"Daniel Gafford"
+]
 },
 "120": {
 "nom": "D.Gafford",
@@ -2423,11 +2425,9 @@
 "presence": 0.81,
 "age": 28,
 "min_proj": 22.5,
-"rang_poste": 2,
+"rang_poste": 1,
 "poste_espn": "C",
-"devant": [
-"Dereck Lively II"
-],
+"devant": [],
 "presaison_matchs": 3,
 "presaison_min": 13.3
 },
@@ -2516,8 +2516,8 @@
 "rang_poste": 3,
 "poste_espn": "C",
 "devant": [
-"Dereck Lively II",
-"Daniel Gafford"
+"Daniel Gafford",
+"Dereck Lively II"
 ],
 "presaison_matchs": 4,
 "presaison_min": 10.2
@@ -4771,8 +4771,8 @@
 "poste_espn": "PG",
 "devant": [
 "Darius Garland",
-"Kris Dunn",
-"Keaton Wagler"
+"Keaton Wagler",
+"Kris Dunn"
 ],
 "presaison_matchs": 3,
 "presaison_min": 14.7
@@ -4838,8 +4838,8 @@
 "poste_espn": "PG",
 "devant": [
 "Darius Garland",
-"Kris Dunn",
-"Keaton Wagler"
+"Keaton Wagler",
+"Kris Dunn"
 ]
 },
 "241": {
@@ -4858,11 +4858,9 @@
 "presence": 1.0,
 "age": 32,
 "min_proj": 22.0,
-"rang_poste": 2,
-"poste_espn": "PG",
-"devant": [
-"Darius Garland"
-],
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
 "presaison_matchs": 2,
 "presaison_min": 10.5
 },
@@ -4882,9 +4880,9 @@
 "rang_poste": 7,
 "poste_espn": "SG",
 "devant": [
-"Keaton Wagler",
+"Kris Dunn",
 "Bradley Beal",
-"Kobe Sanders"
+"Keaton Wagler"
 ],
 "presaison_matchs": 2,
 "presaison_min": 24.5
@@ -4972,7 +4970,7 @@
 "rang_poste": 2,
 "poste_espn": "SG",
 "devant": [
-"Keaton Wagler"
+"Kris Dunn"
 ]
 },
 "247": {
@@ -5070,9 +5068,11 @@
 "age": 19,
 "b2b_n": 0,
 "min_proj": 28.1,
-"rang_poste": 1,
-"poste_espn": "SG",
-"devant": [],
+"rang_poste": 2,
+"poste_espn": "PG",
+"devant": [
+"Darius Garland"
+],
 "presaison_matchs": 3,
 "presaison_min": 27.0
 },
@@ -5117,11 +5117,11 @@
 "age": 22,
 "min_proj": 25.8,
 "rang_poste": 4,
-"poste_espn": "SG",
+"poste_espn": "SF",
 "devant": [
-"Keaton Wagler",
-"Bradley Beal",
-"Kobe Sanders"
+"Derrick Jones Jr.",
+"Kobe Sanders",
+"Rui Hachimura"
 ],
 "presaison_matchs": 3,
 "presaison_min": 16.0
@@ -5142,12 +5142,9 @@
 "presence": 0.84,
 "age": 25,
 "min_proj": 23.0,
-"rang_poste": 3,
-"poste_espn": "SG",
-"devant": [
-"Austin Reaves",
-"Collin Sexton"
-],
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
 "presaison_matchs": 2,
 "presaison_min": 16.0
 },
@@ -5236,9 +5233,9 @@
 "rang_poste": 4,
 "poste_espn": "PF",
 "devant": [
-"Jake LaRavia",
+"Matisse Thybulle",
 "Sandro Mamukelashvili",
-"Matisse Thybulle"
+"Jake LaRavia"
 ],
 "presaison_matchs": 4,
 "presaison_min": 10.2
@@ -5303,9 +5300,9 @@
 "rang_poste": 8,
 "poste_espn": "SF",
 "devant": [
-"Quentin Grimes",
-"Cameron Carr",
-"Matisse Thybulle"
+"Ziaire Williams",
+"Jake LaRavia",
+"Quentin Grimes"
 ],
 "presaison_matchs": 5,
 "presaison_min": 12.4
@@ -5323,12 +5320,12 @@
 "b2b_presence": 1.0,
 "presence": 0.62,
 "age": 22,
-"rang_poste": 5,
+"rang_poste": 6,
 "poste_espn": "SF",
 "devant": [
-"Quentin Grimes",
-"Cameron Carr",
-"Matisse Thybulle"
+"Ziaire Williams",
+"Jake LaRavia",
+"Quentin Grimes"
 ],
 "presaison_matchs": 3,
 "presaison_min": 18.3
@@ -5349,9 +5346,11 @@
 "presence": 1.0,
 "age": 24,
 "min_proj": 29.2,
-"rang_poste": 1,
-"poste_espn": "PF",
-"devant": [],
+"rang_poste": 2,
+"poste_espn": "SF",
+"devant": [
+"Ziaire Williams"
+],
 "presaison_matchs": 5,
 "presaison_min": 23.2
 },
@@ -5395,9 +5394,11 @@
 "presence": 0.93,
 "age": 26,
 "min_proj": 30.8,
-"rang_poste": 1,
-"poste_espn": "SF",
-"devant": [],
+"rang_poste": 2,
+"poste_espn": "SG",
+"devant": [
+"Austin Reaves"
+],
 "presaison_matchs": 5,
 "presaison_min": 25.0
 },
@@ -5417,12 +5418,9 @@
 "presence": 0.93,
 "age": 29,
 "min_proj": 19.1,
-"rang_poste": 3,
-"poste_espn": "SF",
-"devant": [
-"Quentin Grimes",
-"Cameron Carr"
-],
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
 "presaison_matchs": 4,
 "presaison_min": 21.2
 },
@@ -5442,7 +5440,7 @@
 "rang_poste": 2,
 "poste_espn": "PF",
 "devant": [
-"Jake LaRavia"
+"Matisse Thybulle"
 ],
 "presaison_matchs": 5,
 "presaison_min": 20.0
@@ -5475,10 +5473,12 @@
 "malus_b2b": 1.022,
 "age": 21,
 "b2b_n": 0,
-"rang_poste": 2,
-"poste_espn": "SF",
+"rang_poste": 5,
+"poste_espn": "SG",
 "devant": [
-"Quentin Grimes"
+"Austin Reaves",
+"Quentin Grimes",
+"Collin Sexton"
 ],
 "presaison_matchs": 2,
 "presaison_min": 17.5
@@ -5502,9 +5502,9 @@
 "rang_poste": 7,
 "poste_espn": "SF",
 "devant": [
-"Quentin Grimes",
-"Cameron Carr",
-"Matisse Thybulle"
+"Ziaire Williams",
+"Jake LaRavia",
+"Quentin Grimes"
 ],
 "presaison_matchs": 5,
 "presaison_min": 14.2
@@ -7186,7 +7186,7 @@
 "rang_poste": 2,
 "poste_espn": "SG",
 "devant": [
-"Trey Murphy III"
+"Jeremiah Fears"
 ],
 "presaison_matchs": 4,
 "presaison_min": 16.8
@@ -7304,9 +7304,11 @@
 "presence": 0.95,
 "age": 28,
 "min_proj": 27.1,
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "SF",
-"devant": [],
+"devant": [
+"Trey Murphy III"
+],
 "presaison_matchs": 4,
 "presaison_min": 17.0
 },
@@ -7327,7 +7329,7 @@
 "age": 26,
 "min_proj": 32.5,
 "rang_poste": 1,
-"poste_espn": "SG",
+"poste_espn": "SF",
 "devant": [],
 "presaison_matchs": 4,
 "presaison_min": 18.2
@@ -7391,11 +7393,9 @@
 "presence": 1.0,
 "age": 20,
 "min_proj": 26.4,
-"rang_poste": 2,
-"poste_espn": "PG",
-"devant": [
-"Dejounte Murray"
-],
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
 "presaison_matchs": 4,
 "presaison_min": 19.5
 },
@@ -7436,12 +7436,12 @@
 "b2b_presence": 1.0,
 "presence": 0.76,
 "age": 23,
-"rang_poste": 5,
+"rang_poste": 6,
 "poste_espn": "SF",
 "devant": [
+"Trey Murphy III",
 "Herbert Jones",
-"Saddiq Bey",
-"Bennedict Mathurin"
+"Saddiq Bey"
 ],
 "presaison_matchs": 4,
 "presaison_min": 11.8
@@ -7462,9 +7462,10 @@
 "presence": 0.97,
 "age": 27,
 "min_proj": 27.1,
-"rang_poste": 2,
+"rang_poste": 3,
 "poste_espn": "SF",
 "devant": [
+"Trey Murphy III",
 "Herbert Jones"
 ],
 "presaison_matchs": 4,
@@ -7541,9 +7542,9 @@
 "rang_poste": 8,
 "poste_espn": "SG",
 "devant": [
-"Trey Murphy III",
+"Jeremiah Fears",
 "Bennedict Mathurin",
-"Jeremiah Fears"
+"Trey Murphy III"
 ],
 "presaison_matchs": 2,
 "presaison_min": 7.5
@@ -7582,9 +7583,9 @@
 "rang_poste": 4,
 "poste_espn": "SG",
 "devant": [
-"Trey Murphy III",
+"Jeremiah Fears",
 "Bennedict Mathurin",
-"Jeremiah Fears"
+"Trey Murphy III"
 ],
 "presaison_matchs": 4,
 "presaison_min": 11.5
@@ -11788,6 +11789,6 @@
 "_source": "saison régulière 2025-26 (ESPN), mis à jour le 20/10/2026"
 },
 "roles": {
-"_source": "ESPN (hiérarchie + présaison), mis à jour le 22/10/2026"
+"_source": "ESPN (hiérarchie + présaison), mis à jour le 23/10/2026"
 }
 }
