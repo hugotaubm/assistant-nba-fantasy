@@ -1,0 +1,80 @@
+======================================================================
+BILAN DES GAMEDAYS JOUÉS
+======================================================================
+
+--- Gameweek 1 - Day 1 : moyenne des joueurs 97.2 | meilleur 309.0
+  Ton score : 159.0 | banc : 0.0 | rang : 5882 | transferts : 0 (coût 0)
+  TITULAIRE S.Gilgeous-Alexander (OKC)   36 min        réel  64.0 | projeté  55.4
+  TITULAIRE V.Edgecombe (PHI)            34 min        réel  18.0 | projeté  35.1
+  TITULAIRE J.Williams (OKC)             16 min        réel  11.0 | projeté  20.6
+  TITULAIRE V.Wembanyama (SAS)           34 min        réel  52.0 | projeté  58.9
+  TITULAIRE J.Walsh (BOS)                13 min        réel  14.0 | projeté  16.9
+  banc      N.Traore (BKN)               pas de match  réel   0.0 | projeté   0.0
+  banc      B.Burries (MIL)              pas de match  réel   0.0 | projeté   0.0
+  banc      D.Wolf (BKN)                 pas de match  réel   0.0 | projeté   0.0
+  banc      C.Wilson (CHI)               pas de match  réel   0.0 | projeté   0.0
+  banc      D.Acuff Jr. (SAC)            pas de match  réel   0.0 | projeté   0.0
+  → Titulaires : 159.0 pts réels pour 186.8 projetés (-27.8).
+  → Meilleur cinq possible après coup : 159.0 pts (hors capitaine), soit 0.0 pts laissés sur le banc.
+
+--- Gameweek 1 - Day 2 : moyenne des joueurs 131.7 | meilleur 340.0
+  Ton score : 84.0 | banc : 0.0 | rang : 35071 | transferts : 0 (coût 0)
+  TITULAIRE N.Traore (BKN)               15 min        réel   5.0 | projeté  24.9
+  TITULAIRE B.Burries (MIL)              15 min        réel  17.0 | projeté  24.6
+  TITULAIRE D.Acuff Jr. (SAC)            34 min        réel  30.0 | projeté  33.9
+  TITULAIRE D.Wolf (BKN)                  0 min        réel   0.0 | projeté  24.9
+  TITULAIRE C.Wilson (CHI)               32 min        réel  32.0 | projeté  38.0
+  banc      S.Gilgeous-Alexander (OKC)   pas de match  réel   0.0 | projeté   0.0
+  banc      V.Edgecombe (PHI)            pas de match  réel   0.0 | projeté   0.0
+  banc      J.Williams (OKC)             pas de match  réel   0.0 | projeté   0.0
+  banc      V.Wembanyama (SAS)           pas de match  réel   0.0 | projeté   0.0
+  banc      J.Walsh (BOS)                pas de match  réel   0.0 | projeté   0.0
+  → Titulaires : 84.0 pts réels pour 146.3 projetés (-62.3).
+  → Meilleur cinq possible après coup : 84.0 pts (hors capitaine), soit 0.0 pts laissés sur le banc.
+
+======================================================================
+QUALITÉ DES PROJECTIONS (toute la ligue, joueurs projetés ≥ 20 pts)
+======================================================================
+Matchs joués : 202 | biais moyen (réel − projeté) : -3.3 pts | erreur moyenne : 8.8 pts
+Corrélation projeté/réel : 0.69
+Minutes moyennes : 25.5
+Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : 33 sur 235
+  - B.Ingram (LAC) (event 2) : projeté 41.2, statut actuel i, news : Achilles expected back 2026-11-08
+  - J.Butler (GSW) (event 2) : projeté 40.1, statut actuel i, news : Knee expected back 2027-01-02
+  - K.Porter Jr. (MIL) (event 2) : projeté 38.5, statut actuel u, news : -
+  - K.Porzingis (GSW) (event 2) : projeté 35.9, statut actuel i, news : Illness expected back 2026-12-01
+  - A.Dybantsa (WAS) (event 2) : projeté 35.6, statut actuel i, news : Ankle expected back 2026-10-23
+  - K.Knueppel (CHA) (event 2) : projeté 35.5, statut actuel i, news : Hamstring expected back 2026-10-23
+  - C.White (CHA) (event 2) : projeté 34.9, statut actuel i, news : Calf expected back 2026-10-23
+  - J.Nurkic (UTA) (event 2) : projeté 32.2, statut actuel i, news : Foot expected back 2026-11-04
+  - B.Podziemski (GSW) (event 2) : projeté 31.9, statut actuel i, news : Back expected back 2026-10-23
+  - N.Claxton (CHI) (event 2) : projeté 31.3, statut actuel i, news : Hamstring expected back 2026-11-04
+  - A.Black (ORL) (event 2) : projeté 31.3, statut actuel i, news : Ankle expected back 2026-10-23
+  - C.Sexton (LAL) (event 2) : projeté 30.3, statut actuel i, news : Calf expected back 2026-10-23
+Plus grosses surestimations :
+  - J.Giddey (CHI) (event 2) : projeté 51.5, réel 21.0 en 24 min
+  - N.Vucevic (ORL) (event 2) : projeté 31.4, réel 3.0 en 5 min
+  - T.Murphy III (NOP) (event 2) : projeté 38.7, réel 17.0 en 31 min
+  - K.Filipowski (UTA) (event 2) : projeté 26.8, réel 6.0 en 8 min
+  - N.Traore (BKN) (event 2) : projeté 24.9, réel 5.0 en 15 min
+  - M.Bridges (NYK) (event 1) : projeté 31.9, réel 12.0 en 33 min
+  - K.Murray (SAC) (event 2) : projeté 28.8, réel 9.0 en 28 min
+  - A.Sarr (WAS) (event 2) : projeté 38.0, réel 19.0 en 24 min
+  - T.Eason (HOU) (event 2) : projeté 24.5, réel 6.0 en 3 min
+  - K.Middleton (WAS) (event 2) : projeté 22.2, réel 4.0 en 12 min
+  - D.Melton (GSW) (event 2) : projeté 26.5, réel 9.0 en 20 min
+  - M.Bridges (PHX) (event 2) : projeté 35.4, réel 18.0 en 28 min
+Plus grosses sous-estimations :
+  - Y.Missi (NOP) (event 2) : projeté 23.6, réel 52.0 en 29 min
+  - T.Jerome (MEM) (event 2) : projeté 40.4, réel 67.0 en 31 min
+  - P.George (BOS) (event 1) : projeté 38.6, réel 64.0 en 30 min
+  - A.Edwards (MIN) (event 2) : projeté 48.4, réel 70.0 en 32 min
+  - M.Diabate (CHA) (event 2) : projeté 24.5, réel 46.0 en 33 min
+  - A.Drummond (NYK) (event 1) : projeté 21.6, réel 43.0 en 24 min
+  - K.Dunn (LAC) (event 2) : projeté 21.0, réel 41.0 en 26 min
+  - P.Banchero (ORL) (event 2) : projeté 45.5, réel 65.0 en 41 min
+
+Vérification du barème (points du jeu vs formule des projections) :
+  Statistiques fournies par le jeu : ['assists', 'blocks', 'in_dreamteam', 'minutes', 'played', 'points_scored', 'rebounds', 'steals', 'total_points']
+  Écart moyen jeu − formule : +10.27 pts (sur 322 matchs) ; écart absolu moyen 10.30
+  Rapport points du jeu / formule (médiane) : 17.86
