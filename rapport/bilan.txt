@@ -38,6 +38,17 @@ QUALITÉ DES PROJECTIONS (toute la ligue, joueurs projetés ≥ 20 pts)
 Matchs joués : 202 | biais moyen (réel − projeté) : -3.3 pts | erreur moyenne : 8.8 pts
 Corrélation projeté/réel : 0.69
 Minutes moyennes : 25.5
+Par prix :
+  10-15 M$                98 matchs | 0 min : 13 | biais  -3.4 | réel/projeté 0.90 | minutes 28.1
+  7-10 M$                100 matchs | 0 min : 16 | biais  -3.4 | réel/projeté 0.86 | minutes 21.7
+  < 7 M$                  10 matchs | 0 min :  4 | biais  -2.4 | réel/projeté 0.89 | minutes 16.8
+  ≥ 15 M$                 27 matchs | 0 min :  0 | biais  -2.9 | réel/projeté 0.94 | minutes 31.4
+Par rang dans la hiérarchie ESPN (1 = titulaire) :
+  rang 1                 135 matchs | 0 min :  8 | biais  -2.2 | réel/projeté 0.94 | minutes 28.9
+  rang 2                  69 matchs | 0 min :  8 | biais  -5.0 | réel/projeté 0.80 | minutes 20.2
+  rang 3                  16 matchs | 0 min :  6 | biais  -7.0 | réel/projeté 0.71 | minutes 16.4
+  rang 4                   2 matchs | 0 min :  0 | biais  +1.6 | réel/projeté 1.07 | minutes 20.5
+  rang inconnu             5 matchs | 0 min :  3 | biais  -7.4 | réel/projeté 0.75 | minutes 21.0
 Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : 33 sur 235
   - B.Ingram (LAC) (event 2) : projeté 41.2, statut actuel i, news : Achilles expected back 2026-11-08
   - J.Butler (GSW) (event 2) : projeté 40.1, statut actuel i, news : Knee expected back 2027-01-02
@@ -76,5 +87,5 @@ Plus grosses sous-estimations :
 
 Vérification du barème (points du jeu vs formule des projections) :
   Statistiques fournies par le jeu : ['assists', 'blocks', 'in_dreamteam', 'minutes', 'played', 'points_scored', 'rebounds', 'steals', 'total_points']
-  Écart moyen jeu − formule : +10.27 pts (sur 322 matchs) ; écart absolu moyen 10.30
-  Rapport points du jeu / formule (médiane) : 17.86
+  Écart moyen jeu − formule : +0.32 pts (sur 322 matchs) ; écart absolu moyen 0.82
+  Rapport points du jeu / formule (médiane) : 10.06
