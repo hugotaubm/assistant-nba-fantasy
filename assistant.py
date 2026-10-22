@@ -53,6 +53,7 @@ def lire_config():
     cfg.setdefault("poids_presence_avant_saison", 2)   # matchs « fictifs » donnés à la fiabilité d'avant-saison
     cfg.setdefault("poids_minutes_avant_saison", 3)    # matchs « fictifs » donnés aux minutes projetées
     cfg.setdefault("fiabilite_rang", {"3": 0.9, "4+": 0.75})   # 3e ou au-delà dans la hiérarchie de son poste
+    cfg.setdefault("seuil_joker", 150)          # gain (pts, semaine + suivante pondérée) à partir duquel le joker vaut le coup
     cfg.setdefault("calibration_auto", True)    # corrige les projections avec leurs erreurs passées (bilan.py)
     cfg.setdefault("seuil_changement_plan", 5)  # pts mini pour changer un transfert déjà conseillé
     cfg.setdefault("force_fort", 25)            # badge 🟢 Fort à partir de ce gain (pts)
@@ -536,7 +537,7 @@ def mon_equipe(mt, cfg, joueurs, boot, gw):
 # ----------------------------------------------------------------------------- optimisation
 def optimiser(joueurs, equipe, banque, prix_vente, gratuits, cap_dispo, jours, joue, gw_suiv, cfg,
               transferts=True, libre=False, assurance=None, interdits=(), forcer=(), jours_transfert=None,
-              entree_jour0=False):
+              entree_jour0=False, joker=False):
     """Plan jour par jour sur la Gameweek en cours + la suivante (pondérée par poids_futur).
 
     Variables : effectif de chaque jour (s), entrées (in), titulaires (y), capitaine (c).
@@ -547,12 +548,14 @@ def optimiser(joueurs, equipe, banque, prix_vente, gratuits, cap_dispo, jours, j
     interdits : joueurs qu'on s'interdit d'acheter cette semaine (mesure de la force d'un conseil).
     forcer : [(sortant, entrant, id_event)] transferts imposés (stabilité du conseil d'un calcul à l'autre).
     entree_jour0 : impose au moins un transfert avant la prochaine deadline (voir option_maintenant).
+    joker=True (avec libre=True) : équipe refaite avant la prochaine deadline avec ton vrai budget
+    (valeur de revente + banque), sans joueur imposé (voir option_joker).
     assurance : {id_event: [V1, V2, …]} = valeur, à partir de ce jour, d'avoir encore au moins 1, 2, …
     transferts en réserve pour remplacer un blessé (voir valeur_reserve). Le transfert qui fait passer
     la réserve de k à k-1 coûte V_k du jour où il est fait."""
     exclus = {n.lower() for n in cfg["joueurs_exclus"]}
     bloques = {n.lower() for n in cfg["joueurs_bloques"]}
-    imposes = {n.lower() for n in cfg.get("imposer_au_depart", [])} if libre else set()
+    imposes = {n.lower() for n in cfg.get("imposer_au_depart", [])} if libre and not joker else set()
     S0 = set(equipe)
     valeur = lambda p: p["proj"] * p["dispo"] * p["fiabilite"]
     ok = [p for p in joueurs.values() if p["dispo"] > 0 and p["proj"] >= cfg["projection_min"] and p["nom"].lower() not in exclus]
@@ -599,7 +602,7 @@ def optimiser(joueurs, equipe, banque, prix_vente, gratuits, cap_dispo, jours, j
     cout = lambda p: prix_vente.get(p["id"], p["prix"]) if p["id"] in S0 else p["prix"]
     budget = banque + sum(prix_vente.get(pid, joueurs[pid]["prix"]) for pid in S0)
     if libre:
-        budget, cout = max(budget, 1000), (lambda p: p["prix"])
+        budget, cout = (budget if joker else max(budget, 1000)), (lambda p: p["prix"])
     dernier_jour = {w: max(d for d in range(D) if sem[d] == w) for w in set(sem)}
     for d in range(D):
         S = {i: idx[("s", i, d)] for i in range(n)}
@@ -789,6 +792,23 @@ def option_maintenant(plan, args_plan, base, cfg, joueurs):
             f"pour remplacer un blessé : bilan {d_score:+.0f} pts → {verdict}.")
 
 
+def option_joker(plan, args_plan, base, cfg, joueurs):
+    """À titre indicatif : ce que rapporterait une équipe refaite de zéro (joker) avant la prochaine deadline,
+    comparée au plan conseillé, sur cette semaine et la suivante (pondérée)."""
+    f = optimiser(*args_plan, transferts=True, libre=True, assurance=base["assurance"], joker=True)
+    if not f:
+        return ""
+    pts = lambda r: r["pts_semaine"] + cfg["poids_futur"] * sum(jp["points"] for jp in r["plan2"]) - 100 * r["hits"]
+    gain = pts(f) - pts(plan)
+    equipe = args_plan[1]
+    changes = len([q for q in f["depart"] if q not in equipe])
+    entrants = ", ".join(nom(joueurs, q) for q in sorted(f["depart"], key=lambda q: -joueurs[q]["proj"]) if q not in equipe)
+    avis = ("✅ le joker vaut le coup maintenant" if gain >= cfg["seuil_joker"]
+            else f"garde-le (seuil conseillé : +{cfg['seuil_joker']} pts)")
+    return (f"Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait {gain:+.0f} pts "
+            f"sur cette semaine et la suivante, avec {changes} joueur(s) changé(s) ({entrants}) → {avis}.")
+
+
 def quand_txt(ev):
     """« ce soir » si la deadline tombe aujourd'hui (heure de Paris), sinon « le Day N »."""
     d = z(ev["deadline_time"]).astimezone(PARIS).date()
@@ -974,6 +994,8 @@ def rapport(joueurs, equipe, banque, gratuits, cap_dispo, gw, jours, joue, match
         P(suivi["stabilite"])
     if suivi.get("maintenant"):
         P(suivi["maintenant"])
+    if suivi.get("joker"):
+        P(suivi["joker"])
     alertes = [pid for pid in equipe if joueurs[pid]["dispo"] < 1 or joueurs[pid]["news"]]
     if alertes:
         P("⚠ ALERTES")
@@ -1107,13 +1129,18 @@ def main():
     except Exception as ex:
         print(f"  (projections non enregistrées : {ex!r})")
     try:   # simple éclairage : ne doit jamais faire échouer le calcul
+        joker_txt = "" if construction else option_joker(plan, args_plan, base, cfg, joueurs)
+    except Exception as ex:
+        joker_txt = ""
+        print(f"  (option joker non calculée : {ex!r})")
+    try:   # simple éclairage : ne doit jamais faire échouer le calcul
         maintenant_txt = "" if construction else option_maintenant(plan, args_plan, base, cfg, joueurs)
     except Exception as ex:
         maintenant_txt = ""
         print(f"  (option « transférer maintenant » non calculée : {ex!r})")
     alertes, a_verifier, note_alertes = alertes_equipe(mt, plan, joueurs, joue)
     suivi = dict(forces=forces, alertes=alertes, a_verifier=a_verifier, note_alertes=note_alertes, stabilite=stabilite,
-                 maintenant=maintenant_txt,
+                 maintenant=maintenant_txt, joker=joker_txt,
                  changements=changements(prec, plan, joueurs, boot, gw), source_equipe=src_equipe)
     print(f"  (force des conseils : {(dt.datetime.now() - t_force).seconds} s)")
     texte, page = rapport(joueurs, equipe, banque, gratuits, cap_dispo, gw, jours, joue, matchs, plan, base, sources, src_equipe, boot,

@@ -325,6 +325,8 @@ def rendre(ctx):
     chg = "".join(f'<p class="discret">{_e(suivi[k])}</p>' for k in ("changements", "stabilite") if suivi.get(k))
     if suivi.get("maintenant"):
         chg += f'<p class="option">💡 {_e(suivi["maintenant"])}</p>'
+    if suivi.get("joker"):
+        chg += f'<p class="discret">🃏 {_e(suivi["joker"])}</p>'
     afaire_html = f'''
   <section class="afaire" aria-label="À faire avant la prochaine deadline">
     <div class="ech" id="deadline" data-iso="{dl0.isoformat()}">
