@@ -80,8 +80,12 @@ jobs:
           while [ "$(date +%s)" -lt "$fin" ]; do
             git pull -q --rebase -X theirs || true
             python planificateur.py $forcer || true
+            # une fois par jour : rôle de chaque joueur (hiérarchie ESPN + présaison)
+            if [ "$(cat rapport/roles.date 2>/dev/null)" != "$(date +%F)" ]; then
+              python maj_roles.py && date +%F > rapport/roles.date || true
+            fi
             python publier.py || true
-            git add -A rapport docs
+            git add -A rapport docs priors.json
             if ! git diff --cached --quiet; then
               git commit -qm "Calcul $(date '+%d/%m %H:%M')"
               for essai in 1 2 3; do git pull -q --rebase -X theirs && git push -q && break; sleep 5; done

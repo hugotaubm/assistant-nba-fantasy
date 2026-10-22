@@ -17,7 +17,12 @@
 "b2b_presence": 0.83,
 "presence": 0.95,
 "age": 25,
-"min_proj": 30.6
+"min_proj": 30.6,
+"rang_poste": 1,
+"poste_espn": "C",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 19.8
 },
 "2": {
 "nom": "J.Johnson",
@@ -34,7 +39,12 @@
 "b2b_presence": 0.69,
 "presence": 0.89,
 "age": 24,
-"min_proj": 36.7
+"min_proj": 36.7,
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 22.7
 },
 "3": {
 "nom": "M.Gueye",
@@ -51,7 +61,13 @@
 "b2b_presence": 1.0,
 "presence": 0.95,
 "age": 23,
-"min_proj": 15.4
+"min_proj": 15.4,
+"rang_poste": 3,
+"poste_espn": "PF",
+"devant": [
+"Jalen Johnson",
+"Aaron Wiggins"
+]
 },
 "4": {
 "nom": "D.Daniels",
@@ -68,7 +84,12 @@
 "b2b_presence": 0.92,
 "presence": 0.93,
 "age": 23,
-"min_proj": 32.4
+"min_proj": 32.4,
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 22.0
 },
 "5": {
 "nom": "A.Newell",
@@ -85,7 +106,16 @@
 "b2b_presence": 1.0,
 "presence": 0.67,
 "age": 21,
-"min_proj": 14.1
+"min_proj": 14.1,
+"rang_poste": 4,
+"poste_espn": "PF",
+"devant": [
+"Jalen Johnson",
+"Aaron Wiggins",
+"Mouhamed Gueye"
+],
+"presaison_matchs": 5,
+"presaison_min": 17.4
 },
 "6": {
 "nom": "N.Alexander-Walker",
@@ -102,7 +132,12 @@
 "b2b_presence": 0.92,
 "presence": 0.97,
 "age": 28,
-"min_proj": 32.3
+"min_proj": 32.3,
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 22.8
 },
 "7": {
 "nom": "J.Wilson",
@@ -119,7 +154,16 @@
 "b2b_presence": 1.0,
 "presence": 0.64,
 "age": 25,
-"min_proj": 18.0
+"min_proj": 18.0,
+"rang_poste": 7,
+"poste_espn": "SF",
+"devant": [
+"Dyson Daniels",
+"Aaron Wiggins",
+"Luguentz Dort"
+],
+"presaison_matchs": 4,
+"presaison_min": 17.0
 },
 "8": {
 "nom": "R.Nembhard",
@@ -133,7 +177,9 @@
 "b2b_n": 13,
 "b2b_presence": 0.85,
 "presence": 0.92,
-"age": 23
+"age": 23,
+"presaison_matchs": 4,
+"presaison_min": 14.8
 },
 "9": {
 "nom": "B.Hield",
@@ -150,7 +196,16 @@
 "b2b_presence": 0.91,
 "presence": 0.82,
 "age": 33,
-"min_proj": 18.2
+"min_proj": 18.2,
+"rang_poste": 4,
+"poste_espn": "SG",
+"devant": [
+"Norman Powell",
+"Isaac Okoro",
+"Tre Jones"
+],
+"presaison_matchs": 5,
+"presaison_min": 15.2
 },
 "10": {
 "nom": "R.Dennis",
@@ -163,7 +218,16 @@
 "b2b_n": 3,
 "b2b_presence": 1.0,
 "presence": 0.64,
-"age": 25
+"age": 25,
+"rang_poste": 5,
+"poste_espn": "PG",
+"devant": [
+"CJ McCollum",
+"Kingston Flemings",
+"Nickeil Alexander-Walker"
+],
+"presaison_matchs": 5,
+"presaison_min": 15.0
 },
 "11": {
 "nom": "J.Landale",
@@ -177,7 +241,14 @@
 "b2b_n": 8,
 "b2b_presence": 1.0,
 "presence": 0.94,
-"age": 30
+"age": 30,
+"rang_poste": 2,
+"poste_espn": "C",
+"devant": [
+"Onyeka Okongwu"
+],
+"presaison_matchs": 5,
+"presaison_min": 16.2
 },
 "12": {
 "nom": "L.Dort",
@@ -194,7 +265,14 @@
 "b2b_presence": 0.77,
 "presence": 0.91,
 "age": 27,
-"min_proj": 28.1
+"min_proj": 28.1,
+"rang_poste": 2,
+"poste_espn": "SG",
+"devant": [
+"Nickeil Alexander-Walker"
+],
+"presaison_matchs": 2,
+"presaison_min": 23.5
 },
 "13": {
 "nom": "A.Wiggins",
@@ -211,7 +289,14 @@
 "b2b_presence": 0.91,
 "presence": 0.92,
 "age": 27,
-"min_proj": 20.3
+"min_proj": 20.3,
+"rang_poste": 2,
+"poste_espn": "SF",
+"devant": [
+"Dyson Daniels"
+],
+"presaison_matchs": 4,
+"presaison_min": 19.2
 },
 "14": {
 "nom": "Z.Ejiofor",
@@ -221,7 +306,16 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 22,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 4,
+"poste_espn": "C",
+"devant": [
+"Onyeka Okongwu",
+"Jock Landale",
+"Mouhamed Gueye"
+],
+"presaison_matchs": 5,
+"presaison_min": 13.8
 },
 "15": {
 "nom": "K.Flemings",
@@ -235,7 +329,14 @@
 "malus_b2b": 1.022,
 "age": 19,
 "b2b_n": 0,
-"min_proj": 24.8
+"min_proj": 24.8,
+"rang_poste": 2,
+"poste_espn": "PG",
+"devant": [
+"CJ McCollum"
+],
+"presaison_matchs": 5,
+"presaison_min": 22.4
 },
 "16": {
 "nom": "K.Gilbert",
@@ -259,7 +360,15 @@
 "b2b_presence": 1.0,
 "presence": 0.93,
 "age": 27,
-"min_proj": 20.3
+"min_proj": 20.3,
+"rang_poste": 3,
+"poste_espn": "SG",
+"devant": [
+"Nickeil Alexander-Walker",
+"Luguentz Dort"
+],
+"presaison_matchs": 5,
+"presaison_min": 18.6
 },
 "18": {
 "nom": "C.McCollum",
@@ -276,7 +385,12 @@
 "b2b_presence": 1.0,
 "presence": 1.0,
 "age": 35,
-"min_proj": 30.2
+"min_proj": 30.2,
+"rang_poste": 1,
+"poste_espn": "PG",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 20.0
 },
 "19": {
 "nom": "H.Veesaar",
@@ -286,7 +400,14 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 22,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 7,
+"poste_espn": "C",
+"devant": [
+"Onyeka Okongwu",
+"Jock Landale",
+"Mouhamed Gueye"
+]
 },
 "20": {
 "nom": "I.McKneely",
@@ -307,7 +428,16 @@
 "b2b_n": 4,
 "b2b_presence": 0.75,
 "presence": 0.7,
-"age": 24
+"age": 24,
+"rang_poste": 4,
+"poste_espn": "PG",
+"devant": [
+"Derrick White",
+"Payton Pritchard",
+"Mike Conley"
+],
+"presaison_matchs": 1,
+"presaison_min": 25.0
 },
 "22": {
 "nom": "J.Tatum",
@@ -324,7 +454,12 @@
 "b2b_presence": 0.0,
 "presence": 0.87,
 "age": 28,
-"min_proj": 36.2
+"min_proj": 36.2,
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
+"presaison_matchs": 2,
+"presaison_min": 28.0
 },
 "23": {
 "nom": "D.White",
@@ -341,7 +476,12 @@
 "b2b_presence": 0.91,
 "presence": 0.95,
 "age": 32,
-"min_proj": 34.3
+"min_proj": 34.3,
+"rang_poste": 1,
+"poste_espn": "PG",
+"devant": [],
+"presaison_matchs": 2,
+"presaison_min": 23.0
 },
 "24": {
 "nom": "P.Pritchard",
@@ -358,7 +498,14 @@
 "b2b_presence": 1.0,
 "presence": 0.97,
 "age": 28,
-"min_proj": 30.8
+"min_proj": 30.8,
+"rang_poste": 2,
+"poste_espn": "PG",
+"devant": [
+"Derrick White"
+],
+"presaison_matchs": 2,
+"presaison_min": 26.5
 },
 "25": {
 "nom": "S.Hauser",
@@ -375,7 +522,14 @@
 "b2b_presence": 0.85,
 "presence": 0.96,
 "age": 28,
-"min_proj": 25.3
+"min_proj": 25.3,
+"rang_poste": 2,
+"poste_espn": "SF",
+"devant": [
+"Jayson Tatum"
+],
+"presaison_matchs": 2,
+"presaison_min": 19.5
 },
 "26": {
 "nom": "J.Walsh",
@@ -392,7 +546,12 @@
 "b2b_presence": 1.0,
 "presence": 0.9,
 "age": 22,
-"min_proj": 21.5
+"min_proj": 21.5,
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 18.0
 },
 "27": {
 "nom": "N.Queta",
@@ -409,7 +568,14 @@
 "b2b_presence": 0.77,
 "presence": 0.93,
 "age": 27,
-"min_proj": 23.6
+"min_proj": 23.6,
+"rang_poste": 2,
+"poste_espn": "C",
+"devant": [
+"Mitchell Robinson"
+],
+"presaison_matchs": 2,
+"presaison_min": 21.5
 },
 "28": {
 "nom": "B.Scheierman",
@@ -426,7 +592,14 @@
 "b2b_presence": 1.0,
 "presence": 0.97,
 "age": 26,
-"min_proj": 25.1
+"min_proj": 25.1,
+"rang_poste": 2,
+"poste_espn": "SG",
+"devant": [
+"Paul George"
+],
+"presaison_matchs": 4,
+"presaison_min": 19.5
 },
 "29": {
 "nom": "H.González",
@@ -443,7 +616,16 @@
 "b2b_presence": 0.91,
 "presence": 0.93,
 "age": 20,
-"min_proj": 21.7
+"min_proj": 21.7,
+"rang_poste": 4,
+"poste_espn": "SG",
+"devant": [
+"Paul George",
+"Baylor Scheierman",
+"Payton Pritchard"
+],
+"presaison_matchs": 4,
+"presaison_min": 20.0
 },
 "30": {
 "nom": "A.Williams",
@@ -456,7 +638,16 @@
 "b2b_n": 2,
 "b2b_presence": 1.0,
 "presence": 0.25,
-"age": 24
+"age": 24,
+"rang_poste": 5,
+"poste_espn": "C",
+"devant": [
+"Mitchell Robinson",
+"Neemias Queta",
+"Luka Garza"
+],
+"presaison_matchs": 3,
+"presaison_min": 7.7
 },
 "31": {
 "nom": "L.Garza",
@@ -470,7 +661,15 @@
 "b2b_n": 10,
 "b2b_presence": 0.9,
 "presence": 0.9,
-"age": 27
+"age": 27,
+"rang_poste": 3,
+"poste_espn": "C",
+"devant": [
+"Mitchell Robinson",
+"Neemias Queta"
+],
+"presaison_matchs": 4,
+"presaison_min": 17.5
 },
 "32": {
 "nom": "R.Harper Jr.",
@@ -484,7 +683,16 @@
 "b2b_n": 4,
 "b2b_presence": 0.25,
 "presence": 0.48,
-"age": 26
+"age": 26,
+"rang_poste": 6,
+"poste_espn": "SG",
+"devant": [
+"Paul George",
+"Baylor Scheierman",
+"Payton Pritchard"
+],
+"presaison_matchs": 2,
+"presaison_min": 20.5
 },
 "33": {
 "nom": "M.Conley",
@@ -501,7 +709,15 @@
 "b2b_presence": 0.7,
 "presence": 0.79,
 "age": 39,
-"min_proj": 17.6
+"min_proj": 17.6,
+"rang_poste": 3,
+"poste_espn": "PG",
+"devant": [
+"Derrick White",
+"Payton Pritchard"
+],
+"presaison_matchs": 1,
+"presaison_min": 18.0
 },
 "34": {
 "nom": "M.Robinson",
@@ -518,7 +734,12 @@
 "b2b_presence": 0.0,
 "presence": 0.77,
 "age": 28,
-"min_proj": 25.4
+"min_proj": 25.4,
+"rang_poste": 1,
+"poste_espn": "C",
+"devant": [],
+"presaison_matchs": 2,
+"presaison_min": 15.5
 },
 "35": {
 "nom": "P.George",
@@ -535,7 +756,12 @@
 "b2b_presence": 0.67,
 "presence": 0.78,
 "age": 36,
-"min_proj": 33.2
+"min_proj": 33.2,
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
+"presaison_matchs": 2,
+"presaison_min": 24.5
 },
 "36": {
 "nom": "C.Cenac Jr.",
@@ -545,7 +771,16 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 19,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 4,
+"poste_espn": "PF",
+"devant": [
+"Jordan Walsh",
+"Jayson Tatum",
+"Paul George"
+],
+"presaison_matchs": 4,
+"presaison_min": 13.8
 },
 "37": {
 "nom": "T.DeVries",
@@ -562,7 +797,16 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 23,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 8,
+"poste_espn": "SF",
+"devant": [
+"Jayson Tatum",
+"Sam Hauser",
+"Paul George"
+],
+"presaison_matchs": 4,
+"presaison_min": 16.2
 },
 "39": {
 "nom": "M.Uzan",
@@ -583,7 +827,16 @@
 "b2b_n": 7,
 "b2b_presence": 1.0,
 "presence": 0.83,
-"age": 23
+"age": 23,
+"rang_poste": 4,
+"poste_espn": "SF",
+"devant": [
+"Michael Porter Jr.",
+"Keon Ellis",
+"Noah Clowney"
+],
+"presaison_matchs": 4,
+"presaison_min": 10.0
 },
 "41": {
 "nom": "T.Mann",
@@ -600,7 +853,16 @@
 "b2b_presence": 0.89,
 "presence": 0.82,
 "age": 30,
-"min_proj": 23.8
+"min_proj": 23.8,
+"rang_poste": 5,
+"poste_espn": "PG",
+"devant": [
+"Mikel Brown Jr.",
+"Ben Saraf",
+"Nolan Traore"
+],
+"presaison_matchs": 3,
+"presaison_min": 13.7
 },
 "42": {
 "nom": "D.Sharpe",
@@ -617,7 +879,12 @@
 "b2b_presence": 0.91,
 "presence": 0.97,
 "age": 24,
-"min_proj": 22.0
+"min_proj": 22.0,
+"rang_poste": 1,
+"poste_espn": "C",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 18.7
 },
 "43": {
 "nom": "N.Clowney",
@@ -634,7 +901,14 @@
 "b2b_presence": 1.0,
 "presence": 0.94,
 "age": 22,
-"min_proj": 19.6
+"min_proj": 19.6,
+"rang_poste": 2,
+"poste_espn": "PF",
+"devant": [
+"Julius Randle"
+],
+"presaison_matchs": 4,
+"presaison_min": 20.8
 },
 "44": {
 "nom": "E.Dëmin",
@@ -651,7 +925,12 @@
 "b2b_presence": 0.56,
 "presence": 0.86,
 "age": 20,
-"min_proj": 32.3
+"min_proj": 32.3,
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 21.2
 },
 "45": {
 "nom": "D.Powell",
@@ -665,7 +944,14 @@
 "b2b_n": 11,
 "b2b_presence": 0.55,
 "presence": 0.84,
-"age": 21
+"age": 21,
+"rang_poste": 2,
+"poste_espn": "SG",
+"devant": [
+"Egor Demin"
+],
+"presaison_matchs": 4,
+"presaison_min": 10.8
 },
 "46": {
 "nom": "B.Saraf",
@@ -679,7 +965,14 @@
 "b2b_n": 6,
 "b2b_presence": 1.0,
 "presence": 0.84,
-"age": 20
+"age": 20,
+"rang_poste": 2,
+"poste_espn": "PG",
+"devant": [
+"Mikel Brown Jr."
+],
+"presaison_matchs": 3,
+"presaison_min": 11.7
 },
 "47": {
 "nom": "N.Traore",
@@ -696,7 +989,15 @@
 "b2b_presence": 1.0,
 "presence": 0.84,
 "age": 20,
-"min_proj": 25.0
+"min_proj": 25.0,
+"rang_poste": 3,
+"poste_espn": "PG",
+"devant": [
+"Mikel Brown Jr.",
+"Ben Saraf"
+],
+"presaison_matchs": 4,
+"presaison_min": 17.0
 },
 "48": {
 "nom": "D.Wolf",
@@ -713,7 +1014,15 @@
 "b2b_presence": 1.0,
 "presence": 0.95,
 "age": 22,
-"min_proj": 24.1
+"min_proj": 24.1,
+"rang_poste": 3,
+"poste_espn": "C",
+"devant": [
+"Day'Ron Sharpe",
+"Moritz Wagner"
+],
+"presaison_matchs": 4,
+"presaison_min": 12.5
 },
 "49": {
 "nom": "M.Porter Jr.",
@@ -730,7 +1039,12 @@
 "b2b_presence": 0.57,
 "presence": 0.82,
 "age": 28,
-"min_proj": 33.5
+"min_proj": 33.5,
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 22.7
 },
 "50": {
 "nom": "C.Johnson",
@@ -743,7 +1057,16 @@
 "b2b_n": 2,
 "b2b_presence": 1.0,
 "presence": 0.94,
-"age": 24
+"age": 24,
+"rang_poste": 5,
+"poste_espn": "C",
+"devant": [
+"Day'Ron Sharpe",
+"Moritz Wagner",
+"Danny Wolf"
+],
+"presaison_matchs": 4,
+"presaison_min": 15.0
 },
 "51": {
 "nom": "J.Randle",
@@ -760,7 +1083,12 @@
 "b2b_presence": 1.0,
 "presence": 0.99,
 "age": 31,
-"min_proj": 34.3
+"min_proj": 34.3,
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 22.8
 },
 "52": {
 "nom": "M.Wagner",
@@ -777,7 +1105,14 @@
 "b2b_presence": 1.0,
 "presence": 0.91,
 "age": 29,
-"min_proj": 13.3
+"min_proj": 13.3,
+"rang_poste": 2,
+"poste_espn": "C",
+"devant": [
+"Day'Ron Sharpe"
+],
+"presaison_matchs": 4,
+"presaison_min": 19.0
 },
 "53": {
 "nom": "T.Bilodeau",
@@ -787,7 +1122,16 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 22,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 8,
+"poste_espn": "PF",
+"devant": [
+"Julius Randle",
+"Noah Clowney",
+"Joshua Jefferson"
+],
+"presaison_matchs": 2,
+"presaison_min": 10.0
 },
 "54": {
 "nom": "M.Brown Jr.",
@@ -801,7 +1145,12 @@
 "malus_b2b": 1.022,
 "age": 20,
 "b2b_n": 0,
-"min_proj": 30.2
+"min_proj": 30.2,
+"rang_poste": 1,
+"poste_espn": "PG",
+"devant": [],
+"presaison_matchs": 1,
+"presaison_min": 18.0
 },
 "55": {
 "nom": "K.Ellis",
@@ -818,7 +1167,14 @@
 "b2b_presence": 1.0,
 "presence": 0.94,
 "age": 26,
-"min_proj": 21.0
+"min_proj": 21.0,
+"rang_poste": 2,
+"poste_espn": "SF",
+"devant": [
+"Michael Porter Jr."
+],
+"presaison_matchs": 4,
+"presaison_min": 19.5
 },
 "56": {
 "nom": "J.Jefferson",
@@ -828,7 +1184,13 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 22,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 3,
+"poste_espn": "PF",
+"devant": [
+"Julius Randle",
+"Noah Clowney"
+]
 },
 "57": {
 "nom": "G.Nelson",
@@ -859,7 +1221,12 @@
 "b2b_presence": 0.92,
 "presence": 0.93,
 "age": 24,
-"min_proj": 24.6
+"min_proj": 24.6,
+"rang_poste": 1,
+"poste_espn": "C",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 21.0
 },
 "60": {
 "nom": "G.Williams",
@@ -876,7 +1243,13 @@
 "b2b_presence": 0.0,
 "presence": 0.77,
 "age": 27,
-"min_proj": 19.4
+"min_proj": 19.4,
+"rang_poste": 3,
+"poste_espn": "PF",
+"devant": [
+"Naz Reid",
+"Royce O'Neale"
+]
 },
 "61": {
 "nom": "B.Miller",
@@ -893,7 +1266,12 @@
 "b2b_presence": 0.85,
 "presence": 0.94,
 "age": 23,
-"min_proj": 34.0
+"min_proj": 34.0,
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 25.0
 },
 "62": {
 "nom": "T.Salaun",
@@ -907,7 +1285,16 @@
 "b2b_n": 8,
 "b2b_presence": 0.75,
 "presence": 0.75,
-"age": 21
+"age": 21,
+"rang_poste": 4,
+"poste_espn": "PF",
+"devant": [
+"Naz Reid",
+"Royce O'Neale",
+"Grant Williams"
+],
+"presaison_matchs": 4,
+"presaison_min": 23.0
 },
 "63": {
 "nom": "S.James",
@@ -921,7 +1308,14 @@
 "b2b_n": 16,
 "b2b_presence": 1.0,
 "presence": 1.0,
-"age": 23
+"age": 23,
+"rang_poste": 2,
+"poste_espn": "SF",
+"devant": [
+"Brandon Miller"
+],
+"presaison_matchs": 4,
+"presaison_min": 19.5
 },
 "64": {
 "nom": "R.Kalkbrenner",
@@ -938,7 +1332,15 @@
 "b2b_presence": 0.83,
 "presence": 0.94,
 "age": 24,
-"min_proj": 23.2
+"min_proj": 23.2,
+"rang_poste": 3,
+"poste_espn": "C",
+"devant": [
+"Moussa Diabate",
+"Hannes Steinbach"
+],
+"presaison_matchs": 4,
+"presaison_min": 15.5
 },
 "65": {
 "nom": "K.Knueppel",
@@ -955,7 +1357,10 @@
 "b2b_presence": 1.0,
 "presence": 0.99,
 "age": 21,
-"min_proj": 34.2
+"min_proj": 34.2,
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": []
 },
 "66": {
 "nom": "L.McNeeley",
@@ -972,7 +1377,16 @@
 "b2b_presence": 0.86,
 "presence": 0.77,
 "age": 21,
-"min_proj": 19.5
+"min_proj": 19.5,
+"rang_poste": 5,
+"poste_espn": "SF",
+"devant": [
+"Brandon Miller",
+"Sion James",
+"Grayson Allen"
+],
+"presaison_matchs": 4,
+"presaison_min": 20.5
 },
 "67": {
 "nom": "P.Connaughton",
@@ -989,7 +1403,9 @@
 "b2b_presence": 0.86,
 "presence": 0.73,
 "age": 33,
-"min_proj": 9.4
+"min_proj": 9.4,
+"presaison_matchs": 2,
+"presaison_min": 10.5
 },
 "68": {
 "nom": "C.White",
@@ -1006,7 +1422,10 @@
 "b2b_presence": 0.67,
 "presence": 0.79,
 "age": 26,
-"min_proj": 33.5
+"min_proj": 33.5,
+"rang_poste": 1,
+"poste_espn": "PG",
+"devant": []
 },
 "69": {
 "nom": "D.Finney-Smith",
@@ -1023,7 +1442,16 @@
 "b2b_presence": 0.0,
 "presence": 0.69,
 "age": 33,
-"min_proj": 18.1
+"min_proj": 18.1,
+"rang_poste": 6,
+"poste_espn": "SF",
+"devant": [
+"Dyson Daniels",
+"Aaron Wiggins",
+"Luguentz Dort"
+],
+"presaison_matchs": 3,
+"presaison_min": 11.0
 },
 "70": {
 "nom": "P.Hall",
@@ -1036,7 +1464,16 @@
 "b2b_n": 4,
 "b2b_presence": 1.0,
 "presence": 0.8,
-"age": 24
+"age": 24,
+"rang_poste": 5,
+"poste_espn": "C",
+"devant": [
+"Moussa Diabate",
+"Hannes Steinbach",
+"Ryan Kalkbrenner"
+],
+"presaison_matchs": 3,
+"presaison_min": 9.0
 },
 "71": {
 "nom": "N.Reid",
@@ -1053,7 +1490,12 @@
 "b2b_presence": 0.93,
 "presence": 0.96,
 "age": 27,
-"min_proj": 31.7
+"min_proj": 31.7,
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 21.5
 },
 "72": {
 "nom": "G.Allen",
@@ -1070,7 +1512,14 @@
 "b2b_presence": 0.62,
 "presence": 0.8,
 "age": 31,
-"min_proj": 26.1
+"min_proj": 26.1,
+"rang_poste": 2,
+"poste_espn": "SG",
+"devant": [
+"Kon Knueppel"
+],
+"presaison_matchs": 1,
+"presaison_min": 14.0
 },
 "73": {
 "nom": "R.O'Neale",
@@ -1087,7 +1536,14 @@
 "b2b_presence": 1.0,
 "presence": 0.99,
 "age": 33,
-"min_proj": 24.5
+"min_proj": 24.5,
+"rang_poste": 2,
+"poste_espn": "PF",
+"devant": [
+"Naz Reid"
+],
+"presaison_matchs": 4,
+"presaison_min": 18.8
 },
 "74": {
 "nom": "M.Ajayi",
@@ -1104,7 +1560,15 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 20,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 3,
+"poste_espn": "PG",
+"devant": [
+"Coby White",
+"Dennis Schroder"
+],
+"presaison_matchs": 2,
+"presaison_min": 21.5
 },
 "76": {
 "nom": "K.Boswell",
@@ -1128,7 +1592,14 @@
 "b2b_presence": 1.0,
 "presence": 0.97,
 "age": 33,
-"min_proj": 24.7
+"min_proj": 24.7,
+"rang_poste": 2,
+"poste_espn": "PG",
+"devant": [
+"Coby White"
+],
+"presaison_matchs": 4,
+"presaison_min": 18.8
 },
 "78": {
 "nom": "H.Steinbach",
@@ -1142,7 +1613,14 @@
 "malus_b2b": 1.022,
 "age": 20,
 "b2b_n": 0,
-"min_proj": 17.9
+"min_proj": 17.9,
+"rang_poste": 2,
+"poste_espn": "C",
+"devant": [
+"Moussa Diabate"
+],
+"presaison_matchs": 4,
+"presaison_min": 15.0
 },
 "79": {
 "nom": "D.Armstrong",
@@ -1173,7 +1651,10 @@
 "b2b_presence": 0.91,
 "presence": 0.93,
 "age": 27,
-"min_proj": 27.8
+"min_proj": 27.8,
+"rang_poste": 1,
+"poste_espn": "C",
+"devant": []
 },
 "82": {
 "nom": "P.Williams",
@@ -1190,7 +1671,14 @@
 "b2b_presence": 0.85,
 "presence": 0.92,
 "age": 25,
-"min_proj": 20.0
+"min_proj": 20.0,
+"rang_poste": 2,
+"poste_espn": "PF",
+"devant": [
+"Caleb Wilson"
+],
+"presaison_matchs": 5,
+"presaison_min": 12.0
 },
 "83": {
 "nom": "J.Smith",
@@ -1207,7 +1695,14 @@
 "b2b_presence": 0.73,
 "presence": 0.87,
 "age": 26,
-"min_proj": 19.5
+"min_proj": 19.5,
+"rang_poste": 2,
+"poste_espn": "C",
+"devant": [
+"Nic Claxton"
+],
+"presaison_matchs": 4,
+"presaison_min": 17.0
 },
 "84": {
 "nom": "J.Giddey",
@@ -1224,7 +1719,12 @@
 "b2b_presence": 0.9,
 "presence": 0.91,
 "age": 24,
-"min_proj": 35.5
+"min_proj": 35.5,
+"rang_poste": 1,
+"poste_espn": "PG",
+"devant": [],
+"presaison_matchs": 5,
+"presaison_min": 22.2
 },
 "85": {
 "nom": "M.Buzelis",
@@ -1241,7 +1741,12 @@
 "b2b_presence": 0.93,
 "presence": 0.96,
 "age": 22,
-"min_proj": 30.5
+"min_proj": 30.5,
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
+"presaison_matchs": 5,
+"presaison_min": 20.8
 },
 "86": {
 "nom": "T.Jones",
@@ -1258,7 +1763,14 @@
 "b2b_presence": 0.92,
 "presence": 0.94,
 "age": 26,
-"min_proj": 22.3
+"min_proj": 22.3,
+"rang_poste": 2,
+"poste_espn": "PG",
+"devant": [
+"Josh Giddey"
+],
+"presaison_matchs": 3,
+"presaison_min": 13.7
 },
 "87": {
 "nom": "Z.Collins",
@@ -1275,7 +1787,13 @@
 "b2b_presence": 1.0,
 "presence": 1.0,
 "age": 28,
-"min_proj": 14.7
+"min_proj": 14.7,
+"rang_poste": 3,
+"poste_espn": "C",
+"devant": [
+"Nic Claxton",
+"Jalen Smith"
+]
 },
 "88": {
 "nom": "N.Essengue",
@@ -1289,7 +1807,16 @@
 "malus_b2b": 1.022,
 "age": 19,
 "b2b_n": 0,
-"min_proj": 7.9
+"min_proj": 7.9,
+"rang_poste": 7,
+"poste_espn": "SF",
+"devant": [
+"Matas Buzelis",
+"Dailyn Swain",
+"Isaac Okoro"
+],
+"presaison_matchs": 5,
+"presaison_min": 17.4
 },
 "89": {
 "nom": "I.Okoro",
@@ -1306,7 +1833,14 @@
 "b2b_presence": 0.82,
 "presence": 0.94,
 "age": 25,
-"min_proj": 21.6
+"min_proj": 21.6,
+"rang_poste": 2,
+"poste_espn": "SG",
+"devant": [
+"Norman Powell"
+],
+"presaison_matchs": 3,
+"presaison_min": 17.7
 },
 "90": {
 "nom": "N.Powell",
@@ -1323,7 +1857,12 @@
 "b2b_presence": 0.69,
 "presence": 0.81,
 "age": 33,
-"min_proj": 33.8
+"min_proj": 33.8,
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 17.5
 },
 "91": {
 "nom": "L.Miller",
@@ -1340,7 +1879,16 @@
 "b2b_presence": 0.44,
 "presence": 0.66,
 "age": 22,
-"min_proj": 13.6
+"min_proj": 13.6,
+"rang_poste": 5,
+"poste_espn": "PF",
+"devant": [
+"Caleb Wilson",
+"Patrick Williams",
+"Dailyn Swain"
+],
+"presaison_matchs": 5,
+"presaison_min": 19.8
 },
 "92": {
 "nom": "R.Dillingham",
@@ -1381,7 +1929,14 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 21,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 2,
+"poste_espn": "SF",
+"devant": [
+"Matas Buzelis"
+],
+"presaison_matchs": 5,
+"presaison_min": 17.2
 },
 "96": {
 "nom": "C.Wilson",
@@ -1395,7 +1950,12 @@
 "malus_b2b": 1.022,
 "age": 20,
 "b2b_n": 0,
-"min_proj": 32.1
+"min_proj": 32.1,
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
+"presaison_matchs": 5,
+"presaison_min": 26.6
 },
 "97": {
 "nom": "H.Mallette",
@@ -1422,7 +1982,16 @@
 "b2b_n": 1,
 "b2b_presence": 0.0,
 "presence": 0.38,
-"age": 25
+"age": 25,
+"rang_poste": 6,
+"poste_espn": "SF",
+"devant": [
+"Peyton Watson",
+"Jaylon Tyson",
+"Sam Merrill"
+],
+"presaison_matchs": 3,
+"presaison_min": 10.7
 },
 "100": {
 "nom": "E.Mobley",
@@ -1439,7 +2008,12 @@
 "b2b_presence": 0.82,
 "presence": 0.91,
 "age": 25,
-"min_proj": 33.3
+"min_proj": 33.3,
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 23.7
 },
 "101": {
 "nom": "J.Allen",
@@ -1456,7 +2030,12 @@
 "b2b_presence": 1.0,
 "presence": 0.87,
 "age": 28,
-"min_proj": 30.3
+"min_proj": 30.3,
+"rang_poste": 1,
+"poste_espn": "C",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 22.3
 },
 "102": {
 "nom": "D.Mitchell",
@@ -1473,7 +2052,12 @@
 "b2b_presence": 0.85,
 "presence": 0.9,
 "age": 30,
-"min_proj": 33.9
+"min_proj": 33.9,
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 22.7
 },
 "103": {
 "nom": "S.Merrill",
@@ -1490,7 +2074,14 @@
 "b2b_presence": 0.89,
 "presence": 0.86,
 "age": 30,
-"min_proj": 23.0
+"min_proj": 23.0,
+"rang_poste": 2,
+"poste_espn": "SG",
+"devant": [
+"Donovan Mitchell"
+],
+"presaison_matchs": 2,
+"presaison_min": 14.0
 },
 "104": {
 "nom": "C.Porter",
@@ -1504,7 +2095,14 @@
 "b2b_n": 12,
 "b2b_presence": 0.92,
 "presence": 0.86,
-"age": 26
+"age": 26,
+"rang_poste": 2,
+"poste_espn": "PG",
+"devant": [
+"James Harden"
+],
+"presaison_matchs": 3,
+"presaison_min": 15.7
 },
 "105": {
 "nom": "J.Tyson",
@@ -1521,7 +2119,14 @@
 "b2b_presence": 1.0,
 "presence": 0.95,
 "age": 23,
-"min_proj": 26.7
+"min_proj": 26.7,
+"rang_poste": 2,
+"poste_espn": "SF",
+"devant": [
+"Peyton Watson"
+],
+"presaison_matchs": 3,
+"presaison_min": 21.0
 },
 "106": {
 "nom": "N.Tomlin",
@@ -1535,7 +2140,13 @@
 "b2b_n": 11,
 "b2b_presence": 0.91,
 "presence": 0.87,
-"age": 25
+"age": 25,
+"rang_poste": 3,
+"poste_espn": "PF",
+"devant": [
+"Evan Mobley",
+"Peyton Watson"
+]
 },
 "107": {
 "nom": "T.Proctor",
@@ -1549,7 +2160,15 @@
 "b2b_n": 10,
 "b2b_presence": 0.8,
 "presence": 0.69,
-"age": 22
+"age": 22,
+"rang_poste": 3,
+"poste_espn": "PG",
+"devant": [
+"James Harden",
+"Craig Porter Jr."
+],
+"presaison_matchs": 3,
+"presaison_min": 15.0
 },
 "108": {
 "nom": "T.Bryant",
@@ -1566,7 +2185,15 @@
 "b2b_presence": 0.9,
 "presence": 0.8,
 "age": 29,
-"min_proj": 12.6
+"min_proj": 12.6,
+"rang_poste": 3,
+"poste_espn": "C",
+"devant": [
+"Jarrett Allen",
+"Evan Mobley"
+],
+"presaison_matchs": 3,
+"presaison_min": 8.7
 },
 "109": {
 "nom": "P.Watson",
@@ -1583,7 +2210,12 @@
 "b2b_presence": 0.91,
 "presence": 0.92,
 "age": 24,
-"min_proj": 30.7
+"min_proj": 30.7,
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 21.0
 },
 "110": {
 "nom": "J.Harden",
@@ -1600,7 +2232,12 @@
 "b2b_presence": 0.85,
 "presence": 0.93,
 "age": 37,
-"min_proj": 33.6
+"min_proj": 33.6,
+"rang_poste": 1,
+"poste_espn": "PG",
+"devant": [],
+"presaison_matchs": 2,
+"presaison_min": 26.5
 },
 "111": {
 "nom": "K.Diop",
@@ -1610,7 +2247,14 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 24,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 4,
+"poste_espn": "C",
+"devant": [
+"Jarrett Allen",
+"Evan Mobley",
+"Thomas Bryant"
+]
 },
 "112": {
 "nom": "M.Hezonja",
@@ -1620,7 +2264,16 @@
 "source": "selon le prix",
 "malus_b2b": 0.958,
 "age": 31,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 4,
+"poste_espn": "SF",
+"devant": [
+"Peyton Watson",
+"Jaylon Tyson",
+"Sam Merrill"
+],
+"presaison_matchs": 3,
+"presaison_min": 18.3
 },
 "113": {
 "nom": "R.Minix",
@@ -1630,7 +2283,16 @@
 "source": "selon le prix",
 "malus_b2b": 0.955,
 "age": 26,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 7,
+"poste_espn": "SF",
+"devant": [
+"Peyton Watson",
+"Jaylon Tyson",
+"Sam Merrill"
+],
+"presaison_matchs": 2,
+"presaison_min": 9.5
 },
 "114": {
 "nom": "M.Thomas",
@@ -1640,7 +2302,16 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 20,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 6,
+"poste_espn": "SG",
+"devant": [
+"Donovan Mitchell",
+"Sam Merrill",
+"Tyrese Proctor"
+],
+"presaison_matchs": 3,
+"presaison_min": 18.0
 },
 "115": {
 "nom": "E.Udeh, Jr.",
@@ -1664,7 +2335,14 @@
 "b2b_presence": 1.0,
 "presence": 0.94,
 "age": 21,
-"min_proj": 22.8
+"min_proj": 22.8,
+"rang_poste": 2,
+"poste_espn": "SG",
+"devant": [
+"Max Christie"
+],
+"presaison_matchs": 4,
+"presaison_min": 24.5
 },
 "117": {
 "nom": "N.Marshall",
@@ -1681,7 +2359,14 @@
 "b2b_presence": 0.86,
 "presence": 0.95,
 "age": 28,
-"min_proj": 24.2
+"min_proj": 24.2,
+"rang_poste": 2,
+"poste_espn": "SF",
+"devant": [
+"Cooper Flagg"
+],
+"presaison_matchs": 4,
+"presaison_min": 19.0
 },
 "118": {
 "nom": "K.Irving",
@@ -1695,7 +2380,12 @@
 "malus_b2b": 0.881,
 "age": 34,
 "b2b_n": 0,
-"min_proj": 34.6
+"min_proj": 34.6,
+"rang_poste": 1,
+"poste_espn": "PG",
+"devant": [],
+"presaison_matchs": 2,
+"presaison_min": 23.5
 },
 "119": {
 "nom": "D.Lively II",
@@ -1712,7 +2402,10 @@
 "b2b_presence": 0.0,
 "presence": 0.67,
 "age": 22,
-"min_proj": 23.6
+"min_proj": 23.6,
+"rang_poste": 1,
+"poste_espn": "C",
+"devant": []
 },
 "120": {
 "nom": "D.Gafford",
@@ -1729,7 +2422,14 @@
 "b2b_presence": 0.45,
 "presence": 0.81,
 "age": 28,
-"min_proj": 22.5
+"min_proj": 22.5,
+"rang_poste": 2,
+"poste_espn": "C",
+"devant": [
+"Dereck Lively II"
+],
+"presaison_matchs": 3,
+"presaison_min": 13.3
 },
 "121": {
 "nom": "P.Washington",
@@ -1746,7 +2446,12 @@
 "b2b_presence": 0.58,
 "presence": 0.82,
 "age": 28,
-"min_proj": 29.0
+"min_proj": 29.0,
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 19.7
 },
 "122": {
 "nom": "M.Christie",
@@ -1763,7 +2468,12 @@
 "b2b_presence": 0.93,
 "presence": 0.95,
 "age": 23,
-"min_proj": 28.2
+"min_proj": 28.2,
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 20.3
 },
 "123": {
 "nom": "C.Martin",
@@ -1780,7 +2490,15 @@
 "b2b_presence": 0.77,
 "presence": 0.86,
 "age": 31,
-"min_proj": 17.0
+"min_proj": 17.0,
+"rang_poste": 3,
+"poste_espn": "SG",
+"devant": [
+"Max Christie",
+"Zaccharie Risacher"
+],
+"presaison_matchs": 3,
+"presaison_min": 16.0
 },
 "124": {
 "nom": "M.Cisse",
@@ -1794,7 +2512,15 @@
 "b2b_n": 5,
 "b2b_presence": 1.0,
 "presence": 0.67,
-"age": 24
+"age": 24,
+"rang_poste": 3,
+"poste_espn": "C",
+"devant": [
+"Dereck Lively II",
+"Daniel Gafford"
+],
+"presaison_matchs": 4,
+"presaison_min": 10.2
 },
 "125": {
 "nom": "C.Flagg",
@@ -1811,7 +2537,12 @@
 "b2b_presence": 0.86,
 "presence": 0.94,
 "age": 19,
-"min_proj": 35.5
+"min_proj": 35.5,
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 24.7
 },
 "126": {
 "nom": "M.Sasser",
@@ -1828,7 +2559,14 @@
 "b2b_presence": 0.83,
 "presence": 0.68,
 "age": 26,
-"min_proj": 13.1
+"min_proj": 13.1,
+"rang_poste": 2,
+"poste_espn": "PG",
+"devant": [
+"Kyrie Irving"
+],
+"presaison_matchs": 1,
+"presaison_min": 12.0
 },
 "127": {
 "nom": "J.Poulakidas",
@@ -1852,7 +2590,13 @@
 "b2b_presence": 1.0,
 "presence": 0.95,
 "age": 25,
-"min_proj": 23.7
+"min_proj": 23.7,
+"rang_poste": 3,
+"poste_espn": "PF",
+"devant": [
+"P.J. Washington",
+"Morez Johnson Jr."
+]
 },
 "129": {
 "nom": "J.Howard",
@@ -1869,7 +2613,16 @@
 "b2b_presence": 1.0,
 "presence": 0.78,
 "age": 23,
-"min_proj": 12.4
+"min_proj": 12.4,
+"rang_poste": 7,
+"poste_espn": "SG",
+"devant": [
+"Max Christie",
+"Zaccharie Risacher",
+"Caleb Martin"
+],
+"presaison_matchs": 2,
+"presaison_min": 12.5
 },
 "130": {
 "nom": "T.Biberovic",
@@ -1879,7 +2632,16 @@
 "source": "selon le prix",
 "malus_b2b": 0.955,
 "age": 25,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 9,
+"poste_espn": "SG",
+"devant": [
+"Max Christie",
+"Zaccharie Risacher",
+"Caleb Martin"
+],
+"presaison_matchs": 3,
+"presaison_min": 19.3
 },
 "131": {
 "nom": "S.de Larrea",
@@ -1889,7 +2651,16 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 20,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 4,
+"poste_espn": "PG",
+"devant": [
+"Kyrie Irving",
+"Marcus Sasser",
+"Cooper Flagg"
+],
+"presaison_matchs": 4,
+"presaison_min": 25.2
 },
 "132": {
 "nom": "M.Johnson",
@@ -1903,7 +2674,14 @@
 "malus_b2b": 1.022,
 "age": 20,
 "b2b_n": 0,
-"min_proj": 24.7
+"min_proj": 24.7,
+"rang_poste": 2,
+"poste_espn": "PF",
+"devant": [
+"P.J. Washington"
+],
+"presaison_matchs": 2,
+"presaison_min": 13.0
 },
 "133": {
 "nom": "T.Lawal",
@@ -1913,7 +2691,16 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 23,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 7,
+"poste_espn": "PF",
+"devant": [
+"P.J. Washington",
+"Morez Johnson Jr.",
+"Santi Aldama"
+],
+"presaison_matchs": 4,
+"presaison_min": 14.0
 },
 "134": {
 "nom": "K.Simpson",
@@ -1943,7 +2730,12 @@
 "b2b_presence": 0.9,
 "presence": 0.94,
 "age": 30,
-"min_proj": 28.8
+"min_proj": 28.8,
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
+"presaison_matchs": 5,
+"presaison_min": 18.2
 },
 "136": {
 "nom": "N.Jokic",
@@ -1960,7 +2752,12 @@
 "b2b_presence": 1.0,
 "presence": 0.97,
 "age": 31,
-"min_proj": 35.6
+"min_proj": 35.6,
+"rang_poste": 1,
+"poste_espn": "C",
+"devant": [],
+"presaison_matchs": 5,
+"presaison_min": 21.0
 },
 "137": {
 "nom": "A.Gordon",
@@ -1977,7 +2774,12 @@
 "b2b_presence": 0.3,
 "presence": 0.71,
 "age": 31,
-"min_proj": 29.3
+"min_proj": 29.3,
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 15.5
 },
 "138": {
 "nom": "J.Murray",
@@ -1994,7 +2796,12 @@
 "b2b_presence": 0.82,
 "presence": 0.95,
 "age": 29,
-"min_proj": 35.0
+"min_proj": 35.0,
+"rang_poste": 1,
+"poste_espn": "PG",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 22.5
 },
 "139": {
 "nom": "Z.Nnaji",
@@ -2008,7 +2815,16 @@
 "b2b_n": 13,
 "b2b_presence": 0.69,
 "presence": 0.65,
-"age": 25
+"age": 25,
+"rang_poste": 4,
+"poste_espn": "C",
+"devant": [
+"Nikola Jokic",
+"Marvin Bagley III",
+"Aaron Gordon"
+],
+"presaison_matchs": 4,
+"presaison_min": 9.8
 },
 "140": {
 "nom": "C.Braun",
@@ -2025,7 +2841,12 @@
 "b2b_presence": 0.9,
 "presence": 0.93,
 "age": 25,
-"min_proj": 27.5
+"min_proj": 27.5,
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
+"presaison_matchs": 5,
+"presaison_min": 18.6
 },
 "141": {
 "nom": "J.Strawther",
@@ -2042,7 +2863,15 @@
 "b2b_presence": 1.0,
 "presence": 0.8,
 "age": 24,
-"min_proj": 16.0
+"min_proj": 16.0,
+"rang_poste": 3,
+"poste_espn": "SG",
+"devant": [
+"Christian Braun",
+"DeMar DeRozan"
+],
+"presaison_matchs": 4,
+"presaison_min": 18.5
 },
 "142": {
 "nom": "D.Holmes II",
@@ -2056,7 +2885,16 @@
 "b2b_n": 2,
 "b2b_presence": 0.5,
 "presence": 0.46,
-"age": 24
+"age": 24,
+"rang_poste": 5,
+"poste_espn": "C",
+"devant": [
+"Nikola Jokic",
+"Marvin Bagley III",
+"Aaron Gordon"
+],
+"presaison_matchs": 4,
+"presaison_min": 11.8
 },
 "143": {
 "nom": "S.Jones",
@@ -2070,7 +2908,13 @@
 "b2b_n": 13,
 "b2b_presence": 1.0,
 "presence": 0.87,
-"age": 25
+"age": 25,
+"rang_poste": 3,
+"poste_espn": "PF",
+"devant": [
+"Aaron Gordon",
+"DeMar DeRozan"
+]
 },
 "144": {
 "nom": "D.DeRozan",
@@ -2087,7 +2931,14 @@
 "b2b_presence": 0.93,
 "presence": 0.97,
 "age": 37,
-"min_proj": 28.9
+"min_proj": 28.9,
+"rang_poste": 2,
+"poste_espn": "SG",
+"devant": [
+"Christian Braun"
+],
+"presaison_matchs": 4,
+"presaison_min": 14.2
 },
 "145": {
 "nom": "M.Bagley III",
@@ -2104,7 +2955,14 @@
 "b2b_presence": 0.8,
 "presence": 0.9,
 "age": 27,
-"min_proj": 19.1
+"min_proj": 19.1,
+"rang_poste": 2,
+"poste_espn": "C",
+"devant": [
+"Nikola Jokic"
+],
+"presaison_matchs": 4,
+"presaison_min": 15.2
 },
 "146": {
 "nom": "T.Brazile",
@@ -2114,7 +2972,16 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 23,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 5,
+"poste_espn": "PF",
+"devant": [
+"Aaron Gordon",
+"DeMar DeRozan",
+"Spencer Jones"
+],
+"presaison_matchs": 5,
+"presaison_min": 19.6
 },
 "147": {
 "nom": "A.Diallo",
@@ -2124,7 +2991,16 @@
 "source": "selon le prix",
 "malus_b2b": 0.955,
 "age": 29,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 4,
+"poste_espn": "SF",
+"devant": [
+"Cameron Johnson",
+"DeMar DeRozan",
+"Julian Strawther"
+],
+"presaison_matchs": 5,
+"presaison_min": 16.6
 },
 "148": {
 "nom": "B.Hopkins",
@@ -2134,7 +3010,16 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 24,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 7,
+"poste_espn": "SF",
+"devant": [
+"Cameron Johnson",
+"DeMar DeRozan",
+"Julian Strawther"
+],
+"presaison_matchs": 5,
+"presaison_min": 12.8
 },
 "149": {
 "nom": "T.Jones",
@@ -2151,7 +3036,14 @@
 "b2b_presence": 0.91,
 "presence": 0.89,
 "age": 30,
-"min_proj": 17.5
+"min_proj": 17.5,
+"rang_poste": 2,
+"poste_espn": "PG",
+"devant": [
+"Jamal Murray"
+],
+"presaison_matchs": 5,
+"presaison_min": 15.2
 },
 "150": {
 "nom": "L.Walker IV",
@@ -2161,7 +3053,9 @@
 "source": "selon le prix",
 "malus_b2b": 0.955,
 "age": 27,
-"b2b_n": 0
+"b2b_n": 0,
+"presaison_matchs": 2,
+"presaison_min": 8.5
 },
 "151": {
 "nom": "C.Whitmore",
@@ -2174,7 +3068,9 @@
 "b2b_n": 3,
 "b2b_presence": 1.0,
 "presence": 1.0,
-"age": 22
+"age": 22,
+"presaison_matchs": 5,
+"presaison_min": 13.6
 },
 "152": {
 "nom": "R.Dixon-Waters",
@@ -2205,7 +3101,15 @@
 "b2b_presence": 0.87,
 "presence": 0.9,
 "age": 28,
-"min_proj": 23.6
+"min_proj": 23.6,
+"rang_poste": 3,
+"poste_espn": "SG",
+"devant": [
+"Duncan Robinson",
+"Isaiah Joe"
+],
+"presaison_matchs": 4,
+"presaison_min": 15.0
 },
 "155": {
 "nom": "J.Green",
@@ -2219,7 +3123,16 @@
 "b2b_n": 14,
 "b2b_presence": 1.0,
 "presence": 1.0,
-"age": 33
+"age": 33,
+"rang_poste": 5,
+"poste_espn": "SF",
+"devant": [
+"Ausar Thompson",
+"Duncan Robinson",
+"Isaiah Joe"
+],
+"presaison_matchs": 4,
+"presaison_min": 10.5
 },
 "156": {
 "nom": "P.Reed",
@@ -2236,7 +3149,14 @@
 "b2b_presence": 0.82,
 "presence": 0.78,
 "age": 27,
-"min_proj": 13.8
+"min_proj": 13.8,
+"rang_poste": 2,
+"poste_espn": "C",
+"devant": [
+"Jalen Duren"
+],
+"presaison_matchs": 4,
+"presaison_min": 18.5
 },
 "157": {
 "nom": "C.Cunningham",
@@ -2253,7 +3173,12 @@
 "b2b_presence": 1.0,
 "presence": 0.92,
 "age": 25,
-"min_proj": 34.8
+"min_proj": 34.8,
+"rang_poste": 1,
+"poste_espn": "PG",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 22.3
 },
 "158": {
 "nom": "J.Duren",
@@ -2270,7 +3195,12 @@
 "b2b_presence": 0.83,
 "presence": 0.91,
 "age": 22,
-"min_proj": 31.0
+"min_proj": 31.0,
+"rang_poste": 1,
+"poste_espn": "C",
+"devant": [],
+"presaison_matchs": 2,
+"presaison_min": 17.5
 },
 "159": {
 "nom": "A.Thompson",
@@ -2287,7 +3217,12 @@
 "b2b_presence": 0.91,
 "presence": 0.97,
 "age": 23,
-"min_proj": 26.8
+"min_proj": 26.8,
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 18.2
 },
 "160": {
 "nom": "R.Holland II",
@@ -2304,7 +3239,14 @@
 "b2b_presence": 1.0,
 "presence": 0.97,
 "age": 21,
-"min_proj": 18.5
+"min_proj": 18.5,
+"rang_poste": 2,
+"poste_espn": "PF",
+"devant": [
+"John Collins"
+],
+"presaison_matchs": 4,
+"presaison_min": 17.2
 },
 "161": {
 "nom": "D.Jenkins",
@@ -2318,7 +3260,14 @@
 "b2b_n": 12,
 "b2b_presence": 0.92,
 "presence": 0.9,
-"age": 25
+"age": 25,
+"rang_poste": 2,
+"poste_espn": "PG",
+"devant": [
+"Cade Cunningham"
+],
+"presaison_matchs": 4,
+"presaison_min": 17.2
 },
 "162": {
 "nom": "T.Smith",
@@ -2331,7 +3280,16 @@
 "b2b_n": 2,
 "b2b_presence": 0.5,
 "presence": 0.5,
-"age": 26
+"age": 26,
+"rang_poste": 4,
+"poste_espn": "C",
+"devant": [
+"Jalen Duren",
+"Paul Reed",
+"John Collins"
+],
+"presaison_matchs": 4,
+"presaison_min": 12.8
 },
 "163": {
 "nom": "C.Lanier",
@@ -2345,7 +3303,16 @@
 "b2b_n": 6,
 "b2b_presence": 0.5,
 "presence": 0.56,
-"age": 24
+"age": 24,
+"rang_poste": 7,
+"poste_espn": "SG",
+"devant": [
+"Duncan Robinson",
+"Isaiah Joe",
+"Kevin Huerter"
+],
+"presaison_matchs": 3,
+"presaison_min": 14.3
 },
 "164": {
 "nom": "D.Robinson",
@@ -2362,7 +3329,12 @@
 "b2b_presence": 0.92,
 "presence": 0.95,
 "age": 32,
-"min_proj": 26.2
+"min_proj": 26.2,
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 19.0
 },
 "165": {
 "nom": "J.Collins",
@@ -2379,7 +3351,12 @@
 "b2b_presence": 0.92,
 "presence": 0.93,
 "age": 29,
-"min_proj": 30.6
+"min_proj": 30.6,
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 19.0
 },
 "166": {
 "nom": "T.Prince",
@@ -2396,7 +3373,15 @@
 "b2b_presence": 0.8,
 "presence": 0.92,
 "age": 32,
-"min_proj": 16.4
+"min_proj": 16.4,
+"rang_poste": 3,
+"poste_espn": "PF",
+"devant": [
+"John Collins",
+"Ronald Holland II"
+],
+"presaison_matchs": 3,
+"presaison_min": 9.3
 },
 "167": {
 "nom": "G.Harris",
@@ -2430,7 +3415,14 @@
 "b2b_presence": 1.0,
 "presence": 0.99,
 "age": 27,
-"min_proj": 21.1
+"min_proj": 21.1,
+"rang_poste": 2,
+"poste_espn": "SG",
+"devant": [
+"Duncan Robinson"
+],
+"presaison_matchs": 4,
+"presaison_min": 16.5
 },
 "169": {
 "nom": "E.Harkless",
@@ -2444,7 +3436,16 @@
 "b2b_n": 3,
 "b2b_presence": 1.0,
 "presence": 0.84,
-"age": 26
+"age": 26,
+"rang_poste": 4,
+"poste_espn": "PG",
+"devant": [
+"Cade Cunningham",
+"Daniss Jenkins",
+"Ebuka Okorie"
+],
+"presaison_matchs": 3,
+"presaison_min": 9.0
 },
 "170": {
 "nom": "I.Jones",
@@ -2454,7 +3455,16 @@
 "source": "selon le prix",
 "malus_b2b": 0.955,
 "age": 26,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 4,
+"poste_espn": "PF",
+"devant": [
+"John Collins",
+"Ronald Holland II",
+"Taurean Prince"
+],
+"presaison_matchs": 4,
+"presaison_min": 9.0
 },
 "171": {
 "nom": "E.Okorie",
@@ -2464,7 +3474,15 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 19,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 3,
+"poste_espn": "PG",
+"devant": [
+"Cade Cunningham",
+"Daniss Jenkins"
+],
+"presaison_matchs": 4,
+"presaison_min": 13.2
 },
 "172": {
 "nom": "U.Onyenso",
@@ -2474,7 +3492,16 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 22,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 5,
+"poste_espn": "C",
+"devant": [
+"Jalen Duren",
+"Paul Reed",
+"John Collins"
+],
+"presaison_matchs": 1,
+"presaison_min": 7.0
 },
 "173": {
 "nom": "D.Allen",
@@ -2498,7 +3525,13 @@
 "b2b_presence": 0.0,
 "presence": 0.57,
 "age": 31,
-"min_proj": 27.7
+"min_proj": 27.7,
+"rang_poste": 3,
+"poste_espn": "C",
+"devant": [
+"Draymond Green",
+"Al Horford"
+]
 },
 "175": {
 "nom": "C.Bassey",
@@ -2515,7 +3548,16 @@
 "b2b_presence": 1.0,
 "presence": 0.67,
 "age": 25,
-"min_proj": 11.3
+"min_proj": 11.3,
+"rang_poste": 4,
+"poste_espn": "C",
+"devant": [
+"Draymond Green",
+"Al Horford",
+"Kristaps Porzingis"
+],
+"presaison_matchs": 6,
+"presaison_min": 16.2
 },
 "176": {
 "nom": "B.Williams",
@@ -2529,7 +3571,16 @@
 "b2b_n": 13,
 "b2b_presence": 0.92,
 "presence": 0.88,
-"age": 26
+"age": 26,
+"rang_poste": 4,
+"poste_espn": "PG",
+"devant": [
+"Stephen Curry",
+"De'Anthony Melton",
+"Brandin Podziemski"
+],
+"presaison_matchs": 5,
+"presaison_min": 16.8
 },
 "177": {
 "nom": "S.Curry",
@@ -2546,7 +3597,12 @@
 "b2b_presence": 0.62,
 "presence": 0.81,
 "age": 38,
-"min_proj": 32.0
+"min_proj": 32.0,
+"rang_poste": 1,
+"poste_espn": "PG",
+"devant": [],
+"presaison_matchs": 5,
+"presaison_min": 18.0
 },
 "178": {
 "nom": "D.Green",
@@ -2563,7 +3619,12 @@
 "b2b_presence": 0.67,
 "presence": 0.84,
 "age": 36,
-"min_proj": 27.9
+"min_proj": 27.9,
+"rang_poste": 1,
+"poste_espn": "C",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 19.0
 },
 "179": {
 "nom": "M.Moody",
@@ -2580,7 +3641,14 @@
 "b2b_presence": 1.0,
 "presence": 0.97,
 "age": 24,
-"min_proj": 24.7
+"min_proj": 24.7,
+"rang_poste": 6,
+"poste_espn": "SG",
+"devant": [
+"Brandin Podziemski",
+"De'Anthony Melton",
+"Will Richard"
+]
 },
 "180": {
 "nom": "G.Payton II",
@@ -2594,7 +3662,14 @@
 "b2b_n": 14,
 "b2b_presence": 0.93,
 "presence": 0.89,
-"age": 33
+"age": 33,
+"rang_poste": 2,
+"poste_espn": "SF",
+"devant": [
+"Yaxel Lendeborg"
+],
+"presaison_matchs": 5,
+"presaison_min": 16.2
 },
 "181": {
 "nom": "B.Podziemski",
@@ -2611,7 +3686,12 @@
 "b2b_presence": 1.0,
 "presence": 0.99,
 "age": 23,
-"min_proj": 30.9
+"min_proj": 30.9,
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
+"presaison_matchs": 5,
+"presaison_min": 23.2
 },
 "182": {
 "nom": "G.Santos",
@@ -2628,7 +3708,12 @@
 "b2b_presence": 0.9,
 "presence": 0.85,
 "age": 24,
-"min_proj": 23.9
+"min_proj": 23.9,
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
+"presaison_matchs": 5,
+"presaison_min": 21.4
 },
 "183": {
 "nom": "J.Butler",
@@ -2645,7 +3730,14 @@
 "b2b_presence": 0.67,
 "presence": 0.86,
 "age": 37,
-"min_proj": 32.4
+"min_proj": 32.4,
+"rang_poste": 7,
+"poste_espn": "SF",
+"devant": [
+"Yaxel Lendeborg",
+"Gary Payton II",
+"Gui Santos"
+]
 },
 "184": {
 "nom": "W.Richard",
@@ -2659,7 +3751,15 @@
 "b2b_n": 13,
 "b2b_presence": 1.0,
 "presence": 0.9,
-"age": 23
+"age": 23,
+"rang_poste": 3,
+"poste_espn": "SG",
+"devant": [
+"Brandin Podziemski",
+"De'Anthony Melton"
+],
+"presaison_matchs": 6,
+"presaison_min": 18.3
 },
 "185": {
 "nom": "A.Toohey",
@@ -2669,7 +3769,9 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 22,
-"b2b_n": 0
+"b2b_n": 0,
+"presaison_matchs": 4,
+"presaison_min": 8.0
 },
 "186": {
 "nom": "L.Cryer",
@@ -2693,7 +3795,14 @@
 "b2b_presence": 0.0,
 "presence": 0.66,
 "age": 40,
-"min_proj": 25.4
+"min_proj": 25.4,
+"rang_poste": 2,
+"poste_espn": "C",
+"devant": [
+"Draymond Green"
+],
+"presaison_matchs": 3,
+"presaison_min": 17.3
 },
 "188": {
 "nom": "Y.Lendeborg",
@@ -2707,7 +3816,12 @@
 "malus_b2b": 1.022,
 "age": 24,
 "b2b_n": 0,
-"min_proj": 24.6
+"min_proj": 24.6,
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
+"presaison_matchs": 5,
+"presaison_min": 23.2
 },
 "189": {
 "nom": "M.Leons",
@@ -2731,7 +3845,14 @@
 "b2b_presence": 0.4,
 "presence": 0.75,
 "age": 28,
-"min_proj": 23.1
+"min_proj": 23.1,
+"rang_poste": 2,
+"poste_espn": "PG",
+"devant": [
+"Stephen Curry"
+],
+"presaison_matchs": 5,
+"presaison_min": 18.4
 },
 "191": {
 "nom": "G.Niang",
@@ -2741,7 +3862,14 @@
 "source": "selon le prix",
 "malus_b2b": 0.958,
 "age": 33,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 2,
+"poste_espn": "PF",
+"devant": [
+"Gui Santos"
+],
+"presaison_matchs": 5,
+"presaison_min": 17.0
 },
 "192": {
 "nom": "D.Terry",
@@ -2755,7 +3883,9 @@
 "b2b_n": 10,
 "b2b_presence": 0.5,
 "presence": 0.74,
-"age": 24
+"age": 24,
+"presaison_matchs": 5,
+"presaison_min": 14.2
 },
 "193": {
 "nom": "O.Agbim",
@@ -2793,7 +3923,16 @@
 "b2b_presence": 0.73,
 "presence": 0.72,
 "age": 22,
-"min_proj": 10.1
+"min_proj": 10.1,
+"rang_poste": 6,
+"poste_espn": "PF",
+"devant": [
+"Jabari Smith Jr.",
+"Tari Eason",
+"Jae'Sean Tate"
+],
+"presaison_matchs": 3,
+"presaison_min": 6.7
 },
 "197": {
 "nom": "C.Capela",
@@ -2810,7 +3949,16 @@
 "b2b_presence": 0.92,
 "presence": 0.91,
 "age": 32,
-"min_proj": 16.8
+"min_proj": 16.8,
+"rang_poste": 4,
+"poste_espn": "C",
+"devant": [
+"Alperen Sengun",
+"Steven Adams",
+"Jabari Smith Jr."
+],
+"presaison_matchs": 2,
+"presaison_min": 17.5
 },
 "198": {
 "nom": "A.Sengun",
@@ -2827,7 +3975,12 @@
 "b2b_presence": 1.0,
 "presence": 0.94,
 "age": 24,
-"min_proj": 32.7
+"min_proj": 32.7,
+"rang_poste": 1,
+"poste_espn": "C",
+"devant": [],
+"presaison_matchs": 2,
+"presaison_min": 23.0
 },
 "199": {
 "nom": "J.Tate",
@@ -2844,7 +3997,15 @@
 "b2b_presence": 0.71,
 "presence": 0.73,
 "age": 30,
-"min_proj": 12.1
+"min_proj": 12.1,
+"rang_poste": 3,
+"poste_espn": "PF",
+"devant": [
+"Jabari Smith Jr.",
+"Tari Eason"
+],
+"presaison_matchs": 1,
+"presaison_min": 8.0
 },
 "200": {
 "nom": "J.Smith Jr.",
@@ -2861,7 +4022,12 @@
 "b2b_presence": 0.93,
 "presence": 0.96,
 "age": 23,
-"min_proj": 32.1
+"min_proj": 32.1,
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 23.0
 },
 "201": {
 "nom": "T.Eason",
@@ -2878,7 +4044,14 @@
 "b2b_presence": 0.7,
 "presence": 0.92,
 "age": 25,
-"min_proj": 24.9
+"min_proj": 24.9,
+"rang_poste": 2,
+"poste_espn": "SF",
+"devant": [
+"Kevin Durant"
+],
+"presaison_matchs": 3,
+"presaison_min": 21.0
 },
 "202": {
 "nom": "F.VanVleet",
@@ -2892,7 +4065,12 @@
 "malus_b2b": 0.958,
 "age": 32,
 "b2b_n": 0,
-"min_proj": 32.2
+"min_proj": 32.2,
+"rang_poste": 1,
+"poste_espn": "PG",
+"devant": [],
+"presaison_matchs": 2,
+"presaison_min": 26.5
 },
 "203": {
 "nom": "A.Thompson",
@@ -2909,7 +4087,12 @@
 "b2b_presence": 1.0,
 "presence": 0.97,
 "age": 23,
-"min_proj": 36.5
+"min_proj": 36.5,
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 25.3
 },
 "204": {
 "nom": "S.Adams",
@@ -2926,7 +4109,14 @@
 "b2b_presence": 0.0,
 "presence": 0.77,
 "age": 33,
-"min_proj": 12.0
+"min_proj": 12.0,
+"rang_poste": 2,
+"poste_espn": "C",
+"devant": [
+"Alperen Sengun"
+],
+"presaison_matchs": 1,
+"presaison_min": 14.0
 },
 "205": {
 "nom": "R.Sheppard",
@@ -2943,7 +4133,14 @@
 "b2b_presence": 1.0,
 "presence": 1.0,
 "age": 22,
-"min_proj": 26.7
+"min_proj": 26.7,
+"rang_poste": 2,
+"poste_espn": "SG",
+"devant": [
+"Amen Thompson"
+],
+"presaison_matchs": 3,
+"presaison_min": 20.0
 },
 "206": {
 "nom": "K.Durant",
@@ -2960,7 +4157,12 @@
 "b2b_presence": 1.0,
 "presence": 0.97,
 "age": 38,
-"min_proj": 34.6
+"min_proj": 34.6,
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
+"presaison_matchs": 2,
+"presaison_min": 19.5
 },
 "207": {
 "nom": "I.Crawford",
@@ -2990,7 +4192,15 @@
 "b2b_presence": 1.0,
 "presence": 0.59,
 "age": 34,
-"min_proj": 17.6
+"min_proj": 17.6,
+"rang_poste": 3,
+"poste_espn": "SF",
+"devant": [
+"Kevin Durant",
+"Tari Eason"
+],
+"presaison_matchs": 3,
+"presaison_min": 15.3
 },
 "209": {
 "nom": "M.Smart",
@@ -3007,7 +4217,14 @@
 "b2b_presence": 0.7,
 "presence": 0.9,
 "age": 32,
-"min_proj": 24.4
+"min_proj": 24.4,
+"rang_poste": 2,
+"poste_espn": "PG",
+"devant": [
+"Fred VanVleet"
+],
+"presaison_matchs": 2,
+"presaison_min": 18.0
 },
 "210": {
 "nom": "O.Tshiebwe",
@@ -3021,7 +4238,16 @@
 "b2b_n": 3,
 "b2b_presence": 0.67,
 "presence": 0.85,
-"age": 26
+"age": 26,
+"rang_poste": 5,
+"poste_espn": "C",
+"devant": [
+"Alperen Sengun",
+"Steven Adams",
+"Jabari Smith Jr."
+],
+"presaison_matchs": 3,
+"presaison_min": 11.3
 },
 "211": {
 "nom": "R.Castro",
@@ -3052,7 +4278,16 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 23,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 4,
+"poste_espn": "PG",
+"devant": [
+"Fred VanVleet",
+"Marcus Smart",
+"Amen Thompson"
+],
+"presaison_matchs": 3,
+"presaison_min": 12.3
 },
 "215": {
 "nom": "L.Nance Jr.",
@@ -3069,7 +4304,15 @@
 "b2b_presence": 0.57,
 "presence": 0.62,
 "age": 33,
-"min_proj": 17.8
+"min_proj": 17.8,
+"rang_poste": 3,
+"poste_espn": "C",
+"devant": [
+"Ivica Zubac",
+"Jay Huff"
+],
+"presaison_matchs": 3,
+"presaison_min": 11.0
 },
 "216": {
 "nom": "Q.Jackson",
@@ -3083,7 +4326,16 @@
 "b2b_n": 7,
 "b2b_presence": 1.0,
 "presence": 0.81,
-"age": 28
+"age": 28,
+"rang_poste": 4,
+"poste_espn": "PG",
+"devant": [
+"Tyrese Haliburton",
+"T.J. McConnell",
+"Andrew Nembhard"
+],
+"presaison_matchs": 4,
+"presaison_min": 13.0
 },
 "217": {
 "nom": "O.Toppin",
@@ -3100,7 +4352,14 @@
 "b2b_presence": 0.67,
 "presence": 0.87,
 "age": 28,
-"min_proj": 20.0
+"min_proj": 20.0,
+"rang_poste": 2,
+"poste_espn": "PF",
+"devant": [
+"Pascal Siakam"
+],
+"presaison_matchs": 4,
+"presaison_min": 15.0
 },
 "218": {
 "nom": "T.Haliburton",
@@ -3114,7 +4373,12 @@
 "malus_b2b": 0.955,
 "age": 26,
 "b2b_n": 0,
-"min_proj": 33.1
+"min_proj": 33.1,
+"rang_poste": 1,
+"poste_espn": "PG",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 18.0
 },
 "219": {
 "nom": "T.McConnell",
@@ -3131,7 +4395,12 @@
 "b2b_presence": 0.33,
 "presence": 0.87,
 "age": 34,
-"min_proj": 17.8
+"min_proj": 17.8,
+"rang_poste": 2,
+"poste_espn": "PG",
+"devant": [
+"Tyrese Haliburton"
+]
 },
 "220": {
 "nom": "A.Nesmith",
@@ -3148,7 +4417,12 @@
 "b2b_presence": 0.38,
 "presence": 0.84,
 "age": 27,
-"min_proj": 28.2
+"min_proj": 28.2,
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
+"presaison_matchs": 2,
+"presaison_min": 18.0
 },
 "221": {
 "nom": "A.Nembhard",
@@ -3165,7 +4439,12 @@
 "b2b_presence": 0.5,
 "presence": 0.82,
 "age": 26,
-"min_proj": 30.7
+"min_proj": 30.7,
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 19.3
 },
 "222": {
 "nom": "B.Sheppard",
@@ -3182,7 +4461,15 @@
 "b2b_presence": 1.0,
 "presence": 0.97,
 "age": 25,
-"min_proj": 18.7
+"min_proj": 18.7,
+"rang_poste": 3,
+"poste_espn": "SG",
+"devant": [
+"Andrew Nembhard",
+"Kelly Oubre Jr."
+],
+"presaison_matchs": 4,
+"presaison_min": 19.2
 },
 "223": {
 "nom": "J.Walker",
@@ -3199,7 +4486,14 @@
 "b2b_presence": 1.0,
 "presence": 0.97,
 "age": 23,
-"min_proj": 18.6
+"min_proj": 18.6,
+"rang_poste": 2,
+"poste_espn": "SF",
+"devant": [
+"Aaron Nesmith"
+],
+"presaison_matchs": 2,
+"presaison_min": 24.0
 },
 "224": {
 "nom": "P.Siakam",
@@ -3216,7 +4510,12 @@
 "b2b_presence": 0.56,
 "presence": 0.9,
 "age": 32,
-"min_proj": 34.8
+"min_proj": 34.8,
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 20.8
 },
 "225": {
 "nom": "J.Furphy",
@@ -3233,7 +4532,14 @@
 "b2b_presence": 1.0,
 "presence": 0.94,
 "age": 21,
-"min_proj": 16.1
+"min_proj": 16.1,
+"rang_poste": 4,
+"poste_espn": "SG",
+"devant": [
+"Andrew Nembhard",
+"Kelly Oubre Jr.",
+"Ben Sheppard"
+]
 },
 "226": {
 "nom": "J.Huff",
@@ -3247,7 +4553,14 @@
 "b2b_n": 13,
 "b2b_presence": 1.0,
 "presence": 1.0,
-"age": 29
+"age": 29,
+"rang_poste": 2,
+"poste_espn": "C",
+"devant": [
+"Ivica Zubac"
+],
+"presaison_matchs": 4,
+"presaison_min": 13.5
 },
 "227": {
 "nom": "J.Slawson",
@@ -3260,7 +4573,16 @@
 "b2b_n": 3,
 "b2b_presence": 0.67,
 "presence": 0.75,
-"age": 26
+"age": 26,
+"rang_poste": 6,
+"poste_espn": "SF",
+"devant": [
+"Aaron Nesmith",
+"Jarace Walker",
+"Kelly Oubre Jr."
+],
+"presaison_matchs": 4,
+"presaison_min": 20.8
 },
 "228": {
 "nom": "I.Zubac",
@@ -3277,7 +4599,12 @@
 "b2b_presence": 1.0,
 "presence": 0.96,
 "age": 29,
-"min_proj": 31.1
+"min_proj": 31.1,
+"rang_poste": 1,
+"poste_espn": "C",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 19.2
 },
 "229": {
 "nom": "K.Brown",
@@ -3294,7 +4621,16 @@
 "b2b_presence": 0.78,
 "presence": 0.79,
 "age": 26,
-"min_proj": 10.8
+"min_proj": 10.8,
+"rang_poste": 4,
+"poste_espn": "PF",
+"devant": [
+"Pascal Siakam",
+"Obi Toppin",
+"Kelly Oubre Jr."
+],
+"presaison_matchs": 4,
+"presaison_min": 21.8
 },
 "230": {
 "nom": "K.Oubre Jr.",
@@ -3311,7 +4647,14 @@
 "b2b_presence": 1.0,
 "presence": 0.94,
 "age": 30,
-"min_proj": 26.3
+"min_proj": 26.3,
+"rang_poste": 2,
+"poste_espn": "SG",
+"devant": [
+"Andrew Nembhard"
+],
+"presaison_matchs": 4,
+"presaison_min": 16.5
 },
 "231": {
 "nom": "B.Smith",
@@ -3321,7 +4664,16 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 23,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 5,
+"poste_espn": "PG",
+"devant": [
+"Tyrese Haliburton",
+"T.J. McConnell",
+"Andrew Nembhard"
+],
+"presaison_matchs": 4,
+"presaison_min": 15.8
 },
 "232": {
 "nom": "K.Keita",
@@ -3348,7 +4700,9 @@
 "b2b_n": 4,
 "b2b_presence": 0.75,
 "presence": 0.76,
-"age": 25
+"age": 25,
+"presaison_matchs": 2,
+"presaison_min": 9.0
 },
 "235": {
 "nom": "D.Garland",
@@ -3365,7 +4719,12 @@
 "b2b_presence": 0.17,
 "presence": 0.79,
 "age": 26,
-"min_proj": 35.2
+"min_proj": 35.2,
+"rang_poste": 1,
+"poste_espn": "PG",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 19.0
 },
 "236": {
 "nom": "M.Strus",
@@ -3382,7 +4741,15 @@
 "b2b_presence": 0.0,
 "presence": 0.73,
 "age": 30,
-"min_proj": 25.9
+"min_proj": 25.9,
+"rang_poste": 3,
+"poste_espn": "PF",
+"devant": [
+"Rui Hachimura",
+"Derrick Jones Jr."
+],
+"presaison_matchs": 1,
+"presaison_min": 5.0
 },
 "237": {
 "nom": "Jal.Pickett",
@@ -3399,7 +4766,16 @@
 "b2b_presence": 0.73,
 "presence": 0.65,
 "age": 26,
-"min_proj": 11.3
+"min_proj": 11.3,
+"rang_poste": 5,
+"poste_espn": "PG",
+"devant": [
+"Darius Garland",
+"Kris Dunn",
+"Keaton Wagler"
+],
+"presaison_matchs": 3,
+"presaison_min": 14.7
 },
 "238": {
 "nom": "I.Jackson",
@@ -3416,7 +4792,12 @@
 "b2b_presence": 0.67,
 "presence": 0.92,
 "age": 24,
-"min_proj": 18.4
+"min_proj": 18.4,
+"rang_poste": 1,
+"poste_espn": "C",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 19.3
 },
 "239": {
 "nom": "D.Jones Jr.",
@@ -3433,7 +4814,12 @@
 "b2b_presence": 0.89,
 "presence": 0.96,
 "age": 29,
-"min_proj": 25.4
+"min_proj": 25.4,
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 18.7
 },
 "240": {
 "nom": "J.Miller",
@@ -3447,7 +4833,14 @@
 "b2b_n": 11,
 "b2b_presence": 0.91,
 "presence": 0.95,
-"age": 26
+"age": 26,
+"rang_poste": 6,
+"poste_espn": "PG",
+"devant": [
+"Darius Garland",
+"Kris Dunn",
+"Keaton Wagler"
+]
 },
 "241": {
 "nom": "K.Dunn",
@@ -3464,7 +4857,14 @@
 "b2b_presence": 1.0,
 "presence": 1.0,
 "age": 32,
-"min_proj": 22.0
+"min_proj": 22.0,
+"rang_poste": 2,
+"poste_espn": "PG",
+"devant": [
+"Darius Garland"
+],
+"presaison_matchs": 2,
+"presaison_min": 10.5
 },
 "242": {
 "nom": "C.Christie",
@@ -3478,7 +4878,16 @@
 "b2b_n": 9,
 "b2b_presence": 0.67,
 "presence": 0.7,
-"age": 21
+"age": 21,
+"rang_poste": 7,
+"poste_espn": "SG",
+"devant": [
+"Keaton Wagler",
+"Bradley Beal",
+"Kobe Sanders"
+],
+"presaison_matchs": 2,
+"presaison_min": 24.5
 },
 "243": {
 "nom": "Y.Niederhäuser",
@@ -3492,7 +4901,14 @@
 "b2b_n": 6,
 "b2b_presence": 0.83,
 "presence": 0.74,
-"age": 23
+"age": 23,
+"rang_poste": 4,
+"poste_espn": "C",
+"devant": [
+"Isaiah Jackson",
+"Brook Lopez",
+"Baba Miller"
+]
 },
 "244": {
 "nom": "K.Sanders",
@@ -3506,7 +4922,12 @@
 "b2b_n": 13,
 "b2b_presence": 0.92,
 "presence": 0.91,
-"age": 24
+"age": 24,
+"rang_poste": 2,
+"poste_espn": "SF",
+"devant": [
+"Derrick Jones Jr."
+]
 },
 "245": {
 "nom": "B.Lopez",
@@ -3523,7 +4944,14 @@
 "b2b_presence": 1.0,
 "presence": 0.97,
 "age": 38,
-"min_proj": 26.2
+"min_proj": 26.2,
+"rang_poste": 2,
+"poste_espn": "C",
+"devant": [
+"Isaiah Jackson"
+],
+"presaison_matchs": 3,
+"presaison_min": 10.0
 },
 "246": {
 "nom": "B.Beal",
@@ -3540,7 +4968,12 @@
 "b2b_presence": 0.0,
 "presence": 0.6,
 "age": 33,
-"min_proj": 25.3
+"min_proj": 25.3,
+"rang_poste": 2,
+"poste_espn": "SG",
+"devant": [
+"Keaton Wagler"
+]
 },
 "247": {
 "nom": "R.Hachimura",
@@ -3557,7 +4990,12 @@
 "b2b_presence": 0.91,
 "presence": 0.93,
 "age": 28,
-"min_proj": 30.6
+"min_proj": 30.6,
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 19.3
 },
 "248": {
 "nom": "J.Broome",
@@ -3571,7 +5009,9 @@
 "malus_b2b": 1.022,
 "age": 24,
 "b2b_n": 0,
-"min_proj": 8.3
+"min_proj": 8.3,
+"presaison_matchs": 1,
+"presaison_min": 9.0
 },
 "249": {
 "nom": "N.Martinelli",
@@ -3581,7 +5021,16 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 22,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 5,
+"poste_espn": "SF",
+"devant": [
+"Derrick Jones Jr.",
+"Kobe Sanders",
+"Rui Hachimura"
+],
+"presaison_matchs": 3,
+"presaison_min": 18.7
 },
 "250": {
 "nom": "B.Miller",
@@ -3591,7 +5040,15 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 22,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 3,
+"poste_espn": "C",
+"devant": [
+"Isaiah Jackson",
+"Brook Lopez"
+],
+"presaison_matchs": 3,
+"presaison_min": 19.0
 },
 "251": {
 "nom": "J.Sharp",
@@ -3612,7 +5069,12 @@
 "malus_b2b": 1.022,
 "age": 19,
 "b2b_n": 0,
-"min_proj": 28.1
+"min_proj": 28.1,
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 27.0
 },
 "253": {
 "nom": "B.Ingram",
@@ -3629,7 +5091,14 @@
 "b2b_presence": 0.86,
 "presence": 0.95,
 "age": 29,
-"min_proj": 35.3
+"min_proj": 35.3,
+"rang_poste": 7,
+"poste_espn": "SF",
+"devant": [
+"Derrick Jones Jr.",
+"Kobe Sanders",
+"Rui Hachimura"
+]
 },
 "254": {
 "nom": "G.Dick",
@@ -3646,7 +5115,16 @@
 "b2b_presence": 0.87,
 "presence": 0.95,
 "age": 22,
-"min_proj": 25.8
+"min_proj": 25.8,
+"rang_poste": 4,
+"poste_espn": "SG",
+"devant": [
+"Keaton Wagler",
+"Bradley Beal",
+"Kobe Sanders"
+],
+"presaison_matchs": 3,
+"presaison_min": 16.0
 },
 "255": {
 "nom": "Z.Williams",
@@ -3663,7 +5141,15 @@
 "b2b_presence": 0.6,
 "presence": 0.84,
 "age": 25,
-"min_proj": 23.0
+"min_proj": 23.0,
+"rang_poste": 3,
+"poste_espn": "SG",
+"devant": [
+"Austin Reaves",
+"Collin Sexton"
+],
+"presaison_matchs": 2,
+"presaison_min": 16.0
 },
 "256": {
 "nom": "C.Sexton",
@@ -3680,7 +5166,12 @@
 "b2b_presence": 1.0,
 "presence": 0.94,
 "age": 27,
-"min_proj": 25.8
+"min_proj": 25.8,
+"rang_poste": 2,
+"poste_espn": "PG",
+"devant": [
+"Luka Doncic"
+]
 },
 "257": {
 "nom": "L.Doncic",
@@ -3697,7 +5188,12 @@
 "b2b_presence": 0.88,
 "presence": 0.89,
 "age": 27,
-"min_proj": 36.7
+"min_proj": 36.7,
+"rang_poste": 1,
+"poste_espn": "PG",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 20.0
 },
 "258": {
 "nom": "A.Reaves",
@@ -3714,7 +5210,12 @@
 "b2b_presence": 0.8,
 "presence": 0.92,
 "age": 28,
-"min_proj": 36.6
+"min_proj": 36.6,
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 27.0
 },
 "259": {
 "nom": "J.Vanderbilt",
@@ -3731,7 +5232,16 @@
 "b2b_presence": 0.82,
 "presence": 0.92,
 "age": 27,
-"min_proj": 17.6
+"min_proj": 17.6,
+"rang_poste": 4,
+"poste_espn": "PF",
+"devant": [
+"Jake LaRavia",
+"Sandro Mamukelashvili",
+"Matisse Thybulle"
+],
+"presaison_matchs": 4,
+"presaison_min": 10.2
 },
 "260": {
 "nom": "B.James",
@@ -3748,7 +5258,16 @@
 "b2b_presence": 1.0,
 "presence": 0.56,
 "age": 22,
-"min_proj": 11.9
+"min_proj": 11.9,
+"rang_poste": 5,
+"poste_espn": "PG",
+"devant": [
+"Luka Doncic",
+"Collin Sexton",
+"Austin Reaves"
+],
+"presaison_matchs": 5,
+"presaison_min": 16.4
 },
 "261": {
 "nom": "D.Knecht",
@@ -3765,7 +5284,9 @@
 "b2b_presence": 1.0,
 "presence": 0.77,
 "age": 25,
-"min_proj": 12.0
+"min_proj": 12.0,
+"presaison_matchs": 4,
+"presaison_min": 12.0
 },
 "262": {
 "nom": "C.Mañon",
@@ -3778,7 +5299,16 @@
 "b2b_n": 1,
 "b2b_presence": 1.0,
 "presence": 0.25,
-"age": 24
+"age": 24,
+"rang_poste": 8,
+"poste_espn": "SF",
+"devant": [
+"Quentin Grimes",
+"Cameron Carr",
+"Matisse Thybulle"
+],
+"presaison_matchs": 5,
+"presaison_min": 12.4
 },
 "263": {
 "nom": "A.Thiero",
@@ -3792,7 +5322,16 @@
 "b2b_n": 3,
 "b2b_presence": 1.0,
 "presence": 0.62,
-"age": 22
+"age": 22,
+"rang_poste": 5,
+"poste_espn": "SF",
+"devant": [
+"Quentin Grimes",
+"Cameron Carr",
+"Matisse Thybulle"
+],
+"presaison_matchs": 3,
+"presaison_min": 18.3
 },
 "264": {
 "nom": "J.LaRavia",
@@ -3809,7 +5348,12 @@
 "b2b_presence": 1.0,
 "presence": 1.0,
 "age": 24,
-"min_proj": 29.2
+"min_proj": 29.2,
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
+"presaison_matchs": 5,
+"presaison_min": 23.2
 },
 "265": {
 "nom": "K.Looney",
@@ -3826,7 +5370,14 @@
 "b2b_presence": 1.0,
 "presence": 0.55,
 "age": 30,
-"min_proj": 15.4
+"min_proj": 15.4,
+"rang_poste": 2,
+"poste_espn": "C",
+"devant": [
+"Walker Kessler"
+],
+"presaison_matchs": 5,
+"presaison_min": 13.8
 },
 "266": {
 "nom": "Q.Grimes",
@@ -3843,7 +5394,12 @@
 "b2b_presence": 0.94,
 "presence": 0.93,
 "age": 26,
-"min_proj": 30.8
+"min_proj": 30.8,
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
+"presaison_matchs": 5,
+"presaison_min": 25.0
 },
 "267": {
 "nom": "M.Thybulle",
@@ -3860,7 +5416,15 @@
 "b2b_presence": 0.75,
 "presence": 0.93,
 "age": 29,
-"min_proj": 19.1
+"min_proj": 19.1,
+"rang_poste": 3,
+"poste_espn": "SF",
+"devant": [
+"Quentin Grimes",
+"Cameron Carr"
+],
+"presaison_matchs": 4,
+"presaison_min": 21.2
 },
 "268": {
 "nom": "S.Mamukelashvili",
@@ -3874,7 +5438,14 @@
 "b2b_n": 15,
 "b2b_presence": 1.0,
 "presence": 0.97,
-"age": 27
+"age": 27,
+"rang_poste": 2,
+"poste_espn": "PF",
+"devant": [
+"Jake LaRavia"
+],
+"presaison_matchs": 5,
+"presaison_min": 20.0
 },
 "269": {
 "nom": "W.Kessler",
@@ -3888,7 +5459,12 @@
 "malus_b2b": 0.955,
 "age": 25,
 "b2b_n": 0,
-"min_proj": 31.4
+"min_proj": 31.4,
+"rang_poste": 1,
+"poste_espn": "C",
+"devant": [],
+"presaison_matchs": 2,
+"presaison_min": 23.5
 },
 "270": {
 "nom": "C.Carr",
@@ -3898,7 +5474,14 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 21,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 2,
+"poste_espn": "SF",
+"devant": [
+"Quentin Grimes"
+],
+"presaison_matchs": 2,
+"presaison_min": 17.5
 },
 "271": {
 "nom": "J.Hardy",
@@ -3915,7 +5498,16 @@
 "b2b_presence": 0.92,
 "presence": 0.73,
 "age": 24,
-"min_proj": 15.3
+"min_proj": 15.3,
+"rang_poste": 7,
+"poste_espn": "SF",
+"devant": [
+"Quentin Grimes",
+"Cameron Carr",
+"Matisse Thybulle"
+],
+"presaison_matchs": 5,
+"presaison_min": 14.2
 },
 "272": {
 "nom": "A.Kaluma",
@@ -3964,7 +5556,14 @@
 "b2b_presence": 1.0,
 "presence": 0.93,
 "age": 25,
-"min_proj": 24.7
+"min_proj": 24.7,
+"rang_poste": 2,
+"poste_espn": "C",
+"devant": [
+"Zach Edey"
+],
+"presaison_matchs": 1,
+"presaison_min": 2.0
 },
 "277": {
 "nom": "Q.Post",
@@ -3978,7 +5577,15 @@
 "b2b_n": 13,
 "b2b_presence": 0.85,
 "presence": 0.89,
-"age": 26
+"age": 26,
+"rang_poste": 3,
+"poste_espn": "C",
+"devant": [
+"Zach Edey",
+"Isaiah Stewart"
+],
+"presaison_matchs": 4,
+"presaison_min": 15.8
 },
 "278": {
 "nom": "O.Prosper",
@@ -3995,7 +5602,16 @@
 "b2b_presence": 0.92,
 "presence": 0.73,
 "age": 24,
-"min_proj": 17.1
+"min_proj": 17.1,
+"rang_poste": 5,
+"poste_espn": "C",
+"devant": [
+"Zach Edey",
+"Isaiah Stewart",
+"Quinten Post"
+],
+"presaison_matchs": 4,
+"presaison_min": 13.8
 },
 "279": {
 "nom": "T.Jerome",
@@ -4012,7 +5628,12 @@
 "b2b_presence": 0.0,
 "presence": 0.36,
 "age": 29,
-"min_proj": 26.7
+"min_proj": 26.7,
+"rang_poste": 1,
+"poste_espn": "PG",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 17.5
 },
 "280": {
 "nom": "S.Pippen Jr.",
@@ -4029,7 +5650,14 @@
 "b2b_presence": 0.0,
 "presence": 0.67,
 "age": 25,
-"min_proj": 25.1
+"min_proj": 25.1,
+"rang_poste": 2,
+"poste_espn": "PG",
+"devant": [
+"Ty Jerome"
+],
+"presaison_matchs": 4,
+"presaison_min": 14.5
 },
 "281": {
 "nom": "G.Jackson",
@@ -4046,7 +5674,15 @@
 "b2b_presence": 0.9,
 "presence": 0.83,
 "age": 21,
-"min_proj": 23.0
+"min_proj": 23.0,
+"rang_poste": 3,
+"poste_espn": "SF",
+"devant": [
+"Jaylen Wells",
+"Jerami Grant"
+],
+"presaison_matchs": 3,
+"presaison_min": 15.7
 },
 "282": {
 "nom": "Z.Edey",
@@ -4060,7 +5696,12 @@
 "malus_b2b": 1.022,
 "age": 24,
 "b2b_n": 0,
-"min_proj": 26.4
+"min_proj": 26.4,
+"rang_poste": 1,
+"poste_espn": "C",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 15.7
 },
 "283": {
 "nom": "C.Spencer",
@@ -4074,7 +5715,14 @@
 "b2b_n": 12,
 "b2b_presence": 0.83,
 "presence": 0.9,
-"age": 26
+"age": 26,
+"rang_poste": 2,
+"poste_espn": "SG",
+"devant": [
+"Cedric Coward"
+],
+"presaison_matchs": 4,
+"presaison_min": 16.2
 },
 "284": {
 "nom": "J.Wells",
@@ -4091,7 +5739,12 @@
 "b2b_presence": 0.83,
 "presence": 0.96,
 "age": 23,
-"min_proj": 25.0
+"min_proj": 25.0,
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 18.8
 },
 "285": {
 "nom": "C.Coward",
@@ -4108,7 +5761,12 @@
 "b2b_presence": 0.62,
 "presence": 0.84,
 "age": 23,
-"min_proj": 28.5
+"min_proj": 28.5,
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 19.5
 },
 "286": {
 "nom": "J.Small",
@@ -4122,7 +5780,16 @@
 "b2b_n": 9,
 "b2b_presence": 0.89,
 "presence": 0.64,
-"age": 23
+"age": 23,
+"rang_poste": 4,
+"poste_espn": "PG",
+"devant": [
+"Ty Jerome",
+"Scotty Pippen Jr.",
+"Cam Spencer"
+],
+"presaison_matchs": 4,
+"presaison_min": 10.5
 },
 "287": {
 "nom": "Hawkins",
@@ -4139,7 +5806,16 @@
 "b2b_presence": 1.0,
 "presence": 0.72,
 "age": 24,
-"min_proj": 15.4
+"min_proj": 15.4,
+"rang_poste": 5,
+"poste_espn": "SG",
+"devant": [
+"Norman Powell",
+"Isaac Okoro",
+"Tre Jones"
+],
+"presaison_matchs": 2,
+"presaison_min": 14.5
 },
 "288": {
 "nom": "M.Peavy",
@@ -4170,7 +5846,14 @@
 "b2b_presence": 0.9,
 "presence": 0.93,
 "age": 32,
-"min_proj": 29.4
+"min_proj": 29.4,
+"rang_poste": 2,
+"poste_espn": "SF",
+"devant": [
+"Jaylen Wells"
+],
+"presaison_matchs": 3,
+"presaison_min": 15.3
 },
 "290": {
 "nom": "K.Murray",
@@ -4187,7 +5870,16 @@
 "b2b_presence": 0.78,
 "presence": 0.89,
 "age": 26,
-"min_proj": 21.9
+"min_proj": 21.9,
+"rang_poste": 7,
+"poste_espn": "SF",
+"devant": [
+"Jaylen Wells",
+"Jerami Grant",
+"GG Jackson"
+],
+"presaison_matchs": 4,
+"presaison_min": 14.0
 },
 "291": {
 "nom": "C.Boozer",
@@ -4201,7 +5893,12 @@
 "malus_b2b": 1.022,
 "age": 19,
 "b2b_n": 0,
-"min_proj": 31.7
+"min_proj": 31.7,
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 20.2
 },
 "292": {
 "nom": "W.Clayton Jr.",
@@ -4218,7 +5915,16 @@
 "b2b_presence": 0.94,
 "presence": 0.91,
 "age": 23,
-"min_proj": 25.1
+"min_proj": 25.1,
+"rang_poste": 5,
+"poste_espn": "PG",
+"devant": [
+"Kyrie Irving",
+"Marcus Sasser",
+"Cooper Flagg"
+],
+"presaison_matchs": 4,
+"presaison_min": 12.0
 },
 "293": {
 "nom": "T.Hendricks",
@@ -4232,7 +5938,14 @@
 "b2b_n": 16,
 "b2b_presence": 0.56,
 "presence": 0.79,
-"age": 22
+"age": 22,
+"rang_poste": 2,
+"poste_espn": "PF",
+"devant": [
+"Cameron Boozer"
+],
+"presaison_matchs": 4,
+"presaison_min": 12.2
 },
 "294": {
 "nom": "K.Lopez",
@@ -4242,7 +5955,16 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 19,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 4,
+"poste_espn": "SF",
+"devant": [
+"Jaylen Wells",
+"Jerami Grant",
+"GG Jackson"
+],
+"presaison_matchs": 4,
+"presaison_min": 8.8
 },
 "295": {
 "nom": "J.Mashack",
@@ -4256,7 +5978,16 @@
 "b2b_n": 5,
 "b2b_presence": 0.8,
 "presence": 0.69,
-"age": 23
+"age": 23,
+"rang_poste": 4,
+"poste_espn": "SG",
+"devant": [
+"Cedric Coward",
+"Cam Spencer",
+"Ty Jerome"
+],
+"presaison_matchs": 3,
+"presaison_min": 6.7
 },
 "296": {
 "nom": "D.Russell",
@@ -4290,7 +6021,12 @@
 "b2b_presence": 0.46,
 "presence": 0.84,
 "age": 36,
-"min_proj": 23.0
+"min_proj": 23.0,
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 16.2
 },
 "298": {
 "nom": "T.Hardaway Jr.",
@@ -4307,7 +6043,14 @@
 "b2b_presence": 0.94,
 "presence": 0.97,
 "age": 34,
-"min_proj": 26.9
+"min_proj": 26.9,
+"rang_poste": 2,
+"poste_espn": "SG",
+"devant": [
+"Klay Thompson"
+],
+"presaison_matchs": 4,
+"presaison_min": 14.8
 },
 "299": {
 "nom": "S.Fontecchio",
@@ -4324,7 +6067,16 @@
 "b2b_presence": 1.0,
 "presence": 0.87,
 "age": 30,
-"min_proj": 17.1
+"min_proj": 17.1,
+"rang_poste": 5,
+"poste_espn": "PF",
+"devant": [
+"Giannis Antetokounmpo",
+"Bobby Portis",
+"Klay Thompson"
+],
+"presaison_matchs": 5,
+"presaison_min": 16.2
 },
 "300": {
 "nom": "A.Wiggins",
@@ -4341,7 +6093,12 @@
 "b2b_presence": 0.88,
 "presence": 0.91,
 "age": 31,
-"min_proj": 30.4
+"min_proj": 30.4,
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 16.2
 },
 "301": {
 "nom": "D.Smith",
@@ -4355,7 +6112,12 @@
 "b2b_n": 15,
 "b2b_presence": 0.93,
 "presence": 0.91,
-"age": 28
+"age": 28,
+"rang_poste": 2,
+"poste_espn": "PG",
+"devant": [
+"Davion Mitchell"
+]
 },
 "302": {
 "nom": "B.Adebayo",
@@ -4372,7 +6134,12 @@
 "b2b_presence": 1.0,
 "presence": 0.94,
 "age": 29,
-"min_proj": 32.4
+"min_proj": 32.4,
+"rang_poste": 1,
+"poste_espn": "C",
+"devant": [],
+"presaison_matchs": 2,
+"presaison_min": 14.5
 },
 "303": {
 "nom": "N.Jovic",
@@ -4389,7 +6156,16 @@
 "b2b_presence": 0.82,
 "presence": 0.84,
 "age": 23,
-"min_proj": 22.9
+"min_proj": 22.9,
+"rang_poste": 4,
+"poste_espn": "C",
+"devant": [
+"Bam Adebayo",
+"Bobby Portis",
+"Nick Richards"
+],
+"presaison_matchs": 5,
+"presaison_min": 20.2
 },
 "304": {
 "nom": "K.Johnson",
@@ -4403,7 +6179,16 @@
 "b2b_n": 6,
 "b2b_presence": 0.67,
 "presence": 0.35,
-"age": 25
+"age": 25,
+"rang_poste": 7,
+"poste_espn": "SF",
+"devant": [
+"Andrew Wiggins",
+"Pelle Larsson",
+"Klay Thompson"
+],
+"presaison_matchs": 2,
+"presaison_min": 13.5
 },
 "305": {
 "nom": "P.Larsson",
@@ -4417,7 +6202,14 @@
 "b2b_n": 14,
 "b2b_presence": 0.93,
 "presence": 0.93,
-"age": 25
+"age": 25,
+"rang_poste": 2,
+"poste_espn": "SF",
+"devant": [
+"Andrew Wiggins"
+],
+"presaison_matchs": 2,
+"presaison_min": 18.0
 },
 "306": {
 "nom": "D.Mitchell",
@@ -4434,7 +6226,12 @@
 "b2b_presence": 0.71,
 "presence": 0.9,
 "age": 28,
-"min_proj": 27.7
+"min_proj": 27.7,
+"rang_poste": 1,
+"poste_espn": "PG",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 18.0
 },
 "307": {
 "nom": "M.Gardner",
@@ -4448,7 +6245,16 @@
 "b2b_n": 10,
 "b2b_presence": 0.8,
 "presence": 0.67,
-"age": 25
+"age": 25,
+"rang_poste": 5,
+"poste_espn": "SG",
+"devant": [
+"Klay Thompson",
+"Tim Hardaway Jr.",
+"Ryan Conwell"
+],
+"presaison_matchs": 5,
+"presaison_min": 17.6
 },
 "308": {
 "nom": "V.Goldin",
@@ -4461,7 +6267,16 @@
 "b2b_n": 1,
 "b2b_presence": 1.0,
 "presence": 0.5,
-"age": 25
+"age": 25,
+"rang_poste": 5,
+"poste_espn": "C",
+"devant": [
+"Bam Adebayo",
+"Bobby Portis",
+"Nick Richards"
+],
+"presaison_matchs": 3,
+"presaison_min": 12.3
 },
 "309": {
 "nom": "G.Antetokounmpo",
@@ -4478,7 +6293,12 @@
 "b2b_presence": 0.8,
 "presence": 0.8,
 "age": 31,
-"min_proj": 33.6
+"min_proj": 33.6,
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 18.7
 },
 "310": {
 "nom": "B.Portis",
@@ -4495,7 +6315,14 @@
 "b2b_presence": 1.0,
 "presence": 0.94,
 "age": 31,
-"min_proj": 24.3
+"min_proj": 24.3,
+"rang_poste": 2,
+"poste_espn": "PF",
+"devant": [
+"Giannis Antetokounmpo"
+],
+"presaison_matchs": 4,
+"presaison_min": 17.5
 },
 "311": {
 "nom": "R.Conwell",
@@ -4505,7 +6332,15 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 22,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 3,
+"poste_espn": "PG",
+"devant": [
+"Davion Mitchell",
+"Dru Smith"
+],
+"presaison_matchs": 5,
+"presaison_min": 23.6
 },
 "312": {
 "nom": "T.Donaldson",
@@ -4533,7 +6368,15 @@
 "b2b_n": 7,
 "b2b_presence": 1.0,
 "presence": 0.91,
-"age": 28
+"age": 28,
+"rang_poste": 3,
+"poste_espn": "C",
+"devant": [
+"Bam Adebayo",
+"Bobby Portis"
+],
+"presaison_matchs": 5,
+"presaison_min": 16.8
 },
 "315": {
 "nom": "C.LeVert",
@@ -4550,7 +6393,15 @@
 "b2b_presence": 0.5,
 "presence": 0.85,
 "age": 32,
-"min_proj": 20.7
+"min_proj": 20.7,
+"rang_poste": 3,
+"poste_espn": "PG",
+"devant": [
+"Ryan Rollins",
+"Kasparas Jakucionis"
+],
+"presaison_matchs": 3,
+"presaison_min": 12.3
 },
 "316": {
 "nom": "K.Jones",
@@ -4564,7 +6415,16 @@
 "b2b_n": 7,
 "b2b_presence": 0.86,
 "presence": 0.72,
-"age": 24
+"age": 24,
+"rang_poste": 7,
+"poste_espn": "PG",
+"devant": [
+"Ryan Rollins",
+"Kasparas Jakucionis",
+"Caris LeVert"
+],
+"presaison_matchs": 4,
+"presaison_min": 13.0
 },
 "317": {
 "nom": "T.Herro",
@@ -4581,7 +6441,12 @@
 "b2b_presence": 0.8,
 "presence": 0.78,
 "age": 26,
-"min_proj": 34.0
+"min_proj": 34.0,
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 22.2
 },
 "318": {
 "nom": "J.Jaquez Jr.",
@@ -4598,7 +6463,12 @@
 "b2b_presence": 0.94,
 "presence": 0.95,
 "age": 25,
-"min_proj": 27.3
+"min_proj": 27.3,
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 20.5
 },
 "319": {
 "nom": "K.Ware",
@@ -4615,7 +6485,14 @@
 "b2b_presence": 0.94,
 "presence": 0.96,
 "age": 22,
-"min_proj": 26.6
+"min_proj": 26.6,
+"rang_poste": 2,
+"poste_espn": "PF",
+"devant": [
+"Kyle Kuzma"
+],
+"presaison_matchs": 5,
+"presaison_min": 24.2
 },
 "320": {
 "nom": "K.Jakučionis",
@@ -4632,7 +6509,14 @@
 "b2b_presence": 0.92,
 "presence": 0.9,
 "age": 20,
-"min_proj": 22.6
+"min_proj": 22.6,
+"rang_poste": 2,
+"poste_espn": "PG",
+"devant": [
+"Ryan Rollins"
+],
+"presaison_matchs": 3,
+"presaison_min": 17.3
 },
 "321": {
 "nom": "M.Turner",
@@ -4649,7 +6533,12 @@
 "b2b_presence": 0.79,
 "presence": 0.87,
 "age": 30,
-"min_proj": 27.4
+"min_proj": 27.4,
+"rang_poste": 1,
+"poste_espn": "C",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 22.0
 },
 "322": {
 "nom": "P.Nance",
@@ -4663,7 +6552,16 @@
 "b2b_n": 10,
 "b2b_presence": 0.9,
 "presence": 0.85,
-"age": 26
+"age": 26,
+"rang_poste": 6,
+"poste_espn": "C",
+"devant": [
+"Myles Turner",
+"Kel'el Ware",
+"Jericho Sims"
+],
+"presaison_matchs": 4,
+"presaison_min": 13.2
 },
 "323": {
 "nom": "K.Porter Jr.",
@@ -4680,7 +6578,9 @@
 "b2b_presence": 0.83,
 "presence": 0.89,
 "age": 26,
-"min_proj": 26.8
+"min_proj": 26.8,
+"presaison_matchs": 3,
+"presaison_min": 17.3
 },
 "324": {
 "nom": "A.Green",
@@ -4697,7 +6597,15 @@
 "b2b_presence": 0.93,
 "presence": 0.97,
 "age": 27,
-"min_proj": 25.4
+"min_proj": 25.4,
+"rang_poste": 3,
+"poste_espn": "SG",
+"devant": [
+"Tyler Herro",
+"Brayden Burries"
+],
+"presaison_matchs": 3,
+"presaison_min": 21.3
 },
 "325": {
 "nom": "R.Rollins",
@@ -4714,7 +6622,12 @@
 "b2b_presence": 0.85,
 "presence": 0.93,
 "age": 24,
-"min_proj": 28.0
+"min_proj": 28.0,
+"rang_poste": 1,
+"poste_espn": "PG",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 18.5
 },
 "326": {
 "nom": "G.Trent Jr.",
@@ -4731,7 +6644,15 @@
 "b2b_presence": 0.91,
 "presence": 0.88,
 "age": 27,
-"min_proj": 22.3
+"min_proj": 22.3,
+"rang_poste": 3,
+"poste_espn": "SF",
+"devant": [
+"Jaime Jaquez Jr.",
+"Ousmane Dieng"
+],
+"presaison_matchs": 2,
+"presaison_min": 16.0
 },
 "327": {
 "nom": "J.Sims",
@@ -4748,7 +6669,15 @@
 "b2b_presence": 1.0,
 "presence": 0.85,
 "age": 28,
-"min_proj": 18.5
+"min_proj": 18.5,
+"rang_poste": 3,
+"poste_espn": "C",
+"devant": [
+"Myles Turner",
+"Kel'el Ware"
+],
+"presaison_matchs": 4,
+"presaison_min": 18.5
 },
 "328": {
 "nom": "K.Kuzma",
@@ -4765,7 +6694,12 @@
 "b2b_presence": 0.77,
 "presence": 0.87,
 "age": 31,
-"min_proj": 25.7
+"min_proj": 25.7,
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 20.0
 },
 "329": {
 "nom": "C.Ryan",
@@ -4786,7 +6720,15 @@
 "malus_b2b": 1.022,
 "age": 19,
 "b2b_n": 0,
-"min_proj": 17.7
+"min_proj": 17.7,
+"rang_poste": 3,
+"poste_espn": "PF",
+"devant": [
+"Kyle Kuzma",
+"Kel'el Ware"
+],
+"presaison_matchs": 2,
+"presaison_min": 12.0
 },
 "331": {
 "nom": "B.Burries",
@@ -4800,7 +6742,14 @@
 "malus_b2b": 1.022,
 "age": 21,
 "b2b_n": 0,
-"min_proj": 25.8
+"min_proj": 25.8,
+"rang_poste": 2,
+"poste_espn": "SG",
+"devant": [
+"Tyler Herro"
+],
+"presaison_matchs": 4,
+"presaison_min": 23.0
 },
 "332": {
 "nom": "J.Butler Jr.",
@@ -4821,7 +6770,14 @@
 "b2b_n": 9,
 "b2b_presence": 1.0,
 "presence": 0.87,
-"age": 23
+"age": 23,
+"rang_poste": 2,
+"poste_espn": "SF",
+"devant": [
+"Jaime Jaquez Jr."
+],
+"presaison_matchs": 3,
+"presaison_min": 24.7
 },
 "334": {
 "nom": "B.Marković",
@@ -4831,7 +6787,16 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 21,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 5,
+"poste_espn": "C",
+"devant": [
+"Myles Turner",
+"Kel'el Ware",
+"Jericho Sims"
+],
+"presaison_matchs": 3,
+"presaison_min": 14.0
 },
 "335": {
 "nom": "J.Stephens",
@@ -4855,7 +6820,12 @@
 "b2b_presence": 0.81,
 "presence": 0.94,
 "age": 25,
-"min_proj": 32.9
+"min_proj": 32.9,
+"rang_poste": 1,
+"poste_espn": "PG",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 19.2
 },
 "337": {
 "nom": "A.Dosunmu",
@@ -4872,7 +6842,14 @@
 "b2b_presence": 0.8,
 "presence": 0.9,
 "age": 26,
-"min_proj": 29.4
+"min_proj": 29.4,
+"rang_poste": 2,
+"poste_espn": "SF",
+"devant": [
+"Jonathan Kuminga"
+],
+"presaison_matchs": 4,
+"presaison_min": 18.5
 },
 "338": {
 "nom": "Z.Pullin",
@@ -4906,7 +6883,15 @@
 "b2b_presence": 0.92,
 "presence": 0.94,
 "age": 26,
-"min_proj": 16.2
+"min_proj": 16.2,
+"rang_poste": 3,
+"poste_espn": "PG",
+"devant": [
+"LaMelo Ball",
+"Isaiah Evans"
+],
+"presaison_matchs": 5,
+"presaison_min": 14.0
 },
 "341": {
 "nom": "R.Gobert",
@@ -4923,7 +6908,12 @@
 "b2b_presence": 0.92,
 "presence": 0.95,
 "age": 34,
-"min_proj": 32.5
+"min_proj": 32.5,
+"rang_poste": 1,
+"poste_espn": "C",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 20.0
 },
 "342": {
 "nom": "A.Edwards",
@@ -4940,7 +6930,12 @@
 "b2b_presence": 0.8,
 "presence": 0.87,
 "age": 25,
-"min_proj": 35.8
+"min_proj": 35.8,
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 22.8
 },
 "343": {
 "nom": "J.McDaniels",
@@ -4957,7 +6952,12 @@
 "b2b_presence": 1.0,
 "presence": 0.94,
 "age": 26,
-"min_proj": 31.7
+"min_proj": 31.7,
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 20.8
 },
 "344": {
 "nom": "J.Clark",
@@ -4974,7 +6974,16 @@
 "b2b_presence": 0.92,
 "presence": 0.85,
 "age": 25,
-"min_proj": 13.1
+"min_proj": 13.1,
+"rang_poste": 4,
+"poste_espn": "SF",
+"devant": [
+"Jonathan Kuminga",
+"Ayo Dosunmu",
+"Terrence Shannon Jr."
+],
+"presaison_matchs": 6,
+"presaison_min": 14.5
 },
 "345": {
 "nom": "T.Shannon Jr.",
@@ -4991,7 +7000,14 @@
 "b2b_presence": 1.0,
 "presence": 0.88,
 "age": 26,
-"min_proj": 20.7
+"min_proj": 20.7,
+"rang_poste": 2,
+"poste_espn": "SG",
+"devant": [
+"Anthony Edwards"
+],
+"presaison_matchs": 5,
+"presaison_min": 17.8
 },
 "346": {
 "nom": "D.DiVincenzo",
@@ -5008,7 +7024,14 @@
 "b2b_presence": 1.0,
 "presence": 0.99,
 "age": 29,
-"min_proj": 24.1
+"min_proj": 24.1,
+"rang_poste": 6,
+"poste_espn": "PG",
+"devant": [
+"LaMelo Ball",
+"Isaiah Evans",
+"Bones Hyland"
+]
 },
 "347": {
 "nom": "J.Beringer",
@@ -5022,7 +7045,14 @@
 "b2b_n": 9,
 "b2b_presence": 0.44,
 "presence": 0.56,
-"age": 19
+"age": 19,
+"rang_poste": 2,
+"poste_espn": "C",
+"devant": [
+"Rudy Gobert"
+],
+"presaison_matchs": 6,
+"presaison_min": 19.2
 },
 "348": {
 "nom": "R.Zikarsky",
@@ -5032,7 +7062,15 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 20,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 3,
+"poste_espn": "C",
+"devant": [
+"Rudy Gobert",
+"Joan Beringer"
+],
+"presaison_matchs": 2,
+"presaison_min": 12.5
 },
 "349": {
 "nom": "C.Williams",
@@ -5049,7 +7087,16 @@
 "b2b_presence": 0.67,
 "presence": 0.85,
 "age": 21,
-"min_proj": 22.8
+"min_proj": 22.8,
+"rang_poste": 5,
+"poste_espn": "SF",
+"devant": [
+"Jonathan Kuminga",
+"Ayo Dosunmu",
+"Terrence Shannon Jr."
+],
+"presaison_matchs": 6,
+"presaison_min": 16.3
 },
 "350": {
 "nom": "I.Evans",
@@ -5059,7 +7106,14 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 20,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 2,
+"poste_espn": "PG",
+"devant": [
+"LaMelo Ball"
+],
+"presaison_matchs": 5,
+"presaison_min": 15.8
 },
 "351": {
 "nom": "J.Kuminga",
@@ -5076,7 +7130,12 @@
 "b2b_presence": 0.67,
 "presence": 0.79,
 "age": 24,
-"min_proj": 27.3
+"min_proj": 27.3,
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 18.3
 },
 "352": {
 "nom": "T.Lyles",
@@ -5090,7 +7149,16 @@
 "malus_b2b": 0.958,
 "age": 30,
 "b2b_n": 0,
-"min_proj": 19.7
+"min_proj": 19.7,
+"rang_poste": 4,
+"poste_espn": "PF",
+"devant": [
+"Jaden McDaniels",
+"Jonathan Kuminga",
+"Terrence Shannon Jr."
+],
+"presaison_matchs": 5,
+"presaison_min": 15.4
 },
 "353": {
 "nom": "J.Crutcher",
@@ -5114,7 +7182,14 @@
 "b2b_presence": 0.9,
 "presence": 0.94,
 "age": 24,
-"min_proj": 29.2
+"min_proj": 29.2,
+"rang_poste": 2,
+"poste_espn": "SG",
+"devant": [
+"Trey Murphy III"
+],
+"presaison_matchs": 4,
+"presaison_min": 16.8
 },
 "355": {
 "nom": "C.Houstan",
@@ -5127,7 +7202,9 @@
 "b2b_n": 3,
 "b2b_presence": 0.0,
 "presence": 0.18,
-"age": 23
+"age": 23,
+"presaison_matchs": 2,
+"presaison_min": 10.5
 },
 "356": {
 "nom": "K.Bufkin",
@@ -5140,7 +7217,16 @@
 "b2b_n": 3,
 "b2b_presence": 1.0,
 "presence": 0.53,
-"age": 23
+"age": 23,
+"rang_poste": 5,
+"poste_espn": "PG",
+"devant": [
+"Keyonte George",
+"Isaiah Collier",
+"Darryn Peterson"
+],
+"presaison_matchs": 3,
+"presaison_min": 8.0
 },
 "357": {
 "nom": "C.Koloko",
@@ -5154,7 +7240,9 @@
 "b2b_n": 3,
 "b2b_presence": 1.0,
 "presence": 0.67,
-"age": 26
+"age": 26,
+"presaison_matchs": 1,
+"presaison_min": 4.0
 },
 "358": {
 "nom": "D.Murray",
@@ -5171,7 +7259,12 @@
 "b2b_presence": 0.0,
 "presence": 0.62,
 "age": 30,
-"min_proj": 32.4
+"min_proj": 32.4,
+"rang_poste": 1,
+"poste_espn": "PG",
+"devant": [],
+"presaison_matchs": 1,
+"presaison_min": 19.0
 },
 "359": {
 "nom": "Z.Williamson",
@@ -5188,7 +7281,12 @@
 "b2b_presence": 0.77,
 "presence": 0.92,
 "age": 26,
-"min_proj": 30.9
+"min_proj": 30.9,
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 18.0
 },
 "360": {
 "nom": "H.Jones",
@@ -5205,7 +7303,12 @@
 "b2b_presence": 0.75,
 "presence": 0.95,
 "age": 28,
-"min_proj": 27.1
+"min_proj": 27.1,
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 17.0
 },
 "361": {
 "nom": "T.Murphy III",
@@ -5222,7 +7325,12 @@
 "b2b_presence": 0.91,
 "presence": 0.92,
 "age": 26,
-"min_proj": 32.5
+"min_proj": 32.5,
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 18.2
 },
 "362": {
 "nom": "K.Matkovic",
@@ -5236,7 +7344,14 @@
 "b2b_n": 12,
 "b2b_presence": 0.92,
 "presence": 0.95,
-"age": 25
+"age": 25,
+"rang_poste": 2,
+"poste_espn": "C",
+"devant": [
+"Yves Missi"
+],
+"presaison_matchs": 4,
+"presaison_min": 14.8
 },
 "363": {
 "nom": "Y.Missi",
@@ -5253,7 +7368,12 @@
 "b2b_presence": 1.0,
 "presence": 0.92,
 "age": 22,
-"min_proj": 25.1
+"min_proj": 25.1,
+"rang_poste": 1,
+"poste_espn": "C",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 18.5
 },
 "364": {
 "nom": "J.Fears",
@@ -5270,7 +7390,14 @@
 "b2b_presence": 1.0,
 "presence": 1.0,
 "age": 20,
-"min_proj": 26.4
+"min_proj": 26.4,
+"rang_poste": 2,
+"poste_espn": "PG",
+"devant": [
+"Dejounte Murray"
+],
+"presaison_matchs": 4,
+"presaison_min": 19.5
 },
 "365": {
 "nom": "D.Queen",
@@ -5287,7 +7414,14 @@
 "b2b_presence": 1.0,
 "presence": 0.99,
 "age": 21,
-"min_proj": 26.4
+"min_proj": 26.4,
+"rang_poste": 2,
+"poste_espn": "PF",
+"devant": [
+"Zion Williamson"
+],
+"presaison_matchs": 4,
+"presaison_min": 17.2
 },
 "366": {
 "nom": "B.McGowens",
@@ -5301,7 +7435,16 @@
 "b2b_n": 6,
 "b2b_presence": 1.0,
 "presence": 0.76,
-"age": 23
+"age": 23,
+"rang_poste": 5,
+"poste_espn": "SF",
+"devant": [
+"Herbert Jones",
+"Saddiq Bey",
+"Bennedict Mathurin"
+],
+"presaison_matchs": 4,
+"presaison_min": 11.8
 },
 "367": {
 "nom": "S.Bey",
@@ -5318,7 +7461,14 @@
 "b2b_presence": 0.93,
 "presence": 0.97,
 "age": 27,
-"min_proj": 27.1
+"min_proj": 27.1,
+"rang_poste": 2,
+"poste_espn": "SF",
+"devant": [
+"Herbert Jones"
+],
+"presaison_matchs": 4,
+"presaison_min": 17.8
 },
 "368": {
 "nom": "J.Poole",
@@ -5335,7 +7485,15 @@
 "b2b_presence": 0.57,
 "presence": 0.82,
 "age": 27,
-"min_proj": 22.1
+"min_proj": 22.1,
+"rang_poste": 3,
+"poste_espn": "PG",
+"devant": [
+"Dejounte Murray",
+"Jeremiah Fears"
+],
+"presaison_matchs": 4,
+"presaison_min": 16.2
 },
 "369": {
 "nom": "T.Watford",
@@ -5349,7 +7507,16 @@
 "b2b_n": 10,
 "b2b_presence": 1.0,
 "presence": 0.87,
-"age": 25
+"age": 25,
+"rang_poste": 5,
+"poste_espn": "PF",
+"devant": [
+"Zion Williamson",
+"Derik Queen",
+"Karlo Matkovic"
+],
+"presaison_matchs": 4,
+"presaison_min": 12.0
 },
 "370": {
 "nom": "M.Dia",
@@ -5370,7 +7537,16 @@
 "b2b_n": 7,
 "b2b_presence": 0.71,
 "presence": 0.64,
-"age": 21
+"age": 21,
+"rang_poste": 8,
+"poste_espn": "SG",
+"devant": [
+"Trey Murphy III",
+"Bennedict Mathurin",
+"Jeremiah Fears"
+],
+"presaison_matchs": 2,
+"presaison_min": 7.5
 },
 "372": {
 "nom": "D.Jordan",
@@ -5383,7 +7559,16 @@
 "b2b_n": 2,
 "b2b_presence": 1.0,
 "presence": 0.73,
-"age": 38
+"age": 38,
+"rang_poste": 4,
+"poste_espn": "C",
+"devant": [
+"Yves Missi",
+"Karlo Matkovic",
+"Derik Queen"
+],
+"presaison_matchs": 1,
+"presaison_min": 4.0
 },
 "373": {
 "nom": "J.Pierre Jr.",
@@ -5393,7 +7578,16 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 24,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 4,
+"poste_espn": "SG",
+"devant": [
+"Trey Murphy III",
+"Bennedict Mathurin",
+"Jeremiah Fears"
+],
+"presaison_matchs": 4,
+"presaison_min": 11.5
 },
 "374": {
 "nom": "S.Washington",
@@ -5414,7 +7608,9 @@
 "b2b_n": 17,
 "b2b_presence": 1.0,
 "presence": 0.99,
-"age": 30
+"age": 30,
+"presaison_matchs": 3,
+"presaison_min": 12.7
 },
 "376": {
 "nom": "J.Alvarado",
@@ -5431,7 +7627,15 @@
 "b2b_presence": 0.92,
 "presence": 0.96,
 "age": 28,
-"min_proj": 20.4
+"min_proj": 20.4,
+"rang_poste": 3,
+"poste_espn": "PG",
+"devant": [
+"Jalen Brunson",
+"Miles McBride"
+],
+"presaison_matchs": 4,
+"presaison_min": 15.0
 },
 "377": {
 "nom": "K.Towns",
@@ -5448,7 +7652,12 @@
 "b2b_presence": 1.0,
 "presence": 0.92,
 "age": 30,
-"min_proj": 32.7
+"min_proj": 32.7,
+"rang_poste": 1,
+"poste_espn": "C",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 21.2
 },
 "378": {
 "nom": "M.Bridges",
@@ -5465,7 +7674,12 @@
 "b2b_presence": 1.0,
 "presence": 1.0,
 "age": 30,
-"min_proj": 33.6
+"min_proj": 33.6,
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 21.8
 },
 "379": {
 "nom": "J.Brunson",
@@ -5482,7 +7696,12 @@
 "b2b_presence": 0.86,
 "presence": 0.93,
 "age": 30,
-"min_proj": 35.3
+"min_proj": 35.3,
+"rang_poste": 1,
+"poste_espn": "PG",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 21.5
 },
 "380": {
 "nom": "M.McBride",
@@ -5499,7 +7718,14 @@
 "b2b_presence": 0.62,
 "presence": 0.85,
 "age": 26,
-"min_proj": 22.2
+"min_proj": 22.2,
+"rang_poste": 2,
+"poste_espn": "PG",
+"devant": [
+"Jalen Brunson"
+],
+"presaison_matchs": 5,
+"presaison_min": 14.6
 },
 "381": {
 "nom": "J.Hart",
@@ -5516,7 +7742,12 @@
 "b2b_presence": 0.92,
 "presence": 0.91,
 "age": 31,
-"min_proj": 31.5
+"min_proj": 31.5,
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 18.7
 },
 "382": {
 "nom": "O.Anunoby",
@@ -5533,7 +7764,12 @@
 "b2b_presence": 1.0,
 "presence": 0.96,
 "age": 29,
-"min_proj": 33.8
+"min_proj": 33.8,
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 21.5
 },
 "383": {
 "nom": "P.Dadiet",
@@ -5550,7 +7786,16 @@
 "b2b_presence": 0.4,
 "presence": 0.41,
 "age": 21,
-"min_proj": 9.0
+"min_proj": 9.0,
+"rang_poste": 5,
+"poste_espn": "SG",
+"devant": [
+"Josh Hart",
+"Landry Shamet",
+"Miles McBride"
+],
+"presaison_matchs": 5,
+"presaison_min": 14.6
 },
 "384": {
 "nom": "T.Kolek",
@@ -5564,7 +7809,16 @@
 "b2b_n": 8,
 "b2b_presence": 0.88,
 "presence": 0.8,
-"age": 25
+"age": 25,
+"rang_poste": 4,
+"poste_espn": "PG",
+"devant": [
+"Jalen Brunson",
+"Miles McBride",
+"Jose Alvarado"
+],
+"presaison_matchs": 5,
+"presaison_min": 14.4
 },
 "385": {
 "nom": "L.Shamet",
@@ -5581,7 +7835,14 @@
 "b2b_presence": 1.0,
 "presence": 0.96,
 "age": 29,
-"min_proj": 20.8
+"min_proj": 20.8,
+"rang_poste": 2,
+"poste_espn": "SG",
+"devant": [
+"Josh Hart"
+],
+"presaison_matchs": 4,
+"presaison_min": 15.8
 },
 "386": {
 "nom": "M.Diawara",
@@ -5598,7 +7859,15 @@
 "b2b_presence": 0.9,
 "presence": 0.87,
 "age": 21,
-"min_proj": 9.2
+"min_proj": 9.2,
+"rang_poste": 3,
+"poste_espn": "PF",
+"devant": [
+"OG Anunoby",
+"Karl-Anthony Towns"
+],
+"presaison_matchs": 5,
+"presaison_min": 18.4
 },
 "387": {
 "nom": "J.Clarkson",
@@ -5615,7 +7884,14 @@
 "b2b_presence": 1.0,
 "presence": 0.94,
 "age": 34,
-"min_proj": 19.0
+"min_proj": 19.0,
+"rang_poste": 2,
+"poste_espn": "SF",
+"devant": [
+"Mikal Bridges"
+],
+"presaison_matchs": 4,
+"presaison_min": 11.0
 },
 "388": {
 "nom": "A.Drummond",
@@ -5632,7 +7908,14 @@
 "b2b_presence": 0.75,
 "presence": 0.81,
 "age": 33,
-"min_proj": 19.4
+"min_proj": 19.4,
+"rang_poste": 2,
+"poste_espn": "C",
+"devant": [
+"Karl-Anthony Towns"
+],
+"presaison_matchs": 4,
+"presaison_min": 14.8
 },
 "389": {
 "nom": "O.Agbaji",
@@ -5646,7 +7929,9 @@
 "b2b_n": 11,
 "b2b_presence": 0.91,
 "presence": 0.87,
-"age": 26
+"age": 26,
+"presaison_matchs": 3,
+"presaison_min": 9.3
 },
 "390": {
 "nom": "D.Eubanks",
@@ -5660,7 +7945,9 @@
 "b2b_n": 7,
 "b2b_presence": 0.86,
 "presence": 0.85,
-"age": 29
+"age": 29,
+"presaison_matchs": 3,
+"presaison_min": 9.3
 },
 "391": {
 "nom": "J.Konchar",
@@ -5687,7 +7974,9 @@
 "b2b_n": 2,
 "b2b_presence": 0.5,
 "presence": 0.67,
-"age": 25
+"age": 25,
+"presaison_matchs": 4,
+"presaison_min": 11.5
 },
 "393": {
 "nom": "A.Caruso",
@@ -5704,7 +7993,14 @@
 "b2b_presence": 0.67,
 "presence": 0.78,
 "age": 32,
-"min_proj": 24.3
+"min_proj": 24.3,
+"rang_poste": 2,
+"poste_espn": "PF",
+"devant": [
+"Chet Holmgren"
+],
+"presaison_matchs": 3,
+"presaison_min": 16.0
 },
 "394": {
 "nom": "I.Hartenstein",
@@ -5721,7 +8017,12 @@
 "b2b_presence": 0.4,
 "presence": 0.76,
 "age": 28,
-"min_proj": 25.0
+"min_proj": 25.0,
+"rang_poste": 1,
+"poste_espn": "C",
+"devant": [],
+"presaison_matchs": 2,
+"presaison_min": 16.0
 },
 "395": {
 "nom": "S.Gilgeous-Alexander",
@@ -5738,7 +8039,12 @@
 "b2b_presence": 0.91,
 "presence": 0.94,
 "age": 28,
-"min_proj": 33.8
+"min_proj": 33.8,
+"rang_poste": 1,
+"poste_espn": "PG",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 22.3
 },
 "396": {
 "nom": "C.Holmgren",
@@ -5755,7 +8061,10 @@
 "b2b_presence": 0.69,
 "presence": 0.88,
 "age": 24,
-"min_proj": 28.9
+"min_proj": 28.9,
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": []
 },
 "397": {
 "nom": "K.Williams",
@@ -5772,7 +8081,15 @@
 "b2b_presence": 1.0,
 "presence": 0.91,
 "age": 31,
-"min_proj": 15.4
+"min_proj": 15.4,
+"rang_poste": 3,
+"poste_espn": "PF",
+"devant": [
+"Chet Holmgren",
+"Alex Caruso"
+],
+"presaison_matchs": 4,
+"presaison_min": 16.5
 },
 "398": {
 "nom": "J.Williams",
@@ -5789,7 +8106,12 @@
 "b2b_presence": 0.67,
 "presence": 0.88,
 "age": 25,
-"min_proj": 32.8
+"min_proj": 32.8,
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 21.7
 },
 "399": {
 "nom": "J.Williams",
@@ -5806,7 +8128,12 @@
 "b2b_presence": 1.0,
 "presence": 0.95,
 "age": 24,
-"min_proj": 19.0
+"min_proj": 19.0,
+"rang_poste": 2,
+"poste_espn": "C",
+"devant": [
+"Isaiah Hartenstein"
+]
 },
 "400": {
 "nom": "C.Wallace",
@@ -5823,7 +8150,12 @@
 "b2b_presence": 1.0,
 "presence": 0.96,
 "age": 22,
-"min_proj": 26.4
+"min_proj": 26.4,
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
+"presaison_matchs": 2,
+"presaison_min": 19.0
 },
 "401": {
 "nom": "A.Mitchell",
@@ -5840,7 +8172,14 @@
 "b2b_presence": 0.9,
 "presence": 0.95,
 "age": 24,
-"min_proj": 23.5
+"min_proj": 23.5,
+"rang_poste": 2,
+"poste_espn": "PG",
+"devant": [
+"Shai Gilgeous-Alexander"
+],
+"presaison_matchs": 3,
+"presaison_min": 19.7
 },
 "402": {
 "nom": "N.Topic",
@@ -5853,7 +8192,14 @@
 "b2b_n": 2,
 "b2b_presence": 0.5,
 "presence": 0.78,
-"age": 21
+"age": 21,
+"rang_poste": 4,
+"poste_espn": "PG",
+"devant": [
+"Shai Gilgeous-Alexander",
+"Ajay Mitchell",
+"Bennett Stirtz"
+]
 },
 "403": {
 "nom": "B.Barnhizer",
@@ -5867,7 +8213,16 @@
 "b2b_n": 5,
 "b2b_presence": 0.6,
 "presence": 0.59,
-"age": 24
+"age": 24,
+"rang_poste": 5,
+"poste_espn": "SF",
+"devant": [
+"Jalen Williams",
+"Cason Wallace",
+"Alex Caruso"
+],
+"presaison_matchs": 5,
+"presaison_min": 23.6
 },
 "404": {
 "nom": "T.Sorber",
@@ -5877,7 +8232,14 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 20,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 4,
+"poste_espn": "C",
+"devant": [
+"Isaiah Hartenstein",
+"Jaylin Williams",
+"Aday Mara"
+]
 },
 "405": {
 "nom": "J.McCain",
@@ -5894,7 +8256,14 @@
 "b2b_presence": 0.86,
 "presence": 0.94,
 "age": 22,
-"min_proj": 24.7
+"min_proj": 24.7,
+"rang_poste": 2,
+"poste_espn": "SG",
+"devant": [
+"Cason Wallace"
+],
+"presaison_matchs": 4,
+"presaison_min": 18.2
 },
 "406": {
 "nom": "J.Dix",
@@ -5911,7 +8280,15 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 21,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 3,
+"poste_espn": "C",
+"devant": [
+"Isaiah Hartenstein",
+"Jaylin Williams"
+],
+"presaison_matchs": 5,
+"presaison_min": 23.2
 },
 "408": {
 "nom": "O.Oweh",
@@ -5921,7 +8298,16 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 23,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 7,
+"poste_espn": "PG",
+"devant": [
+"Shai Gilgeous-Alexander",
+"Ajay Mitchell",
+"Bennett Stirtz"
+],
+"presaison_matchs": 4,
+"presaison_min": 23.5
 },
 "409": {
 "nom": "B.Stirtz",
@@ -5931,7 +8317,15 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 23,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 3,
+"poste_espn": "PG",
+"devant": [
+"Shai Gilgeous-Alexander",
+"Ajay Mitchell"
+],
+"presaison_matchs": 5,
+"presaison_min": 27.4
 },
 "410": {
 "nom": "C.Tilly",
@@ -5955,7 +8349,14 @@
 "b2b_presence": 0.92,
 "presence": 0.94,
 "age": 35,
-"min_proj": 25.1
+"min_proj": 25.1,
+"rang_poste": 2,
+"poste_espn": "C",
+"devant": [
+"Wendell Carter Jr."
+],
+"presaison_matchs": 3,
+"presaison_min": 15.3
 },
 "412": {
 "nom": "J.Davison",
@@ -5969,7 +8370,9 @@
 "b2b_n": 6,
 "b2b_presence": 0.5,
 "presence": 0.52,
-"age": 24
+"age": 24,
+"presaison_matchs": 4,
+"presaison_min": 7.8
 },
 "413": {
 "nom": "J.Carter",
@@ -5986,7 +8389,15 @@
 "b2b_presence": 0.9,
 "presence": 0.82,
 "age": 31,
-"min_proj": 15.4
+"min_proj": 15.4,
+"rang_poste": 3,
+"poste_espn": "PG",
+"devant": [
+"Jalen Suggs",
+"Anthony Black"
+],
+"presaison_matchs": 4,
+"presaison_min": 14.5
 },
 "414": {
 "nom": "D.Bane",
@@ -6003,7 +8414,12 @@
 "b2b_presence": 1.0,
 "presence": 1.0,
 "age": 28,
-"min_proj": 33.7
+"min_proj": 33.7,
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 21.0
 },
 "415": {
 "nom": "J.Cain",
@@ -6020,7 +8436,14 @@
 "b2b_presence": 0.88,
 "presence": 0.72,
 "age": 27,
-"min_proj": 19.3
+"min_proj": 19.3,
+"rang_poste": 2,
+"poste_espn": "SF",
+"devant": [
+"Franz Wagner"
+],
+"presaison_matchs": 4,
+"presaison_min": 17.5
 },
 "416": {
 "nom": "F.Wagner",
@@ -6037,7 +8460,12 @@
 "b2b_presence": 0.8,
 "presence": 0.88,
 "age": 25,
-"min_proj": 34.0
+"min_proj": 34.0,
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 17.5
 },
 "417": {
 "nom": "W.Carter Jr.",
@@ -6054,7 +8482,12 @@
 "b2b_presence": 0.93,
 "presence": 0.95,
 "age": 27,
-"min_proj": 25.4
+"min_proj": 25.4,
+"rang_poste": 1,
+"poste_espn": "C",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 17.8
 },
 "418": {
 "nom": "J.Isaac",
@@ -6071,7 +8504,14 @@
 "b2b_presence": 1.0,
 "presence": 0.8,
 "age": 29,
-"min_proj": 11.3
+"min_proj": 11.3,
+"rang_poste": 5,
+"poste_espn": "PF",
+"devant": [
+"Paolo Banchero",
+"Tristan da Silva",
+"Noah Penda"
+]
 },
 "419": {
 "nom": "P.Banchero",
@@ -6088,7 +8528,12 @@
 "b2b_presence": 1.0,
 "presence": 0.99,
 "age": 23,
-"min_proj": 35.2
+"min_proj": 35.2,
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 21.8
 },
 "420": {
 "nom": "J.Suggs",
@@ -6105,7 +8550,12 @@
 "b2b_presence": 0.56,
 "presence": 0.84,
 "age": 25,
-"min_proj": 26.3
+"min_proj": 26.3,
+"rang_poste": 1,
+"poste_espn": "PG",
+"devant": [],
+"presaison_matchs": 2,
+"presaison_min": 17.0
 },
 "421": {
 "nom": "G.Bitadze",
@@ -6122,7 +8572,15 @@
 "b2b_presence": 0.75,
 "presence": 0.87,
 "age": 27,
-"min_proj": 13.3
+"min_proj": 13.3,
+"rang_poste": 3,
+"poste_espn": "C",
+"devant": [
+"Wendell Carter Jr.",
+"Nikola Vucevic"
+],
+"presaison_matchs": 4,
+"presaison_min": 12.2
 },
 "422": {
 "nom": "A.Black",
@@ -6139,7 +8597,12 @@
 "b2b_presence": 0.89,
 "presence": 0.97,
 "age": 22,
-"min_proj": 28.9
+"min_proj": 28.9,
+"rang_poste": 2,
+"poste_espn": "PG",
+"devant": [
+"Jalen Suggs"
+]
 },
 "423": {
 "nom": "T.da Silva",
@@ -6156,7 +8619,14 @@
 "b2b_presence": 1.0,
 "presence": 0.97,
 "age": 25,
-"min_proj": 21.4
+"min_proj": 21.4,
+"rang_poste": 2,
+"poste_espn": "PF",
+"devant": [
+"Paolo Banchero"
+],
+"presaison_matchs": 4,
+"presaison_min": 21.8
 },
 "424": {
 "nom": "A.Morales",
@@ -6177,7 +8647,15 @@
 "b2b_n": 10,
 "b2b_presence": 0.9,
 "presence": 0.82,
-"age": 21
+"age": 21,
+"rang_poste": 3,
+"poste_espn": "PF",
+"devant": [
+"Paolo Banchero",
+"Tristan da Silva"
+],
+"presaison_matchs": 3,
+"presaison_min": 14.3
 },
 "426": {
 "nom": "J.Richardson",
@@ -6194,7 +8672,16 @@
 "b2b_presence": 0.57,
 "presence": 0.72,
 "age": 21,
-"min_proj": 10.9
+"min_proj": 10.9,
+"rang_poste": 4,
+"poste_espn": "PG",
+"devant": [
+"Jalen Suggs",
+"Anthony Black",
+"Jevon Carter"
+],
+"presaison_matchs": 4,
+"presaison_min": 19.8
 },
 "427": {
 "nom": "C.Castleton",
@@ -6204,7 +8691,16 @@
 "source": "selon le prix",
 "malus_b2b": 0.955,
 "age": 26,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 5,
+"poste_espn": "C",
+"devant": [
+"Wendell Carter Jr.",
+"Nikola Vucevic",
+"Goga Bitadze"
+],
+"presaison_matchs": 4,
+"presaison_min": 6.5
 },
 "428": {
 "nom": "M.Branham",
@@ -6218,7 +8714,9 @@
 "b2b_n": 5,
 "b2b_presence": 0.6,
 "presence": 0.68,
-"age": 23
+"age": 23,
+"presaison_matchs": 4,
+"presaison_min": 10.8
 },
 "429": {
 "nom": "I.Nelson",
@@ -6228,7 +8726,14 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 23,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 4,
+"poste_espn": "C",
+"devant": [
+"Wendell Carter Jr.",
+"Nikola Vucevic",
+"Goga Bitadze"
+]
 },
 "430": {
 "nom": "J.Brown",
@@ -6245,7 +8750,12 @@
 "b2b_presence": 0.67,
 "presence": 0.87,
 "age": 29,
-"min_proj": 32.4
+"min_proj": 32.4,
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 24.0
 },
 "431": {
 "nom": "A.Simons",
@@ -6262,7 +8772,12 @@
 "b2b_presence": 1.0,
 "presence": 1.0,
 "age": 27,
-"min_proj": 25.1
+"min_proj": 25.1,
+"rang_poste": 2,
+"poste_espn": "PG",
+"devant": [
+"Tyrese Maxey"
+]
 },
 "432": {
 "nom": "D.Wade",
@@ -6279,7 +8794,14 @@
 "b2b_presence": 0.82,
 "presence": 0.88,
 "age": 29,
-"min_proj": 21.5
+"min_proj": 21.5,
+"rang_poste": 2,
+"poste_espn": "PF",
+"devant": [
+"LeBron James"
+],
+"presaison_matchs": 4,
+"presaison_min": 15.5
 },
 "433": {
 "nom": "L.James",
@@ -6296,7 +8818,12 @@
 "b2b_presence": 0.6,
 "presence": 0.9,
 "age": 41,
-"min_proj": 30.7
+"min_proj": 30.7,
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
+"presaison_matchs": 2,
+"presaison_min": 21.5
 },
 "434": {
 "nom": "K.Caldwell-Pope",
@@ -6313,7 +8840,14 @@
 "b2b_presence": 1.0,
 "presence": 0.94,
 "age": 33,
-"min_proj": 23.6
+"min_proj": 23.6,
+"rang_poste": 2,
+"poste_espn": "SG",
+"devant": [
+"VJ Edgecombe"
+],
+"presaison_matchs": 3,
+"presaison_min": 15.3
 },
 "435": {
 "nom": "A.Hukporti",
@@ -6327,7 +8861,16 @@
 "b2b_n": 7,
 "b2b_presence": 0.86,
 "presence": 0.66,
-"age": 24
+"age": 24,
+"rang_poste": 6,
+"poste_espn": "C",
+"devant": [
+"Joel Embiid",
+"Adem Bona",
+"Dominick Barlow"
+],
+"presaison_matchs": 1,
+"presaison_min": 5.0
 },
 "436": {
 "nom": "D.Jones",
@@ -6340,7 +8883,9 @@
 "b2b_n": 1,
 "b2b_presence": 0.0,
 "presence": 0.33,
-"age": 24
+"age": 24,
+"presaison_matchs": 4,
+"presaison_min": 13.8
 },
 "437": {
 "nom": "D.Barlow",
@@ -6354,7 +8899,13 @@
 "b2b_n": 13,
 "b2b_presence": 1.0,
 "presence": 0.96,
-"age": 23
+"age": 23,
+"rang_poste": 3,
+"poste_espn": "PF",
+"devant": [
+"LeBron James",
+"Dean Wade"
+]
 },
 "438": {
 "nom": "J.Embiid",
@@ -6371,7 +8922,12 @@
 "b2b_presence": 0.0,
 "presence": 0.57,
 "age": 32,
-"min_proj": 31.6
+"min_proj": 31.6,
+"rang_poste": 1,
+"poste_espn": "C",
+"devant": [],
+"presaison_matchs": 2,
+"presaison_min": 26.5
 },
 "439": {
 "nom": "T.Maxey",
@@ -6388,7 +8944,12 @@
 "b2b_presence": 1.0,
 "presence": 0.97,
 "age": 25,
-"min_proj": 34.2
+"min_proj": 34.2,
+"rang_poste": 1,
+"poste_espn": "PG",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 22.3
 },
 "440": {
 "nom": "A.Bona",
@@ -6405,7 +8966,12 @@
 "b2b_presence": 1.0,
 "presence": 0.93,
 "age": 23,
-"min_proj": 17.2
+"min_proj": 17.2,
+"rang_poste": 2,
+"poste_espn": "C",
+"devant": [
+"Joel Embiid"
+]
 },
 "441": {
 "nom": "J.Edwards",
@@ -6419,7 +8985,15 @@
 "b2b_n": 12,
 "b2b_presence": 0.92,
 "presence": 0.81,
-"age": 22
+"age": 22,
+"rang_poste": 3,
+"poste_espn": "SF",
+"devant": [
+"Jaylen Brown",
+"Kentavious Caldwell-Pope"
+],
+"presaison_matchs": 4,
+"presaison_min": 24.2
 },
 "442": {
 "nom": "V.Edgecombe",
@@ -6436,7 +9010,12 @@
 "b2b_presence": 0.93,
 "presence": 0.96,
 "age": 21,
-"min_proj": 33.3
+"min_proj": 33.3,
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 23.0
 },
 "443": {
 "nom": "J.Walker",
@@ -6450,7 +9029,16 @@
 "b2b_n": 14,
 "b2b_presence": 0.93,
 "presence": 0.83,
-"age": 24
+"age": 24,
+"rang_poste": 4,
+"poste_espn": "SF",
+"devant": [
+"Jaylen Brown",
+"Kentavious Caldwell-Pope",
+"Justin Edwards"
+],
+"presaison_matchs": 4,
+"presaison_min": 20.0
 },
 "444": {
 "nom": "S.Thomas",
@@ -6471,7 +9059,16 @@
 "b2b_n": 9,
 "b2b_presence": 1.0,
 "presence": 0.83,
-"age": 25
+"age": 25,
+"rang_poste": 6,
+"poste_espn": "PG",
+"devant": [
+"Tyrese Maxey",
+"Anfernee Simons",
+"VJ Edgecombe"
+],
+"presaison_matchs": 4,
+"presaison_min": 14.8
 },
 "446": {
 "nom": "T.Fall",
@@ -6481,7 +9078,14 @@
 "source": "selon le prix",
 "malus_b2b": 0.958,
 "age": 30,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 5,
+"poste_espn": "C",
+"devant": [
+"Joel Embiid",
+"Adem Bona",
+"Dominick Barlow"
+]
 },
 "447": {
 "nom": "D.Miles",
@@ -6505,7 +9109,16 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 20,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 4,
+"poste_espn": "PG",
+"devant": [
+"Tyrese Maxey",
+"Anfernee Simons",
+"VJ Edgecombe"
+],
+"presaison_matchs": 4,
+"presaison_min": 24.5
 },
 "450": {
 "nom": "R.Rupert",
@@ -6522,7 +9135,16 @@
 "b2b_presence": 0.8,
 "presence": 0.84,
 "age": 22,
-"min_proj": 15.7
+"min_proj": 15.7,
+"rang_poste": 6,
+"poste_espn": "SG",
+"devant": [
+"VJ Edgecombe",
+"Kentavious Caldwell-Pope",
+"Anfernee Simons"
+],
+"presaison_matchs": 4,
+"presaison_min": 20.5
 },
 "451": {
 "nom": "L.Kennard",
@@ -6539,7 +9161,14 @@
 "b2b_presence": 0.86,
 "presence": 0.93,
 "age": 30,
-"min_proj": 21.8
+"min_proj": 21.8,
+"rang_poste": 2,
+"poste_espn": "SG",
+"devant": [
+"Jalen Green"
+],
+"presaison_matchs": 4,
+"presaison_min": 16.8
 },
 "452": {
 "nom": "M.Bridges",
@@ -6556,7 +9185,12 @@
 "b2b_presence": 1.0,
 "presence": 0.97,
 "age": 28,
-"min_proj": 33.1
+"min_proj": 33.1,
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 14.3
 },
 "453": {
 "nom": "P.Spencer",
@@ -6570,7 +9204,16 @@
 "b2b_n": 13,
 "b2b_presence": 0.85,
 "presence": 0.86,
-"age": 30
+"age": 30,
+"rang_poste": 6,
+"poste_espn": "PG",
+"devant": [
+"Devin Booker",
+"Collin Gillespie",
+"Luke Kennard"
+],
+"presaison_matchs": 4,
+"presaison_min": 12.0
 },
 "454": {
 "nom": "H.Highsmith",
@@ -6583,7 +9226,9 @@
 "b2b_n": 1,
 "b2b_presence": 1.0,
 "presence": 0.6,
-"age": 29
+"age": 29,
+"presaison_matchs": 4,
+"presaison_min": 14.0
 },
 "455": {
 "nom": "J.Bouyea",
@@ -6597,7 +9242,16 @@
 "b2b_n": 9,
 "b2b_presence": 0.67,
 "presence": 0.84,
-"age": 27
+"age": 27,
+"rang_poste": 4,
+"poste_espn": "PG",
+"devant": [
+"Devin Booker",
+"Collin Gillespie",
+"Luke Kennard"
+],
+"presaison_matchs": 5,
+"presaison_min": 16.6
 },
 "456": {
 "nom": "M.Williams",
@@ -6614,7 +9268,14 @@
 "b2b_presence": 0.55,
 "presence": 0.88,
 "age": 24,
-"min_proj": 24.9
+"min_proj": 24.9,
+"rang_poste": 7,
+"poste_espn": "C",
+"devant": [
+"Khaman Maluach",
+"Oso Ighodaro",
+"Drew Timme"
+]
 },
 "457": {
 "nom": "J.Green",
@@ -6631,7 +9292,12 @@
 "b2b_presence": 0.88,
 "presence": 0.87,
 "age": 24,
-"min_proj": 32.4
+"min_proj": 32.4,
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 22.2
 },
 "458": {
 "nom": "D.Brooks",
@@ -6648,7 +9314,12 @@
 "b2b_presence": 0.91,
 "presence": 0.95,
 "age": 30,
-"min_proj": 30.7
+"min_proj": 30.7,
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 21.5
 },
 "459": {
 "nom": "J.Goodwin",
@@ -6662,7 +9333,14 @@
 "b2b_n": 15,
 "b2b_presence": 0.93,
 "presence": 0.97,
-"age": 27
+"age": 27,
+"rang_poste": 2,
+"poste_espn": "SF",
+"devant": [
+"Dillon Brooks"
+],
+"presaison_matchs": 5,
+"presaison_min": 14.4
 },
 "460": {
 "nom": "C.Gillespie",
@@ -6679,7 +9357,14 @@
 "b2b_presence": 1.0,
 "presence": 0.99,
 "age": 27,
-"min_proj": 26.8
+"min_proj": 26.8,
+"rang_poste": 2,
+"poste_espn": "PG",
+"devant": [
+"Devin Booker"
+],
+"presaison_matchs": 4,
+"presaison_min": 17.8
 },
 "461": {
 "nom": "D.Booker",
@@ -6696,7 +9381,12 @@
 "b2b_presence": 0.93,
 "presence": 0.92,
 "age": 29,
-"min_proj": 35.8
+"min_proj": 35.8,
+"rang_poste": 1,
+"poste_espn": "PG",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 21.7
 },
 "462": {
 "nom": "R.Dunn",
@@ -6713,7 +9403,14 @@
 "b2b_presence": 0.77,
 "presence": 0.91,
 "age": 23,
-"min_proj": 22.6
+"min_proj": 22.6,
+"rang_poste": 2,
+"poste_espn": "PF",
+"devant": [
+"Miles Bridges"
+],
+"presaison_matchs": 5,
+"presaison_min": 19.6
 },
 "463": {
 "nom": "O.Ighodaro",
@@ -6730,7 +9427,14 @@
 "b2b_presence": 1.0,
 "presence": 1.0,
 "age": 24,
-"min_proj": 27.6
+"min_proj": 27.6,
+"rang_poste": 2,
+"poste_espn": "C",
+"devant": [
+"Khaman Maluach"
+],
+"presaison_matchs": 3,
+"presaison_min": 17.7
 },
 "464": {
 "nom": "K.Brea",
@@ -6747,7 +9451,9 @@
 "b2b_presence": 0.0,
 "presence": 0.27,
 "age": 23,
-"min_proj": 10.2
+"min_proj": 10.2,
+"presaison_matchs": 3,
+"presaison_min": 12.7
 },
 "465": {
 "nom": "R.Fleming",
@@ -6761,7 +9467,16 @@
 "b2b_n": 9,
 "b2b_presence": 1.0,
 "presence": 0.72,
-"age": 22
+"age": 22,
+"rang_poste": 4,
+"poste_espn": "SF",
+"devant": [
+"Dillon Brooks",
+"Jordan Goodwin",
+"Koa Peat"
+],
+"presaison_matchs": 5,
+"presaison_min": 17.6
 },
 "466": {
 "nom": "C.Huntley",
@@ -6774,7 +9489,9 @@
 "b2b_n": 1,
 "b2b_presence": 0.0,
 "presence": 0.33,
-"age": 24
+"age": 24,
+"presaison_matchs": 1,
+"presaison_min": 12.0
 },
 "467": {
 "nom": "K.Maluach",
@@ -6791,7 +9508,12 @@
 "b2b_presence": 1.0,
 "presence": 0.62,
 "age": 20,
-"min_proj": 23.0
+"min_proj": 23.0,
+"rang_poste": 1,
+"poste_espn": "C",
+"devant": [],
+"presaison_matchs": 5,
+"presaison_min": 20.4
 },
 "468": {
 "nom": "K.Peat",
@@ -6801,7 +9523,15 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 19,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 3,
+"poste_espn": "SF",
+"devant": [
+"Dillon Brooks",
+"Jordan Goodwin"
+],
+"presaison_matchs": 5,
+"presaison_min": 9.8
 },
 "469": {
 "nom": "J.Morant",
@@ -6818,7 +9548,12 @@
 "b2b_presence": 0.5,
 "presence": 0.74,
 "age": 27,
-"min_proj": 29.5
+"min_proj": 29.5,
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 20.8
 },
 "470": {
 "nom": "J.Sochan",
@@ -6835,7 +9570,9 @@
 "b2b_presence": 0.75,
 "presence": 0.71,
 "age": 23,
-"min_proj": 21.3
+"min_proj": 21.3,
+"presaison_matchs": 4,
+"presaison_min": 12.2
 },
 "471": {
 "nom": "B.Carlson",
@@ -6849,7 +9586,16 @@
 "b2b_n": 6,
 "b2b_presence": 0.67,
 "presence": 0.68,
-"age": 27
+"age": 27,
+"rang_poste": 6,
+"poste_espn": "C",
+"devant": [
+"Donovan Clingan",
+"Robert Williams III",
+"Micah Potter"
+],
+"presaison_matchs": 4,
+"presaison_min": 8.8
 },
 "472": {
 "nom": "V.Krejci",
@@ -6866,7 +9612,14 @@
 "b2b_presence": 0.93,
 "presence": 0.97,
 "age": 26,
-"min_proj": 25.7
+"min_proj": 25.7,
+"rang_poste": 2,
+"poste_espn": "SF",
+"devant": [
+"Toumani Camara"
+],
+"presaison_matchs": 4,
+"presaison_min": 16.0
 },
 "473": {
 "nom": "C.Youngblood",
@@ -6880,7 +9633,16 @@
 "b2b_n": 5,
 "b2b_presence": 0.6,
 "presence": 0.6,
-"age": 24
+"age": 24,
+"rang_poste": 8,
+"poste_espn": "SG",
+"devant": [
+"Ja Morant",
+"Jrue Holiday",
+"Scoot Henderson"
+],
+"presaison_matchs": 1,
+"presaison_min": 12.0
 },
 "474": {
 "nom": "J.Holiday",
@@ -6897,7 +9659,14 @@
 "b2b_presence": 0.89,
 "presence": 0.94,
 "age": 36,
-"min_proj": 28.2
+"min_proj": 28.2,
+"rang_poste": 2,
+"poste_espn": "SG",
+"devant": [
+"Ja Morant"
+],
+"presaison_matchs": 3,
+"presaison_min": 18.3
 },
 "475": {
 "nom": "D.Lillard",
@@ -6911,7 +9680,12 @@
 "malus_b2b": 0.881,
 "age": 36,
 "b2b_n": 0,
-"min_proj": 31.4
+"min_proj": 31.4,
+"rang_poste": 1,
+"poste_espn": "PG",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 22.7
 },
 "476": {
 "nom": "R.Williams III",
@@ -6928,7 +9702,14 @@
 "b2b_presence": 0.0,
 "presence": 0.71,
 "age": 29,
-"min_proj": 20.0
+"min_proj": 20.0,
+"rang_poste": 2,
+"poste_espn": "C",
+"devant": [
+"Donovan Clingan"
+],
+"presaison_matchs": 2,
+"presaison_min": 15.0
 },
 "477": {
 "nom": "T.Camara",
@@ -6945,7 +9726,12 @@
 "b2b_presence": 1.0,
 "presence": 1.0,
 "age": 26,
-"min_proj": 29.4
+"min_proj": 29.4,
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 20.2
 },
 "478": {
 "nom": "S.Sharpe",
@@ -6962,7 +9748,14 @@
 "b2b_presence": 0.8,
 "presence": 0.96,
 "age": 23,
-"min_proj": 25.4
+"min_proj": 25.4,
+"rang_poste": 6,
+"poste_espn": "SF",
+"devant": [
+"Toumani Camara",
+"Vit Krejci",
+"Jrue Holiday"
+]
 },
 "479": {
 "nom": "S.Henderson",
@@ -6979,7 +9772,15 @@
 "b2b_presence": 0.8,
 "presence": 0.97,
 "age": 22,
-"min_proj": 27.0
+"min_proj": 27.0,
+"rang_poste": 3,
+"poste_espn": "PG",
+"devant": [
+"Damian Lillard",
+"Ja Morant"
+],
+"presaison_matchs": 4,
+"presaison_min": 17.5
 },
 "480": {
 "nom": "D.Avdija",
@@ -6996,7 +9797,12 @@
 "b2b_presence": 0.82,
 "presence": 0.92,
 "age": 25,
-"min_proj": 33.7
+"min_proj": 33.7,
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 21.5
 },
 "481": {
 "nom": "D.Clingan",
@@ -7013,7 +9819,12 @@
 "b2b_presence": 1.0,
 "presence": 0.96,
 "age": 22,
-"min_proj": 26.2
+"min_proj": 26.2,
+"rang_poste": 1,
+"poste_espn": "C",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 19.8
 },
 "482": {
 "nom": "S.Cissoko",
@@ -7030,7 +9841,14 @@
 "b2b_presence": 1.0,
 "presence": 0.96,
 "age": 22,
-"min_proj": 16.2
+"min_proj": 16.2,
+"rang_poste": 2,
+"poste_espn": "PF",
+"devant": [
+"Deni Avdija"
+],
+"presaison_matchs": 4,
+"presaison_min": 16.0
 },
 "483": {
 "nom": "Y.Hansen",
@@ -7047,7 +9865,16 @@
 "b2b_presence": 1.0,
 "presence": 0.6,
 "age": 21,
-"min_proj": 12.7
+"min_proj": 12.7,
+"rang_poste": 5,
+"poste_espn": "C",
+"devant": [
+"Donovan Clingan",
+"Robert Williams III",
+"Micah Potter"
+],
+"presaison_matchs": 4,
+"presaison_min": 16.2
 },
 "484": {
 "nom": "J.Kent",
@@ -7068,7 +9895,15 @@
 "b2b_n": 6,
 "b2b_presence": 0.83,
 "presence": 0.91,
-"age": 28
+"age": 28,
+"rang_poste": 3,
+"poste_espn": "PF",
+"devant": [
+"Deni Avdija",
+"Sidy Cissoko"
+],
+"presaison_matchs": 3,
+"presaison_min": 13.0
 },
 "486": {
 "nom": "J.Tonje",
@@ -7078,7 +9913,16 @@
 "source": "selon le prix",
 "malus_b2b": 0.955,
 "age": 25,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 8,
+"poste_espn": "SF",
+"devant": [
+"Toumani Camara",
+"Vit Krejci",
+"Jrue Holiday"
+],
+"presaison_matchs": 3,
+"presaison_min": 11.3
 },
 "487": {
 "nom": "P.Achiuwa",
@@ -7095,7 +9939,14 @@
 "b2b_presence": 1.0,
 "presence": 0.97,
 "age": 27,
-"min_proj": 24.3
+"min_proj": 24.3,
+"rang_poste": 2,
+"poste_espn": "PF",
+"devant": [
+"Keegan Murray"
+],
+"presaison_matchs": 5,
+"presaison_min": 22.2
 },
 "488": {
 "nom": "D.Plowden",
@@ -7109,7 +9960,16 @@
 "b2b_n": 5,
 "b2b_presence": 1.0,
 "presence": 0.9,
-"age": 28
+"age": 28,
+"rang_poste": 6,
+"poste_espn": "SG",
+"devant": [
+"Zach LaVine",
+"Nique Clifford",
+"Darius Acuff Jr."
+],
+"presaison_matchs": 5,
+"presaison_min": 15.8
 },
 "489": {
 "nom": "Z.LaVine",
@@ -7126,7 +9986,12 @@
 "b2b_presence": 0.83,
 "presence": 0.87,
 "age": 31,
-"min_proj": 32.8
+"min_proj": 32.8,
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 22.8
 },
 "490": {
 "nom": "D.Sabonis",
@@ -7143,7 +10008,12 @@
 "b2b_presence": 0.5,
 "presence": 0.78,
 "age": 30,
-"min_proj": 34.8
+"min_proj": 34.8,
+"rang_poste": 1,
+"poste_espn": "C",
+"devant": [],
+"presaison_matchs": 2,
+"presaison_min": 20.0
 },
 "491": {
 "nom": "M.Monk",
@@ -7160,7 +10030,12 @@
 "b2b_presence": 0.55,
 "presence": 0.85,
 "age": 28,
-"min_proj": 26.2
+"min_proj": 26.2,
+"rang_poste": 2,
+"poste_espn": "PG",
+"devant": [
+"Darius Acuff Jr."
+]
 },
 "492": {
 "nom": "K.Murray",
@@ -7177,7 +10052,12 @@
 "b2b_presence": 1.0,
 "presence": 0.91,
 "age": 26,
-"min_proj": 34.1
+"min_proj": 34.1,
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 14.7
 },
 "493": {
 "nom": "D.Cardwell",
@@ -7191,7 +10071,15 @@
 "b2b_n": 8,
 "b2b_presence": 1.0,
 "presence": 0.88,
-"age": 24
+"age": 24,
+"rang_poste": 3,
+"poste_espn": "C",
+"devant": [
+"Domantas Sabonis",
+"Maxime Raynaud"
+],
+"presaison_matchs": 2,
+"presaison_min": 20.5
 },
 "494": {
 "nom": "N.Clifford",
@@ -7208,7 +10096,14 @@
 "b2b_presence": 1.0,
 "presence": 0.96,
 "age": 24,
-"min_proj": 27.4
+"min_proj": 27.4,
+"rang_poste": 2,
+"poste_espn": "SG",
+"devant": [
+"Zach LaVine"
+],
+"presaison_matchs": 5,
+"presaison_min": 22.2
 },
 "495": {
 "nom": "M.Raynaud",
@@ -7222,7 +10117,14 @@
 "b2b_n": 12,
 "b2b_presence": 1.0,
 "presence": 0.95,
-"age": 23
+"age": 23,
+"rang_poste": 2,
+"poste_espn": "C",
+"devant": [
+"Domantas Sabonis"
+],
+"presaison_matchs": 3,
+"presaison_min": 19.0
 },
 "496": {
 "nom": "A.Flagler",
@@ -7232,7 +10134,9 @@
 "source": "selon le prix",
 "malus_b2b": 0.955,
 "age": 26,
-"b2b_n": 0
+"b2b_n": 0,
+"presaison_matchs": 2,
+"presaison_min": 4.5
 },
 "497": {
 "nom": "J.Mogbo",
@@ -7249,7 +10153,16 @@
 "b2b_presence": 0.71,
 "presence": 0.59,
 "age": 24,
-"min_proj": 12.6
+"min_proj": 12.6,
+"rang_poste": 5,
+"poste_espn": "C",
+"devant": [
+"Domantas Sabonis",
+"Maxime Raynaud",
+"Dylan Cardwell"
+],
+"presaison_matchs": 4,
+"presaison_min": 21.2
 },
 "498": {
 "nom": "D.Acuff Jr.",
@@ -7263,7 +10176,12 @@
 "malus_b2b": 1.022,
 "age": 19,
 "b2b_n": 0,
-"min_proj": 30.6
+"min_proj": 30.6,
+"rang_poste": 1,
+"poste_espn": "PG",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 24.0
 },
 "499": {
 "nom": "D.Hunter",
@@ -7280,7 +10198,12 @@
 "b2b_presence": 0.75,
 "presence": 0.91,
 "age": 28,
-"min_proj": 27.6
+"min_proj": 27.6,
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 17.5
 },
 "500": {
 "nom": "A.Karaban",
@@ -7290,7 +10213,16 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 23,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 4,
+"poste_espn": "SF",
+"devant": [
+"De'Andre Hunter",
+"Zach LaVine",
+"Nique Clifford"
+],
+"presaison_matchs": 5,
+"presaison_min": 15.8
 },
 "501": {
 "nom": "E.Sharp",
@@ -7300,7 +10232,16 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 22,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 5,
+"poste_espn": "SG",
+"devant": [
+"Zach LaVine",
+"Nique Clifford",
+"Darius Acuff Jr."
+],
+"presaison_matchs": 5,
+"presaison_min": 24.0
 },
 "502": {
 "nom": "B.Simmons",
@@ -7314,7 +10255,15 @@
 "malus_b2b": 0.958,
 "age": 30,
 "b2b_n": 0,
-"min_proj": 21.2
+"min_proj": 21.2,
+"rang_poste": 3,
+"poste_espn": "PG",
+"devant": [
+"Darius Acuff Jr.",
+"Malik Monk"
+],
+"presaison_matchs": 2,
+"presaison_min": 17.5
 },
 "503": {
 "nom": "E.Payton",
@@ -7324,7 +10273,9 @@
 "source": "selon le prix",
 "malus_b2b": 0.958,
 "age": 32,
-"b2b_n": 0
+"b2b_n": 0,
+"presaison_matchs": 3,
+"presaison_min": 8.3
 },
 "504": {
 "nom": "T.Harris",
@@ -7341,7 +10292,10 @@
 "b2b_presence": 0.78,
 "presence": 0.89,
 "age": 34,
-"min_proj": 30.5
+"min_proj": 30.5,
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": []
 },
 "505": {
 "nom": "T.Peter",
@@ -7365,7 +10319,14 @@
 "b2b_presence": 0.91,
 "presence": 0.9,
 "age": 31,
-"min_proj": 15.6
+"min_proj": 15.6,
+"rang_poste": 2,
+"poste_espn": "C",
+"devant": [
+"Victor Wembanyama"
+],
+"presaison_matchs": 4,
+"presaison_min": 16.8
 },
 "507": {
 "nom": "J.McLaughlin",
@@ -7382,7 +10343,15 @@
 "b2b_presence": 0.44,
 "presence": 0.65,
 "age": 30,
-"min_proj": 10.1
+"min_proj": 10.1,
+"rang_poste": 3,
+"poste_espn": "PG",
+"devant": [
+"De'Aaron Fox",
+"Dylan Harper"
+],
+"presaison_matchs": 5,
+"presaison_min": 13.0
 },
 "508": {
 "nom": "D.Fox",
@@ -7399,7 +10368,12 @@
 "b2b_presence": 1.0,
 "presence": 0.97,
 "age": 28,
-"min_proj": 31.3
+"min_proj": 31.3,
+"rang_poste": 1,
+"poste_espn": "PG",
+"devant": [],
+"presaison_matchs": 2,
+"presaison_min": 20.5
 },
 "509": {
 "nom": "H.Barnes",
@@ -7416,7 +10390,16 @@
 "b2b_presence": 1.0,
 "presence": 0.99,
 "age": 34,
-"min_proj": 20.5
+"min_proj": 20.5,
+"rang_poste": 4,
+"poste_espn": "PF",
+"devant": [
+"Tobias Harris",
+"Julian Champagnie",
+"Keldon Johnson"
+],
+"presaison_matchs": 5,
+"presaison_min": 18.0
 },
 "510": {
 "nom": "J.Champagnie",
@@ -7433,7 +10416,14 @@
 "b2b_presence": 1.0,
 "presence": 1.0,
 "age": 25,
-"min_proj": 26.7
+"min_proj": 26.7,
+"rang_poste": 2,
+"poste_espn": "PF",
+"devant": [
+"Tobias Harris"
+],
+"presaison_matchs": 4,
+"presaison_min": 21.5
 },
 "511": {
 "nom": "K.Johnson",
@@ -7450,7 +10440,15 @@
 "b2b_presence": 1.0,
 "presence": 1.0,
 "age": 27,
-"min_proj": 25.1
+"min_proj": 25.1,
+"rang_poste": 3,
+"poste_espn": "SF",
+"devant": [
+"Devin Vassell",
+"Carter Bryant"
+],
+"presaison_matchs": 4,
+"presaison_min": 19.8
 },
 "512": {
 "nom": "D.Vassell",
@@ -7467,7 +10465,12 @@
 "b2b_presence": 0.91,
 "presence": 0.96,
 "age": 26,
-"min_proj": 27.5
+"min_proj": 27.5,
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 22.0
 },
 "513": {
 "nom": "V.Wembanyama",
@@ -7484,7 +10487,12 @@
 "b2b_presence": 0.92,
 "presence": 0.92,
 "age": 22,
-"min_proj": 32.5
+"min_proj": 32.5,
+"rang_poste": 1,
+"poste_espn": "C",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 19.8
 },
 "514": {
 "nom": "S.Castle",
@@ -7501,7 +10509,12 @@
 "b2b_presence": 0.93,
 "presence": 0.94,
 "age": 21,
-"min_proj": 32.7
+"min_proj": 32.7,
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 21.5
 },
 "515": {
 "nom": "C.Bryant",
@@ -7515,7 +10528,14 @@
 "b2b_n": 12,
 "b2b_presence": 1.0,
 "presence": 0.9,
-"age": 20
+"age": 20,
+"rang_poste": 2,
+"poste_espn": "SF",
+"devant": [
+"Devin Vassell"
+],
+"presaison_matchs": 4,
+"presaison_min": 17.5
 },
 "516": {
 "nom": "D.Harper",
@@ -7532,7 +10552,14 @@
 "b2b_presence": 1.0,
 "presence": 0.96,
 "age": 20,
-"min_proj": 29.3
+"min_proj": 29.3,
+"rang_poste": 2,
+"poste_espn": "PG",
+"devant": [
+"De'Aaron Fox"
+],
+"presaison_matchs": 4,
+"presaison_min": 21.8
 },
 "517": {
 "nom": "D.Jones",
@@ -7549,7 +10576,16 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 22,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 8,
+"poste_espn": "PF",
+"devant": [
+"Tobias Harris",
+"Julian Champagnie",
+"Keldon Johnson"
+],
+"presaison_matchs": 4,
+"presaison_min": 12.0
 },
 "519": {
 "nom": "J.Gillespie",
@@ -7559,7 +10595,16 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 22,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 4,
+"poste_espn": "PG",
+"devant": [
+"De'Aaron Fox",
+"Dylan Harper",
+"Jordan McLaughlin"
+],
+"presaison_matchs": 5,
+"presaison_min": 14.0
 },
 "520": {
 "nom": "J.Quaintance",
@@ -7569,7 +10614,14 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 19,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 4,
+"poste_espn": "C",
+"devant": [
+"Victor Wembanyama",
+"Luke Kornet",
+"Tarris Reed Jr."
+]
 },
 "521": {
 "nom": "T.Reed Jr.",
@@ -7579,7 +10631,15 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 23,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 3,
+"poste_espn": "C",
+"devant": [
+"Victor Wembanyama",
+"Luke Kornet"
+],
+"presaison_matchs": 5,
+"presaison_min": 17.0
 },
 "522": {
 "nom": "J.Nunn",
@@ -7610,7 +10670,12 @@
 "b2b_presence": 0.83,
 "presence": 0.92,
 "age": 35,
-"min_proj": 32.8
+"min_proj": 32.8,
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
+"presaison_matchs": 2,
+"presaison_min": 20.0
 },
 "525": {
 "nom": "A.Jackson Jr.",
@@ -7637,7 +10702,9 @@
 "b2b_n": 3,
 "b2b_presence": 0.0,
 "presence": 0.27,
-"age": 26
+"age": 26,
+"presaison_matchs": 1,
+"presaison_min": 8.0
 },
 "527": {
 "nom": "T.Jackson-Davis",
@@ -7654,7 +10721,15 @@
 "b2b_presence": 0.88,
 "presence": 0.66,
 "age": 26,
-"min_proj": 15.9
+"min_proj": 15.9,
+"rang_poste": 3,
+"poste_espn": "C",
+"devant": [
+"Jakob Poeltl",
+"Collin Murray-Boyles"
+],
+"presaison_matchs": 2,
+"presaison_min": 19.5
 },
 "528": {
 "nom": "R.Barrett",
@@ -7671,7 +10746,12 @@
 "b2b_presence": 0.6,
 "presence": 0.91,
 "age": 26,
-"min_proj": 30.8
+"min_proj": 30.8,
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 23.5
 },
 "529": {
 "nom": "I.Quickley",
@@ -7688,7 +10768,12 @@
 "b2b_presence": 0.86,
 "presence": 0.94,
 "age": 27,
-"min_proj": 31.4
+"min_proj": 31.4,
+"rang_poste": 1,
+"poste_espn": "PG",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 20.2
 },
 "530": {
 "nom": "J.Poeltl",
@@ -7705,7 +10790,12 @@
 "b2b_presence": 0.5,
 "presence": 0.78,
 "age": 31,
-"min_proj": 27.0
+"min_proj": 27.0,
+"rang_poste": 1,
+"poste_espn": "C",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 21.0
 },
 "531": {
 "nom": "S.Barnes",
@@ -7722,7 +10812,12 @@
 "b2b_presence": 1.0,
 "presence": 0.97,
 "age": 25,
-"min_proj": 33.8
+"min_proj": 33.8,
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 21.0
 },
 "532": {
 "nom": "J.Battle",
@@ -7736,7 +10831,15 @@
 "b2b_n": 11,
 "b2b_presence": 0.82,
 "presence": 0.75,
-"age": 25
+"age": 25,
+"rang_poste": 3,
+"poste_espn": "SF",
+"devant": [
+"Kawhi Leonard",
+"Allen Graves"
+],
+"presaison_matchs": 1,
+"presaison_min": 14.0
 },
 "533": {
 "nom": "J.Shead",
@@ -7753,7 +10856,14 @@
 "b2b_presence": 1.0,
 "presence": 1.0,
 "age": 24,
-"min_proj": 23.3
+"min_proj": 23.3,
+"rang_poste": 2,
+"poste_espn": "PG",
+"devant": [
+"Immanuel Quickley"
+],
+"presaison_matchs": 4,
+"presaison_min": 20.5
 },
 "534": {
 "nom": "J.Walter",
@@ -7770,7 +10880,14 @@
 "b2b_presence": 0.92,
 "presence": 0.99,
 "age": 22,
-"min_proj": 21.6
+"min_proj": 21.6,
+"rang_poste": 2,
+"poste_espn": "SG",
+"devant": [
+"RJ Barrett"
+],
+"presaison_matchs": 4,
+"presaison_min": 18.8
 },
 "535": {
 "nom": "C.Hepburn",
@@ -7780,7 +10897,9 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 23,
-"b2b_n": 0
+"b2b_n": 0,
+"presaison_matchs": 2,
+"presaison_min": 13.0
 },
 "536": {
 "nom": "A.Martin",
@@ -7793,7 +10912,16 @@
 "b2b_n": 4,
 "b2b_presence": 0.75,
 "presence": 0.64,
-"age": 24
+"age": 24,
+"rang_poste": 5,
+"poste_espn": "SG",
+"devant": [
+"RJ Barrett",
+"Ja'Kobe Walter",
+"Jamal Shead"
+],
+"presaison_matchs": 2,
+"presaison_min": 17.5
 },
 "537": {
 "nom": "C.Murray-Boyles",
@@ -7810,7 +10938,14 @@
 "b2b_presence": 0.91,
 "presence": 0.86,
 "age": 21,
-"min_proj": 22.9
+"min_proj": 22.9,
+"rang_poste": 2,
+"poste_espn": "PF",
+"devant": [
+"Scottie Barnes"
+],
+"presaison_matchs": 4,
+"presaison_min": 20.0
 },
 "538": {
 "nom": "K.Anderson",
@@ -7827,7 +10962,15 @@
 "b2b_presence": 0.78,
 "presence": 0.7,
 "age": 33,
-"min_proj": 17.7
+"min_proj": 17.7,
+"rang_poste": 3,
+"poste_espn": "PF",
+"devant": [
+"Scottie Barnes",
+"Collin Murray-Boyles"
+],
+"presaison_matchs": 3,
+"presaison_min": 12.3
 },
 "539": {
 "nom": "N.Bittle",
@@ -7844,7 +10987,16 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 23,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 4,
+"poste_espn": "PG",
+"devant": [
+"Immanuel Quickley",
+"Jamal Shead",
+"Ja'Kobe Walter"
+],
+"presaison_matchs": 5,
+"presaison_min": 17.6
 },
 "541": {
 "nom": "A.Graves",
@@ -7854,7 +11006,14 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 20,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 2,
+"poste_espn": "SF",
+"devant": [
+"Kawhi Leonard"
+],
+"presaison_matchs": 2,
+"presaison_min": 19.0
 },
 "542": {
 "nom": "M.Smith",
@@ -7878,7 +11037,16 @@
 "b2b_presence": 1.0,
 "presence": 1.0,
 "age": 25,
-"min_proj": 18.3
+"min_proj": 18.3,
+"rang_poste": 5,
+"poste_espn": "SF",
+"devant": [
+"Lauri Markkanen",
+"Ace Bailey",
+"Brice Sensabaugh"
+],
+"presaison_matchs": 3,
+"presaison_min": 10.0
 },
 "544": {
 "nom": "T.Bates",
@@ -7888,7 +11056,9 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 23,
-"b2b_n": 0
+"b2b_n": 0,
+"presaison_matchs": 3,
+"presaison_min": 11.3
 },
 "545": {
 "nom": "J.Okogie",
@@ -7902,7 +11072,15 @@
 "b2b_n": 13,
 "b2b_presence": 1.0,
 "presence": 0.96,
-"age": 28
+"age": 28,
+"rang_poste": 3,
+"poste_espn": "SG",
+"devant": [
+"Darryn Peterson",
+"Brice Sensabaugh"
+],
+"presaison_matchs": 4,
+"presaison_min": 16.8
 },
 "546": {
 "nom": "J.Hayes",
@@ -7919,7 +11097,12 @@
 "b2b_presence": 0.91,
 "presence": 0.91,
 "age": 26,
-"min_proj": 16.8
+"min_proj": 16.8,
+"rang_poste": 1,
+"poste_espn": "C",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 18.2
 },
 "547": {
 "nom": "T.Alexander",
@@ -7936,7 +11119,16 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 23,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 6,
+"poste_espn": "PF",
+"devant": [
+"Jaren Jackson Jr.",
+"Lauri Markkanen",
+"Kyle Filipowski"
+],
+"presaison_matchs": 4,
+"presaison_min": 7.5
 },
 "549": {
 "nom": "J.Jackson Jr.",
@@ -7953,7 +11145,12 @@
 "b2b_presence": 0.83,
 "presence": 0.93,
 "age": 27,
-"min_proj": 31.4
+"min_proj": 31.4,
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 18.2
 },
 "550": {
 "nom": "M.Bamba",
@@ -7966,7 +11163,16 @@
 "b2b_n": 1,
 "b2b_presence": 1.0,
 "presence": 0.5,
-"age": 28
+"age": 28,
+"rang_poste": 4,
+"poste_espn": "C",
+"devant": [
+"Jaxson Hayes",
+"Jaren Jackson Jr.",
+"Kyle Filipowski"
+],
+"presaison_matchs": 4,
+"presaison_min": 12.2
 },
 "551": {
 "nom": "J.Nurkic",
@@ -7983,7 +11189,16 @@
 "b2b_presence": 0.75,
 "presence": 0.78,
 "age": 32,
-"min_proj": 23.1
+"min_proj": 23.1,
+"rang_poste": 6,
+"poste_espn": "C",
+"devant": [
+"Jaxson Hayes",
+"Jaren Jackson Jr.",
+"Kyle Filipowski"
+],
+"presaison_matchs": 1,
+"presaison_min": 11.0
 },
 "552": {
 "nom": "S.Mykhailiuk",
@@ -7997,7 +11212,16 @@
 "b2b_n": 9,
 "b2b_presence": 0.89,
 "presence": 0.8,
-"age": 29
+"age": 29,
+"rang_poste": 5,
+"poste_espn": "SG",
+"devant": [
+"Darryn Peterson",
+"Brice Sensabaugh",
+"Josh Okogie"
+],
+"presaison_matchs": 4,
+"presaison_min": 18.8
 },
 "553": {
 "nom": "L.Markkanen",
@@ -8014,7 +11238,12 @@
 "b2b_presence": 0.8,
 "presence": 0.8,
 "age": 29,
-"min_proj": 34.0
+"min_proj": 34.0,
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 20.0
 },
 "554": {
 "nom": "K.George",
@@ -8031,7 +11260,12 @@
 "b2b_presence": 0.91,
 "presence": 0.91,
 "age": 22,
-"min_proj": 33.2
+"min_proj": 33.2,
+"rang_poste": 1,
+"poste_espn": "PG",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 18.2
 },
 "555": {
 "nom": "B.Sensabaugh",
@@ -8048,7 +11282,14 @@
 "b2b_presence": 0.86,
 "presence": 0.93,
 "age": 22,
-"min_proj": 21.6
+"min_proj": 21.6,
+"rang_poste": 2,
+"poste_espn": "SG",
+"devant": [
+"Darryn Peterson"
+],
+"presaison_matchs": 2,
+"presaison_min": 16.0
 },
 "556": {
 "nom": "I.Collier",
@@ -8065,7 +11306,14 @@
 "b2b_presence": 1.0,
 "presence": 0.98,
 "age": 22,
-"min_proj": 22.7
+"min_proj": 22.7,
+"rang_poste": 2,
+"poste_espn": "PG",
+"devant": [
+"Keyonte George"
+],
+"presaison_matchs": 4,
+"presaison_min": 17.8
 },
 "557": {
 "nom": "K.Filipowski",
@@ -8082,7 +11330,15 @@
 "b2b_presence": 1.0,
 "presence": 0.96,
 "age": 22,
-"min_proj": 22.0
+"min_proj": 22.0,
+"rang_poste": 3,
+"poste_espn": "PF",
+"devant": [
+"Jaren Jackson Jr.",
+"Lauri Markkanen"
+],
+"presaison_matchs": 1,
+"presaison_min": 8.0
 },
 "558": {
 "nom": "A.Bailey",
@@ -8099,7 +11355,14 @@
 "b2b_presence": 0.87,
 "presence": 0.93,
 "age": 20,
-"min_proj": 28.2
+"min_proj": 28.2,
+"rang_poste": 2,
+"poste_espn": "SF",
+"devant": [
+"Lauri Markkanen"
+],
+"presaison_matchs": 4,
+"presaison_min": 23.0
 },
 "559": {
 "nom": "B.Hinson",
@@ -8112,7 +11375,9 @@
 "b2b_n": 1,
 "b2b_presence": 1.0,
 "presence": 0.54,
-"age": 26
+"age": 26,
+"presaison_matchs": 2,
+"presaison_min": 14.5
 },
 "560": {
 "nom": "D.Peterson",
@@ -8126,7 +11391,12 @@
 "malus_b2b": 1.022,
 "age": 19,
 "b2b_n": 0,
-"min_proj": 29.7
+"min_proj": 29.7,
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 25.5
 },
 "561": {
 "nom": "T.Young",
@@ -8143,7 +11413,12 @@
 "b2b_presence": 0.67,
 "presence": 0.77,
 "age": 28,
-"min_proj": 34.5
+"min_proj": 34.5,
+"rang_poste": 1,
+"poste_espn": "PG",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 24.0
 },
 "562": {
 "nom": "T.Mann",
@@ -8160,7 +11435,15 @@
 "b2b_presence": 0.9,
 "presence": 0.79,
 "age": 25,
-"min_proj": 16.3
+"min_proj": 16.3,
+"rang_poste": 3,
+"poste_espn": "PG",
+"devant": [
+"Trae Young",
+"Bub Carrington"
+],
+"presaison_matchs": 2,
+"presaison_min": 14.0
 },
 "563": {
 "nom": "D.Ayton",
@@ -8177,7 +11460,14 @@
 "b2b_presence": 0.83,
 "presence": 0.89,
 "age": 28,
-"min_proj": 23.8
+"min_proj": 23.8,
+"rang_poste": 2,
+"poste_espn": "C",
+"devant": [
+"Alex Sarr"
+],
+"presaison_matchs": 4,
+"presaison_min": 17.8
 },
 "564": {
 "nom": "A.Davis",
@@ -8194,7 +11484,12 @@
 "b2b_presence": 0.75,
 "presence": 0.79,
 "age": 33,
-"min_proj": 32.2
+"min_proj": 32.2,
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
+"presaison_matchs": 3,
+"presaison_min": 22.0
 },
 "565": {
 "nom": "J.Champagnie",
@@ -8208,7 +11503,15 @@
 "b2b_n": 14,
 "b2b_presence": 0.79,
 "presence": 0.82,
-"age": 25
+"age": 25,
+"rang_poste": 3,
+"poste_espn": "PF",
+"devant": [
+"Anthony Davis",
+"Khris Middleton"
+],
+"presaison_matchs": 4,
+"presaison_min": 14.5
 },
 "566": {
 "nom": "A.Gill",
@@ -8222,7 +11525,16 @@
 "b2b_n": 10,
 "b2b_presence": 0.6,
 "presence": 0.75,
-"age": 34
+"age": 34,
+"rang_poste": 4,
+"poste_espn": "C",
+"devant": [
+"Alex Sarr",
+"Deandre Ayton",
+"Tristan Vukcevic"
+],
+"presaison_matchs": 1,
+"presaison_min": 4.0
 },
 "567": {
 "nom": "B.Coulibaly",
@@ -8239,7 +11551,14 @@
 "b2b_presence": 0.73,
 "presence": 0.84,
 "age": 22,
-"min_proj": 24.0
+"min_proj": 24.0,
+"rang_poste": 2,
+"poste_espn": "SF",
+"devant": [
+"AJ Dybantsa"
+],
+"presaison_matchs": 4,
+"presaison_min": 19.0
 },
 "568": {
 "nom": "T.Vukcevic",
@@ -8256,7 +11575,13 @@
 "b2b_presence": 0.88,
 "presence": 0.79,
 "age": 23,
-"min_proj": 13.8
+"min_proj": 13.8,
+"rang_poste": 3,
+"poste_espn": "C",
+"devant": [
+"Alex Sarr",
+"Deandre Ayton"
+]
 },
 "569": {
 "nom": "C.Carrington",
@@ -8280,7 +11605,12 @@
 "b2b_presence": 0.83,
 "presence": 0.87,
 "age": 22,
-"min_proj": 29.4
+"min_proj": 29.4,
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 24.2
 },
 "571": {
 "nom": "A.Sarr",
@@ -8308,7 +11638,14 @@
 "b2b_presence": 0.8,
 "presence": 0.93,
 "age": 20,
-"min_proj": 25.3
+"min_proj": 25.3,
+"rang_poste": 2,
+"poste_espn": "SG",
+"devant": [
+"Kyshawn George"
+],
+"presaison_matchs": 4,
+"presaison_min": 18.8
 },
 "573": {
 "nom": "W.Riley",
@@ -8322,7 +11659,15 @@
 "b2b_n": 15,
 "b2b_presence": 0.87,
 "presence": 0.93,
-"age": 20
+"age": 20,
+"rang_poste": 3,
+"poste_espn": "SF",
+"devant": [
+"AJ Dybantsa",
+"Bilal Coulibaly"
+],
+"presaison_matchs": 4,
+"presaison_min": 15.2
 },
 "574": {
 "nom": "J.Watkins",
@@ -8336,7 +11681,14 @@
 "b2b_n": 11,
 "b2b_presence": 0.82,
 "presence": 0.77,
-"age": 25
+"age": 25,
+"rang_poste": 6,
+"poste_espn": "SG",
+"devant": [
+"Kyshawn George",
+"Tre Johnson",
+"Bub Carrington"
+]
 },
 "575": {
 "nom": "A.Dybantsa",
@@ -8350,7 +11702,12 @@
 "malus_b2b": 1.022,
 "age": 19,
 "b2b_n": 0,
-"min_proj": 32.2
+"min_proj": 32.2,
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
+"presaison_matchs": 4,
+"presaison_min": 21.5
 },
 "576": {
 "nom": "K.Middleton",
@@ -8367,7 +11724,14 @@
 "b2b_presence": 0.46,
 "presence": 0.8,
 "age": 35,
-"min_proj": 20.3
+"min_proj": 20.3,
+"rang_poste": 2,
+"poste_espn": "PF",
+"devant": [
+"Anthony Davis"
+],
+"presaison_matchs": 1,
+"presaison_min": 14.0
 },
 "577": {
 "nom": "F.Okpara",
@@ -8377,7 +11741,16 @@
 "source": "selon le prix",
 "malus_b2b": 1.022,
 "age": 22,
-"b2b_n": 0
+"b2b_n": 0,
+"rang_poste": 6,
+"poste_espn": "C",
+"devant": [
+"Alex Sarr",
+"Deandre Ayton",
+"Tristan Vukcevic"
+],
+"presaison_matchs": 4,
+"presaison_min": 14.2
 },
 "578": {
 "nom": "K.Murphy",
@@ -8413,5 +11786,8 @@
 "n_b2b": 261
 },
 "_source": "saison régulière 2025-26 (ESPN), mis à jour le 20/10/2026"
+},
+"roles": {
+"_source": "ESPN (hiérarchie + présaison), mis à jour le 22/10/2026"
 }
 }

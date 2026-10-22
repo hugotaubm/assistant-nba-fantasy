@@ -52,6 +52,7 @@ def lire_config():
     cfg.setdefault("seuil_nouvelle_equipe", 20)
     cfg.setdefault("poids_presence_avant_saison", 2)   # matchs « fictifs » donnés à la fiabilité d'avant-saison
     cfg.setdefault("poids_minutes_avant_saison", 3)    # matchs « fictifs » donnés aux minutes projetées
+    cfg.setdefault("fiabilite_rang", {"3": 0.9, "4+": 0.75})   # 3e ou au-delà dans la hiérarchie de son poste
     cfg.setdefault("seuil_changement_plan", 5)  # pts mini pour changer un transfert déjà conseillé
     cfg.setdefault("force_fort", 25)            # badge 🟢 Fort à partir de ce gain (pts)
     cfg.setdefault("force_leger", 8)            # badge 🟡 Léger à partir de ce gain, sinon ⚪ Facultatif # pts de gain mini pour proposer une autre équipe avant la 1re deadline
@@ -303,15 +304,26 @@ def projeter(boot, cfg, saison_commencee, saison=None):
         b2b = priors.get(str(pid), {}).get("malus_b2b")   # effet mesuré sur la saison passée (maj_b2b.py)
         # Saison en cours : un joueur qui n'entre pas en jeu alors que son équipe joue (choix de l'entraîneur)
         # voit sa probabilité de jouer baisser tout de suite ; ses minutes réelles corrigent sa projection.
+        v = priors.get(str(pid), {})
         s = (saison or {}).get(pid)
         if s and s["matchs_equipe"]:
             k = cfg["poids_presence_avant_saison"]
             fiab = (s["joues"] + k * fiab) / (s["matchs_equipe"] + k)
-            min_proj = priors.get(str(pid), {}).get("min_proj")
-            if s["joues"] and min_proj:
-                w = s["joues"] / (s["joues"] + cfg["poids_minutes_avant_saison"])
-                ratio = min(1.3, (s["minutes"] / s["joues"]) / min_proj)
-                proj *= (1 - w) + w * ratio
+        # Minutes : minutes réelles de la saison + présaison (un demi-match chacune, seulement pour les
+        # remplaçants : les titulaires y jouent peu exprès), comparées aux minutes prévues avant la saison.
+        joues, minutes = (s["joues"], s["minutes"]) if s else (0, 0)
+        rang = v.get("rang_poste")
+        if rang and rang > 1 and v.get("presaison_matchs") and v.get("presaison_min"):
+            joues += 0.5 * v["presaison_matchs"]
+            minutes += 0.5 * v["presaison_matchs"] * v["presaison_min"]
+        if joues and v.get("min_proj"):
+            w = joues / (joues + cfg["poids_minutes_avant_saison"])
+            proj *= (1 - w) + w * min(1.3, (minutes / joues) / v["min_proj"])
+        # Hiérarchie de l'équipe (ESPN) : en fin de rotation, risque de ne pas entrer en jeu
+        if rang and rang >= 4:
+            fiab *= cfg["fiabilite_rang"]["4+"]
+        elif rang == 3:
+            fiab *= cfg["fiabilite_rang"]["3"]
         statut = e["status"]
         chance = e.get("chance_of_playing_next_round")
         if statut in ("i", "u", "s", "n") or e.get("removed"):
@@ -486,7 +498,7 @@ def mon_equipe(mt, cfg, joueurs, boot, gw):
 
 # ----------------------------------------------------------------------------- optimisation
 def optimiser(joueurs, equipe, banque, prix_vente, gratuits, cap_dispo, jours, joue, gw_suiv, cfg,
-              transferts=True, libre=False, assurance=None, interdits=(), forcer=()):
+              transferts=True, libre=False, assurance=None, interdits=(), forcer=(), jours_transfert=None):
     """Plan jour par jour sur la Gameweek en cours + la suivante (pondérée par poids_futur).
 
     Variables : effectif de chaque jour (s), entrées (in), titulaires (y), capitaine (c).
@@ -581,9 +593,10 @@ def optimiser(joueurs, equipe, banque, prix_vente, gratuits, cap_dispo, jours, j
                         ub[S[i]] = 0
             # petit bonus d'attente : à gain égal, on attend (plus d'infos sur les blessures)
             obj[v_in] = cfg["bonus_attente"] * (dernier_jour[sem[d]] - d)
-        if not transferts and not (d == 0 and libre):
+        if (not transferts and not (d == 0 and libre)) or (
+                jours_transfert is not None and sem[d] == 0 and tous[d]["id"] not in jours_transfert):
             for i in range(n):
-                ub[idx[("in", i, d)]] = 0
+                ub[idx[("in", i, d)]] = 0   # jours_transfert : jours autorisés pour les transferts de cette semaine
     # Réserve pour blessure : le transfert qui fait passer la réserve de r à r-1 coûte V_r du jour où il est fait.
     # Avec u(k,d) = « au moins k transferts faits à la fin du jour d » : coût = Σ_d V_r(d) (u(k,d) - u(k,d-1)),
     # réécrit Σ_d u(k,d) (V_r(d) - V_r(d+1)) ≥ 0 car V_r décroît au fil de la semaine.
