@@ -25,7 +25,7 @@ def get(chemin):
 
 def points_formule(s):
     # barème utilisé pour les projections (maj_priors.py)
-    return s.get("points", 0) + 1.2 * s.get("rebounds", 0) + 1.5 * s.get("assists", 0) \
+    return s.get("points_scored", s.get("points", 0)) + 1.2 * s.get("rebounds", 0) + 1.5 * s.get("assists", 0) \
         + 3 * s.get("steals", 0) + 3 * s.get("blocks", 0)
 
 
@@ -119,6 +119,22 @@ def main():
             print(f"Corrélation projeté/réel : {st.correlation([t[2] for t in joues], [t[3] for t in joues]):.2f}")
         mins = [t[4] for t in joues]
         print(f"Minutes moyennes : {st.mean(mins):.1f}")
+    def groupe(titre, cle):
+        print(titre)
+        par = {}
+        for t in gros:
+            par.setdefault(cle(t), []).append(t)
+        for k in sorted(par, key=str):
+            g = par[k]
+            j = [t for t in g if t[4] > 0]
+            if not j:
+                continue
+            print(f"  {k:<22} {len(g):>3} matchs | 0 min : {len(g) - len(j):>2} | biais {st.mean(t[3] - t[2] for t in j):+5.1f} "
+                  f"| réel/projeté {sum(t[3] for t in j) / sum(t[2] for t in j):.2f} | minutes {st.mean(t[4] for t in j):4.1f}")
+    prix = lambda t: el[t[0]]["now_cost"] / 10
+    groupe("Par prix :", lambda t: "< 7 M$" if prix(t) < 7 else "7-10 M$" if prix(t) < 10 else "10-15 M$" if prix(t) < 15 else "≥ 15 M$")
+    rang = lambda t: priors.get(str(t[0]), {}).get("rang_poste")
+    groupe("Par rang dans la hiérarchie ESPN (1 = titulaire) :", lambda t: f"rang {rang(t)}" if rang(t) else "rang inconnu")
     print(f"Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : {len(absents)} sur {len(gros)}")
     for t in sorted(absents, key=lambda t: -t[2])[:12]:
         print(f"  - {nom(t[0])} (event {t[1]}) : projeté {t[2]:.1f}, statut actuel {el[t[0]]['status']}, "
