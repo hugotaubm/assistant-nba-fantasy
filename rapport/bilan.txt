@@ -14,7 +14,7 @@ BILAN DES GAMEDAYS JOUÉS
   banc      D.Wolf (BKN)                 pas de match  réel   0.0 | projeté   0.0
   banc      C.Wilson (CHI)               pas de match  réel   0.0 | projeté   0.0
   banc      D.Acuff Jr. (SAC)            pas de match  réel   0.0 | projeté   0.0
-  → Titulaires : 159.0 pts réels pour 186.8 projetés (-27.8).
+  → Titulaires : 159.0 pts réels pour 186.8 projetés (-27.8) [projection d avant-saison, modèle non enregistré].
   → Meilleur cinq possible après coup : 159.0 pts (hors capitaine), soit 0.0 pts laissés sur le banc.
 
 --- Gameweek 1 - Day 2 : moyenne des joueurs 131.7 | meilleur 340.0
@@ -29,7 +29,7 @@ BILAN DES GAMEDAYS JOUÉS
   banc      J.Williams (OKC)             pas de match  réel   0.0 | projeté   0.0
   banc      V.Wembanyama (SAS)           pas de match  réel   0.0 | projeté   0.0
   banc      J.Walsh (BOS)                pas de match  réel   0.0 | projeté   0.0
-  → Titulaires : 84.0 pts réels pour 146.3 projetés (-62.3).
+  → Titulaires : 84.0 pts réels pour 146.3 projetés (-62.3) [projection d avant-saison, modèle non enregistré].
   → Meilleur cinq possible après coup : 84.0 pts (hors capitaine), soit 0.0 pts laissés sur le banc.
 
 ======================================================================
@@ -84,6 +84,11 @@ Plus grosses sous-estimations :
   - A.Drummond (NYK) (event 1) : projeté 21.6, réel 43.0 en 24 min
   - K.Dunn (LAC) (event 2) : projeté 21.0, réel 41.0 en 26 min
   - P.Banchero (ORL) (event 2) : projeté 45.5, réel 65.0 en 41 min
+
+======================================================================
+CALIBRATION DU MODÈLE (points réels / points attendus, par rang)
+======================================================================
+  Pas encore de projections du modèle enregistrées : la calibration démarre au prochain Gameday.
 
 Vérification du barème (points du jeu vs formule des projections) :
   Statistiques fournies par le jeu : ['assists', 'blocks', 'in_dreamteam', 'minutes', 'played', 'points_scored', 'rebounds', 'steals', 'total_points']
