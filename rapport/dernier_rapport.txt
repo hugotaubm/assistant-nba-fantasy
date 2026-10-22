@@ -1,25 +1,18 @@
-Calcul lancé le 22/10/2026 à 08:04:27
+Calcul lancé le 22/10/2026 à 10:55:29
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
-  (force des conseils : 11 s)
+  (force des conseils : 24 s)
 
 === Gameweek 1 — prochaine deadline : Gameweek 1 - Day 3 le ven. 23/10 00h30 (heure de Paris) ===
 Équipe lue depuis : my-team (connecté, à jour en direct) | Banque : 0.0 M$ | Transferts gratuits restants : 2 | Capitaine dispo : oui
 
 ⚠ À CORRIGER SUR LE SITE AVANT LA DEADLINE
-  - N.Traore est titulaire mais BKN ne joue pas le Day 3
-  - B.Burries est titulaire mais MIL ne joue pas le Day 3
-  - D.Acuff Jr. est titulaire mais SAC ne joue pas le Day 3
   - D.Wolf est titulaire mais BKN ne joue pas le Day 3
   - C.Wilson est titulaire mais CHI ne joue pas le Day 3
-  - S.Gilgeous-Alexander joue le Day 3 mais est sur ton banc (conseillé titulaire)
-  - J.Williams joue le Day 3 mais est sur ton banc (conseillé titulaire)
-  - V.Edgecombe joue le Day 3 mais est sur ton banc (conseillé titulaire)
   - Active le capitaine le Day 3 sur S.Gilgeous-Alexander
 
-Changements depuis le calcul de 07h05 : capitaine : S.Gilgeous-Alexander. Raison probable : pas de nouvelle info : simple écart entre plans presque équivalents.
-(Conseil précédent conservé : le nouveau plan ne gagnait que +0 pts.)
+Changements depuis le calcul de 08h04 : nouveau transfert D.Wolf → W.Kessler, nouveau transfert V.Wembanyama → D.Sabonis, plus de transfert S.Gilgeous-Alexander → L.Doncic, plus de transfert V.Edgecombe → T.Jerome. Raison probable : pas de nouvelle info : simple écart entre plans presque équivalents.
 ▶ CINQ DE DÉPART POUR LE PROCHAIN GAMEDAY
   BC  S.Gilgeous-Alexander (OKC)   proj. 57.3  ← CAPITAINE
   BC  V.Edgecombe (PHI)            proj. 33.4
@@ -27,22 +20,22 @@ Changements depuis le calcul de 07h05 : capitaine : S.Gilgeous-Alexander. Raison
   (seulement 3 de tes joueurs jouent ce jour-là)
 
 ▶ TRANSFERTS
-  Avant la deadline de Gameweek 1 - Day 4 (ven. 23/10 21h30) :
-  - Vendre S.Gilgeous-Alexander (OKC) → Acheter L.Doncic (LAL) (21.0 M$, proj. 61.4)  [⚪ Facultatif : +-0 pts]
-  - Vendre V.Edgecombe (PHI)          → Acheter T.Jerome (MEM) (9.5 M$, proj. 45.1)  [⚪ Facultatif : +6 pts]
-  Gain attendu (cette semaine + suivante pondérée) : +137 pts vs ne rien faire
+  Avant la deadline de Gameweek 1 - Day 6 (dim. 25/10 21h30) :
+  - Vendre D.Wolf (BKN)               → Acheter W.Kessler (LAL) (11.0 M$, proj. 38.0)  [⚪ Facultatif : +3 pts]
+  - Vendre V.Wembanyama (SAS)         → Acheter D.Sabonis (SAC) (15.0 M$, proj. 48.7)  [⚪ Facultatif : +3 pts]
+  Gain attendu (cette semaine + suivante pondérée) : +141 pts vs ne rien faire
   Relance l'assistant avant chaque deadline : le conseil est recalculé avec les dernières blessures.
-  Prévu la semaine suivante (indicatif) : Day 4 : V.Wembanyama→D.Sabonis ; Day 5 : C.Wilson→P.Banchero
+  Prévu la semaine suivante (indicatif) : Day 1 : V.Edgecombe→T.Jerome ; Day 2 : S.Gilgeous-Alexander→L.Doncic
 
 ▶ PLAN JOUR PAR JOUR (cette Gameweek)
   Day 3  deadline ven. 23/10 00h30 : S.Gilgeous-Alexander (C), J.Williams, V.Edgecombe  [~156 pts]
-  Day 4  deadline ven. 23/10 21h30 : C.Wilson, L.Doncic, T.Jerome, D.Acuff Jr., V.Wembanyama  [~211 pts]
-  Day 5  deadline sam. 24/10 23h30 : N.Traore, D.Wolf, C.Wilson (B2B), B.Burries (B2B), V.Wembanyama (B2B)  [~139 pts]
-  Day 6  deadline dim. 25/10 21h30 : D.Wolf (B2B), L.Doncic, T.Jerome, J.Williams, D.Acuff Jr.  [~156 pts]
+  Day 4  deadline ven. 23/10 21h30 : J.Walsh, C.Wilson, B.Burries, D.Acuff Jr., V.Wembanyama  [~151 pts]
+  Day 5  deadline sam. 24/10 23h30 : N.Traore, C.Wilson (B2B), B.Burries (B2B), V.Edgecombe, V.Wembanyama (B2B)  [~151 pts]
+  Day 6  deadline dim. 25/10 21h30 : W.Kessler, S.Gilgeous-Alexander, V.Edgecombe (B2B), D.Sabonis, D.Acuff Jr.  [~193 pts]
 
-Projection Gameweek (jours restants) : ~662 pts  |  sans transfert : ~611 pts
+Projection Gameweek (jours restants) : ~652 pts  |  sans transfert : ~603 pts
 Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) = non utilisé, mon équipe = my-team (connecté, à jour en direct)
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 22/10/2026 à 08:04:50 (code de sortie : 0)
+Terminé le 22/10/2026 à 10:56:12 (code de sortie : 0)
