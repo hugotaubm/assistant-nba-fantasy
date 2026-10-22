@@ -26,4 +26,6 @@ trap 'rmdir rapport/.verrou' EXIT
 } > rapport/en_cours.txt 2>&1
 
 mv rapport/en_cours.txt rapport/dernier_rapport.txt
+# Bilan des journées jouées (projections vs réalité) : simple éclairage, sans effet sur le calcul.
+"$PYTHON" bilan.py > rapport/bilan.txt 2>&1 || true
 echo "$(date '+%Y-%m-%d %H:%M:%S') code=$code" >> rapport/historique.log
