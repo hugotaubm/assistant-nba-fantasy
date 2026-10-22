@@ -1,17 +1,16 @@
-Calcul lancé le 22/10/2026 à 17:18:42
+Calcul lancé le 22/10/2026 à 22:09:05
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
-  (force des conseils : 78 s)
+  (force des conseils : 104 s)
 
 === Gameweek 1 — prochaine deadline : Gameweek 1 - Day 3 le ven. 23/10 00h30 (heure de Paris) ===
-Équipe lue depuis : my-team (connecté, à jour en direct) | Banque : 0.0 M$ | Transferts gratuits restants : 2 | Capitaine dispo : oui
+Équipe lue depuis : my-team (connecté, à jour en direct) | Banque : 0.0 M$ | Transferts gratuits restants : 2 | Capitaine dispo : non
 
 ⚠ À CORRIGER SUR LE SITE AVANT LA DEADLINE
   - D.Wolf est titulaire mais BKN ne joue pas le Day 3
   - C.Wilson est titulaire mais CHI ne joue pas le Day 3
 
-Changements depuis le calcul de 16h05 : capitaine : S.Gilgeous-Alexander. Raison probable : pas de nouvelle info : simple écart entre plans presque équivalents.
 Option « transférer dès Day 3 » (seulement 3 titulaire(s) ce jour-là) : Day 3 : D.Wolf (BKN) → T.da Silva (ORL) ; Day 6 : V.Edgecombe (PHI) → T.Jerome (MEM). Points projetés -29 par rapport au plan conseillé, mais avec moins de transferts en réserve pour remplacer un blessé : bilan -22 pts → l'assistant préfère attendre.
 Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait +124 pts sur cette semaine et la suivante, avec 7 joueur(s) changé(s) (T.Maxey (PHI), T.Jerome (MEM), N.Reid (CHA), P.Watson (CLE), C.Johnson (DEN), P.Achiuwa (SAC), K.Ellis (BKN)) → garde-le (seuil conseillé : +150 pts).
 ▶ CINQ DE DÉPART POUR LE PROCHAIN GAMEDAY
@@ -44,12 +43,11 @@ Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait
   Day 3  deadline ven. 23/10 00h30 : S.Gilgeous-Alexander, J.Williams, V.Edgecombe  [~102 pts]
   Day 4  deadline ven. 23/10 21h30 : J.Walsh, C.Wilson, B.Burries, D.Acuff Jr., V.Wembanyama  [~151 pts]
   Day 5  deadline sam. 24/10 23h30 : N.Traore, C.Wilson (B2B), B.Burries (B2B), V.Edgecombe, V.Wembanyama (B2B)  [~151 pts]
-  Day 6  deadline dim. 25/10 21h30 : W.Kessler, S.Gilgeous-Alexander (C), V.Edgecombe (B2B), D.Sabonis, D.Acuff Jr.  [~248 pts]
-  → Garde ton capitaine pour Gameweek 1 - Day 6 (S.Gilgeous-Alexander (OKC)).  [⚪ Au choix (autre jour ≈ pareil) : +0 pts]
+  Day 6  deadline dim. 25/10 21h30 : W.Kessler, S.Gilgeous-Alexander, V.Edgecombe (B2B), D.Sabonis, D.Acuff Jr.  [~193 pts]
 
-Projection Gameweek (jours restants) : ~652 pts  |  sans transfert : ~603 pts
+Projection Gameweek (jours restants) : ~597 pts  |  sans transfert : ~549 pts
 Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) = non utilisé, mon équipe = my-team (connecté, à jour en direct)
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 22/10/2026 à 17:20:07 (code de sortie : 0)
+Terminé le 22/10/2026 à 22:11:00 (code de sortie : 0)
