@@ -1,4 +1,4 @@
-Calcul lancé le 22/10/2026 à 06:45:47
+Calcul lancé le 22/10/2026 à 07:04:18
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
@@ -17,7 +17,7 @@ Optimisation (jusqu'à deux minutes)…
   - J.Williams joue le Day 3 mais est sur ton banc (conseillé titulaire)
   - V.Edgecombe joue le Day 3 mais est sur ton banc (conseillé titulaire)
 
-Changements depuis le calcul de 23h56 : capitaine : L.Doncic. Raison probable : pas de nouvelle info : simple écart entre plans presque équivalents.
+Changements depuis le calcul de 06h46 : capitaine : L.Doncic. Raison probable : pas de nouvelle info : simple écart entre plans presque équivalents.
 ▶ CINQ DE DÉPART POUR LE PROCHAIN GAMEDAY
   BC  S.Gilgeous-Alexander (OKC)   proj. 56.3
   BC  V.Edgecombe (PHI)            proj. 33.2
@@ -27,21 +27,21 @@ Changements depuis le calcul de 23h56 : capitaine : L.Doncic. Raison probable : 
 ▶ TRANSFERTS
   Avant la deadline de Gameweek 1 - Day 4 (ven. 23/10 21h30) :
   - Vendre S.Gilgeous-Alexander (OKC) → Acheter L.Doncic (LAL) (21.0 M$, proj. 64.8)  [🟡 Léger : +13 pts]
-  - Vendre V.Edgecombe (PHI)          → Acheter T.Jerome (MEM) (9.5 M$, proj. 43.3)  [🟡 Léger : +13 pts]
+  - Vendre V.Edgecombe (PHI)          → Acheter T.Jerome (MEM) (9.5 M$, proj. 43.3)  [🟡 Léger : +11 pts]
   Gain attendu (cette semaine + suivante pondérée) : +134 pts vs ne rien faire
   Relance l'assistant avant chaque deadline : le conseil est recalculé avec les dernières blessures.
   Prévu la semaine suivante (indicatif) : Day 4 : V.Wembanyama→J.Johnson ; Day 7 : J.Johnson→J.Tatum
 
 ▶ PLAN JOUR PAR JOUR (cette Gameweek)
   Day 3  deadline ven. 23/10 00h30 : S.Gilgeous-Alexander, J.Williams, V.Edgecombe  [~98 pts]
-  Day 4  deadline ven. 23/10 21h30 : C.Wilson, L.Doncic (C), T.Jerome, D.Acuff Jr., V.Wembanyama  [~251 pts]
+  Day 4  deadline ven. 23/10 21h30 : C.Wilson, L.Doncic, T.Jerome, D.Acuff Jr., V.Wembanyama  [~197 pts]
   Day 5  deadline sam. 24/10 23h30 : N.Traore, D.Wolf, C.Wilson (B2B), B.Burries (B2B), V.Wembanyama (B2B)  [~142 pts]
-  Day 6  deadline dim. 25/10 21h30 : D.Wolf (B2B), L.Doncic, T.Jerome, J.Williams, D.Acuff Jr.  [~156 pts]
-  → Garde ton capitaine pour Gameweek 1 - Day 4 (L.Doncic (LAL)).  [⚪ Au choix (autre jour ≈ pareil) : +0 pts]
+  Day 6  deadline dim. 25/10 21h30 : D.Wolf (B2B), L.Doncic (C), T.Jerome, J.Williams, D.Acuff Jr.  [~210 pts]
+  → Garde ton capitaine pour Gameweek 1 - Day 6 (L.Doncic (LAL)).  [⚪ Au choix (autre jour ≈ pareil) : +0 pts]
 
-Projection Gameweek (jours restants) : ~647 pts  |  sans transfert : ~596 pts
+Projection Gameweek (jours restants) : ~647 pts  |  sans transfert : ~597 pts
 Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) = non utilisé, mon équipe = my-team (connecté, à jour en direct)
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 22/10/2026 à 06:46:29 (code de sortie : 0)
+Terminé le 22/10/2026 à 07:05:00 (code de sortie : 0)
