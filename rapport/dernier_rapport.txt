@@ -1,48 +1,49 @@
-Calcul lancé le 23/10/2026 à 11:31:03
+Calcul lancé le 23/10/2026 à 15:53:33
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
-  (force des conseils : 31 s)
+  (force des conseils : 72 s)
 
 === Gameweek 1 — prochaine deadline : Gameweek 1 - Day 4 le ven. 23/10 21h30 (heure de Paris) ===
 Équipe lue depuis : my-team (connecté, à jour en direct) | Banque : 0.0 M$ | Transferts gratuits restants : 2 | Capitaine dispo : non
 
-Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait +158 pts sur cette semaine et la suivante, avec 7 joueur(s) changé(s) (T.Young (WAS), T.Jerome (MEM), D.Daniels (ATL), Y.Missi (NOP), Y.Lendeborg (GSW), P.Achiuwa (SAC), K.Ellis (BKN)) → ✅ le joker vaut le coup maintenant.
+Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait +162 pts sur cette semaine et la suivante, avec 8 joueur(s) changé(s) (T.Young (WAS), A.Sengun (HOU), T.Jerome (MEM), D.Daniels (ATL), N.Reid (CHA), Y.Missi (NOP), P.Achiuwa (SAC), K.Ellis (BKN)) → ✅ le joker vaut le coup maintenant.
+💭 Ton idée D.Wolf (BKN) → J.Hayes (UTA) (Day 6) : -43 pts projetés par rapport au plan conseillé (bilan -44). J.Hayes : 19.4 pts/match projetés, fiabilité 0.85 ; cette saison 1 match(s) joué(s), 40.0 pts/match en 26 min. Avec, en plus : Day 6 : V.Wembanyama → D.Sabonis.
 ▶ CINQ DE DÉPART POUR LE PROCHAIN GAMEDAY
-  BC  B.Burries (MIL)              proj. 21.2
-  BC  D.Acuff Jr. (SAC)            proj. 34.4
-  FC  J.Walsh (BOS)                proj. 14.9
-  FC  C.Wilson (CHI)               proj. 37.3
-  FC  V.Wembanyama (SAS)           proj. 58.8
+  BC  B.Burries (MIL)              proj. 20.0
+  BC  D.Acuff Jr. (SAC)            proj. 33.4
+  FC  J.Walsh (BOS)                proj. 14.5
+  FC  C.Wilson (CHI)               proj. 36.2
+  FC  V.Wembanyama (SAS)           proj. 57.0
 
 ▶ TRANSFERTS
   Avant la deadline de Gameweek 1 - Day 6 (dim. 25/10 21h30) :
-  - Vendre D.Wolf (BKN)               → Acheter W.Kessler (LAL) (11.0 M$, proj. 38.0)  [⚪ Facultatif : +7 pts]
-  - Vendre V.Wembanyama (SAS)         → Acheter D.Sabonis (SAC) (15.0 M$, proj. 48.7)  [🟡 Léger : +8 pts]
-  Gain attendu (cette semaine + suivante pondérée) : +203 pts vs ne rien faire
+  - Vendre D.Wolf (BKN)               → Acheter W.Kessler (LAL) (11.0 M$, proj. 36.9)  [⚪ Facultatif : +8 pts]
+  - Vendre V.Wembanyama (SAS)         → Acheter D.Sabonis (SAC) (15.0 M$, proj. 47.2)  [🟡 Léger : +9 pts]
+  Gain attendu (cette semaine + suivante pondérée) : +200 pts vs ne rien faire
   Relance l'assistant avant chaque deadline : le conseil est recalculé avec les dernières blessures.
   Prévu la semaine suivante (indicatif) : Day 1 : V.Edgecombe→T.Jerome ; Day 2 : S.Gilgeous-Alexander→L.Doncic
 
 ▶ TES JOUEURS, DU MOINS UTILE AU PLUS UTILE (points attendus ; semaine suivante pondérée × 0.8)
-  D.Wolf (BKN)                  6.5 M$ | 20.1 pts/match, fiabilité 0.52 | cette semaine 2 m.   22 pts | suivante 3 m.   32 pts |  7.2 pts/M$
-  J.Williams (OKC)              6.5 M$ | 17.7 pts/match, fiabilité 0.91 | cette semaine 1 m.   16 pts | suivante 3 m.   49 pts |  8.5 pts/M$
-  S.Gilgeous-Alexander (OKC)   18.5 M$ | 54.3 pts/match, fiabilité 0.97 | cette semaine 1 m.   52 pts | suivante 3 m.  155 pts |  9.5 pts/M$
-  N.Traore (BKN)                6.5 M$ | 18.8 pts/match, fiabilité 0.82 | cette semaine 2 m.   32 pts | suivante 3 m.   46 pts | 10.6 pts/M$
-  J.Walsh (BOS)                 5.0 M$ | 14.9 pts/match, fiabilité 0.91 | cette semaine 1 m.   14 pts | suivante 4 m.   55 pts | 11.5 pts/M$
-  V.Wembanyama (SAS)           19.5 M$ | 58.8 pts/match, fiabilité 0.88 | cette semaine 2 m.  102 pts | suivante 3 m.  154 pts | 11.6 pts/M$
-  V.Edgecombe (PHI)            12.0 M$ | 33.9 pts/match, fiabilité 0.94 | cette semaine 2 m.   64 pts | suivante 3 m.   96 pts | 11.7 pts/M$
-  B.Burries (MIL)               7.0 M$ | 21.2 pts/match, fiabilité 0.91 | cette semaine 2 m.   39 pts | suivante 3 m.   58 pts | 12.2 pts/M$
-  C.Wilson (CHI)               10.5 M$ | 37.3 pts/match, fiabilité 0.91 | cette semaine 2 m.   69 pts | suivante 3 m.  102 pts | 14.3 pts/M$
-  D.Acuff Jr. (SAC)             8.0 M$ | 34.4 pts/match, fiabilité 0.93 | cette semaine 2 m.   64 pts | suivante 3 m.   96 pts | 17.5 pts/M$
+  D.Wolf (BKN)                  6.5 M$ | 17.8 pts/match, fiabilité 0.52 | cette semaine 2 m.   19 pts | suivante 3 m.   28 pts |  6.4 pts/M$
+  J.Williams (OKC)              6.5 M$ | 16.7 pts/match, fiabilité 0.91 | cette semaine 1 m.   15 pts | suivante 3 m.   46 pts |  8.0 pts/M$
+  S.Gilgeous-Alexander (OKC)   18.5 M$ | 52.6 pts/match, fiabilité 0.97 | cette semaine 1 m.   51 pts | suivante 3 m.  150 pts |  9.2 pts/M$
+  N.Traore (BKN)                6.5 M$ | 16.7 pts/match, fiabilité 0.82 | cette semaine 2 m.   28 pts | suivante 3 m.   41 pts |  9.4 pts/M$
+  J.Walsh (BOS)                 5.0 M$ | 14.5 pts/match, fiabilité 0.91 | cette semaine 1 m.   13 pts | suivante 4 m.   53 pts | 11.2 pts/M$
+  V.Wembanyama (SAS)           19.5 M$ | 57.0 pts/match, fiabilité 0.88 | cette semaine 2 m.   99 pts | suivante 3 m.  150 pts | 11.2 pts/M$
+  V.Edgecombe (PHI)            12.0 M$ | 32.9 pts/match, fiabilité 0.94 | cette semaine 2 m.   62 pts | suivante 3 m.   93 pts | 11.3 pts/M$
+  B.Burries (MIL)               7.0 M$ | 20.0 pts/match, fiabilité 0.91 | cette semaine 2 m.   37 pts | suivante 3 m.   55 pts | 11.5 pts/M$
+  C.Wilson (CHI)               10.5 M$ | 36.2 pts/match, fiabilité 0.91 | cette semaine 2 m.   67 pts | suivante 3 m.   99 pts | 13.9 pts/M$
+  D.Acuff Jr. (SAC)             8.0 M$ | 33.4 pts/match, fiabilité 0.93 | cette semaine 2 m.   62 pts | suivante 3 m.   93 pts | 17.0 pts/M$
 
 ▶ PLAN JOUR PAR JOUR (cette Gameweek)
-  Day 4  deadline ven. 23/10 21h30 : J.Walsh, C.Wilson, B.Burries, D.Acuff Jr., V.Wembanyama  [~151 pts]
-  Day 5  deadline sam. 24/10 23h30 : N.Traore, C.Wilson (B2B), B.Burries (B2B), V.Edgecombe, V.Wembanyama (B2B)  [~153 pts]
-  Day 6  deadline dim. 25/10 21h30 : W.Kessler, S.Gilgeous-Alexander, V.Edgecombe (B2B), D.Sabonis, D.Acuff Jr.  [~192 pts]
+  Day 4  deadline ven. 23/10 21h30 : J.Walsh, C.Wilson, B.Burries, D.Acuff Jr., V.Wembanyama  [~146 pts]
+  Day 5  deadline sam. 24/10 23h30 : N.Traore, C.Wilson (B2B), B.Burries (B2B), V.Edgecombe, V.Wembanyama (B2B)  [~146 pts]
+  Day 6  deadline dim. 25/10 21h30 : W.Kessler, S.Gilgeous-Alexander, V.Edgecombe (B2B), D.Sabonis, D.Acuff Jr.  [~186 pts]
 
-Projection Gameweek (jours restants) : ~495 pts  |  sans transfert : ~447 pts
+Projection Gameweek (jours restants) : ~478 pts  |  sans transfert : ~429 pts
 Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) = non utilisé, mon équipe = my-team (connecté, à jour en direct)
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 23/10/2026 à 11:31:43 (code de sortie : 0)
+Terminé le 23/10/2026 à 15:54:56 (code de sortie : 0)
