@@ -3011,7 +3011,7 @@
 "malus_b2b": 1.022,
 "age": 24,
 "b2b_n": 0,
-"rang_poste": 7,
+"rang_poste": 8,
 "poste_espn": "SF",
 "devant": [
 "Cameron Johnson",
@@ -3070,7 +3070,14 @@
 "presence": 1.0,
 "age": 22,
 "presaison_matchs": 5,
-"presaison_min": 13.6
+"presaison_min": 13.6,
+"rang_poste": 7,
+"poste_espn": "SF",
+"devant": [
+"Cameron Johnson",
+"DeMar DeRozan",
+"Julian Strawther"
+]
 },
 "152": {
 "nom": "R.Dixon-Waters",
@@ -3526,11 +3533,12 @@
 "presence": 0.57,
 "age": 31,
 "min_proj": 27.7,
-"rang_poste": 3,
+"rang_poste": 5,
 "poste_espn": "C",
 "devant": [
 "Draymond Green",
-"Al Horford"
+"Al Horford",
+"Charles Bassey"
 ]
 },
 "175": {
@@ -3549,12 +3557,11 @@
 "presence": 0.67,
 "age": 25,
 "min_proj": 11.3,
-"rang_poste": 4,
+"rang_poste": 3,
 "poste_espn": "C",
 "devant": [
 "Draymond Green",
-"Al Horford",
-"Kristaps Porzingis"
+"Al Horford"
 ],
 "presaison_matchs": 6,
 "presaison_min": 16.2
@@ -4175,7 +4182,16 @@
 "b2b_n": 4,
 "b2b_presence": 0.5,
 "presence": 0.31,
-"age": 24
+"age": 24,
+"rang_poste": 5,
+"poste_espn": "PF",
+"devant": [
+"Jabari Smith Jr.",
+"Tari Eason",
+"Jae'Sean Tate"
+],
+"presaison_matchs": 3,
+"presaison_min": 14.0
 },
 "208": {
 "nom": "B.Bogdanovic",
@@ -4877,7 +4893,7 @@
 "b2b_presence": 0.67,
 "presence": 0.7,
 "age": 21,
-"rang_poste": 7,
+"rang_poste": 6,
 "poste_espn": "SG",
 "devant": [
 "Kris Dunn",
@@ -5092,7 +5108,7 @@
 "presence": 0.95,
 "age": 29,
 "min_proj": 35.3,
-"rang_poste": 7,
+"rang_poste": 8,
 "poste_espn": "SF",
 "devant": [
 "Derrick Jones Jr.",
@@ -5283,7 +5299,14 @@
 "age": 25,
 "min_proj": 12.0,
 "presaison_matchs": 4,
-"presaison_min": 12.0
+"presaison_min": 12.0,
+"rang_poste": 7,
+"poste_espn": "SF",
+"devant": [
+"Mikal Bridges",
+"Jordan Clarkson",
+"Josh Hart"
+]
 },
 "262": {
 "nom": "C.Mañon",
@@ -5829,7 +5852,14 @@
 "b2b_n": 12,
 "b2b_presence": 0.83,
 "presence": 0.83,
-"age": 25
+"age": 25,
+"rang_poste": 6,
+"poste_espn": "PF",
+"devant": [
+"Chet Holmgren",
+"Alex Caruso",
+"Kenrich Williams"
+]
 },
 "289": {
 "nom": "J.Grant",
@@ -6416,7 +6446,7 @@
 "b2b_presence": 0.86,
 "presence": 0.72,
 "age": 24,
-"rang_poste": 7,
+"rang_poste": 6,
 "poste_espn": "PG",
 "devant": [
 "Ryan Rollins",
@@ -6866,7 +6896,9 @@
 "source": "selon le prix",
 "malus_b2b": 0.955,
 "age": 26,
-"b2b_n": 0
+"b2b_n": 0,
+"presaison_matchs": 3,
+"presaison_min": 5.7
 },
 "340": {
 "nom": "B.Hyland",
@@ -7539,12 +7571,12 @@
 "b2b_presence": 0.71,
 "presence": 0.64,
 "age": 21,
-"rang_poste": 8,
-"poste_espn": "SG",
+"rang_poste": 4,
+"poste_espn": "PG",
 "devant": [
+"Dejounte Murray",
 "Jeremiah Fears",
-"Bennedict Mathurin",
-"Trey Murphy III"
+"Jordan Poole"
 ],
 "presaison_matchs": 2,
 "presaison_min": 7.5
@@ -7977,7 +8009,13 @@
 "presence": 0.67,
 "age": 25,
 "presaison_matchs": 4,
-"presaison_min": 11.5
+"presaison_min": 11.5,
+"rang_poste": 3,
+"poste_espn": "C",
+"devant": [
+"Karl-Anthony Towns",
+"Andre Drummond"
+]
 },
 "393": {
 "nom": "A.Caruso",
@@ -8693,7 +8731,7 @@
 "malus_b2b": 0.955,
 "age": 26,
 "b2b_n": 0,
-"rang_poste": 5,
+"rang_poste": 4,
 "poste_espn": "C",
 "devant": [
 "Wendell Carter Jr.",
@@ -8728,7 +8766,7 @@
 "malus_b2b": 1.022,
 "age": 23,
 "b2b_n": 0,
-"rang_poste": 4,
+"rang_poste": 5,
 "poste_espn": "C",
 "devant": [
 "Wendell Carter Jr.",
@@ -9469,12 +9507,11 @@
 "b2b_presence": 1.0,
 "presence": 0.72,
 "age": 22,
-"rang_poste": 4,
+"rang_poste": 3,
 "poste_espn": "SF",
 "devant": [
 "Dillon Brooks",
-"Jordan Goodwin",
-"Koa Peat"
+"Jordan Goodwin"
 ],
 "presaison_matchs": 5,
 "presaison_min": 17.6
@@ -9526,10 +9563,10 @@
 "age": 19,
 "b2b_n": 0,
 "rang_poste": 3,
-"poste_espn": "SF",
+"poste_espn": "PF",
 "devant": [
-"Dillon Brooks",
-"Jordan Goodwin"
+"Miles Bridges",
+"Ryan Dunn"
 ],
 "presaison_matchs": 5,
 "presaison_min": 9.8
@@ -9551,7 +9588,7 @@
 "age": 27,
 "min_proj": 29.5,
 "rang_poste": 1,
-"poste_espn": "SG",
+"poste_espn": "PG",
 "devant": [],
 "presaison_matchs": 4,
 "presaison_min": 20.8
@@ -9588,7 +9625,7 @@
 "b2b_presence": 0.67,
 "presence": 0.68,
 "age": 27,
-"rang_poste": 6,
+"rang_poste": 4,
 "poste_espn": "C",
 "devant": [
 "Donovan Clingan",
@@ -9638,9 +9675,9 @@
 "rang_poste": 8,
 "poste_espn": "SG",
 "devant": [
-"Ja Morant",
+"Damian Lillard",
 "Jrue Holiday",
-"Scoot Henderson"
+"Ja Morant"
 ],
 "presaison_matchs": 1,
 "presaison_min": 12.0
@@ -9664,7 +9701,7 @@
 "rang_poste": 2,
 "poste_espn": "SG",
 "devant": [
-"Ja Morant"
+"Damian Lillard"
 ],
 "presaison_matchs": 3,
 "presaison_min": 18.3
@@ -9683,7 +9720,7 @@
 "b2b_n": 0,
 "min_proj": 31.4,
 "rang_poste": 1,
-"poste_espn": "PG",
+"poste_espn": "SG",
 "devant": [],
 "presaison_matchs": 3,
 "presaison_min": 22.7
@@ -9774,10 +9811,9 @@
 "presence": 0.97,
 "age": 22,
 "min_proj": 27.0,
-"rang_poste": 3,
+"rang_poste": 2,
 "poste_espn": "PG",
 "devant": [
-"Damian Lillard",
 "Ja Morant"
 ],
 "presaison_matchs": 4,
@@ -9867,7 +9903,7 @@
 "presence": 0.6,
 "age": 21,
 "min_proj": 12.7,
-"rang_poste": 5,
+"rang_poste": 6,
 "poste_espn": "C",
 "devant": [
 "Donovan Clingan",
@@ -10257,11 +10293,12 @@
 "age": 30,
 "b2b_n": 0,
 "min_proj": 21.2,
-"rang_poste": 3,
+"rang_poste": 4,
 "poste_espn": "PG",
 "devant": [
 "Darius Acuff Jr.",
-"Malik Monk"
+"Malik Monk",
+"Sean Pedulla"
 ],
 "presaison_matchs": 2,
 "presaison_min": 17.5
@@ -11789,6 +11826,6 @@
 "_source": "saison régulière 2025-26 (ESPN), mis à jour le 20/10/2026"
 },
 "roles": {
-"_source": "ESPN (hiérarchie + présaison), mis à jour le 23/10/2026"
+"_source": "ESPN (hiérarchie + présaison), mis à jour le 24/10/2026"
 }
 }
