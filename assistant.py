@@ -835,7 +835,9 @@ def valeurs_equipe(equipe, joueurs, jours, gw_suiv, joue, cfg):
 
 
 def tester_idees(plan, args_plan, base, cfg, joueurs, boot, saison):
-    """Teste les transferts proposés par toi (config "idees" : "Sortant>Entrant@jour") contre le plan conseillé."""
+    """Teste les transferts proposés par toi (config "idees" : "Sortant>Entrant@jour", plusieurs transferts
+    séparés par « + ») contre le plan conseillé. Le reste (autres transferts, semaine suivante, usage de
+    l'argent économisé) est optimisé autour de ton idée."""
     joueurs_, equipe, jours = args_plan[0], args_plan[1], args_plan[6]
     par_nom = {}
     for q, p in joueurs_.items():
@@ -845,15 +847,18 @@ def tester_idees(plan, args_plan, base, cfg, joueurs, boot, saison):
     lignes = []
     for idee in cfg.get("idees", []):
         try:
-            noms, _, jour = idee.partition("@")
-            so_nom, en_nom = (x.strip().lower() for x in noms.split(">"))
-            so = next(q for q in par_nom.get(so_nom, []) if q in equipe)
-            en = next(q for q in par_nom.get(en_nom, []) if q not in equipe)
-            ev = next((e for e in jours if e["name"].endswith(f"Day {jour.strip()}")), jours[0]) if jour else jours[0]
+            forces = []
+            for morceau in idee.split("+"):
+                noms, _, jour = morceau.partition("@")
+                so_nom, en_nom = (x.strip().lower() for x in noms.split(">"))
+                so = next(q for q in par_nom.get(so_nom, []) if q in equipe)
+                en = next(q for q in par_nom.get(en_nom, []) if q not in equipe)
+                ev = next((e for e in jours if e["name"].endswith(f"Day {jour.strip()}")), jours[0]) if jour else jours[0]
+                forces.append((so, en, ev["id"]))
         except (StopIteration, ValueError):
             lignes.append(f"Idée « {idee} » : joueur ou jour introuvable (format : Sortant>Entrant@numéro du jour).")
             continue
-        f = optimiser(*args_plan, transferts=True, assurance=base["assurance"], forcer=[(so, en, ev["id"])])
+        f = optimiser(*args_plan, transferts=True, assurance=base["assurance"], forcer=forces)
         e = elements[en]
         s_ = (saison or {}).get(en) or {}
         stats = (f"{s_.get('joues', 0)} match(s) joué(s), {float(e.get('points_per_game') or 0) / 10:.1f} pts/match"
@@ -862,15 +867,23 @@ def tester_idees(plan, args_plan, base, cfg, joueurs, boot, saison):
             lignes.append(f"Idée {nom(joueurs, so)} → {nom(joueurs, en)} ({ev['name'].split(' - ')[-1]}) : impossible "
                           f"(budget, poste ou 3e joueur de la même équipe).")
             continue
+        imposes_ = {(a, b) for a, b, _ in forces}
         autres = [(e_["name"].split(" - ")[-1], a, b) for e_, so_l, en_l in f["transferts"] for a, b in paires(so_l, en_l, joueurs)
-                  if (a, b) != (so, en)]
+                  if (a, b) not in imposes_]
+        suiv = [(e_["name"].split(" - ")[-1], a, b) for e_, so_l, en_l in f["transferts_suiv"] for a, b in paires(so_l, en_l, joueurs)]
+        titre = " + ".join(f"{nom(joueurs, a)} → {nom(joueurs, b)}" for a, b, _ in forces)
+        banque, prix_vente = args_plan[2], args_plan[3]
+        reste = (banque + sum(prix_vente.get(q, joueurs[q]["prix"]) for q in f["sortants"])
+                 - sum(joueurs[q]["prix"] for q in f["entrants"])) / 10
         lignes.append(
-            f"Ton idée {nom(joueurs, so)} → {nom(joueurs, en)} ({ev['name'].split(' - ')[-1]}) : "
+            f"Ton idée {titre} : "
             f"{pts(f) - pts(plan):+.0f} pts projetés par rapport au plan conseillé (bilan {f['score'] - plan['score']:+.0f}). "
             f"{e['web_name']} : {joueurs[en]['proj']:.1f} pts/match projetés, fiabilité {joueurs[en]['fiabilite']:.2f} ; "
-            f"cette saison {stats}."
+            f"cette saison {stats}. Banque en fin de semaine : {reste:.1f} M$."
             + (" Avec, en plus : " + ", ".join(f"{d} : {nom(joueurs, a, False)} → {nom(joueurs, b, False)}" for d, a, b in autres) + "."
-               if autres else ""))
+               if autres else "")
+            + (" Semaine suivante : " + ", ".join(f"{d} : {nom(joueurs, a, False)} → {nom(joueurs, b, False)}" for d, a, b in suiv) + "."
+               if suiv else ""))
     return lignes
 
 
