@@ -1,8 +1,8 @@
-Calcul lancé le 23/10/2026 à 16:26:02
+Calcul lancé le 23/10/2026 à 17:39:08
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
-  (force des conseils : 96 s)
+  (force des conseils : 123 s)
 
 === Gameweek 1 — prochaine deadline : Gameweek 1 - Day 4 le ven. 23/10 21h30 (heure de Paris) ===
 Équipe lue depuis : my-team (connecté, à jour en direct) | Banque : 0.0 M$ | Transferts gratuits restants : 2 | Capitaine dispo : non
@@ -11,10 +11,10 @@ Optimisation (jusqu'à deux minutes)…
   - Transfert à faire avant cette deadline : S.Gilgeous-Alexander → T.Jerome
 
 Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait +212 pts sur cette semaine et la suivante, avec 8 joueur(s) changé(s) (A.Davis (WAS), T.Young (WAS), T.Jerome (MEM), D.Daniels (ATL), W.Kessler (LAL), Y.Missi (NOP), Y.Lendeborg (GSW), K.Ellis (BKN)) → ✅ le joker vaut le coup maintenant.
-💭 Ton idée D.Wolf (BKN) → O.Toppin (IND) : -35 pts projetés par rapport au plan conseillé (bilan -36). O.Toppin : 21.3 pts/match projetés, fiabilité 0.85 ; cette saison 1 match(s) joué(s), 31.0 pts/match en 24 min. Banque en fin de semaine : 2.5 M$. Avec, en plus : Day 6 : V.Edgecombe → T.Jerome. Semaine suivante : Day 2 : S.Gilgeous-Alexander → L.Doncic, Day 7 : V.Wembanyama → P.Banchero.
-💭 Ton idée D.Wolf (BKN) → O.Toppin (IND) : -34 pts projetés par rapport au plan conseillé (bilan -35). O.Toppin : 21.3 pts/match projetés, fiabilité 0.85 ; cette saison 1 match(s) joué(s), 31.0 pts/match en 24 min. Banque en fin de semaine : 2.5 M$. Avec, en plus : Day 4 : V.Edgecombe → T.Jerome. Semaine suivante : Day 2 : S.Gilgeous-Alexander → L.Doncic, Day 7 : V.Wembanyama → P.Banchero.
-💭 Ton idée D.Wolf (BKN) → J.Hayes (UTA) : -30 pts projetés par rapport au plan conseillé (bilan -39). J.Hayes : 23.8 pts/match projetés, fiabilité 0.85 ; cette saison 1 match(s) joué(s), 40.0 pts/match en 26 min. Banque en fin de semaine : 6.0 M$. Avec, en plus : Day 6 : V.Wembanyama → J.Randle. Semaine suivante : Day 1 : B.Burries → T.Jerome, Day 2 : S.Gilgeous-Alexander → L.Doncic.
-💭 Ton idée D.Wolf (BKN) → J.Hayes (UTA) : -30 pts projetés par rapport au plan conseillé (bilan -39). J.Hayes : 23.8 pts/match projetés, fiabilité 0.85 ; cette saison 1 match(s) joué(s), 40.0 pts/match en 26 min. Banque en fin de semaine : 6.0 M$. Avec, en plus : Day 6 : V.Wembanyama → J.Randle. Semaine suivante : Day 1 : B.Burries → T.Jerome, Day 2 : S.Gilgeous-Alexander → L.Doncic.
+💭 Ton idée D.Wolf (BKN) → O.Toppin (IND) (Day 5) : -35 pts projetés par rapport au plan conseillé (bilan -36). O.Toppin : 21.3 pts/match projetés, fiabilité 0.85 ; cette saison 1 match(s) joué(s), 31.0 pts/match en 24 min. Banque en fin de semaine : 2.5 M$. Avec, en plus : Day 6 : V.Edgecombe → T.Jerome. Semaine suivante : Day 2 : S.Gilgeous-Alexander → L.Doncic, Day 7 : V.Wembanyama → P.Banchero.
+💭 Ton idée D.Wolf (BKN) → O.Toppin (IND) (Day 6) : -34 pts projetés par rapport au plan conseillé (bilan -35). O.Toppin : 21.3 pts/match projetés, fiabilité 0.85 ; cette saison 1 match(s) joué(s), 31.0 pts/match en 24 min. Banque en fin de semaine : 2.5 M$. Avec, en plus : Day 4 : V.Edgecombe → T.Jerome. Semaine suivante : Day 2 : S.Gilgeous-Alexander → L.Doncic, Day 7 : V.Wembanyama → P.Banchero.
+💭 Ton idée D.Wolf (BKN) → J.Hayes (UTA) (Day 5) : -30 pts projetés par rapport au plan conseillé (bilan -39). J.Hayes : 23.8 pts/match projetés, fiabilité 0.85 ; cette saison 1 match(s) joué(s), 40.0 pts/match en 26 min. Banque en fin de semaine : 6.0 M$. Avec, en plus : Day 6 : V.Wembanyama → J.Randle. Semaine suivante : Day 1 : B.Burries → T.Jerome, Day 2 : S.Gilgeous-Alexander → L.Doncic.
+💭 Ton idée D.Wolf (BKN) → J.Hayes (UTA) (Day 6) : -30 pts projetés par rapport au plan conseillé (bilan -39). J.Hayes : 23.8 pts/match projetés, fiabilité 0.85 ; cette saison 1 match(s) joué(s), 40.0 pts/match en 26 min. Banque en fin de semaine : 6.0 M$. Avec, en plus : Day 6 : V.Wembanyama → J.Randle. Semaine suivante : Day 1 : B.Burries → T.Jerome, Day 2 : S.Gilgeous-Alexander → L.Doncic.
 ▶ CINQ DE DÉPART POUR LE PROCHAIN GAMEDAY
   BC  T.Jerome (MEM)               proj. 47.5
   BC  B.Burries (MIL)              proj. 18.9
@@ -44,13 +44,22 @@ Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait
   D.Acuff Jr. (SAC)             8.0 M$ | 33.0 pts/match, fiabilité 0.93 | cette semaine 2 m.   61 pts | suivante 3 m.   92 pts | 16.8 pts/M$
 
 ▶ PLAN JOUR PAR JOUR (cette Gameweek)
-  Day 4  deadline ven. 23/10 21h30 : C.Wilson, T.Jerome, B.Burries, D.Acuff Jr., V.Wembanyama  [~170 pts]
-  Day 5  deadline sam. 24/10 23h30 : J.Randle, C.Wilson (B2B), B.Burries (B2B), V.Edgecombe, V.Wembanyama (B2B)  [~171 pts]
+  Day 4  deadline ven. 23/10 21h30 : C.Wilson, T.Jerome, B.Burries, D.Acuff Jr., V.Wembanyama  [~170 pts] ← après S.Gilgeous-Alexander→T.Jerome
+  Day 5  deadline sam. 24/10 23h30 : J.Randle, C.Wilson (B2B), B.Burries (B2B), V.Edgecombe, V.Wembanyama (B2B)  [~171 pts] ← après D.Wolf→J.Randle
   Day 6  deadline dim. 25/10 21h30 : J.Randle (B2B), T.Jerome, J.Williams, V.Edgecombe (B2B), D.Acuff Jr.  [~158 pts]
+
+▶ SEMAINE SUIVANTE, JOUR PAR JOUR (indicatif, avec les transferts prévus) : 3 place(s) vide(s) au total
+  Day 1  deadline lun. 26/10 23h30 : J.Walsh, C.Wilson, T.Jerome (B2B), B.Burries, J.Williams (B2B)  [~111 pts]
+  Day 2  deadline mer. 28/10 00h00 : J.Walsh (B2B), N.Traore, J.Randle, D.Acuff Jr., V.Wembanyama (C)  [~197 pts]
+  Day 3  deadline mer. 28/10 23h30 : C.Wilson, B.Burries, Y.Missi, V.Edgecombe, V.Wembanyama (B2B)  [~155 pts] ← après J.Williams→Y.Missi
+  Day 4  deadline jeu. 29/10 23h30 : T.Jerome, Y.Missi (B2B), D.Acuff Jr.  (2 place(s) vide(s))  [~100 pts]
+  Day 5  deadline ven. 30/10 23h30 : J.Walsh, N.Traore, J.Randle, C.Wilson, V.Edgecombe  [~128 pts]
+  Day 6  deadline sam. 31/10 19h30 : T.Jerome, Y.Missi, V.Edgecombe (B2B), D.Acuff Jr., V.Wembanyama  [~178 pts]
+  Day 7  deadline dim. 01/11 21h00 : J.Walsh, N.Traore, J.Randle, P.Banchero  (1 place(s) vide(s))  [~112 pts] ← après V.Wembanyama→P.Banchero
 
 Projection Gameweek (jours restants) : ~499 pts  |  sans transfert : ~415 pts
 Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) = non utilisé, mon équipe = my-team (connecté, à jour en direct)
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 23/10/2026 à 16:27:46 (code de sortie : 0)
+Terminé le 23/10/2026 à 17:41:22 (code de sortie : 0)
