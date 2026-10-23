@@ -343,6 +343,8 @@ def rendre(ctx):
   </details>'''
     if suivi.get("joker"):
         chg += f'<p class="discret">🃏 {_e(suivi["joker"])}</p>'
+    if suivi.get("creux"):
+        chg += f'<p class="discret">📅 Jours creux du plan conseillé — {_e(suivi["creux"])}</p>'
     if suivi.get("plein"):
         chg += f'<p class="option">🧩 {_e(suivi["plein"])}</p>'
     for l in suivi.get("idees", []):

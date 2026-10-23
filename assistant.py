@@ -884,6 +884,10 @@ def tester_idees(plan, args_plan, base, cfg, joueurs, boot, saison):
         banque, prix_vente = args_plan[2], args_plan[3]
         reste = (banque + sum(prix_vente.get(q, joueurs[q]["prix"]) for q in f["sortants"])
                  - sum(joueurs[q]["prix"] for q in f["entrants"])) / 10
+        try:
+            creux_txt = creux(f, joueurs, args_plan[7], boot, args_plan[8])
+        except Exception as ex:
+            creux_txt = f"non calculés ({ex.__class__.__name__})"
         lignes.append(
             f"Ton idée {titre} : "
             f"{pts(f) - pts(plan):+.0f} pts projetés par rapport au plan conseillé (bilan {f['score'] - plan['score']:+.0f}). "
@@ -892,7 +896,8 @@ def tester_idees(plan, args_plan, base, cfg, joueurs, boot, saison):
             + (" Avec, en plus : " + ", ".join(f"{d} : {nom(joueurs, a, False)} → {nom(joueurs, b, False)}" for d, a, b in autres) + "."
                if autres else "")
             + (" Semaine suivante : " + ", ".join(f"{d} : {nom(joueurs, a, False)} → {nom(joueurs, b, False)}" for d, a, b in suiv) + "."
-               if suiv else ""))
+               if suiv else "")
+            + f" Jours creux — {creux_txt}.")
     return lignes
 
 
@@ -915,6 +920,31 @@ def option_plein(plan, args_plan, base, cfg, joueurs):
             + (f" (dont {f['hits'] + f['hits2']} transfert(s) payant(s) à -100 pts)" if f["hits"] + f["hits2"] else "")
             + f". Semaine suivante {pts2(f) - pts2(plan):+.0f} pts, au total {pts(f) - pts(plan):+.0f} pts "
             f"par rapport au plan conseillé (cette semaine + suivante pondérée).")
+
+
+def creux(r, joueurs, joue, boot, gw_suiv):
+    """Jours creux d'un plan : places vides de la semaine suivante (plan jour par jour), puis, pour la
+    semaine d'après (calendrier seulement, effectif final sans nouveau transfert), le nombre de joueurs
+    qui jouent chaque jour et les places qu'on ne pourra pas remplir (5 titulaires, 3 max par poste)."""
+    vides2 = [(jp["event"]["name"].split(" - ")[-1], 5 - len(jp["titulaires"])) for jp in r.get("plan2") or []
+              if len(jp["titulaires"]) < 5]
+    txt = ("semaine suivante : " + (", ".join(f"{d} {v} vide(s)" for d, v in vides2) if vides2 else "aucune place vide"))
+    if not gw_suiv:
+        return txt
+    gw3 = next((p for p in boot["phases"] if p["name"].lower().startswith("gameweek")
+                and p["start_event"] == gw_suiv["stop_event"] + 1), None)
+    if not gw3:
+        return txt
+    final = (r["plan2"][-1]["effectif"] if r.get("plan2") else r["final"])
+    jours3, total_vides, matchs = [], 0, 0
+    for ev in range(gw3["start_event"], gw3["stop_event"] + 1):
+        jouent = [q for q in final if ev in joue.get(joueurs[q]["equipe_id"], ())]
+        matchs += len(jouent)
+        possibles = min(5, min(3, sum(joueurs[q]["poste"] == 1 for q in jouent)) + min(3, sum(joueurs[q]["poste"] == 2 for q in jouent)))
+        total_vides += 5 - possibles
+        jours3.append(f"{len(jouent)}")
+    return (txt + f" | semaine d'après ({gw3['name']}, sans transfert) : {matchs} matchs pour ton effectif, "
+            f"{total_vides} place(s) vide(s) ; joueurs dispo par jour : {'-'.join(jours3)}")
 
 
 def quand_txt(ev):
@@ -1104,6 +1134,8 @@ def rapport(joueurs, equipe, banque, gratuits, cap_dispo, gw, jours, joue, match
         P(suivi["maintenant"])
     if suivi.get("joker"):
         P(suivi["joker"])
+    if suivi.get("creux"):
+        P("📅 Jours creux du plan conseillé — " + suivi["creux"])
     if suivi.get("plein"):
         P("🧩 " + suivi["plein"])
     for l in suivi.get("idees", []):
@@ -1262,6 +1294,11 @@ def main():
     except Exception as ex:
         print(f"  (projections non enregistrées : {ex!r})")
     try:
+        creux_txt = creux(plan, joueurs, joue, boot, gw_suiv)
+    except Exception as ex:
+        creux_txt = ""
+        print(f"  (jours creux non calculés : {ex!r})")
+    try:
         plein_txt = "" if construction else option_plein(plan, args_plan, base, cfg, joueurs)
     except Exception as ex:
         plein_txt = ""
@@ -1283,7 +1320,8 @@ def main():
         print(f"  (option « transférer maintenant » non calculée : {ex!r})")
     alertes, a_verifier, note_alertes = alertes_equipe(mt, plan, joueurs, joue)
     suivi = dict(forces=forces, alertes=alertes, a_verifier=a_verifier, note_alertes=note_alertes, stabilite=stabilite,
-                 maintenant=maintenant_txt, joker=joker_txt, idees=idees, plein=plein_txt, poids_futur=cfg["poids_futur"],
+                 maintenant=maintenant_txt, joker=joker_txt, idees=idees, plein=plein_txt,
+                 creux=creux_txt, poids_futur=cfg["poids_futur"],
                  valeurs=valeurs_equipe(equipe, joueurs, jours, gw_suiv, joue, cfg),
                  changements=changements(prec, plan, joueurs, boot, gw), source_equipe=src_equipe)
     print(f"  (force des conseils : {(dt.datetime.now() - t_force).seconds} s)")
