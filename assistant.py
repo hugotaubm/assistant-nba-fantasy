@@ -54,6 +54,7 @@ def lire_config():
     cfg.setdefault("poids_minutes_avant_saison", 3)    # matchs « fictifs » donnés aux minutes projetées
     cfg.setdefault("fiabilite_rang", {"3": 0.9, "4+": 0.75})   # 3e ou au-delà dans la hiérarchie de son poste
     cfg.setdefault("seuil_joker", 150)          # gain (pts, semaine + suivante pondérée) à partir duquel le joker vaut le coup
+    cfg.setdefault("idees", [])                 # tes idées à tester, ex. "D.Wolf>J.Hayes@6" (vendre>acheter@jour)
     cfg.setdefault("calibration_auto", True)    # corrige les projections avec leurs erreurs passées (bilan.py)
     cfg.setdefault("seuil_changement_plan", 5)  # pts mini pour changer un transfert déjà conseillé
     cfg.setdefault("force_fort", 25)            # badge 🟢 Fort à partir de ce gain (pts)
@@ -827,6 +828,46 @@ def valeurs_equipe(equipe, joueurs, jours, gw_suiv, joue, cfg):
     return sorted(lignes, key=lambda l: l["par_m"])
 
 
+def tester_idees(plan, args_plan, base, cfg, joueurs, boot, saison):
+    """Teste les transferts proposés par toi (config "idees" : "Sortant>Entrant@jour") contre le plan conseillé."""
+    joueurs_, equipe, jours = args_plan[0], args_plan[1], args_plan[6]
+    par_nom = {}
+    for q, p in joueurs_.items():
+        par_nom.setdefault(p["nom"].lower(), []).append(q)
+    elements = {e["id"]: e for e in boot["elements"]}
+    pts = lambda r: r["pts_semaine"] + cfg["poids_futur"] * sum(jp["points"] for jp in r["plan2"]) - 100 * r["hits"]
+    lignes = []
+    for idee in cfg.get("idees", []):
+        try:
+            noms, _, jour = idee.partition("@")
+            so_nom, en_nom = (x.strip().lower() for x in noms.split(">"))
+            so = next(q for q in par_nom.get(so_nom, []) if q in equipe)
+            en = next(q for q in par_nom.get(en_nom, []) if q not in equipe)
+            ev = next((e for e in jours if e["name"].endswith(f"Day {jour.strip()}")), jours[0]) if jour else jours[0]
+        except (StopIteration, ValueError):
+            lignes.append(f"Idée « {idee} » : joueur ou jour introuvable (format : Sortant>Entrant@numéro du jour).")
+            continue
+        f = optimiser(*args_plan, transferts=True, assurance=base["assurance"], forcer=[(so, en, ev["id"])])
+        e = elements[en]
+        s_ = (saison or {}).get(en) or {}
+        stats = (f"{s_.get('joues', 0)} match(s) joué(s), {float(e.get('points_per_game') or 0) / 10:.1f} pts/match"
+                 + (f" en {s_['minutes'] / s_['joues']:.0f} min" if s_.get("joues") else ""))
+        if not f:
+            lignes.append(f"Idée {nom(joueurs, so)} → {nom(joueurs, en)} ({ev['name'].split(' - ')[-1]}) : impossible "
+                          f"(budget, poste ou 3e joueur de la même équipe).")
+            continue
+        autres = [(e_["name"].split(" - ")[-1], a, b) for e_, so_l, en_l in f["transferts"] for a, b in paires(so_l, en_l, joueurs)
+                  if (a, b) != (so, en)]
+        lignes.append(
+            f"Ton idée {nom(joueurs, so)} → {nom(joueurs, en)} ({ev['name'].split(' - ')[-1]}) : "
+            f"{pts(f) - pts(plan):+.0f} pts projetés par rapport au plan conseillé (bilan {f['score'] - plan['score']:+.0f}). "
+            f"{e['web_name']} : {joueurs[en]['proj']:.1f} pts/match projetés, fiabilité {joueurs[en]['fiabilite']:.2f} ; "
+            f"cette saison {stats}."
+            + (" Avec, en plus : " + ", ".join(f"{d} : {nom(joueurs, a, False)} → {nom(joueurs, b, False)}" for d, a, b in autres) + "."
+               if autres else ""))
+    return lignes
+
+
 def quand_txt(ev):
     """« ce soir » si la deadline tombe aujourd'hui (heure de Paris), sinon « le Day N »."""
     d = z(ev["deadline_time"]).astimezone(PARIS).date()
@@ -1014,6 +1055,8 @@ def rapport(joueurs, equipe, banque, gratuits, cap_dispo, gw, jours, joue, match
         P(suivi["maintenant"])
     if suivi.get("joker"):
         P(suivi["joker"])
+    for l in suivi.get("idees", []):
+        P("💭 " + l)
     alertes = [pid for pid in equipe if joueurs[pid]["dispo"] < 1 or joueurs[pid]["news"]]
     if alertes:
         P("⚠ ALERTES")
@@ -1154,6 +1197,11 @@ def main():
         enregistrer_projections(jours[0], joueurs, joue)
     except Exception as ex:
         print(f"  (projections non enregistrées : {ex!r})")
+    try:
+        idees = tester_idees(plan, args_plan, base, cfg, joueurs, boot, saison)
+    except Exception as ex:
+        idees = []
+        print(f"  (idées non testées : {ex!r})")
     try:   # simple éclairage : ne doit jamais faire échouer le calcul
         joker_txt = "" if construction else option_joker(plan, args_plan, base, cfg, joueurs)
     except Exception as ex:
@@ -1166,7 +1214,7 @@ def main():
         print(f"  (option « transférer maintenant » non calculée : {ex!r})")
     alertes, a_verifier, note_alertes = alertes_equipe(mt, plan, joueurs, joue)
     suivi = dict(forces=forces, alertes=alertes, a_verifier=a_verifier, note_alertes=note_alertes, stabilite=stabilite,
-                 maintenant=maintenant_txt, joker=joker_txt, poids_futur=cfg["poids_futur"],
+                 maintenant=maintenant_txt, joker=joker_txt, idees=idees, poids_futur=cfg["poids_futur"],
                  valeurs=valeurs_equipe(equipe, joueurs, jours, gw_suiv, joue, cfg),
                  changements=changements(prec, plan, joueurs, boot, gw), source_equipe=src_equipe)
     print(f"  (force des conseils : {(dt.datetime.now() - t_force).seconds} s)")

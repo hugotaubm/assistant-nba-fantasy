@@ -28,6 +28,7 @@
   "ajustements": {},
   "imposer_au_depart": ["V.Wembanyama"],
   "malus_back_to_back": 0.92,
+  "idees": ["D.Wolf>J.Hayes@6"],
   "seuil_changement_plan": 5,
   "force_fort": 25,
   "force_leger": 8,
