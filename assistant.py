@@ -544,7 +544,7 @@ def mon_equipe(mt, cfg, joueurs, boot, gw):
 # ----------------------------------------------------------------------------- optimisation
 def optimiser(joueurs, equipe, banque, prix_vente, gratuits, cap_dispo, jours, joue, gw_suiv, cfg,
               transferts=True, libre=False, assurance=None, interdits=(), forcer=(), jours_transfert=None,
-              entree_jour0=False, joker=False):
+              entree_jour0=False, joker=False, plein_suiv=False):
     """Plan jour par jour sur la Gameweek en cours + la suivante (pondérée par poids_futur).
 
     Variables : effectif de chaque jour (s), entrées (in), titulaires (y), capitaine (c).
@@ -555,6 +555,7 @@ def optimiser(joueurs, equipe, banque, prix_vente, gratuits, cap_dispo, jours, j
     interdits : joueurs qu'on s'interdit d'acheter cette semaine (mesure de la force d'un conseil).
     forcer : [(sortant, entrant, id_event)] transferts imposés (stabilité du conseil d'un calcul à l'autre).
     entree_jour0 : impose au moins un transfert avant la prochaine deadline (voir option_maintenant).
+    plein_suiv=True : 5 titulaires imposés chaque jour de la semaine suivante (voir option_plein).
     joker=True (avec libre=True) : équipe refaite avant la prochaine deadline avec ton vrai budget
     (valeur de revente + banque), sans joueur imposé (voir option_joker).
     assurance : {id_event: [V1, V2, …]} = valeur, à partir de ce jour, d'avoir encore au moins 1, 2, …
@@ -676,7 +677,7 @@ def optimiser(joueurs, equipe, banque, prix_vente, gratuits, cap_dispo, jours, j
             row({idx[("y", i, d)]: 1, idx[("s", i, d)]: -1}, -np.inf, 0)
             row({idx[("c", i, d)]: 1, idx[("y", i, d)]: -1}, -np.inf, 0)
         if ys:
-            row({idx[("y", i, d)]: 1 for i in ys}, 0, 5)
+            row({idx[("y", i, d)]: 1 for i in ys}, 5 if (plein_suiv and sem[d] == 1) else 0, 5)
             for pos in (1, 2):
                 row({idx[("y", i, d)]: 1 for i in ys if cand[i]["poste"] == pos}, 0, 3)
     for w in set(sem):   # un capitaine par Gameweek
@@ -888,6 +889,27 @@ def tester_idees(plan, args_plan, base, cfg, joueurs, boot, saison):
     return lignes
 
 
+def option_plein(plan, args_plan, base, cfg, joueurs):
+    """Si la semaine suivante a des places vides : le meilleur plan qui les comble toutes (5 titulaires
+    chaque jour), avec les mêmes transferts disponibles, comparé au plan conseillé."""
+    vides = sum(5 - len(jp["titulaires"]) for jp in plan.get("plan2") or [])
+    if not vides:
+        return ""
+    f = optimiser(*args_plan, transferts=True, assurance=base["assurance"], plein_suiv=True)
+    if not f:
+        return (f"Combler les {vides} place(s) vide(s) de la semaine suivante : impossible avec tes transferts "
+                f"(pas assez de joueurs qui jouent ces jours-là dans ton budget).")
+    pts = lambda r: r["pts_semaine"] + cfg["poids_futur"] * sum(jp["points"] for jp in r["plan2"]) - 100 * r["hits"]
+    tr = lambda r: " ; ".join(f"{e_['name'].split(' - ')[-1]} : " + ", ".join(
+        f"{nom(joueurs, a, False)} → {nom(joueurs, b, False)}" for a, b in paires(so, en, joueurs))
+        for e_, so, en in r["transferts"] + r["transferts_suiv"])
+    pts2 = lambda r: sum(jp["points"] for jp in r["plan2"])
+    return (f"Combler les {vides} place(s) vide(s) de la semaine suivante est possible : {tr(f)}"
+            + (f" (dont {f['hits']} transfert(s) payant(s))" if f["hits"] else "")
+            + f". Semaine suivante {pts2(f) - pts2(plan):+.0f} pts, au total {pts(f) - pts(plan):+.0f} pts "
+            f"par rapport au plan conseillé (cette semaine + suivante pondérée).")
+
+
 def quand_txt(ev):
     """« ce soir » si la deadline tombe aujourd'hui (heure de Paris), sinon « le Day N »."""
     d = z(ev["deadline_time"]).astimezone(PARIS).date()
@@ -1075,6 +1097,8 @@ def rapport(joueurs, equipe, banque, gratuits, cap_dispo, gw, jours, joue, match
         P(suivi["maintenant"])
     if suivi.get("joker"):
         P(suivi["joker"])
+    if suivi.get("plein"):
+        P("🧩 " + suivi["plein"])
     for l in suivi.get("idees", []):
         P("💭 " + l)
     alertes = [pid for pid in equipe if joueurs[pid]["dispo"] < 1 or joueurs[pid]["news"]]
@@ -1231,6 +1255,11 @@ def main():
     except Exception as ex:
         print(f"  (projections non enregistrées : {ex!r})")
     try:
+        plein_txt = "" if construction else option_plein(plan, args_plan, base, cfg, joueurs)
+    except Exception as ex:
+        plein_txt = ""
+        print(f"  (option « places vides » non calculée : {ex!r})")
+    try:
         idees = tester_idees(plan, args_plan, base, cfg, joueurs, boot, saison)
     except Exception as ex:
         idees = []
@@ -1247,7 +1276,7 @@ def main():
         print(f"  (option « transférer maintenant » non calculée : {ex!r})")
     alertes, a_verifier, note_alertes = alertes_equipe(mt, plan, joueurs, joue)
     suivi = dict(forces=forces, alertes=alertes, a_verifier=a_verifier, note_alertes=note_alertes, stabilite=stabilite,
-                 maintenant=maintenant_txt, joker=joker_txt, idees=idees, poids_futur=cfg["poids_futur"],
+                 maintenant=maintenant_txt, joker=joker_txt, idees=idees, plein=plein_txt, poids_futur=cfg["poids_futur"],
                  valeurs=valeurs_equipe(equipe, joueurs, jours, gw_suiv, joue, cfg),
                  changements=changements(prec, plan, joueurs, boot, gw), source_equipe=src_equipe)
     print(f"  (force des conseils : {(dt.datetime.now() - t_force).seconds} s)")
