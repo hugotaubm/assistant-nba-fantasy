@@ -871,7 +871,8 @@ def tester_idees(plan, args_plan, base, cfg, joueurs, boot, saison):
         autres = [(e_["name"].split(" - ")[-1], a, b) for e_, so_l, en_l in f["transferts"] for a, b in paires(so_l, en_l, joueurs)
                   if (a, b) not in imposes_]
         suiv = [(e_["name"].split(" - ")[-1], a, b) for e_, so_l, en_l in f["transferts_suiv"] for a, b in paires(so_l, en_l, joueurs)]
-        titre = " + ".join(f"{nom(joueurs, a)} → {nom(joueurs, b)}" for a, b, _ in forces)
+        nom_jour = {e_["id"]: e_["name"].split(" - ")[-1] for e_ in jours}
+        titre = " + ".join(f"{nom(joueurs, a)} → {nom(joueurs, b)} ({nom_jour[ev_]})" for a, b, ev_ in forces)
         banque, prix_vente = args_plan[2], args_plan[3]
         reste = (banque + sum(prix_vente.get(q, joueurs[q]["prix"]) for q in f["sortants"])
                  - sum(joueurs[q]["prix"] for q in f["entrants"])) / 10
