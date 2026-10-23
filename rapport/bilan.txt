@@ -44,13 +44,13 @@ Par prix :
   < 7 M$                  10 matchs | 0 min :  4 | biais  -2.4 | réel/projeté 0.89 | minutes 16.8
   ≥ 15 M$                 27 matchs | 0 min :  0 | biais  -2.9 | réel/projeté 0.94 | minutes 31.4
 Par rang dans la hiérarchie ESPN (1 = titulaire) :
-  rang 1                 135 matchs | 0 min :  8 | biais  -2.2 | réel/projeté 0.94 | minutes 28.9
-  rang 2                  69 matchs | 0 min :  8 | biais  -5.0 | réel/projeté 0.80 | minutes 20.2
-  rang 3                  16 matchs | 0 min :  6 | biais  -7.0 | réel/projeté 0.71 | minutes 16.4
+  rang 1                 134 matchs | 0 min :  7 | biais  -2.2 | réel/projeté 0.94 | minutes 28.9
+  rang 2                  70 matchs | 0 min :  9 | biais  -4.9 | réel/projeté 0.81 | minutes 20.2
+  rang 3                  16 matchs | 0 min :  6 | biais  -8.2 | réel/projeté 0.67 | minutes 16.3
   rang 4                   2 matchs | 0 min :  0 | biais  +1.6 | réel/projeté 1.07 | minutes 20.5
   rang inconnu             5 matchs | 0 min :  3 | biais  -7.4 | réel/projeté 0.75 | minutes 21.0
 Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : 33 sur 235
-  - B.Ingram (LAC) (event 2) : projeté 41.2, statut actuel i, news : Achilles expected back 2026-11-08
+  - B.Ingram (LAC) (event 2) : projeté 41.2, statut actuel i, news : Heel expected back 2026-11-08
   - J.Butler (GSW) (event 2) : projeté 40.1, statut actuel i, news : Knee expected back 2027-01-02
   - K.Porter Jr. (MIL) (event 2) : projeté 38.5, statut actuel u, news : -
   - K.Porzingis (GSW) (event 2) : projeté 35.9, statut actuel i, news : Illness expected back 2026-12-01
@@ -61,7 +61,7 @@ Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : 33 sur 235
   - B.Podziemski (GSW) (event 2) : projeté 31.9, statut actuel i, news : Back expected back 2026-10-23
   - N.Claxton (CHI) (event 2) : projeté 31.3, statut actuel i, news : Hamstring expected back 2026-11-04
   - A.Black (ORL) (event 2) : projeté 31.3, statut actuel i, news : Ankle expected back 2026-10-25
-  - C.Sexton (LAL) (event 2) : projeté 30.3, statut actuel i, news : Calf expected back 2026-10-23
+  - C.Sexton (LAL) (event 2) : projeté 30.3, statut actuel a, news : -
 Plus grosses surestimations :
   - J.Giddey (CHI) (event 2) : projeté 51.5, réel 21.0 en 24 min
   - N.Vucevic (ORL) (event 2) : projeté 31.4, réel 3.0 en 5 min
