@@ -1,8 +1,8 @@
-Calcul lancé le 23/10/2026 à 19:11:01
+Calcul lancé le 23/10/2026 à 19:18:33
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
-  (force des conseils : 126 s)
+  (force des conseils : 111 s)
 
 === Gameweek 1 — prochaine deadline : Gameweek 1 - Day 4 le ven. 23/10 21h30 (heure de Paris) ===
 Équipe lue depuis : my-team (connecté, à jour en direct) | Banque : 0.0 M$ | Transferts gratuits restants : 2 | Capitaine dispo : non
@@ -11,11 +11,9 @@ Optimisation (jusqu'à deux minutes)…
   - Transfert à faire avant cette deadline : S.Gilgeous-Alexander → T.Jerome
 
 Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait +212 pts sur cette semaine et la suivante, avec 8 joueur(s) changé(s) (A.Davis (WAS), T.Young (WAS), T.Jerome (MEM), D.Daniels (ATL), W.Kessler (LAL), Y.Missi (NOP), Y.Lendeborg (GSW), K.Ellis (BKN)) → ✅ le joker vaut le coup maintenant.
+📅 Jours creux du plan conseillé — semaine suivante : Day 4 2 vide(s), Day 7 1 vide(s) | semaine d'après (Gameweek 3, sans transfert) : 37 matchs pour ton effectif, 6 place(s) vide(s) ; joueurs dispo par jour : 10-9-1-6-3-8
 🧩 Combler les 3 place(s) vide(s) de la semaine suivante est possible : Day 4 : S.Gilgeous-Alexander → T.Jerome, J.Williams → P.Banchero ; Day 1 : V.Edgecombe → D.Daniels ; Day 4 : C.Wilson → Y.Missi, V.Wembanyama → D.Sabonis ; Day 5 : B.Burries → A.Reaves (dont 2 transfert(s) payant(s) à -100 pts). Semaine suivante +79 pts, au total -102 pts par rapport au plan conseillé (cette semaine + suivante pondérée).
-💭 Ton idée D.Wolf (BKN) → W.Kessler (LAL) (Day 6) + V.Wembanyama (SAS) → D.Sabonis (SAC) (Day 6) : -4 pts projetés par rapport au plan conseillé (bilan -12). D.Sabonis : 47.3 pts/match projetés, fiabilité 0.89 ; cette saison 1 match(s) joué(s), 51.0 pts/match en 33 min. Banque en fin de semaine : 0.0 M$. Semaine suivante : Day 1 : V.Edgecombe → T.Jerome, Day 2 : S.Gilgeous-Alexander → L.Doncic.
-💭 Ton idée D.Wolf (BKN) → W.Kessler (LAL) (Day 6) : -4 pts projetés par rapport au plan conseillé (bilan -12). W.Kessler : 37.4 pts/match projetés, fiabilité 0.85 ; cette saison 1 match(s) joué(s), 43.0 pts/match en 29 min. Banque en fin de semaine : 0.0 M$. Avec, en plus : Day 6 : V.Wembanyama → D.Sabonis. Semaine suivante : Day 1 : V.Edgecombe → T.Jerome, Day 2 : S.Gilgeous-Alexander → L.Doncic.
-💭 Ton idée D.Wolf (BKN) → O.Toppin (IND) (Day 5) : -35 pts projetés par rapport au plan conseillé (bilan -36). O.Toppin : 21.3 pts/match projetés, fiabilité 0.85 ; cette saison 1 match(s) joué(s), 31.0 pts/match en 24 min. Banque en fin de semaine : 2.5 M$. Avec, en plus : Day 6 : V.Edgecombe → T.Jerome. Semaine suivante : Day 2 : S.Gilgeous-Alexander → L.Doncic, Day 7 : V.Wembanyama → P.Banchero.
-💭 Ton idée D.Wolf (BKN) → J.Hayes (UTA) (Day 6) : -30 pts projetés par rapport au plan conseillé (bilan -39). J.Hayes : 23.8 pts/match projetés, fiabilité 0.85 ; cette saison 1 match(s) joué(s), 40.0 pts/match en 26 min. Banque en fin de semaine : 6.0 M$. Avec, en plus : Day 6 : V.Wembanyama → J.Randle. Semaine suivante : Day 1 : B.Burries → T.Jerome, Day 2 : S.Gilgeous-Alexander → L.Doncic.
+💭 Ton idée D.Wolf (BKN) → W.Kessler (LAL) (Day 6) + V.Wembanyama (SAS) → D.Sabonis (SAC) (Day 6) : -4 pts projetés par rapport au plan conseillé (bilan -12). D.Sabonis : 47.3 pts/match projetés, fiabilité 0.89 ; cette saison 1 match(s) joué(s), 51.0 pts/match en 33 min. Banque en fin de semaine : 0.0 M$. Semaine suivante : Day 1 : V.Edgecombe → T.Jerome, Day 2 : S.Gilgeous-Alexander → L.Doncic. Jours creux — semaine suivante : Day 4 2 vide(s), Day 7 1 vide(s) | semaine d'après (Gameweek 3, sans transfert) : 38 matchs pour ton effectif, 8 place(s) vide(s) ; joueurs dispo par jour : 10-10-0-8-2-8.
 ▶ CINQ DE DÉPART POUR LE PROCHAIN GAMEDAY
   BC  T.Jerome (MEM)               proj. 47.5
   BC  B.Burries (MIL)              proj. 18.9
@@ -63,4 +61,4 @@ Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) 
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 23/10/2026 à 19:13:17 (code de sortie : 0)
+Terminé le 23/10/2026 à 19:20:34 (code de sortie : 0)
