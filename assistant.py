@@ -1121,12 +1121,25 @@ def rapport(joueurs, equipe, banque, gratuits, cap_dispo, gw, jours, joue, match
               f"cette semaine {l['n1']} m. {l['pts1']:4.0f} pts | suivante {l['n2']} m. {l['pts2']:4.0f} pts | "
               f"{l['par_m']:4.1f} pts/M$")
         P("")
-    P("▶ PLAN JOUR PAR JOUR (cette Gameweek)")
-    for jp in plan["plan"]:
+    def ligne_jour(jp):
         e = jp["event"]
         noms = [nom(joueurs, q, False) + (" (C)" if q == jp["capitaine"] else "")
                 + (" (B2B)" if (joueurs[q]["equipe_id"], e["id"]) in B2B else "") for q in jp["titulaires"]]
-        P(f"  {e['name'].split('-')[-1].strip():<6} deadline {paris(z(e['deadline_time']))} : {', '.join(noms) or '—'}  [~{jp['points']:.0f} pts]")
+        vides = 5 - len(jp["titulaires"])
+        entres = (" ← après " + ", ".join(f"{nom(joueurs, a, False)}→{nom(joueurs, b, False)}"
+                                          for a, b in paires(jp["sortants"], jp["entrants"], joueurs))) if jp["entrants"] else ""
+        P(f"  {e['name'].split('-')[-1].strip():<6} deadline {paris(z(e['deadline_time']))} : {', '.join(noms) or '—'}"
+          f"{f'  ({vides} place(s) vide(s))' if vides else ''}  [~{jp['points']:.0f} pts]{entres}")
+
+    P("▶ PLAN JOUR PAR JOUR (cette Gameweek)")
+    for jp in plan["plan"]:
+        ligne_jour(jp)
+    if plan.get("plan2"):
+        vides = sum(5 - len(jp["titulaires"]) for jp in plan["plan2"])
+        P("")
+        P(f"▶ SEMAINE SUIVANTE, JOUR PAR JOUR (indicatif, avec les transferts prévus) : {vides} place(s) vide(s) au total")
+        for jp in plan["plan2"]:
+            ligne_jour(jp)
     cap_jour = next((jp for jp in plan["plan"] if jp["capitaine"]), None)
     if cap_jour and cap_jour is not j0:
         f = forces.get("capitaine")
