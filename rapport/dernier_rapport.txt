@@ -1,4 +1,4 @@
-Calcul lancé le 23/10/2026 à 06:41:54
+Calcul lancé le 23/10/2026 à 07:37:17
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
@@ -6,16 +6,6 @@ Optimisation (jusqu'à deux minutes)…
 
 === Gameweek 1 — prochaine deadline : Gameweek 1 - Day 4 le ven. 23/10 21h30 (heure de Paris) ===
 Équipe lue depuis : my-team (connecté, à jour en direct) | Banque : 0.0 M$ | Transferts gratuits restants : 2 | Capitaine dispo : non
-
-⚠ À CORRIGER SUR LE SITE AVANT LA DEADLINE
-  - S.Gilgeous-Alexander est titulaire mais OKC ne joue pas ce soir
-  - V.Edgecombe est titulaire mais PHI ne joue pas ce soir
-  - J.Williams est titulaire mais OKC ne joue pas ce soir
-  - D.Wolf est titulaire mais BKN ne joue pas ce soir
-  - J.Walsh joue ce soir mais est sur ton banc (conseillé titulaire)
-  - B.Burries joue ce soir mais est sur ton banc (conseillé titulaire)
-  - D.Acuff Jr. joue ce soir mais est sur ton banc (conseillé titulaire)
-  - V.Wembanyama joue ce soir mais est sur ton banc (conseillé titulaire)
 
 Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait +158 pts sur cette semaine et la suivante, avec 7 joueur(s) changé(s) (T.Young (WAS), T.Jerome (MEM), D.Daniels (ATL), Y.Missi (NOP), Y.Lendeborg (GSW), P.Achiuwa (SAC), K.Ellis (BKN)) → ✅ le joker vaut le coup maintenant.
 ▶ CINQ DE DÉPART POUR LE PROCHAIN GAMEDAY
@@ -55,4 +45,4 @@ Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) 
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 23/10/2026 à 06:42:55 (code de sortie : 0)
+Terminé le 23/10/2026 à 07:38:19 (code de sortie : 0)
