@@ -1,8 +1,8 @@
-Calcul lancé le 23/10/2026 à 16:01:38
+Calcul lancé le 23/10/2026 à 16:15:16
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
-  (force des conseils : 105 s)
+  (force des conseils : 113 s)
 
 === Gameweek 1 — prochaine deadline : Gameweek 1 - Day 4 le ven. 23/10 21h30 (heure de Paris) ===
 Équipe lue depuis : my-team (connecté, à jour en direct) | Banque : 0.0 M$ | Transferts gratuits restants : 2 | Capitaine dispo : non
@@ -10,9 +10,10 @@ Optimisation (jusqu'à deux minutes)…
 ⚠ À CORRIGER SUR LE SITE AVANT LA DEADLINE
   - Transfert à faire avant cette deadline : S.Gilgeous-Alexander → T.Jerome
 
-Changements depuis le calcul de 15h56 : nouveau transfert D.Wolf → J.Randle, nouveau transfert S.Gilgeous-Alexander → T.Jerome, plus de transfert D.Wolf → W.Kessler, plus de transfert V.Wembanyama → D.Sabonis, titulaires modifiés. Raison probable : pas de nouvelle info : simple écart entre plans presque équivalents.
 Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait +212 pts sur cette semaine et la suivante, avec 8 joueur(s) changé(s) (A.Davis (WAS), T.Young (WAS), T.Jerome (MEM), D.Daniels (ATL), W.Kessler (LAL), Y.Missi (NOP), Y.Lendeborg (GSW), K.Ellis (BKN)) → ✅ le joker vaut le coup maintenant.
 💭 Ton idée D.Wolf (BKN) → J.Hayes (UTA) (Day 6) : -30 pts projetés par rapport au plan conseillé (bilan -39). J.Hayes : 23.8 pts/match projetés, fiabilité 0.85 ; cette saison 1 match(s) joué(s), 40.0 pts/match en 26 min. Avec, en plus : Day 6 : V.Wembanyama → J.Randle.
+💭 Ton idée D.Wolf (BKN) → O.Toppin (IND) (Day 6) : -34 pts projetés par rapport au plan conseillé (bilan -35). O.Toppin : 21.3 pts/match projetés, fiabilité 0.85 ; cette saison 1 match(s) joué(s), 31.0 pts/match en 24 min. Avec, en plus : Day 4 : V.Edgecombe → T.Jerome.
+💭 Ton idée D.Wolf (BKN) → O.Toppin (IND) (Day 5) : -35 pts projetés par rapport au plan conseillé (bilan -36). O.Toppin : 21.3 pts/match projetés, fiabilité 0.85 ; cette saison 1 match(s) joué(s), 31.0 pts/match en 24 min. Avec, en plus : Day 6 : V.Edgecombe → T.Jerome.
 ▶ CINQ DE DÉPART POUR LE PROCHAIN GAMEDAY
   BC  T.Jerome (MEM)               proj. 47.5
   BC  B.Burries (MIL)              proj. 18.9
@@ -51,4 +52,4 @@ Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) 
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 23/10/2026 à 16:03:34 (code de sortie : 0)
+Terminé le 23/10/2026 à 16:17:19 (code de sortie : 0)
