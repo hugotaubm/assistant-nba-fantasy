@@ -52,6 +52,9 @@ def lire_config():
     cfg.setdefault("seuil_nouvelle_equipe", 20)
     cfg.setdefault("poids_presence_avant_saison", 2)   # matchs « fictifs » donnés à la fiabilité d'avant-saison
     cfg.setdefault("poids_minutes_avant_saison", 3)    # matchs « fictifs » donnés aux minutes projetées
+    cfg.setdefault("poids_points_avant_saison", 8)     # matchs « fictifs » donnés à la projection d'avant-saison
+    cfg.setdefault("plafond_minutes", 1.3)             # hausse max de la projection quand un joueur joue plus que prévu
+    cfg.setdefault("poids_forme", 0.25)                # part de la forme récente (à partir de 5 matchs)
     cfg.setdefault("fiabilite_rang", {"3": 0.9, "4+": 0.75})   # 3e ou au-delà dans la hiérarchie de son poste
     cfg.setdefault("seuil_joker", 150)          # gain (pts, semaine + suivante pondérée) à partir duquel le joker vaut le coup
     cfg.setdefault("idees", [])                 # tes idées à tester, ex. "D.Wolf>J.Hayes@6" (vendre>acheter@jour)
@@ -307,18 +310,6 @@ def projeter(boot, cfg, saison_commencee, saison=None):
         pid = e["id"]
         prix = e["now_cost"] / 10
         prior = priors.get(str(pid), {}).get("fppg", 2.59 * prix + 1.4)
-        proj, g_cur = prior, 0
-        if saison_commencee:
-            ppg = float(e.get("points_per_game") or 0) / 10
-            tot = (e.get("total_points") or 0) / 10
-            g_cur = tot / ppg if ppg > 0 else 0
-            if g_cur > 0:
-                w = g_cur / (g_cur + 8)          # 8 matchs pour peser autant que la projection d'avant-saison
-                proj = w * ppg + (1 - w) * prior
-                forme = float(e.get("form") or 0) / 10
-                if g_cur >= 5 and forme > 0:
-                    proj = 0.75 * proj + 0.25 * forme
-        proj *= cfg["ajustements"].get(e["web_name"], 1.0)
         fiab = priors.get(str(pid), {}).get("fiabilite", 0.92)
         b2b = priors.get(str(pid), {}).get("malus_b2b")   # effet mesuré sur la saison passée (maj_b2b.py)
         # Saison en cours : un joueur qui n'entre pas en jeu alors que son équipe joue (choix de l'entraîneur)
@@ -336,8 +327,23 @@ def projeter(boot, cfg, saison_commencee, saison=None):
             joues += 0.5 * v["presaison_matchs"]
             minutes += 0.5 * v["presaison_matchs"] * v["presaison_min"]
         if joues and v.get("min_proj"):
+            # le rôle observé (minutes) recale la projection d'avant-saison : un remplaçant devenu titulaire
+            # (blessure d'un coéquipier) monte vite, un joueur sorti de la rotation baisse vite
             w = joues / (joues + cfg["poids_minutes_avant_saison"])
-            proj *= (1 - w) + w * min(1.3, (minutes / joues) / v["min_proj"])
+            prior *= (1 - w) + w * min(cfg["plafond_minutes"], (minutes / joues) / v["min_proj"])
+        # Points réels de la saison, mélangés à la projection d'avant-saison (recalée sur les minutes)
+        proj, g_cur = prior, 0
+        if saison_commencee:
+            ppg = float(e.get("points_per_game") or 0) / 10
+            tot = (e.get("total_points") or 0) / 10
+            g_cur = tot / ppg if ppg > 0 else 0
+            if g_cur > 0:
+                w = g_cur / (g_cur + cfg["poids_points_avant_saison"])
+                proj = w * ppg + (1 - w) * prior
+                forme = float(e.get("form") or 0) / 10
+                if g_cur >= 5 and forme > 0:
+                    proj = (1 - cfg["poids_forme"]) * proj + cfg["poids_forme"] * forme
+        proj *= cfg["ajustements"].get(e["web_name"], 1.0)
         # Hiérarchie de l'équipe (ESPN) : en fin de rotation, risque de ne pas entrer en jeu
         # Calibration : erreurs passées du modèle pour les joueurs du même rang (voir bilan.py)
         grp = groupe_rang(rang)

@@ -19,6 +19,11 @@
   "capitaine_deja_utilise_cette_semaine": false,
   "transferts_gratuits_par_defaut": 2,
   "poids_futur": 0.8,
+  "_reactivite": "Saisir les séries de 1 à 3 semaines : les matchs réels et les minutes jouées comptent vite.",
+  "poids_points_avant_saison": 3,
+  "poids_minutes_avant_saison": 1.5,
+  "plafond_minutes": 1.7,
+  "poids_forme": 0.35,
   "projection_min": 12,
   "joueurs_exclus": [
     "R.Rupert",
