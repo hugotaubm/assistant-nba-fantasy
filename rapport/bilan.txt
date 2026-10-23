@@ -32,24 +32,39 @@ BILAN DES GAMEDAYS JOUÉS
   → Titulaires : 84.0 pts réels pour 146.3 projetés (-62.3) [projection d avant-saison, modèle non enregistré].
   → Meilleur cinq possible après coup : 84.0 pts (hors capitaine), soit 0.0 pts laissés sur le banc.
 
+--- Gameweek 1 - Day 3 : moyenne des joueurs 43.8 | meilleur 232.0
+  Ton score : 111.0 | banc : 0.0 | rang : 2490 | transferts : 0 (coût 0)
+  TITULAIRE S.Gilgeous-Alexander (OKC)   34 min        réel  28.0 | projeté  54.6 (CAPITAINE x2)
+  TITULAIRE V.Edgecombe (PHI)            33 min        réel  39.0 | projeté  30.7
+  TITULAIRE J.Williams (OKC)             15 min        réel  16.0 | projeté  16.5
+  TITULAIRE D.Wolf (BKN)                 pas de match  réel   0.0 | projeté   0.0
+  TITULAIRE C.Wilson (CHI)               pas de match  réel   0.0 | projeté   0.0
+  banc      N.Traore (BKN)               pas de match  réel   0.0 | projeté   0.0
+  banc      B.Burries (MIL)              pas de match  réel   0.0 | projeté   0.0
+  banc      D.Acuff Jr. (SAC)            pas de match  réel   0.0 | projeté   0.0
+  banc      V.Wembanyama (SAS)           pas de match  réel   0.0 | projeté   0.0
+  banc      J.Walsh (BOS)                pas de match  réel   0.0 | projeté   0.0
+  → Titulaires : 111.0 pts réels pour 156.4 projetés (-45.4) [projection du modèle].
+  → Meilleur cinq possible après coup : 83.0 pts (hors capitaine), soit 0.0 pts laissés sur le banc.
+
 ======================================================================
 QUALITÉ DES PROJECTIONS (toute la ligue, joueurs projetés ≥ 20 pts)
 ======================================================================
-Matchs joués : 202 | biais moyen (réel − projeté) : -3.3 pts | erreur moyenne : 8.8 pts
-Corrélation projeté/réel : 0.69
-Minutes moyennes : 25.5
+Matchs joués : 229 | biais moyen (réel − projeté) : -3.8 pts | erreur moyenne : 9.1 pts
+Corrélation projeté/réel : 0.67
+Minutes moyennes : 25.8
 Par prix :
-  10-15 M$                98 matchs | 0 min : 13 | biais  -3.4 | réel/projeté 0.90 | minutes 28.1
-  7-10 M$                100 matchs | 0 min : 16 | biais  -3.4 | réel/projeté 0.86 | minutes 21.7
-  < 7 M$                  10 matchs | 0 min :  4 | biais  -2.4 | réel/projeté 0.89 | minutes 16.8
-  ≥ 15 M$                 27 matchs | 0 min :  0 | biais  -2.9 | réel/projeté 0.94 | minutes 31.4
+  10-15 M$               106 matchs | 0 min : 13 | biais  -3.6 | réel/projeté 0.90 | minutes 28.2
+  7-10 M$                108 matchs | 0 min : 16 | biais  -3.6 | réel/projeté 0.86 | minutes 21.7
+  < 7 M$                  12 matchs | 0 min :  4 | biais  -4.3 | réel/projeté 0.80 | minutes 15.8
+  ≥ 15 M$                 36 matchs | 0 min :  0 | biais  -4.9 | réel/projeté 0.90 | minutes 32.4
 Par rang dans la hiérarchie ESPN (1 = titulaire) :
-  rang 1                 134 matchs | 0 min :  7 | biais  -2.2 | réel/projeté 0.94 | minutes 28.9
-  rang 2                  70 matchs | 0 min :  9 | biais  -4.9 | réel/projeté 0.81 | minutes 20.2
+  rang 1                 154 matchs | 0 min :  7 | biais  -2.9 | réel/projeté 0.92 | minutes 29.2
+  rang 2                  77 matchs | 0 min :  9 | biais  -5.2 | réel/projeté 0.80 | minutes 20.1
   rang 3                  16 matchs | 0 min :  6 | biais  -8.2 | réel/projeté 0.67 | minutes 16.3
   rang 4                   2 matchs | 0 min :  0 | biais  +1.6 | réel/projeté 1.07 | minutes 20.5
   rang inconnu             5 matchs | 0 min :  3 | biais  -7.4 | réel/projeté 0.75 | minutes 21.0
-Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : 33 sur 235
+Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : 33 sur 262
   - B.Ingram (LAC) (event 2) : projeté 41.2, statut actuel i, news : Heel expected back 2026-11-08
   - J.Butler (GSW) (event 2) : projeté 40.1, statut actuel i, news : Knee expected back 2027-01-02
   - K.Porter Jr. (MIL) (event 2) : projeté 38.5, statut actuel u, news : -
@@ -63,18 +78,18 @@ Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : 33 sur 235
   - A.Black (ORL) (event 2) : projeté 31.3, statut actuel i, news : Ankle expected back 2026-10-25
   - C.Sexton (LAL) (event 2) : projeté 30.3, statut actuel a, news : -
 Plus grosses surestimations :
+  - N.Jokic (DEN) (event 3) : projeté 68.5, réel 36.0 en 35 min
   - J.Giddey (CHI) (event 2) : projeté 51.5, réel 21.0 en 24 min
   - N.Vucevic (ORL) (event 2) : projeté 31.4, réel 3.0 en 5 min
+  - S.Gilgeous-Alexander (OKC) (event 3) : projeté 55.4, réel 28.0 en 34 min
   - T.Murphy III (NOP) (event 2) : projeté 38.7, réel 17.0 en 31 min
+  - J.Murray (DEN) (event 3) : projeté 46.2, réel 25.0 en 36 min
   - K.Filipowski (UTA) (event 2) : projeté 26.8, réel 6.0 en 8 min
   - N.Traore (BKN) (event 2) : projeté 24.9, réel 5.0 en 15 min
   - M.Bridges (NYK) (event 1) : projeté 31.9, réel 12.0 en 33 min
   - K.Murray (SAC) (event 2) : projeté 28.8, réel 9.0 en 28 min
+  - A.Simons (PHI) (event 3) : projeté 24.3, réel 5.0 en 16 min
   - A.Sarr (WAS) (event 2) : projeté 38.0, réel 19.0 en 24 min
-  - T.Eason (HOU) (event 2) : projeté 24.5, réel 6.0 en 3 min
-  - K.Middleton (WAS) (event 2) : projeté 22.2, réel 4.0 en 12 min
-  - D.Melton (GSW) (event 2) : projeté 26.5, réel 9.0 en 20 min
-  - M.Bridges (PHX) (event 2) : projeté 35.4, réel 18.0 en 28 min
 Plus grosses sous-estimations :
   - Y.Missi (NOP) (event 2) : projeté 23.6, réel 52.0 en 29 min
   - T.Jerome (MEM) (event 2) : projeté 40.4, réel 67.0 en 31 min
@@ -88,9 +103,12 @@ Plus grosses sous-estimations :
 ======================================================================
 CALIBRATION DU MODÈLE (points réels / points attendus, par rang)
 ======================================================================
-  Pas encore de projections du modèle enregistrées : la calibration démarre au prochain Gameday.
+  rang 1   :   20 joueurs-matchs | réel     658 / attendu     691 = 0.95 → facteur appliqué 0.970
+  rang 2   :   13 joueurs-matchs | réel     176 / attendu     212 = 0.83 → facteur appliqué 0.942
+  rang 3+  :   21 joueurs-matchs | réel      86 / attendu     148 = 0.58 → facteur appliqué 0.886
+  rang ?   :    3 joueurs-matchs | réel       0 / attendu      29 = 0.00 → facteur appliqué 0.932
 
 Vérification du barème (points du jeu vs formule des projections) :
   Statistiques fournies par le jeu : ['assists', 'blocks', 'in_dreamteam', 'minutes', 'played', 'points_scored', 'rebounds', 'steals', 'total_points']
-  Écart moyen jeu − formule : +0.32 pts (sur 322 matchs) ; écart absolu moyen 0.82
+  Écart moyen jeu − formule : +0.29 pts (sur 367 matchs) ; écart absolu moyen 0.80
   Rapport points du jeu / formule (médiane) : 10.06
