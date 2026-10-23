@@ -1,14 +1,15 @@
-Calcul lancé le 23/10/2026 à 15:53:33
+Calcul lancé le 23/10/2026 à 15:55:45
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
-  (force des conseils : 72 s)
+  (force des conseils : 39 s)
 
 === Gameweek 1 — prochaine deadline : Gameweek 1 - Day 4 le ven. 23/10 21h30 (heure de Paris) ===
 Équipe lue depuis : my-team (connecté, à jour en direct) | Banque : 0.0 M$ | Transferts gratuits restants : 2 | Capitaine dispo : non
 
-Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait +162 pts sur cette semaine et la suivante, avec 8 joueur(s) changé(s) (T.Young (WAS), A.Sengun (HOU), T.Jerome (MEM), D.Daniels (ATL), N.Reid (CHA), Y.Missi (NOP), P.Achiuwa (SAC), K.Ellis (BKN)) → ✅ le joker vaut le coup maintenant.
-💭 Ton idée D.Wolf (BKN) → J.Hayes (UTA) (Day 6) : -43 pts projetés par rapport au plan conseillé (bilan -44). J.Hayes : 19.4 pts/match projetés, fiabilité 0.85 ; cette saison 1 match(s) joué(s), 40.0 pts/match en 26 min. Avec, en plus : Day 6 : V.Wembanyama → D.Sabonis.
+(Conseil précédent conservé : le nouveau plan ne gagnait que +2 pts.)
+Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait +174 pts sur cette semaine et la suivante, avec 7 joueur(s) changé(s) (T.Young (WAS), T.Jerome (MEM), D.Daniels (ATL), K.George (WAS), J.Hayes (UTA), Y.Lendeborg (GSW), K.Ellis (BKN)) → ✅ le joker vaut le coup maintenant.
+💭 Ton idée D.Wolf (BKN) → J.Hayes (UTA) (Day 6) : +0 pts projetés par rapport au plan conseillé (bilan -1). J.Hayes : 31.0 pts/match projetés, fiabilité 0.85 ; cette saison 1 match(s) joué(s), 40.0 pts/match en 26 min. Avec, en plus : Day 6 : V.Wembanyama → D.Sabonis.
 ▶ CINQ DE DÉPART POUR LE PROCHAIN GAMEDAY
   BC  B.Burries (MIL)              proj. 20.0
   BC  D.Acuff Jr. (SAC)            proj. 33.4
@@ -18,8 +19,8 @@ Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait
 
 ▶ TRANSFERTS
   Avant la deadline de Gameweek 1 - Day 6 (dim. 25/10 21h30) :
-  - Vendre D.Wolf (BKN)               → Acheter W.Kessler (LAL) (11.0 M$, proj. 36.9)  [⚪ Facultatif : +8 pts]
-  - Vendre V.Wembanyama (SAS)         → Acheter D.Sabonis (SAC) (15.0 M$, proj. 47.2)  [🟡 Léger : +9 pts]
+  - Vendre D.Wolf (BKN)               → Acheter W.Kessler (LAL) (11.0 M$, proj. 36.9)  [⚪ Facultatif : +-2 pts]
+  - Vendre V.Wembanyama (SAS)         → Acheter D.Sabonis (SAC) (15.0 M$, proj. 47.2)  [⚪ Facultatif : +5 pts]
   Gain attendu (cette semaine + suivante pondérée) : +200 pts vs ne rien faire
   Relance l'assistant avant chaque deadline : le conseil est recalculé avec les dernières blessures.
   Prévu la semaine suivante (indicatif) : Day 1 : V.Edgecombe→T.Jerome ; Day 2 : S.Gilgeous-Alexander→L.Doncic
@@ -46,4 +47,4 @@ Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) 
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 23/10/2026 à 15:54:56 (code de sortie : 0)
+Terminé le 23/10/2026 à 15:56:32 (code de sortie : 0)
