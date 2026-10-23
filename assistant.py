@@ -710,11 +710,18 @@ def optimiser(joueurs, equipe, banque, prix_vente, gratuits, cap_dispo, jours, j
     plan, plan2 = jours_plan[:len(jours)], jours_plan[len(jours):]
     final = plan[-1]["effectif"]
     hits = int(round(x[idx[("hit", 0)]]))
+    hits2 = int(round(x[idx[("hit", 1)]]))
     return dict(final=final, depart=depart, plan=plan, plan2=plan2, pts_semaine=sum(p["points"] for p in plan),
-                score=-res.fun, hits=hits, sortants=[p for p in depart if p not in final],
+                score=-res.fun, hits=hits, hits2=hits2, sortants=[p for p in depart if p not in final],
                 entrants=[p for p in final if p not in depart],
                 transferts=[(jp["event"], jp["sortants"], jp["entrants"]) for jp in plan if jp["entrants"]],
                 transferts_suiv=[(jp["event"], jp["sortants"], jp["entrants"]) for jp in plan2 if jp["entrants"]])
+
+
+def points_projetes(r, cfg):
+    """Points projetés d'un plan : cette semaine + suivante pondérée, moins les transferts payants des deux."""
+    return (r["pts_semaine"] + cfg["poids_futur"] * sum(jp["points"] for jp in r["plan2"])
+            - 100 * r["hits"] - 100 * cfg["poids_futur"] * r.get("hits2", 0))
 
 
 def valeur_reserve(base, joueurs, joue, cfg, libres):
@@ -789,7 +796,7 @@ def option_maintenant(plan, args_plan, base, cfg, joueurs):
     f = optimiser(*args_plan, transferts=True, assurance=base["assurance"], entree_jour0=True)
     if not f:
         return ""
-    pts = lambda r: r["pts_semaine"] + cfg["poids_futur"] * sum(jp["points"] for jp in r["plan2"]) - 100 * r["hits"]
+    pts = lambda r: points_projetes(r, cfg)
     jour = lambda ev: ev["name"].split(" - ")[-1]
     tr = " ; ".join(f"{jour(ev)} : " + ", ".join(f"{nom(joueurs, a)} → {nom(joueurs, b)}" for a, b in paires(so, en, joueurs))
                     for ev, so, en in f["transferts"])
@@ -806,7 +813,7 @@ def option_joker(plan, args_plan, base, cfg, joueurs):
     f = optimiser(*args_plan, transferts=True, libre=True, assurance=base["assurance"], joker=True)
     if not f:
         return ""
-    pts = lambda r: r["pts_semaine"] + cfg["poids_futur"] * sum(jp["points"] for jp in r["plan2"]) - 100 * r["hits"]
+    pts = lambda r: points_projetes(r, cfg)
     gain = pts(f) - pts(plan)
     equipe = args_plan[1]
     changes = len([q for q in f["depart"] if q not in equipe])
@@ -844,7 +851,7 @@ def tester_idees(plan, args_plan, base, cfg, joueurs, boot, saison):
     for q, p in joueurs_.items():
         par_nom.setdefault(p["nom"].lower(), []).append(q)
     elements = {e["id"]: e for e in boot["elements"]}
-    pts = lambda r: r["pts_semaine"] + cfg["poids_futur"] * sum(jp["points"] for jp in r["plan2"]) - 100 * r["hits"]
+    pts = lambda r: points_projetes(r, cfg)
     lignes = []
     for idee in cfg.get("idees", []):
         try:
@@ -899,13 +906,13 @@ def option_plein(plan, args_plan, base, cfg, joueurs):
     if not f:
         return (f"Combler les {vides} place(s) vide(s) de la semaine suivante : impossible avec tes transferts "
                 f"(pas assez de joueurs qui jouent ces jours-là dans ton budget).")
-    pts = lambda r: r["pts_semaine"] + cfg["poids_futur"] * sum(jp["points"] for jp in r["plan2"]) - 100 * r["hits"]
+    pts = lambda r: points_projetes(r, cfg)
     tr = lambda r: " ; ".join(f"{e_['name'].split(' - ')[-1]} : " + ", ".join(
         f"{nom(joueurs, a, False)} → {nom(joueurs, b, False)}" for a, b in paires(so, en, joueurs))
         for e_, so, en in r["transferts"] + r["transferts_suiv"])
     pts2 = lambda r: sum(jp["points"] for jp in r["plan2"])
     return (f"Combler les {vides} place(s) vide(s) de la semaine suivante est possible : {tr(f)}"
-            + (f" (dont {f['hits']} transfert(s) payant(s))" if f["hits"] else "")
+            + (f" (dont {f['hits'] + f['hits2']} transfert(s) payant(s) à -100 pts)" if f["hits"] + f["hits2"] else "")
             + f". Semaine suivante {pts2(f) - pts2(plan):+.0f} pts, au total {pts(f) - pts(plan):+.0f} pts "
             f"par rapport au plan conseillé (cette semaine + suivante pondérée).")
 
@@ -1219,7 +1226,7 @@ def main():
         # que ton équipe actuelle (avec ses transferts) ; sinon on reste sur ton équipe.
         libre = optimiser(*args_plan, transferts=True, libre=True, assurance=base["assurance"])
         # comparaison sur les seuls points projetés (sans la valeur fictive des transferts gardés)
-        pts = lambda r: r["pts_semaine"] + cfg["poids_futur"] * sum(jp["points"] for jp in r["plan2"]) - 100 * r["hits"]
+        pts = lambda r: points_projetes(r, cfg)
         if libre and pts(libre) - pts(plan) >= cfg["seuil_nouvelle_equipe"]:
             plan = libre
             budget = max(banque + sum(prix_vente.get(p, joueurs[p]["prix"]) for p in actuelle), 1000)
