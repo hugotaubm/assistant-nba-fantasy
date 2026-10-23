@@ -33,7 +33,7 @@
   "ajustements": {},
   "imposer_au_depart": ["V.Wembanyama"],
   "malus_back_to_back": 0.92,
-  "idees": ["D.Wolf>O.Toppin@5", "D.Wolf>O.Toppin@6", "D.Wolf>J.Hayes@5", "D.Wolf>J.Hayes@6"],
+  "idees": ["D.Wolf>W.Kessler@6 + V.Wembanyama>D.Sabonis@6", "D.Wolf>W.Kessler@6", "D.Wolf>O.Toppin@5", "D.Wolf>J.Hayes@6"],
   "seuil_changement_plan": 5,
   "force_fort": 25,
   "force_leger": 8,
