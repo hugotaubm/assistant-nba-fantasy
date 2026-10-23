@@ -16,6 +16,7 @@ assistant.py applique ensuite aux projections. Les facteurs sont tirés vers 1 t
 matchs (CALIB_K) et bornés (CALIB_MIN, CALIB_MAX).
 """
 import json, statistics as st, urllib.request
+from datetime import datetime, timezone
 from pathlib import Path
 
 ICI = Path(__file__).resolve().parent
@@ -64,7 +65,17 @@ def main():
     priors = json.loads((ICI / "priors.json").read_text(encoding="utf-8"))["joueurs"]
     el = {e["id"]: e for e in boot["elements"]}
     eq = {t["id"]: t["short_name"] for t in boot["teams"]}
-    finis = [e for e in boot["events"] if e.get("finished") or e.get("data_checked")]
+    # Gameday terminé : validé par le jeu, ou deadline passée et tous ses matchs finis (le jeu ne le
+    # valide que quelques heures plus tard)
+    maintenant = datetime.now(timezone.utc)
+    finis = []
+    for e in boot["events"]:
+        if e.get("finished") or e.get("data_checked"):
+            finis.append(e)
+        elif datetime.fromisoformat(e["deadline_time"].replace("Z", "+00:00")) < maintenant:
+            fx = get(f"fixtures/?event={e['id']}")
+            if fx and all(f.get("finished") or f.get("finished_provisional") for f in fx):
+                finis.append(e)
     if not finis:
         print("Aucun Gameday terminé pour l'instant.")
         return
