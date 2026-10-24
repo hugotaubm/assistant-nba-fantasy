@@ -1,8 +1,8 @@
-Calcul lancé le 24/10/2026 à 09:56:49
+Calcul lancé le 24/10/2026 à 19:09:42
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
-  (force des conseils : 55 s)
+  (force des conseils : 49 s)
 
 === Gameweek 1 — prochaine deadline : Gameweek 1 - Day 5 le sam. 24/10 23h30 (heure de Paris) ===
 Équipe lue depuis : my-team (connecté, à jour en direct) | Banque : 9.0 M$ | Transferts gratuits restants : 1 | Capitaine dispo : non
@@ -52,11 +52,11 @@ Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait
 
 ▶ SEMAINE SUIVANTE, JOUR PAR JOUR (indicatif, avec les transferts prévus) : 3 place(s) vide(s) au total
   Day 1  deadline lun. 26/10 23h30 : J.Walsh, C.Wilson, T.Jerome (B2B), B.Burries, J.Williams (B2B)  [~120 pts]
-  Day 2  deadline mer. 28/10 00h00 : N.Traore, J.Randle, W.Kessler, D.Acuff Jr., V.Wembanyama  [~188 pts] ← après C.Wilson→W.Kessler
+  Day 2  deadline mer. 28/10 00h00 : N.Traore, J.Randle, W.Kessler, D.Acuff Jr., V.Wembanyama (C)  [~241 pts] ← après C.Wilson→W.Kessler
   Day 3  deadline mer. 28/10 23h30 : K.Dunn, W.Kessler (B2B), J.Williams, V.Edgecombe, V.Wembanyama (B2B)  [~169 pts] ← après B.Burries→K.Dunn
   Day 4  deadline jeu. 29/10 23h30 : T.Jerome, D.Acuff Jr.  (3 place(s) vide(s))  [~82 pts]
   Day 5  deadline ven. 30/10 23h30 : J.Walsh, J.Randle, K.Dunn, W.Kessler, V.Edgecombe  [~163 pts]
-  Day 6  deadline sam. 31/10 19h30 : T.Jerome, J.Williams, V.Edgecombe (B2B), D.Acuff Jr., V.Wembanyama (C)  [~237 pts]
+  Day 6  deadline sam. 31/10 19h30 : T.Jerome, J.Williams, V.Edgecombe (B2B), D.Acuff Jr., V.Wembanyama  [~184 pts]
   Day 7  deadline dim. 01/11 21h00 : J.Walsh, N.Traore, J.Randle, K.Dunn, W.Kessler  [~140 pts]
 
 Projection Gameweek (jours restants) : ~362 pts  |  sans transfert : ~286 pts
@@ -64,4 +64,4 @@ Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) 
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 24/10/2026 à 09:57:50 (code de sortie : 0)
+Terminé le 24/10/2026 à 19:10:37 (code de sortie : 0)

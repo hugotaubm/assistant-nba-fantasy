@@ -47,8 +47,8 @@ BILAN DES GAMEDAYS JOUÉS
   → Titulaires : 111.0 pts réels pour 156.4 projetés (-45.4) [projection du modèle].
   → Meilleur cinq possible après coup : 83.0 pts (hors capitaine), soit 0.0 pts laissés sur le banc.
 
---- Gameweek 1 - Day 4 : moyenne des joueurs 136.8 | meilleur 349.0
-  Ton score : 185.0 | banc : 8.0 | rang : 8129 | transferts : 1 (coût 0)
+--- Gameweek 1 - Day 4 : moyenne des joueurs 153.9 | meilleur 349.0
+  Ton score : 185.0 | banc : 8.0 | rang : 10175 | transferts : 1 (coût 0)
   TITULAIRE B.Burries (MIL)               8 min        réel  13.0 | projeté  18.3
   TITULAIRE D.Acuff Jr. (SAC)            36 min        réel  43.0 | projeté  31.6
   TITULAIRE T.Jerome (MEM)               31 min        réel  43.0 | projeté  41.8
@@ -132,7 +132,7 @@ Vérification du barème (points du jeu vs formule des projections) :
 ======================================================================
 LIGUE FIRST TEAM
 ======================================================================
-  Rang : 100 / 617 (+3 depuis la dernière journée) | total 539 pts | dernière journée 185 pts
+  Rang : 103 / 617 (0 depuis la dernière journée) | total 539 pts | dernière journée 185 pts
   Écart avec le 1er : 399 pts
-  Écart avec le rang juste devant (99e) : 0 pts
-  Avance sur le rang juste derrière (101e) : 1 pts
+  Écart avec le rang juste devant (102e) : 0 pts
+  Avance sur le rang juste derrière (104e) : 1 pts
