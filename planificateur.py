@@ -109,6 +109,23 @@ def notifier(cfg, titre, message, priorite="default", tags="basketball"):
         return f"échec de la notification ({ex.__class__.__name__})"
 
 
+def alerte_joker(cfg, maintenant):
+    """Notification quand le joker rapporterait au moins seuil_joker pts sur les 2 semaines (une fois par jour)."""
+    plan = lire(RAPPORT / "dernier_plan.json", {})
+    j = plan.get("joker")
+    if not j or j["gain"] < j["seuil"]:
+        return None
+    notifs = lire(NOTIFS, {})
+    jour = maintenant.astimezone().date().isoformat()
+    if notifs.get("joker") == jour:
+        return None
+    res = notifier(cfg, f"🃏 Joker : +{j['gain']} pts possibles", j["texte"], "high", "black_joker")
+    if res.startswith("notification envoyée"):
+        notifs["joker"] = jour
+        ecrire(NOTIFS, notifs)
+    return "alerte joker : " + res
+
+
 def calculer():
     subprocess.run(["/bin/bash", str(ICI / "lancer_assistant.sh")])
 
@@ -201,6 +218,9 @@ def main():
     ecrire(ETAT, etat)
     if e:
         log("  " + apres_calcul(action, e, m, cfg, maintenant), maintenant)
+    j = alerte_joker(cfg, maintenant)
+    if j:
+        log("  " + j, maintenant)
 
 
 if __name__ == "__main__":

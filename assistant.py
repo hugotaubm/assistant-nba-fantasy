@@ -56,7 +56,7 @@ def lire_config():
     cfg.setdefault("plafond_minutes", 1.3)             # hausse max de la projection quand un joueur joue plus que prévu
     cfg.setdefault("poids_forme", 0.25)                # part de la forme récente (à partir de 5 matchs)
     cfg.setdefault("fiabilite_rang", {"3": 0.9, "4+": 0.75})   # 3e ou au-delà dans la hiérarchie de son poste
-    cfg.setdefault("seuil_joker", 150)          # gain (pts, semaine + suivante pondérée) à partir duquel le joker vaut le coup
+    cfg.setdefault("seuil_joker", 300)          # gain (pts, semaine + suivante pondérée) à partir duquel le joker vaut le coup (alerte)
     cfg.setdefault("idees", [])                 # tes idées à tester, ex. "D.Wolf>J.Hayes@6" (vendre>acheter@jour)
     cfg.setdefault("calibration_auto", True)    # corrige les projections avec leurs erreurs passées (bilan.py)
     cfg.setdefault("seuil_changement_plan", 5)  # pts mini pour changer un transfert déjà conseillé
@@ -812,7 +812,7 @@ def option_joker(plan, args_plan, base, cfg, joueurs):
     comparée au plan conseillé, sur cette semaine et la suivante (pondérée)."""
     f = optimiser(*args_plan, transferts=True, libre=True, assurance=base["assurance"], joker=True)
     if not f:
-        return ""
+        return "", None
     pts = lambda r: points_projetes(r, cfg)
     gain = pts(f) - pts(plan)
     equipe = args_plan[1]
@@ -821,7 +821,7 @@ def option_joker(plan, args_plan, base, cfg, joueurs):
     avis = ("✅ le joker vaut le coup maintenant" if gain >= cfg["seuil_joker"]
             else f"garde-le (seuil conseillé : +{cfg['seuil_joker']} pts)")
     return (f"Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait {gain:+.0f} pts "
-            f"sur cette semaine et la suivante, avec {changes} joueur(s) changé(s) ({entrants}) → {avis}.")
+            f"sur cette semaine et la suivante, avec {changes} joueur(s) changé(s) ({entrants}) → {avis}."), gain
 
 
 def valeurs_equipe(equipe, joueurs, jours, gw_suiv, joue, cfg):
@@ -1321,9 +1321,9 @@ def main():
         idees = []
         print(f"  (idées non testées : {ex!r})")
     try:   # simple éclairage : ne doit jamais faire échouer le calcul
-        joker_txt = "" if construction else option_joker(plan, args_plan, base, cfg, joueurs)
+        joker_txt, joker_gain = ("", None) if construction else option_joker(plan, args_plan, base, cfg, joueurs)
     except Exception as ex:
-        joker_txt = ""
+        joker_txt, joker_gain = "", None
         print(f"  (option joker non calculée : {ex!r})")
     try:   # simple éclairage : ne doit jamais faire échouer le calcul
         maintenant_txt = "" if construction else option_maintenant(plan, args_plan, base, cfg, joueurs)
@@ -1343,6 +1343,7 @@ def main():
     snap = instantane(plan, boot, gw, joueurs)
     snap.update(resume=resume_notif(plan, joueurs, alertes, forces, a_verifier), alertes=alertes, a_verifier=a_verifier,
                 source_direct=src_equipe.startswith("my-team (connecté"), changements=suivi["changements"],
+                joker=dict(gain=round(joker_gain), seuil=cfg["seuil_joker"], texte=joker_txt) if joker_gain is not None else None,
                 deadline=j0["event"]["deadline_time"], prochaine_nom=j0["event"]["name"])
     fichier_plan.parent.mkdir(exist_ok=True)
     fichier_plan.write_text(json.dumps(snap, ensure_ascii=False), encoding="utf-8")
