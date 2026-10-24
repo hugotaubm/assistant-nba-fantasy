@@ -1,8 +1,8 @@
-Calcul lancé le 24/10/2026 à 09:13:23
+Calcul lancé le 24/10/2026 à 09:19:33
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
-  (force des conseils : 54 s)
+  (force des conseils : 44 s)
 
 === Gameweek 1 — prochaine deadline : Gameweek 1 - Day 5 le sam. 24/10 23h30 (heure de Paris) ===
 Équipe lue depuis : my-team (connecté, à jour en direct) | Banque : 9.0 M$ | Transferts gratuits restants : 1 | Capitaine dispo : non
@@ -13,52 +13,54 @@ Optimisation (jusqu'à deux minutes)…
   - T.Jerome est titulaire mais MEM ne joue pas ce soir
   - V.Edgecombe joue ce soir mais est sur ton banc (conseillé titulaire)
 
-Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait +219 pts sur cette semaine et la suivante, avec 7 joueur(s) changé(s) (T.Young (WAS), D.Mitchell (CLE), J.Randle (BKN), W.Kessler (LAL), Y.Lendeborg (GSW), J.Hayes (UTA), K.Ellis (BKN)) → ✅ le joker vaut le coup maintenant.
+Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait +244 pts sur cette semaine et la suivante, avec 7 joueur(s) changé(s) (T.Young (WAS), D.Mitchell (CLE), J.Randle (BKN), W.Kessler (LAL), Y.Lendeborg (GSW), J.Hayes (UTA), K.Ellis (BKN)) → ✅ le joker vaut le coup maintenant.
 📅 Jours creux du plan conseillé — semaine suivante : Day 4 3 vide(s) | semaine d'après (Gameweek 3, sans transfert) : 38 matchs pour ton effectif, 6 place(s) vide(s) ; joueurs dispo par jour : 10-10-0-7-4-7
-🧩 Combler les 3 place(s) vide(s) de la semaine suivante est possible : Day 5 : B.Burries → D.Daniels ; Day 2 : V.Edgecombe → A.Reaves, C.Wilson → W.Kessler ; Day 4 : J.Williams → C.Boozer, V.Wembanyama → D.Sabonis (dont 2 transfert(s) payant(s) à -100 pts). Semaine suivante +132 pts, au total -98 pts par rapport au plan conseillé (cette semaine + suivante pondérée).
-💭 Ton idée D.Wolf (BKN) → W.Kessler (LAL) (Day 5) : -10 pts projetés par rapport au plan conseillé (bilan -14). W.Kessler : 42.8 pts/match projetés, fiabilité 0.89 ; cette saison 2 match(s) joué(s), 53.0 pts/match en 32 min. Banque en fin de semaine : 4.5 M$. Semaine suivante : Day 1 : V.Wembanyama → J.Tatum, Day 2 : B.Burries → A.Reaves. Jours creux — semaine suivante : Day 4 3 vide(s), Day 6 1 vide(s) | semaine d'après (Gameweek 3, sans transfert) : 38 matchs pour ton effectif, 8 place(s) vide(s) ; joueurs dispo par jour : 10-10-0-8-2-8.
+🧩 Combler les 3 place(s) vide(s) de la semaine suivante est possible : Day 5 : B.Burries → D.Daniels ; Day 2 : V.Edgecombe → A.Reaves, C.Wilson → W.Kessler ; Day 4 : J.Williams → C.Boozer, V.Wembanyama → D.Sabonis (dont 2 transfert(s) payant(s) à -100 pts). Semaine suivante +141 pts, au total -100 pts par rapport au plan conseillé (cette semaine + suivante pondérée).
+💭 Ton idée B.Burries (MIL) → K.Dunn (LAC) (Day 5) : -79 pts projetés par rapport au plan conseillé (bilan -79). K.Dunn : 30.6 pts/match projetés, fiabilité 0.96 ; cette saison 2 match(s) joué(s), 34.5 pts/match en 30 min. Banque en fin de semaine : 0.5 M$. Avec, en plus : Day 5 : D.Wolf → J.Randle. Semaine suivante : Day 2 : C.Wilson → W.Kessler, Day 4 : V.Wembanyama → D.Sabonis. Jours creux — semaine suivante : Day 1 1 vide(s), Day 4 2 vide(s) | semaine d'après (Gameweek 3, sans transfert) : 38 matchs pour ton effectif, 7 place(s) vide(s) ; joueurs dispo par jour : 10-10-0-7-3-8.
+💭 Ton idée B.Burries (MIL) → A.Reaves (LAL) (Day 5) : -43 pts projetés par rapport au plan conseillé (bilan -47). A.Reaves : 49.4 pts/match projetés, fiabilité 0.91 ; cette saison 2 match(s) joué(s), 51.0 pts/match en 34 min. Banque en fin de semaine : 2.0 M$. Semaine suivante : Day 1 : D.Wolf → Y.Lendeborg, Day 2 : C.Wilson → W.Kessler. Jours creux — semaine suivante : Day 1 1 vide(s), Day 4 3 vide(s) | semaine d'après (Gameweek 3, sans transfert) : 38 matchs pour ton effectif, 5 place(s) vide(s) ; joueurs dispo par jour : 10-9-1-8-4-6.
+💭 Ton idée B.Burries (MIL) → K.Dunn (LAC) (Day 6) : -73 pts projetés par rapport au plan conseillé (bilan -71). K.Dunn : 30.6 pts/match projetés, fiabilité 0.96 ; cette saison 2 match(s) joué(s), 34.5 pts/match en 30 min. Banque en fin de semaine : 0.5 M$. Avec, en plus : Day 5 : D.Wolf → J.Randle. Semaine suivante : Day 2 : C.Wilson → W.Kessler, Day 4 : V.Wembanyama → D.Sabonis. Jours creux — semaine suivante : Day 1 1 vide(s), Day 4 2 vide(s) | semaine d'après (Gameweek 3, sans transfert) : 38 matchs pour ton effectif, 7 place(s) vide(s) ; joueurs dispo par jour : 10-10-0-7-3-8.
 ▶ CINQ DE DÉPART POUR LE PROCHAIN GAMEDAY
-  BC  B.Burries (MIL)              proj. 16.2
-  BC  V.Edgecombe (PHI)            proj. 31.6
-  FC  J.Randle (BKN)               proj. 46.2
-  FC  C.Wilson (CHI)               proj. 35.8
-  FC  V.Wembanyama (SAS)           proj. 53.7
+  BC  B.Burries (MIL)              proj. 17.3
+  BC  V.Edgecombe (PHI)            proj. 34.5
+  FC  J.Randle (BKN)               proj. 50.5
+  FC  C.Wilson (CHI)               proj. 39.2
+  FC  V.Wembanyama (SAS)           proj. 58.7
 
 ▶ TRANSFERTS
   Avant la deadline de Gameweek 1 - Day 5 (sam. 24/10 23h30) ← MAINTENANT :
-  - Vendre D.Wolf (BKN)               → Acheter J.Randle (BKN) (14.0 M$, proj. 46.2)  [🟡 Léger : +13 pts]
-  Gain attendu (cette semaine + suivante pondérée) : +238 pts vs ne rien faire
+  - Vendre D.Wolf (BKN)               → Acheter J.Randle (BKN) (14.0 M$, proj. 50.5)  [🟡 Léger : +15 pts]
+  Gain attendu (cette semaine + suivante pondérée) : +273 pts vs ne rien faire
   Relance l'assistant avant chaque deadline : le conseil est recalculé avec les dernières blessures.
   Prévu la semaine suivante (indicatif) : Day 2 : C.Wilson→W.Kessler ; Day 3 : B.Burries→K.Dunn
 
 ▶ TES JOUEURS, DU MOINS UTILE AU PLUS UTILE (points attendus ; semaine suivante pondérée × 0.8)
-  D.Wolf (BKN)                  6.5 M$ | 16.0 pts/match, fiabilité 0.52 | cette semaine 2 m.   17 pts | suivante 3 m.   25 pts |  5.7 pts/M$
-  B.Burries (MIL)               7.0 M$ | 16.2 pts/match, fiabilité 0.94 | cette semaine 1 m.   15 pts | suivante 3 m.   45 pts |  7.4 pts/M$
-  J.Williams (OKC)              6.5 M$ | 15.5 pts/match, fiabilité 0.91 | cette semaine 1 m.   14 pts | suivante 3 m.   43 pts |  7.5 pts/M$
-  J.Walsh (BOS)                 5.0 M$ | 12.8 pts/match, fiabilité 0.94 | cette semaine 0 m.    0 pts | suivante 4 m.   48 pts |  7.7 pts/M$
-  N.Traore (BKN)                6.5 M$ | 13.9 pts/match, fiabilité 0.82 | cette semaine 2 m.   23 pts | suivante 3 m.   34 pts |  7.8 pts/M$
-  V.Wembanyama (SAS)           19.5 M$ | 53.7 pts/match, fiabilité 0.91 | cette semaine 1 m.   48 pts | suivante 3 m.  146 pts |  8.4 pts/M$
-  V.Edgecombe (PHI)            12.0 M$ | 31.6 pts/match, fiabilité 0.94 | cette semaine 2 m.   59 pts | suivante 3 m.   89 pts | 10.9 pts/M$
-  C.Wilson (CHI)               10.5 M$ | 35.8 pts/match, fiabilité 0.94 | cette semaine 1 m.   34 pts | suivante 3 m.  101 pts | 10.9 pts/M$
-  D.Acuff Jr. (SAC)             8.0 M$ | 35.5 pts/match, fiabilité 0.95 | cette semaine 1 m.   34 pts | suivante 3 m.  101 pts | 14.3 pts/M$
-  T.Jerome (MEM)                9.6 M$ | 47.0 pts/match, fiabilité 0.89 | cette semaine 1 m.   42 pts | suivante 3 m.  119 pts | 14.3 pts/M$
+  D.Wolf (BKN)                  6.5 M$ | 13.6 pts/match, fiabilité 0.52 | cette semaine 2 m.   15 pts | suivante 3 m.   21 pts |  4.8 pts/M$
+  N.Traore (BKN)                6.5 M$ | 11.7 pts/match, fiabilité 0.82 | cette semaine 2 m.   20 pts | suivante 3 m.   29 pts |  6.6 pts/M$
+  B.Burries (MIL)               7.0 M$ | 17.3 pts/match, fiabilité 0.94 | cette semaine 1 m.   17 pts | suivante 3 m.   49 pts |  7.9 pts/M$
+  J.Williams (OKC)              6.5 M$ | 16.6 pts/match, fiabilité 0.91 | cette semaine 1 m.   15 pts | suivante 3 m.   46 pts |  8.0 pts/M$
+  J.Walsh (BOS)                 5.0 M$ | 14.0 pts/match, fiabilité 0.94 | cette semaine 0 m.    0 pts | suivante 4 m.   53 pts |  8.5 pts/M$
+  V.Wembanyama (SAS)           19.5 M$ | 58.7 pts/match, fiabilité 0.91 | cette semaine 1 m.   52 pts | suivante 3 m.  159 pts |  9.2 pts/M$
+  V.Edgecombe (PHI)            12.0 M$ | 34.5 pts/match, fiabilité 0.94 | cette semaine 2 m.   65 pts | suivante 3 m.   97 pts | 11.9 pts/M$
+  C.Wilson (CHI)               10.5 M$ | 39.2 pts/match, fiabilité 0.94 | cette semaine 1 m.   37 pts | suivante 3 m.  110 pts | 11.9 pts/M$
+  D.Acuff Jr. (SAC)             8.0 M$ | 38.9 pts/match, fiabilité 0.95 | cette semaine 1 m.   37 pts | suivante 3 m.  110 pts | 15.6 pts/M$
+  T.Jerome (MEM)                9.6 M$ | 51.4 pts/match, fiabilité 0.89 | cette semaine 1 m.   46 pts | suivante 3 m.  130 pts | 15.6 pts/M$
 
 ▶ PLAN JOUR PAR JOUR (cette Gameweek)
-  Day 5  deadline sam. 24/10 23h30 : J.Randle, C.Wilson (B2B), B.Burries (B2B), V.Edgecombe, V.Wembanyama (B2B)  [~170 pts] ← après D.Wolf→J.Randle
-  Day 6  deadline dim. 25/10 21h30 : J.Randle (B2B), T.Jerome, J.Williams, V.Edgecombe (B2B), D.Acuff Jr.  [~162 pts]
+  Day 5  deadline sam. 24/10 23h30 : J.Randle, C.Wilson (B2B), B.Burries (B2B), V.Edgecombe, V.Wembanyama (B2B)  [~185 pts] ← après D.Wolf→J.Randle
+  Day 6  deadline dim. 25/10 21h30 : J.Randle (B2B), T.Jerome, J.Williams, V.Edgecombe (B2B), D.Acuff Jr.  [~177 pts]
 
 ▶ SEMAINE SUIVANTE, JOUR PAR JOUR (indicatif, avec les transferts prévus) : 3 place(s) vide(s) au total
-  Day 1  deadline lun. 26/10 23h30 : J.Walsh, C.Wilson, T.Jerome (B2B), B.Burries, J.Williams (B2B)  [~111 pts]
-  Day 2  deadline mer. 28/10 00h00 : N.Traore, J.Randle, W.Kessler, D.Acuff Jr., V.Wembanyama  [~174 pts] ← après C.Wilson→W.Kessler
-  Day 3  deadline mer. 28/10 23h30 : K.Dunn, W.Kessler (B2B), J.Williams, V.Edgecombe, V.Wembanyama (B2B)  [~155 pts] ← après B.Burries→K.Dunn
-  Day 4  deadline jeu. 29/10 23h30 : T.Jerome, D.Acuff Jr.  (3 place(s) vide(s))  [~75 pts]
-  Day 5  deadline ven. 30/10 23h30 : J.Walsh, J.Randle, K.Dunn, W.Kessler, V.Edgecombe  [~149 pts]
-  Day 6  deadline sam. 31/10 19h30 : T.Jerome, J.Williams, V.Edgecombe (B2B), D.Acuff Jr., V.Wembanyama (C)  [~217 pts]
-  Day 7  deadline dim. 01/11 21h00 : J.Walsh, N.Traore, J.Randle, K.Dunn, W.Kessler  [~131 pts]
+  Day 1  deadline lun. 26/10 23h30 : J.Walsh, C.Wilson, T.Jerome (B2B), B.Burries, J.Williams (B2B)  [~120 pts]
+  Day 2  deadline mer. 28/10 00h00 : N.Traore, J.Randle, W.Kessler, D.Acuff Jr., V.Wembanyama  [~188 pts] ← après C.Wilson→W.Kessler
+  Day 3  deadline mer. 28/10 23h30 : K.Dunn, W.Kessler (B2B), J.Williams, V.Edgecombe, V.Wembanyama (B2B)  [~169 pts] ← après B.Burries→K.Dunn
+  Day 4  deadline jeu. 29/10 23h30 : T.Jerome, D.Acuff Jr.  (3 place(s) vide(s))  [~82 pts]
+  Day 5  deadline ven. 30/10 23h30 : J.Walsh, J.Randle, K.Dunn, W.Kessler, V.Edgecombe  [~163 pts]
+  Day 6  deadline sam. 31/10 19h30 : T.Jerome, J.Williams, V.Edgecombe (B2B), D.Acuff Jr., V.Wembanyama (C)  [~237 pts]
+  Day 7  deadline dim. 01/11 21h00 : J.Walsh, N.Traore, J.Randle, K.Dunn, W.Kessler  [~140 pts]
 
-Projection Gameweek (jours restants) : ~332 pts  |  sans transfert : ~267 pts
+Projection Gameweek (jours restants) : ~362 pts  |  sans transfert : ~286 pts
 Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) = non utilisé, mon équipe = my-team (connecté, à jour en direct)
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 24/10/2026 à 09:14:24 (code de sortie : 0)
+Terminé le 24/10/2026 à 09:20:23 (code de sortie : 0)
