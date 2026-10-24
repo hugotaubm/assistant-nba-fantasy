@@ -6874,9 +6874,9 @@
 "age": 26,
 "min_proj": 29.4,
 "rang_poste": 2,
-"poste_espn": "SF",
+"poste_espn": "SG",
 "devant": [
-"Jonathan Kuminga"
+"Anthony Edwards"
 ],
 "presaison_matchs": 4,
 "presaison_min": 18.5
@@ -6916,11 +6916,10 @@
 "presence": 0.94,
 "age": 26,
 "min_proj": 16.2,
-"rang_poste": 3,
+"rang_poste": 2,
 "poste_espn": "PG",
 "devant": [
-"LaMelo Ball",
-"Isaiah Evans"
+"LaMelo Ball"
 ],
 "presaison_matchs": 5,
 "presaison_min": 14.0
@@ -6986,7 +6985,7 @@
 "age": 26,
 "min_proj": 31.7,
 "rang_poste": 1,
-"poste_espn": "PF",
+"poste_espn": "SF",
 "devant": [],
 "presaison_matchs": 4,
 "presaison_min": 20.8
@@ -7010,9 +7009,9 @@
 "rang_poste": 4,
 "poste_espn": "SF",
 "devant": [
-"Jonathan Kuminga",
-"Ayo Dosunmu",
-"Terrence Shannon Jr."
+"Jaden McDaniels",
+"Terrence Shannon Jr.",
+"Ayo Dosunmu"
 ],
 "presaison_matchs": 6,
 "presaison_min": 14.5
@@ -7034,9 +7033,9 @@
 "age": 26,
 "min_proj": 20.7,
 "rang_poste": 2,
-"poste_espn": "SG",
+"poste_espn": "SF",
 "devant": [
-"Anthony Edwards"
+"Jaden McDaniels"
 ],
 "presaison_matchs": 5,
 "presaison_min": 17.8
@@ -7061,8 +7060,8 @@
 "poste_espn": "PG",
 "devant": [
 "LaMelo Ball",
-"Isaiah Evans",
-"Bones Hyland"
+"Bones Hyland",
+"Ayo Dosunmu"
 ]
 },
 "347": {
@@ -7123,9 +7122,9 @@
 "rang_poste": 5,
 "poste_espn": "SF",
 "devant": [
-"Jonathan Kuminga",
-"Ayo Dosunmu",
-"Terrence Shannon Jr."
+"Jaden McDaniels",
+"Terrence Shannon Jr.",
+"Ayo Dosunmu"
 ],
 "presaison_matchs": 6,
 "presaison_min": 16.3
@@ -7139,10 +7138,12 @@
 "malus_b2b": 1.022,
 "age": 20,
 "b2b_n": 0,
-"rang_poste": 2,
+"rang_poste": 4,
 "poste_espn": "PG",
 "devant": [
-"LaMelo Ball"
+"LaMelo Ball",
+"Bones Hyland",
+"Ayo Dosunmu"
 ],
 "presaison_matchs": 5,
 "presaison_min": 15.8
@@ -7164,7 +7165,7 @@
 "age": 24,
 "min_proj": 27.3,
 "rang_poste": 1,
-"poste_espn": "SF",
+"poste_espn": "PF",
 "devant": [],
 "presaison_matchs": 3,
 "presaison_min": 18.3
@@ -7182,12 +7183,10 @@
 "age": 30,
 "b2b_n": 0,
 "min_proj": 19.7,
-"rang_poste": 4,
+"rang_poste": 2,
 "poste_espn": "PF",
 "devant": [
-"Jaden McDaniels",
-"Jonathan Kuminga",
-"Terrence Shannon Jr."
+"Jonathan Kuminga"
 ],
 "presaison_matchs": 5,
 "presaison_min": 15.4
@@ -10615,7 +10614,7 @@
 "malus_b2b": 1.022,
 "age": 22,
 "b2b_n": 0,
-"rang_poste": 8,
+"rang_poste": 7,
 "poste_espn": "PF",
 "devant": [
 "Tobias Harris",
@@ -11079,9 +11078,9 @@
 "rang_poste": 5,
 "poste_espn": "SF",
 "devant": [
-"Lauri Markkanen",
 "Ace Bailey",
-"Brice Sensabaugh"
+"Josh Okogie",
+"Lauri Markkanen"
 ],
 "presaison_matchs": 3,
 "presaison_min": 10.0
@@ -11111,11 +11110,10 @@
 "b2b_presence": 1.0,
 "presence": 0.96,
 "age": 28,
-"rang_poste": 3,
-"poste_espn": "SG",
+"rang_poste": 2,
+"poste_espn": "SF",
 "devant": [
-"Darryn Peterson",
-"Brice Sensabaugh"
+"Ace Bailey"
 ],
 "presaison_matchs": 4,
 "presaison_min": 16.8
@@ -11136,9 +11134,11 @@
 "presence": 0.91,
 "age": 26,
 "min_proj": 16.8,
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "C",
-"devant": [],
+"devant": [
+"Jaren Jackson Jr."
+],
 "presaison_matchs": 4,
 "presaison_min": 18.2
 },
@@ -11161,9 +11161,9 @@
 "rang_poste": 6,
 "poste_espn": "PF",
 "devant": [
-"Jaren Jackson Jr.",
 "Lauri Markkanen",
-"Kyle Filipowski"
+"Kyle Filipowski",
+"Jaren Jackson Jr."
 ],
 "presaison_matchs": 4,
 "presaison_min": 7.5
@@ -11185,7 +11185,7 @@
 "age": 27,
 "min_proj": 31.4,
 "rang_poste": 1,
-"poste_espn": "PF",
+"poste_espn": "C",
 "devant": [],
 "presaison_matchs": 4,
 "presaison_min": 18.2
@@ -11205,8 +11205,8 @@
 "rang_poste": 4,
 "poste_espn": "C",
 "devant": [
-"Jaxson Hayes",
 "Jaren Jackson Jr.",
+"Jaxson Hayes",
 "Kyle Filipowski"
 ],
 "presaison_matchs": 4,
@@ -11231,8 +11231,8 @@
 "rang_poste": 6,
 "poste_espn": "C",
 "devant": [
-"Jaxson Hayes",
 "Jaren Jackson Jr.",
+"Jaxson Hayes",
 "Kyle Filipowski"
 ],
 "presaison_matchs": 1,
@@ -11278,7 +11278,7 @@
 "age": 29,
 "min_proj": 34.0,
 "rang_poste": 1,
-"poste_espn": "SF",
+"poste_espn": "PF",
 "devant": [],
 "presaison_matchs": 3,
 "presaison_min": 20.0
@@ -11369,10 +11369,9 @@
 "presence": 0.96,
 "age": 22,
 "min_proj": 22.0,
-"rang_poste": 3,
+"rang_poste": 2,
 "poste_espn": "PF",
 "devant": [
-"Jaren Jackson Jr.",
 "Lauri Markkanen"
 ],
 "presaison_matchs": 1,
@@ -11394,11 +11393,9 @@
 "presence": 0.93,
 "age": 20,
 "min_proj": 28.2,
-"rang_poste": 2,
+"rang_poste": 1,
 "poste_espn": "SF",
-"devant": [
-"Lauri Markkanen"
-],
+"devant": [],
 "presaison_matchs": 4,
 "presaison_min": 23.0
 },
@@ -11826,6 +11823,6 @@
 "_source": "saison régulière 2025-26 (ESPN), mis à jour le 20/10/2026"
 },
 "roles": {
-"_source": "ESPN (hiérarchie + présaison), mis à jour le 24/10/2026"
+"_source": "ESPN (hiérarchie + présaison), mis à jour le 25/10/2026"
 }
 }
