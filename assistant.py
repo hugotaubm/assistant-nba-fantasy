@@ -1134,6 +1134,8 @@ def rapport(joueurs, equipe, banque, gratuits, cap_dispo, gw, jours, joue, match
         P(suivi["maintenant"])
     if suivi.get("joker"):
         P(suivi["joker"])
+    if suivi.get("ligue"):
+        P("🏆 " + suivi["ligue"])
     if suivi.get("creux"):
         P("📅 Jours creux du plan conseillé — " + suivi["creux"])
     if suivi.get("plein"):
@@ -1293,6 +1295,16 @@ def main():
         enregistrer_projections(jours[0], joueurs, joue)
     except Exception as ex:
         print(f"  (projections non enregistrées : {ex!r})")
+    try:   # classement de ta ligue, tenu à jour par bilan.py
+        lg = json.loads((ICI / "rapport" / "ligue.json").read_text(encoding="utf-8"))
+        h, d_ = lg["historique"], lg["dernier"]
+        avant = h[-2]["rang"] - d_["rang"] if len(h) > 1 else 0
+        ligue_txt = (f"Ligue {lg['nom']} : {d_['rang']}e sur {d_['nb']}"
+                     + (f" ({'+' if avant > 0 else ''}{avant} depuis le {h[-2]['date'][8:10]}/{h[-2]['date'][5:7]})" if avant else "")
+                     + (f", {d_['ecart_devant']:.0f} pts du rang juste devant, {d_['ecart_premier']:.0f} pts du 1er"
+                        if d_["rang"] > 1 else ", en tête !"))
+    except Exception:
+        ligue_txt = ""
     try:
         creux_txt = creux(plan, joueurs, joue, boot, gw_suiv)
     except Exception as ex:
@@ -1321,7 +1333,7 @@ def main():
     alertes, a_verifier, note_alertes = alertes_equipe(mt, plan, joueurs, joue)
     suivi = dict(forces=forces, alertes=alertes, a_verifier=a_verifier, note_alertes=note_alertes, stabilite=stabilite,
                  maintenant=maintenant_txt, joker=joker_txt, idees=idees, plein=plein_txt,
-                 creux=creux_txt, poids_futur=cfg["poids_futur"],
+                 creux=creux_txt, ligue=ligue_txt, poids_futur=cfg["poids_futur"],
                  valeurs=valeurs_equipe(equipe, joueurs, jours, gw_suiv, joue, cfg),
                  changements=changements(prec, plan, joueurs, boot, gw), source_equipe=src_equipe)
     print(f"  (force des conseils : {(dt.datetime.now() - t_force).seconds} s)")

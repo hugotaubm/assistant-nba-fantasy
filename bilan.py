@@ -212,5 +212,58 @@ def main():
             print(f"  Rapport points du jeu / formule (médiane) : {st.median(rapports):.2f}")
 
 
+
+def ligue(cfg):
+    """Ton classement dans ta ligue (config "ligue_id"), gardé jour après jour dans rapport/ligue.json.
+    Le dépôt et la page sont publics : on ne garde aucun nom (ni de joueur ni d'équipe) des autres membres."""
+    lid, eid = cfg.get("ligue_id"), cfg.get("id_equipe")
+    if not (lid and eid):
+        return
+    print("\n" + "=" * 70)
+    resultats, nom_ligue, page = [], "", 1
+    while page <= 50:
+        d = get(f"leagues-classic/{lid}/standings/?page_standings={page}")
+        nom_ligue = d.get("league", {}).get("name", "")
+        resultats += d.get("standings", {}).get("results", [])
+        if not d.get("standings", {}).get("has_next"):
+            break
+        page += 1
+    moi = next((r for r in resultats if r["entry"] == eid), None)
+    print(f"LIGUE {nom_ligue.upper()}")
+    print("=" * 70)
+    if not moi:
+        print("  Ton équipe n'apparaît pas dans le classement de cette ligue.")
+        return
+    tri = sorted(resultats, key=lambda r: r["rank"])
+    premier = tri[0]
+    devant = next((r for r in reversed(tri) if r["rank"] < moi["rank"]), None)
+    derriere = next((r for r in tri if r["rank"] > moi["rank"]), None)
+    evol = (moi.get("last_rank") or moi["rank"]) - moi["rank"]
+    print(f"  Rang : {moi['rank']} / {len(tri)}"
+          + (f" ({'+' if evol > 0 else ''}{evol} depuis la dernière journée)" if moi.get("last_rank") else "")
+          + f" | total {moi['total'] / 10:.0f} pts | dernière journée {moi.get('event_total', 0) / 10:.0f} pts")
+    if premier["entry"] != eid:
+        print(f"  Écart avec le 1er : {(premier['total'] - moi['total']) / 10:.0f} pts")
+    if devant:
+        print(f"  Écart avec le rang juste devant ({devant['rank']}e) : {(devant['total'] - moi['total']) / 10:.0f} pts")
+    if derriere:
+        print(f"  Avance sur le rang juste derrière ({derriere['rank']}e) : {(moi['total'] - derriere['total']) / 10:.0f} pts")
+    chemin = ICI / "rapport" / "ligue.json"
+    try:
+        hist = json.loads(chemin.read_text(encoding="utf-8"))
+    except Exception:
+        hist = {"historique": []}
+    point = {"date": datetime.now().strftime("%Y-%m-%d"), "rang": moi["rank"], "nb": len(tri), "total": moi["total"] / 10,
+             "ecart_premier": (premier["total"] - moi["total"]) / 10,
+             "ecart_devant": (devant["total"] - moi["total"]) / 10 if devant else 0}
+    hist["historique"] = [h for h in hist["historique"] if h["date"] != point["date"]] + [point]
+    hist.update(nom=nom_ligue, dernier=point)
+    chemin.write_text(json.dumps(hist, ensure_ascii=False), encoding="utf-8")
+
+
 if __name__ == "__main__":
     main()
+    try:
+        ligue(json.loads((ICI / "config.json").read_text(encoding="utf-8")))
+    except Exception as ex:
+        print(f"\n(classement de la ligue indisponible : {ex!r})")

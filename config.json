@@ -1,6 +1,7 @@
 {
   "_aide": "Voir LISEZMOI.md. Équipe lue automatiquement si requete_mon_equipe.txt existe ; sinon equipe_manuelle (10 noms tels qu'affichés dans le jeu).",
   "id_equipe": 32607,
+  "ligue_id": 2364,
   "cookie": null,
   "equipe_manuelle": [
     "S.Gilgeous-Alexander",
