@@ -6,11 +6,11 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="theme-color" content="#1d428a">
 <link rel="manifest" href="manifest.json">
-<link rel="apple-touch-icon" href="icone-180.png"><meta charset="utf-8"><title>Journal</title></head><body style="font-family:-apple-system,system-ui,sans-serif;padding:16px"><p><a href="./">← Retour au rapport</a></p><pre style="white-space:pre-wrap;font-size:13px">Calcul lancé le 24/10/2026 à 21:01:59
+<link rel="apple-touch-icon" href="icone-180.png"><meta charset="utf-8"><title>Journal</title></head><body style="font-family:-apple-system,system-ui,sans-serif;padding:16px"><p><a href="./">← Retour au rapport</a></p><pre style="white-space:pre-wrap;font-size:13px">Calcul lancé le 24/10/2026 à 22:43:42
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu&#x27;à deux minutes)…
-  (force des conseils : 31 s)
+  (force des conseils : 23 s)
 
 === Gameweek 1 — prochaine deadline : Gameweek 1 - Day 5 le sam. 24/10 23h30 (heure de Paris) ===
 Équipe lue depuis : my-team (connecté, à jour en direct) | Banque : 1.5 M$ | Transferts gratuits restants : 0 | Capitaine dispo : non
@@ -18,7 +18,6 @@ Optimisation (jusqu&#x27;à deux minutes)…
 ⚠ À CORRIGER SUR LE SITE AVANT LA DEADLINE
   - B.Burries joue ce soir mais est sur ton banc (conseillé titulaire)
 
-Changements depuis le calcul de 19h10 : plus de transfert D.Wolf → J.Randle. Raison probable : pas de nouvelle info : simple écart entre plans presque équivalents.
 Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait +225 pts sur cette semaine et la suivante, avec 6 joueur(s) changé(s) (T.Maxey (PHI), D.Daniels (ATL), Y.Lendeborg (GSW), J.Hayes (UTA), P.Achiuwa (SAC), K.Ellis (BKN)) → garde-le (seuil conseillé : +300 pts).
 🏆 Ligue First Team : 103e sur 617, 0 pts du rang juste devant, 399 pts du 1er
 📅 Jours creux du plan conseillé — semaine suivante : Day 4 3 vide(s) | semaine d&#x27;après (Gameweek 3, sans transfert) : 38 matchs pour ton effectif, 6 place(s) vide(s) ; joueurs dispo par jour : 10-10-0-7-4-7
@@ -67,12 +66,12 @@ Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) 
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 24/10/2026 à 21:02:36 (code de sortie : 0)
+Terminé le 24/10/2026 à 22:44:08 (code de sortie : 0)
 </pre>
 <div id="aa-barre" style="position:fixed;left:0;right:0;bottom:0;z-index:99999;
   display:flex;align-items:center;gap:12px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));
   background:#1d428a;color:#fff;font:15px -apple-system,system-ui,sans-serif;box-shadow:0 -2px 8px rgba(0,0,0,.2)">
-  <span style="flex:1;min-width:0"><span id="aa-info">Rapport du 24/10 à 21:02</span> · <a href="journal.html" style="color:#fff">journal</a></span>
+  <span style="flex:1;min-width:0"><span id="aa-info">Rapport du 24/10 à 22:44</span> · <a href="journal.html" style="color:#fff">journal</a></span>
   <a id="aa-recalculer" href="https://github.com/hugotaubm/assistant-nba-fantasy/actions/workflows/assistant.yml" style="font:600 15px -apple-system,system-ui,sans-serif;padding:10px 16px;border-radius:10px;background:#fff;color:#1d428a;text-decoration:none;white-space:nowrap">Recalculer</a>
 </div>
 <div style="height:80px"></div>
@@ -93,7 +92,7 @@ Terminé le 24/10/2026 à 21:02:36 (code de sortie : 0)
   }
   // Ouverte par le raccourci avec ?attente=1 : on attend le nouveau rapport puis on recharge.
   if (!/[?&]attente=/.test(location.search)) return;
-  var info = document.getElementById("aa-info"), depart = Date.now(), actuel = "2026-10-24T21:02:36";
+  var info = document.getElementById("aa-info"), depart = Date.now(), actuel = "2026-10-24T22:44:08";
   info.textContent = "⏳ Calcul en cours… (2 à 4 min)";
   var minuteur = setInterval(function () {
     fetch("etat.json?t=" + Date.now(), {cache: "no-store"}).then(function (r) { return r.json(); }).then(function (e) {
