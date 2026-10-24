@@ -128,3 +128,11 @@ Vérification du barème (points du jeu vs formule des projections) :
   Statistiques fournies par le jeu : ['assists', 'blocks', 'in_dreamteam', 'minutes', 'played', 'points_scored', 'rebounds', 'steals', 'total_points']
   Écart moyen jeu − formule : +0.33 pts (sur 642 matchs) ; écart absolu moyen 0.81
   Rapport points du jeu / formule (médiane) : 10.07
+
+======================================================================
+LIGUE FIRST TEAM
+======================================================================
+  Rang : 100 / 617 (+3 depuis la dernière journée) | total 539 pts | dernière journée 185 pts
+  Écart avec le 1er : 399 pts
+  Écart avec le rang juste devant (99e) : 0 pts
+  Avance sur le rang juste derrière (101e) : 1 pts
