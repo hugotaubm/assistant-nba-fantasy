@@ -146,7 +146,7 @@ def apres_calcul(action, e, m, cfg, maintenant):
         if alertes and direct:
             prio, tags = "high", "warning"
     elif action == "controle":
-        if alertes and direct and m is not None and m < 30 and deja.get("c") != alertes:
+        if alertes and direct and m is not None and m <= FENETRE_CONTROLE[1] and deja.get("c") != alertes:
             titre, prio, tags = f"⚠️ Équipe pas en ordre ! Deadline {heure}", "high", "warning"
             deja["c"] = alertes
         elif deja.get("resume") and deja["resume"] != resume:
