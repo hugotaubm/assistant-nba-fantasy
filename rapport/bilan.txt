@@ -62,8 +62,8 @@ BILAN DES GAMEDAYS JOUÉS
   → Titulaires : 185.0 pts réels pour 176.0 projetés (+9.0) [projection du modèle].
   → Meilleur cinq possible après coup : 185.0 pts (hors capitaine), soit 0.0 pts laissés sur le banc.
 
---- Gameweek 1 - Day 5 : moyenne des joueurs 105.7 | meilleur 363.0
-  Ton score : 195.0 | banc : 19.0 | rang : 3453 | transferts : 1 (coût 0)
+--- Gameweek 1 - Day 5 : moyenne des joueurs 136.4 | meilleur 363.0
+  Ton score : 195.0 | banc : 19.0 | rang : 5718 | transferts : 1 (coût 0)
   TITULAIRE N.Traore (BKN)                5 min        réel   5.0 | projeté  12.8
   TITULAIRE V.Edgecombe (PHI)            29 min        réel  43.0 | projeté  30.6
   TITULAIRE J.Randle (BKN)               35 min        réel  39.0 | projeté  43.8
@@ -147,7 +147,7 @@ Vérification du barème (points du jeu vs formule des projections) :
 ======================================================================
 LIGUE FIRST TEAM
 ======================================================================
-  Rang : 72 / 622 (+31 depuis la dernière journée) | total 734 pts | dernière journée 195 pts
+  Rang : 74 / 623 (+29 depuis la dernière journée) | total 734 pts | dernière journée 195 pts
   Écart avec le 1er : 387 pts
-  Écart avec le rang juste devant (71e) : 3 pts
-  Avance sur le rang juste derrière (73e) : 3 pts
+  Écart avec le rang juste devant (73e) : 0 pts
+  Avance sur le rang juste derrière (75e) : 3 pts
