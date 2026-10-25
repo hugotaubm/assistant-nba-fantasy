@@ -1912,7 +1912,16 @@
 "equipe": "CHI",
 "fppg": 10.44,
 "fiabilite": 0.92,
-"source": "selon le prix"
+"source": "selon le prix",
+"rang_poste": 4,
+"poste_espn": "C",
+"devant": [
+"Nic Claxton",
+"Jalen Smith",
+"Zach Collins"
+],
+"presaison_matchs": 2,
+"presaison_min": 22.5
 },
 "94": {
 "nom": "J.Sellers",
@@ -7378,10 +7387,11 @@
 "b2b_presence": 0.92,
 "presence": 0.95,
 "age": 25,
-"rang_poste": 2,
-"poste_espn": "C",
+"rang_poste": 3,
+"poste_espn": "PF",
 "devant": [
-"Yves Missi"
+"Zion Williamson",
+"Derik Queen"
 ],
 "presaison_matchs": 4,
 "presaison_min": 14.8
@@ -7592,12 +7602,10 @@
 "b2b_presence": 1.0,
 "presence": 0.73,
 "age": 38,
-"rang_poste": 4,
+"rang_poste": 2,
 "poste_espn": "C",
 "devant": [
-"Yves Missi",
-"Karlo Matkovic",
-"Derik Queen"
+"Yves Missi"
 ],
 "presaison_matchs": 1,
 "presaison_min": 4.0
@@ -8543,12 +8551,11 @@
 "presence": 0.8,
 "age": 29,
 "min_proj": 11.3,
-"rang_poste": 5,
+"rang_poste": 3,
 "poste_espn": "PF",
 "devant": [
-"Paolo Banchero",
 "Tristan da Silva",
-"Noah Penda"
+"Jamal Cain"
 ]
 },
 "419": {
@@ -8567,9 +8574,13 @@
 "presence": 0.99,
 "age": 23,
 "min_proj": 35.2,
-"rang_poste": 1,
+"rang_poste": 5,
 "poste_espn": "PF",
-"devant": [],
+"devant": [
+"Tristan da Silva",
+"Jamal Cain",
+"Jonathan Isaac"
+],
 "presaison_matchs": 4,
 "presaison_min": 21.8
 },
@@ -8658,11 +8669,9 @@
 "presence": 0.97,
 "age": 25,
 "min_proj": 21.4,
-"rang_poste": 2,
+"rang_poste": 1,
 "poste_espn": "PF",
-"devant": [
-"Paolo Banchero"
-],
+"devant": [],
 "presaison_matchs": 4,
 "presaison_min": 21.8
 },
@@ -8686,10 +8695,11 @@
 "b2b_presence": 0.9,
 "presence": 0.82,
 "age": 21,
-"rang_poste": 3,
-"poste_espn": "PF",
+"rang_poste": 5,
+"poste_espn": "SF",
 "devant": [
-"Paolo Banchero",
+"Franz Wagner",
+"Jamal Cain",
 "Tristan da Silva"
 ],
 "presaison_matchs": 3,
@@ -8731,11 +8741,11 @@
 "age": 26,
 "b2b_n": 0,
 "rang_poste": 4,
-"poste_espn": "C",
+"poste_espn": "PF",
 "devant": [
-"Wendell Carter Jr.",
-"Nikola Vucevic",
-"Goga Bitadze"
+"Tristan da Silva",
+"Jamal Cain",
+"Jonathan Isaac"
 ],
 "presaison_matchs": 4,
 "presaison_min": 6.5
@@ -11823,6 +11833,6 @@
 "_source": "saison régulière 2025-26 (ESPN), mis à jour le 20/10/2026"
 },
 "roles": {
-"_source": "ESPN (hiérarchie + présaison), mis à jour le 25/10/2026"
+"_source": "ESPN (hiérarchie + présaison), mis à jour le 26/10/2026"
 }
 }
