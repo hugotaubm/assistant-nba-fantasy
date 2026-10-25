@@ -612,6 +612,7 @@ def optimiser(joueurs, equipe, banque, prix_vente, gratuits, cap_dispo, jours, j
     if libre:
         budget, cout = (budget if joker else max(budget, 1000)), (lambda p: p["prix"])
     dernier_jour = {w: max(d for d in range(D) if sem[d] == w) for w in set(sem)}
+    sem_de = {tous[d]["id"]: sem[d] for d in range(D)}   # semaine (0 ou 1) de chaque Gameday
     for d in range(D):
         S = {i: idx[("s", i, d)] for i in range(n)}
         for v in S.values():
@@ -636,7 +637,7 @@ def optimiser(joueurs, equipe, banque, prix_vente, gratuits, cap_dispo, jours, j
             if sem[d] == 0 and p["id"] in interdits and p["id"] not in S0:
                 ub[S[i]] = 0
             for so, en, ev in forcer:
-                if sem[d] == 0 and tous[d]["id"] >= ev:
+                if sem[d] == sem_de.get(ev, 0) and tous[d]["id"] >= ev:
                     if p["id"] == en:
                         lb[S[i]] = 1
                     elif p["id"] == so:
@@ -860,13 +861,33 @@ def tester_idees(plan, args_plan, base, cfg, joueurs, boot, saison):
                 noms, _, jour = morceau.partition("@")
                 so_nom, en_nom = (x.strip().lower() for x in noms.split(">"))
                 so = next(q for q in par_nom.get(so_nom, []) if q in equipe)
-                en = next(q for q in par_nom.get(en_nom, []) if q not in equipe)
-                ev = next((e for e in jours if e["name"].endswith(f"Day {jour.strip()}")), jours[0]) if jour else jours[0]
+                # « ? » : vendre ce joueur, le meilleur remplaçant est choisi par l'assistant
+                en = None if en_nom == "?" else next(q for q in par_nom.get(en_nom, []) if q not in equipe)
+                # « @6 » = Day 6 de cette semaine ; « @2.1 » = Gameweek 2, Day 1 (semaine suivante)
+                tous_ev = list(jours) + list((args_plan[8] or {}).get("events", []))
+                j_ = jour.strip()
+                if "." in j_:
+                    g_, d_ = j_.split(".")
+                    ev = next(e for e in tous_ev if e["name"] == f"Gameweek {g_} - Day {d_}")
+                else:
+                    ev = next((e for e in jours if e["name"].endswith(f"Day {j_}")), jours[0]) if j_ else jours[0]
                 forces.append((so, en, ev["id"]))
         except (StopIteration, ValueError):
             lignes.append(f"Idée « {idee} » : joueur ou jour introuvable (format : Sortant>Entrant@numéro du jour).")
             continue
         f = optimiser(*args_plan, transferts=True, assurance=base["assurance"], forcer=forces)
+        if f:   # remplaçant choisi par l'assistant : celui qui entre le jour de la vente
+            complets = []
+            for a, b, ev_ in forces:
+                if b is None:
+                    jp = next((x for x in f["plan"] + f["plan2"] if x["event"]["id"] == ev_ and a in x["sortants"]), None)
+                    b = next((q for q in (jp or {}).get("entrants", []) if joueurs[q]["poste"] == joueurs[a]["poste"]), None)
+                complets.append((a, b, ev_))
+            forces = complets
+        en = forces[-1][1]
+        if en is None:
+            lignes.append(f"Idée « {idee} » : aucun remplaçant trouvé.")
+            continue
         e = elements[en]
         s_ = (saison or {}).get(en) or {}
         stats = (f"{s_.get('joues', 0)} match(s) joué(s), {float(e.get('points_per_game') or 0) / 10:.1f} pts/match"
@@ -879,7 +900,7 @@ def tester_idees(plan, args_plan, base, cfg, joueurs, boot, saison):
         autres = [(e_["name"].split(" - ")[-1], a, b) for e_, so_l, en_l in f["transferts"] for a, b in paires(so_l, en_l, joueurs)
                   if (a, b) not in imposes_]
         suiv = [(e_["name"].split(" - ")[-1], a, b) for e_, so_l, en_l in f["transferts_suiv"] for a, b in paires(so_l, en_l, joueurs)]
-        nom_jour = {e_["id"]: e_["name"].split(" - ")[-1] for e_ in jours}
+        nom_jour = {e_["id"]: e_["name"].replace("Gameweek ", "GW").replace(" - ", " ") for e_ in list(jours) + list((args_plan[8] or {}).get("events", []))}
         titre = " + ".join(f"{nom(joueurs, a)} → {nom(joueurs, b)} ({nom_jour[ev_]})" for a, b, ev_ in forces)
         banque, prix_vente = args_plan[2], args_plan[3]
         reste = (banque + sum(prix_vente.get(q, joueurs[q]["prix"]) for q in f["sortants"])

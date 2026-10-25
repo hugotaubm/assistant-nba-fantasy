@@ -34,7 +34,7 @@
   "ajustements": {},
   "imposer_au_depart": ["V.Wembanyama"],
   "malus_back_to_back": 0.92,
-  "idees": ["B.Burries>K.Dunn@5", "B.Burries>A.Reaves@5", "B.Burries>K.Dunn@6"],
+  "idees": ["N.Traore>?@2.1", "N.Traore>?@2.2", "N.Traore>?@2.1 + J.Williams>Y.Lendeborg@2.1"],
   "seuil_joker": 300,
   "seuil_changement_plan": 5,
   "force_fort": 25,
