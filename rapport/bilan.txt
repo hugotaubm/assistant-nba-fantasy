@@ -97,7 +97,7 @@ Par rang dans la hiérarchie ESPN (1 = titulaire) :
   rang inconnu            13 matchs | 0 min :  7 | biais -10.2 | réel/projeté 0.65 | minutes 20.0
 Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : 87 sur 600
   - C.Flagg (DAL) (event 5) : projeté 47.0, statut actuel i, news : Shoulder expected back 2026-11-02
-  - L.James (PHI) (event 5) : projeté 46.1, statut actuel i, news : Back expected back 2026-10-25
+  - L.James (PHI) (event 5) : projeté 46.1, statut actuel a, news : -
   - S.Curry (GSW) (event 5) : projeté 44.0, statut actuel i, news : Rest expected back 2026-10-26
   - K.Irving (DAL) (event 5) : projeté 41.5, statut actuel i, news : Knee expected back 2026-10-26
   - B.Ingram (LAC) (event 2) : projeté 41.2, statut actuel i, news : Heel expected back 2026-11-08
