@@ -147,7 +147,7 @@ Vérification du barème (points du jeu vs formule des projections) :
 ======================================================================
 LIGUE FIRST TEAM
 ======================================================================
-  Rang : 71 / 621 (+32 depuis la dernière journée) | total 734 pts | dernière journée 195 pts
+  Rang : 72 / 622 (+31 depuis la dernière journée) | total 734 pts | dernière journée 195 pts
   Écart avec le 1er : 387 pts
-  Écart avec le rang juste devant (70e) : 3 pts
-  Avance sur le rang juste derrière (72e) : 3 pts
+  Écart avec le rang juste devant (71e) : 3 pts
+  Avance sur le rang juste derrière (73e) : 3 pts
