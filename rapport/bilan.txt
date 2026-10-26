@@ -227,4 +227,6 @@ LIGUE FIRST TEAM
   Écart avec le 1er : 406 pts
   Écart avec le rang juste devant (64e) : 2 pts
   Avance sur le rang juste derrière (69e) : 1 pts
-  Jokers : 13 des 66 équipes devant toi l'ont déjà joué (20 %) ; par Gameday : event 2 : 5, event 4 : 4, event 6 : 4
+  Capitaine : déjà joué par 65 des 66 équipes devant toi (98 %) ; par Gameday : event 1 : 19, event 2 : 7, event 3 : 5, event 4 : 20, event 5 : 6, event 6 : 8
+  All-Star : déjà joué par 15 des 66 équipes devant toi (23 %) ; par Gameday : event 2 : 4, event 3 : 8, event 4 : 1, event 5 : 2
+  Wildcard (joker) : déjà joué par 13 des 66 équipes devant toi (20 %) ; par Gameday : event 2 : 5, event 4 : 4, event 6 : 4
