@@ -1500,7 +1500,9 @@ def main():
         h, d_ = lg["historique"], lg["dernier"]
         avant = h[-2]["rang"] - d_["rang"] if len(h) > 1 else 0
         jk = lg.get("jokers") or {}
-        jk_txt = (f" · jokers déjà joués par {jk['joues']} des {jk['lus']} équipes devant toi" if jk.get("lus") else "")
+        allstar = ((lg.get("jetons") or {}).get("par_chip") or {}).get("rich", {}).get("equipes", 0)
+        jk_txt = (f" · devant toi, {jk['joues']} sur {jk['lus']} ont déjà joué leur joker et {allstar} leur All-Star"
+                  if jk.get("lus") else "")
         ligue_txt = (f"Ligue {lg['nom']} : {d_['rang']}e sur {d_['nb']}"
                      + (f" ({'+' if avant > 0 else ''}{avant} depuis le {h[-2]['date'][8:10]}/{h[-2]['date'][5:7]})" if avant else "")
                      + (f", {d_['ecart_devant']:.0f} pts du rang juste devant, {d_['ecart_premier']:.0f} pts du 1er"

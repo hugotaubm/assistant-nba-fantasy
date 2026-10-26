@@ -275,33 +275,38 @@ def ligue(cfg):
              "ecart_premier": (premier["total"] - moi["total"]) / 10,
              "ecart_devant": (devant["total"] - moi["total"]) / 10 if devant else 0}
     hist["historique"] = [h for h in hist["historique"] if h["date"] != point["date"]] + [point]
-    # Jokers déjà joués par les équipes devant toi (historique public de chaque équipe), une fois par jour.
-    # Seuls les totaux sont gardés : aucun identifiant ni nom des autres membres.
-    jk = hist.get("jokers") or {}
+    # Chips déjà joués (wildcard, All-Star = « rich », capitaine…) par les équipes devant toi, d'après
+    # l'historique public de chaque équipe, une fois par jour. Seuls les totaux sont gardés.
+    jk = hist.get("jetons") or {}
     if jk.get("date") != point["date"]:
         devant_ids = [r["entry"] for r in tri if r["rank"] < moi["rank"]]
-        joues, par_event, lus = 0, {}, 0
+        par_chip, lus = {}, 0
         for k, e_id in enumerate(devant_ids):
             try:
                 chips = get(f"entry/{e_id}/history/").get("chips", [])
             except Exception:
                 continue
             lus += 1
-            w = [c for c in chips if c.get("name") == "wildcard"]
-            if w:
-                joues += 1
-                ev = w[-1].get("event")
-                par_event[str(ev)] = par_event.get(str(ev), 0) + 1
+            for nom_chip in {c.get("name") for c in chips}:
+                d_ = par_chip.setdefault(nom_chip, {"equipes": 0, "par_event": {}})
+                d_["equipes"] += 1
+                ev = max(c.get("event") or 0 for c in chips if c.get("name") == nom_chip)
+                d_["par_event"][str(ev)] = d_["par_event"].get(str(ev), 0) + 1
             if k % 10 == 9:
                 time.sleep(1)   # ménage le site
-        jk = dict(date=point["date"], devant=len(devant_ids), lus=lus, joues=joues, par_event=par_event)
-    hist.update(nom=nom_ligue, dernier=point, jokers=jk)
+        jk = dict(date=point["date"], devant=len(devant_ids), lus=lus, par_chip=par_chip)
+    w = (jk.get("par_chip") or {}).get("wildcard", {})
+    jokers = dict(date=jk.get("date"), devant=jk.get("devant"), lus=jk.get("lus"), joues=w.get("equipes", 0),
+                  par_event=w.get("par_event", {}))
+    hist.update(nom=nom_ligue, dernier=point, jokers=jokers, jetons=jk)
     chemin.write_text(json.dumps(hist, ensure_ascii=False), encoding="utf-8")
-    if jk.get("lus"):
-        print(f"  Jokers : {jk['joues']} des {jk['lus']} équipes devant toi l'ont déjà joué "
-              f"({100 * jk['joues'] / jk['lus']:.0f} %)"
-              + (" ; par Gameday : " + ", ".join(f"event {k} : {v}" for k, v in sorted(jk["par_event"].items(), key=lambda kv: int(kv[0])))
-                 if jk["par_event"] else ""))
+    noms_chips = {"wildcard": "Wildcard (joker)", "rich": "All-Star", "phcapt": "Capitaine"}
+    for nom_chip, d_ in sorted((jk.get("par_chip") or {}).items()):
+        print(f"  {noms_chips.get(nom_chip, nom_chip)} : déjà joué par {d_['equipes']} des {jk['lus']} équipes devant toi "
+              f"({100 * d_['equipes'] / jk['lus']:.0f} %) ; par Gameday : "
+              + ", ".join(f"event {k} : {v}" for k, v in sorted(d_["par_event"].items(), key=lambda kv: int(kv[0]))))
+    if jk.get("lus") and "rich" not in (jk.get("par_chip") or {}):
+        print(f"  All-Star : joué par aucune des {jk['lus']} équipes devant toi")
 
 
 
