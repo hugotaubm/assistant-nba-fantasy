@@ -77,20 +77,21 @@ BILAN DES GAMEDAYS JOUÉS
   → Titulaires : 195.0 pts réels pour 171.9 projetés (+23.1) [projection du modèle].
   → Meilleur cinq possible après coup : 209.0 pts (hors capitaine), soit 14.0 pts laissés sur le banc.
 
---- Gameweek 1 - Day 6 : moyenne des joueurs 96.5 | meilleur 330.0
-  Ton score : 126.0 | banc : 38.0 | rang : 13518 | transferts : 0 (coût 0)
-  TITULAIRE D.Acuff Jr. (SAC)            36 min        réel  42.0 | projeté  34.6
-  TITULAIRE V.Edgecombe (PHI)             0 min        réel   0.0 | projeté  32.2
+--- Gameweek 1 - Day 6 : moyenne des joueurs 122.7 | meilleur 330.0
+  Ton score : 164.0 | banc : 0.0 | rang : 9296 | transferts : 0 (coût 0)
+  Remplacement automatique : V.Edgecombe (PHI) → N.Traore (BKN)
   TITULAIRE T.Jerome (MEM)               32 min        réel  50.0 | projeté  43.1
+  ENTRÉ     N.Traore (BKN)               24 min        réel  38.0 | projeté  10.6
+  TITULAIRE D.Acuff Jr. (SAC)            36 min        réel  42.0 | projeté  34.6
   TITULAIRE J.Randle (BKN)               23 min        réel  34.0 | projeté  43.5
   TITULAIRE J.Williams (OKC)              5 min        réel   0.0 | projeté  15.0
-  banc      N.Traore (BKN)               24 min        réel  38.0 | projeté  10.6
+  SORTI     V.Edgecombe (PHI)             0 min        réel   0.0 | projeté  32.2
   banc      J.Walsh (BOS)                pas de match  réel   0.0 | projeté   0.0
   banc      C.Wilson (CHI)               pas de match  réel   0.0 | projeté   0.0
   banc      V.Wembanyama (SAS)           pas de match  réel   0.0 | projeté   0.0
   banc      B.Burries (MIL)              pas de match  réel   0.0 | projeté   0.0
-  → Titulaires : 126.0 pts réels pour 168.4 projetés (-42.4) [projection du modèle].
-  → Meilleur cinq possible après coup : 164.0 pts (hors capitaine), soit 38.0 pts laissés sur le banc.
+  → Titulaires : 164.0 pts réels pour 146.7 projetés (+17.3) [projection du modèle].
+  → Meilleur cinq possible après coup : 164.0 pts (hors capitaine), soit 0.0 pts laissés sur le banc.
 
 ======================================================================
 QUALITÉ DES PROJECTIONS (toute la ligue, joueurs projetés ≥ 20 pts)
@@ -162,7 +163,7 @@ Vérification du barème (points du jeu vs formule des projections) :
 ======================================================================
 LIGUE FIRST TEAM
 ======================================================================
-  Rang : 83 / 627 (-9 depuis la dernière journée) | total 860 pts | dernière journée 126 pts
-  Écart avec le 1er : 444 pts
-  Écart avec le rang juste devant (81e) : 1 pts
-  Avance sur le rang juste derrière (84e) : 5 pts
+  Rang : 67 / 627 (+7 depuis la dernière journée) | total 898 pts | dernière journée 164 pts
+  Écart avec le 1er : 406 pts
+  Écart avec le rang juste devant (64e) : 2 pts
+  Avance sur le rang juste derrière (69e) : 1 pts
