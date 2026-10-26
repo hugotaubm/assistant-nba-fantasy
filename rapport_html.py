@@ -343,6 +343,8 @@ def rendre(ctx):
   </details>'''
     if suivi.get("joker"):
         chg += f'<p class="discret">🃏 {_e(suivi["joker"])}</p>'
+    if suivi.get("moment_joker"):
+        chg += f'<p class="option">🃏 {_e(suivi["moment_joker"])}</p>'
     if suivi.get("ligue"):
         chg = f'<p class="option">🏆 {_e(suivi["ligue"])}</p>' + chg
     if suivi.get("creux"):

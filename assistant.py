@@ -59,6 +59,7 @@ def lire_config():
     cfg.setdefault("seuil_joker", 300)          # gain (pts, semaine + suivante pondérée) à partir duquel le joker vaut le coup (alerte)
     cfg.setdefault("idees", [])                 # tes idées à tester, ex. "D.Wolf>J.Hayes@6" (vendre>acheter@jour)
     cfg.setdefault("dispo_apres_retour", 0.85)  # blessé avec date de retour : chance de jouer une fois revenu
+    cfg.setdefault("joker_jours_testes", 8)     # jours testés pour trouver le meilleur moment du joker
     cfg.setdefault("calibration_auto", True)    # corrige les projections avec leurs erreurs passées (bilan.py)
     cfg.setdefault("seuil_changement_plan", 5)  # pts mini pour changer un transfert déjà conseillé
     cfg.setdefault("force_fort", 25)            # badge 🟢 Fort à partir de ce gain (pts)
@@ -558,7 +559,7 @@ def mon_equipe(mt, cfg, joueurs, boot, gw):
 # ----------------------------------------------------------------------------- optimisation
 def optimiser(joueurs, equipe, banque, prix_vente, gratuits, cap_dispo, jours, joue, gw_suiv, cfg,
               transferts=True, libre=False, assurance=None, interdits=(), forcer=(), jours_transfert=None,
-              entree_jour0=False, joker=False, plein_suiv=False):
+              entree_jour0=False, joker=False, plein_suiv=False, joker_ev=None):
     """Plan jour par jour sur la Gameweek en cours + la suivante (pondérée par poids_futur).
 
     Variables : effectif de chaque jour (s), entrées (in), titulaires (y), capitaine (c).
@@ -569,6 +570,8 @@ def optimiser(joueurs, equipe, banque, prix_vente, gratuits, cap_dispo, jours, j
     interdits : joueurs qu'on s'interdit d'acheter cette semaine (mesure de la force d'un conseil).
     forcer : [(sortant, entrant, id_event)] transferts imposés (stabilité du conseil d'un calcul à l'autre).
     entree_jour0 : impose au moins un transfert avant la prochaine deadline (voir option_maintenant).
+    joker_ev : id du Gameday où le joker est joué : ce jour-là, les transferts sont illimités et gratuits
+    (ils ne comptent ni dans les transferts gratuits ni dans la réserve) (voir moment_joker).
     plein_suiv=True : 5 titulaires imposés chaque jour de la semaine suivante (voir option_plein).
     joker=True (avec libre=True) : équipe refaite avant la prochaine deadline avec ton vrai budget
     (valeur de revente + banque), sans joueur imposé (voir option_joker).
@@ -668,7 +671,8 @@ def optimiser(joueurs, equipe, banque, prix_vente, gratuits, cap_dispo, jours, j
     for key, v in [(key, v) for key, v in idx.items() if key[0] == "u"]:
         _, w, k, d = key
         integ[v] = 1
-        cumul = {idx[("in", i, dd)]: 1 for dd in range(D) if sem[dd] == w and dd <= d for i in range(n)}
+        cumul = {idx[("in", i, dd)]: 1 for dd in range(D) if sem[dd] == w and dd <= d and tous[dd]["id"] != joker_ev
+                 for i in range(n)}
         row({**cumul, v: -20}, -np.inf, k - 1)
         r = libres[w] - k + 1
         val = lambda dd: (assurance.get(tous[dd]["id"]) or [0] * 3)[r - 1] if dd < D and sem[dd] == w else 0.0
@@ -677,7 +681,7 @@ def optimiser(joueurs, equipe, banque, prix_vente, gratuits, cap_dispo, jours, j
         h = idx[("hit", w)]
         ub[h] = 10 if transferts else 0; integ[h] = 1
         obj[h] = 100 * (1.0 if w == 0 else cfg["poids_futur"])
-        co = {idx[("in", i, d)]: 1 for d in range(D) if sem[d] == w for i in range(n)}
+        co = {idx[("in", i, d)]: 1 for d in range(D) if sem[d] == w and tous[d]["id"] != joker_ev for i in range(n)}
         if co:
             co[h] = -1
             row(co, -np.inf, g)
@@ -982,6 +986,37 @@ def creux(r, joueurs, joue, boot, gw_suiv):
             f"{total_vides} place(s) vide(s) ; joueurs dispo par jour : {'-'.join(jours3)}")
 
 
+def moment_joker(plan, args_plan, base, cfg, boot):
+    """Gain du joker selon le jour où il est joué (cette semaine puis début de la suivante), et date limite
+    de la fenêtre en cours. Le reste (transferts normaux, titulaires, capitaine) est optimisé autour."""
+    jours, gw_suiv = args_plan[6], args_plan[8]
+    candidats = (list(jours) + list((gw_suiv or {}).get("events", [])))[:cfg["joker_jours_testes"]]
+    pts = lambda r: points_projetes(r, cfg)
+    res = []
+    for ev in candidats:
+        f = optimiser(*args_plan, transferts=True, assurance=base["assurance"], joker_ev=ev["id"])
+        if f:
+            entres = [q for jp in f["plan"] + f["plan2"] if jp["event"]["id"] == ev["id"] for q in jp["entrants"]]
+            res.append((ev, pts(f) - pts(plan), len(entres)))
+    if not res:
+        return ""
+    meilleur = max(res, key=lambda r: r[1])
+    # fenêtre du joker en cours (chips du jeu) : à jouer avant la fin, sinon il est perdu
+    fin = None
+    for c in boot.get("chips", []):
+        if c.get("name") == "wildcard" and c.get("start_event", 0) <= jours[0]["id"] <= c.get("stop_event", 0):
+            ev_fin = next((e for e in boot["events"] if e["id"] == c["stop_event"]), None)
+            fin = ev_fin and paris(z(ev_fin["deadline_time"]))
+    court = lambda e: e["name"].replace("Gameweek ", "GW").replace(" - ", " ")
+    return ("Moment du joker (gain sur cette semaine + suivante, selon le jour où tu le joues) : "
+            + " | ".join(f"{court(e)} {g:+.0f}" for e, g, _ in res)
+            + f". Meilleur : {court(meilleur[0])} (deadline {paris(z(meilleur[0]['deadline_time']))}, "
+            f"{meilleur[2]} joueur(s) changé(s))."
+            + (f" Fenêtre actuelle du joker : à jouer au plus tard avant la deadline du {fin}, sinon il est perdu." if fin else "")
+            + " Plus le jour est tardif, moins il reste de jours comptés dans le calcul : un écart de "
+              "quelques points en faveur d'un jour proche ne justifie pas d'attendre.")
+
+
 def quand_txt(ev):
     """« ce soir » si la deadline tombe aujourd'hui (heure de Paris), sinon « le Day N »."""
     d = z(ev["deadline_time"]).astimezone(PARIS).date()
@@ -1171,6 +1206,8 @@ def rapport(joueurs, equipe, banque, gratuits, cap_dispo, gw, jours, joue, match
         P(suivi["maintenant"])
     if suivi.get("joker"):
         P(suivi["joker"])
+    if suivi.get("moment_joker"):
+        P("🃏 " + suivi["moment_joker"])
     if suivi.get("ligue"):
         P("🏆 " + suivi["ligue"])
     if suivi.get("creux"):
@@ -1362,6 +1399,12 @@ def main():
     except Exception as ex:
         joker_txt, joker_gain = "", None
         print(f"  (option joker non calculée : {ex!r})")
+    try:   # seulement quand le joker devient intéressant (calcul plus long)
+        moment_txt = (moment_joker(plan, args_plan, base, cfg, boot)
+                      if joker_gain is not None and joker_gain >= 0.7 * cfg["seuil_joker"] else "")
+    except Exception as ex:
+        moment_txt = ""
+        print(f"  (moment du joker non calculé : {ex!r})")
     try:   # simple éclairage : ne doit jamais faire échouer le calcul
         maintenant_txt = "" if construction else option_maintenant(plan, args_plan, base, cfg, joueurs)
     except Exception as ex:
@@ -1370,7 +1413,7 @@ def main():
     alertes, a_verifier, note_alertes = alertes_equipe(mt, plan, joueurs, joue)
     suivi = dict(forces=forces, alertes=alertes, a_verifier=a_verifier, note_alertes=note_alertes, stabilite=stabilite,
                  maintenant=maintenant_txt, joker=joker_txt, idees=idees, plein=plein_txt,
-                 creux=creux_txt, ligue=ligue_txt, poids_futur=cfg["poids_futur"],
+                 creux=creux_txt, ligue=ligue_txt, moment_joker=moment_txt, poids_futur=cfg["poids_futur"],
                  valeurs=valeurs_equipe(equipe, joueurs, jours, gw_suiv, joue, cfg),
                  changements=changements(prec, plan, joueurs, boot, gw), source_equipe=src_equipe)
     print(f"  (force des conseils : {(dt.datetime.now() - t_force).seconds} s)")
