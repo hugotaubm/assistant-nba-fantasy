@@ -193,7 +193,9 @@ td.banc .adv-logo { opacity: .5; }
 .tab-forme tr.froid td.ecart { color: var(--rouge); font-weight: 700; }
 .forme, .analyses { margin-top: 28px; }
 .forme h2.mt { margin-top: 22px; }
-.analyses > summary { cursor: pointer; } .analyses > summary h2 { display: inline; }
+.analyses > summary, .valeurs > summary { cursor: pointer; }
+.analyses > summary h2, .valeurs > summary h2 { display: inline; }
+.valeurs { margin-top: 28px; }
 .option { font-size: .95rem; margin: 10px 0 0; padding: 8px 10px; border-radius: 8px; background: var(--fond); }
 details.semaine > summary, #gw2 > summary { cursor: pointer; }
 details.semaine > summary h2 { display: inline; }
@@ -226,7 +228,7 @@ footer ul { list-style: none; padding: 0; margin: 6px 0 0; display: flex; flex-w
       <span>Avant <b>Gameweek 2 - Day 1</b>, lun. 26/10 à 23h30</span>
       <span class="chiffre" id="compte">…</span>
     </div>
-    <ul class="alerte-site"><li>⚠️ Transfert à faire avant cette deadline : V.Wembanyama → Y.Lendeborg</li><li>⚠️ J.Williams : Wrist expected back 2026-10-26 (85 % de chances de jouer ce soir)</li><li>⚠️ J.Walsh joue ce soir mais est sur ton banc (conseillé titulaire)</li></ul>
+    <ul class="alerte-site"><li>⚠️ Transfert à faire avant cette deadline : V.Wembanyama → Y.Lendeborg</li><li>⚠️ J.Walsh joue ce soir mais est sur ton banc (conseillé titulaire)</li></ul>
     <p class="option">🏆 Ligue First Team : 67e sur 627 (+7 depuis le 25/10), 2 pts du rang juste devant, 406 pts du 1er</p>
   </section>
   <header>
@@ -328,7 +330,7 @@ footer ul { list-style: none; padding: 0; margin: 6px 0 0; display: flex; flex-w
     <h2>Qui perfe, qui déçoit</h2>
     <div class="defile"><table class="tab-forme">
       <tr><th></th><th>Ton joueur</th><th>3 derniers matchs</th><th>Moy.</th><th>Proj.</th><th>Écart</th><th>Min.</th></tr>
-      <tr class="normal"><td></td><td><b>N.Traore</b> <small>BKN</small></td><td class="num">5 · 5 · 38</td><td class="num"><b>16</b></td><td class="num">15</td><td class="num ecart">+8 %</td><td class="num">15</td></tr><tr class="normal"><td></td><td><b>T.Jerome</b> <small>MEM</small></td><td class="num">67 · 43 · 50</td><td class="num"><b>53</b></td><td class="num">51</td><td class="num ecart">+5 %</td><td class="num">31</td></tr><tr class="normal"><td></td><td><b>C.Wilson</b> <small>CHI</small></td><td class="num">32 · 38 · 59</td><td class="num"><b>43</b></td><td class="num">43</td><td class="num ecart">+0 %</td><td class="num">34</td></tr><tr class="normal"><td></td><td><b>J.Randle</b> <small>BKN</small></td><td class="num">58 · 39 · 34</td><td class="num"><b>44</b></td><td class="num">44</td><td class="num ecart">-0 %</td><td class="num">32</td></tr><tr class="normal"><td></td><td><b>D.Acuff Jr.</b> <small>SAC</small></td><td class="num">30 · 43 · 42</td><td class="num"><b>38</b></td><td class="num">39</td><td class="num ecart">-2 %</td><td class="num">35</td></tr><tr class="normal"><td></td><td><b>B.Burries</b> <small>MIL</small></td><td class="num">17 · 13 · 19</td><td class="num"><b>16</b></td><td class="num">18</td><td class="num ecart">-9 %</td><td class="num">13</td></tr><tr class="normal"><td></td><td><b>V.Wembanyama</b> <small>SAS</small></td><td class="num">52 · 48 · 49</td><td class="num"><b>50</b></td><td class="num">56</td><td class="num ecart">-11 %</td><td class="num">31</td></tr><tr class="froid"><td>🧊</td><td><b>J.Walsh</b> <small>BOS</small></td><td class="num">14 · 8</td><td class="num"><b>11</b></td><td class="num">14</td><td class="num ecart">-20 %</td><td class="num">16</td></tr><tr class="froid"><td>🧊</td><td><b>V.Edgecombe</b> <small>PHI</small></td><td class="num">39 · 43 · 0</td><td class="num"><b>27</b></td><td class="num">35</td><td class="num ecart">-22 %</td><td class="num">21</td></tr><tr class="froid"><td>🧊</td><td><b>J.Williams</b> <small>OKC</small></td><td class="num">11 · 16 · 0</td><td class="num"><b>9</b></td><td class="num">13</td><td class="num ecart">-30 %</td><td class="num">12</td></tr>
+      <tr class="normal"><td></td><td><b>N.Traore</b> <small>BKN</small></td><td class="num">5 · 5 · 38</td><td class="num"><b>16</b></td><td class="num">15</td><td class="num ecart">+8 %</td><td class="num">15</td></tr><tr class="normal"><td></td><td><b>T.Jerome</b> <small>MEM</small></td><td class="num">67 · 43 · 50</td><td class="num"><b>53</b></td><td class="num">51</td><td class="num ecart">+5 %</td><td class="num">31</td></tr><tr class="normal"><td></td><td><b>C.Wilson</b> <small>CHI</small></td><td class="num">32 · 38 · 59</td><td class="num"><b>43</b></td><td class="num">43</td><td class="num ecart">+0 %</td><td class="num">34</td></tr><tr class="normal"><td></td><td><b>J.Randle</b> <small>BKN</small></td><td class="num">58 · 39 · 34</td><td class="num"><b>44</b></td><td class="num">44</td><td class="num ecart">-0 %</td><td class="num">32</td></tr><tr class="normal"><td></td><td><b>D.Acuff Jr.</b> <small>SAC</small></td><td class="num">30 · 43 · 42</td><td class="num"><b>38</b></td><td class="num">39</td><td class="num ecart">-2 %</td><td class="num">35</td></tr><tr class="normal"><td></td><td><b>V.Edgecombe</b> <small>PHI</small></td><td class="num">18 · 39 · 43</td><td class="num"><b>33</b></td><td class="num">35</td><td class="num ecart">-5 %</td><td class="num">32</td></tr><tr class="normal"><td></td><td><b>B.Burries</b> <small>MIL</small></td><td class="num">17 · 13 · 19</td><td class="num"><b>16</b></td><td class="num">18</td><td class="num ecart">-9 %</td><td class="num">13</td></tr><tr class="normal"><td></td><td><b>V.Wembanyama</b> <small>SAS</small></td><td class="num">52 · 48 · 49</td><td class="num"><b>50</b></td><td class="num">56</td><td class="num ecart">-11 %</td><td class="num">31</td></tr><tr class="froid"><td>🧊</td><td><b>J.Walsh</b> <small>BOS</small></td><td class="num">14 · 8</td><td class="num"><b>11</b></td><td class="num">14</td><td class="num ecart">-20 %</td><td class="num">16</td></tr><tr class="froid"><td>🧊</td><td><b>J.Williams</b> <small>OKC</small></td><td class="num">11 · 16 · 0</td><td class="num"><b>9</b></td><td class="num">13</td><td class="num ecart">-30 %</td><td class="num">12</td></tr>
     </table></div>
     <p class="discret">🔥 au moins 20 % au-dessus de sa projection sur ses 3 derniers matchs, 🧊 au moins 20 % en dessous.</p>
     <h2 class="mt">Bonnes affaires (hors de ton équipe)</h2>
@@ -391,7 +393,7 @@ footer ul { list-style: none; padding: 0; margin: 6px 0 0; display: flex; flex-w
   </details>
 
   <footer>
-    Généré le lun. 26/10 à 16h55. Équipe lue depuis : my-team (connecté, à jour en direct). Projections indicatives : vérifie les blessures de dernière minute avant de valider.
+    Généré le lun. 26/10 à 17h00. Équipe lue depuis : my-team (connecté, à jour en direct). Projections indicatives : vérifie les blessures de dernière minute avant de valider.
     <ul><li>joueurs : en ligne</li><li>calendrier (fantasy) : en ligne</li><li>calendrier (NBA) : non utilisé</li><li>mon équipe : my-team (connecté, à jour en direct)</li></ul>
   </footer>
 </main>
@@ -413,7 +415,7 @@ footer ul { list-style: none; padding: 0; margin: 6px 0 0; display: flex; flex-w
 <div id="aa-barre" style="position:fixed;left:0;right:0;bottom:0;z-index:99999;
   display:flex;align-items:center;gap:12px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));
   background:#1d428a;color:#fff;font:15px -apple-system,system-ui,sans-serif;box-shadow:0 -2px 8px rgba(0,0,0,.2)">
-  <span style="flex:1;min-width:0"><span id="aa-info">Rapport du 26/10 à 16:55</span> · <a href="journal.html" style="color:#fff">journal</a></span>
+  <span style="flex:1;min-width:0"><span id="aa-info">Rapport du 26/10 à 17:00</span> · <a href="journal.html" style="color:#fff">journal</a></span>
   <a id="aa-recalculer" href="https://github.com/hugotaubm/assistant-nba-fantasy/actions/workflows/assistant.yml" style="font:600 15px -apple-system,system-ui,sans-serif;padding:10px 16px;border-radius:10px;background:#fff;color:#1d428a;text-decoration:none;white-space:nowrap">Recalculer</a>
 </div>
 <div style="height:80px"></div>
@@ -434,7 +436,7 @@ footer ul { list-style: none; padding: 0; margin: 6px 0 0; display: flex; flex-w
   }
   // Ouverte par le raccourci avec ?attente=1 : on attend le nouveau rapport puis on recharge.
   if (!/[?&]attente=/.test(location.search)) return;
-  var info = document.getElementById("aa-info"), depart = Date.now(), actuel = "2026-10-26T16:55:59";
+  var info = document.getElementById("aa-info"), depart = Date.now(), actuel = "2026-10-26T17:00:21";
   info.textContent = "⏳ Calcul en cours… (2 à 4 min)";
   var minuteur = setInterval(function () {
     fetch("etat.json?t=" + Date.now(), {cache: "no-store"}).then(function (r) { return r.json(); }).then(function (e) {

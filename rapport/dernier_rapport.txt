@@ -1,4 +1,4 @@
-Calcul lancé le 26/10/2026 à 16:53:15
+Calcul lancé le 26/10/2026 à 16:57:36
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
@@ -9,7 +9,6 @@ Optimisation (jusqu'à deux minutes)…
 
 ⚠ À CORRIGER SUR LE SITE AVANT LA DEADLINE
   - Transfert à faire avant cette deadline : V.Wembanyama → Y.Lendeborg
-  - J.Williams : Wrist expected back 2026-10-26 (85 % de chances de jouer ce soir)
   - J.Walsh joue ce soir mais est sur ton banc (conseillé titulaire)
 
 Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait +346 pts sur cette semaine et la suivante, avec 8 joueur(s) changé(s) (S.Gilgeous-Alexander (OKC), J.Tatum (BOS), Y.Lendeborg (GSW), W.Carter Jr. (ORL), P.Achiuwa (SAC), A.Wiggins (ATL), K.Ellis (BKN), G.Ike (GSW)) → garde-le (seuil conseillé : +366 pts). Seuil du moment : +366 pts (il baisse jusqu'à +150 à la fin de la fenêtre, le dim. 29/11 21h30, car le joker est perdu s'il n'est pas joué ; au début, le garder vaut cher en cas de série de blessures).
@@ -72,4 +71,4 @@ Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) 
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 26/10/2026 à 16:55:59 (code de sortie : 0)
+Terminé le 26/10/2026 à 17:00:21 (code de sortie : 0)
