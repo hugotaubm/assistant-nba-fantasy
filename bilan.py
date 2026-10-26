@@ -15,7 +15,7 @@ de rang (titulaire, 1er remplaçant, fin de rotation) et on écrit rapport/calib
 assistant.py applique ensuite aux projections. Les facteurs sont tirés vers 1 tant qu'il y a peu de
 matchs (CALIB_K) et bornés (CALIB_MIN, CALIB_MAX).
 """
-import json, statistics as st, urllib.request
+import json, statistics as st, time, urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -275,8 +275,33 @@ def ligue(cfg):
              "ecart_premier": (premier["total"] - moi["total"]) / 10,
              "ecart_devant": (devant["total"] - moi["total"]) / 10 if devant else 0}
     hist["historique"] = [h for h in hist["historique"] if h["date"] != point["date"]] + [point]
-    hist.update(nom=nom_ligue, dernier=point)
+    # Jokers déjà joués par les équipes devant toi (historique public de chaque équipe), une fois par jour.
+    # Seuls les totaux sont gardés : aucun identifiant ni nom des autres membres.
+    jk = hist.get("jokers") or {}
+    if jk.get("date") != point["date"]:
+        devant_ids = [r["entry"] for r in tri if r["rank"] < moi["rank"]]
+        joues, par_event, lus = 0, {}, 0
+        for k, e_id in enumerate(devant_ids):
+            try:
+                chips = get(f"entry/{e_id}/history/").get("chips", [])
+            except Exception:
+                continue
+            lus += 1
+            w = [c for c in chips if c.get("name") == "wildcard"]
+            if w:
+                joues += 1
+                ev = w[-1].get("event")
+                par_event[str(ev)] = par_event.get(str(ev), 0) + 1
+            if k % 10 == 9:
+                time.sleep(1)   # ménage le site
+        jk = dict(date=point["date"], devant=len(devant_ids), lus=lus, joues=joues, par_event=par_event)
+    hist.update(nom=nom_ligue, dernier=point, jokers=jk)
     chemin.write_text(json.dumps(hist, ensure_ascii=False), encoding="utf-8")
+    if jk.get("lus"):
+        print(f"  Jokers : {jk['joues']} des {jk['lus']} équipes devant toi l'ont déjà joué "
+              f"({100 * jk['joues'] / jk['lus']:.0f} %)"
+              + (" ; par Gameday : " + ", ".join(f"event {k} : {v}" for k, v in sorted(jk["par_event"].items(), key=lambda kv: int(kv[0])))
+                 if jk["par_event"] else ""))
 
 
 
