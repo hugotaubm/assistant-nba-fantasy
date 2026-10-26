@@ -672,12 +672,18 @@ def optimiser(joueurs, equipe, banque, prix_vente, gratuits, cap_dispo, jours, j
                 lb[S[i]] = 1
             if sem[d] == 0 and p["id"] in interdits and p["id"] not in S0:
                 ub[S[i]] = 0
-            for so, en, ev in forcer:
-                if sem[d] == sem_de.get(ev, 0) and tous[d]["id"] >= ev:
+            for so, en, ev in forcer:   # transfert imposé exactement ce jour-là (ni avant, ni après)
+                if sem[d] != sem_de.get(ev, 0):
+                    continue
+                if tous[d]["id"] >= ev:
                     if p["id"] == en:
                         lb[S[i]] = 1
                     elif p["id"] == so:
                         ub[S[i]] = 0
+                elif p["id"] == so and so in S0:
+                    lb[S[i]] = 1      # gardé jusqu'au jour du transfert
+                elif p["id"] == en and en not in S0:
+                    ub[S[i]] = 0      # pas acheté avant
             # petit bonus d'attente : à gain égal, on attend (plus d'infos sur les blessures)
             obj[v_in] = cfg["bonus_attente"] * (dernier_jour[sem[d]] - d)
         if (not transferts and not (d == 0 and libre)) or (
