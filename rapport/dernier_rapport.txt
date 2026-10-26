@@ -1,8 +1,8 @@
-Calcul lancé le 26/10/2026 à 22:40:32
+Calcul lancé le 26/10/2026 à 22:42:44
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
-  (force des conseils : 116 s)
+  (force des conseils : 90 s)
 
 === Gameweek 2 — prochaine deadline : Gameweek 2 - Day 1 le lun. 26/10 23h30 (heure de Paris) ===
 Équipe lue depuis : my-team (connecté, à jour en direct) | Banque : 13.4 M$ | Transferts gratuits restants : 1 | Capitaine dispo : oui
@@ -67,4 +67,4 @@ Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) 
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 26/10/2026 à 22:42:37 (code de sortie : 0)
+Terminé le 26/10/2026 à 22:44:22 (code de sortie : 0)
