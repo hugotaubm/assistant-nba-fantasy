@@ -58,6 +58,7 @@ def lire_config():
     cfg.setdefault("fiabilite_rang", {"3": 0.9, "4+": 0.75})   # 3e ou au-delà dans la hiérarchie de son poste
     cfg.setdefault("seuil_joker", 300)          # gain (pts, semaine + suivante pondérée) à partir duquel le joker vaut le coup (alerte)
     cfg.setdefault("idees", [])                 # tes idées à tester, ex. "D.Wolf>J.Hayes@6" (vendre>acheter@jour)
+    cfg.setdefault("dispo_apres_retour", 0.85)  # blessé avec date de retour : chance de jouer une fois revenu
     cfg.setdefault("calibration_auto", True)    # corrige les projections avec leurs erreurs passées (bilan.py)
     cfg.setdefault("seuil_changement_plan", 5)  # pts mini pour changer un transfert déjà conseillé
     cfg.setdefault("force_fort", 25)            # badge 🟢 Fort à partir de ce gain (pts)
@@ -355,12 +356,6 @@ def projeter(boot, cfg, saison_commencee, saison=None):
             fiab *= cfg["fiabilite_rang"]["3"]
         statut = e["status"]
         chance = e.get("chance_of_playing_next_round")
-        if statut in ("i", "u", "s", "n") or e.get("removed"):
-            dispo = 0.0
-        elif chance is not None:
-            dispo = chance / 100
-        else:
-            dispo = 1.0
         retour = None
         news = e.get("news") or ""
         if "expected back" in news:
@@ -368,6 +363,18 @@ def projeter(boot, cfg, saison_commencee, saison=None):
                 retour = dt.date.fromisoformat(news.split("expected back")[1].strip()[:10])
             except ValueError:
                 pass
+        if statut in ("u", "s", "n") or e.get("removed"):
+            dispo = 0.0
+        elif statut in ("i", "d") and retour:
+            # blessé avec une date de retour : 0 avant cette date (voir ev_jour), puis disponible,
+            # avec un petit risque que le retour glisse ou se fasse en minutes limitées
+            dispo = cfg["dispo_apres_retour"]
+        elif statut == "i":
+            dispo = 0.0   # blessé sans date de retour : absent sur tout l'horizon
+        elif chance is not None:
+            dispo = chance / 100
+        else:
+            dispo = 1.0
         joueurs[pid] = dict(id=pid, nom=e["web_name"], nom_complet=f"{e['first_name']} {e['second_name']}",
                             equipe_id=e["team"], equipe=equipes[e["team"]], poste=e["element_type"],
                             prix=e["now_cost"], proj=proj, dispo=dispo, fiabilite=fiab, b2b=b2b, retour=retour, statut=statut,
@@ -995,7 +1002,9 @@ def alertes_equipe(mt, plan, joueurs, joue):
     for q in reel:
         p = joueurs.get(q)
         if p and (p["dispo"] < 1 or p["statut"] != "a") and (q in titulaires_reels or q in j0["titulaires"]):
-            al.append(f"{p['nom']} : {p['news'] or 'statut ' + p['statut']} ({int(p['dispo'] * 100)} % de chances de jouer)")
+            ce_soir = (z(j0["event"]["deadline_time"]) - dt.timedelta(hours=4)).date()
+            pct = 0 if p["retour"] and p["retour"] > ce_soir else int(p["dispo"] * 100)
+            al.append(f"{p['nom']} : {p['news'] or 'statut ' + p['statut']} ({pct} % de chances de jouer ce soir)")
     if precedent:   # picks publics = composition du Gameday passé : on ne peut pas juger les titulaires de ce soir
         return al, [], f"titulaires et capitaine non vérifiables avant la deadline sans cookie (équipe lue : {precedent})"
     sures = al
