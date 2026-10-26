@@ -1,15 +1,14 @@
-Calcul lancé le 26/10/2026 à 19:35:27
+Calcul lancé le 26/10/2026 à 19:39:46
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
-  (force des conseils : 152 s)
+  (force des conseils : 153 s)
 
 === Gameweek 2 — prochaine deadline : Gameweek 2 - Day 1 le lun. 26/10 23h30 (heure de Paris) ===
 Équipe lue depuis : my-team (connecté, à jour en direct) | Banque : 1.5 M$ | Transferts gratuits restants : 2 | Capitaine dispo : oui
 
 ⚠ À CORRIGER SUR LE SITE AVANT LA DEADLINE
   - Transfert à faire avant cette deadline : V.Wembanyama → Y.Lendeborg
-  - J.Walsh joue ce soir mais est sur ton banc (conseillé titulaire)
   - Ordre du banc : mets J.Williams en 1er remplaçant (N.Traore ne joue pas ce soir) pour le remplacement automatique
 
 Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait +338 pts sur cette semaine et la suivante, avec 8 joueur(s) changé(s) (L.Doncic (LAL), J.Tatum (BOS), C.Boozer (MEM), Y.Lendeborg (GSW), A.Wiggins (ATL), T.da Silva (ORL), K.Ellis (BKN), G.Ike (GSW)) → garde-le (seuil conseillé : +366 pts). Seuil du moment : +366 pts (il baisse jusqu'à +150 à la fin de la fenêtre, le dim. 29/11 21h30, car le joker est perdu s'il n'est pas joué ; au début, le garder vaut cher en cas de série de blessures).
@@ -17,6 +16,9 @@ Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait
 🏆 Ligue First Team : 67e sur 627 (+7 depuis le 25/10), 2 pts du rang juste devant, 406 pts du 1er
 📅 Jours creux du plan conseillé — semaine suivante : Day 3 3 vide(s) | semaine d'après (Gameweek 4, sans transfert) : 31 matchs pour ton effectif, 7 place(s) vide(s) ; joueurs dispo par jour : 5-3-8-2-4-4-5
 🧩 Combler les 3 place(s) vide(s) de la semaine suivante : impossible avec tes transferts (pas assez de joueurs qui jouent ces jours-là dans ton budget).
+💭 Ton idée V.Wembanyama (SAS) → Y.Lendeborg (GSW) (GW2 Day 4) + V.Edgecombe (PHI) → L.Doncic (LAL) (GW2 Day 4) : +0 pts projetés par rapport au plan conseillé (bilan +0). L.Doncic : 65.7 pts/match projetés, fiabilité 0.93 ; cette saison 3 match(s) joué(s), 63.7 pts/match en 35 min. Banque en fin de semaine : 4.4 M$. Semaine suivante : Day 3 : B.Burries → D.Brooks, Day 4 : J.Williams → K.George. Jours creux — semaine suivante : Day 3 3 vide(s) | semaine d'après (Gameweek 4, sans transfert) : 31 matchs pour ton effectif, 7 place(s) vide(s) ; joueurs dispo par jour : 5-3-8-2-4-4-5.
+💭 Idée « V.Wembanyama>?@2.4 » : aucun remplaçant trouvé.
+💭 Ton idée V.Wembanyama (SAS) → Y.Lendeborg (GSW) (GW2 Day 3) + V.Edgecombe (PHI) → L.Doncic (LAL) (GW2 Day 3) : +0 pts projetés par rapport au plan conseillé (bilan +0). L.Doncic : 65.7 pts/match projetés, fiabilité 0.93 ; cette saison 3 match(s) joué(s), 63.7 pts/match en 35 min. Banque en fin de semaine : 4.4 M$. Semaine suivante : Day 3 : B.Burries → D.Brooks, Day 4 : J.Williams → K.George. Jours creux — semaine suivante : Day 3 3 vide(s) | semaine d'après (Gameweek 4, sans transfert) : 31 matchs pour ton effectif, 7 place(s) vide(s) ; joueurs dispo par jour : 5-3-8-2-4-4-5.
 ⚠ ALERTES
   - J.Williams (OKC) : Wrist expected back 2026-10-26 (chance de jouer 85 %)
   - V.Edgecombe (PHI) : Abdomen expected back 2026-10-28 (chance de jouer 85 %)
@@ -73,4 +75,4 @@ Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
 ----------------------------------------
-Terminé le 26/10/2026 à 19:38:19 (code de sortie : 0)
+Terminé le 26/10/2026 à 19:42:36 (code de sortie : 0)
