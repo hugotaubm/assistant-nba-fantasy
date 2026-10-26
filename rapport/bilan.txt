@@ -168,7 +168,7 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       M.Uzan (BOS) : -
       N.Pringle (BKN) : -
       P.Connaughton (CHA) : -
-  statut i | chances ce Gameday 25 | prochain 25 : 32 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 34 joueurs
       T.Bilodeau (BKN) : Shoulder expected back 2026-10-27
       M.Brown Jr. (BKN) : Rest expected back 2026-10-27
       G.Williams (CHA) : Hamstring expected back 2026-10-30
@@ -193,24 +193,23 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       C.Holmgren (OKC) : Knee expected back 2026-10-28
       C.Wallace (OKC) : Shoulder expected back 2026-10-28
       V.Edgecombe (PHI) : Abdomen expected back 2026-10-28
-  statut d | chances ce Gameday None | prochain 75 : 3 joueurs
+  statut d | chances ce Gameday None | prochain 75 : 4 joueurs
       N.Reid (CHA) : Illness expected back 2026-10-26
       I.Joe (DET) : Hip expected back 2026-10-27
       B.Williams (GSW) : Back expected back 2026-10-26
+      J.Hayes (UTA) : Shoulder expected back 2026-10-26
+  statut d | chances ce Gameday 100 | prochain 75 : 4 joueurs
+      C.Bassey (GSW) : Knee expected back 2026-10-26
+      A.Nembhard (IND) : Neck expected back 2026-10-26
+      I.Stewart (MEM) : Ankle expected back 2026-10-26
+      A.Edwards (MIN) : Knee expected back 2026-10-26
   statut i | chances ce Gameday 75 | prochain 25 : 3 joueurs
       A.Thompson (DET) : Ankle expected back 2026-10-27
       J.Alvarado (NYK) : Ankle expected back 2026-10-27
       K.Murray (SAC) : Ankle expected back 2026-10-27
-  statut d | chances ce Gameday 100 | prochain 75 : 3 joueurs
-      C.Bassey (GSW) : Knee expected back 2026-10-26
-      A.Nembhard (IND) : Neck expected back 2026-10-26
-      A.Edwards (MIN) : Knee expected back 2026-10-26
   statut d | chances ce Gameday 75 | prochain 75 : 2 joueurs
       G.Santos (GSW) : Knee expected back 2026-10-26
       A.Nesmith (IND) : Hamstring expected back 2026-10-26
-  statut i | chances ce Gameday 75 | prochain 75 : 2 joueurs
-      Z.Edey (MEM) : Ankle expected back 2026-10-26
-      K.Lopez (MEM) : Knee expected back 2026-10-26
   statut i | chances ce Gameday 100 | prochain 0 : 2 joueurs
       J.Williams (OKC) : Ankle expected back 2027-03-02
       J.Suggs (ORL) : Knee expected back 2026-11-10
@@ -218,6 +217,8 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       C.Flagg (DAL) : Shoulder expected back 2026-10-26
   statut i | chances ce Gameday None | prochain 25 : 1 joueurs
       I.Zubac (IND) : Ankle expected back 2026-10-28
+  statut i | chances ce Gameday 75 | prochain 75 : 1 joueurs
+      K.Lopez (MEM) : Knee expected back 2026-10-26
 
 ======================================================================
 LIGUE FIRST TEAM
