@@ -163,12 +163,15 @@ def rendre(ctx):
             quand = ("Avant la deadline de ce soir" if ev["id"] == j0["event"]["id"] else
                      f"Avant le jour {num_jour(ev)}, {_paris(_z(ev['deadline_time']), tz)}")
             lignes = []
+            forces_ = (ctx.get("suivi") or {}).get("forces", {})
             for s, e in zip(sorted(sortants, key=lambda q: j[q]["poste"]), sorted(entrants, key=lambda q: j[q]["poste"])):
+                f_ = forces_.get((ev["id"], s, e))
+                badge_ = f' <span class="force">{_e(f_[1])} +{f_[0]:.0f}</span>' if f_ else ""
                 lignes.append(f'''
           <li>
             <div class="vend"><span>Vendre</span><b>{_e(j[s]['nom'])}</b><small>{_e(j[s]['equipe'])}, {_m(j[s]['prix']/10)} M$</small></div>
             <svg class="fleche" viewBox="0 0 40 16" aria-hidden="true"><path d="M2 8h32M28 2l7 6-7 6"/></svg>
-            <div class="achete"><span>Acheter</span><b>{_e(j[e]['nom'])}</b><small>{_e(j[e]['equipe'])}, {_m(j[e]['prix']/10)} M$, {j[e]['proj']:.0f} pts/match</small></div>
+            <div class="achete"><span>Acheter</span><b>{_e(j[e]['nom'])}</b><small>{_e(j[e]['equipe'])}, {_m(j[e]['prix']/10)} M$, {j[e]['proj']:.0f} pts/match</small>{badge_}</div>
           </li>''')
             blocs.append(f'<p class="quand"><strong>{_e(quand)}</strong></p><ul class="echanges">{"".join(lignes)}</ul>')
         hit = f'<p class="note alerte-txt">Inclut {plan["hits"]} transfert payant (−100 pts), rentable d’après le calcul.</p>' if plan["hits"] else ""
@@ -322,6 +325,11 @@ def rendre(ctx):
     av = "".join(f'<li>🔶 {_e(a)}</li>' for a in suivi.get("a_verifier", []))
     al_html += f'<ul class="alerte-site verifier">{av}</ul>' if av else ""
     note = f'<p class="discret">{_e(suivi["note_alertes"])}</p>' if suivi.get("note_alertes") else ""
+    haut = ""
+    if suivi.get("ligue"):
+        haut += f'<p class="option">🏆 {_e(suivi["ligue"])}</p>'
+    if suivi.get("joker") and "✅" in suivi["joker"]:
+        haut += f'<p class="option">🃏 {_e(suivi["joker"])}</p>'
     chg = "".join(f'<p class="discret">{_e(suivi[k])}</p>' for k in ("changements", "stabilite") if suivi.get(k))
     if suivi.get("maintenant"):
         chg += f'<p class="option">💡 {_e(suivi["maintenant"])}</p>'
@@ -341,12 +349,38 @@ def rendre(ctx):
     <p class="discret">Points attendus (projection × probabilité de jouer × fiabilité). La semaine suivante compte
     pour {_m(suivi.get("poids_futur", 0.5))}. En rouge : le joueur qui rapporte le moins pour son prix.</p>
   </details>'''
+    forme, affaires = suivi.get("forme") or ([], [])
+    forme_html = ""
+    if forme or affaires:
+        fl = "".join(
+            f'<tr class="{f["etat"]}"><td>{"🔥" if f["etat"] == "chaud" else "🧊" if f["etat"] == "froid" else ""}</td>'
+            f'<td><b>{_e(f["nom"])}</b> <small>{_e(f["equipe"])}</small></td>'
+            f'<td class="num">{" · ".join(f"{x:.0f}" for x in f["derniers"])}</td>'
+            f'<td class="num"><b>{f["moy"]:.0f}</b></td><td class="num">{f["proj"]:.0f}</td>'
+            f'<td class="num ecart">{f["ecart"]*100:+.0f} %</td><td class="num">{f["minutes"]:.0f}</td></tr>' for f in forme)
+        al_ = "".join(
+            f'<tr><td><b>{_e(a["nom"])}</b> <small>{_e(a["equipe"])} · {a["poste"]}</small></td><td class="num">{_m(a["prix"])}</td>'
+            f'<td class="num">{a["moy"]:.0f}</td><td class="num">{a["proj"]:.0f}</td><td class="num"><b>{_m(a["valeur"])}</b></td>'
+            f'<td class="num">{a["n_suiv"]}</td></tr>' for a in affaires)
+        forme_html = f'''
+  <section class="forme">
+    <h2>Qui perfe, qui déçoit</h2>
+    <div class="defile"><table class="tab-forme">
+      <tr><th></th><th>Ton joueur</th><th>3 derniers matchs</th><th>Moy.</th><th>Proj.</th><th>Écart</th><th>Min.</th></tr>
+      {fl}
+    </table></div>
+    <p class="discret">🔥 au moins 20 % au-dessus de sa projection sur ses 3 derniers matchs, 🧊 au moins 20 % en dessous.</p>
+    <h2 class="mt">Bonnes affaires (hors de ton équipe)</h2>
+    <div class="defile"><table class="tab-forme">
+      <tr><th>Joueur</th><th>M$</th><th>Moy. récente</th><th>Proj.</th><th>pts/M$</th><th>Matchs sem. proch.</th></tr>
+      {al_}
+    </table></div>
+    <p class="discret">Classés par points par M$ (moyenne des 3 derniers matchs et projection), au moins 15 min jouées en moyenne.</p>
+  </section>'''
     if suivi.get("joker"):
         chg += f'<p class="discret">🃏 {_e(suivi["joker"])}</p>'
     if suivi.get("moment_joker"):
         chg += f'<p class="option">🃏 {_e(suivi["moment_joker"])}</p>'
-    if suivi.get("ligue"):
-        chg = f'<p class="option">🏆 {_e(suivi["ligue"])}</p>' + chg
     if suivi.get("creux"):
         chg += f'<p class="discret">📅 Jours creux du plan conseillé — {_e(suivi["creux"])}</p>'
     if suivi.get("plein"):
@@ -359,14 +393,14 @@ def rendre(ctx):
       <span>Avant <b>{_e(j0["event"]["name"])}</b>, {_e(_paris(dl0, tz))}</span>
       <span class="chiffre" id="compte">…</span>
     </div>
-    {al_html}
-    <ul class="actions">
-      <li><span class="ic">✅</span><div><b>Titulaires</b><ul class="tits">{"".join(tit_items)}</ul></div></li>
-      <li><span class="ic">🔁</span><div><b>Transferts</b> {(" ; ".join(tr_soir)) if tr_soir else "Aucun avant cette deadline"}</div></li>
-      <li><span class="ic">⭐</span><div><b>Capitaine</b> {cap_txt}</div></li>
-    </ul>
-    {prochain}{note}{chg}
+    {al_html or '<p class="ok">✅ Ton équipe sur le site suit le conseil.</p>' if not note else al_html}
+    {note}{haut}
   </section>'''
+    analyses_html = (f'''
+  <details class="analyses">
+    <summary><h2>Analyses détaillées</h2></summary>
+    {chg}
+  </details>''' if chg else "")
     sources = "".join(f"<li>{_e(n)} : {_e(s)}</li>" for n, s in ctx["sources"].items())
     genere = _paris(dt.datetime.now(dt.timezone.utc), tz)
 
@@ -549,6 +583,15 @@ td.banc .adv-logo {{ opacity: .5; }}
 .tab-valeurs th, .tab-valeurs td {{ padding: 6px 8px; border-bottom: 1px solid var(--trait); text-align: left; white-space: nowrap; }}
 .tab-valeurs tr.poids-mort td {{ color: #c0392b; font-weight: 600; }}
 .defile {{ overflow-x: auto; }}
+.ok {{ margin: 10px 0 0; color: var(--vert); font-weight: 600; }}
+.tab-forme {{ border-collapse: collapse; width: 100%; font-size: .92rem; }}
+.tab-forme th, .tab-forme td {{ padding: 6px 8px; border-bottom: 1px solid var(--trait); text-align: left; white-space: nowrap; }}
+.tab-forme td.num {{ text-align: right; font-variant-numeric: tabular-nums; }}
+.tab-forme tr.chaud td.ecart {{ color: var(--vert); font-weight: 700; }}
+.tab-forme tr.froid td.ecart {{ color: var(--rouge); font-weight: 700; }}
+.forme, .analyses {{ margin-top: 28px; }}
+.forme h2.mt {{ margin-top: 22px; }}
+.analyses > summary {{ cursor: pointer; }} .analyses > summary h2 {{ display: inline; }}
 .option {{ font-size: .95rem; margin: 10px 0 0; padding: 8px 10px; border-radius: 8px; background: var(--fond); }}
 details.semaine > summary, #gw2 > summary {{ cursor: pointer; }}
 details.semaine > summary h2 {{ display: inline; }}
@@ -606,7 +649,11 @@ footer ul {{ list-style: none; padding: 0; margin: 6px 0 0; display: flex; flex-
     {tr_html}
   </section>
 
+  {forme_html}
+
   {val_html}
+
+  {analyses_html}
 
   <details class="semaine" open>
     <summary><h2>Ton effectif, jour par jour</h2></summary>

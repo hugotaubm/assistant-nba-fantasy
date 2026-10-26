@@ -59,6 +59,7 @@ def lire_config():
     cfg.setdefault("seuil_joker", 300)          # gain (pts, semaine + suivante pondérée) à partir duquel le joker vaut le coup (alerte)
     cfg.setdefault("idees", [])                 # tes idées à tester, ex. "D.Wolf>J.Hayes@6" (vendre>acheter@jour)
     cfg.setdefault("dispo_apres_retour", 0.85)  # blessé avec date de retour : chance de jouer une fois revenu
+    cfg.setdefault("transferts_payants", False)  # False : jamais plus de transferts que les gratuits (pas de -100)
     cfg.setdefault("joker_jours_testes", 8)
     # Seuil du joker dégressif : au début de sa fenêtre, le garder vaut cher (assurance contre une série
     # de blessures) ; à la fin, il serait perdu s'il n'est pas joué. Seuil interpolé entre les deux.
@@ -285,10 +286,11 @@ def minutes_saison(boot, hors_ligne):
         for pid, eq in equipe.items():
             if eq in ont_joue:
                 m = stats.get(pid, {}).get("minutes", 0)
-                r_ = res.setdefault(pid, dict(matchs_equipe=0, joues=0, minutes=0))
+                r_ = res.setdefault(pid, dict(matchs_equipe=0, joues=0, minutes=0, matchs=[]))
                 r_["matchs_equipe"] += 1
                 r_["joues"] += m > 0
                 r_["minutes"] += m
+                r_["matchs"].append((ev["id"], stats.get(pid, {}).get("total_points", 0) / 10, m))
     return res
 
 
@@ -683,7 +685,7 @@ def optimiser(joueurs, equipe, banque, prix_vente, gratuits, cap_dispo, jours, j
         obj[v] = poids[d] * max(0.0, val(d) - val(d + 1))
     for w, g in ((0, gratuits), (1, cfg["transferts_gratuits_par_defaut"])):
         h = idx[("hit", w)]
-        ub[h] = 10 if transferts else 0; integ[h] = 1
+        ub[h] = 10 if (transferts and cfg["transferts_payants"]) else 0; integ[h] = 1
         obj[h] = 100 * (1.0 if w == 0 else cfg["poids_futur"])
         co = {idx[("in", i, d)]: 1 for d in range(D) if sem[d] == w and tous[d]["id"] != joker_ev for i in range(n)}
         if co:
@@ -1044,6 +1046,38 @@ def moment_joker(plan, args_plan, base, cfg, boot):
               "quelques points en faveur d'un jour proche ne justifie pas d'attendre.")
 
 
+def forme_et_affaires(equipe, joueurs, saison, joue, gw_suiv, boot, cfg, n_derniers=3):
+    """Forme : points des derniers matchs de tes joueurs comparés à leur projection.
+    Bonnes affaires : joueurs hors de ton équipe qui rapportent le plus par M$ (derniers matchs + projection)."""
+    suiv = (gw_suiv or {}).get("events", [])
+    nb_suiv = lambda p: sum(1 for e in suiv if e["id"] in joue.get(p["equipe_id"], ()))
+    def recents(q):
+        m = [(ev, pts, mi) for ev, pts, mi in (saison or {}).get(q, {}).get("matchs", [])][-n_derniers:]
+        return m
+    forme = []
+    for q in equipe:
+        p, m = joueurs[q], recents(q)
+        if not m:
+            continue
+        moy = sum(pts for _, pts, _ in m) / len(m)
+        ecart = moy / p["proj"] - 1 if p["proj"] else 0
+        forme.append(dict(nom=p["nom"], equipe=p["equipe"], prix=p["prix"] / 10, proj=p["proj"], moy=moy,
+                          minutes=sum(mi for _, _, mi in m) / len(m), derniers=[pts for _, pts, _ in m], ecart=ecart,
+                          etat="chaud" if ecart >= 0.2 else "froid" if ecart <= -0.2 else "normal"))
+    forme.sort(key=lambda f: -f["ecart"])
+    affaires = []
+    for q, p in joueurs.items():
+        m = recents(q)
+        if q in equipe or p["dispo"] <= 0 or len(m) < 2 or sum(mi for _, _, mi in m) / len(m) < 15:
+            continue
+        moy = sum(pts for _, pts, _ in m) / len(m)
+        valeur = (moy + p["proj"]) / 2 / max(p["prix"] / 10, 1)
+        affaires.append(dict(nom=p["nom"], equipe=p["equipe"], poste="BC" if p["poste"] == 1 else "FC", prix=p["prix"] / 10,
+                             moy=moy, proj=p["proj"], valeur=valeur, n_suiv=nb_suiv(p), statut=p["statut"]))
+    affaires.sort(key=lambda a: -a["valeur"])
+    return forme, affaires[:12]
+
+
 def quand_txt(ev):
     """« ce soir » si la deadline tombe aujourd'hui (heure de Paris), sinon « le Day N »."""
     d = z(ev["deadline_time"]).astimezone(PARIS).date()
@@ -1068,8 +1102,16 @@ def alertes_equipe(mt, plan, joueurs, joue):
         if en not in reel:
             al.append(f"Transfert à faire avant cette deadline : {joueurs[so]['nom']} → {joueurs[en]['nom']}")
     titulaires_reels = [q for q, p in reel.items() if p.get("multiplier", 0) > 0 and q in joueurs]
+    ce_soir_d = (z(j0["event"]["deadline_time"]) - dt.timedelta(hours=4)).date()
+    joue_soir = lambda q: (ev["id"] in joue.get(joueurs[q]["equipe_id"], ())
+                           and not (joueurs[q]["retour"] and joueurs[q]["retour"] > ce_soir_d) and joueurs[q]["dispo"] > 0)
+    # un titulaire absent ce soir n'est un problème que si un joueur du banc qui joue peut prendre sa place
+    remplacable = lambda q: any(b not in titulaires_reels and b in joueurs and joue_soir(b)
+                                and joueurs[b]["poste"] == joueurs[q]["poste"] for b in reel)
     for q in reel:
         p = joueurs.get(q)
+        if q in titulaires_reels and not remplacable(q) and not joue_soir(q):
+            continue
         if p and (p["dispo"] < 1 or p["statut"] != "a") and (q in titulaires_reels or q in j0["titulaires"]):
             ce_soir = (z(j0["event"]["deadline_time"]) - dt.timedelta(hours=4)).date()
             pct = 0 if p["retour"] and p["retour"] > ce_soir else int(p["dispo"] * 100)
@@ -1079,7 +1121,7 @@ def alertes_equipe(mt, plan, joueurs, joue):
     sures = al
     al = []
     for q in titulaires_reels:
-        if ev["id"] not in joue.get(joueurs[q]["equipe_id"], ()):
+        if ev["id"] not in joue.get(joueurs[q]["equipe_id"], ()) and remplacable(q):
             al.append(f"{joueurs[q]['nom']} est titulaire mais {joueurs[q]['equipe']} ne joue pas {quand}")
     for q in j0["titulaires"]:
         if q in reel and q not in titulaires_reels:
@@ -1465,6 +1507,7 @@ def main():
                  maintenant=maintenant_txt, joker=joker_txt, idees=idees, plein=plein_txt,
                  creux=creux_txt, ligue=ligue_txt, moment_joker=moment_txt, poids_futur=cfg["poids_futur"],
                  valeurs=valeurs_equipe(equipe, joueurs, jours, gw_suiv, joue, cfg),
+                 forme=forme_et_affaires(equipe, joueurs, saison, joue, gw_suiv, boot, cfg),
                  changements=changements(prec, plan, joueurs, boot, gw), source_equipe=src_equipe)
     print(f"  (force des conseils : {(dt.datetime.now() - t_force).seconds} s)")
     texte, page = rapport(joueurs, equipe, banque, gratuits, cap_dispo, gw, jours, joue, matchs, plan, base, sources, src_equipe, boot,
