@@ -332,24 +332,31 @@ def projeter(boot, cfg, saison_commencee, saison=None):
             # (blessure d'un coéquipier) monte vite, un joueur sorti de la rotation baisse vite
             w = joues / (joues + cfg["poids_minutes_avant_saison"])
             prior *= (1 - w) + w * min(cfg["plafond_minutes"], (minutes / joues) / v["min_proj"])
-        # Points réels de la saison, mélangés à la projection d'avant-saison (recalée sur les minutes)
-        proj, g_cur = prior, 0
-        if saison_commencee:
-            ppg = float(e.get("points_per_game") or 0) / 10
-            tot = (e.get("total_points") or 0) / 10
-            g_cur = tot / ppg if ppg > 0 else 0
-            if g_cur > 0:
-                w = g_cur / (g_cur + cfg["poids_points_avant_saison"])
-                proj = w * ppg + (1 - w) * prior
-                forme = float(e.get("form") or 0) / 10
-                if g_cur >= 5 and forme > 0:
-                    proj = (1 - cfg["poids_forme"]) * proj + cfg["poids_forme"] * forme
-        proj *= cfg["ajustements"].get(e["web_name"], 1.0)
-        # Hiérarchie de l'équipe (ESPN) : en fin de rotation, risque de ne pas entrer en jeu
-        # Calibration : erreurs passées du modèle pour les joueurs du même rang (voir bilan.py)
+        # Calibration (voir bilan.py) : erreurs passées pour les joueurs du même rang. Elle corrige la
+        # projection d'avant-saison seulement : les points réels de la saison n'en ont pas besoin, et
+        # son effet s'efface à mesure que le joueur accumule des matchs.
         grp = groupe_rang(rang)
-        calib = calibration.get(grp, 1.0)
-        proj *= calib
+        facteur = calibration.get(grp, 1.0)
+        # Points réels de la saison, mélangés à la projection d'avant-saison (recalée sur les minutes)
+        g_cur = 0
+        def melange(base):
+            nonlocal g_cur
+            res = base
+            if saison_commencee:
+                ppg = float(e.get("points_per_game") or 0) / 10
+                tot = (e.get("total_points") or 0) / 10
+                g_cur = tot / ppg if ppg > 0 else 0
+                if g_cur > 0:
+                    w = g_cur / (g_cur + cfg["poids_points_avant_saison"])
+                    res = w * ppg + (1 - w) * base
+                    forme = float(e.get("form") or 0) / 10
+                    if g_cur >= 5 and forme > 0:
+                        res = (1 - cfg["poids_forme"]) * res + cfg["poids_forme"] * forme
+            return res * cfg["ajustements"].get(e["web_name"], 1.0)
+        proj_brut = melange(prior)
+        proj = melange(prior * facteur)
+        calib = proj / proj_brut if proj_brut else 1.0   # effet réel de la calibration sur la projection
+        # Hiérarchie de l'équipe (ESPN) : en fin de rotation, risque de ne pas entrer en jeu
         if rang and rang >= 4:
             fiab *= cfg["fiabilite_rang"]["4+"]
         elif rang == 3:

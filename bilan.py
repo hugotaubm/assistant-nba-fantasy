@@ -117,14 +117,25 @@ def main():
         h = pk.get("entry_history", {})
         print(f"  Ton score : {h.get('points', 0) / 10:.1f} | banc : {h.get('points_on_bench', 0) / 10:.1f} | "
               f"rang : {h.get('rank')} | transferts : {h.get('event_transfers')} (coût {h.get('event_transfers_cost')})")
+        # Remplacements automatiques du jeu (un titulaire à 0 minute remplacé par un joueur du banc)
+        subs = pk.get("automatic_subs") or []
+        entres = {a["element_in"] for a in subs}
+        sortis = {a["element_out"] for a in subs}
+        for a in subs:
+            print(f"  Remplacement automatique : {nom(a['element_out'])} → {nom(a['element_in'])}")
         reel, proj_tit, liste, tit_sans_cap = 0.0, 0.0, [], 0.0
         for p in sorted(pk["picks"], key=lambda p: p["position"]):
+            if p["element"] in entres and p["multiplier"] == 0:
+                p = dict(p, multiplier=1)
+            elif p["element"] in sortis:
+                p = dict(p, multiplier=0)
             pid = p["element"]
             s = stats.get(pid, {})
             joue = el[pid]["team"] in equipes_jouent
             pts = s.get("total_points", 0) / 10
             liste.append((pts, el[pid]["element_type"]))
-            role = "TITULAIRE" if p["multiplier"] > 0 else "banc"
+            role = ("ENTRÉ" if p["element"] in entres else "TITULAIRE") if p["multiplier"] > 0 else (
+                "SORTI" if p["element"] in sortis else "banc")
             cap = " (CAPITAINE x%d)" % p["multiplier"] if p.get("is_captain") and p["multiplier"] > 1 else ""
             pr = (modele.get(str(pid), [0])[0] if modele else proj(pid)) if joue else 0
             if p["multiplier"] > 0:
