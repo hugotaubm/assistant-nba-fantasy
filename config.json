@@ -36,6 +36,8 @@
   "malus_back_to_back": 0.92,
   "idees": [],
   "seuil_joker": 300,
+  "seuil_joker_debut": 400,
+  "seuil_joker_fin": 150,
   "seuil_changement_plan": 5,
   "force_fort": 25,
   "force_leger": 8,

@@ -113,9 +113,21 @@ def alerte_joker(cfg, maintenant):
     """Notification quand le joker rapporterait au moins seuil_joker pts sur les 2 semaines (une fois par jour)."""
     plan = lire(RAPPORT / "dernier_plan.json", {})
     j = plan.get("joker")
-    if not j or j["gain"] < j["seuil"]:
+    if not j:
         return None
     notifs = lire(NOTIFS, {})
+    # Rappel unique quand la fenêtre du joker se termine dans moins de 7 jours (sinon il est perdu)
+    if j.get("fin") and notifs.get("joker_rappel") != j["fin"]:
+        reste = (z(j["fin"]) - maintenant).total_seconds() / 86400
+        if 0 < reste <= 7:
+            res = notifier(cfg, "🃏 Ton joker expire bientôt",
+                           f"Joue-le avant le {z(j['fin']).astimezone():%d/%m à %Hh%M}, sinon il est perdu. "
+                           f"Gain actuel : {j['gain']:+} pts.\n{j['texte']}", "high", "black_joker")
+            if res.startswith("notification envoyée"):
+                notifs["joker_rappel"] = j["fin"]
+                ecrire(NOTIFS, notifs)
+    if j["gain"] < j["seuil"]:
+        return None
     jour = maintenant.astimezone().date().isoformat()
     if notifs.get("joker") == jour:
         return None

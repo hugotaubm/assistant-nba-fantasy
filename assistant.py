@@ -59,7 +59,11 @@ def lire_config():
     cfg.setdefault("seuil_joker", 300)          # gain (pts, semaine + suivante pondérée) à partir duquel le joker vaut le coup (alerte)
     cfg.setdefault("idees", [])                 # tes idées à tester, ex. "D.Wolf>J.Hayes@6" (vendre>acheter@jour)
     cfg.setdefault("dispo_apres_retour", 0.85)  # blessé avec date de retour : chance de jouer une fois revenu
-    cfg.setdefault("joker_jours_testes", 8)     # jours testés pour trouver le meilleur moment du joker
+    cfg.setdefault("joker_jours_testes", 8)
+    # Seuil du joker dégressif : au début de sa fenêtre, le garder vaut cher (assurance contre une série
+    # de blessures) ; à la fin, il serait perdu s'il n'est pas joué. Seuil interpolé entre les deux.
+    cfg.setdefault("seuil_joker_debut", 400)
+    cfg.setdefault("seuil_joker_fin", 150)     # jours testés pour trouver le meilleur moment du joker
     cfg.setdefault("calibration_auto", True)    # corrige les projections avec leurs erreurs passées (bilan.py)
     cfg.setdefault("seuil_changement_plan", 5)  # pts mini pour changer un transfert déjà conseillé
     cfg.setdefault("force_fort", 25)            # badge 🟢 Fort à partir de ce gain (pts)
@@ -826,6 +830,29 @@ def option_maintenant(plan, args_plan, base, cfg, joueurs):
             f"pour remplacer un blessé : bilan {d_score:+.0f} pts → {verdict}.")
 
 
+def fenetre_joker(boot, jours, mt):
+    """Fenêtre du joker en cours (chips du jeu) : (début, fin, deadline de fin) ; None s'il est déjà joué."""
+    for c in (mt or {}).get("chips") or []:
+        if c.get("name") == "wildcard" and c.get("status_for_entry") not in (None, "available"):
+            s_, f_ = c.get("start_event") or 0, c.get("stop_event") or 0
+            if s_ <= jours[0]["id"] <= f_:
+                return None
+    for c in boot.get("chips", []):
+        if c.get("name") == "wildcard" and c.get("start_event", 0) <= jours[0]["id"] <= c.get("stop_event", 0):
+            fin = next((e for e in boot["events"] if e["id"] == c["stop_event"]), None)
+            return c["start_event"], c["stop_event"], fin and fin["deadline_time"]
+    return None
+
+
+def seuil_joker(cfg, fenetre, jours):
+    """Seuil du moment : seuil_joker_debut au début de la fenêtre, seuil_joker_fin à sa fin."""
+    if not fenetre:
+        return cfg["seuil_joker"]
+    debut, fin, _ = fenetre
+    reste = max(0.0, min(1.0, (fin - jours[0]["id"]) / max(1, fin - debut)))
+    return round(cfg["seuil_joker_fin"] + (cfg["seuil_joker_debut"] - cfg["seuil_joker_fin"]) * reste)
+
+
 def option_joker(plan, args_plan, base, cfg, joueurs):
     """À titre indicatif : ce que rapporterait une équipe refaite de zéro (joker) avant la prochaine deadline,
     comparée au plan conseillé, sur cette semaine et la suivante (pondérée)."""
@@ -1395,7 +1422,16 @@ def main():
         idees = []
         print(f"  (idées non testées : {ex!r})")
     try:   # simple éclairage : ne doit jamais faire échouer le calcul
-        joker_txt, joker_gain = ("", None) if construction else option_joker(plan, args_plan, base, cfg, joueurs)
+        fen_joker = fenetre_joker(boot, jours, mt)
+        if fen_joker is None and any(c.get("name") == "wildcard" for c in boot.get("chips", [])):
+            joker_txt, joker_gain = "", None   # joker déjà joué dans cette fenêtre
+        else:
+            cfg["seuil_joker"] = seuil_joker(cfg, fen_joker, jours)
+            joker_txt, joker_gain = ("", None) if construction else option_joker(plan, args_plan, base, cfg, joueurs)
+            if joker_txt and fen_joker and fen_joker[2]:
+                joker_txt += (f" Seuil du moment : +{cfg['seuil_joker']} pts (il baisse jusqu'à +{cfg['seuil_joker_fin']} "
+                              f"à la fin de la fenêtre, le {paris(z(fen_joker[2]))}, car le joker est perdu s'il n'est pas joué ; "
+                              f"au début, le garder vaut cher en cas de série de blessures).")
     except Exception as ex:
         joker_txt, joker_gain = "", None
         print(f"  (option joker non calculée : {ex!r})")
@@ -1437,7 +1473,8 @@ def main():
     snap = instantane(plan, boot, gw, joueurs)
     snap.update(resume=resume_notif(plan, joueurs, alertes, forces, a_verifier), alertes=alertes, a_verifier=a_verifier,
                 source_direct=src_equipe.startswith("my-team (connecté"), changements=suivi["changements"],
-                joker=dict(gain=round(joker_gain), seuil=cfg["seuil_joker"], texte=joker_txt) if joker_gain is not None else None,
+                joker=dict(gain=round(joker_gain), seuil=cfg["seuil_joker"], texte=joker_txt,
+                           fin=fen_joker[2] if fen_joker else None) if joker_gain is not None else None,
                 deadline=j0["event"]["deadline_time"], prochaine_nom=j0["event"]["name"])
     fichier_plan.parent.mkdir(exist_ok=True)
     fichier_plan.write_text(json.dumps(snap, ensure_ascii=False), encoding="utf-8")
