@@ -34,6 +34,7 @@ except Exception:  # pragma: no cover
     PARIS = dt.timezone(dt.timedelta(hours=1))
 B2B = set()          # (équipe, event) = 2e match d'un back-to-back, rempli par construire_calendrier
 MALUS_B2B = [0.92]   # remplacé par config.json « malus_back_to_back »
+PROCHAIN = [None]    # id du prochain Gameday : ses chances de jouer viennent du rapport de blessures du jeu
 
 
 # ----------------------------------------------------------------------------- utils
@@ -58,7 +59,7 @@ def lire_config():
     cfg.setdefault("fiabilite_rang", {"3": 0.9, "4+": 0.75})   # 3e ou au-delà dans la hiérarchie de son poste
     cfg.setdefault("seuil_joker", 300)          # gain (pts, semaine + suivante pondérée) à partir duquel le joker vaut le coup (alerte)
     cfg.setdefault("idees", [])                 # tes idées à tester, ex. "D.Wolf>J.Hayes@6" (vendre>acheter@jour)
-    cfg.setdefault("dispo_apres_retour", 0.85)  # blessé avec date de retour : chance de jouer une fois revenu
+    cfg.setdefault("dispo_apres_retour", 0.85)  # blessé avec date de retour : chance de jouer une fois revenu (après le prochain Gameday)
     cfg.setdefault("transferts_payants", False)  # False : jamais plus de transferts que les gratuits (pas de -100)
     cfg.setdefault("joker_jours_testes", 8)
     # Seuil du joker dégressif : au début de sa fenêtre, le garder vaut cher (assurance contre une série
@@ -384,21 +385,25 @@ def projeter(boot, cfg, saison_commencee, saison=None):
                 retour = dt.date.fromisoformat(news.split("expected back")[1].strip()[:10])
             except ValueError:
                 pass
+        # Chances de jouer, d'après le rapport de blessures du jeu (paliers NBA : 0 out, 25 doubtful,
+        # 50 questionable, 75 probable, 100 disponible) :
+        #  - prochain Gameday : chance_of_playing_next_round telle quelle ;
+        #  - Gamedays suivants : 0 avant la date de retour annoncée (voir ev_jour), puis dispo_apres_retour
+        #    (le retour peut glisser ou se faire en minutes limitées) ; blessé sans date : absent.
         if statut in ("u", "s", "n") or e.get("removed"):
             dispo = 0.0
         elif statut in ("i", "d") and retour:
-            # blessé avec une date de retour : 0 avant cette date (voir ev_jour), puis disponible,
-            # avec un petit risque que le retour glisse ou se fasse en minutes limitées
             dispo = cfg["dispo_apres_retour"]
         elif statut == "i":
-            dispo = 0.0   # blessé sans date de retour : absent sur tout l'horizon
+            dispo = 0.0
         elif chance is not None:
             dispo = chance / 100
         else:
             dispo = 1.0
+        dispo_prochain = None if (statut in ("u", "s", "n") or e.get("removed") or chance is None) else chance / 100
         joueurs[pid] = dict(id=pid, nom=e["web_name"], nom_complet=f"{e['first_name']} {e['second_name']}",
                             equipe_id=e["team"], equipe=equipes[e["team"]], poste=e["element_type"],
-                            prix=e["now_cost"], proj=proj, dispo=dispo, fiabilite=fiab, b2b=b2b, retour=retour, statut=statut,
+                            prix=e["now_cost"], proj=proj, dispo=dispo, dispo_prochain=dispo_prochain, fiabilite=fiab, b2b=b2b, retour=retour, statut=statut,
                             news=news, g=g_cur, possede=float(e.get("selected_by_percent") or 0),
                             rang=grp, calib=calib)
     return joueurs
@@ -424,7 +429,8 @@ def ev_jour(p, ev_id, joue, date_event):
         return 0.0
     if p["retour"] and p["retour"] > date_event:
         return 0.0
-    v = p["proj"] * p["dispo"] * p["fiabilite"]
+    dispo = p["dispo_prochain"] if ev_id == PROCHAIN[0] and p.get("dispo_prochain") is not None else p["dispo"]
+    v = p["proj"] * dispo * p["fiabilite"]
     if (p["equipe_id"], ev_id) in B2B:   # 2e soir d'affilée : effet propre au joueur si mesuré, sinon valeur par défaut
         v *= p["b2b"] if p.get("b2b") else MALUS_B2B[0] - (0.04 if p["fiabilite"] < 0.8 or p["retour"] else 0)
     return v   # fiabilité = risque de repos / pépins (≈0,92, moins pour les joueurs fragiles)
@@ -1132,7 +1138,8 @@ def alertes_equipe(mt, plan, joueurs, joue):
             continue
         if p and (p["dispo"] < 1 or p["statut"] != "a") and (q in titulaires_reels or q in j0["titulaires"]):
             ce_soir = (z(j0["event"]["deadline_time"]) - dt.timedelta(hours=4)).date()
-            pct = 0 if p["retour"] and p["retour"] > ce_soir else int(p["dispo"] * 100)
+            pct = 0 if p["retour"] and p["retour"] > ce_soir else int(
+                (p["dispo_prochain"] if p.get("dispo_prochain") is not None else p["dispo"]) * 100)
             if pct >= 75:
                 continue   # probable : rien à corriger (il reste listé dans « À surveiller »)
             al.append(f"{p['nom']} : {p['news'] or 'statut ' + p['statut']} ({pct} % de chances de jouer ce soir)")
@@ -1408,6 +1415,7 @@ def main():
     boot, fixtures, sched, mt, sources = charger(cfg, args.hors_ligne)
     maintenant = z(args.maintenant) if args.maintenant else dt.datetime.now(dt.timezone.utc)
     gw, gw_suiv, jours, saison_commencee = gameweek_courante(boot, maintenant)
+    PROCHAIN[0] = jours[0]["id"]
     if gw_suiv:
         gw_suiv = dict(gw_suiv, events=[e for e in boot["events"] if gw_suiv["start_event"] <= e["id"] <= gw_suiv["stop_event"]])
     joue, matchs = construire_calendrier(boot, fixtures, sched)

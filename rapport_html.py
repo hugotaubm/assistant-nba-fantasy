@@ -81,6 +81,9 @@ def _court(titulaires, capitaine, joueurs, adversaire):
     </svg>'''
 
 
+PALIERS = {0.0: "out, ", 0.25: "doubtful, ", 0.5: "questionable, ", 0.75: "probable, "}   # rapport de blessures NBA
+
+
 def _graph_saison(soirees, ligue):
     """Tes soirées (barres) face à la moyenne des joueurs (ligne), puis ton rang dans la ligue (ligne).
     Deux graphiques séparés : deux échelles différentes ne partagent jamais un axe."""
@@ -285,7 +288,7 @@ def rendre(ctx):
     alertes_html = ""
     if alertes:
         items = "".join(f'<li><b>{_e(j[p]["nom"])}</b> ({_e(j[p]["equipe"])}) : {_e(_news(j[p]["news"]) or "statut " + j[p]["statut"])}, '
-                        f'{int(j[p]["dispo"]*100)} % de chances de jouer</li>' for p in alertes)
+                        f'{PALIERS.get(j[p].get("dispo_prochain"), "")}{int((j[p]["dispo_prochain"] if j[p].get("dispo_prochain") is not None else j[p]["dispo"])*100)} % de chances de jouer au prochain match</li>' for p in alertes)
         alertes_html = f'<section class="alertes" aria-label="Blessures et incertitudes"><h2>À surveiller</h2><ul>{items}</ul></section>'
 
     # --- effectif × jours (Front Court / Back Court, adversaire de chaque jour)
