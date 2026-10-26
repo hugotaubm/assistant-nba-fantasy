@@ -1,8 +1,8 @@
-Calcul lancé le 26/10/2026 à 16:43:25
+Calcul lancé le 26/10/2026 à 16:53:15
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
-  (force des conseils : 138 s)
+  (force des conseils : 147 s)
 
 === Gameweek 2 — prochaine deadline : Gameweek 2 - Day 1 le lun. 26/10 23h30 (heure de Paris) ===
 Équipe lue depuis : my-team (connecté, à jour en direct) | Banque : 1.5 M$ | Transferts gratuits restants : 2 | Capitaine dispo : oui
@@ -10,14 +10,13 @@ Optimisation (jusqu'à deux minutes)…
 ⚠ À CORRIGER SUR LE SITE AVANT LA DEADLINE
   - Transfert à faire avant cette deadline : V.Wembanyama → Y.Lendeborg
   - J.Williams : Wrist expected back 2026-10-26 (85 % de chances de jouer ce soir)
-  - D.Acuff Jr. est titulaire mais SAC ne joue pas ce soir
   - J.Walsh joue ce soir mais est sur ton banc (conseillé titulaire)
 
-Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait +345 pts sur cette semaine et la suivante, avec 8 joueur(s) changé(s) (L.Doncic (LAL), J.Tatum (BOS), C.Boozer (MEM), Y.Lendeborg (GSW), A.Wiggins (ATL), T.da Silva (ORL), K.Ellis (BKN), G.Ike (GSW)) → garde-le (seuil conseillé : +366 pts). Seuil du moment : +366 pts (il baisse jusqu'à +150 à la fin de la fenêtre, le dim. 29/11 21h30, car le joker est perdu s'il n'est pas joué ; au début, le garder vaut cher en cas de série de blessures).
+Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait +346 pts sur cette semaine et la suivante, avec 8 joueur(s) changé(s) (S.Gilgeous-Alexander (OKC), J.Tatum (BOS), Y.Lendeborg (GSW), W.Carter Jr. (ORL), P.Achiuwa (SAC), A.Wiggins (ATL), K.Ellis (BKN), G.Ike (GSW)) → garde-le (seuil conseillé : +366 pts). Seuil du moment : +366 pts (il baisse jusqu'à +150 à la fin de la fenêtre, le dim. 29/11 21h30, car le joker est perdu s'il n'est pas joué ; au début, le garder vaut cher en cas de série de blessures).
 🃏 Moment du joker (gain sur cette semaine + suivante, selon le jour où tu le joues) : GW2 Day 1 +300 | GW2 Day 2 +340 | GW2 Day 3 +286 | GW2 Day 4 +266 | GW2 Day 5 +249 | GW2 Day 6 +176 | GW2 Day 7 +185 | GW3 Day 1 +111. Meilleur : GW2 Day 2 (deadline mer. 28/10 00h00, 8 joueur(s) changé(s)). Fenêtre actuelle du joker : à jouer au plus tard avant la deadline du dim. 29/11 21h30, sinon il est perdu. Plus le jour est tardif, moins il reste de jours comptés dans le calcul : un écart de quelques points en faveur d'un jour proche ne justifie pas d'attendre. (calculé le 26/10 à 06h24)
 🏆 Ligue First Team : 67e sur 627 (+7 depuis le 25/10), 2 pts du rang juste devant, 406 pts du 1er
 📅 Jours creux du plan conseillé — semaine suivante : Day 3 3 vide(s) | semaine d'après (Gameweek 4, sans transfert) : 31 matchs pour ton effectif, 7 place(s) vide(s) ; joueurs dispo par jour : 5-3-8-2-4-4-5
-🧩 Combler les 3 place(s) vide(s) de la semaine suivante est possible : Day 1 : J.Williams → Y.Lendeborg, J.Randle → G.Ike ; Day 2 : V.Edgecombe → L.Doncic ; Day 3 : N.Traore → J.Suggs, T.Jerome → D.Brooks, C.Wilson → B.Portis (dont 2 transfert(s) payant(s) à -100 pts). Semaine suivante +32 pts, au total -117 pts par rapport au plan conseillé (cette semaine + suivante pondérée).
+🧩 Combler les 3 place(s) vide(s) de la semaine suivante : impossible avec tes transferts (pas assez de joueurs qui jouent ces jours-là dans ton budget).
 ⚠ ALERTES
   - J.Williams (OKC) : Wrist expected back 2026-10-26 (chance de jouer 85 %)
   - V.Edgecombe (PHI) : Abdomen expected back 2026-10-28 (chance de jouer 85 %)
@@ -33,7 +32,7 @@ Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait
   Avant la deadline de Gameweek 2 - Day 1 (lun. 26/10 23h30) ← MAINTENANT :
   - Vendre V.Wembanyama (SAS)         → Acheter Y.Lendeborg (GSW) (7.6 M$, proj. 37.4)  [🟡 Léger : +17 pts]
   Avant la deadline de Gameweek 2 - Day 2 (mer. 28/10 00h00) :
-  - Vendre V.Edgecombe (PHI)          → Acheter L.Doncic (LAL) (21.0 M$, proj. 65.7)  [🟡 Léger : +16 pts]
+  - Vendre V.Edgecombe (PHI)          → Acheter L.Doncic (LAL) (21.0 M$, proj. 65.7)  [🟢 Fort : +25 pts]
   Gain attendu (cette semaine + suivante pondérée) : +292 pts vs ne rien faire
   Relance l'assistant avant chaque deadline : le conseil est recalculé avec les dernières blessures.
   Prévu la semaine suivante (indicatif) : Day 3 : B.Burries→D.Brooks ; Day 4 : J.Williams→K.George
@@ -73,4 +72,4 @@ Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) 
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 26/10/2026 à 16:45:58 (code de sortie : 0)
+Terminé le 26/10/2026 à 16:55:59 (code de sortie : 0)
