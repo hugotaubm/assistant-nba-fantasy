@@ -591,7 +591,9 @@ td.banc .adv-logo {{ opacity: .5; }}
 .tab-forme tr.froid td.ecart {{ color: var(--rouge); font-weight: 700; }}
 .forme, .analyses {{ margin-top: 28px; }}
 .forme h2.mt {{ margin-top: 22px; }}
-.analyses > summary {{ cursor: pointer; }} .analyses > summary h2 {{ display: inline; }}
+.analyses > summary, .valeurs > summary {{ cursor: pointer; }}
+.analyses > summary h2, .valeurs > summary h2 {{ display: inline; }}
+.valeurs {{ margin-top: 28px; }}
 .option {{ font-size: .95rem; margin: 10px 0 0; padding: 8px 10px; border-radius: 8px; background: var(--fond); }}
 details.semaine > summary, #gw2 > summary {{ cursor: pointer; }}
 details.semaine > summary h2 {{ display: inline; }}

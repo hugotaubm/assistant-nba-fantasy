@@ -1052,8 +1052,8 @@ def forme_et_affaires(equipe, joueurs, saison, joue, gw_suiv, boot, cfg, n_derni
     suiv = (gw_suiv or {}).get("events", [])
     nb_suiv = lambda p: sum(1 for e in suiv if e["id"] in joue.get(p["equipe_id"], ()))
     def recents(q):
-        m = [(ev, pts, mi) for ev, pts, mi in (saison or {}).get(q, {}).get("matchs", [])][-n_derniers:]
-        return m
+        # derniers matchs réellement joués (un match manqué pour blessure n'est pas une contre-performance)
+        return [(ev, pts, mi) for ev, pts, mi in (saison or {}).get(q, {}).get("matchs", []) if mi > 0][-n_derniers:]
     forme = []
     for q in equipe:
         p, m = joueurs[q], recents(q)
@@ -1115,6 +1115,8 @@ def alertes_equipe(mt, plan, joueurs, joue):
         if p and (p["dispo"] < 1 or p["statut"] != "a") and (q in titulaires_reels or q in j0["titulaires"]):
             ce_soir = (z(j0["event"]["deadline_time"]) - dt.timedelta(hours=4)).date()
             pct = 0 if p["retour"] and p["retour"] > ce_soir else int(p["dispo"] * 100)
+            if pct >= 75:
+                continue   # probable : rien à corriger (il reste listé dans « À surveiller »)
             al.append(f"{p['nom']} : {p['news'] or 'statut ' + p['statut']} ({pct} % de chances de jouer ce soir)")
     if precedent:   # picks publics = composition du Gameday passé : on ne peut pas juger les titulaires de ce soir
         return al, [], f"titulaires et capitaine non vérifiables avant la deadline sans cookie (équipe lue : {precedent})"
