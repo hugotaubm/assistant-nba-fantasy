@@ -279,8 +279,32 @@ def ligue(cfg):
     chemin.write_text(json.dumps(hist, ensure_ascii=False), encoding="utf-8")
 
 
+
+def statuts_du_jeu():
+    """Ce que le jeu fournit pour les joueurs incertains ou blessés (statut, chances de jouer, news)."""
+    boot = get("bootstrap-static/")
+    eq = {t["id"]: t["short_name"] for t in boot["teams"]}
+    print("\n" + "=" * 70)
+    print("STATUTS DU JEU (joueurs non disponibles à 100 %)")
+    print("=" * 70)
+    comptes = {}
+    for e in boot["elements"]:
+        if e["status"] == "a" and not e.get("news"):
+            continue
+        cle = (e["status"], e.get("chance_of_playing_this_round"), e.get("chance_of_playing_next_round"))
+        comptes.setdefault(cle, []).append(f"{e['web_name']} ({eq[e['team']]}) : {(e.get('news') or '-')[:70]}")
+    for (st_, c1, c2), l in sorted(comptes.items(), key=lambda kv: -len(kv[1])):
+        print(f"  statut {st_} | chances ce Gameday {c1} | prochain {c2} : {len(l)} joueurs")
+        for x in l[:4]:
+            print(f"      {x}")
+
+
 if __name__ == "__main__":
     main()
+    try:
+        statuts_du_jeu()
+    except Exception as ex:
+        print(f"\n(statuts indisponibles : {ex!r})")
     try:
         ligue(json.loads((ICI / "config.json").read_text(encoding="utf-8")))
     except Exception as ex:
