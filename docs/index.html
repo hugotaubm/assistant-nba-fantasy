@@ -185,6 +185,28 @@ td.banc .adv-logo { opacity: .5; }
 .tab-valeurs th, .tab-valeurs td { padding: 6px 8px; border-bottom: 1px solid var(--trait); text-align: left; white-space: nowrap; }
 .tab-valeurs tr.poids-mort td { color: #c0392b; font-weight: 600; }
 .defile { overflow-x: auto; }
+.saison { margin-top: 28px; }
+.saison h3 { font: 700 1.1rem "Barlow Condensed", sans-serif; margin: 18px 0 6px; }
+.stats-saison { display: flex; flex-wrap: wrap; gap: 10px 28px; }
+.stats-saison div { display: flex; flex-direction: column; }
+.stats-saison .chiffre { font-size: 1.9rem; font-weight: 700; line-height: 1.1; }
+.stats-saison span:last-child { color: var(--doux); font-size: .85rem; }
+.graph { width: 100%; height: auto; display: block; --s1: #2a78d6; --s2: #eb6834; }
+@media (prefers-color-scheme: dark) { .graph { --s1: #3987e5; --s2: #d95926; } }
+.graph .g { stroke: var(--trait); stroke-width: 1; }
+.graph .base { stroke: var(--doux); stroke-width: 1; }
+.graph .ax { fill: var(--doux); font-size: 11px; }
+.graph .lab { fill: var(--encre); font-size: 12px; font-weight: 600; }
+.graph .b1 { fill: var(--s1); }
+.graph .l2 { fill: none; stroke: var(--s2); stroke-width: 2; }
+.graph .m2 { fill: var(--s2); stroke: var(--surface); stroke-width: 2; }
+.graph .l1 { fill: none; stroke: var(--s1); stroke-width: 2; }
+.graph .m1 { fill: var(--s1); stroke: var(--surface); stroke-width: 2; }
+.graph .cible { fill: transparent; } .graph .cible:hover { fill: rgba(127,127,127,.08); }
+.legende-g { display: flex; gap: 16px; font-size: .85rem; color: var(--doux); margin-bottom: 4px; }
+.legende-g i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+.legende-g .k1 { background: #2a78d6; } .legende-g .k2 { background: #eb6834; border-radius: 50%; }
+.saison details { margin-top: 10px; color: var(--doux); }
 .ok { margin: 10px 0 0; color: var(--vert); font-weight: 600; }
 .tab-forme { border-collapse: collapse; width: 100%; font-size: .92rem; }
 .tab-forme th, .tab-forme td { padding: 6px 8px; border-bottom: 1px solid var(--trait); text-align: left; white-space: nowrap; }
@@ -228,7 +250,7 @@ footer ul { list-style: none; padding: 0; margin: 6px 0 0; display: flex; flex-w
       <span>Avant <b>Gameweek 2 - Day 1</b>, lun. 26/10 à 23h30</span>
       <span class="chiffre" id="compte">…</span>
     </div>
-    <ul class="alerte-site"><li>⚠️ Transfert à faire avant cette deadline : V.Wembanyama → Y.Lendeborg</li><li>⚠️ J.Walsh joue ce soir mais est sur ton banc (conseillé titulaire)</li></ul>
+    <ul class="alerte-site"><li>⚠️ Transfert à faire avant cette deadline : V.Wembanyama → Y.Lendeborg</li><li>⚠️ J.Walsh joue ce soir mais est sur ton banc (conseillé titulaire)</li><li>⚠️ Ordre du banc : mets J.Williams en 1er remplaçant (N.Traore ne joue pas ce soir) pour le remplacement automatique</li></ul>
     <p class="option">🏆 Ligue First Team : 67e sur 627 (+7 depuis le 25/10), 2 pts du rang juste devant, 406 pts du 1er</p>
   </section>
   <header>
@@ -305,7 +327,9 @@ footer ul { list-style: none; padding: 0; margin: 6px 0 0; display: flex; flex-w
       </section>
       <section class="banc">
         <h2>Sur le banc ce soir</h2>
-        <ul><li><span class="poste">BC</span><span class="qui">D.Acuff Jr. <small>SAC</small></span><span class="pourquoi">ne joue pas ce soir</span></li><li><span class="poste">BC</span><span class="qui">V.Edgecombe <small>PHI</small></span><span class="pourquoi">ne joue pas ce soir</span></li><li><span class="poste">BC</span><span class="qui">N.Traore <small>BKN</small></span><span class="pourquoi">ne joue pas ce soir</span></li><li><span class="poste">FC</span><span class="qui">J.Randle <small>BKN</small></span><span class="pourquoi">ne joue pas ce soir</span></li><li><span class="poste">FC</span><span class="qui">J.Williams <small>OKC</small></span><span class="pourquoi">Wrist, retour prévu le 26/10</span></li></ul>
+        <p class="discret">Dans cet ordre sur le site : si un titulaire ne joue pas, le jeu le remplace automatiquement
+        par le premier remplaçant qui a joué.</p>
+        <ul><li><span class="poste">FC</span><span class="qui">J.Williams <small>OKC</small></span><span class="pourquoi">1er remplaçant · Wrist, retour prévu le 26/10</span></li><li><span class="poste">BC</span><span class="qui">N.Traore <small>BKN</small></span><span class="pourquoi">ne joue pas ce soir</span></li><li><span class="poste">FC</span><span class="qui">J.Randle <small>BKN</small></span><span class="pourquoi">ne joue pas ce soir</span></li><li><span class="poste">BC</span><span class="qui">V.Edgecombe <small>PHI</small></span><span class="pourquoi">ne joue pas ce soir</span></li><li><span class="poste">BC</span><span class="qui">D.Acuff Jr. <small>SAC</small></span><span class="pourquoi">ne joue pas ce soir</span></li></ul>
       </section>
     </div>
   </div>
@@ -324,6 +348,8 @@ footer ul { list-style: none; padding: 0; margin: 6px 0 0; display: flex; flex-w
             <div class="achete"><span>Acheter</span><b>L.Doncic</b><small>LAL, 21,0 M$, 66 pts/match</small> <span class="force">🟢 Fort +25</span></div>
           </li></ul><p class="note">Prévu la semaine suivante (indicatif) : jour 3 : B.Burries → D.Brooks ; jour 4 : J.Williams → K.George.</p><p class="note">Relance l’assistant avant chaque deadline : le conseil est recalculé avec les dernières blessures.</p>
   </section>
+
+  
 
   
   <section class="forme">
@@ -393,7 +419,7 @@ footer ul { list-style: none; padding: 0; margin: 6px 0 0; display: flex; flex-w
   </details>
 
   <footer>
-    Généré le lun. 26/10 à 17h00. Équipe lue depuis : my-team (connecté, à jour en direct). Projections indicatives : vérifie les blessures de dernière minute avant de valider.
+    Généré le lun. 26/10 à 17h21. Équipe lue depuis : my-team (connecté, à jour en direct). Projections indicatives : vérifie les blessures de dernière minute avant de valider.
     <ul><li>joueurs : en ligne</li><li>calendrier (fantasy) : en ligne</li><li>calendrier (NBA) : non utilisé</li><li>mon équipe : my-team (connecté, à jour en direct)</li></ul>
   </footer>
 </main>
@@ -415,7 +441,7 @@ footer ul { list-style: none; padding: 0; margin: 6px 0 0; display: flex; flex-w
 <div id="aa-barre" style="position:fixed;left:0;right:0;bottom:0;z-index:99999;
   display:flex;align-items:center;gap:12px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));
   background:#1d428a;color:#fff;font:15px -apple-system,system-ui,sans-serif;box-shadow:0 -2px 8px rgba(0,0,0,.2)">
-  <span style="flex:1;min-width:0"><span id="aa-info">Rapport du 26/10 à 17:00</span> · <a href="journal.html" style="color:#fff">journal</a></span>
+  <span style="flex:1;min-width:0"><span id="aa-info">Rapport du 26/10 à 17:21</span> · <a href="journal.html" style="color:#fff">journal</a></span>
   <a id="aa-recalculer" href="https://github.com/hugotaubm/assistant-nba-fantasy/actions/workflows/assistant.yml" style="font:600 15px -apple-system,system-ui,sans-serif;padding:10px 16px;border-radius:10px;background:#fff;color:#1d428a;text-decoration:none;white-space:nowrap">Recalculer</a>
 </div>
 <div style="height:80px"></div>
@@ -436,7 +462,7 @@ footer ul { list-style: none; padding: 0; margin: 6px 0 0; display: flex; flex-w
   }
   // Ouverte par le raccourci avec ?attente=1 : on attend le nouveau rapport puis on recharge.
   if (!/[?&]attente=/.test(location.search)) return;
-  var info = document.getElementById("aa-info"), depart = Date.now(), actuel = "2026-10-26T17:00:21";
+  var info = document.getElementById("aa-info"), depart = Date.now(), actuel = "2026-10-26T17:21:51";
   info.textContent = "⏳ Calcul en cours… (2 à 4 min)";
   var minuteur = setInterval(function () {
     fetch("etat.json?t=" + Date.now(), {cache: "no-store"}).then(function (r) { return r.json(); }).then(function (e) {

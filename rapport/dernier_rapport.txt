@@ -1,8 +1,8 @@
-Calcul lancé le 26/10/2026 à 16:57:36
+Calcul lancé le 26/10/2026 à 17:19:06
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
-  (force des conseils : 147 s)
+  (force des conseils : 148 s)
 
 === Gameweek 2 — prochaine deadline : Gameweek 2 - Day 1 le lun. 26/10 23h30 (heure de Paris) ===
 Équipe lue depuis : my-team (connecté, à jour en direct) | Banque : 1.5 M$ | Transferts gratuits restants : 2 | Capitaine dispo : oui
@@ -10,6 +10,7 @@ Optimisation (jusqu'à deux minutes)…
 ⚠ À CORRIGER SUR LE SITE AVANT LA DEADLINE
   - Transfert à faire avant cette deadline : V.Wembanyama → Y.Lendeborg
   - J.Walsh joue ce soir mais est sur ton banc (conseillé titulaire)
+  - Ordre du banc : mets J.Williams en 1er remplaçant (N.Traore ne joue pas ce soir) pour le remplacement automatique
 
 Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait +346 pts sur cette semaine et la suivante, avec 8 joueur(s) changé(s) (S.Gilgeous-Alexander (OKC), J.Tatum (BOS), Y.Lendeborg (GSW), W.Carter Jr. (ORL), P.Achiuwa (SAC), A.Wiggins (ATL), K.Ellis (BKN), G.Ike (GSW)) → garde-le (seuil conseillé : +366 pts). Seuil du moment : +366 pts (il baisse jusqu'à +150 à la fin de la fenêtre, le dim. 29/11 21h30, car le joker est perdu s'il n'est pas joué ; au début, le garder vaut cher en cas de série de blessures).
 🃏 Moment du joker (gain sur cette semaine + suivante, selon le jour où tu le joues) : GW2 Day 1 +300 | GW2 Day 2 +340 | GW2 Day 3 +286 | GW2 Day 4 +266 | GW2 Day 5 +249 | GW2 Day 6 +176 | GW2 Day 7 +185 | GW3 Day 1 +111. Meilleur : GW2 Day 2 (deadline mer. 28/10 00h00, 8 joueur(s) changé(s)). Fenêtre actuelle du joker : à jouer au plus tard avant la deadline du dim. 29/11 21h30, sinon il est perdu. Plus le jour est tardif, moins il reste de jours comptés dans le calcul : un écart de quelques points en faveur d'un jour proche ne justifie pas d'attendre. (calculé le 26/10 à 06h24)
@@ -71,4 +72,4 @@ Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) 
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 26/10/2026 à 17:00:21 (code de sortie : 0)
+Terminé le 26/10/2026 à 17:21:51 (code de sortie : 0)
