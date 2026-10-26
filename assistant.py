@@ -578,7 +578,7 @@ def mon_equipe(mt, cfg, joueurs, boot, gw):
 # ----------------------------------------------------------------------------- optimisation
 def optimiser(joueurs, equipe, banque, prix_vente, gratuits, cap_dispo, jours, joue, gw_suiv, cfg,
               transferts=True, libre=False, assurance=None, interdits=(), forcer=(), jours_transfert=None,
-              entree_jour0=False, joker=False, plein_suiv=False, joker_ev=None):
+              entree_jour0=False, joker=False, plein_suiv=False, joker_ev=None, max_entrees0=None):
     """Plan jour par jour sur la Gameweek en cours + la suivante (pondérée par poids_futur).
 
     Variables : effectif de chaque jour (s), entrées (in), titulaires (y), capitaine (c).
@@ -704,6 +704,8 @@ def optimiser(joueurs, equipe, banque, prix_vente, gratuits, cap_dispo, jours, j
         if co:
             co[h] = -1
             row(co, -np.inf, g)
+    if max_entrees0 is not None:   # au plus ce nombre d'entrées cette semaine (valeur d'un transfert « vs garder »)
+        row({idx[("in", i, d)]: 1 for d in range(D) if sem[d] == 0 for i in range(n)}, -np.inf, max_entrees0)
     if entree_jour0 and transferts and not libre:
         row({idx[("in", i, 0)]: 1 for i in range(n)}, 1, np.inf)
 
@@ -1180,13 +1182,26 @@ def badge(gain, cfg):
 
 
 def forces_conseils(plan, args_plan, libre, cfg, joueurs, joue):
-    """Gain de chaque transfert (on relance le calcul sans lui) et du capitaine (estimation directe)."""
+    """Pour chaque transfert : (gain « vs garder », badge, gain « vs plan B »).
+    - vs garder : points projetés du plan moins ceux du même plan sans ce transfert (les autres transferts
+      de la semaine restent, aucun autre ne le remplace) : la vraie valeur du transfert ;
+    - vs plan B : avance sur le meilleur plan qui n'achète pas ce joueur (un autre choix est-il presque aussi bon ?).
+    Capitaine : (gain par rapport au meilleur autre jour, badge)."""
     forces = {}
+    pts = lambda r: points_projetes(r, cfg)
+    tous_tr = [(ev["id"], so, en) for ev, so_l, en_l in plan["transferts"] for so, en in paires(so_l, en_l, joueurs)]
     for ev, so_l, en_l in plan["transferts"]:
         for so, en in paires(so_l, en_l, joueurs):
             alt = optimiser(*args_plan, transferts=True, libre=libre, assurance=plan.get("assurance"), interdits={en})
-            gain = plan["score"] - alt["score"] if alt else 0.0
-            forces[(ev["id"], so, en)] = (gain, badge(gain, cfg))
+            plan_b = plan["score"] - alt["score"] if alt else 0.0
+            autres = [(a, b, e_) for e_, a, b in tous_tr if (a, b) != (so, en)]
+            sans = optimiser(*args_plan, transferts=True, libre=libre, assurance=plan.get("assurance"),
+                             forcer=autres, max_entrees0=len(autres))
+            if sans is None:   # les autres transferts dépendaient de celui-ci (budget) : meilleur plan avec un transfert de moins
+                sans = optimiser(*args_plan, transferts=True, libre=libre, assurance=plan.get("assurance"),
+                                 max_entrees0=len(autres), interdits={en})
+            garder = pts(plan) - pts(sans) if sans else plan_b
+            forces[(ev["id"], so, en)] = (garder, badge(garder, cfg), plan_b)
     cap_jour = next((jp for jp in plan["plan"] if jp["capitaine"]), None)
     if cap_jour:
         date = lambda jp: (z(jp["event"]["deadline_time"]) - dt.timedelta(hours=4)).date()
@@ -1343,7 +1358,8 @@ def rapport(joueurs, equipe, banque, gratuits, cap_dispo, gw, jours, joue, match
             P(f"  Avant la deadline de {ev['name']} ({paris(z(ev['deadline_time']))}){urgent} :")
             for s_, e_ in paires(sortants, entrants, joueurs):
                 f = forces.get((ev["id"], s_, e_))
-                force = f"  [{f[1]} : +{f[0]:.0f} pts]" if f else ""
+                force = (f"  [{f[1]} : {f[0]:+.0f} pts vs garder {joueurs[s_]['nom']} · plan B à {f[2]:.0f} pts]"
+                         if f and len(f) > 2 else f"  [{f[1]} : +{f[0]:.0f} pts]" if f else "")
                 P(f"  - Vendre {nom(joueurs, s_):<26} → Acheter {nom(joueurs, e_)} ({joueurs[e_]['prix']/10:.1f} M$, proj. {joueurs[e_]['proj']:.1f}){force}")
         if plan["hits"]:
             P(f"  ⚠ Inclut {plan['hits']} transfert(s) payant(s) (-100 pts chacun), jugé(s) rentable(s).")

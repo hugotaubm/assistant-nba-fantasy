@@ -262,7 +262,9 @@ def rendre(ctx):
             forces_ = (ctx.get("suivi") or {}).get("forces", {})
             for s, e in zip(sorted(sortants, key=lambda q: j[q]["poste"]), sorted(entrants, key=lambda q: j[q]["poste"])):
                 f_ = forces_.get((ev["id"], s, e))
-                badge_ = f' <span class="force">{_e(f_[1])} +{f_[0]:.0f}</span>' if f_ else ""
+                badge_ = (f' <span class="force">{_e(f_[1])} {f_[0]:+.0f} pts vs garder {_e(j[s]["nom"])}</span>'
+                          + (f'<small class="planb">Meilleure alternative : {f_[2]:.0f} pts de moins</small>' if len(f_) > 2 else "")
+                          if f_ else "")
                 lignes.append(f'''
           <li>
             <div class="vend"><span>Vendre</span><b>{_e(j[s]['nom'])}</b><small>{_e(j[s]['equipe'])}, {_m(j[s]['prix']/10)} M$</small></div>
@@ -701,6 +703,7 @@ td.banc .adv-logo {{ opacity: .5; }}
 .legende-g i {{ display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }}
 .legende-g .k1 {{ background: #2a78d6; }} .legende-g .k2 {{ background: #eb6834; border-radius: 50%; }}
 .saison details {{ margin-top: 10px; color: var(--doux); }}
+.planb {{ display: block; margin-top: 4px; color: var(--doux); }}
 .ok {{ margin: 10px 0 0; color: var(--vert); font-weight: 600; }}
 .tab-forme {{ border-collapse: collapse; width: 100%; font-size: .92rem; }}
 .tab-forme th, .tab-forme td {{ padding: 6px 8px; border-bottom: 1px solid var(--trait); text-align: left; white-space: nowrap; }}
