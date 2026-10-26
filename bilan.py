@@ -83,6 +83,7 @@ def main():
     nom = lambda pid: f"{el[pid]['web_name']} ({eq[el[pid]['team']]})"
 
     tous = []          # (pid, event, proj, réel, minutes, points du jeu, points formule)
+    soirees = []       # tes soirées, pour le graphique de la page (rapport/soirees.json)
     calib = {}         # groupe → [réel, projeté par le modèle, matchs]
     exemple = None
     print("=" * 70)
@@ -115,6 +116,9 @@ def main():
             print(f"  (ton équipe n'est pas lisible pour ce Gameday : {ex})")
             continue
         h = pk.get("entry_history", {})
+        soirees.append(dict(event=e["id"], nom=e["name"], date=e["deadline_time"][:10], score=h.get("points", 0) / 10,
+                            moyenne=e.get("average_entry_score", 0) / 10, meilleur=e.get("highest_score", 0) / 10,
+                            rang=h.get("rank")))
         print(f"  Ton score : {h.get('points', 0) / 10:.1f} | banc : {h.get('points_on_bench', 0) / 10:.1f} | "
               f"rang : {h.get('rank')} | transferts : {h.get('event_transfers')} (coût {h.get('event_transfers_cost')})")
         # Remplacements automatiques du jeu (un titulaire à 0 minute remplacé par un joueur du banc)
@@ -149,6 +153,9 @@ def main():
               f"[{'projection du modèle' if modele else 'projection d avant-saison, modèle non enregistré'}].")
         print(f"  → Meilleur cinq possible après coup : {best:.1f} pts (hors capitaine), "
               f"soit {best - tit_sans_cap:.1f} pts laissés sur le banc.")
+
+    if soirees:
+        (ICI / "rapport" / "soirees.json").write_text(json.dumps(soirees, ensure_ascii=False), encoding="utf-8")
 
     # Qualité des projections sur toute la ligue (joueurs dont l'équipe jouait)
     print("\n" + "=" * 70)

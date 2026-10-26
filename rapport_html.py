@@ -81,6 +81,92 @@ def _court(titulaires, capitaine, joueurs, adversaire):
     </svg>'''
 
 
+def _graph_saison(soirees, ligue):
+    """Tes soirées (barres) face à la moyenne des joueurs (ligne), puis ton rang dans la ligue (ligne).
+    Deux graphiques séparés : deux échelles différentes ne partagent jamais un axe."""
+    if not soirees:
+        return ""
+    W, H, G, D, B, Hh = 640, 220, 40, 12, 26, 14   # largeur, hauteur, marge gauche, droite, bas, haut
+    n = len(soirees)
+    vmax = max(max(s["score"], s["moyenne"]) for s in soirees) * 1.1 or 1
+    pas = (W - G - D) / n
+    lb = min(28, pas * 0.55)
+    y = lambda v: H - B - (H - B - Hh) * v / vmax
+    grille = "".join(f'<line class="g" x1="{G}" x2="{W - D}" y1="{y(v):.1f}" y2="{y(v):.1f}"/>'
+                     f'<text class="ax" x="{G - 6}" y="{y(v) + 4:.1f}" text-anchor="end">{v:.0f}</text>'
+                     for v in range(0, int(vmax) + 1, 50 if vmax < 400 else 100))
+    barres, pts, cibles, etiq = [], [], [], []
+    for i, s in enumerate(soirees):
+        cx = G + pas * (i + .5)
+        jour = s["nom"].replace("Gameweek ", "S").replace(" - Day ", "·J")
+        hb = max(0.0, y(0) - y(s["score"]))
+        r = min(4, hb / 2)
+        x0, x1, yt, yb = cx - lb / 2, cx + lb / 2, y(s["score"]), y(0)
+        barres.append(f'<path class="b1" d="M{x0:.1f},{yb:.1f} V{yt + r:.1f} Q{x0:.1f},{yt:.1f} {x0 + r:.1f},{yt:.1f} '
+                      f'H{x1 - r:.1f} Q{x1:.1f},{yt:.1f} {x1:.1f},{yt + r:.1f} V{yb:.1f} Z"/>')
+        pts.append((cx, y(s["moyenne"])))
+        etiq.append(f'<text class="ax" x="{cx:.1f}" y="{H - 8}" text-anchor="middle">{_e(jour)}</text>')
+        bon = "au-dessus" if s["score"] >= s["moyenne"] else "en dessous"
+        rang_txt = f", rang {s['rang']:,}".replace(",", " ") if s.get("rang") else ""
+        cibles.append(f'<rect class="cible" x="{cx - pas / 2:.1f}" y="{Hh}" width="{pas:.1f}" height="{H - B - Hh}">'
+                      f'<title>{_e(s["nom"])} : toi {s["score"]:.0f} pts, moyenne {s["moyenne"]:.0f} ({bon}), '
+                      f'meilleur {s["meilleur"]:.0f}{rang_txt}</title></rect>')
+    ligne = "M" + " L".join(f"{a:.1f},{b:.1f}" for a, b in pts)
+    marques = "".join(f'<circle class="m2" cx="{a:.1f}" cy="{b:.1f}" r="4.5"/>' for a, b in pts)
+    der = soirees[-1]
+    lab = (f'<text class="lab" x="{pts[-1][0] + 8:.1f}" y="{pts[-1][1] - 8:.1f}">moy. {der["moyenne"]:.0f}</text>'
+           f'<text class="lab" x="{G + pas * (n - .5):.1f}" y="{y(der["score"]) - 8:.1f}" text-anchor="middle">{der["score"]:.0f}</text>')
+    g1 = (f'<svg class="graph" viewBox="0 0 {W} {H}" role="img" aria-label="Tes points par soirée et la moyenne des joueurs">'
+          f'{grille}<line class="base" x1="{G}" x2="{W - D}" y1="{y(0):.1f}" y2="{y(0):.1f}"/>{"".join(barres)}'
+          f'<path class="l2" d="{ligne}"/>{marques}{lab}{"".join(etiq)}{"".join(cibles)}</svg>')
+    total = sum(s["score"] for s in soirees)
+    total_moy = sum(s["moyenne"] for s in soirees)
+    au_dessus = sum(s["score"] >= s["moyenne"] for s in soirees)
+    tete = (f'<div class="stats-saison"><div><span class="chiffre">{total:.0f}</span><span>pts au total</span></div>'
+            f'<div><span class="chiffre">{total - total_moy:+.0f}</span><span>par rapport à la moyenne</span></div>'
+            f'<div><span class="chiffre">{au_dessus}/{n}</span><span>soirées au-dessus de la moyenne</span></div>')
+    g2 = ""
+    if len(ligue) >= 1:
+        rangs = [l["rang"] for l in ligue]
+        tete += (f'<div><span class="chiffre">{rangs[-1]}e</span><span>dans ta ligue'
+                 f'{f" ({rangs[-2] - rangs[-1]:+d})" if len(rangs) > 1 else ""}</span></div>')
+    tete += "</div>"
+    if len(ligue) >= 2:
+        H2 = 150
+        rmin, rmax = min(rangs), max(rangs)
+        marge = max(5, (rmax - rmin) * .15)
+        lo, hi = max(1, rmin - marge), rmax + marge
+        y2 = lambda r: Hh + (H2 - B - Hh) * (r - lo) / (hi - lo)   # rang 1 en haut
+        pas2 = (W - G - D) / len(ligue)
+        p2 = [(G + pas2 * (i + .5), y2(l["rang"])) for i, l in enumerate(ligue)]
+        lg = "M" + " L".join(f"{a:.1f},{b:.1f}" for a, b in p2)
+        mk = "".join(f'<circle class="m1" cx="{a:.1f}" cy="{b:.1f}" r="4.5"><title>{_e(l["date"][8:10] + "/" + l["date"][5:7])} : '
+                     f'{l["rang"]}e sur {l["nb"]}</title></circle>' for (a, b), l in zip(p2, ligue))
+        et = "".join(f'<text class="ax" x="{a:.1f}" y="{H2 - 8}" text-anchor="middle">{_e(l["date"][8:10] + "/" + l["date"][5:7])}</text>'
+                     for (a, _), l in zip(p2, ligue))
+        lab2 = f'<text class="lab" x="{p2[-1][0]:.1f}" y="{p2[-1][1] - 10:.1f}" text-anchor="middle">{rangs[-1]}e</text>'
+        g2 = (f'<h3>Ton rang dans la ligue (plus haut = mieux)</h3>'
+              f'<svg class="graph" viewBox="0 0 {W} {H2}" role="img" aria-label="Ton rang dans la ligue, jour après jour">'
+              f'<line class="g" x1="{G}" x2="{W - D}" y1="{y2(lo):.1f}" y2="{y2(lo):.1f}"/>'
+              f'<text class="ax" x="{G - 6}" y="{y2(rmin) + 4:.1f}" text-anchor="end">{rmin}</text>'
+              f'<text class="ax" x="{G - 6}" y="{y2(rmax) + 4:.1f}" text-anchor="end">{rmax}</text>'
+              f'<path class="l1" d="{lg}"/>{mk}{lab2}{et}</svg>')
+    table = "".join(f'<tr><td>{_e(s["nom"])}</td><td class="num">{s["score"]:.0f}</td><td class="num">{s["moyenne"]:.0f}</td>'
+                    f'<td class="num">{s["meilleur"]:.0f}</td></tr>' for s in soirees)
+    return f'''
+  <section class="saison">
+    <h2>Ta saison</h2>
+    {tete}
+    <h3>Tes points par soirée</h3>
+    <div class="legende-g"><span><i class="k1"></i>Toi</span><span><i class="k2"></i>Moyenne des joueurs</span></div>
+    {g1}
+    {g2}
+    <details><summary>Voir en tableau</summary>
+      <table class="tab-forme"><tr><th>Soirée</th><th>Toi</th><th>Moyenne</th><th>Meilleur</th></tr>{table}</table>
+    </details>
+  </section>'''
+
+
 def rendre(ctx):
     j = ctx["joueurs"]
     tz = ctx["tz"]
@@ -122,9 +208,12 @@ def rendre(ctx):
 
     # --- banc du soir
     effectif_soir = j0.get("effectif", equipe)
+    ordre = (ctx.get("suivi") or {}).get("ordre_banc") or sorted(
+        (q for q in effectif_soir if q not in j0["titulaires"]), key=lambda q: (j[q]["poste"], -j[q]["proj"]))
     banc = []
-    for pid in sorted(effectif_soir, key=lambda q: (j[q]["poste"], -j[q]["proj"])):
-        if pid in j0["titulaires"]:
+    rang_rempl = 0
+    for pid in ordre:
+        if pid in j0["titulaires"] or pid not in effectif_soir:
             continue
         p = j[pid]
         joue_ce_soir = j0["event"]["id"] in ctx["joue"].get(p["equipe_id"], ())
@@ -134,6 +223,10 @@ def rendre(ctx):
             raison = _news(p["news"]) or "indisponible"
         else:
             raison = "projeté plus bas que les titulaires"
+        ce_soir_d = (_z(j0["event"]["deadline_time"]) - dt.timedelta(hours=4)).date()
+        if joue_ce_soir and p["dispo"] > 0 and not (p.get("retour") and p["retour"] > ce_soir_d):
+            rang_rempl += 1
+            raison = f"{rang_rempl}{'er' if rang_rempl == 1 else 'e'} remplaçant · " + raison
         banc.append(f'<li><span class="poste">{"BC" if p["poste"]==1 else "FC"}</span>'
                     f'<span class="qui">{_e(p["nom"])} <small>{_e(p["equipe"])}</small></span>'
                     f'<span class="pourquoi">{_e(raison)}</span></li>')
@@ -583,6 +676,28 @@ td.banc .adv-logo {{ opacity: .5; }}
 .tab-valeurs th, .tab-valeurs td {{ padding: 6px 8px; border-bottom: 1px solid var(--trait); text-align: left; white-space: nowrap; }}
 .tab-valeurs tr.poids-mort td {{ color: #c0392b; font-weight: 600; }}
 .defile {{ overflow-x: auto; }}
+.saison {{ margin-top: 28px; }}
+.saison h3 {{ font: 700 1.1rem "Barlow Condensed", sans-serif; margin: 18px 0 6px; }}
+.stats-saison {{ display: flex; flex-wrap: wrap; gap: 10px 28px; }}
+.stats-saison div {{ display: flex; flex-direction: column; }}
+.stats-saison .chiffre {{ font-size: 1.9rem; font-weight: 700; line-height: 1.1; }}
+.stats-saison span:last-child {{ color: var(--doux); font-size: .85rem; }}
+.graph {{ width: 100%; height: auto; display: block; --s1: #2a78d6; --s2: #eb6834; }}
+@media (prefers-color-scheme: dark) {{ .graph {{ --s1: #3987e5; --s2: #d95926; }} }}
+.graph .g {{ stroke: var(--trait); stroke-width: 1; }}
+.graph .base {{ stroke: var(--doux); stroke-width: 1; }}
+.graph .ax {{ fill: var(--doux); font-size: 11px; }}
+.graph .lab {{ fill: var(--encre); font-size: 12px; font-weight: 600; }}
+.graph .b1 {{ fill: var(--s1); }}
+.graph .l2 {{ fill: none; stroke: var(--s2); stroke-width: 2; }}
+.graph .m2 {{ fill: var(--s2); stroke: var(--surface); stroke-width: 2; }}
+.graph .l1 {{ fill: none; stroke: var(--s1); stroke-width: 2; }}
+.graph .m1 {{ fill: var(--s1); stroke: var(--surface); stroke-width: 2; }}
+.graph .cible {{ fill: transparent; }} .graph .cible:hover {{ fill: rgba(127,127,127,.08); }}
+.legende-g {{ display: flex; gap: 16px; font-size: .85rem; color: var(--doux); margin-bottom: 4px; }}
+.legende-g i {{ display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }}
+.legende-g .k1 {{ background: #2a78d6; }} .legende-g .k2 {{ background: #eb6834; border-radius: 50%; }}
+.saison details {{ margin-top: 10px; color: var(--doux); }}
 .ok {{ margin: 10px 0 0; color: var(--vert); font-weight: 600; }}
 .tab-forme {{ border-collapse: collapse; width: 100%; font-size: .92rem; }}
 .tab-forme th, .tab-forme td {{ padding: 6px 8px; border-bottom: 1px solid var(--trait); text-align: left; white-space: nowrap; }}
@@ -641,6 +756,8 @@ footer ul {{ list-style: none; padding: 0; margin: 6px 0 0; display: flex; flex-
       </section>
       <section class="banc">
         <h2>Sur le banc ce soir</h2>
+        <p class="discret">Dans cet ordre sur le site : si un titulaire ne joue pas, le jeu le remplace automatiquement
+        par le premier remplaçant qui a joué.</p>
         <ul>{''.join(banc) or '<li>Personne</li>'}</ul>
       </section>
     </div>
@@ -650,6 +767,9 @@ footer ul {{ list-style: none; padding: 0; margin: 6px 0 0; display: flex; flex-
     <h2>Transferts</h2>
     {tr_html}
   </section>
+
+  {_graph_saison((ctx.get("suivi") or {}).get("saison_graph", {}).get("soirees", []),
+                  (ctx.get("suivi") or {}).get("saison_graph", {}).get("ligue", []))}
 
   {forme_html}
 

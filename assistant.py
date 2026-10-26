@@ -294,6 +294,13 @@ def minutes_saison(boot, hors_ligne):
     return res
 
 
+def lire_json(chemin, defaut):
+    try:
+        return json.loads(chemin.read_text(encoding="utf-8"))
+    except Exception:
+        return defaut
+
+
 def groupe_rang(rang):
     """Groupe de calibration d'un joueur selon son rang dans la hiérarchie ESPN de son poste."""
     return "1" if rang == 1 else "2" if rang == 2 else "3+" if rang else "?"
@@ -1084,6 +1091,17 @@ def quand_txt(ev):
     return "ce soir" if d == dt.datetime.now(PARIS).date() else f"le {ev['name'].split(' - ')[-1]}"
 
 
+def ordre_banc(plan, joueurs, joue):
+    """Ordre conseillé du banc pour le prochain Gameday : le jeu remplace automatiquement un titulaire
+    qui ne joue pas (0 minute) par le premier remplaçant qui a joué. On met donc d'abord ceux qui jouent
+    ce soir, du mieux projeté au moins bien, puis ceux qui ne jouent pas."""
+    j0 = plan["plan"][0]
+    ev = j0["event"]
+    date = (z(ev["deadline_time"]) - dt.timedelta(hours=4)).date()
+    banc = [q for q in j0["effectif"] if q not in j0["titulaires"]]
+    return sorted(banc, key=lambda q: -ev_jour(joueurs[q], ev["id"], joue, date))
+
+
 def alertes_equipe(mt, plan, joueurs, joue):
     """Écarts entre ton équipe sur le site et le conseil pour la prochaine deadline.
 
@@ -1128,6 +1146,13 @@ def alertes_equipe(mt, plan, joueurs, joue):
     for q in j0["titulaires"]:
         if q in reel and q not in titulaires_reels:
             al.append(f"{joueurs[q]['nom']} joue {quand} mais est sur ton banc (conseillé titulaire)")
+    # Ordre du banc : le 1er remplaçant doit jouer ce soir s'il y en a un qui joue
+    banc_reel = [p_["element"] for p_ in sorted(mt["picks"], key=lambda p_: p_.get("position", 0))
+                 if p_.get("multiplier", 0) == 0 and p_["element"] in joueurs]
+    ordre = [q for q in ordre_banc(plan, joueurs, joue) if q in reel]
+    if banc_reel and ordre and joue_soir(ordre[0]) and not joue_soir(banc_reel[0]):
+        al.append(f"Ordre du banc : mets {joueurs[ordre[0]]['nom']} en 1er remplaçant "
+                  f"({joueurs[banc_reel[0]]['nom']} ne joue pas {quand}) pour le remplacement automatique")
     actif = any(c.get("name") == "phcapt" and c.get("is_pending") for c in mt.get("chips") or [])
     cap_reel = next((q for q, p in reel.items() if p.get("is_captain")), None)
     cap_jour = next((jp for jp in plan["plan"] if jp["capitaine"]), None)
@@ -1510,6 +1535,9 @@ def main():
                  creux=creux_txt, ligue=ligue_txt, moment_joker=moment_txt, poids_futur=cfg["poids_futur"],
                  valeurs=valeurs_equipe(equipe, joueurs, jours, gw_suiv, joue, cfg),
                  forme=forme_et_affaires(equipe, joueurs, saison, joue, gw_suiv, boot, cfg),
+                 ordre_banc=ordre_banc(plan, joueurs, joue),
+                 saison_graph=dict(soirees=lire_json(ICI / "rapport" / "soirees.json", []),
+                                   ligue=lire_json(ICI / "rapport" / "ligue.json", {}).get("historique", [])),
                  changements=changements(prec, plan, joueurs, boot, gw), source_equipe=src_equipe)
     print(f"  (force des conseils : {(dt.datetime.now() - t_force).seconds} s)")
     texte, page = rapport(joueurs, equipe, banque, gratuits, cap_dispo, gw, jours, joue, matchs, plan, base, sources, src_equipe, boot,
