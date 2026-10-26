@@ -6,11 +6,11 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="theme-color" content="#1d428a">
 <link rel="manifest" href="manifest.json">
-<link rel="apple-touch-icon" href="icone-180.png"><meta charset="utf-8"><title>Journal</title></head><body style="font-family:-apple-system,system-ui,sans-serif;padding:16px"><p><a href="./">← Retour au rapport</a></p><pre style="white-space:pre-wrap;font-size:13px">Calcul lancé le 26/10/2026 à 05:57:22
+<link rel="apple-touch-icon" href="icone-180.png"><meta charset="utf-8"><title>Journal</title></head><body style="font-family:-apple-system,system-ui,sans-serif;padding:16px"><p><a href="./">← Retour au rapport</a></p><pre style="white-space:pre-wrap;font-size:13px">Calcul lancé le 26/10/2026 à 06:05:03
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu&#x27;à deux minutes)…
-  (force des conseils : 138 s)
+  (force des conseils : 668 s)
 
 === Gameweek 2 — prochaine deadline : Gameweek 2 - Day 1 le lun. 26/10 23h30 (heure de Paris) ===
 Équipe lue depuis : my-team (connecté, à jour en direct) | Banque : 1.5 M$ | Transferts gratuits restants : 2 | Capitaine dispo : oui
@@ -27,6 +27,7 @@ Optimisation (jusqu&#x27;à deux minutes)…
   - B.Burries joue ce soir mais est sur ton banc (conseillé titulaire)
 
 Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait +331 pts sur cette semaine et la suivante, avec 7 joueur(s) changé(s) (S.Gilgeous-Alexander (OKC), J.Johnson (ATL), Y.Lendeborg (GSW), K.George (WAS), K.Dunn (LAC), P.Achiuwa (SAC), K.Ellis (BKN)) → ✅ le joker vaut le coup maintenant.
+🃏 Moment du joker (gain sur cette semaine + suivante, selon le jour où tu le joues) : GW2 Day 1 +331 | GW2 Day 2 +340 | GW2 Day 3 +301 | GW2 Day 4 +273 | GW2 Day 5 +249 | GW2 Day 6 +176 | GW2 Day 7 +185 | GW3 Day 1 +111. Meilleur : GW2 Day 2 (deadline mer. 28/10 00h00, 8 joueur(s) changé(s)). Fenêtre actuelle du joker : à jouer au plus tard avant la deadline du dim. 29/11 21h30, sinon il est perdu. Plus le jour est tardif, moins il reste de jours comptés dans le calcul : un écart de quelques points en faveur d&#x27;un jour proche ne justifie pas d&#x27;attendre.
 🏆 Ligue First Team : 83e sur 627 (-9 depuis le 25/10), 1 pts du rang juste devant, 444 pts du 1er
 📅 Jours creux du plan conseillé — semaine suivante : Day 3 3 vide(s) | semaine d&#x27;après (Gameweek 4, sans transfert) : 31 matchs pour ton effectif, 7 place(s) vide(s) ; joueurs dispo par jour : 5-3-8-2-4-4-5
 🧩 Combler les 3 place(s) vide(s) de la semaine suivante est possible : Day 1 : V.Wembanyama → Y.Lendeborg ; Day 2 : V.Edgecombe → L.Doncic ; Day 3 : N.Traore → J.Suggs ; Day 3 : T.Jerome → D.Booker, J.Randle → B.Portis, C.Wilson → W.Carter Jr. (dont 2 transfert(s) payant(s) à -100 pts). Semaine suivante +3 pts, au total -130 pts par rapport au plan conseillé (cette semaine + suivante pondérée).
@@ -85,12 +86,12 @@ Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) 
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 26/10/2026 à 05:59:59 (code de sortie : 0)
+Terminé le 26/10/2026 à 06:16:33 (code de sortie : 0)
 </pre>
 <div id="aa-barre" style="position:fixed;left:0;right:0;bottom:0;z-index:99999;
   display:flex;align-items:center;gap:12px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));
   background:#1d428a;color:#fff;font:15px -apple-system,system-ui,sans-serif;box-shadow:0 -2px 8px rgba(0,0,0,.2)">
-  <span style="flex:1;min-width:0"><span id="aa-info">Rapport du 26/10 à 05:59</span> · <a href="journal.html" style="color:#fff">journal</a></span>
+  <span style="flex:1;min-width:0"><span id="aa-info">Rapport du 26/10 à 06:16</span> · <a href="journal.html" style="color:#fff">journal</a></span>
   <a id="aa-recalculer" href="https://github.com/hugotaubm/assistant-nba-fantasy/actions/workflows/assistant.yml" style="font:600 15px -apple-system,system-ui,sans-serif;padding:10px 16px;border-radius:10px;background:#fff;color:#1d428a;text-decoration:none;white-space:nowrap">Recalculer</a>
 </div>
 <div style="height:80px"></div>
@@ -111,7 +112,7 @@ Terminé le 26/10/2026 à 05:59:59 (code de sortie : 0)
   }
   // Ouverte par le raccourci avec ?attente=1 : on attend le nouveau rapport puis on recharge.
   if (!/[?&]attente=/.test(location.search)) return;
-  var info = document.getElementById("aa-info"), depart = Date.now(), actuel = "2026-10-26T05:59:59";
+  var info = document.getElementById("aa-info"), depart = Date.now(), actuel = "2026-10-26T06:16:33";
   info.textContent = "⏳ Calcul en cours… (2 à 4 min)";
   var minuteur = setInterval(function () {
     fetch("etat.json?t=" + Date.now(), {cache: "no-store"}).then(function (r) { return r.json(); }).then(function (e) {
