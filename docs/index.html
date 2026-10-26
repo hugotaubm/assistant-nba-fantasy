@@ -207,6 +207,7 @@ td.banc .adv-logo { opacity: .5; }
 .legende-g i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
 .legende-g .k1 { background: #2a78d6; } .legende-g .k2 { background: #eb6834; border-radius: 50%; }
 .saison details { margin-top: 10px; color: var(--doux); }
+.planb { display: block; margin-top: 4px; color: var(--doux); }
 .ok { margin: 10px 0 0; color: var(--vert); font-weight: 600; }
 .tab-forme { border-collapse: collapse; width: 100%; font-size: .92rem; }
 .tab-forme th, .tab-forme td { padding: 6px 8px; border-bottom: 1px solid var(--trait); text-align: left; white-space: nowrap; }
@@ -340,12 +341,12 @@ footer ul { list-style: none; padding: 0; margin: 6px 0 0; display: flex; flex-w
           <li>
             <div class="vend"><span>Vendre</span><b>V.Wembanyama</b><small>SAS, 19,5 M$</small></div>
             <svg class="fleche" viewBox="0 0 40 16" aria-hidden="true"><path d="M2 8h32M28 2l7 6-7 6"/></svg>
-            <div class="achete"><span>Acheter</span><b>Y.Lendeborg</b><small>GSW, 7,6 M$, 37 pts/match</small> <span class="force">🟡 Léger +18</span></div>
+            <div class="achete"><span>Acheter</span><b>Y.Lendeborg</b><small>GSW, 7,6 M$, 37 pts/match</small> <span class="force">🟢 Fort +139 pts vs garder V.Wembanyama</span><small class="planb">Meilleure alternative : 18 pts de moins</small></div>
           </li></ul><p class="quand"><strong>Avant le jour 2, mer. 28/10 à 0h00</strong></p><ul class="echanges">
           <li>
             <div class="vend"><span>Vendre</span><b>V.Edgecombe</b><small>PHI, 12,0 M$</small></div>
             <svg class="fleche" viewBox="0 0 40 16" aria-hidden="true"><path d="M2 8h32M28 2l7 6-7 6"/></svg>
-            <div class="achete"><span>Acheter</span><b>L.Doncic</b><small>LAL, 21,0 M$, 66 pts/match</small> <span class="force">🟢 Fort +25</span></div>
+            <div class="achete"><span>Acheter</span><b>L.Doncic</b><small>LAL, 21,0 M$, 66 pts/match</small> <span class="force">🟢 Fort +241 pts vs garder V.Edgecombe</span><small class="planb">Meilleure alternative : 25 pts de moins</small></div>
           </li></ul><p class="note">Prévu la semaine suivante (indicatif) : jour 3 : B.Burries → D.Brooks ; jour 4 : J.Williams → K.George.</p><p class="note">Relance l’assistant avant chaque deadline : le conseil est recalculé avec les dernières blessures.</p>
   </section>
 
@@ -430,7 +431,7 @@ footer ul { list-style: none; padding: 0; margin: 6px 0 0; display: flex; flex-w
   </details>
 
   <footer>
-    Généré le lun. 26/10 à 19h30. Équipe lue depuis : my-team (connecté, à jour en direct). Projections indicatives : vérifie les blessures de dernière minute avant de valider.
+    Généré le lun. 26/10 à 19h38. Équipe lue depuis : my-team (connecté, à jour en direct). Projections indicatives : vérifie les blessures de dernière minute avant de valider.
     <ul><li>joueurs : en ligne</li><li>calendrier (fantasy) : en ligne</li><li>calendrier (NBA) : non utilisé</li><li>mon équipe : my-team (connecté, à jour en direct)</li></ul>
   </footer>
 </main>
@@ -452,7 +453,7 @@ footer ul { list-style: none; padding: 0; margin: 6px 0 0; display: flex; flex-w
 <div id="aa-barre" style="position:fixed;left:0;right:0;bottom:0;z-index:99999;
   display:flex;align-items:center;gap:12px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));
   background:#1d428a;color:#fff;font:15px -apple-system,system-ui,sans-serif;box-shadow:0 -2px 8px rgba(0,0,0,.2)">
-  <span style="flex:1;min-width:0"><span id="aa-info">Rapport du 26/10 à 19:30</span> · <a href="journal.html" style="color:#fff">journal</a></span>
+  <span style="flex:1;min-width:0"><span id="aa-info">Rapport du 26/10 à 19:38</span> · <a href="journal.html" style="color:#fff">journal</a></span>
   <a id="aa-recalculer" href="https://github.com/hugotaubm/assistant-nba-fantasy/actions/workflows/assistant.yml" style="font:600 15px -apple-system,system-ui,sans-serif;padding:10px 16px;border-radius:10px;background:#fff;color:#1d428a;text-decoration:none;white-space:nowrap">Recalculer</a>
 </div>
 <div style="height:80px"></div>
@@ -473,7 +474,7 @@ footer ul { list-style: none; padding: 0; margin: 6px 0 0; display: flex; flex-w
   }
   // Ouverte par le raccourci avec ?attente=1 : on attend le nouveau rapport puis on recharge.
   if (!/[?&]attente=/.test(location.search)) return;
-  var info = document.getElementById("aa-info"), depart = Date.now(), actuel = "2026-10-26T19:30:37";
+  var info = document.getElementById("aa-info"), depart = Date.now(), actuel = "2026-10-26T19:38:19";
   info.textContent = "⏳ Calcul en cours… (2 à 4 min)";
   var minuteur = setInterval(function () {
     fetch("etat.json?t=" + Date.now(), {cache: "no-store"}).then(function (r) { return r.json(); }).then(function (e) {

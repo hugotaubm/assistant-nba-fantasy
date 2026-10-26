@@ -1,8 +1,8 @@
-Calcul lancé le 26/10/2026 à 19:28:00
+Calcul lancé le 26/10/2026 à 19:35:27
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
-  (force des conseils : 139 s)
+  (force des conseils : 152 s)
 
 === Gameweek 2 — prochaine deadline : Gameweek 2 - Day 1 le lun. 26/10 23h30 (heure de Paris) ===
 Équipe lue depuis : my-team (connecté, à jour en direct) | Banque : 1.5 M$ | Transferts gratuits restants : 2 | Capitaine dispo : oui
@@ -30,9 +30,9 @@ Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait
 
 ▶ TRANSFERTS
   Avant la deadline de Gameweek 2 - Day 1 (lun. 26/10 23h30) ← MAINTENANT :
-  - Vendre V.Wembanyama (SAS)         → Acheter Y.Lendeborg (GSW) (7.6 M$, proj. 37.4)  [🟡 Léger : +18 pts]
+  - Vendre V.Wembanyama (SAS)         → Acheter Y.Lendeborg (GSW) (7.6 M$, proj. 37.4)  [🟢 Fort : +139 pts vs garder V.Wembanyama · plan B à 18 pts]
   Avant la deadline de Gameweek 2 - Day 2 (mer. 28/10 00h00) :
-  - Vendre V.Edgecombe (PHI)          → Acheter L.Doncic (LAL) (21.0 M$, proj. 65.7)  [🟢 Fort : +25 pts]
+  - Vendre V.Edgecombe (PHI)          → Acheter L.Doncic (LAL) (21.0 M$, proj. 65.7)  [🟢 Fort : +241 pts vs garder V.Edgecombe · plan B à 25 pts]
   Gain attendu (cette semaine + suivante pondérée) : +293 pts vs ne rien faire
   Relance l'assistant avant chaque deadline : le conseil est recalculé avec les dernières blessures.
   Prévu la semaine suivante (indicatif) : Day 3 : B.Burries→D.Brooks ; Day 4 : J.Williams→K.George
@@ -71,5 +71,6 @@ Projection Gameweek (jours restants) : ~1088 pts  |  sans transfert : ~921 pts
 Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) = non utilisé, mon équipe = my-team (connecté, à jour en direct)
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();
 ----------------------------------------
-Terminé le 26/10/2026 à 19:30:37 (code de sortie : 0)
+Terminé le 26/10/2026 à 19:38:19 (code de sortie : 0)
