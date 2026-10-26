@@ -34,7 +34,7 @@
   "ajustements": {},
   "imposer_au_depart": ["V.Wembanyama"],
   "malus_back_to_back": 0.92,
-  "idees": ["V.Wembanyama>Y.Lendeborg@2.4 + V.Edgecombe>L.Doncic@2.4", "V.Wembanyama>?@2.4", "V.Wembanyama>Y.Lendeborg@2.3 + V.Edgecombe>L.Doncic@2.3"],
+  "idees": [],
   "transferts_payants": false,
   "seuil_joker": 300,
   "seuil_joker_debut": 400,
