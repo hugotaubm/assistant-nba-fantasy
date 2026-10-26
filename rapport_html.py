@@ -81,6 +81,7 @@ def _court(titulaires, capitaine, joueurs, adversaire):
     </svg>'''
 
 
+TAG_CHEZ_TOI = ' <em class="tag entre">chez toi</em>'
 PALIERS = {0.0: "out, ", 0.25: "doubtful, ", 0.5: "questionable, ", 0.75: "probable, "}   # rapport de blessures NBA
 
 
@@ -448,8 +449,23 @@ def rendre(ctx):
     pour {_m(suivi.get("poids_futur", 0.5))}. En rouge : le joueur qui rapporte le moins pour son prix.</p>
   </details>'''
     forme, affaires = suivi.get("forme") or ([], [])
+    prof = suivi.get("profiteurs") or []
+    prof_html = ""
+    if prof:
+        lp = "".join(
+            f'<tr><td><b>{_e(i["nom"])}</b> <small>{_e(i["equipe"])} · {i["poste"]}</small>{TAG_CHEZ_TOI if i.get("mien") else ""}</td>'
+            f'<td class="num">{_m(i["prix"])}</td><td class="num"><b>+{(i["boost"] - 1) * 100:.0f} %</b></td>'
+            f'<td class="num">{i["jours"]}</td><td>{_e(", ".join(i["absents"]))}</td></tr>' for i in prof)
+        prof_html = f'''
+    <h2 class="mt">Profitent d'une blessure</h2>
+    <div class="defile"><table class="tab-forme">
+      <tr><th>Joueur</th><th>M$</th><th>Hausse</th><th>Jours</th><th>Coéquipier(s) absent(s)</th></tr>
+      {lp}
+    </table></div>
+    <p class="discret">Minutes d'un coéquipier blessé (même poste) redistribuées, surtout au suivant dans la hiérarchie.
+    Hausse de la projection les soirs concernés, déjà comptée dans tous les calculs.</p>'''
     forme_html = ""
-    if forme or affaires:
+    if forme or affaires or prof:
         fl = "".join(
             f'<tr class="{f["etat"]}"><td>{"🔥" if f["etat"] == "chaud" else "🧊" if f["etat"] == "froid" else ""}</td>'
             f'<td><b>{_e(f["nom"])}</b> <small>{_e(f["equipe"])}</small></td>'
@@ -474,6 +490,7 @@ def rendre(ctx):
       {al_}
     </table></div>
     <p class="discret">Classés par points par M$ (moyenne des 3 derniers matchs et projection), au moins 15 min jouées en moyenne.</p>
+    {prof_html}
   </section>'''
     if suivi.get("joker"):
         chg += f'<p class="discret">🃏 {_e(suivi["joker"])}</p>'

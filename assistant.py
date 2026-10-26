@@ -35,6 +35,7 @@ except Exception:  # pragma: no cover
 B2B = set()          # (équipe, event) = 2e match d'un back-to-back, rempli par construire_calendrier
 MALUS_B2B = [0.92]   # remplacé par config.json « malus_back_to_back »
 PROCHAIN = [None]    # id du prochain Gameday : ses chances de jouer viennent du rapport de blessures du jeu
+BOOST = {}           # (joueur, event) -> facteur : minutes libérées par un coéquipier blessé (voir opportunites)
 
 
 # ----------------------------------------------------------------------------- utils
@@ -66,6 +67,9 @@ def lire_config():
     # de blessures) ; à la fin, il serait perdu s'il n'est pas joué. Seuil interpolé entre les deux.
     cfg.setdefault("seuil_joker_debut", 400)
     cfg.setdefault("seuil_joker_fin", 150)     # jours testés pour trouver le meilleur moment du joker
+    cfg.setdefault("minutes_max", 36)            # minutes max d'un joueur qui récupère celles d'un blessé
+    cfg.setdefault("rendement_minutes_sup", 0.85)  # points par minute supplémentaire (un peu moins que d'habitude)
+    cfg.setdefault("boost_max", 1.6)            # hausse max de la projection grâce aux minutes libérées
     cfg.setdefault("calibration_auto", True)    # corrige les projections avec leurs erreurs passées (bilan.py)
     cfg.setdefault("seuil_changement_plan", 5)  # pts mini pour changer un transfert déjà conseillé
     cfg.setdefault("force_fort", 25)            # badge 🟢 Fort à partir de ce gain (pts)
@@ -405,7 +409,7 @@ def projeter(boot, cfg, saison_commencee, saison=None):
                             equipe_id=e["team"], equipe=equipes[e["team"]], poste=e["element_type"],
                             prix=e["now_cost"], proj=proj, dispo=dispo, dispo_prochain=dispo_prochain, fiabilite=fiab, b2b=b2b, retour=retour, statut=statut,
                             news=news, g=g_cur, possede=float(e.get("selected_by_percent") or 0),
-                            rang=grp, calib=calib)
+                            rang=grp, calib=calib, rang_poste=v.get("rang_poste"), min_proj=v.get("min_proj"))
     return joueurs
 
 
@@ -424,13 +428,63 @@ def enregistrer_projections(ev, joueurs, joue):
         {"event": ev["id"], "calcul": dt.datetime.now(dt.timezone.utc).isoformat(), "projections": proj}), encoding="utf-8")
 
 
+def opportunites(joueurs, saison, joue, events, cfg):
+    """Blessures et minutes libérées : quand un joueur de la rotation est absent un soir, ses minutes
+    prévues vont à ses coéquipiers du même poste (BC/FC), surtout aux suivants dans la hiérarchie ESPN
+    (poids 1/rang), sans dépasser minutes_max. Le gain en points suit leurs points par minute, avec un
+    rendement de rendement_minutes_sup. Si un joueur joue déjà plus que prévu (absence en cours depuis
+    plusieurs matchs), on ne compte que la part qui n'est pas déjà dans ses minutes récentes.
+    Remplit BOOST et renvoie la liste des bénéficiaires notables (pour la page)."""
+    BOOST.clear()
+    par_equipe = {}
+    for q, p in joueurs.items():
+        if p.get("min_proj"):
+            par_equipe.setdefault(p["equipe_id"], []).append(q)
+    def recentes(q):
+        m = [mi for _, _, mi in (saison or {}).get(q, {}).get("matchs", []) if mi > 0][-3:]
+        return sum(m) / len(m) if m else None
+    infos = {}
+    for ev in events:
+        date = (z(ev["deadline_time"]) - dt.timedelta(hours=4)).date()
+        for eq, ids in par_equipe.items():
+            if ev["id"] not in joue.get(eq, ()):
+                continue
+            for poste in (1, 2):
+                groupe = [q for q in ids if joueurs[q]["poste"] == poste]
+                absents = [q for q in groupe if (joueurs[q]["retour"] and joueurs[q]["retour"] > date)
+                           or joueurs[q]["dispo"] == 0 or (ev["id"] == PROCHAIN[0] and joueurs[q].get("dispo_prochain") == 0)]
+                libres = sum(joueurs[q]["min_proj"] for q in absents)
+                if libres < 5:
+                    continue
+                presents = [q for q in groupe if q not in absents and joueurs[q]["proj"] > 0]
+                poids = {q: 1 / (joueurs[q].get("rang_poste") or 4) for q in presents}
+                total = sum(poids.values()) or 1
+                for q in presents:
+                    p = joueurs[q]
+                    base_min = p["min_proj"]
+                    cible = min(cfg["minutes_max"], base_min + libres * poids[q] / total)
+                    actuel = max(base_min, recentes(q) or base_min)   # déjà dans ses minutes récentes ?
+                    extra = max(0.0, cible - actuel)
+                    if extra <= 0:
+                        continue
+                    f = min(cfg["boost_max"], 1 + cfg["rendement_minutes_sup"] * extra / actuel)
+                    BOOST[(q, ev["id"])] = f
+                    if f >= 1.1:
+                        i = infos.setdefault(q, dict(nom=p["nom"], equipe=p["equipe"], poste="BC" if poste == 1 else "FC",
+                                                     prix=p["prix"] / 10, boost=0.0, jours=0,
+                                                     absents=sorted({joueurs[a]["nom"] for a in absents})))
+                        i["boost"] = max(i["boost"], f)
+                        i["jours"] += 1
+    return sorted(infos.values(), key=lambda i: -i["boost"])
+
+
 def ev_jour(p, ev_id, joue, date_event):
     if ev_id not in joue.get(p["equipe_id"], ()):
         return 0.0
     if p["retour"] and p["retour"] > date_event:
         return 0.0
     dispo = p["dispo_prochain"] if ev_id == PROCHAIN[0] and p.get("dispo_prochain") is not None else p["dispo"]
-    v = p["proj"] * dispo * p["fiabilite"]
+    v = p["proj"] * dispo * p["fiabilite"] * BOOST.get((p["id"], ev_id), 1.0)
     if (p["equipe_id"], ev_id) in B2B:   # 2e soir d'affilée : effet propre au joueur si mesuré, sinon valeur par défaut
         v *= p["b2b"] if p.get("b2b") else MALUS_B2B[0] - (0.04 if p["fiabilite"] < 0.8 or p["retour"] else 0)
     return v   # fiabilité = risque de repos / pépins (≈0,92, moins pour les joueurs fragiles)
@@ -1338,6 +1392,10 @@ def rapport(joueurs, equipe, banque, gratuits, cap_dispo, gw, jours, joue, match
         P("📅 Jours creux du plan conseillé — " + suivi["creux"])
     if suivi.get("plein"):
         P("🧩 " + suivi["plein"])
+    if suivi.get("profiteurs"):
+        P("📈 Profitent d'une blessure (minutes libérées) : " + " ; ".join(
+            f"{i['nom']} ({i['equipe']}) +{(i['boost'] - 1) * 100:.0f} % sur {i['jours']} j. (absent : {', '.join(i['absents'])})"
+            for i in suivi["profiteurs"][:8]))
     for l in suivi.get("idees", []):
         P("💭 " + l)
     alertes = [pid for pid in equipe if joueurs[pid]["dispo"] < 1 or joueurs[pid]["news"]]
@@ -1444,6 +1502,7 @@ def main():
     MALUS_B2B[0] = cfg["malus_back_to_back"]
     saison = minutes_saison(boot, args.hors_ligne) if saison_commencee else {}
     joueurs = projeter(boot, cfg, saison_commencee, saison)
+    profiteurs = opportunites(joueurs, saison, joue, list(jours) + list((gw_suiv or {}).get("events", [])), cfg)
     equipe, banque, prix_vente, gratuits, cap_dispo, src_equipe = mon_equipe(mt, cfg, joueurs, boot, gw)
     premier = min(e["id"] for e in boot["events"])
     construction = jours[0]["id"] == premier
@@ -1570,6 +1629,8 @@ def main():
                  valeurs=valeurs_equipe(equipe, joueurs, jours, gw_suiv, joue, cfg),
                  forme=forme_et_affaires(equipe, joueurs, saison, joue, gw_suiv, boot, cfg),
                  ordre_banc=ordre_banc(plan, joueurs, joue),
+                 profiteurs=[dict(i, mien=any(joueurs[q]["nom"] == i["nom"] and joueurs[q]["equipe"] == i["equipe"] for q in equipe))
+                             for i in profiteurs[:12]],
                  saison_graph=dict(soirees=lire_json(ICI / "rapport" / "soirees.json", []),
                                    ligue=lire_json(ICI / "rapport" / "ligue.json", {}).get("historique", [])),
                  changements=changements(prec, plan, joueurs, boot, gw), source_equipe=src_equipe)
