@@ -185,7 +185,7 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       M.Uzan (BOS) : -
       N.Pringle (BKN) : -
       P.Connaughton (CHA) : -
-  statut i | chances ce Gameday 25 | prochain 25 : 36 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 35 joueurs
       T.Bilodeau (BKN) : Shoulder expected back 2026-10-30
       G.Williams (CHA) : Hamstring expected back 2026-11-02
       K.Knueppel (CHA) : Hamstring expected back 2026-11-02
@@ -205,23 +205,30 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       H.Veesaar (ATL) : Knee expected back 2027-07-01
       R.Dillingham (CHI) : Wrist expected back 2026-11-06
       E.Freeman (MIN) : Shoulder expected back 2026-11-06
-  statut d | chances ce Gameday 100 | prochain 75 : 5 joueurs
+  statut d | chances ce Gameday 100 | prochain 75 : 6 joueurs
       D.White (BOS) : Hip expected back 2026-10-27
       S.de Larrea (DAL) : Knee expected back 2026-10-28
-      A.Caruso (OKC) : Ankle expected back 2026-10-28
-      J.Jackson Jr. (UTA) : Knee expected back 2026-10-28
+      S.Fontecchio (MIA) : Illness expected back 2026-11-04
+      P.Larsson (MIA) : Ankle expected back 2026-10-28
+  statut d | chances ce Gameday None | prochain 75 : 3 joueurs
+      J.Poole (NOP) : Illness expected back 2026-10-28
+      S.Henderson (POR) : Ankle expected back 2026-10-27
+      J.Champagnie (WAS) : Foot expected back 2026-10-28
   statut i | chances ce Gameday 75 | prochain 25 : 2 joueurs
       A.Nembhard (IND) : Back expected back 2026-10-28
       J.Hayes (UTA) : Shoulder expected back 2026-10-28
-  statut d | chances ce Gameday None | prochain 75 : 2 joueurs
-      S.Henderson (POR) : Ankle expected back 2026-10-27
-      J.Champagnie (WAS) : Foot expected back 2026-10-28
   statut d | chances ce Gameday 75 | prochain 75 : 1 joueurs
       I.Joe (DET) : Hip expected back 2026-10-27
+  statut i | chances ce Gameday 100 | prochain 25 : 1 joueurs
+      A.Sengun (HOU) : Back expected back 2026-10-30
+  statut i | chances ce Gameday None | prochain 25 : 1 joueurs
+      R.Hachimura (LAC) : Quadriceps expected back 2026-10-30
   statut i | chances ce Gameday 25 | prochain 75 : 1 joueurs
       A.Thiero (LAL) : Knee expected back 2026-10-28
   statut i | chances ce Gameday 25 | prochain 0 : 1 joueurs
       K.Leonard (TOR) : Knee expected back 2026-11-23
+  statut i | chances ce Gameday 100 | prochain 0 : 1 joueurs
+      J.Jackson Jr. (UTA) : Knee expected back 2026-12-14
   statut i | chances ce Gameday 0 | prochain 25 : 1 joueurs
       T.Vukcevic (WAS) : Hip expected back 2026-11-02
 
