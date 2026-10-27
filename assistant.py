@@ -36,6 +36,8 @@ B2B = set()          # (équipe, event) = 2e match d'un back-to-back, rempli par
 MALUS_B2B = [0.92]   # remplacé par config.json « malus_back_to_back »
 PROCHAIN = [None]    # id du prochain Gameday : ses chances de jouer viennent du rapport de blessures du jeu
 BOOST = {}           # (joueur, event) -> facteur : minutes libérées par un coéquipier blessé (voir opportunites)
+ADVERSAIRE = {}      # (équipe, event) -> équipe adverse
+DEFENSE = {}         # (équipe, poste) -> facteur : points fantasy concédés à ce poste (voir defenses)
 
 
 # ----------------------------------------------------------------------------- utils
@@ -70,6 +72,8 @@ def lire_config():
     cfg.setdefault("seuil_joker_fin", 150)     # jours testés pour trouver le meilleur moment du joker
     cfg.setdefault("minutes_max", 36)            # minutes max d'un joueur qui récupère celles d'un blessé
     cfg.setdefault("rendement_minutes_sup", 0.85)  # points par minute supplémentaire (un peu moins que d'habitude)
+    cfg.setdefault("poids_matchs_defense", 10)  # matchs « fictifs » à la moyenne : l'effet adversaire monte avec les matchs joués
+    cfg.setdefault("defense_max", 0.12)         # effet adversaire borné à ±12 %
     cfg.setdefault("boost_max", 1.6)
     cfg.setdefault("boost_min", 0.6)            # baisse max de la projection au retour d'un coéquipier blessé            # hausse max de la projection grâce aux minutes libérées
     cfg.setdefault("calibration_auto", True)    # corrige les projections avec leurs erreurs passées (bilan.py)
@@ -502,6 +506,53 @@ def opportunites(joueurs, saison, joue, events, cfg):
     return fin(gagnants), fin(perdants)
 
 
+def texte_defenses(classement, boot):
+    if not classement:
+        return ""
+    sig = {t["id"]: t["short_name"] for t in boot["teams"]}
+    parts = []
+    for poste, nom_p in ((1, "arrières"), (2, "intérieurs")):
+        l = sorted((c for c in classement if c[1] == poste), key=lambda c: c[2])
+        if l:
+            parts.append(f"face aux {nom_p}, les plus perméables : " + ", ".join(f"{sig[e]} {(f - 1) * 100:+.0f} %" for e, _, f, _, _ in l[-3:][::-1])
+                         + " ; les plus dures : " + ", ".join(f"{sig[e]} {(f - 1) * 100:+.0f} %" for e, _, f, _, _ in l[:3]))
+    return "Effet adversaire (points fantasy concédés par poste, déjà dans les prévisions) — " + " | ".join(parts)
+
+
+def defenses(joueurs, saison, matchs, cfg):
+    """Adversaire : points fantasy que chaque équipe concède par match aux arrières (BC) et aux intérieurs (FC),
+    comparés à la moyenne de la ligue, sur les matchs déjà joués. Tiré vers 1 tant qu'il y a peu de matchs
+    (poids_matchs_defense) et borné (±defense_max). Remplit ADVERSAIRE et DEFENSE ; renvoie le classement."""
+    ADVERSAIRE.clear(); DEFENSE.clear()
+    for ev, _, h, a in matchs:
+        ADVERSAIRE[(h, ev)] = a
+        ADVERSAIRE[(a, ev)] = h
+    concede = {}   # (équipe, poste) -> {event: points}
+    for q, s_ in (saison or {}).items():
+        p = joueurs.get(q)
+        if not p:
+            continue
+        for ev, pts, mi in s_.get("matchs", []):
+            adv = ADVERSAIRE.get((p["equipe_id"], ev))
+            if adv is None or mi <= 0:
+                continue
+            d = concede.setdefault((adv, p["poste"]), {})
+            d[ev] = d.get(ev, 0.0) + pts
+    res = []
+    for poste in (1, 2):
+        par_eq = {eq: (sum(d.values()) / len(d), len(d)) for (eq, po), d in concede.items() if po == poste and d}
+        if not par_eq:
+            continue
+        moy = sum(m for m, _ in par_eq.values()) / len(par_eq)
+        K, lim = cfg["poids_matchs_defense"], cfg["defense_max"]
+        for eq, (m, n) in par_eq.items():
+            f = 1 + (m / moy - 1) * n / (n + K)
+            f = max(1 - lim, min(1 + lim, f))
+            DEFENSE[(eq, poste)] = f
+            res.append((eq, poste, f, m, n))
+    return res
+
+
 def ev_jour(p, ev_id, joue, date_event):
     if ev_id not in joue.get(p["equipe_id"], ()):
         return 0.0
@@ -509,6 +560,9 @@ def ev_jour(p, ev_id, joue, date_event):
         return 0.0
     dispo = p["dispo_prochain"] if ev_id == PROCHAIN[0] and p.get("dispo_prochain") is not None else p["dispo"]
     v = p["proj"] * dispo * p["fiabilite"] * BOOST.get((p["id"], ev_id), 1.0)
+    adv = ADVERSAIRE.get((p["equipe_id"], ev_id))
+    if adv is not None:
+        v *= DEFENSE.get((adv, p["poste"]), 1.0)
     if (p["equipe_id"], ev_id) in B2B:   # 2e soir d'affilée : effet propre au joueur si mesuré, sinon valeur par défaut
         v *= p["b2b"] if p.get("b2b") else MALUS_B2B[0] - (0.04 if p["fiabilite"] < 0.8 or p["retour"] else 0)
     return v   # fiabilité = risque de repos / pépins (≈0,92, moins pour les joueurs fragiles)
@@ -1478,6 +1532,8 @@ def rapport(joueurs, equipe, banque, gratuits, cap_dispo, gw, jours, joue, match
         P("📅 Jours creux du plan conseillé — " + suivi["creux"])
     if suivi.get("plein"):
         P("🧩 " + suivi["plein"])
+    if suivi.get("defenses"):
+        P("🛡️ " + suivi["defenses"])
     if suivi.get("perdants"):
         P("📉 Vont perdre des minutes (retour d'un coéquipier blessé) : " + " ; ".join(
             f"{i['nom']} ({i['equipe']}) {(i['boost'] - 1) * 100:+.0f} % dès le {i['depuis']} (retour : {', '.join(i['revenus'])})"
@@ -1592,6 +1648,11 @@ def main():
     MALUS_B2B[0] = cfg["malus_back_to_back"]
     saison = minutes_saison(boot, args.hors_ligne) if saison_commencee else {}
     joueurs = projeter(boot, cfg, saison_commencee, saison)
+    try:
+        classement_def = defenses(joueurs, saison, matchs, cfg)
+    except Exception as ex:
+        classement_def = []
+        print(f"  (effet adversaire non calculé : {ex!r})")
     profiteurs, perdants = opportunites(joueurs, saison, joue, list(jours) + list((gw_suiv or {}).get("events", [])), cfg)
     equipe, banque, prix_vente, gratuits, cap_dispo, src_equipe = mon_equipe(mt, cfg, joueurs, boot, gw)
     premier = min(e["id"] for e in boot["events"])
@@ -1730,6 +1791,7 @@ def main():
                  valeurs=valeurs_equipe(equipe, joueurs, jours, gw_suiv, joue, cfg),
                  forme=forme_et_affaires(equipe, joueurs, saison, joue, gw_suiv, boot, cfg),
                  ordre_banc=ordre_banc(plan, joueurs, joue),
+                 defenses=texte_defenses(classement_def, boot),
                  profiteurs=[dict(i, mien=any(joueurs[q]["nom"] == i["nom"] and joueurs[q]["equipe"] == i["equipe"] for q in equipe))
                              for i in profiteurs[:12]],
                  perdants=[dict(i, mien=any(joueurs[q]["nom"] == i["nom"] and joueurs[q]["equipe"] == i["equipe"] for q in equipe))

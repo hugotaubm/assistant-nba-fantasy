@@ -512,6 +512,8 @@ def rendre(ctx):
         chg += f'<p class="option">🃏 {_e(suivi["moment_joker"])}</p>'
     if suivi.get("allstar"):
         chg += f'<p class="option">⭐ {_e(suivi["allstar"])}</p>'
+    if suivi.get("defenses"):
+        chg += f'<p class="discret">🛡️ {_e(suivi["defenses"])}</p>'
     if suivi.get("creux"):
         chg += f'<p class="discret">📅 Jours creux du plan conseillé — {_e(suivi["creux"])}</p>'
     if suivi.get("plein"):
