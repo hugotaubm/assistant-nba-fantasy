@@ -1153,6 +1153,33 @@ def forme_et_affaires(equipe, joueurs, saison, joue, gw_suiv, boot, cfg, n_derni
     return forme, affaires[:12]
 
 
+def moment_allstar(plan, joueurs, joue, jours):
+    """All-Star (chip « rich ») : pour un Gameday, budget illimité ; l'équipe revient ensuite à la normale
+    (hypothèse à vérifier dans les règles du jeu). Pour chaque soir de la semaine : meilleur cinq possible
+    parmi tous les joueurs qui jouent (3 max par poste, 2 max par équipe NBA), comparé aux titulaires du plan."""
+    from itertools import combinations
+    res = []
+    for jp in plan["plan"]:
+        ev = jp["event"]
+        date = (z(ev["deadline_time"]) - dt.timedelta(hours=4)).date()
+        vals = sorted(((ev_jour(p, ev["id"], joue, date), q) for q, p in joueurs.items()), reverse=True)
+        top = [(v, q) for v, q in vals if v > 0][:25]
+        meilleur, cinq = 0.0, []
+        for combo in combinations(top, 5):
+            tot = sum(v for v, _ in combo)
+            if tot <= meilleur:
+                continue
+            postes = [joueurs[q]["poste"] for _, q in combo]
+            equipes = [joueurs[q]["equipe_id"] for _, q in combo]
+            if postes.count(1) > 3 or postes.count(2) > 3 or max(equipes.count(e) for e in equipes) > 2:
+                continue
+            meilleur, cinq = tot, [q for _, q in combo]
+        nb_equipes = sum(1 for eq, evs in joue.items() if ev["id"] in evs)
+        res.append(dict(event=ev, nb_equipes=nb_equipes, plan=jp["points"], allstar=meilleur, gain=meilleur - jp["points"],
+                        cinq=[joueurs[q]["nom"] for q in cinq]))
+    return res
+
+
 def quand_txt(ev):
     """« ce soir » si la deadline tombe aujourd'hui (heure de Paris), sinon « le Day N »."""
     d = z(ev["deadline_time"]).astimezone(PARIS).date()
@@ -1386,6 +1413,8 @@ def rapport(joueurs, equipe, banque, gratuits, cap_dispo, gw, jours, joue, match
         P(suivi["joker"])
     if suivi.get("moment_joker"):
         P("🃏 " + suivi["moment_joker"])
+    if suivi.get("allstar"):
+        P("⭐ " + suivi["allstar"])
     if suivi.get("ligue"):
         P("🏆 " + suivi["ligue"])
     if suivi.get("creux"):
@@ -1569,6 +1598,17 @@ def main():
     except Exception:
         ligue_txt = ""
     try:
+        allstar = moment_allstar(plan, joueurs, joue, jours)
+        court_ = lambda e: e["name"].replace("Gameweek ", "GW").replace(" - ", " ")
+        meilleur_as = max(allstar, key=lambda r: r["gain"])
+        allstar_txt = ("All-Star (si c'est bien « budget illimité pour un Gameday, puis retour à ton équipe ») : gain par soir "
+                       + " | ".join(f"{court_(r['event'])} ({r['nb_equipes']} équipes) {r['gain']:+.0f}" for r in allstar)
+                       + f". Meilleur soir : {court_(meilleur_as['event'])}, {meilleur_as['allstar']:.0f} pts attendus au lieu de "
+                       f"{meilleur_as['plan']:.0f}, avec {', '.join(meilleur_as['cinq'])}.")
+    except Exception as ex:
+        allstar_txt = ""
+        print(f"  (moment de l'All-Star non calculé : {ex!r})")
+    try:
         creux_txt = creux(plan, joueurs, joue, boot, gw_suiv)
     except Exception as ex:
         creux_txt = ""
@@ -1625,7 +1665,7 @@ def main():
     alertes, a_verifier, note_alertes = alertes_equipe(mt, plan, joueurs, joue)
     suivi = dict(forces=forces, alertes=alertes, a_verifier=a_verifier, note_alertes=note_alertes, stabilite=stabilite,
                  maintenant=maintenant_txt, joker=joker_txt, idees=idees, plein=plein_txt,
-                 creux=creux_txt, ligue=ligue_txt, moment_joker=moment_txt, poids_futur=cfg["poids_futur"],
+                 creux=creux_txt, ligue=ligue_txt, allstar=allstar_txt, moment_joker=moment_txt, poids_futur=cfg["poids_futur"],
                  valeurs=valeurs_equipe(equipe, joueurs, jours, gw_suiv, joue, cfg),
                  forme=forme_et_affaires(equipe, joueurs, saison, joue, gw_suiv, boot, cfg),
                  ordre_banc=ordre_banc(plan, joueurs, joue),
