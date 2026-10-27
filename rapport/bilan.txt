@@ -129,7 +129,7 @@ Par rang dans la hiérarchie ESPN (1 = titulaire) :
   rang 7                  11 matchs | 0 min :  8 | biais -11.2 | réel/projeté 0.73 | minutes 31.0
   rang inconnu            19 matchs | 0 min : 11 | biais  -9.9 | réel/projeté 0.66 | minutes 21.6
 Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : 135 sur 864
-  - J.Embiid (PHI) (event 6) : projeté 48.5, statut actuel i, news : Heel expected back 2026-10-28
+  - J.Embiid (PHI) (event 6) : projeté 48.5, statut actuel a, news : -
   - C.Flagg (DAL) (event 5) : projeté 47.0, statut actuel a, news : -
   - L.James (PHI) (event 5) : projeté 46.1, statut actuel a, news : -
   - K.Leonard (TOR) (event 6) : projeté 45.6, statut actuel i, news : Knee expected back 2026-11-23
@@ -185,7 +185,7 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       M.Uzan (BOS) : -
       N.Pringle (BKN) : -
       P.Connaughton (CHA) : -
-  statut i | chances ce Gameday 25 | prochain 25 : 35 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 33 joueurs
       T.Bilodeau (BKN) : Shoulder expected back 2026-10-30
       G.Williams (CHA) : Hamstring expected back 2026-11-02
       K.Knueppel (CHA) : Hamstring expected back 2026-11-02
@@ -205,24 +205,24 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       H.Veesaar (ATL) : Knee expected back 2027-07-01
       R.Dillingham (CHI) : Wrist expected back 2026-11-06
       E.Freeman (MIN) : Shoulder expected back 2026-11-06
-  statut d | chances ce Gameday 100 | prochain 75 : 7 joueurs
+  statut d | chances ce Gameday 100 | prochain 75 : 8 joueurs
+      A.Wiggins (ATL) : Knee expected back 2026-10-28
       D.White (BOS) : Hip expected back 2026-10-27
       S.de Larrea (DAL) : Knee expected back 2026-10-28
       Y.Lendeborg (GSW) : Foot expected back 2026-10-28
-      S.Fontecchio (MIA) : Illness expected back 2026-10-28
-  statut d | chances ce Gameday None | prochain 75 : 3 joueurs
-      J.Poole (NOP) : Illness expected back 2026-10-28
-      S.Henderson (POR) : Ankle expected back 2026-10-27
-      J.Champagnie (WAS) : Foot expected back 2026-10-28
   statut i | chances ce Gameday 75 | prochain 25 : 2 joueurs
       A.Nembhard (IND) : Back expected back 2026-10-28
       J.Hayes (UTA) : Shoulder expected back 2026-10-28
+  statut i | chances ce Gameday None | prochain 25 : 2 joueurs
+      R.Hachimura (LAC) : Quadriceps expected back 2026-10-30
+      J.Champagnie (WAS) : Foot expected back 2026-10-30
+  statut d | chances ce Gameday None | prochain 75 : 2 joueurs
+      J.Poole (NOP) : Illness expected back 2026-10-28
+      S.Henderson (POR) : Ankle expected back 2026-10-27
   statut d | chances ce Gameday 75 | prochain 75 : 1 joueurs
       I.Joe (DET) : Hip expected back 2026-10-27
   statut i | chances ce Gameday 100 | prochain 25 : 1 joueurs
       A.Sengun (HOU) : Back expected back 2026-10-30
-  statut i | chances ce Gameday None | prochain 25 : 1 joueurs
-      R.Hachimura (LAC) : Quadriceps expected back 2026-10-30
   statut i | chances ce Gameday 25 | prochain 75 : 1 joueurs
       A.Thiero (LAL) : Knee expected back 2026-10-28
   statut i | chances ce Gameday 25 | prochain 0 : 1 joueurs
