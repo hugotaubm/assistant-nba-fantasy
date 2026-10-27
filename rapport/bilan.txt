@@ -93,8 +93,8 @@ BILAN DES GAMEDAYS JOUÉS
   → Titulaires : 164.0 pts réels pour 146.7 projetés (+17.3) [projection du modèle].
   → Meilleur cinq possible après coup : 164.0 pts (hors capitaine), soit 0.0 pts laissés sur le banc.
 
---- Gameweek 2 - Day 1 : moyenne des joueurs 122.2 | meilleur 364.0
-  Ton score : 162.0 | banc : 20.0 | rang : 12379 | transferts : 1 (coût 0)
+--- Gameweek 2 - Day 1 : moyenne des joueurs 154.2 | meilleur 370.0
+  Ton score : 162.0 | banc : 20.0 | rang : 20820 | transferts : 1 (coût 0)
   TITULAIRE B.Burries (MIL)              16 min        réel  11.0 | projeté  18.2
   TITULAIRE T.Jerome (MEM)               29 min        réel  35.0 | projeté  40.1
   TITULAIRE J.Williams (OKC)             25 min        réel  21.0 | projeté  16.1
@@ -226,10 +226,10 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
 ======================================================================
 LIGUE FIRST TEAM
 ======================================================================
-  Rang : 75 / 629 (-8 depuis la dernière journée) | total 1060 pts | dernière journée 162 pts
+  Rang : 77 / 630 (-10 depuis la dernière journée) | total 1060 pts | dernière journée 162 pts
   Écart avec le 1er : 401 pts
-  Écart avec le rang juste devant (74e) : 2 pts
-  Avance sur le rang juste derrière (76e) : 2 pts
+  Écart avec le rang juste devant (76e) : 2 pts
+  Avance sur le rang juste derrière (78e) : 2 pts
   Capitaine : déjà joué par 73 des 74 équipes devant toi (99 %) ; par Gameday : event 1 : 17, event 2 : 6, event 3 : 7, event 4 : 19, event 5 : 7, event 6 : 10, event 7 : 7
   All-Star : déjà joué par 15 des 74 équipes devant toi (20 %) ; par Gameday : event 2 : 4, event 3 : 8, event 4 : 1, event 5 : 2
   Wildcard (joker) : déjà joué par 28 des 74 équipes devant toi (38 %) ; par Gameday : event 2 : 5, event 3 : 1, event 4 : 5, event 6 : 4, event 7 : 13
