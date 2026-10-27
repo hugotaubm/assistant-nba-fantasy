@@ -3921,7 +3921,15 @@
 "equipe": "GSW",
 "fppg": 10.44,
 "fiabilite": 0.92,
-"source": "selon le prix"
+"source": "selon le prix",
+"rang_poste": 3,
+"poste_espn": "C",
+"devant": [
+"Draymond Green",
+"Al Horford"
+],
+"presaison_matchs": 5,
+"presaison_min": 14.4
 },
 "196": {
 "nom": "J.Phillips",
@@ -5858,12 +5866,12 @@
 "b2b_presence": 0.83,
 "presence": 0.83,
 "age": 25,
-"rang_poste": 6,
+"rang_poste": 5,
 "poste_espn": "SF",
 "devant": [
 "Alex Caruso",
-"Cason Wallace",
-"Kenrich Williams"
+"Kenrich Williams",
+"Brooks Barnhizer"
 ]
 },
 "289": {
@@ -6906,7 +6914,14 @@
 "age": 26,
 "b2b_n": 0,
 "presaison_matchs": 3,
-"presaison_min": 5.7
+"presaison_min": 5.7,
+"rang_poste": 5,
+"poste_espn": "C",
+"devant": [
+"Rudy Gobert",
+"Joan Beringer",
+"Rocco Zikarsky"
+]
 },
 "340": {
 "nom": "B.Hyland",
@@ -8128,9 +8143,9 @@
 "age": 31,
 "min_proj": 15.4,
 "rang_poste": 2,
-"poste_espn": "PF",
+"poste_espn": "SF",
 "devant": [
-"Chet Holmgren"
+"Alex Caruso"
 ],
 "presaison_matchs": 4,
 "presaison_min": 16.5
@@ -8155,8 +8170,8 @@
 "poste_espn": "SF",
 "devant": [
 "Alex Caruso",
-"Cason Wallace",
-"Kenrich Williams"
+"Kenrich Williams",
+"Brooks Barnhizer"
 ],
 "presaison_matchs": 3,
 "presaison_min": 21.7
@@ -8199,9 +8214,13 @@
 "presence": 0.96,
 "age": 22,
 "min_proj": 26.4,
-"rang_poste": 1,
-"poste_espn": "SG",
-"devant": [],
+"rang_poste": 6,
+"poste_espn": "PG",
+"devant": [
+"Shai Gilgeous-Alexander",
+"Ajay Mitchell",
+"Bennett Stirtz"
+],
 "presaison_matchs": 2,
 "presaison_min": 19.0
 },
@@ -8262,11 +8281,10 @@
 "b2b_presence": 0.6,
 "presence": 0.59,
 "age": 24,
-"rang_poste": 4,
+"rang_poste": 3,
 "poste_espn": "SF",
 "devant": [
 "Alex Caruso",
-"Cason Wallace",
 "Kenrich Williams"
 ],
 "presaison_matchs": 5,
@@ -8305,11 +8323,9 @@
 "presence": 0.94,
 "age": 22,
 "min_proj": 24.7,
-"rang_poste": 2,
+"rang_poste": 1,
 "poste_espn": "SG",
-"devant": [
-"Cason Wallace"
-],
+"devant": [],
 "presaison_matchs": 4,
 "presaison_min": 18.2
 },
@@ -11836,6 +11852,6 @@
 "_source": "saison régulière 2025-26 (ESPN), mis à jour le 20/10/2026"
 },
 "roles": {
-"_source": "ESPN (hiérarchie + présaison), mis à jour le 27/10/2026"
+"_source": "ESPN (hiérarchie + présaison), mis à jour le 28/10/2026"
 }
 }
