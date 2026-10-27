@@ -63,6 +63,7 @@ def lire_config():
     cfg.setdefault("dispo_apres_retour", 0.85)  # blessé avec date de retour : chance de jouer une fois revenu (après le prochain Gameday)
     cfg.setdefault("transferts_payants", False)  # False : jamais plus de transferts que les gratuits (pas de -100)
     cfg.setdefault("joker_jours_testes", 8)
+    cfg.setdefault("joker_jours_apres", 7)       # jours de profit comptés après la wildcard (comparaison à horizon égal)
     # Seuil du joker dégressif : au début de sa fenêtre, le garder vaut cher (assurance contre une série
     # de blessures) ; à la fin, il serait perdu s'il n'est pas joué. Seuil interpolé entre les deux.
     cfg.setdefault("seuil_joker_debut", 400)
@@ -1091,34 +1092,41 @@ def creux(r, joueurs, joue, boot, gw_suiv):
 
 
 def moment_joker(plan, args_plan, base, cfg, boot):
-    """Gain du joker selon le jour où il est joué (cette semaine puis début de la suivante), et date limite
-    de la fenêtre en cours. Le reste (transferts normaux, titulaires, capitaine) est optimisé autour."""
+    """Gain de la wildcard selon le jour où elle est jouée, À HORIZON ÉGAL : pour chaque jour candidat,
+    on compare les points (non pondérés) du plan avec wildcard et du plan conseillé, depuis aujourd'hui
+    jusqu'à joker_jours_apres jours après la wildcard. Chaque scénario a ainsi le même nombre de jours
+    de profit ; les jours d'attente (équipe actuelle) sont comptés pareil dans les deux plans."""
     jours, gw_suiv = args_plan[6], args_plan[8]
-    candidats = (list(jours) + list((gw_suiv or {}).get("events", [])))[:cfg["joker_jours_testes"]]
-    pts = lambda r: points_projetes(r, cfg)
+    tous = list(jours) + list((gw_suiv or {}).get("events", []))
+    K = cfg["joker_jours_apres"]
+    candidats = [(k, ev) for k, ev in enumerate(tous) if k + K <= len(tous)][:cfg["joker_jours_testes"]]
+    pts_jour = lambda r: [jp["points"] for jp in r["plan"] + r["plan2"]]
+    ref = pts_jour(plan)
     res = []
-    for ev in candidats:
+    for k, ev in candidats:
         f = optimiser(*args_plan[:9], cfg, transferts=True, assurance=base["assurance"], joker_ev=ev["id"])
         if f:
+            pf = pts_jour(f)
+            if len(pf) != len(ref):
+                continue
+            gain = sum(pf[:k + K]) - sum(ref[:k + K])
+            apres = sum(pf[k:k + K]) - sum(ref[k:k + K])
             entres = [q for jp in f["plan"] + f["plan2"] if jp["event"]["id"] == ev["id"] for q in jp["entrants"]]
-            res.append((ev, pts(f) - pts(plan), len(entres)))
+            res.append((ev, gain, apres, len(entres)))
     if not res:
         return ""
     meilleur = max(res, key=lambda r: r[1])
-    # fenêtre du joker en cours (chips du jeu) : à jouer avant la fin, sinon il est perdu
     fin = None
     for c in boot.get("chips", []):
         if c.get("name") == "wildcard" and c.get("start_event", 0) <= jours[0]["id"] <= c.get("stop_event", 0):
             ev_fin = next((e for e in boot["events"] if e["id"] == c["stop_event"]), None)
             fin = ev_fin and paris(z(ev_fin["deadline_time"]))
     court = lambda e: e["name"].replace("Gameweek ", "GW").replace(" - ", " ")
-    return ("Moment de la wildcard (gain sur cette semaine + suivante, selon le jour où tu le joues) : "
-            + " | ".join(f"{court(e)} {g:+.0f}" for e, g, _ in res)
+    return (f"Moment de la wildcard, à horizon égal ({K} jours de profit après la wildcard, points non pondérés) : "
+            + " | ".join(f"{court(e)} {g:+.0f}" for e, g, _, _ in res)
             + f". Meilleur : {court(meilleur[0])} (deadline {paris(z(meilleur[0]['deadline_time']))}, "
-            f"{meilleur[2]} joueur(s) changé(s))."
-            + (f" Fenêtre actuelle de la wildcard : à jouer au plus tard avant la deadline du {fin}, sinon elle est perdue." if fin else "")
-            + " Plus le jour est tardif, moins il reste de jours comptés dans le calcul : un écart de "
-              "quelques points en faveur d'un jour proche ne justifie pas d'attendre.")
+            f"{meilleur[3]} joueur(s) changé(s), dont {meilleur[2]:+.0f} pts sur les {K} jours qui suivent)."
+            + (f" Fenêtre actuelle de la wildcard : à jouer au plus tard avant la deadline du {fin}, sinon elle est perdue." if fin else ""))
 
 
 def forme_et_affaires(equipe, joueurs, saison, joue, gw_suiv, boot, cfg, n_derniers=3):
@@ -1646,12 +1654,12 @@ def main():
             c_ = {}
         if joker_gain is None or joker_gain < 0.7 * cfg["seuil_joker"]:
             moment_txt = ""
-        elif c_.get("jour") == jour_paris and c_.get("prochain") == jours[0]["id"]:
+        elif c_.get("jour") == jour_paris and c_.get("prochain") == jours[0]["id"] and c_.get("version") == 2:
             moment_txt = c_["texte"] + f" (calculé le {c_['heure']})"
         else:
             cfg_rapide = dict(cfg, temps_max_calcul=min(cfg["temps_max_calcul"], 40))
             moment_txt = moment_joker(plan, args_plan, base, cfg_rapide, boot)
-            cache.write_text(json.dumps({"jour": jour_paris, "prochain": jours[0]["id"], "texte": moment_txt,
+            cache.write_text(json.dumps({"jour": jour_paris, "prochain": jours[0]["id"], "texte": moment_txt, "version": 2,
                                          "heure": dt.datetime.now(dt.timezone.utc).astimezone(PARIS).strftime("%d/%m à %Hh%M")},
                                         ensure_ascii=False), encoding="utf-8")
     except Exception as ex:
