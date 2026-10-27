@@ -205,11 +205,11 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       H.Veesaar (ATL) : Knee expected back 2027-07-01
       R.Dillingham (CHI) : Wrist expected back 2026-11-06
       E.Freeman (MIN) : Shoulder expected back 2026-11-06
-  statut d | chances ce Gameday 100 | prochain 75 : 4 joueurs
+  statut d | chances ce Gameday 100 | prochain 75 : 5 joueurs
+      D.White (BOS) : Hip expected back 2026-10-27
       S.de Larrea (DAL) : Knee expected back 2026-10-28
       A.Caruso (OKC) : Ankle expected back 2026-10-28
       J.Jackson Jr. (UTA) : Knee expected back 2026-10-28
-      L.Markkanen (UTA) : Wrist expected back 2026-10-28
   statut i | chances ce Gameday 75 | prochain 25 : 2 joueurs
       A.Nembhard (IND) : Back expected back 2026-10-28
       J.Hayes (UTA) : Shoulder expected back 2026-10-28
