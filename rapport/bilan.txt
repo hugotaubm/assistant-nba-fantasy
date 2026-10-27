@@ -185,31 +185,35 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       M.Uzan (BOS) : -
       N.Pringle (BKN) : -
       P.Connaughton (CHA) : -
-  statut i | chances ce Gameday 25 | prochain 25 : 33 joueurs
-      T.Bilodeau (BKN) : Shoulder expected back 2026-10-30
-      G.Williams (CHA) : Hamstring expected back 2026-11-02
-      K.Knueppel (CHA) : Hamstring expected back 2026-11-02
-      C.White (CHA) : Calf expected back 2026-11-02
   statut i | chances ce Gameday 0 | prochain 0 : 32 joueurs
       D.Carter (BOS) : Illness expected back 2026-11-08
       K.Boswell (CHA) : Knee expected back 2026-11-02
       N.Claxton (CHI) : Hamstring expected back 2026-11-04
       N.Tomlin (CLE) : Back expected back 2026-11-16
+  statut i | chances ce Gameday 25 | prochain 25 : 31 joueurs
+      T.Bilodeau (BKN) : Shoulder expected back 2026-10-30
+      G.Williams (CHA) : Hamstring expected back 2026-11-02
+      K.Knueppel (CHA) : Hamstring expected back 2026-11-02
+      C.White (CHA) : Calf expected back 2026-11-02
   statut u | chances ce Gameday 100 | prochain 100 : 13 joueurs
       I.McKneely (ATL) : -
       J.Poulakidas (DAL) : -
       A.Toohey (GSW) : -
       R.Castro (HOU) : -
+  statut d | chances ce Gameday 100 | prochain 75 : 11 joueurs
+      A.Wiggins (ATL) : Knee expected back 2026-10-28
+      D.White (BOS) : Hip expected back 2026-10-27
+      T.Awaka (CHI) : Ankle expected back 2026-10-28
+      K.Irving (DAL) : Knee expected back 2026-10-28
   statut u | chances ce Gameday 0 | prochain 0 : 10 joueurs
       M.Gueye (ATL) : Foot expected back 2026-11-20
       H.Veesaar (ATL) : Knee expected back 2027-07-01
       R.Dillingham (CHI) : Wrist expected back 2026-11-06
       E.Freeman (MIN) : Shoulder expected back 2026-11-06
-  statut d | chances ce Gameday 100 | prochain 75 : 10 joueurs
-      A.Wiggins (ATL) : Knee expected back 2026-10-28
-      D.White (BOS) : Hip expected back 2026-10-27
-      T.Awaka (CHI) : Ankle expected back 2026-10-28
-      S.de Larrea (DAL) : Knee expected back 2026-10-28
+  statut i | chances ce Gameday 100 | prochain 25 : 3 joueurs
+      S.de Larrea (DAL) : Knee expected back 2026-10-30
+      A.Sengun (HOU) : Back expected back 2026-10-30
+      A.Caruso (OKC) : Ankle expected back 2026-10-31
   statut d | chances ce Gameday 75 | prochain 75 : 3 joueurs
       I.Joe (DET) : Hip expected back 2026-10-27
       A.Nesmith (IND) : Hamstring expected back 2026-10-28
@@ -218,9 +222,9 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       O.Toppin (IND) : Hand expected back 2026-10-28
       J.Poole (NOP) : Illness expected back 2026-10-28
       S.Henderson (POR) : Ankle expected back 2026-10-27
-  statut i | chances ce Gameday 100 | prochain 25 : 2 joueurs
-      A.Sengun (HOU) : Back expected back 2026-10-30
-      A.Caruso (OKC) : Ankle expected back 2026-10-31
+  statut d | chances ce Gameday 25 | prochain 75 : 2 joueurs
+      C.Martin (DAL) : Thumb expected back 2026-10-28
+      T.Biberovic (DAL) : Heel expected back 2026-10-28
   statut i | chances ce Gameday None | prochain 25 : 2 joueurs
       R.Hachimura (LAC) : Quadriceps expected back 2026-10-30
       J.Champagnie (WAS) : Foot expected back 2026-10-30
