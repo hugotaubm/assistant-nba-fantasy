@@ -35,6 +35,7 @@ except Exception:  # pragma: no cover
 B2B = set()          # (équipe, event) = 2e match d'un back-to-back, rempli par construire_calendrier
 MALUS_B2B = [0.92]   # remplacé par config.json « malus_back_to_back »
 PROCHAIN = [None]    # id du prochain Gameday : ses chances de jouer viennent du rapport de blessures du jeu
+JOUE = [{}]          # calendrier (équipe -> events), pour les fonctions d'affichage
 BOOST = {}           # (joueur, event) -> facteur : minutes libérées par un coéquipier blessé (voir opportunites)
 ADVERSAIRE = {}      # (équipe, event) -> équipe adverse
 DEFENSE = {}         # (équipe, poste) -> facteur : points fantasy concédés à ce poste (voir defenses)
@@ -1213,9 +1214,14 @@ def detail_wildcard(f, ev_w, joueurs, equipe):
     court = lambda e: e["name"].replace("Gameweek ", "GW").replace(" - ", " ")
     jp_w = next(jp for jp in f["plan"] + f["plan2"] if jp["event"]["id"] == ev_w["id"])
     eq_w = jp_w["effectif"]
+    tous_j = f["plan"] + f["plan2"]
+    date_ = lambda jp: (z(jp["event"]["deadline_time"]) - dt.timedelta(hours=4)).date()
+    attendu = {q: [ev_jour(joueurs[q], jp["event"]["id"], JOUE[0], date_(jp)) for jp in tous_j] for q in eq_w}
     sortent = [q for q in equipe if q not in eq_w]
     txt = (f"DÉTAIL de la wildcard {court(ev_w)} — équipe : "
-           + ", ".join(nom_(q) for q in sorted(eq_w, key=lambda q: (joueurs[q]["poste"], -joueurs[q]["prix"])))
+           + ", ".join(f"{nom_(q)} [{joueurs[q]['proj']:.0f} pts/match ; ce soir {attendu[q][[jp['event']['id'] for jp in tous_j].index(ev_w['id'])]:.0f} ; "
+                       f"{sum(1 for v in attendu[q] if v > 0)} matchs sur l'horizon]"
+                       for q in sorted(eq_w, key=lambda q: (joueurs[q]["poste"], -joueurs[q]["prix"])))
            + f" (coût {sum(joueurs[q]['prix'] for q in eq_w) / 10:.1f} M$). Sortent : "
            + ", ".join(joueurs[q]["nom"] for q in sortent) + ".")
     apres = [(jp["event"], so, en) for jp in f["plan"] + f["plan2"] if jp["entrants"] and jp["event"]["id"] != ev_w["id"]
@@ -1223,7 +1229,7 @@ def detail_wildcard(f, ev_w, joueurs, equipe):
     txt += (" Transferts ensuite : " + " ; ".join(f"{court(e)} : {joueurs[a]['nom']} → {nom_(b)}" for e, a, b in apres) + "."
             if apres else " Aucun transfert ensuite.")
     txt += " Titulaires : " + " | ".join(
-        f"{court(jp['event'])} : " + (", ".join(joueurs[q]["nom"] + (" (C)" if q == jp["capitaine"] else "") for q in jp["titulaires"]) or "—")
+        f"{court(jp['event'])} [~{jp['points']:.0f} pts] : " + (", ".join(joueurs[q]["nom"] + (" (C)" if q == jp["capitaine"] else "") for q in jp["titulaires"]) or "—")
         + (f" ({5 - len(jp['titulaires'])} vide(s))" if len(jp["titulaires"]) < 5 else "")
         for jp in f["plan"] + f["plan2"])
     vides1 = sum(5 - len(jp["titulaires"]) for jp in f["plan"])
@@ -1645,6 +1651,7 @@ def main():
     if gw_suiv:
         gw_suiv = dict(gw_suiv, events=[e for e in boot["events"] if gw_suiv["start_event"] <= e["id"] <= gw_suiv["stop_event"]])
     joue, matchs = construire_calendrier(boot, fixtures, sched)
+    JOUE[0] = joue
     MALUS_B2B[0] = cfg["malus_back_to_back"]
     saison = minutes_saison(boot, args.hors_ligne) if saison_commencee else {}
     joueurs = projeter(boot, cfg, saison_commencee, saison)
@@ -1768,12 +1775,12 @@ def main():
             c_ = {}
         if joker_gain is None or joker_gain < 0.7 * cfg["seuil_joker"]:
             moment_txt = ""
-        elif c_.get("jour") == jour_paris and c_.get("prochain") == jours[0]["id"] and c_.get("version") == 7:
+        elif c_.get("jour") == jour_paris and c_.get("prochain") == jours[0]["id"] and c_.get("version") == 8:
             moment_txt = c_["texte"] + f" (calculé le {c_['heure']})"
         else:
             cfg_rapide = dict(cfg, temps_max_calcul=min(cfg["temps_max_calcul"], 40))
             moment_txt = moment_joker(plan, args_plan, base, cfg_rapide, boot)
-            cache.write_text(json.dumps({"jour": jour_paris, "prochain": jours[0]["id"], "texte": moment_txt, "version": 7,
+            cache.write_text(json.dumps({"jour": jour_paris, "prochain": jours[0]["id"], "texte": moment_txt, "version": 8,
                                          "heure": dt.datetime.now(dt.timezone.utc).astimezone(PARIS).strftime("%d/%m à %Hh%M")},
                                         ensure_ascii=False), encoding="utf-8")
     except Exception as ex:
