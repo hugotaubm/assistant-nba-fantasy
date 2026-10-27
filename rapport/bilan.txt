@@ -132,7 +132,7 @@ Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : 135 sur 864
   - J.Embiid (PHI) (event 6) : projeté 48.5, statut actuel i, news : Heel expected back 2026-10-28
   - C.Flagg (DAL) (event 5) : projeté 47.0, statut actuel a, news : -
   - L.James (PHI) (event 5) : projeté 46.1, statut actuel a, news : -
-  - K.Leonard (TOR) (event 6) : projeté 45.6, statut actuel i, news : Knee expected back 2026-10-28
+  - K.Leonard (TOR) (event 6) : projeté 45.6, statut actuel i, news : Knee expected back 2026-11-23
   - P.Banchero (ORL) (event 6) : projeté 45.5, statut actuel i, news : Ankle expected back 2026-11-22
   - S.Curry (GSW) (event 5) : projeté 44.0, statut actuel a, news : -
   - K.Irving (DAL) (event 5) : projeté 41.5, statut actuel a, news : -
@@ -185,11 +185,11 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       M.Uzan (BOS) : -
       N.Pringle (BKN) : -
       P.Connaughton (CHA) : -
-  statut i | chances ce Gameday 25 | prochain 25 : 37 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 36 joueurs
       T.Bilodeau (BKN) : Shoulder expected back 2026-10-30
-      G.Williams (CHA) : Hamstring expected back 2026-10-31
-      K.Knueppel (CHA) : Hamstring expected back 2026-10-31
-      C.White (CHA) : Calf expected back 2026-10-31
+      G.Williams (CHA) : Hamstring expected back 2026-11-02
+      K.Knueppel (CHA) : Hamstring expected back 2026-11-02
+      C.White (CHA) : Calf expected back 2026-11-02
   statut i | chances ce Gameday 0 | prochain 0 : 32 joueurs
       D.Carter (BOS) : Illness expected back 2026-11-08
       K.Boswell (CHA) : Knee expected back 2026-11-02
@@ -220,6 +220,8 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       I.Joe (DET) : Hip expected back 2026-10-27
   statut i | chances ce Gameday 25 | prochain 75 : 1 joueurs
       A.Thiero (LAL) : Knee expected back 2026-10-28
+  statut i | chances ce Gameday 25 | prochain 0 : 1 joueurs
+      K.Leonard (TOR) : Knee expected back 2026-11-23
   statut i | chances ce Gameday 0 | prochain 25 : 1 joueurs
       T.Vukcevic (WAS) : Hip expected back 2026-11-02
 
@@ -230,6 +232,5 @@ LIGUE FIRST TEAM
   Écart avec le 1er : 401 pts
   Écart avec le rang juste devant (76e) : 2 pts
   Avance sur le rang juste derrière (78e) : 2 pts
-  Capitaine : déjà joué par 73 des 74 équipes devant toi (99 %) ; par Gameday : event 1 : 17, event 2 : 6, event 3 : 7, event 4 : 19, event 5 : 7, event 6 : 10, event 7 : 7
   All-Star : déjà joué par 15 des 74 équipes devant toi (20 %) ; par Gameday : event 2 : 4, event 3 : 8, event 4 : 1, event 5 : 2
-  Wildcard (joker) : déjà joué par 28 des 74 équipes devant toi (38 %) ; par Gameday : event 2 : 5, event 3 : 1, event 4 : 5, event 6 : 4, event 7 : 13
+  Wildcard : déjà joué par 28 des 74 équipes devant toi (38 %) ; par Gameday : event 2 : 5, event 3 : 1, event 4 : 5, event 6 : 4, event 7 : 13
