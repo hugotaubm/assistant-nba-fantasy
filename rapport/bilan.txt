@@ -218,11 +218,12 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       O.Toppin (IND) : Hand expected back 2026-10-28
       J.Poole (NOP) : Illness expected back 2026-10-28
       S.Henderson (POR) : Ankle expected back 2026-10-27
+  statut i | chances ce Gameday 100 | prochain 25 : 2 joueurs
+      A.Sengun (HOU) : Back expected back 2026-10-30
+      A.Caruso (OKC) : Ankle expected back 2026-10-31
   statut i | chances ce Gameday None | prochain 25 : 2 joueurs
       R.Hachimura (LAC) : Quadriceps expected back 2026-10-30
       J.Champagnie (WAS) : Foot expected back 2026-10-30
-  statut i | chances ce Gameday 100 | prochain 25 : 1 joueurs
-      A.Sengun (HOU) : Back expected back 2026-10-30
   statut i | chances ce Gameday 25 | prochain 75 : 1 joueurs
       A.Thiero (LAL) : Knee expected back 2026-10-28
   statut i | chances ce Gameday 25 | prochain 0 : 1 joueurs
