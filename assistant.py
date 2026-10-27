@@ -70,7 +70,8 @@ def lire_config():
     cfg.setdefault("seuil_joker_fin", 150)     # jours testés pour trouver le meilleur moment du joker
     cfg.setdefault("minutes_max", 36)            # minutes max d'un joueur qui récupère celles d'un blessé
     cfg.setdefault("rendement_minutes_sup", 0.85)  # points par minute supplémentaire (un peu moins que d'habitude)
-    cfg.setdefault("boost_max", 1.6)            # hausse max de la projection grâce aux minutes libérées
+    cfg.setdefault("boost_max", 1.6)
+    cfg.setdefault("boost_min", 0.6)            # baisse max de la projection au retour d'un coéquipier blessé            # hausse max de la projection grâce aux minutes libérées
     cfg.setdefault("calibration_auto", True)    # corrige les projections avec leurs erreurs passées (bilan.py)
     cfg.setdefault("seuil_changement_plan", 5)  # pts mini pour changer un transfert déjà conseillé
     cfg.setdefault("force_fort", 25)            # badge 🟢 Fort à partir de ce gain (pts)
@@ -430,12 +431,14 @@ def enregistrer_projections(ev, joueurs, joue):
 
 
 def opportunites(joueurs, saison, joue, events, cfg):
-    """Blessures et minutes libérées : quand un joueur de la rotation est absent un soir, ses minutes
-    prévues vont à ses coéquipiers du même poste (BC/FC), surtout aux suivants dans la hiérarchie ESPN
-    (poids 1/rang), sans dépasser minutes_max. Le gain en points suit leurs points par minute, avec un
-    rendement de rendement_minutes_sup. Si un joueur joue déjà plus que prévu (absence en cours depuis
-    plusieurs matchs), on ne compte que la part qui n'est pas déjà dans ses minutes récentes.
-    Remplit BOOST et renvoie la liste des bénéficiaires notables (pour la page)."""
+    """Blessures et minutes, dans les deux sens.
+    - Absence d'un joueur de la rotation : ses minutes prévues vont à ses coéquipiers du même poste (BC/FC),
+      surtout aux suivants dans la hiérarchie ESPN (poids 1/rang), sans dépasser minutes_max.
+    - Retour d'un blessé : un coéquipier dont les minutes récentes ont été gonflées par cette absence
+      les reperd (ses points réels récents, qui entrent dans sa projection, surestiment son rôle normal).
+    Gain/perte en points = minutes en plus/en moins × points par minute × rendement_minutes_sup.
+    Remplit BOOST (facteur par joueur et par soir, borné entre boost_min et boost_max) et renvoie
+    (bénéficiaires, perdants) notables pour la page."""
     BOOST.clear()
     par_equipe = {}
     for q, p in joueurs.items():
@@ -443,8 +446,19 @@ def opportunites(joueurs, saison, joue, events, cfg):
             par_equipe.setdefault(p["equipe_id"], []).append(q)
     def recentes(q):
         m = [mi for _, _, mi in (saison or {}).get(q, {}).get("matchs", []) if mi > 0][-3:]
-        return sum(m) / len(m) if m else None
-    infos = {}
+        return sum(m) / len(m) if len(m) >= 2 else None
+    aujourd_hui = dt.datetime.now(dt.timezone.utc).date()
+    def absent(q, date, ev_id=None):
+        p = joueurs[q]
+        return ((p["retour"] and p["retour"] > date) or p["dispo"] == 0
+                or (ev_id is not None and ev_id == PROCHAIN[0] and p.get("dispo_prochain") == 0))
+    def cibles(groupe, abs_):
+        libres = sum(joueurs[q]["min_proj"] for q in abs_)
+        presents = [q for q in groupe if q not in abs_ and joueurs[q]["proj"] > 0]
+        poids = {q: 1 / (joueurs[q].get("rang_poste") or 4) for q in presents}
+        total = sum(poids.values()) or 1
+        return {q: min(cfg["minutes_max"], joueurs[q]["min_proj"] + libres * poids[q] / total) for q in presents}, libres
+    gagnants, perdants = {}, {}
     for ev in events:
         date = (z(ev["deadline_time"]) - dt.timedelta(hours=4)).date()
         for eq, ids in par_equipe.items():
@@ -452,31 +466,40 @@ def opportunites(joueurs, saison, joue, events, cfg):
                 continue
             for poste in (1, 2):
                 groupe = [q for q in ids if joueurs[q]["poste"] == poste]
-                absents = [q for q in groupe if (joueurs[q]["retour"] and joueurs[q]["retour"] > date)
-                           or joueurs[q]["dispo"] == 0 or (ev["id"] == PROCHAIN[0] and joueurs[q].get("dispo_prochain") == 0)]
-                libres = sum(joueurs[q]["min_proj"] for q in absents)
-                if libres < 5:
+                abs_now = [q for q in groupe if absent(q, aujourd_hui)]
+                abs_d = [q for q in groupe if absent(q, date, ev["id"])]
+                if not abs_now and not abs_d:
                     continue
-                presents = [q for q in groupe if q not in absents and joueurs[q]["proj"] > 0]
-                poids = {q: 1 / (joueurs[q].get("rang_poste") or 4) for q in presents}
-                total = sum(poids.values()) or 1
-                for q in presents:
+                c_now, _ = cibles(groupe, abs_now)
+                c_d, libres_d = cibles(groupe, abs_d)
+                revenus = [q for q in abs_now if q not in abs_d]
+                for q, cible in c_d.items():
                     p = joueurs[q]
-                    base_min = p["min_proj"]
-                    cible = min(cfg["minutes_max"], base_min + libres * poids[q] / total)
-                    actuel = max(base_min, recentes(q) or base_min)   # déjà dans ses minutes récentes ?
-                    extra = max(0.0, cible - actuel)
-                    if extra <= 0:
+                    rec = recentes(q)
+                    actuel = max(p["min_proj"], rec or p["min_proj"])
+                    up = max(0.0, cible - actuel)                       # minutes en plus, pas encore dans ses stats
+                    down = 0.0
+                    if revenus and rec and q in c_now:                  # minutes perdues au retour d'un blessé
+                        down = min(max(0.0, c_now[q] - cible), max(0.0, rec - cible))
+                    if up <= 0 and down <= 0:
                         continue
-                    f = min(cfg["boost_max"], 1 + cfg["rendement_minutes_sup"] * extra / actuel)
+                    f = 1 + cfg["rendement_minutes_sup"] * (up - down) / actuel
+                    f = max(cfg["boost_min"], min(cfg["boost_max"], f))
                     BOOST[(q, ev["id"])] = f
-                    if f >= 1.1:
-                        i = infos.setdefault(q, dict(nom=p["nom"], equipe=p["equipe"], poste="BC" if poste == 1 else "FC",
-                                                     prix=p["prix"] / 10, boost=0.0, jours=0,
-                                                     absents=sorted({joueurs[a]["nom"] for a in absents})))
-                        i["boost"] = max(i["boost"], f)
+                    cible_dict = gagnants if f >= 1.1 else perdants if f <= 0.9 else None
+                    if cible_dict is not None:
+                        i = cible_dict.setdefault(q, dict(nom=p["nom"], equipe=p["equipe"], poste="BC" if poste == 1 else "FC",
+                                                          prix=p["prix"] / 10, boost=f, jours=0, absents=set(), revenus=set(),
+                                                          depuis=None))
+                        i["boost"] = max(i["boost"], f) if f >= 1 else min(i["boost"], f)
                         i["jours"] += 1
-    return sorted(infos.values(), key=lambda i: -i["boost"])
+                        i["absents"] |= {joueurs[a]["nom"] for a in abs_d}
+                        i["revenus"] |= {joueurs[a]["nom"] for a in revenus}
+                        if f < 1 and i["depuis"] is None:
+                            i["depuis"] = f"{date:%d/%m}"
+    fin = lambda d: sorted((dict(i, absents=sorted(i["absents"]), revenus=sorted(i["revenus"])) for i in d.values()),
+                           key=lambda i: -abs(i["boost"] - 1))
+    return fin(gagnants), fin(perdants)
 
 
 def ev_jour(p, ev_id, joue, date_event):
@@ -1455,6 +1478,10 @@ def rapport(joueurs, equipe, banque, gratuits, cap_dispo, gw, jours, joue, match
         P("📅 Jours creux du plan conseillé — " + suivi["creux"])
     if suivi.get("plein"):
         P("🧩 " + suivi["plein"])
+    if suivi.get("perdants"):
+        P("📉 Vont perdre des minutes (retour d'un coéquipier blessé) : " + " ; ".join(
+            f"{i['nom']} ({i['equipe']}) {(i['boost'] - 1) * 100:+.0f} % dès le {i['depuis']} (retour : {', '.join(i['revenus'])})"
+            for i in suivi["perdants"][:8]))
     if suivi.get("profiteurs"):
         P("📈 Profitent d'une blessure (minutes libérées) : " + " ; ".join(
             f"{i['nom']} ({i['equipe']}) +{(i['boost'] - 1) * 100:.0f} % sur {i['jours']} j. (absent : {', '.join(i['absents'])})"
@@ -1565,7 +1592,7 @@ def main():
     MALUS_B2B[0] = cfg["malus_back_to_back"]
     saison = minutes_saison(boot, args.hors_ligne) if saison_commencee else {}
     joueurs = projeter(boot, cfg, saison_commencee, saison)
-    profiteurs = opportunites(joueurs, saison, joue, list(jours) + list((gw_suiv or {}).get("events", [])), cfg)
+    profiteurs, perdants = opportunites(joueurs, saison, joue, list(jours) + list((gw_suiv or {}).get("events", [])), cfg)
     equipe, banque, prix_vente, gratuits, cap_dispo, src_equipe = mon_equipe(mt, cfg, joueurs, boot, gw)
     premier = min(e["id"] for e in boot["events"])
     construction = jours[0]["id"] == premier
@@ -1680,12 +1707,12 @@ def main():
             c_ = {}
         if joker_gain is None or joker_gain < 0.7 * cfg["seuil_joker"]:
             moment_txt = ""
-        elif c_.get("jour") == jour_paris and c_.get("prochain") == jours[0]["id"] and c_.get("version") == 5:
+        elif c_.get("jour") == jour_paris and c_.get("prochain") == jours[0]["id"] and c_.get("version") == 6:
             moment_txt = c_["texte"] + f" (calculé le {c_['heure']})"
         else:
             cfg_rapide = dict(cfg, temps_max_calcul=min(cfg["temps_max_calcul"], 40))
             moment_txt = moment_joker(plan, args_plan, base, cfg_rapide, boot)
-            cache.write_text(json.dumps({"jour": jour_paris, "prochain": jours[0]["id"], "texte": moment_txt, "version": 5,
+            cache.write_text(json.dumps({"jour": jour_paris, "prochain": jours[0]["id"], "texte": moment_txt, "version": 6,
                                          "heure": dt.datetime.now(dt.timezone.utc).astimezone(PARIS).strftime("%d/%m à %Hh%M")},
                                         ensure_ascii=False), encoding="utf-8")
     except Exception as ex:
@@ -1705,6 +1732,8 @@ def main():
                  ordre_banc=ordre_banc(plan, joueurs, joue),
                  profiteurs=[dict(i, mien=any(joueurs[q]["nom"] == i["nom"] and joueurs[q]["equipe"] == i["equipe"] for q in equipe))
                              for i in profiteurs[:12]],
+                 perdants=[dict(i, mien=any(joueurs[q]["nom"] == i["nom"] and joueurs[q]["equipe"] == i["equipe"] for q in equipe))
+                           for i in perdants[:12]],
                  saison_graph=dict(soirees=lire_json(ICI / "rapport" / "soirees.json", []),
                                    ligue=lire_json(ICI / "rapport" / "ligue.json", {}).get("historique", [])),
                  changements=changements(prec, plan, joueurs, boot, gw), source_equipe=src_equipe)

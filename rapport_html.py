@@ -464,8 +464,22 @@ def rendre(ctx):
     </table></div>
     <p class="discret">Minutes d'un coéquipier blessé (même poste) redistribuées, surtout au suivant dans la hiérarchie.
     Hausse de la projection les soirs concernés, déjà comptée dans tous les calculs.</p>'''
+    perd = suivi.get("perdants") or []
+    if perd:
+        lp2 = "".join(
+            f'<tr><td><b>{_e(i["nom"])}</b> <small>{_e(i["equipe"])} · {i["poste"]}</small>{TAG_CHEZ_TOI if i.get("mien") else ""}</td>'
+            f'<td class="num">{_m(i["prix"])}</td><td class="num"><b>{(i["boost"] - 1) * 100:+.0f} %</b></td>'
+            f'<td class="num">{_e(i["depuis"] or "")}</td><td>{_e(", ".join(i["revenus"]))}</td></tr>' for i in perd)
+        prof_html += f'''
+    <h2 class="mt">Vont perdre des minutes (retour d'un blessé)</h2>
+    <div class="defile"><table class="tab-forme">
+      <tr><th>Joueur</th><th>M$</th><th>Baisse</th><th>À partir du</th><th>Coéquipier(s) de retour</th></tr>
+      {lp2}
+    </table></div>
+    <p class="discret">Leurs points récents ont été gonflés par l'absence d'un coéquipier du même poste : à son retour,
+    leurs minutes et leur projection baissent. Déjà compté dans tous les calculs.</p>'''
     forme_html = ""
-    if forme or affaires or prof:
+    if forme or affaires or prof or perd:
         fl = "".join(
             f'<tr class="{f["etat"]}"><td>{"🔥" if f["etat"] == "chaud" else "🧊" if f["etat"] == "froid" else ""}</td>'
             f'<td><b>{_e(f["nom"])}</b> <small>{_e(f["equipe"])}</small></td>'
