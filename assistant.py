@@ -941,9 +941,9 @@ def option_joker(plan, args_plan, base, cfg, joueurs):
     equipe = args_plan[1]
     changes = len([q for q in f["depart"] if q not in equipe])
     entrants = ", ".join(nom(joueurs, q) for q in sorted(f["depart"], key=lambda q: -joueurs[q]["proj"]) if q not in equipe)
-    avis = ("✅ le joker vaut le coup maintenant" if gain >= cfg["seuil_joker"]
-            else f"garde-le (seuil conseillé : +{cfg['seuil_joker']} pts)")
-    return (f"Joker (indicatif) : une équipe refaite avant la prochaine deadline rapporterait {gain:+.0f} pts "
+    avis = ("✅ la wildcard vaut le coup maintenant" if gain >= cfg["seuil_joker"]
+            else f"garde-la (seuil conseillé : +{cfg['seuil_joker']} pts)")
+    return (f"Wildcard (indicatif) : une équipe refaite avant la prochaine deadline rapporterait {gain:+.0f} pts "
             f"sur cette semaine et la suivante, avec {changes} joueur(s) changé(s) ({entrants}) → {avis}."), gain
 
 
@@ -1112,11 +1112,11 @@ def moment_joker(plan, args_plan, base, cfg, boot):
             ev_fin = next((e for e in boot["events"] if e["id"] == c["stop_event"]), None)
             fin = ev_fin and paris(z(ev_fin["deadline_time"]))
     court = lambda e: e["name"].replace("Gameweek ", "GW").replace(" - ", " ")
-    return ("Moment du joker (gain sur cette semaine + suivante, selon le jour où tu le joues) : "
+    return ("Moment de la wildcard (gain sur cette semaine + suivante, selon le jour où tu le joues) : "
             + " | ".join(f"{court(e)} {g:+.0f}" for e, g, _ in res)
             + f". Meilleur : {court(meilleur[0])} (deadline {paris(z(meilleur[0]['deadline_time']))}, "
             f"{meilleur[2]} joueur(s) changé(s))."
-            + (f" Fenêtre actuelle du joker : à jouer au plus tard avant la deadline du {fin}, sinon il est perdu." if fin else "")
+            + (f" Fenêtre actuelle de la wildcard : à jouer au plus tard avant la deadline du {fin}, sinon elle est perdue." if fin else "")
             + " Plus le jour est tardif, moins il reste de jours comptés dans le calcul : un écart de "
               "quelques points en faveur d'un jour proche ne justifie pas d'attendre.")
 
@@ -1560,7 +1560,7 @@ def main():
         avant = h[-2]["rang"] - d_["rang"] if len(h) > 1 else 0
         jk = lg.get("jokers") or {}
         allstar = ((lg.get("jetons") or {}).get("par_chip") or {}).get("rich", {}).get("equipes", 0)
-        jk_txt = (f" · devant toi, {jk['joues']} sur {jk['lus']} ont déjà joué leur joker et {allstar} leur All-Star"
+        jk_txt = (f" · devant toi, {jk['joues']} sur {jk['lus']} ont déjà joué leur wildcard et {allstar} leur All-Star"
                   if jk.get("lus") else "")
         ligue_txt = (f"Ligue {lg['nom']} : {d_['rang']}e sur {d_['nb']}"
                      + (f" ({'+' if avant > 0 else ''}{avant} depuis le {h[-2]['date'][8:10]}/{h[-2]['date'][5:7]})" if avant else "")
@@ -1592,7 +1592,7 @@ def main():
             joker_txt, joker_gain = ("", None) if construction else option_joker(plan, args_plan, base, cfg, joueurs)
             if joker_txt and fen_joker and fen_joker[2]:
                 joker_txt += (f" Seuil du moment : +{cfg['seuil_joker']} pts (il baisse jusqu'à +{cfg['seuil_joker_fin']} "
-                              f"à la fin de la fenêtre, le {paris(z(fen_joker[2]))}, car le joker est perdu s'il n'est pas joué ; "
+                              f"à la fin de la fenêtre, le {paris(z(fen_joker[2]))}, car la wildcard est perdue si elle n'est pas jouée ; "
                               f"au début, le garder vaut cher en cas de série de blessures).")
     except Exception as ex:
         joker_txt, joker_gain = "", None

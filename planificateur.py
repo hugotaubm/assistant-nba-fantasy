@@ -120,8 +120,8 @@ def alerte_joker(cfg, maintenant):
     if j.get("fin") and notifs.get("joker_rappel") != j["fin"]:
         reste = (z(j["fin"]) - maintenant).total_seconds() / 86400
         if 0 < reste <= 7:
-            res = notifier(cfg, "🃏 Ton joker expire bientôt",
-                           f"Joue-le avant le {z(j['fin']).astimezone():%d/%m à %Hh%M}, sinon il est perdu. "
+            res = notifier(cfg, "🃏 Ta wildcard expire bientôt",
+                           f"Joue-le avant le {z(j['fin']).astimezone():%d/%m à %Hh%M}, sinon elle est perdue. "
                            f"Gain actuel : {j['gain']:+} pts.\n{j['texte']}", "high", "black_joker")
             if res.startswith("notification envoyée"):
                 notifs["joker_rappel"] = j["fin"]
@@ -131,7 +131,7 @@ def alerte_joker(cfg, maintenant):
     jour = maintenant.astimezone().date().isoformat()
     if notifs.get("joker") == jour:
         return None
-    res = notifier(cfg, f"🃏 Joker : +{j['gain']} pts possibles", j["texte"], "high", "black_joker")
+    res = notifier(cfg, f"🃏 Wildcard : +{j['gain']} pts possibles", j["texte"], "high", "black_joker")
     if res.startswith("notification envoyée"):
         notifs["joker"] = jour
         ecrire(NOTIFS, notifs)

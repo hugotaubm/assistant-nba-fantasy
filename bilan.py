@@ -300,8 +300,11 @@ def ligue(cfg):
                   par_event=w.get("par_event", {}))
     hist.update(nom=nom_ligue, dernier=point, jokers=jokers, jetons=jk)
     chemin.write_text(json.dumps(hist, ensure_ascii=False), encoding="utf-8")
-    noms_chips = {"wildcard": "Wildcard (joker)", "rich": "All-Star", "phcapt": "Capitaine"}
+    noms_chips = {"wildcard": "Wildcard", "rich": "All-Star", "phcapt": "Capitaine"}
+    # Le capitaine (phcapt) se rejoue chaque semaine : son décompte « déjà joué » n'apprend rien, on ne l'affiche pas.
     for nom_chip, d_ in sorted((jk.get("par_chip") or {}).items()):
+        if nom_chip == "phcapt":
+            continue
         print(f"  {noms_chips.get(nom_chip, nom_chip)} : déjà joué par {d_['equipes']} des {jk['lus']} équipes devant toi "
               f"({100 * d_['equipes'] / jk['lus']:.0f} %) ; par Gameday : "
               + ", ".join(f"event {k} : {v}" for k, v in sorted(d_["par_event"].items(), key=lambda kv: int(kv[0]))))
