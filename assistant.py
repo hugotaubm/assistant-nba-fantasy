@@ -1112,7 +1112,7 @@ def moment_joker(plan, args_plan, base, cfg, boot):
             gain = sum(pf[:k + K]) - sum(ref[:k + K])
             apres = sum(pf[k:k + K]) - sum(ref[k:k + K])
             entres = [q for jp in f["plan"] + f["plan2"] if jp["event"]["id"] == ev["id"] for q in jp["entrants"]]
-            res.append((ev, gain, apres, len(entres)))
+            res.append((ev, gain, apres, len(entres), f))
     if not res:
         return ""
     meilleur = max(res, key=lambda r: r[1])
@@ -1123,10 +1123,32 @@ def moment_joker(plan, args_plan, base, cfg, boot):
             fin = ev_fin and paris(z(ev_fin["deadline_time"]))
     court = lambda e: e["name"].replace("Gameweek ", "GW").replace(" - ", " ")
     return (f"Moment de la wildcard, à horizon égal ({K} jours de profit après la wildcard, points non pondérés) : "
-            + " | ".join(f"{court(e)} {g:+.0f}" for e, g, _, _ in res)
+            + " | ".join(f"{court(e)} {g:+.0f}" for e, g, _, _, _ in res)
             + f". Meilleur : {court(meilleur[0])} (deadline {paris(z(meilleur[0]['deadline_time']))}, "
             f"{meilleur[3]} joueur(s) changé(s), dont {meilleur[2]:+.0f} pts sur les {K} jours qui suivent)."
-            + (f" Fenêtre actuelle de la wildcard : à jouer au plus tard avant la deadline du {fin}, sinon elle est perdue." if fin else ""))
+            + (f" Fenêtre actuelle de la wildcard : à jouer au plus tard avant la deadline du {fin}, sinon elle est perdue." if fin else "")
+            + " " + detail_wildcard(meilleur[4], meilleur[0], args_plan[0], args_plan[1]))
+
+
+def detail_wildcard(f, ev_w, joueurs, equipe):
+    """Le plan complet du meilleur scénario wildcard : équipe après la wildcard, transferts ensuite, titulaires."""
+    nom_ = lambda q: f"{joueurs[q]['nom']} ({joueurs[q]['equipe']}, {joueurs[q]['prix'] / 10:.1f} M$)"
+    court = lambda e: e["name"].replace("Gameweek ", "GW").replace(" - ", " ")
+    jp_w = next(jp for jp in f["plan"] + f["plan2"] if jp["event"]["id"] == ev_w["id"])
+    eq_w = jp_w["effectif"]
+    sortent = [q for q in equipe if q not in eq_w]
+    txt = (f"DÉTAIL de la wildcard {court(ev_w)} — équipe : "
+           + ", ".join(nom_(q) for q in sorted(eq_w, key=lambda q: (joueurs[q]["poste"], -joueurs[q]["prix"])))
+           + f" (coût {sum(joueurs[q]['prix'] for q in eq_w) / 10:.1f} M$). Sortent : "
+           + ", ".join(joueurs[q]["nom"] for q in sortent) + ".")
+    apres = [(jp["event"], so, en) for jp in f["plan"] + f["plan2"] if jp["entrants"] and jp["event"]["id"] != ev_w["id"]
+             for so, en in paires(jp["sortants"], jp["entrants"], joueurs)]
+    txt += (" Transferts ensuite : " + " ; ".join(f"{court(e)} : {joueurs[a]['nom']} → {nom_(b)}" for e, a, b in apres) + "."
+            if apres else " Aucun transfert ensuite.")
+    txt += " Titulaires : " + " | ".join(
+        f"{court(jp['event'])} : " + ", ".join(joueurs[q]["nom"] + (" (C)" if q == jp["capitaine"] else "") for q in jp["titulaires"])
+        for jp in f["plan"])
+    return txt
 
 
 def forme_et_affaires(equipe, joueurs, saison, joue, gw_suiv, boot, cfg, n_derniers=3):
@@ -1654,12 +1676,12 @@ def main():
             c_ = {}
         if joker_gain is None or joker_gain < 0.7 * cfg["seuil_joker"]:
             moment_txt = ""
-        elif c_.get("jour") == jour_paris and c_.get("prochain") == jours[0]["id"] and c_.get("version") == 2:
+        elif c_.get("jour") == jour_paris and c_.get("prochain") == jours[0]["id"] and c_.get("version") == 3:
             moment_txt = c_["texte"] + f" (calculé le {c_['heure']})"
         else:
             cfg_rapide = dict(cfg, temps_max_calcul=min(cfg["temps_max_calcul"], 40))
             moment_txt = moment_joker(plan, args_plan, base, cfg_rapide, boot)
-            cache.write_text(json.dumps({"jour": jour_paris, "prochain": jours[0]["id"], "texte": moment_txt, "version": 2,
+            cache.write_text(json.dumps({"jour": jour_paris, "prochain": jours[0]["id"], "texte": moment_txt, "version": 3,
                                          "heure": dt.datetime.now(dt.timezone.utc).astimezone(PARIS).strftime("%d/%m à %Hh%M")},
                                         ensure_ascii=False), encoding="utf-8")
     except Exception as ex:
