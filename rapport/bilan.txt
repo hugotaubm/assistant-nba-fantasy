@@ -205,28 +205,30 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       H.Veesaar (ATL) : Knee expected back 2027-07-01
       R.Dillingham (CHI) : Wrist expected back 2026-11-06
       E.Freeman (MIN) : Shoulder expected back 2026-11-06
-  statut d | chances ce Gameday 100 | prochain 75 : 8 joueurs
+  statut d | chances ce Gameday 100 | prochain 75 : 10 joueurs
       A.Wiggins (ATL) : Knee expected back 2026-10-28
       D.White (BOS) : Hip expected back 2026-10-27
+      T.Awaka (CHI) : Ankle expected back 2026-10-28
       S.de Larrea (DAL) : Knee expected back 2026-10-28
-      Y.Lendeborg (GSW) : Foot expected back 2026-10-28
-  statut i | chances ce Gameday 75 | prochain 25 : 2 joueurs
-      A.Nembhard (IND) : Back expected back 2026-10-28
-      J.Hayes (UTA) : Shoulder expected back 2026-10-28
+  statut d | chances ce Gameday 75 | prochain 75 : 3 joueurs
+      I.Joe (DET) : Hip expected back 2026-10-27
+      A.Nesmith (IND) : Hamstring expected back 2026-10-28
+      A.Nembhard (IND) : Neck expected back 2026-10-28
+  statut d | chances ce Gameday None | prochain 75 : 3 joueurs
+      O.Toppin (IND) : Hand expected back 2026-10-28
+      J.Poole (NOP) : Illness expected back 2026-10-28
+      S.Henderson (POR) : Ankle expected back 2026-10-27
   statut i | chances ce Gameday None | prochain 25 : 2 joueurs
       R.Hachimura (LAC) : Quadriceps expected back 2026-10-30
       J.Champagnie (WAS) : Foot expected back 2026-10-30
-  statut d | chances ce Gameday None | prochain 75 : 2 joueurs
-      J.Poole (NOP) : Illness expected back 2026-10-28
-      S.Henderson (POR) : Ankle expected back 2026-10-27
-  statut d | chances ce Gameday 75 | prochain 75 : 1 joueurs
-      I.Joe (DET) : Hip expected back 2026-10-27
   statut i | chances ce Gameday 100 | prochain 25 : 1 joueurs
       A.Sengun (HOU) : Back expected back 2026-10-30
   statut i | chances ce Gameday 25 | prochain 75 : 1 joueurs
       A.Thiero (LAL) : Knee expected back 2026-10-28
   statut i | chances ce Gameday 25 | prochain 0 : 1 joueurs
       K.Leonard (TOR) : Knee expected back 2026-11-23
+  statut i | chances ce Gameday 75 | prochain 25 : 1 joueurs
+      J.Hayes (UTA) : Shoulder expected back 2026-10-28
   statut i | chances ce Gameday 100 | prochain 0 : 1 joueurs
       J.Jackson Jr. (UTA) : Knee expected back 2026-12-14
   statut i | chances ce Gameday 0 | prochain 25 : 1 joueurs
