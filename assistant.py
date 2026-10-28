@@ -1720,6 +1720,11 @@ def main():
         allstar = ((lg.get("jetons") or {}).get("par_chip") or {}).get("rich", {}).get("equipes", 0)
         jk_txt = (f" · devant toi, {jk['joues']} sur {jk['lus']} ont déjà joué leur wildcard et {allstar} leur All-Star"
                   if jk.get("lus") else "")
+        pos_ = lg.get("possession") or {}
+        if pos_.get("lus"):
+            communs = sorted(((pos_["compte"].get(str(q), 0), joueurs[q]["nom"]) for q in equipe), reverse=True)
+            jk_txt += (f" · tes joueurs chez les {pos_['lus']} équipes devant toi : "
+                       + ", ".join(f"{n} {c}" for c, n in communs))
         ligue_txt = (f"Ligue {lg['nom']} : {d_['rang']}e sur {d_['nb']}"
                      + (f" ({'+' if avant > 0 else ''}{avant} depuis le {h[-2]['date'][8:10]}/{h[-2]['date'][5:7]})" if avant else "")
                      + (f", {d_['ecart_devant']:.0f} pts du rang juste devant, {d_['ecart_premier']:.0f} pts du 1er"

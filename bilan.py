@@ -298,8 +298,40 @@ def ligue(cfg):
     w = (jk.get("par_chip") or {}).get("wildcard", {})
     jokers = dict(date=jk.get("date"), devant=jk.get("devant"), lus=jk.get("lus"), joues=w.get("equipes", 0),
                   par_event=w.get("par_event", {}))
-    hist.update(nom=nom_ligue, dernier=point, jokers=jokers, jetons=jk)
+    # Joueurs possédés par les équipes devant toi (composition publique du dernier Gameday commencé),
+    # une fois par Gameday. Seuls les totaux par joueur NBA sont gardés.
+    pos = hist.get("possession") or {}
+    try:
+        boot = get("bootstrap-static/")
+        maint = datetime.now(timezone.utc)
+        passes = [e for e in boot["events"] if datetime.fromisoformat(e["deadline_time"].replace("Z", "+00:00")) < maint]
+        ev_cour = max(passes, key=lambda e: e["id"])["id"] if passes else None
+    except Exception:
+        boot, ev_cour = None, None
+    if ev_cour and (pos.get("event") != ev_cour or pos.get("date") != point["date"]):
+        devant_ids = [r["entry"] for r in tri if r["rank"] < moi["rank"]]
+        compte, capitaines, lus = {}, {}, 0
+        for k, e_id in enumerate(devant_ids):
+            try:
+                pk = get(f"entry/{e_id}/event/{ev_cour}/picks/")
+            except Exception:
+                continue
+            lus += 1
+            for p_ in pk.get("picks", []):
+                compte[str(p_["element"])] = compte.get(str(p_["element"]), 0) + 1
+                if p_.get("is_captain"):
+                    capitaines[str(p_["element"])] = capitaines.get(str(p_["element"]), 0) + 1
+            if k % 10 == 9:
+                time.sleep(1)
+        pos = dict(event=ev_cour, date=point["date"], lus=lus, compte=compte, capitaines=capitaines)
+    hist.update(nom=nom_ligue, dernier=point, jokers=jokers, jetons=jk, possession=pos)
     chemin.write_text(json.dumps(hist, ensure_ascii=False), encoding="utf-8")
+    if pos.get("lus") and boot:
+        el = {str(e["id"]): e for e in boot["elements"]}
+        eqs = {t["id"]: t["short_name"] for t in boot["teams"]}
+        top = sorted(pos["compte"].items(), key=lambda kv: -kv[1])[:15]
+        print(f"  Joueurs les plus présents chez les {pos['lus']} équipes devant toi (Gameday {pos['event']}) : "
+              + ", ".join(f"{el[k]['web_name']} ({eqs[el[k]['team']]}) {v}" for k, v in top if k in el))
     noms_chips = {"wildcard": "Wildcard", "rich": "All-Star", "phcapt": "Capitaine"}
     # Le capitaine (phcapt) se rejoue chaque semaine : son décompte « déjà joué » n'apprend rien, on ne l'affiche pas.
     for nom_chip, d_ in sorted((jk.get("par_chip") or {}).items()):
