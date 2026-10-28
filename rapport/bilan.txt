@@ -108,27 +108,42 @@ BILAN DES GAMEDAYS JOUÉS
   → Titulaires : 162.0 pts réels pour 151.6 projetés (+10.4) [projection du modèle].
   → Meilleur cinq possible après coup : 162.0 pts (hors capitaine), soit 0.0 pts laissés sur le banc.
 
+--- Gameweek 2 - Day 2 : moyenne des joueurs 103.9 | meilleur 325.0
+  Ton score : 200.0 | banc : 0.0 | rang : 2538 | transferts : 1 (coût 0)
+  TITULAIRE D.Acuff Jr. (SAC)            33 min        réel  32.0 | projeté  37.2
+  TITULAIRE N.Traore (BKN)               23 min        réel  28.0 | projeté  16.1
+  TITULAIRE L.Doncic (LAL)               36 min        réel  67.0 | projeté  58.8
+  TITULAIRE J.Randle (BKN)               44 min        réel  47.0 | projeté  38.8
+  TITULAIRE J.Walsh (BOS)                24 min        réel  26.0 | projeté  14.6
+  banc      Y.Lendeborg (GSW)            pas de match  réel   0.0 | projeté   0.0
+  banc      B.Burries (MIL)              pas de match  réel   0.0 | projeté   0.0
+  banc      C.Wilson (CHI)               pas de match  réel   0.0 | projeté   0.0
+  banc      T.Jerome (MEM)               pas de match  réel   0.0 | projeté   0.0
+  banc      J.Williams (OKC)             pas de match  réel   0.0 | projeté   0.0
+  → Titulaires : 200.0 pts réels pour 165.5 projetés (+34.5) [projection du modèle].
+  → Meilleur cinq possible après coup : 200.0 pts (hors capitaine), soit 0.0 pts laissés sur le banc.
+
 ======================================================================
 QUALITÉ DES PROJECTIONS (toute la ligue, joueurs projetés ≥ 20 pts)
 ======================================================================
-Matchs joués : 729 | biais moyen (réel − projeté) : -3.2 pts | erreur moyenne : 9.4 pts
-Corrélation projeté/réel : 0.65
-Minutes moyennes : 26.0
+Matchs joués : 784 | biais moyen (réel − projeté) : -3.2 pts | erreur moyenne : 9.4 pts
+Corrélation projeté/réel : 0.66
+Minutes moyennes : 25.9
 Par prix :
-  10-15 M$               351 matchs | 0 min : 61 | biais  -3.2 | réel/projeté 0.91 | minutes 28.3
-  7-10 M$                350 matchs | 0 min : 55 | biais  -2.7 | réel/projeté 0.89 | minutes 22.5
-  < 7 M$                  52 matchs | 0 min : 15 | biais  -5.5 | réel/projeté 0.76 | minutes 15.1
-  ≥ 15 M$                111 matchs | 0 min :  4 | biais  -3.6 | réel/projeté 0.93 | minutes 32.7
+  10-15 M$               377 matchs | 0 min : 64 | biais  -3.3 | réel/projeté 0.91 | minutes 28.4
+  7-10 M$                377 matchs | 0 min : 59 | biais  -2.7 | réel/projeté 0.89 | minutes 22.5
+  < 7 M$                  57 matchs | 0 min : 17 | biais  -5.9 | réel/projeté 0.74 | minutes 14.8
+  ≥ 15 M$                117 matchs | 0 min :  4 | biais  -3.4 | réel/projeté 0.93 | minutes 32.8
 Par rang dans la hiérarchie ESPN (1 = titulaire) :
-  rang 1                 493 matchs | 0 min : 39 | biais  -1.7 | réel/projeté 0.95 | minutes 29.7
-  rang 2                 264 matchs | 0 min : 33 | biais  -4.7 | réel/projeté 0.81 | minutes 20.4
-  rang 3                  28 matchs | 0 min :  9 | biais -14.2 | réel/projeté 0.39 | minutes 12.8
-  rang 4                  14 matchs | 0 min : 11 | biais  -8.6 | réel/projeté 0.65 | minutes 10.7
+  rang 1                 530 matchs | 0 min : 41 | biais  -1.7 | réel/projeté 0.95 | minutes 29.7
+  rang 2                 285 matchs | 0 min : 36 | biais  -4.8 | réel/projeté 0.81 | minutes 20.3
+  rang 3                  30 matchs | 0 min : 10 | biais -14.4 | réel/projeté 0.38 | minutes 12.5
+  rang 4                  15 matchs | 0 min : 12 | biais  -8.6 | réel/projeté 0.65 | minutes 10.7
   rang 5                  11 matchs | 0 min :  5 | biais  +2.5 | réel/projeté 1.08 | minutes 21.8
-  rang 6                  21 matchs | 0 min : 16 | biais  -8.9 | réel/projeté 0.61 | minutes 13.0
+  rang 6                  23 matchs | 0 min : 17 | biais -10.9 | réel/projeté 0.53 | minutes 11.5
   rang 7                  11 matchs | 0 min :  8 | biais -11.2 | réel/projeté 0.73 | minutes 31.0
-  rang inconnu            19 matchs | 0 min : 11 | biais  -9.9 | réel/projeté 0.66 | minutes 21.6
-Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : 135 sur 864
+  rang inconnu            20 matchs | 0 min : 12 | biais  -9.9 | réel/projeté 0.66 | minutes 21.6
+Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : 144 sur 928
   - J.Embiid (PHI) (event 6) : projeté 48.5, statut actuel a, news : -
   - C.Flagg (DAL) (event 5) : projeté 47.0, statut actuel a, news : -
   - L.James (PHI) (event 5) : projeté 46.1, statut actuel a, news : -
@@ -137,10 +152,10 @@ Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : 135 sur 864
   - S.Curry (GSW) (event 5) : projeté 44.0, statut actuel a, news : -
   - K.Irving (DAL) (event 5) : projeté 41.5, statut actuel d, news : Knee expected back 2026-10-28
   - J.Duren (DET) (event 6) : projeté 41.4, statut actuel i, news : Hamstring expected back 2026-11-09
+  - J.Duren (DET) (event 8) : projeté 41.4, statut actuel i, news : Hamstring expected back 2026-11-09
   - B.Ingram (LAC) (event 2) : projeté 41.2, statut actuel i, news : Achilles expected back 2026-11-08
   - B.Ingram (LAC) (event 4) : projeté 41.2, statut actuel i, news : Achilles expected back 2026-11-08
   - B.Ingram (LAC) (event 6) : projeté 41.2, statut actuel i, news : Achilles expected back 2026-11-08
-  - J.Williams (OKC) (event 7) : projeté 41.2, statut actuel i, news : Leg expected back 2027-03-02
 Plus grosses surestimations :
   - L.Markkanen (UTA) (event 7) : projeté 39.8, réel 2.0 en 6 min
   - N.Jokic (DEN) (event 3) : projeté 68.5, réel 36.0 en 35 min
@@ -167,21 +182,15 @@ Plus grosses sous-estimations :
 ======================================================================
 CALIBRATION DU MODÈLE (points réels / points attendus, par rang)
 ======================================================================
-  rang 1   :  344 joueurs-matchs | réel   11718 / attendu   10879 = 1.08 → facteur appliqué 1.074
-  rang 2   :  295 joueurs-matchs | réel    5050 / attendu    4831 = 1.05 → facteur appliqué 1.042
-  rang 3+  :  413 joueurs-matchs | réel    2058 / attendu    2743 = 0.75 → facteur appliqué 0.782
-  rang ?   :   87 joueurs-matchs | réel     212 / attendu     693 = 0.31 → facteur appliqué 0.750
+  rang 1   :  382 joueurs-matchs | réel   13036 / attendu   12116 = 1.08 → facteur appliqué 1.074
+  rang 2   :  328 joueurs-matchs | réel    5647 / attendu    5406 = 1.04 → facteur appliqué 1.042
+  rang 3+  :  459 joueurs-matchs | réel    2162 / attendu    2963 = 0.73 → facteur appliqué 0.762
+  rang ?   :   96 joueurs-matchs | réel     223 / attendu     741 = 0.30 → facteur appliqué 0.750
 
 Vérification du barème (points du jeu vs formule des projections) :
   Statistiques fournies par le jeu : ['assists', 'blocks', 'in_dreamteam', 'minutes', 'played', 'points_scored', 'rebounds', 'steals', 'total_points']
-  Écart moyen jeu − formule : +0.34 pts (sur 1181 matchs) ; écart absolu moyen 0.84
-  Rapport points du jeu / formule (médiane) : 10.09
-
-======================================================================
-ET SI… WILDCARD PROPOSÉE LE 27/10 À 22H47 (SANS ZION), NON JOUÉE
-======================================================================
-  Gameweek 2 - Day 2 (en cours) : scénario 195 pts | toi 194 pts | écart +1
-  TOTAL : scénario 195 | toi 194 | écart +1 (sans les remplacements automatiques du scénario)
+  Écart moyen jeu − formule : +0.36 pts (sur 1275 matchs) ; écart absolu moyen 0.85
+  Rapport points du jeu / formule (médiane) : 10.10
 
 ======================================================================
 STATUTS DU JEU (joueurs non disponibles à 100 %)
@@ -227,10 +236,10 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
 ======================================================================
 LIGUE FIRST TEAM
 ======================================================================
-  Rang : 45 / 633 (+32 depuis la dernière journée) | total 1254 pts | dernière journée 194 pts
-  Écart avec le 1er : 491 pts
-  Écart avec le rang juste devant (44e) : 0 pts
-  Avance sur le rang juste derrière (46e) : 2 pts
+  Rang : 49 / 633 (+28 depuis la dernière journée) | total 1260 pts | dernière journée 200 pts
+  Écart avec le 1er : 507 pts
+  Écart avec le rang juste devant (48e) : 1 pts
+  Avance sur le rang juste derrière (50e) : 6 pts
   Joueurs les plus présents chez les 44 équipes devant toi (Gameday 8) : Y.Lendeborg (GSW) 37, D.Acuff Jr. (SAC) 32, T.Jerome (MEM) 25, L.Doncic (LAL) 21, V.Wembanyama (SAS) 14, D.Sabonis (SAC) 14, T.Brazile (DEN) 13, J.Tatum (BOS) 11, C.Wilson (CHI) 10, A.Mara (OKC) 10, B.Williams (GSW) 9, W.Kessler (LAL) 9, A.Reaves (LAL) 8, K.Ellis (BKN) 8, P.Achiuwa (SAC) 8
   All-Star : déjà joué par 15 des 44 équipes devant toi (34 %) ; par Gameday : event 2 : 4, event 3 : 8, event 5 : 1, event 8 : 2
   Wildcard : déjà joué par 22 des 44 équipes devant toi (50 %) ; par Gameday : event 2 : 4, event 4 : 4, event 6 : 3, event 7 : 9, event 8 : 2
