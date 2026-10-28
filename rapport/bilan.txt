@@ -178,6 +178,12 @@ Vérification du barème (points du jeu vs formule des projections) :
   Rapport points du jeu / formule (médiane) : 10.09
 
 ======================================================================
+ET SI… WILDCARD PROPOSÉE LE 27/10 À 22H47 (SANS ZION), NON JOUÉE
+======================================================================
+  Gameweek 2 - Day 2 (en cours) : scénario 195 pts | toi 194 pts | écart +1
+  TOTAL : scénario 195 | toi 194 | écart +1 (sans les remplacements automatiques du scénario)
+
+======================================================================
 STATUTS DU JEU (joueurs non disponibles à 100 %)
 ======================================================================
   statut u | chances ce Gameday None | prochain None : 49 joueurs
