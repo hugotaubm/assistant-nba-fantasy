@@ -200,38 +200,51 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       M.Uzan (BOS) : -
       N.Pringle (BKN) : -
       P.Connaughton (CHA) : -
-  statut i | chances ce Gameday 25 | prochain 25 : 37 joueurs
-      T.Bilodeau (BKN) : Shoulder expected back 2026-10-30
-      G.Williams (CHA) : Hamstring expected back 2026-11-02
-      K.Knueppel (CHA) : Hamstring expected back 2026-11-02
-      C.White (CHA) : Calf expected back 2026-11-02
-  statut i | chances ce Gameday 0 | prochain 0 : 35 joueurs
+  statut i | chances ce Gameday 0 | prochain 0 : 34 joueurs
       D.Carter (BOS) : Illness expected back 2026-11-08
       K.Boswell (CHA) : Knee expected back 2026-11-02
       N.Claxton (CHI) : Hamstring expected back 2026-11-04
       N.Tomlin (CLE) : Back expected back 2026-11-16
-  statut d | chances ce Gameday 75 | prochain 75 : 15 joueurs
-      A.Wiggins (ATL) : Knee expected back 2026-10-28
-      T.Awaka (CHI) : Ankle expected back 2026-10-28
-      K.Irving (DAL) : Knee expected back 2026-10-28
-      C.Martin (DAL) : Thumb expected back 2026-10-28
+  statut i | chances ce Gameday 25 | prochain 25 : 34 joueurs
+      T.Bilodeau (BKN) : Shoulder expected back 2026-10-30
+      G.Williams (CHA) : Hamstring expected back 2026-11-02
+      K.Knueppel (CHA) : Hamstring expected back 2026-11-02
+      C.White (CHA) : Calf expected back 2026-11-02
   statut u | chances ce Gameday 100 | prochain 100 : 13 joueurs
       I.McKneely (ATL) : -
       J.Poulakidas (DAL) : -
       A.Toohey (GSW) : -
       R.Castro (HOU) : -
+  statut d | chances ce Gameday 75 | prochain 75 : 10 joueurs
+      A.Wiggins (ATL) : Knee expected back 2026-10-28
+      T.Awaka (CHI) : Ankle expected back 2026-10-28
+      K.Irving (DAL) : Knee expected back 2026-10-28
+      C.Martin (DAL) : Thumb expected back 2026-10-28
   statut u | chances ce Gameday 0 | prochain 0 : 9 joueurs
       M.Gueye (ATL) : Foot expected back 2026-11-20
       H.Veesaar (ATL) : Knee expected back 2027-07-01
       R.Dillingham (CHI) : Wrist expected back 2026-11-06
       D.Eubanks (NYK) : Pectoral expected back 2027-01-01
-  statut i | chances ce Gameday 75 | prochain 75 : 2 joueurs
-      I.Joe (DET) : Hip expected back 2026-10-28
-      A.Thiero (LAL) : Knee expected back 2026-10-28
+  statut i | chances ce Gameday 75 | prochain 25 : 3 joueurs
+      T.Biberovic (DAL) : Heel expected back 2026-10-30
+      I.Joe (DET) : Hip expected back 2026-10-30
+      S.Fontecchio (MIA) : Illness expected back 2026-10-30
   statut d | chances ce Gameday None | prochain 75 : 1 joueurs
       E.Dëmin (BKN) : Leg expected back 2026-10-30
+  statut d | chances ce Gameday 25 | prochain 75 : 1 joueurs
+      A.Thompson (DET) : Ankle expected back 2026-10-28
+  statut d | chances ce Gameday 75 | prochain 0 : 1 joueurs
+      T.Haliburton (IND) : Hamstring expected back 2026-11-09
+  statut i | chances ce Gameday 75 | prochain 75 : 1 joueurs
+      A.Thiero (LAL) : Knee expected back 2026-10-28
   statut i | chances ce Gameday 100 | prochain 75 : 1 joueurs
       C.Carr (LAL) : Oblique expected back 2026-10-28
+  statut d | chances ce Gameday 100 | prochain 75 : 1 joueurs
+      A.Black (ORL) : Personal expected back 2026-10-28
+  statut i | chances ce Gameday 0 | prochain 25 : 1 joueurs
+      D.Barlow (PHI) : Back expected back 2026-11-04
+  statut i | chances ce Gameday 25 | prochain 0 : 1 joueurs
+      J.Champagnie (WAS) : Foot expected back 2027-02-25
 
 ======================================================================
 LIGUE FIRST TEAM
