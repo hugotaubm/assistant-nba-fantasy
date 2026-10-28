@@ -215,30 +215,31 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       J.Poulakidas (DAL) : -
       A.Toohey (GSW) : -
       R.Castro (HOU) : -
-  statut d | chances ce Gameday 75 | prochain 75 : 10 joueurs
-      A.Wiggins (ATL) : Knee expected back 2026-10-28
-      T.Awaka (CHI) : Ankle expected back 2026-10-28
-      K.Irving (DAL) : Knee expected back 2026-10-28
-      C.Martin (DAL) : Thumb expected back 2026-10-28
   statut u | chances ce Gameday 0 | prochain 0 : 9 joueurs
       M.Gueye (ATL) : Foot expected back 2026-11-20
       H.Veesaar (ATL) : Knee expected back 2027-07-01
       R.Dillingham (CHI) : Wrist expected back 2026-11-06
       D.Eubanks (NYK) : Pectoral expected back 2027-01-01
-  statut i | chances ce Gameday 75 | prochain 25 : 3 joueurs
+  statut d | chances ce Gameday 75 | prochain 75 : 8 joueurs
+      T.Awaka (CHI) : Ankle expected back 2026-10-28
+      K.Irving (DAL) : Knee expected back 2026-10-28
+      C.Martin (DAL) : Thumb expected back 2026-10-28
+      Y.Lendeborg (GSW) : Foot expected back 2026-10-28
+  statut i | chances ce Gameday 75 | prochain 25 : 4 joueurs
       T.Biberovic (DAL) : Heel expected back 2026-10-30
       I.Joe (DET) : Hip expected back 2026-10-30
+      A.Thiero (LAL) : Knee expected back 2026-10-30
       S.Fontecchio (MIA) : Illness expected back 2026-10-30
+  statut i | chances ce Gameday 100 | prochain 25 : 3 joueurs
+      Z.Williams (LAL) : Foot expected back 2026-10-30
+      L.Doncic (LAL) : Back expected back 2026-10-30
+      C.Carr (LAL) : Oblique expected back 2026-10-30
   statut d | chances ce Gameday None | prochain 75 : 1 joueurs
       E.Dëmin (BKN) : Leg expected back 2026-10-30
   statut d | chances ce Gameday 25 | prochain 75 : 1 joueurs
       A.Thompson (DET) : Ankle expected back 2026-10-28
-  statut d | chances ce Gameday 75 | prochain 0 : 1 joueurs
-      T.Haliburton (IND) : Hamstring expected back 2026-11-09
-  statut i | chances ce Gameday 75 | prochain 75 : 1 joueurs
-      A.Thiero (LAL) : Knee expected back 2026-10-28
-  statut i | chances ce Gameday 100 | prochain 75 : 1 joueurs
-      C.Carr (LAL) : Oblique expected back 2026-10-28
+  statut i | chances ce Gameday 75 | prochain 0 : 1 joueurs
+      T.Haliburton (IND) : Hamstring expected back 2026-11-13
   statut d | chances ce Gameday 100 | prochain 75 : 1 joueurs
       A.Black (ORL) : Personal expected back 2026-10-28
   statut i | chances ce Gameday 0 | prochain 25 : 1 joueurs
