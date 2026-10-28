@@ -364,8 +364,55 @@ def statuts_du_jeu():
             print(f"      {x}")
 
 
+
+def comparer_scenario(cfg):
+    """« Et si… » : points réels d'un scénario enregistré (rapport/scenario_wildcard.json : titulaires et
+    capitaine par Gameday) comparés à ceux de ton équipe réelle, Gameday par Gameday (y compris en cours)."""
+    chemin = ICI / "rapport" / "scenario_wildcard.json"
+    eid = cfg.get("id_equipe")
+    if not chemin.exists() or not eid:
+        return
+    sc = json.loads(chemin.read_text(encoding="utf-8"))
+    boot = get("bootstrap-static/")
+    par_nom = {}
+    for e in boot["elements"]:
+        par_nom.setdefault(e["web_name"], []).append(e["id"])
+    maint = datetime.now(timezone.utc)
+    print("\n" + "=" * 70)
+    print(f"ET SI… {sc.get('nom', '')}".upper())
+    print("=" * 70)
+    tot_s = tot_r = 0.0
+    for ev_id, d in sorted(sc["events"].items(), key=lambda kv: int(kv[0])):
+        ev = next((e for e in boot["events"] if e["id"] == int(ev_id)), None)
+        if not ev or datetime.fromisoformat(ev["deadline_time"].replace("Z", "+00:00")) > maint:
+            continue
+        live = {x["id"]: x["stats"].get("total_points", 0) / 10 for x in get(f"event/{ev_id}/live/")["elements"]}
+        pts_s = 0.0
+        for n in d["titulaires"]:
+            pid = (par_nom.get(n) or [None])[0]
+            v = live.get(pid, 0.0)
+            pts_s += v * (2 if n == d.get("capitaine") else 1)
+        try:
+            pk = get(f"entry/{eid}/event/{ev_id}/picks/")
+            subs = pk.get("automatic_subs") or []
+            entres, sortis = {a["element_in"] for a in subs}, {a["element_out"] for a in subs}
+            pts_r = sum(live.get(p["element"], 0.0) * (1 if p["element"] in entres and p["multiplier"] == 0 else
+                                                        0 if p["element"] in sortis else p["multiplier"]) for p in pk["picks"])
+        except Exception:
+            continue
+        tot_s += pts_s; tot_r += pts_r
+        etat = "terminé" if ev.get("finished") or ev.get("data_checked") else "en cours"
+        print(f"  {ev['name']} ({etat}) : scénario {pts_s:.0f} pts | toi {pts_r:.0f} pts | écart {pts_s - pts_r:+.0f}")
+    print(f"  TOTAL : scénario {tot_s:.0f} | toi {tot_r:.0f} | écart {tot_s - tot_r:+.0f} "
+          "(sans les remplacements automatiques du scénario)")
+
+
 if __name__ == "__main__":
     main()
+    try:
+        comparer_scenario(json.loads((ICI / "config.json").read_text(encoding="utf-8")))
+    except Exception as ex:
+        print(f"\n(comparaison du scénario indisponible : {ex!r})")
     try:
         statuts_du_jeu()
     except Exception as ex:
