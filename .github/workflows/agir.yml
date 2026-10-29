@@ -6,10 +6,10 @@ on:
       mode:
         description: "sonde (lecture seule), test_sauvegarde (équipe identique), wildcard (simulation, ou exécution avec le code)"
         type: choice
-        options: [sonde, test_sauvegarde, wildcard]
+        options: [sonde, test_sauvegarde, titulaires, wildcard]
         default: sonde
       code:
-        description: "Code d'exécution affiché par la simulation (vide = simulation)"
+        description: "wildcard : code affiché par la simulation (vide = simulation) ; titulaires : 5 id séparés par des virgules"
         type: string
         default: ""
 permissions:
@@ -33,6 +33,8 @@ jobs:
           set -o pipefail
           if [ "${{ inputs.mode }}" = "wildcard" ] && [ -n "${{ inputs.code }}" ]; then
             python agir.py wildcard --executer "${{ inputs.code }}" 2>&1 | tee sortie.txt
+          elif [ "${{ inputs.mode }}" = "titulaires" ]; then
+            python agir.py titulaires "${{ inputs.code }}" 2>&1 | tee sortie.txt
           else
             python agir.py "${{ inputs.mode }}" 2>&1 | tee sortie.txt
           fi

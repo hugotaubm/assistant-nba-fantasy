@@ -91,6 +91,29 @@ def test_sauvegarde():
     print("Équipe inchangée après l'envoi :", payload_picks(mt2["picks"]) == avant)
 
 
+def titulaires(ids):
+    """Met ces 5 joueurs titulaires (dans cet ordre) ; le banc garde son ordre. Capitaine/vice inchangés."""
+    eid, mt = equipe_actuelle()
+    boot = json.loads(urllib.request.urlopen(urllib.request.Request(API + "bootstrap-static/", headers=entetes()), timeout=60).read())
+    el = {e["id"]: e for e in boot["elements"]}
+    picks = sorted(mt["picks"], key=lambda p: p["position"])
+    par_id = {p["element"]: p for p in picks}
+    nom = lambda q: el[q]["web_name"]
+    print("Avant : titulaires", ", ".join(nom(p["element"]) for p in picks[:5]), "| banc", ", ".join(nom(p["element"]) for p in picks[5:]))
+    postes = [el[q]["element_type"] for q in ids]
+    if len(ids) != 5 or len(set(ids)) != 5 or any(q not in par_id for q in ids) or not (2 <= postes.count(1) <= 3):
+        sys.exit("❌ ARRÊT : il faut 5 joueurs différents de ton équipe, avec 2 ou 3 BC (rien n'est envoyé).")
+    ordre = list(ids) + [p["element"] for p in picks if p["element"] not in ids]
+    envoi = {"chip": None, "picks": [{"element": q, "position": k + 1, "is_captain": par_id[q].get("is_captain", False),
+                                      "is_vice_captain": par_id[q].get("is_vice_captain", False)} for k, q in enumerate(ordre)]}
+    code, _, rep = appel("POST", f"my-team/{eid}/", envoi)
+    print(f"POST my-team : {code}" + ("" if code in (200, 201, 202) else f" | réponse : {str(rep)[:400]}"))
+    _, mt2 = equipe_actuelle()
+    apres = [p["element"] for p in sorted(mt2["picks"], key=lambda p: p["position"])]
+    print("Après (relu sur le site) : titulaires", ", ".join(nom(q) for q in apres[:5]), "| banc", ", ".join(nom(q) for q in apres[5:]))
+    print("✅ Changement confirmé sur le site" if apres == ordre else "❌ Le site n'a pas pris le changement")
+
+
 def wildcard(code_execution=None):
     plan = json.loads((ICI / "rapport" / "wildcard_plan.json").read_text(encoding="utf-8"))
     boot = json.loads(urllib.request.urlopen(urllib.request.Request(API + "bootstrap-static/", headers=entetes()), timeout=60).read())
@@ -162,6 +185,8 @@ if __name__ == "__main__":
         sonde()
     elif mode == "test_sauvegarde":
         test_sauvegarde()
+    elif mode == "titulaires":
+        titulaires([int(x) for x in sys.argv[2].split(",")])
     elif mode == "wildcard":
         wildcard(sys.argv[3] if len(sys.argv) > 3 and sys.argv[2] == "--executer" else None)
     else:
