@@ -150,7 +150,8 @@ def wildcard(code_execution=None):
     # titulaires du soir, banc dans l'ordre conseillé
     tit = [q for q in plan["titulaires"] if q in nouveaux]
     banc = [q for q in plan.get("banc", []) if q in nouveaux] + [q for q in nouveaux if q not in tit and q not in plan.get("banc", [])]
-    picks = [{"element": q, "position": k + 1, "is_captain": False, "is_vice_captain": False} for k, q in enumerate(tit + banc)]
+    # le site garde toujours un capitaine/vice dans l'équipe (le chip capitaine, lui, n'est pas activé : chip = null)
+    picks = [{"element": q, "position": k + 1, "is_captain": k == 0, "is_vice_captain": k == 1} for k, q in enumerate(tit + banc)]
     code, _, rep = appel("POST", f"my-team/{eid}/", {"chip": None, "picks": picks})
     print(f"POST titulaires : {code} | réponse : {str(rep)[:300]}")
 
