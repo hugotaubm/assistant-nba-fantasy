@@ -104,8 +104,11 @@ def titulaires(ids):
     if len(ids) != 5 or len(set(ids)) != 5 or any(q not in par_id for q in ids) or not (2 <= postes.count(1) <= 3):
         sys.exit("❌ ARRÊT : il faut 5 joueurs différents de ton équipe, avec 2 ou 3 BC (rien n'est envoyé).")
     ordre = list(ids) + [p["element"] for p in picks if p["element"] not in ids]
-    envoi = {"chip": None, "picks": [{"element": q, "position": k + 1, "is_captain": par_id[q].get("is_captain", False),
-                                      "is_vice_captain": par_id[q].get("is_vice_captain", False)} for k, q in enumerate(ordre)]}
+    # le site exige un capitaine et un vice titulaires : sinon le brassard passe aux premiers titulaires (sans activer de chip)
+    cap = next((q for q in ids if par_id[q].get("is_captain")), ids[0])
+    vice = next((q for q in ids if par_id[q].get("is_vice_captain") and q != cap), next(q for q in ids if q != cap))
+    envoi = {"chip": None, "picks": [{"element": q, "position": k + 1, "is_captain": q == cap, "is_vice_captain": q == vice}
+                                     for k, q in enumerate(ordre)]}
     code, _, rep = appel("POST", f"my-team/{eid}/", envoi)
     print(f"POST my-team : {code}" + ("" if code in (200, 201, 202) else f" | réponse : {str(rep)[:400]}"))
     _, mt2 = equipe_actuelle()
