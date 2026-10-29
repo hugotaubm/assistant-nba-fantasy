@@ -61,6 +61,13 @@ def sonde():
     if code == 200:
         print("  joueurs :", [p["element"] for p in mt["picks"]], "| transferts :", mt.get("transfers"))
         print("  chips :", [(c.get("name"), c.get("status_for_entry"), c.get("is_pending")) for c in mt.get("chips", [])])
+    for chemin in (f"entry/{eid}/transfers/", f"entry/{eid}/history/", f"entry/{eid}/transfers-latest/"):
+        code, _, r = appel("GET", chemin)
+        if isinstance(r, list):
+            r = r[-8:]
+        elif isinstance(r, dict) and "current" in r:
+            r = dict(current=r["current"][-2:], chips=r.get("chips"))
+        print(f"GET {chemin} : {code} | {str(r)[:900]}")
     code, _, me = appel("GET", "me/")
     print(f"GET me : {code}" + (f" (équipe {me.get('player', {}).get('entry')})" if code == 200 and isinstance(me, dict) else ""))
     for chemin in ("transfers/", f"my-team/{eid}/"):
