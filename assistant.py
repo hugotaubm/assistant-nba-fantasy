@@ -1225,6 +1225,14 @@ def detail_wildcard(f, ev_w, joueurs, equipe):
     date_ = lambda jp: (z(jp["event"]["deadline_time"]) - dt.timedelta(hours=4)).date()
     attendu = {q: [ev_jour(joueurs[q], jp["event"]["id"], JOUE[0], date_(jp)) for jp in tous_j] for q in eq_w}
     sortent = [q for q in equipe if q not in eq_w]
+    try:   # plan lisible par agir.py (exécution de la wildcard sur le site, après feu vert)
+        banc = sorted((q for q in eq_w if q not in jp_w["titulaires"]), key=lambda q: -attendu[q][[jp["event"]["id"] for jp in tous_j].index(ev_w["id"])])
+        (ICI / "rapport" / "wildcard_plan.json").write_text(json.dumps(dict(
+            event=ev_w["id"], nom=ev_w["name"], deadline=ev_w["deadline_time"], equipe=list(eq_w), titulaires=list(jp_w["titulaires"]),
+            banc=banc, sortent=sortent, calcul=dt.datetime.now(dt.timezone.utc).astimezone(PARIS).strftime("%d/%m à %Hh%M")),
+            ensure_ascii=False, indent=1), encoding="utf-8")
+    except Exception as ex:
+        print(f"  (plan wildcard non enregistré : {ex!r})")
     txt = (f"DÉTAIL de la wildcard {court(ev_w)} — équipe : "
            + ", ".join(f"{nom_(q)} [{joueurs[q]['proj']:.0f} pts/match ; ce soir {attendu[q][[jp['event']['id'] for jp in tous_j].index(ev_w['id'])]:.0f} ; "
                        f"{sum(1 for v in attendu[q] if v > 0)} matchs sur l'horizon]"
@@ -1800,13 +1808,13 @@ def main():
             c_ = {}
         if joker_gain is None or joker_gain < 0.7 * cfg["seuil_joker"]:
             moment_txt = ""
-        elif (c_.get("jour") == jour_paris and c_.get("prochain") == jours[0]["id"] and c_.get("version") == 12
+        elif (c_.get("jour") == jour_paris and c_.get("prochain") == jours[0]["id"] and c_.get("version") == 13
               and dt.datetime.now(dt.timezone.utc).timestamp() - c_.get("ts", 0) < 4 * 3600):   # gardé 4 h au plus
             moment_txt = c_["texte"] + f" (calculé le {c_['heure']})"
         else:
             cfg_rapide = dict(cfg, temps_max_calcul=min(cfg["temps_max_calcul"], 40))
             moment_txt = moment_joker(plan, args_plan, base, cfg_rapide, boot)
-            cache.write_text(json.dumps({"jour": jour_paris, "prochain": jours[0]["id"], "texte": moment_txt, "version": 12, "ts": dt.datetime.now(dt.timezone.utc).timestamp(),
+            cache.write_text(json.dumps({"jour": jour_paris, "prochain": jours[0]["id"], "texte": moment_txt, "version": 13, "ts": dt.datetime.now(dt.timezone.utc).timestamp(),
                                          "heure": dt.datetime.now(dt.timezone.utc).astimezone(PARIS).strftime("%d/%m à %Hh%M")},
                                         ensure_ascii=False), encoding="utf-8")
     except Exception as ex:

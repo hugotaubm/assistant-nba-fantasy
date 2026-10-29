@@ -1,0 +1,37 @@
+# Agir sur l'équipe NBA Fantasy (voir agir.py). Lancement manuel uniquement.
+name: agir
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "sonde (lecture seule), test_sauvegarde (équipe identique), wildcard (simulation, ou exécution avec le code)"
+        type: choice
+        options: [sonde, test_sauvegarde, wildcard]
+        default: sonde
+      code:
+        description: "Code d'exécution affiché par la simulation (vide = simulation)"
+        type: string
+        default: ""
+permissions:
+  contents: read
+concurrency:
+  group: agir
+  cancel-in-progress: false
+jobs:
+  agir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      NBA_COOKIE: ${{ secrets.NBA_COOKIE }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Agir
+        run: |
+          if [ "${{ inputs.mode }}" = "wildcard" ] && [ -n "${{ inputs.code }}" ]; then
+            python agir.py wildcard --executer "${{ inputs.code }}"
+          else
+            python agir.py "${{ inputs.mode }}"
+          fi
