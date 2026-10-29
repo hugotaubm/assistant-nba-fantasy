@@ -31,7 +31,7 @@
     "R.Rupert",
     "M.Bagley III"
   ],
-  "joueurs_bloques": [],
+  "joueurs_bloques": ["L.Doncic"],
   "ajustements": {},
   "imposer_au_depart": ["V.Wembanyama"],
   "malus_back_to_back": 0.92,
