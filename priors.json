@@ -2314,7 +2314,7 @@
 "malus_b2b": 1.022,
 "age": 20,
 "b2b_n": 0,
-"rang_poste": 6,
+"rang_poste": 4,
 "poste_espn": "SG",
 "devant": [
 "Donovan Mitchell",
@@ -11178,7 +11178,16 @@
 "equipe": "UTA",
 "fppg": 8.01,
 "fiabilite": 0.92,
-"source": "selon le prix"
+"source": "selon le prix",
+"rang_poste": 4,
+"poste_espn": "PG",
+"devant": [
+"Keyonte George",
+"Isaiah Collier",
+"Darryn Peterson"
+],
+"presaison_matchs": 3,
+"presaison_min": 9.0
 },
 "548": {
 "nom": "H.Ingram",
@@ -11855,6 +11864,6 @@
 "_source": "saison régulière 2025-26 (ESPN), mis à jour le 20/10/2026"
 },
 "roles": {
-"_source": "ESPN (hiérarchie + présaison), mis à jour le 29/10/2026"
+"_source": "ESPN (hiérarchie + présaison), mis à jour le 30/10/2026"
 }
 }
