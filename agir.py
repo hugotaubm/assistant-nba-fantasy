@@ -103,6 +103,7 @@ def titulaires(ids):
     postes = [el[q]["element_type"] for q in ids]
     if len(ids) != 5 or len(set(ids)) != 5 or any(q not in par_id for q in ids) or not (2 <= postes.count(1) <= 3):
         sys.exit("❌ ARRÊT : il faut 5 joueurs différents de ton équipe, avec 2 ou 3 BC (rien n'est envoyé).")
+    ids = sorted(ids, key=lambda q: el[q]["element_type"])   # le site veut les BC avant les FC parmi les titulaires
     ordre = list(ids) + [p["element"] for p in picks if p["element"] not in ids]
     # le site exige un capitaine et un vice titulaires : sinon le brassard passe aux premiers titulaires (sans activer de chip)
     cap = next((q for q in ids if par_id[q].get("is_captain")), ids[0])
@@ -197,7 +198,7 @@ def wildcard(code_execution=None):
     nouveaux = [p["element"] for p in mt2["picks"]]
     print("Équipe sur le site = équipe cible :", sorted(nouveaux) == sorted(cible))
     # titulaires du soir, banc dans l'ordre conseillé
-    tit = [q for q in plan["titulaires"] if q in nouveaux]
+    tit = sorted((q for q in plan["titulaires"] if q in nouveaux), key=lambda q: el[q]["element_type"])
     banc = [q for q in plan.get("banc", []) if q in nouveaux] + [q for q in nouveaux if q not in tit and q not in plan.get("banc", [])]
     # le site garde toujours un capitaine/vice dans l'équipe (le chip capitaine, lui, n'est pas activé : chip = null)
     picks = [{"element": q, "position": k + 1, "is_captain": k == 0, "is_vice_captain": k == 1} for k, q in enumerate(tit + banc)]
