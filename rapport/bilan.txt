@@ -216,7 +216,7 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       N.Pringle (BKN) : -
       P.Connaughton (CHA) : -
   statut i | chances ce Gameday 25 | prochain 25 : 42 joueurs
-      T.Bilodeau (BKN) : Shoulder expected back 2026-10-30
+      T.Bilodeau (BKN) : Shoulder expected back 2026-11-01
       G.Williams (CHA) : Hamstring expected back 2026-11-02
       K.Knueppel (CHA) : Hamstring expected back 2026-11-02
       C.White (CHA) : Calf expected back 2026-11-02
@@ -243,8 +243,9 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
   statut i | chances ce Gameday 75 | prochain 25 : 2 joueurs
       E.Dëmin (BKN) : Leg expected back 2026-11-07
       L.Markkanen (UTA) : Wrist expected back 2026-10-31
-  statut i | chances ce Gameday 100 | prochain 25 : 1 joueurs
+  statut i | chances ce Gameday 100 | prochain 25 : 2 joueurs
       G.Santos (GSW) : Knee expected back 2026-10-30
+      R.Sheppard (HOU) : Back expected back 2026-10-31
   statut i | chances ce Gameday 25 | prochain 0 : 1 joueurs
       J.Isaac (ORL) : Knee expected back 2026-11-10
 

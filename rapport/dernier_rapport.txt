@@ -1,4 +1,4 @@
-Calcul lancé le 29/10/2026 à 21:37:08
+Calcul lancé le 29/10/2026 à 22:05:38
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
@@ -7,7 +7,6 @@ Optimisation (jusqu'à deux minutes)…
 === Gameweek 2 — prochaine deadline : Gameweek 2 - Day 4 le ven. 30/10 00h30 (heure de Paris) ===
 Équipe lue depuis : my-team (connecté, à jour en direct) | Banque : 0.3 M$ | Transferts gratuits restants : 0 | Capitaine dispo : non
 
-Changements depuis le calcul de 21h31 : titulaires modifiés. Raison probable : pas de nouvelle info : simple écart entre plans presque équivalents.
 ⭐ All-Star (si c'est bien « budget illimité pour un Gameday, puis retour à ton équipe ») : gain par soir GW2 Day 4 (6 équipes) +13 | GW2 Day 5 (20 équipes) +106 | GW2 Day 6 (14 équipes) +27 | GW2 Day 7 (8 équipes) +63. Meilleur soir : GW2 Day 5, 267 pts attendus au lieu de 161, avec N.Jokic, J.Tatum, G.Antetokounmpo, C.Cunningham, T.Maxey.
 🏆 Ligue First Team : 92e sur 632 (-43 depuis le 28/10), 5 pts du rang juste devant, 505 pts du 1er · devant toi, 33 sur 89 ont déjà joué leur wildcard et 21 leur All-Star · tes joueurs chez les 89 équipes devant toi : Y.Lendeborg 68, D.Acuff Jr. 56, T.Jerome 40, J.Johnson 17, D.Sabonis 17, T.da Silva 14, N.Traore 7, D.Lillard 5, K.Dunn 3, W.Carter Jr. 0
 📅 Jours creux du plan conseillé — semaine suivante : Day 3 1 vide(s) | semaine d'après (Gameweek 4, sans transfert) : 30 matchs pour ton effectif, 12 place(s) vide(s) ; joueurs dispo par jour : 2-7-7-0-8-3-3
@@ -57,4 +56,4 @@ Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) 
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 29/10/2026 à 21:37:12 (code de sortie : 0)
+Terminé le 29/10/2026 à 22:05:41 (code de sortie : 0)
