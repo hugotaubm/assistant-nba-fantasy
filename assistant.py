@@ -66,6 +66,7 @@ def lire_config():
     cfg.setdefault("dispo_apres_retour", 0.85)  # blessé avec date de retour : chance de jouer une fois revenu (après le prochain Gameday)
     cfg.setdefault("transferts_payants", False)  # False : jamais plus de transferts que les gratuits (pas de -100)
     cfg.setdefault("joker_jours_testes", 8)
+    cfg.setdefault("joker_temps_final", 240)     # secondes de recherche pour l'équipe finale de la wildcard
     cfg.setdefault("joker_jours_apres", 7)       # jours de profit comptés après la wildcard (comparaison à horizon égal)
     # Seuil du joker dégressif : au début de sa fenêtre, le garder vaut cher (assurance contre une série
     # de blessures) ; à la fin, il serait perdu s'il n'est pas joué. Seuil interpolé entre les deux.
@@ -870,7 +871,7 @@ def optimiser(joueurs, equipe, banque, prix_vente, gratuits, cap_dispo, jours, j
         for jj, v in co.items():
             A[r, jj] = v
     res = milp(obj, constraints=LinearConstraint(A.tocsr(), lo, hi), integrality=integ,
-               bounds=Bounds(lb, ub), options={"time_limit": cfg["temps_max_calcul"], "mip_rel_gap": 0.002})
+               bounds=Bounds(lb, ub), options={"time_limit": cfg["temps_max_calcul"], "mip_rel_gap": cfg.get("ecart_optimalite", 0.002)})
     if res.x is None:
         return None
     x = res.x
@@ -1195,6 +1196,11 @@ def moment_joker(plan, args_plan, base, cfg, boot):
     if not res:
         return ""
     meilleur = max(res, key=lambda r: r[1])
+    # Équipe finale du meilleur jour : recherche plus longue et plus précise, pour une composition stable
+    cfg_fin = dict(cfg, temps_max_calcul=cfg["joker_temps_final"], ecart_optimalite=0.0002)
+    f_fin = optimiser(*args_plan[:9], cfg_fin, transferts=True, assurance=base["assurance"], joker_ev=meilleur[0]["id"])
+    if f_fin:
+        meilleur = (meilleur[0], meilleur[1], meilleur[2], meilleur[3], f_fin)
     fin = None
     for c in boot.get("chips", []):
         if c.get("name") == "wildcard" and c.get("start_event", 0) <= jours[0]["id"] <= c.get("stop_event", 0):
@@ -1794,13 +1800,13 @@ def main():
             c_ = {}
         if joker_gain is None or joker_gain < 0.7 * cfg["seuil_joker"]:
             moment_txt = ""
-        elif (c_.get("jour") == jour_paris and c_.get("prochain") == jours[0]["id"] and c_.get("version") == 11
+        elif (c_.get("jour") == jour_paris and c_.get("prochain") == jours[0]["id"] and c_.get("version") == 12
               and dt.datetime.now(dt.timezone.utc).timestamp() - c_.get("ts", 0) < 4 * 3600):   # gardé 4 h au plus
             moment_txt = c_["texte"] + f" (calculé le {c_['heure']})"
         else:
             cfg_rapide = dict(cfg, temps_max_calcul=min(cfg["temps_max_calcul"], 40))
             moment_txt = moment_joker(plan, args_plan, base, cfg_rapide, boot)
-            cache.write_text(json.dumps({"jour": jour_paris, "prochain": jours[0]["id"], "texte": moment_txt, "version": 11, "ts": dt.datetime.now(dt.timezone.utc).timestamp(),
+            cache.write_text(json.dumps({"jour": jour_paris, "prochain": jours[0]["id"], "texte": moment_txt, "version": 12, "ts": dt.datetime.now(dt.timezone.utc).timestamp(),
                                          "heure": dt.datetime.now(dt.timezone.utc).astimezone(PARIS).strftime("%d/%m à %Hh%M")},
                                         ensure_ascii=False), encoding="utf-8")
     except Exception as ex:
