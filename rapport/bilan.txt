@@ -235,7 +235,8 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       H.Veesaar (ATL) : Knee expected back 2027-07-01
       R.Dillingham (CHI) : Wrist expected back 2026-11-06
       D.Eubanks (NYK) : Pectoral expected back 2027-01-01
-  statut d | chances ce Gameday 100 | prochain 75 : 3 joueurs
+  statut d | chances ce Gameday 100 | prochain 75 : 5 joueurs
+      J.Smith (CHI) : Finger expected back 2026-10-30
       J.Tyson (CLE) : Neck expected back 2026-10-29
       M.Thomas (CLE) : Foot expected back 2026-10-29
       J.Poole (NOP) : Ankle expected back 2026-10-29
