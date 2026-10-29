@@ -123,8 +123,8 @@ BILAN DES GAMEDAYS JOUÉS
   → Titulaires : 200.0 pts réels pour 165.5 projetés (+34.5) [projection du modèle].
   → Meilleur cinq possible après coup : 200.0 pts (hors capitaine), soit 0.0 pts laissés sur le banc.
 
---- Gameweek 2 - Day 3 : moyenne des joueurs 148.1 | meilleur 345.0
-  Ton score : 114.0 | banc : 0.0 | rang : 35638 | transferts : 0 (coût 0)
+--- Gameweek 2 - Day 3 : moyenne des joueurs 173.4 | meilleur 345.0
+  Ton score : 114.0 | banc : 0.0 | rang : 45363 | transferts : 0 (coût 0)
   TITULAIRE B.Burries (MIL)              17 min        réel  21.0 | projeté  15.0
   TITULAIRE L.Doncic (LAL)                0 min        réel   0.0 | projeté   0.0 (CAPITAINE x2)
   TITULAIRE J.Williams (OKC)             20 min        réel   7.0 | projeté  18.1
@@ -243,16 +243,14 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       J.Poole (NOP) : Ankle expected back 2026-10-29
   statut i | chances ce Gameday 75 | prochain 25 : 1 joueurs
       L.Markkanen (UTA) : Wrist expected back 2026-10-31
-  statut d | chances ce Gameday None | prochain 75 : 1 joueurs
-      D.Peterson (UTA) : Head expected back 2026-10-28
 
 ======================================================================
 LIGUE FIRST TEAM
 ======================================================================
-  Rang : 90 / 633 (-41 depuis la dernière journée) | total 1374 pts | dernière journée 114 pts
+  Rang : 92 / 633 (-43 depuis la dernière journée) | total 1374 pts | dernière journée 114 pts
   Écart avec le 1er : 505 pts
-  Écart avec le rang juste devant (89e) : 0 pts
-  Avance sur le rang juste derrière (91e) : 1 pts
+  Écart avec le rang juste devant (90e) : 5 pts
+  Avance sur le rang juste derrière (93e) : 1 pts
   Joueurs les plus présents chez les 89 équipes devant toi (Gameday 9) : Y.Lendeborg (GSW) 68, D.Acuff Jr. (SAC) 56, V.Wembanyama (SAS) 43, T.Jerome (MEM) 40, L.Doncic (LAL) 32, A.Mara (OKC) 20, W.Kessler (LAL) 18, C.Wilson (CHI) 18, D.Sabonis (SAC) 17, J.Johnson (ATL) 17, T.Brazile (DEN) 16, A.Mitchell (OKC) 16, S.Cissoko (POR) 16, A.Reaves (LAL) 15, M.Hezonja (CLE) 15
   All-Star : déjà joué par 21 des 89 équipes devant toi (24 %) ; par Gameday : event 2 : 4, event 3 : 8, event 5 : 2, event 8 : 3, event 9 : 4
   Wildcard : déjà joué par 33 des 89 équipes devant toi (37 %) ; par Gameday : event 2 : 4, event 4 : 4, event 6 : 4, event 7 : 15, event 8 : 3, event 9 : 3
