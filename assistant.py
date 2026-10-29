@@ -681,7 +681,8 @@ def mon_equipe(mt, cfg, joueurs, boot, gw):
                 s, f = c.get("start_event"), c.get("stop_event")
                 if s is not None and f is not None and not (s <= gw["start_event"] <= f or s <= gw["stop_event"] <= f):
                     continue
-                if c.get("status_for_entry") not in (None, "available"):
+                # activé pour le prochain Gameday mais pas encore joué (annulable avant la deadline) : encore disponible
+                if c.get("status_for_entry") not in (None, "available") and not capitaine_en_attente(c):
                     capitaine_dispo = False
         source = mt.get("_source", "my-team (picks, banque et transferts du site)")
     else:
@@ -1340,7 +1341,7 @@ def alertes_equipe(mt, plan, joueurs, joue):
                                 and joueurs[b]["poste"] == joueurs[q]["poste"] for b in reel)
     for q in reel:
         p = joueurs.get(q)
-        if q in titulaires_reels and not remplacable(q) and not joue_soir(q):
+        if q in titulaires_reels and not remplacable(q) and not joue_soir(q) and not reel[q].get("is_captain"):
             continue
         if p and (p["dispo"] < 1 or p["statut"] != "a") and (q in titulaires_reels or q in j0["titulaires"]):
             ce_soir = (z(j0["event"]["deadline_time"]) - dt.timedelta(hours=4)).date()
@@ -1366,8 +1367,15 @@ def alertes_equipe(mt, plan, joueurs, joue):
     if banc_reel and ordre and joue_soir(ordre[0]) and not joue_soir(banc_reel[0]):
         al.append(f"Ordre du banc : mets {joueurs[ordre[0]]['nom']} en 1er remplaçant "
                   f"({joueurs[banc_reel[0]]['nom']} ne joue pas {quand}) pour le remplacement automatique")
-    actif = any(c.get("name") == "phcapt" and c.get("is_pending") for c in mt.get("chips") or [])
+    actif = any(c.get("name") == "phcapt" and capitaine_en_attente(c) for c in mt.get("chips") or [])
     cap_reel = next((q for q, p in reel.items() if p.get("is_captain")), None)
+    # Capitaine activé sur un joueur qui ne jouera pas ce soir : alerte prioritaire (le bonus serait gâché)
+    if actif and cap_reel in joueurs and not joue_soir(cap_reel):
+        p = joueurs[cap_reel]
+        raison = (f"{p['equipe']} ne joue pas {quand}" if ev["id"] not in joue.get(p["equipe_id"], ())
+                  else (p["news"] or "absent"))
+        al.insert(0, f"🚨 Ton capitaine {p['nom']} ne jouera pas {quand} ({raison}) : désactive le capitaine sur le site "
+                     f"pour le garder, ou mets-le sur un autre titulaire")
     cap_jour = next((jp for jp in plan["plan"] if jp["capitaine"]), None)
     if actif and j0["capitaine"] is None:
         garde = f" pour le {cap_jour['event']['name'].split(' - ')[-1]} ({joueurs[cap_jour['capitaine']]['nom']})" if cap_jour else ""
@@ -1379,6 +1387,11 @@ def alertes_equipe(mt, plan, joueurs, joue):
     if mt.get("_copie"):
         return sures, al, f"titulaires et capitaine d'après ton équipe copiée à {mt['_copie']} : à vérifier sur le site"
     return sures + al, [], ""
+
+
+def capitaine_en_attente(c):
+    """Chip capitaine activé pour le prochain Gameday, pas encore joué (le jeu le note « pending » ou « active »)."""
+    return bool(c.get("is_pending")) or c.get("status_for_entry") in ("pending", "active", "selected")
 
 
 def badge(gain, cfg):
@@ -1421,6 +1434,7 @@ def instantane(plan, boot, gw, joueurs):
     cap = next((jp for jp in plan["plan"] if jp["capitaine"]), None)
     return dict(calcul=dt.datetime.now(dt.timezone.utc).isoformat(), gw=gw["id"], prochaine=plan["plan"][0]["event"]["id"],
                 titulaires=plan["plan"][0]["titulaires"], capitaine=[cap["capitaine"], cap["event"]["id"]] if cap else None,
+                effectif=plan["plan"][0]["effectif"],
                 transferts=[[ev["id"], so, en] for ev, so_l, en_l in plan["transferts"] for so, en in paires(so_l, en_l, joueurs)],
                 score=plan["score"],
                 statuts={str(e["id"]): [e["status"], e["news"], e["now_cost"]] for e in boot["elements"]})

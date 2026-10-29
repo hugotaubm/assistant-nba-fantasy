@@ -70,6 +70,34 @@ def deadlines(maintenant):
     return [e for e in evs if z(e["deadline_time"]) > maintenant]
 
 
+def statuts_changes(maintenant):
+    """Dernière heure avant la deadline : le statut (blessure, chances de jouer) d'un joueur de ton équipe
+    a-t-il changé depuis le dernier calcul ? (bootstrap retéléchargé à chaque passage dans cette heure)"""
+    plan = lire(RAPPORT / "dernier_plan.json", {})
+    effectif = plan.get("effectif") or []
+    if not effectif:
+        return []
+    try:
+        req = urllib.request.Request("https://nbafantasy.nba.com/api/bootstrap-static/",
+                                     headers={"User-Agent": "Mozilla/5.0 (assistant-nba-fantasy perso)"})
+        with urllib.request.urlopen(req, timeout=60) as r:
+            donnees = r.read()
+        (ICI / "donnees").mkdir(exist_ok=True)
+        (ICI / "donnees" / "bootstrap.json").write_bytes(donnees)
+        boot = json.loads(donnees)
+    except Exception as ex:
+        log(f"surveillance de dernière heure impossible ({ex.__class__.__name__})", maintenant)
+        return []
+    avant = plan.get("statuts", {})
+    changes = []
+    for e in boot["elements"]:
+        if e["id"] in effectif:
+            ancien = avant.get(str(e["id"]))
+            if ancien and (ancien[0] != e["status"] or ancien[1] != e["news"]):
+                changes.append(f"{e['web_name']} : {e['news'] or e['status']}")
+    return changes
+
+
 def decider(maintenant, etat, prochaines):
     """Renvoie (action, event, minutes) avec action dans complet / controle / saute / secours / rien."""
     if prochaines:
@@ -84,6 +112,12 @@ def decider(maintenant, etat, prochaines):
         if (FENETRE_CONTROLE[0] <= m <= FENETRE_CONTROLE[1] and cle not in etat["controle"]
                 and fait and maintenant - z(fait) >= dt.timedelta(minutes=ECART_CONTROLE)):
             return "controle", e, m
+        # Surveillance de la dernière heure : un nouveau statut dans ton équipe → recalcul et alerte
+        if TROP_TARD <= m <= 60 and cle in etat["complet"]:
+            changes = statuts_changes(maintenant)
+            if changes:
+                log("changement de dernière heure : " + " ; ".join(changes), maintenant)
+                return "urgence", e, m
         if 0 < m < TROP_TARD and cle not in etat["complet"] and cle not in etat["controle"] and cle not in etat["sautes"]:
             return "saute", e, m
     dernier = z(etat["dernier_calcul"]) if etat.get("dernier_calcul") else None
@@ -157,9 +191,16 @@ def apres_calcul(action, e, m, cfg, maintenant):
         titre = f"{e['name'].split(' - ')[-1]} : à faire avant {heure}"
         if alertes and direct:
             prio, tags = "high", "warning"
+    elif action == "urgence":
+        titre, prio, tags = f"🚨 Changement de dernière minute ! Deadline {heure}", "high", "rotating_light"
+        if any(a.startswith("🚨") for a in alertes):
+            prio = "max"
+        resume = "\n".join(alertes[:4] + [resume]) if alertes else resume
     elif action == "controle":
         if alertes and direct and m is not None and m <= FENETRE_CONTROLE[1] and deja.get("c") != alertes:
             titre, prio, tags = f"⚠️ Équipe pas en ordre ! Deadline {heure}", "high", "warning"
+            if any(a.startswith("🚨") for a in alertes):
+                titre, prio = f"🚨 Ton capitaine ne joue pas ! Deadline {heure}", "max"
             deja["c"] = alertes
         elif deja.get("resume") and deja["resume"] != resume:
             titre, tags = f"🔄 Nouveau conseil avant {heure}", "arrows_counterclockwise"
@@ -225,7 +266,7 @@ def main():
     etat["dernier_calcul"] = dt.datetime.now(dt.timezone.utc).isoformat()
     if action == "secours":
         etat["secours"] = maintenant.astimezone().date().isoformat()
-    elif action != "manuel":
+    elif action not in ("manuel", "urgence"):
         etat[action][str(e["id"])] = maintenant.isoformat()
     ecrire(ETAT, etat)
     if e:
