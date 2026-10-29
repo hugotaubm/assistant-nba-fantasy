@@ -165,10 +165,33 @@ def wildcard(code_execution=None):
     if code_execution != code_attendu:
         print(f"SIMULATION : rien n'est envoyé. Code d'exécution pour ces transferts exacts : {code_attendu}")
         return
-    code, _, rep = appel("POST", "transfers/", transferts)
-    print(f"POST transferts + wildcard : {code} | réponse : {str(rep)[:400]}")
+    # En deux temps : 1 transfert avec la wildcard, vérification qu'elle est active (transferts gratuits), puis le reste.
+    def wildcard_active():
+        _, m = equipe_actuelle()
+        c = next((c for c in m.get("chips", []) if c.get("name") == "wildcard"), {})
+        t = m.get("transfers") or {}
+        print(f"  état du site : wildcard {c.get('status_for_entry')} (en attente : {c.get('is_pending')}) | transferts {t}")
+        return bool(c.get("is_pending") or c.get("status_for_entry") in ("active", "played") or t.get("status") == "unlimited")
+    premier = dict(transferts, transfers=transferts["transfers"][:1])
+    code, _, rep = appel("POST", "transfers/", premier)
+    print(f"POST 1er transfert + wildcard : {code}" + ("" if code in (200, 201, 202) else f" | réponse : {str(rep)[:400]}"))
     if code not in (200, 201, 202):
-        print("❌ Le site a refusé : rien d'autre n'est envoyé. Vérifie ton équipe sur le site.")
+        print("❌ Le site a refusé : rien n'est envoyé. Ton équipe est inchangée.")
+        sys.exit(1)
+    if not wildcard_active():
+        print("❌ ARRÊT : la wildcard n'apparaît pas active après le 1er transfert. Rien d'autre n'est envoyé. "
+              "Active la wildcard sur le site AVANT la deadline : elle rend gratuits les transferts de la journée.")
+        sys.exit(1)
+    print("✅ Wildcard active : transferts gratuits")
+    reste = dict(transferts, transfers=transferts["transfers"][1:])
+    code, _, rep = appel("POST", "transfers/", reste)
+    if code not in (200, 201, 202):   # la wildcard est déjà active : renvoi sans le chip
+        print(f"  (avec le chip : {code} {str(rep)[:200]}) → renvoi sans le chip")
+        code, _, rep = appel("POST", "transfers/", dict(reste, chip=None))
+    print(f"POST 5 autres transferts : {code}" + ("" if code in (200, 201, 202) else f" | réponse : {str(rep)[:400]}"))
+    wildcard_active()
+    if code not in (200, 201, 202):
+        print("❌ Les transferts restants ont été refusés : la wildcard est active, ils restent gratuits ; à faire sur le site.")
         sys.exit(1)
     _, mt2 = equipe_actuelle()
     nouveaux = [p["element"] for p in mt2["picks"]]
