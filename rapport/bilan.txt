@@ -215,7 +215,7 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       M.Uzan (BOS) : -
       N.Pringle (BKN) : -
       P.Connaughton (CHA) : -
-  statut i | chances ce Gameday 25 | prochain 25 : 43 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 42 joueurs
       T.Bilodeau (BKN) : Shoulder expected back 2026-10-30
       G.Williams (CHA) : Hamstring expected back 2026-11-02
       K.Knueppel (CHA) : Hamstring expected back 2026-11-02
@@ -235,14 +235,17 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       H.Veesaar (ATL) : Knee expected back 2027-07-01
       R.Dillingham (CHI) : Wrist expected back 2026-11-06
       D.Eubanks (NYK) : Pectoral expected back 2027-01-01
-  statut d | chances ce Gameday 75 | prochain 75 : 1 joueurs
-      E.Dëmin (BKN) : Leg expected back 2026-10-30
+  statut d | chances ce Gameday 100 | prochain 75 : 3 joueurs
+      J.Tyson (CLE) : Neck expected back 2026-10-29
+      M.Thomas (CLE) : Foot expected back 2026-10-29
+      J.Poole (NOP) : Ankle expected back 2026-10-29
+  statut i | chances ce Gameday 75 | prochain 25 : 2 joueurs
+      E.Dëmin (BKN) : Leg expected back 2026-11-07
+      L.Markkanen (UTA) : Wrist expected back 2026-10-31
   statut i | chances ce Gameday 100 | prochain 25 : 1 joueurs
       G.Santos (GSW) : Knee expected back 2026-10-30
-  statut d | chances ce Gameday 100 | prochain 75 : 1 joueurs
-      J.Poole (NOP) : Ankle expected back 2026-10-29
-  statut i | chances ce Gameday 75 | prochain 25 : 1 joueurs
-      L.Markkanen (UTA) : Wrist expected back 2026-10-31
+  statut i | chances ce Gameday 25 | prochain 0 : 1 joueurs
+      J.Isaac (ORL) : Knee expected back 2026-11-10
 
 ======================================================================
 LIGUE FIRST TEAM

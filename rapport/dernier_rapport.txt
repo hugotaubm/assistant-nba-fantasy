@@ -1,8 +1,8 @@
-Calcul lancé le 29/10/2026 à 09:27:25
+Calcul lancé le 29/10/2026 à 19:58:11
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
-  (force des conseils : 78 s)
+  (force des conseils : 51 s)
 
 === Gameweek 2 — prochaine deadline : Gameweek 2 - Day 4 le ven. 30/10 00h30 (heure de Paris) ===
 Équipe lue depuis : my-team (connecté, à jour en direct) | Banque : 4.4 M$ | Transferts gratuits restants : 0 | Capitaine dispo : non
@@ -14,15 +14,15 @@ Optimisation (jusqu'à deux minutes)…
   - T.Jerome joue le Day 4 mais est sur ton banc (conseillé titulaire)
   - D.Acuff Jr. joue le Day 4 mais est sur ton banc (conseillé titulaire)
 
-Wildcard (indicatif) : une équipe refaite avant la prochaine deadline rapporterait +331 pts sur cette semaine et la suivante, avec 7 joueur(s) changé(s) (J.Tatum (BOS), D.Sabonis (SAC), D.Lillard (POR), P.Watson (CLE), K.Dunn (LAC), K.Wagler (LAC), T.da Silva (ORL)) → garde-la (seuil conseillé : +346 pts). Seuil du moment : +346 pts (il baisse jusqu'à +150 à la fin de la fenêtre, le dim. 29/11 21h30, car la wildcard est perdue si elle n'est pas jouée ; au début, le garder vaut cher en cas de série de blessures).
-🃏 Moment de la wildcard, à horizon égal (7 jours de profit après la wildcard, points non pondérés) : GW2 Day 4 +245 | GW2 Day 5 +230 | GW2 Day 6 +190 | GW2 Day 7 +197. Meilleur : GW2 Day 4 (deadline ven. 30/10 00h30, 7 joueur(s) changé(s), dont +245 pts sur les 7 jours qui suivent). Fenêtre actuelle de la wildcard : à jouer au plus tard avant la deadline du dim. 29/11 21h30, sinon elle est perdue. DÉTAIL de la wildcard GW2 Day 4 — équipe : D.Lillard (POR, 11.0 M$) [38 pts/match ; ce soir 39 ; 6 matchs sur l'horizon], T.Jerome (MEM, 9.7 M$) [48 pts/match ; ce soir 49 ; 5 matchs sur l'horizon], D.Acuff Jr. (SAC, 8.1 M$) [38 pts/match ; ce soir 37 ; 6 matchs sur l'horizon], K.Dunn (LAC, 8.0 M$) [31 pts/match ; ce soir 0 ; 5 matchs sur l'horizon], K.Wagler (LAC, 7.5 M$) [29 pts/match ; ce soir 0 ; 5 matchs sur l'horizon], J.Tatum (BOS, 16.0 M$) [54 pts/match ; ce soir 0 ; 6 matchs sur l'horizon], D.Sabonis (SAC, 15.0 M$) [52 pts/match ; ce soir 51 ; 6 matchs sur l'horizon], P.Watson (CLE, 9.5 M$) [32 pts/match ; ce soir 32 ; 6 matchs sur l'horizon], Y.Lendeborg (GSW, 7.7 M$) [42 pts/match ; ce soir 0 ; 5 matchs sur l'horizon], T.da Silva (ORL, 6.5 M$) [24 pts/match ; ce soir 0 ; 5 matchs sur l'horizon] (coût 99.0 M$). Sortent : B.Burries, L.Doncic, J.Williams, C.Wilson, J.Randle, N.Traore, J.Walsh. Transferts ensuite : GW3 Day 3 : K.Dunn → D.Mitchell (MIA, 9.5 M$) ; GW3 Day 3 : T.Jerome → D.Brooks (PHX, 8.5 M$). Titulaires : GW2 Day 4 [~208 pts] : P.Watson, T.Jerome, D.Lillard, D.Sabonis, D.Acuff Jr. | GW2 Day 5 [~188 pts] : J.Tatum, Y.Lendeborg, K.Dunn, K.Wagler, T.da Silva | GW2 Day 6 [~209 pts] : P.Watson, T.Jerome, D.Lillard, D.Sabonis, D.Acuff Jr. | GW2 Day 7 [~187 pts] : J.Tatum, Y.Lendeborg, K.Dunn, K.Wagler, T.da Silva | GW3 Day 1 [~222 pts] : J.Tatum, Y.Lendeborg, T.Jerome, D.Lillard, D.Sabonis | GW3 Day 2 [~281 pts] : J.Tatum (C), T.Jerome, D.Lillard, D.Sabonis, D.Acuff Jr. | GW3 Day 3 [~131 pts] : Y.Lendeborg, D.Mitchell, T.da Silva, D.Brooks (1 vide(s)) | GW3 Day 4 [~204 pts] : J.Tatum, P.Watson, D.Lillard, D.Sabonis, D.Acuff Jr. | GW3 Day 5 [~161 pts] : P.Watson, Y.Lendeborg, T.da Silva, D.Brooks, D.Lillard | GW3 Day 6 [~205 pts] : J.Tatum, K.Wagler, D.Mitchell, D.Sabonis, D.Acuff Jr.. Places vides : 0 cette semaine, 1 la semaine suivante.
-⭐ All-Star (si c'est bien « budget illimité pour un Gameday, puis retour à ton équipe ») : gain par soir GW2 Day 4 (6 équipes) +154 | GW2 Day 5 (20 équipes) +76 | GW2 Day 6 (14 équipes) +142 | GW2 Day 7 (8 équipes) +63. Meilleur soir : GW2 Day 4, 239 pts attendus au lieu de 86, avec D.Sabonis, J.Johnson, T.Jerome, D.Avdija, J.Morant.
-🏆 Ligue First Team : 92e sur 633 (-43 depuis le 28/10), 5 pts du rang juste devant, 505 pts du 1er · devant toi, 33 sur 89 ont déjà joué leur wildcard et 21 leur All-Star · tes joueurs chez les 89 équipes devant toi : Y.Lendeborg 68, D.Acuff Jr. 56, T.Jerome 40, L.Doncic 32, C.Wilson 18, J.Walsh 12, N.Traore 7, J.Randle 2, B.Burries 1, J.Williams 0
-📅 Jours creux du plan conseillé — semaine suivante : Day 3 2 vide(s) | semaine d'après (Gameweek 4, sans transfert) : 31 matchs pour ton effectif, 7 place(s) vide(s) ; joueurs dispo par jour : 4-5-8-1-5-3-5
-🧩 Combler les 2 place(s) vide(s) de la semaine suivante : impossible avec tes transferts (pas assez de joueurs qui jouent ces jours-là dans ton budget).
+Wildcard (indicatif) : une équipe refaite avant la prochaine deadline rapporterait +316 pts sur cette semaine et la suivante, avec 6 joueur(s) changé(s) (J.Johnson (ATL), D.Sabonis (SAC), D.Lillard (POR), K.Dunn (LAC), W.Carter Jr. (ORL), T.da Silva (ORL)) → garde-la (seuil conseillé : +346 pts). Seuil du moment : +346 pts (il baisse jusqu'à +150 à la fin de la fenêtre, le dim. 29/11 21h30, car la wildcard est perdue si elle n'est pas jouée ; au début, le garder vaut cher en cas de série de blessures).
+🃏 Moment de la wildcard, à horizon égal (7 jours de profit après la wildcard, points non pondérés) : GW2 Day 4 +262 | GW2 Day 5 +203 | GW2 Day 6 +153 | GW2 Day 7 +183. Meilleur : GW2 Day 4 (deadline ven. 30/10 00h30, 6 joueur(s) changé(s), dont +262 pts sur les 7 jours qui suivent). Fenêtre actuelle de la wildcard : à jouer au plus tard avant la deadline du dim. 29/11 21h30, sinon elle est perdue. DÉTAIL de la wildcard GW2 Day 4 — équipe : D.Lillard (POR, 11.0 M$) [38 pts/match ; ce soir 39 ; 6 matchs sur l'horizon], T.Jerome (MEM, 9.7 M$) [48 pts/match ; ce soir 49 ; 5 matchs sur l'horizon], D.Acuff Jr. (SAC, 8.1 M$) [38 pts/match ; ce soir 37 ; 6 matchs sur l'horizon], K.Dunn (LAC, 8.0 M$) [31 pts/match ; ce soir 0 ; 5 matchs sur l'horizon], N.Traore (BKN, 6.5 M$) [19 pts/match ; ce soir 0 ; 6 matchs sur l'horizon], J.Johnson (ATL, 17.5 M$) [53 pts/match ; ce soir 50 ; 6 matchs sur l'horizon], D.Sabonis (SAC, 15.0 M$) [52 pts/match ; ce soir 51 ; 6 matchs sur l'horizon], W.Carter Jr. (ORL, 10.0 M$) [29 pts/match ; ce soir 0 ; 5 matchs sur l'horizon], Y.Lendeborg (GSW, 7.7 M$) [42 pts/match ; ce soir 0 ; 5 matchs sur l'horizon], T.da Silva (ORL, 6.5 M$) [24 pts/match ; ce soir 0 ; 5 matchs sur l'horizon] (coût 100.0 M$). Sortent : B.Burries, L.Doncic, J.Williams, C.Wilson, J.Randle, J.Walsh. Transferts ensuite : GW3 Day 3 : K.Dunn → P.Larsson (MIA, 7.5 M$) ; GW3 Day 6 : J.Johnson → J.Tatum (BOS, 16.0 M$). Titulaires : GW2 Day 4 [~226 pts] : J.Johnson, T.Jerome, D.Lillard, D.Sabonis, D.Acuff Jr. | GW2 Day 5 [~161 pts] : N.Traore, Y.Lendeborg, K.Dunn, W.Carter Jr., T.da Silva | GW2 Day 6 [~229 pts] : J.Johnson, T.Jerome, D.Lillard, D.Sabonis, D.Acuff Jr. | GW2 Day 7 [~162 pts] : N.Traore, Y.Lendeborg, K.Dunn, W.Carter Jr., T.da Silva | GW3 Day 1 [~231 pts] : J.Johnson, Y.Lendeborg, T.Jerome, D.Lillard, D.Sabonis | GW3 Day 2 [~226 pts] : J.Johnson, T.Jerome, D.Lillard, D.Sabonis, D.Acuff Jr. | GW3 Day 3 [~130 pts] : Y.Lendeborg, P.Larsson, W.Carter Jr., T.da Silva (1 vide(s)) | GW3 Day 4 [~225 pts] : J.Johnson, T.Jerome, D.Lillard, D.Sabonis, D.Acuff Jr. | GW3 Day 5 [~181 pts] : J.Johnson, N.Traore, Y.Lendeborg, W.Carter Jr., D.Lillard | GW3 Day 6 [~240 pts] : J.Tatum (C), N.Traore, P.Larsson, D.Sabonis, D.Acuff Jr.. Places vides : 0 cette semaine, 1 la semaine suivante.
+⭐ All-Star (si c'est bien « budget illimité pour un Gameday, puis retour à ton équipe ») : gain par soir GW2 Day 4 (6 équipes) +154 | GW2 Day 5 (20 équipes) +69 | GW2 Day 6 (14 équipes) +142 | GW2 Day 7 (8 équipes) +57. Meilleur soir : GW2 Day 4, 239 pts attendus au lieu de 86, avec D.Sabonis, J.Johnson, T.Jerome, D.Avdija, J.Morant.
+🏆 Ligue First Team : 92e sur 632 (-43 depuis le 28/10), 5 pts du rang juste devant, 505 pts du 1er · devant toi, 33 sur 89 ont déjà joué leur wildcard et 21 leur All-Star · tes joueurs chez les 89 équipes devant toi : Y.Lendeborg 68, D.Acuff Jr. 56, T.Jerome 40, L.Doncic 32, C.Wilson 18, J.Walsh 12, N.Traore 7, J.Randle 2, B.Burries 1, J.Williams 0
+📅 Jours creux du plan conseillé — semaine suivante : Day 3 4 vide(s) | semaine d'après (Gameweek 4, sans transfert) : 33 matchs pour ton effectif, 8 place(s) vide(s) ; joueurs dispo par jour : 4-4-9-0-7-4-5
+🧩 Combler les 4 place(s) vide(s) de la semaine suivante : impossible avec tes transferts (pas assez de joueurs qui jouent ces jours-là dans ton budget).
 🛡️ Effet adversaire (points fantasy concédés par poste, déjà dans les prévisions) — face aux arrières, les plus perméables : LAC +9 %, GSW +5 %, ORL +5 % ; les plus dures : ATL -9 %, DET -7 %, WAS -5 % | face aux intérieurs, les plus perméables : ATL +11 %, CHI +6 %, BKN +6 % ; les plus dures : LAC -9 %, POR -6 %, SAS -5 %
 📉 Vont perdre des minutes (retour d'un coéquipier blessé) : N.Essengue (CHI) -26 % dès le 30/10 (retour : N.Claxton, P.Williams) ; K.Dunn (LAC) -23 % dès le 08/11 (retour : B.Beal, M.Strus) ; D.Schröder (CHA) -21 % dès le 02/11 (retour : C.White, K.Knueppel) ; Z.Risacher (DAL) -19 % dès le 30/10 (retour : D.Lively II, N.Marshall, S.Aldama) ; J.Smith (CHI) -17 % dès le 04/11 (retour : N.Claxton, P.Williams) ; T.Eason (HOU) -16 % dès le 30/10 (retour : A.Sengun, S.Adams) ; L.Miller (CHI) -16 % dès le 04/11 (retour : N.Claxton, P.Williams) ; J.Walker (IND) -15 % dès le 30/10 (retour : I.Zubac)
-📈 Profitent d'une blessure (minutes libérées) : T.McConnell (IND) +60 % sur 3 j. (absent : B.Sheppard, J.Furphy, T.Haliburton) ; B.Hyland (MIN) +48 % sur 6 j. (absent : A.Edwards, D.DiVincenzo) ; G.Santos (GSW) +43 % sur 5 j. (absent : J.Butler, K.Porzingis) ; J.McCain (OKC) +33 % sur 5 j. (absent : A.Caruso, C.Wallace, J.Williams) ; K.Oubre Jr. (IND) +31 % sur 5 j. (absent : B.Sheppard, J.Furphy, T.Haliburton, T.McConnell) ; A.Mitchell (OKC) +31 % sur 5 j. (absent : A.Caruso, C.Wallace, J.Williams) ; I.Jackson (LAC) +31 % sur 4 j. (absent : B.Ingram, J.Broome) ; K.Maluach (PHX) +31 % sur 5 j. (absent : M.Williams)
+📈 Profitent d'une blessure (minutes libérées) : T.McConnell (IND) +60 % sur 3 j. (absent : B.Sheppard, J.Furphy, T.Haliburton) ; B.Hyland (MIN) +48 % sur 6 j. (absent : A.Edwards, D.DiVincenzo) ; G.Santos (GSW) +43 % sur 5 j. (absent : J.Butler, K.Porzingis) ; N.Traore (BKN) +37 % sur 4 j. (absent : E.Dëmin) ; J.McCain (OKC) +33 % sur 5 j. (absent : A.Caruso, C.Wallace, J.Williams) ; K.Oubre Jr. (IND) +31 % sur 5 j. (absent : B.Sheppard, J.Furphy, T.Haliburton, T.McConnell) ; A.Mitchell (OKC) +31 % sur 5 j. (absent : A.Caruso, C.Wallace, J.Williams) ; I.Jackson (LAC) +31 % sur 4 j. (absent : B.Ingram, J.Broome)
 ⚠ ALERTES
   - L.Doncic (LAL) : Back expected back 2026-10-30 (chance de jouer 85 %)
 
@@ -33,37 +33,37 @@ Wildcard (indicatif) : une équipe refaite avant la prochaine deadline rapporter
 
 ▶ TRANSFERTS
   Aucun transfert recommandé cette semaine (gain attendu trop faible).
-  Prévu la semaine suivante (indicatif) : Day 3 : B.Burries→D.Brooks, C.Wilson→F.Wagner
+  Prévu la semaine suivante (indicatif) : Day 1 : L.Doncic→D.Mitchell, C.Wilson→V.Wembanyama
 
 ▶ TES JOUEURS, DU MOINS UTILE AU PLUS UTILE (points attendus ; semaine suivante pondérée × 0.8)
   J.Williams (OKC)              6.5 M$ | 13.0 pts/match, fiabilité 0.95 | cette semaine 1 m.   12 pts | suivante 4 m.   51 pts |  8.1 pts/M$
   B.Burries (MIL)               6.9 M$ | 15.7 pts/match, fiabilité 0.87 | cette semaine 1 m.   14 pts | suivante 4 m.   57 pts |  8.7 pts/M$
   L.Doncic (LAL)               21.0 M$ | 65.5 pts/match, fiabilité 0.81 | cette semaine 2 m.   90 pts | suivante 4 m.  181 pts | 11.2 pts/M$
   C.Wilson (CHI)               10.6 M$ | 41.9 pts/match, fiabilité 0.96 | cette semaine 1 m.   41 pts | suivante 3 m.  114 pts | 12.4 pts/M$
-  N.Traore (BKN)                6.5 M$ | 19.4 pts/match, fiabilité 0.96 | cette semaine 2 m.   35 pts | suivante 4 m.   74 pts | 14.6 pts/M$
   J.Randle (BKN)               14.0 M$ | 45.0 pts/match, fiabilité 0.96 | cette semaine 2 m.   89 pts | suivante 4 m.  177 pts | 16.5 pts/M$
   J.Walsh (BOS)                 5.0 M$ | 16.6 pts/match, fiabilité 0.96 | cette semaine 2 m.   33 pts | suivante 4 m.   65 pts | 16.9 pts/M$
+  N.Traore (BKN)                6.5 M$ | 19.4 pts/match, fiabilité 0.96 | cette semaine 2 m.   49 pts | suivante 4 m.   88 pts | 18.3 pts/M$
   T.Jerome (MEM)                9.7 M$ | 48.1 pts/match, fiabilité 0.93 | cette semaine 2 m.   99 pts | suivante 3 m.  143 pts | 22.0 pts/M$
   Y.Lendeborg (GSW)             7.7 M$ | 42.0 pts/match, fiabilité 0.96 | cette semaine 2 m.   81 pts | suivante 3 m.  129 pts | 24.0 pts/M$
   D.Acuff Jr. (SAC)             8.1 M$ | 37.8 pts/match, fiabilité 0.96 | cette semaine 2 m.   74 pts | suivante 4 m.  152 pts | 24.2 pts/M$
 
 ▶ PLAN JOUR PAR JOUR (cette Gameweek)
   Day 4  deadline ven. 30/10 00h30 : T.Jerome, D.Acuff Jr.  (3 place(s) vide(s))  [~86 pts]
-  Day 5  deadline ven. 30/10 23h30 : N.Traore, J.Randle, C.Wilson, Y.Lendeborg, L.Doncic  [~191 pts]
+  Day 5  deadline ven. 30/10 23h30 : N.Traore, J.Randle, C.Wilson, Y.Lendeborg, L.Doncic  [~198 pts]
   Day 6  deadline sam. 31/10 19h30 : T.Jerome, B.Burries, J.Williams, D.Acuff Jr.  (1 place(s) vide(s))  [~113 pts]
-  Day 7  deadline dim. 01/11 21h00 : J.Walsh, N.Traore, J.Randle, Y.Lendeborg, L.Doncic  [~161 pts]
+  Day 7  deadline dim. 01/11 21h00 : J.Walsh, N.Traore, J.Randle, Y.Lendeborg, L.Doncic  [~168 pts]
 
-▶ SEMAINE SUIVANTE, JOUR PAR JOUR (indicatif, avec les transferts prévus) : 2 place(s) vide(s) au total
-  Day 1  deadline mar. 03/11 00h30 : J.Randle (B2B), C.Wilson, Y.Lendeborg (B2B), L.Doncic (B2B), T.Jerome  [~222 pts]
-  Day 2  deadline jeu. 05/11 00h30 : J.Randle, C.Wilson, L.Doncic, T.Jerome, D.Acuff Jr.  [~211 pts]
-  Day 3  deadline ven. 06/11 02h30 : Y.Lendeborg, F.Wagner, D.Brooks (B2B)  (2 place(s) vide(s))  [~114 pts] ← après B.Burries→D.Brooks, C.Wilson→F.Wagner
-  Day 4  deadline sam. 07/11 00h30 : J.Walsh, L.Doncic, T.Jerome (C), J.Williams, D.Acuff Jr.  [~208 pts]
-  Day 5  deadline sam. 07/11 22h30 : N.Traore, J.Randle, Y.Lendeborg, F.Wagner, D.Brooks  [~177 pts]
-  Day 6  deadline dim. 08/11 21h00 : J.Walsh, N.Traore (B2B), J.Randle (B2B), L.Doncic, D.Acuff Jr.  [~160 pts]
+▶ SEMAINE SUIVANTE, JOUR PAR JOUR (indicatif, avec les transferts prévus) : 4 place(s) vide(s) au total
+  Day 1  deadline mar. 03/11 00h30 : J.Randle (B2B), D.Mitchell, Y.Lendeborg (B2B), T.Jerome, V.Wembanyama  [~237 pts] ← après L.Doncic→D.Mitchell, C.Wilson→V.Wembanyama
+  Day 2  deadline jeu. 05/11 00h30 : J.Randle, D.Mitchell, T.Jerome, D.Acuff Jr., V.Wembanyama  [~228 pts]
+  Day 3  deadline ven. 06/11 02h30 : Y.Lendeborg  (4 place(s) vide(s))  [~43 pts]
+  Day 4  deadline sam. 07/11 00h30 : J.Walsh, D.Mitchell, T.Jerome, D.Acuff Jr., V.Wembanyama (C)  [~262 pts]
+  Day 5  deadline sam. 07/11 22h30 : N.Traore, J.Randle, D.Mitchell (B2B), Y.Lendeborg, V.Wembanyama (B2B)  [~201 pts]
+  Day 6  deadline dim. 08/11 21h00 : J.Walsh, N.Traore (B2B), J.Randle (B2B), B.Burries, D.Acuff Jr.  [~132 pts]
 
-Projection Gameweek (jours restants) : ~551 pts  |  sans transfert : ~551 pts
+Projection Gameweek (jours restants) : ~565 pts  |  sans transfert : ~565 pts
 Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) = non utilisé, mon équipe = my-team (connecté, à jour en direct)
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 29/10/2026 à 09:28:56 (code de sortie : 0)
+Terminé le 29/10/2026 à 19:59:12 (code de sortie : 0)
