@@ -1794,12 +1794,13 @@ def main():
             c_ = {}
         if joker_gain is None or joker_gain < 0.7 * cfg["seuil_joker"]:
             moment_txt = ""
-        elif c_.get("jour") == jour_paris and c_.get("prochain") == jours[0]["id"] and c_.get("version") == 9:
+        elif (c_.get("jour") == jour_paris and c_.get("prochain") == jours[0]["id"] and c_.get("version") == 9
+              and dt.datetime.now(dt.timezone.utc).timestamp() - c_.get("ts", 0) < 4 * 3600):   # gardé 4 h au plus
             moment_txt = c_["texte"] + f" (calculé le {c_['heure']})"
         else:
             cfg_rapide = dict(cfg, temps_max_calcul=min(cfg["temps_max_calcul"], 40))
             moment_txt = moment_joker(plan, args_plan, base, cfg_rapide, boot)
-            cache.write_text(json.dumps({"jour": jour_paris, "prochain": jours[0]["id"], "texte": moment_txt, "version": 9,
+            cache.write_text(json.dumps({"jour": jour_paris, "prochain": jours[0]["id"], "texte": moment_txt, "version": 9, "ts": dt.datetime.now(dt.timezone.utc).timestamp(),
                                          "heure": dt.datetime.now(dt.timezone.utc).astimezone(PARIS).strftime("%d/%m à %Hh%M")},
                                         ensure_ascii=False), encoding="utf-8")
     except Exception as ex:
