@@ -30,8 +30,13 @@ jobs:
           python-version: "3.12"
       - name: Agir
         run: |
+          set -o pipefail
           if [ "${{ inputs.mode }}" = "wildcard" ] && [ -n "${{ inputs.code }}" ]; then
-            python agir.py wildcard --executer "${{ inputs.code }}"
+            python agir.py wildcard --executer "${{ inputs.code }}" 2>&1 | tee sortie.txt
           else
-            python agir.py "${{ inputs.mode }}"
+            python agir.py "${{ inputs.mode }}" 2>&1 | tee sortie.txt
           fi
+      - name: Résultat (annotation lisible via l'API)
+        if: always()
+        run: |
+          [ -f sortie.txt ] && echo "::notice title=agir::$(sed ':a;N;$!ba;s/%/%25/g;s/\r//g;s/\n/%0A/g' sortie.txt)"
