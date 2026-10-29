@@ -235,17 +235,21 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       H.Veesaar (ATL) : Knee expected back 2027-07-01
       R.Dillingham (CHI) : Wrist expected back 2026-11-06
       D.Eubanks (NYK) : Pectoral expected back 2027-01-01
-  statut d | chances ce Gameday 100 | prochain 75 : 5 joueurs
+  statut d | chances ce Gameday 100 | prochain 75 : 7 joueurs
       J.Smith (CHI) : Finger expected back 2026-10-30
       J.Tyson (CLE) : Neck expected back 2026-10-29
       M.Thomas (CLE) : Foot expected back 2026-10-29
-      J.Poole (NOP) : Ankle expected back 2026-10-29
+      A.Nesmith (IND) : Hamstring expected back 2026-10-30
+  statut i | chances ce Gameday 100 | prochain 25 : 4 joueurs
+      G.Santos (GSW) : Knee expected back 2026-10-30
+      R.Sheppard (HOU) : Back expected back 2026-10-31
+      D.Murray (NOP) : Personal expected back 2026-10-31
+      J.Poole (NOP) : Ankle expected back 2026-10-31
   statut i | chances ce Gameday 75 | prochain 25 : 2 joueurs
       E.Dëmin (BKN) : Leg expected back 2026-11-07
       L.Markkanen (UTA) : Wrist expected back 2026-10-31
-  statut i | chances ce Gameday 100 | prochain 25 : 2 joueurs
-      G.Santos (GSW) : Knee expected back 2026-10-30
-      R.Sheppard (HOU) : Back expected back 2026-10-31
+  statut d | chances ce Gameday None | prochain 75 : 1 joueurs
+      D.Schröder (CHA) : Foot expected back 2026-10-30
   statut i | chances ce Gameday 25 | prochain 0 : 1 joueurs
       J.Isaac (ORL) : Knee expected back 2026-11-10
 
