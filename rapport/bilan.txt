@@ -247,7 +247,7 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
 ======================================================================
 LIGUE FIRST TEAM
 ======================================================================
-  Rang : 92 / 633 (-43 depuis la dernière journée) | total 1374 pts | dernière journée 114 pts
+  Rang : 92 / 632 (-43 depuis la dernière journée) | total 1374 pts | dernière journée 114 pts
   Écart avec le 1er : 505 pts
   Écart avec le rang juste devant (90e) : 5 pts
   Avance sur le rang juste derrière (93e) : 1 pts
