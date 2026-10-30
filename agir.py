@@ -68,6 +68,22 @@ def sonde():
         elif isinstance(r, dict) and "current" in r:
             r = dict(current=r["current"][-2:], chips=r.get("chips"))
         print(f"GET {chemin} : {code} | {str(r)[:900]}")
+    # points en direct du Gameday en cours
+    try:
+        _, _, h = appel("GET", f"entry/{eid}/history/")
+        ev = h["current"][-1]["event"]
+        _, _, pk = appel("GET", f"entry/{eid}/event/{ev}/picks/")
+        _, _, live = appel("GET", f"event/{ev}/live/")
+        boot = json.loads(urllib.request.urlopen(urllib.request.Request(API + "bootstrap-static/", headers=entetes()), timeout=60).read())
+        el = {e["id"]: e for e in boot["elements"]}
+        st = {e["id"]: e.get("stats", {}) for e in (live.get("elements", []) if isinstance(live, dict) else [])}
+        print(f"EN DIRECT event {ev} : {pk.get('entry_history', {}) if isinstance(pk, dict) else pk}")
+        for p in (pk.get("picks", []) if isinstance(pk, dict) else []):
+            s_ = st.get(p["element"], {})
+            print(f"  {'TIT ' if p['position'] <= 5 else 'banc'} {el[p['element']]['web_name']:<14} x{p.get('multiplier')} "
+                  f"{s_.get('total_points')} pts, {s_.get('minutes')} min")
+    except Exception as ex:
+        print(f"(direct indisponible : {ex!r})")
     code, _, me = appel("GET", "me/")
     print(f"GET me : {code}" + (f" (équipe {me.get('player', {}).get('entry')})" if code == 200 and isinstance(me, dict) else ""))
     for chemin in ("transfers/", f"my-team/{eid}/"):
