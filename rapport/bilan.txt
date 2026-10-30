@@ -230,7 +230,7 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       M.Uzan (BOS) : -
       N.Pringle (BKN) : -
       P.Connaughton (CHA) : -
-  statut i | chances ce Gameday 25 | prochain 25 : 48 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 46 joueurs
       E.Dëmin (BKN) : Leg expected back 2026-11-07
       T.Bilodeau (BKN) : Shoulder expected back 2026-11-01
       G.Williams (CHA) : Hamstring expected back 2026-11-02
@@ -255,7 +255,8 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       J.Smith (CHI) : Finger expected back 2026-10-30
       A.Nesmith (IND) : Hamstring expected back 2026-10-30
       A.Nembhard (IND) : Neck expected back 2026-10-30
-  statut d | chances ce Gameday None | prochain 75 : 1 joueurs
+  statut d | chances ce Gameday None | prochain 75 : 2 joueurs
+      N.Clowney (BKN) : Illness expected back 2026-10-30
       Q.Post (MEM) : Ankle expected back 2026-10-31
   statut d | chances ce Gameday 100 | prochain 75 : 1 joueurs
       J.Morant (POR) : Hamstring expected back 2026-10-31
