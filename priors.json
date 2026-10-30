@@ -5686,10 +5686,11 @@
 "presence": 0.67,
 "age": 25,
 "min_proj": 25.1,
-"rang_poste": 2,
+"rang_poste": 3,
 "poste_espn": "PG",
 "devant": [
-"Ty Jerome"
+"Ty Jerome",
+"Cam Spencer"
 ],
 "presaison_matchs": 4,
 "presaison_min": 14.5
@@ -5751,9 +5752,9 @@
 "presence": 0.9,
 "age": 26,
 "rang_poste": 2,
-"poste_espn": "SG",
+"poste_espn": "PG",
 "devant": [
-"Cedric Coward"
+"Ty Jerome"
 ],
 "presaison_matchs": 4,
 "presaison_min": 16.2
@@ -5819,8 +5820,8 @@
 "poste_espn": "PG",
 "devant": [
 "Ty Jerome",
-"Scotty Pippen Jr.",
-"Cam Spencer"
+"Cam Spencer",
+"Scotty Pippen Jr."
 ],
 "presaison_matchs": 4,
 "presaison_min": 10.5
@@ -5865,11 +5866,11 @@
 "presence": 0.83,
 "age": 25,
 "rang_poste": 6,
-"poste_espn": "SF",
+"poste_espn": "PF",
 "devant": [
-"Ajay Mitchell",
-"Alex Caruso",
-"Kenrich Williams"
+"Chet Holmgren",
+"Kenrich Williams",
+"Alex Caruso"
 ]
 },
 "289": {
@@ -7986,7 +7987,14 @@
 "presence": 0.87,
 "age": 26,
 "presaison_matchs": 3,
-"presaison_min": 9.3
+"presaison_min": 9.3,
+"rang_poste": 4,
+"poste_espn": "SF",
+"devant": [
+"Ajay Mitchell",
+"Alex Caruso",
+"Kenrich Williams"
+]
 },
 "390": {
 "nom": "D.Eubanks",
@@ -8167,7 +8175,7 @@
 "presence": 0.88,
 "age": 25,
 "min_proj": 32.8,
-"rang_poste": 8,
+"rang_poste": 9,
 "poste_espn": "SF",
 "devant": [
 "Ajay Mitchell",
@@ -8281,11 +8289,11 @@
 "presence": 0.59,
 "age": 24,
 "rang_poste": 5,
-"poste_espn": "SF",
+"poste_espn": "PF",
 "devant": [
-"Ajay Mitchell",
-"Alex Caruso",
-"Kenrich Williams"
+"Chet Holmgren",
+"Kenrich Williams",
+"Alex Caruso"
 ],
 "presaison_matchs": 5,
 "presaison_min": 23.6
@@ -8454,10 +8462,9 @@
 "presence": 0.82,
 "age": 31,
 "min_proj": 15.4,
-"rang_poste": 4,
+"rang_poste": 3,
 "poste_espn": "PG",
 "devant": [
-"Jalen Suggs",
 "Jase Richardson",
 "Anthony Black"
 ],
@@ -8481,7 +8488,7 @@
 "age": 28,
 "min_proj": 33.7,
 "rang_poste": 1,
-"poste_espn": "SG",
+"poste_espn": "SF",
 "devant": [],
 "presaison_matchs": 3,
 "presaison_min": 21.0
@@ -8505,7 +8512,7 @@
 "rang_poste": 2,
 "poste_espn": "SF",
 "devant": [
-"Franz Wagner"
+"Desmond Bane"
 ],
 "presaison_matchs": 4,
 "presaison_min": 17.5
@@ -8527,7 +8534,7 @@
 "age": 25,
 "min_proj": 34.0,
 "rang_poste": 1,
-"poste_espn": "SF",
+"poste_espn": "PF",
 "devant": [],
 "presaison_matchs": 4,
 "presaison_min": 17.5
@@ -8570,9 +8577,10 @@
 "presence": 0.8,
 "age": 29,
 "min_proj": 11.3,
-"rang_poste": 3,
+"rang_poste": 4,
 "poste_espn": "PF",
 "devant": [
+"Franz Wagner",
 "Tristan da Silva",
 "Jamal Cain"
 ]
@@ -8593,12 +8601,12 @@
 "presence": 0.99,
 "age": 23,
 "min_proj": 35.2,
-"rang_poste": 5,
+"rang_poste": 6,
 "poste_espn": "PF",
 "devant": [
+"Franz Wagner",
 "Tristan da Silva",
-"Jamal Cain",
-"Jonathan Isaac"
+"Jamal Cain"
 ],
 "presaison_matchs": 4,
 "presaison_min": 21.8
@@ -8619,9 +8627,13 @@
 "presence": 0.84,
 "age": 25,
 "min_proj": 26.3,
-"rang_poste": 1,
+"rang_poste": 5,
 "poste_espn": "PG",
-"devant": [],
+"devant": [
+"Jase Richardson",
+"Anthony Black",
+"Jevon Carter"
+],
 "presaison_matchs": 2,
 "presaison_min": 17.0
 },
@@ -8666,11 +8678,9 @@
 "presence": 0.97,
 "age": 22,
 "min_proj": 28.9,
-"rang_poste": 2,
+"rang_poste": 1,
 "poste_espn": "SG",
-"devant": [
-"Desmond Bane"
-]
+"devant": []
 },
 "423": {
 "nom": "T.da Silva",
@@ -8688,9 +8698,11 @@
 "presence": 0.97,
 "age": 25,
 "min_proj": 21.4,
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "PF",
-"devant": [],
+"devant": [
+"Franz Wagner"
+],
 "presaison_matchs": 4,
 "presaison_min": 21.8
 },
@@ -8717,9 +8729,9 @@
 "rang_poste": 5,
 "poste_espn": "SF",
 "devant": [
-"Franz Wagner",
+"Desmond Bane",
 "Jamal Cain",
-"Tristan da Silva"
+"Franz Wagner"
 ],
 "presaison_matchs": 3,
 "presaison_min": 14.3
@@ -8740,11 +8752,9 @@
 "presence": 0.72,
 "age": 21,
 "min_proj": 10.9,
-"rang_poste": 2,
+"rang_poste": 1,
 "poste_espn": "PG",
-"devant": [
-"Jalen Suggs"
-],
+"devant": [],
 "presaison_matchs": 4,
 "presaison_min": 19.8
 },
@@ -8758,11 +8768,11 @@
 "age": 26,
 "b2b_n": 0,
 "rang_poste": 4,
-"poste_espn": "PF",
+"poste_espn": "C",
 "devant": [
-"Tristan da Silva",
-"Jamal Cain",
-"Jonathan Isaac"
+"Wendell Carter Jr.",
+"Nikola Vucevic",
+"Goga Bitadze"
 ],
 "presaison_matchs": 4,
 "presaison_min": 6.5
@@ -11864,6 +11874,6 @@
 "_source": "saison régulière 2025-26 (ESPN), mis à jour le 20/10/2026"
 },
 "roles": {
-"_source": "ESPN (hiérarchie + présaison), mis à jour le 30/10/2026"
+"_source": "ESPN (hiérarchie + présaison), mis à jour le 31/10/2026"
 }
 }
