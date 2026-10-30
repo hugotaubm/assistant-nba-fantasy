@@ -82,6 +82,13 @@ def sonde():
             s_ = st.get(p["element"], {})
             print(f"  {'TIT ' if p['position'] <= 5 else 'banc'} {el[p['element']]['web_name']:<14} x{p.get('multiplier')} "
                   f"{s_.get('total_points')} pts, {s_.get('minutes')} min")
+        _, _, fx = appel("GET", f"fixtures/?event={ev}")
+        eqs = {t["id"]: t["short_name"] for t in boot["teams"]}
+        for f in fx if isinstance(fx, list) else []:
+            print(f"  match {eqs.get(f['team_a'])} {f.get('team_a_score')} @ {eqs.get(f['team_h'])} {f.get('team_h_score')} | "
+                  f"commencé {f.get('started')} fini {f.get('finished') or f.get('finished_provisional')} | {f.get('kickoff_time')}")
+        for q in (279, 490):
+            print(f"  {el[q]['web_name']} : statut {el[q]['status']} | {el[q]['news']}")
     except Exception as ex:
         print(f"(direct indisponible : {ex!r})")
     code, _, me = appel("GET", "me/")
