@@ -1,4 +1,4 @@
-Calcul lancé le 30/10/2026 à 19:14:08
+Calcul lancé le 30/10/2026 à 21:04:36
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
@@ -55,4 +55,4 @@ Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) 
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 30/10/2026 à 19:14:12 (code de sortie : 0)
+Terminé le 30/10/2026 à 21:04:39 (code de sortie : 0)

@@ -258,8 +258,8 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
   statut d | chances ce Gameday None | prochain 75 : 2 joueurs
       N.Clowney (BKN) : Illness expected back 2026-10-30
       Q.Post (MEM) : Ankle expected back 2026-10-31
-  statut d | chances ce Gameday 100 | prochain 75 : 1 joueurs
-      J.Morant (POR) : Hamstring expected back 2026-10-31
+  statut i | chances ce Gameday 100 | prochain 0 : 1 joueurs
+      J.Morant (POR) : Hamstring expected back 2026-12-01
   statut i | chances ce Gameday 75 | prochain 25 : 1 joueurs
       R.Williams III (POR) : Knee expected back 2026-10-31
 
