@@ -185,7 +185,7 @@ Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : 196 sur 1179
   - P.Banchero (ORL) (event 6) : projeté 45.5, statut actuel i, news : Ankle expected back 2026-11-22
   - P.Banchero (ORL) (event 9) : projeté 45.5, statut actuel i, news : Ankle expected back 2026-11-22
   - S.Curry (GSW) (event 5) : projeté 44.0, statut actuel a, news : -
-  - D.Murray (NOP) (event 10) : projeté 43.2, statut actuel i, news : Personal expected back 2026-10-31
+  - D.Murray (NOP) (event 10) : projeté 43.2, statut actuel a, news : -
 Plus grosses surestimations :
   - L.Markkanen (UTA) (event 7) : projeté 39.8, réel 2.0 en 6 min
   - N.Jokic (DEN) (event 3) : projeté 68.5, réel 36.0 en 35 min
@@ -230,7 +230,7 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       M.Uzan (BOS) : -
       N.Pringle (BKN) : -
       P.Connaughton (CHA) : -
-  statut i | chances ce Gameday 25 | prochain 25 : 46 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 45 joueurs
       E.Dëmin (BKN) : Leg expected back 2026-11-07
       T.Bilodeau (BKN) : Shoulder expected back 2026-11-01
       G.Williams (CHA) : Hamstring expected back 2026-11-02
@@ -255,13 +255,18 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       J.Smith (CHI) : Finger expected back 2026-10-30
       A.Nesmith (IND) : Hamstring expected back 2026-10-30
       A.Nembhard (IND) : Neck expected back 2026-10-30
+  statut d | chances ce Gameday 100 | prochain 75 : 3 joueurs
+      D.Swain (CHI) : Back expected back 2026-10-30
+      O.Toppin (IND) : Back expected back 2026-10-30
+      K.Towns (NYK) : Wrist expected back 2026-10-30
   statut d | chances ce Gameday None | prochain 75 : 2 joueurs
       N.Clowney (BKN) : Illness expected back 2026-10-30
       Q.Post (MEM) : Ankle expected back 2026-10-31
+  statut i | chances ce Gameday 75 | prochain 25 : 2 joueurs
+      J.Tyson (CLE) : Ankle expected back 2026-11-02
+      R.Williams III (POR) : Knee expected back 2026-10-31
   statut i | chances ce Gameday 100 | prochain 0 : 1 joueurs
       J.Morant (POR) : Hamstring expected back 2026-12-01
-  statut i | chances ce Gameday 75 | prochain 25 : 1 joueurs
-      R.Williams III (POR) : Knee expected back 2026-10-31
 
 ======================================================================
 LIGUE FIRST TEAM
