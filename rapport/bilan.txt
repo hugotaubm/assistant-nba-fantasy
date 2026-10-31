@@ -191,13 +191,13 @@ Par rang dans la hiérarchie ESPN (1 = titulaire) :
   rang inconnu            28 matchs | 0 min : 16 | biais  -9.6 | réel/projeté 0.67 | minutes 22.1
 Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : 226 sur 1339
   - L.Doncic (LAL) (event 9) : projeté 65.5, statut actuel a, news : -
-  - J.Embiid (PHI) (event 6) : projeté 48.5, statut actuel d, news : Rest expected back 2026-10-31
+  - J.Embiid (PHI) (event 6) : projeté 48.5, statut actuel i, news : Foot expected back 2026-11-02
   - A.Edwards (MIN) (event 9) : projeté 48.4, statut actuel i, news : Knee expected back 2026-12-21
   - A.Edwards (MIN) (event 11) : projeté 48.4, statut actuel i, news : Knee expected back 2026-12-21
-  - A.Sengun (HOU) (event 9) : projeté 47.9, statut actuel i, news : Back expected back 2026-10-31
-  - A.Sengun (HOU) (event 11) : projeté 47.9, statut actuel i, news : Back expected back 2026-10-31
+  - A.Sengun (HOU) (event 9) : projeté 47.9, statut actuel a, news : -
+  - A.Sengun (HOU) (event 11) : projeté 47.9, statut actuel a, news : -
   - C.Flagg (DAL) (event 5) : projeté 47.0, statut actuel a, news : -
-  - L.James (PHI) (event 5) : projeté 46.1, statut actuel d, news : Rest expected back 2026-10-31
+  - L.James (PHI) (event 5) : projeté 46.1, statut actuel i, news : Back expected back 2026-11-02
   - K.Leonard (TOR) (event 6) : projeté 45.6, statut actuel i, news : Knee expected back 2026-11-23
   - K.Leonard (TOR) (event 9) : projeté 45.6, statut actuel i, news : Knee expected back 2026-11-23
   - K.Leonard (TOR) (event 11) : projeté 45.6, statut actuel i, news : Knee expected back 2026-11-23
@@ -233,10 +233,10 @@ CALIBRATION DU MODÈLE (points réels / points attendus, par rang)
   rang 3+  :  728 joueurs-matchs | réel    3468 / attendu    4246 = 0.82 → facteur appliqué 0.833
   rang ?   :  150 joueurs-matchs | réel     332 / attendu    1055 = 0.31 → facteur appliqué 0.750
 Erreur restante du modèle par tranche de prix (après la calibration par rang) :
-  10-15 M$  :  370 joueurs-matchs | réel   11434 / attendu   11595 = 0.99 → facteur appliqué 0.987
-  7-10 M$   :  505 joueurs-matchs | réel   10303 / attendu    9846 = 1.05 → facteur appliqué 1.045
-  < 7 M$    :  997 joueurs-matchs | réel    5600 / attendu    6350 = 0.88 → facteur appliqué 0.889
-  ≥ 15 M$   :  136 joueurs-matchs | réel    6200 / attendu    6219 = 1.00 → facteur appliqué 0.997
+  10-15 M$  :  370 joueurs-matchs | réel   11434 / attendu   11601 = 0.99 → facteur appliqué 0.986
+  7-10 M$   :  505 joueurs-matchs | réel   10303 / attendu    9831 = 1.05 → facteur appliqué 1.046
+  < 7 M$    :  997 joueurs-matchs | réel    5600 / attendu    6374 = 0.88 → facteur appliqué 0.886
+  ≥ 15 M$   :  136 joueurs-matchs | réel    6200 / attendu    6225 = 1.00 → facteur appliqué 0.996
 
 Vérification du barème (points du jeu vs formule des projections) :
   Statistiques fournies par le jeu : ['assists', 'blocks', 'in_dreamteam', 'minutes', 'played', 'points_scored', 'rebounds', 'steals', 'total_points']
@@ -256,7 +256,7 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       K.Boswell (CHA) : Knee expected back 2026-11-02
       N.Claxton (CHI) : Hamstring expected back 2026-11-04
       N.Tomlin (CLE) : Back expected back 2026-11-16
-  statut i | chances ce Gameday 25 | prochain 25 : 38 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 37 joueurs
       E.Dëmin (BKN) : Leg expected back 2026-11-07
       T.Bilodeau (BKN) : Shoulder expected back 2026-11-06
       G.Williams (CHA) : Hamstring expected back 2026-11-02
@@ -271,19 +271,20 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       H.Veesaar (ATL) : Knee expected back 2027-07-01
       R.Dillingham (CHI) : Wrist expected back 2026-11-06
       D.Eubanks (NYK) : Pectoral expected back 2027-01-01
+  statut i | chances ce Gameday 100 | prochain 25 : 3 joueurs
+      F.VanVleet (HOU) : Knee expected back 2026-11-02
+      L.James (PHI) : Back expected back 2026-11-02
+      J.Embiid (PHI) : Foot expected back 2026-11-02
   statut d | chances ce Gameday 75 | prochain 75 : 3 joueurs
       Q.Post (MEM) : Ankle expected back 2026-10-31
       T.Jerome (MEM) : Back expected back 2026-10-31
       S.Pippen Jr. (MEM) : Back expected back 2026-10-31
-  statut d | chances ce Gameday 100 | prochain 75 : 2 joueurs
-      L.James (PHI) : Rest expected back 2026-10-31
-      J.Embiid (PHI) : Rest expected back 2026-10-31
-  statut i | chances ce Gameday 25 | prochain 75 : 1 joueurs
-      A.Sengun (HOU) : Back expected back 2026-10-31
   statut i | chances ce Gameday 75 | prochain 25 : 1 joueurs
       O.Toppin (IND) : Back expected back 2026-11-01
   statut i | chances ce Gameday 25 | prochain 0 : 1 joueurs
       C.Holmgren (OKC) : Knee expected back 2027-01-02
+  statut d | chances ce Gameday 25 | prochain 75 : 1 joueurs
+      T.Fall (PHI) : Quadriceps expected back 2026-10-31
 
 ======================================================================
 LIGUE FIRST TEAM
