@@ -5865,12 +5865,12 @@
 "b2b_presence": 0.83,
 "presence": 0.83,
 "age": 25,
-"rang_poste": 6,
+"rang_poste": 5,
 "poste_espn": "PF",
 "devant": [
-"Chet Holmgren",
 "Kenrich Williams",
-"Alex Caruso"
+"Alex Caruso",
+"Jaylin Williams"
 ]
 },
 "289": {
@@ -8131,9 +8131,13 @@
 "presence": 0.88,
 "age": 24,
 "min_proj": 28.9,
-"rang_poste": 1,
+"rang_poste": 6,
 "poste_espn": "PF",
-"devant": []
+"devant": [
+"Kenrich Williams",
+"Alex Caruso",
+"Jaylin Williams"
+]
 },
 "397": {
 "nom": "K.Williams",
@@ -8151,11 +8155,9 @@
 "presence": 0.91,
 "age": 31,
 "min_proj": 15.4,
-"rang_poste": 2,
+"rang_poste": 1,
 "poste_espn": "PF",
-"devant": [
-"Chet Holmgren"
-],
+"devant": [],
 "presaison_matchs": 4,
 "presaison_min": 16.5
 },
@@ -8175,7 +8177,7 @@
 "presence": 0.88,
 "age": 25,
 "min_proj": 32.8,
-"rang_poste": 9,
+"rang_poste": 8,
 "poste_espn": "SF",
 "devant": [
 "Ajay Mitchell",
@@ -8288,12 +8290,12 @@
 "b2b_presence": 0.6,
 "presence": 0.59,
 "age": 24,
-"rang_poste": 5,
+"rang_poste": 4,
 "poste_espn": "PF",
 "devant": [
-"Chet Holmgren",
 "Kenrich Williams",
-"Alex Caruso"
+"Alex Caruso",
+"Jaylin Williams"
 ],
 "presaison_matchs": 5,
 "presaison_min": 23.6
@@ -9623,9 +9625,13 @@
 "presence": 0.74,
 "age": 27,
 "min_proj": 29.5,
-"rang_poste": 1,
+"rang_poste": 6,
 "poste_espn": "PG",
-"devant": [],
+"devant": [
+"Damian Lillard",
+"Scoot Henderson",
+"Jrue Holiday"
+],
 "presaison_matchs": 4,
 "presaison_min": 20.8
 },
@@ -9687,11 +9693,10 @@
 "presence": 0.97,
 "age": 26,
 "min_proj": 25.7,
-"rang_poste": 3,
-"poste_espn": "SF",
+"rang_poste": 2,
+"poste_espn": "SG",
 "devant": [
-"Toumani Camara",
-"Sidy Cissoko"
+"Jrue Holiday"
 ],
 "presaison_matchs": 4,
 "presaison_min": 16.0
@@ -9709,12 +9714,12 @@
 "b2b_presence": 0.6,
 "presence": 0.6,
 "age": 24,
-"rang_poste": 8,
+"rang_poste": 6,
 "poste_espn": "SG",
 "devant": [
-"Damian Lillard",
 "Jrue Holiday",
-"Ja Morant"
+"Vit Krejci",
+"Damian Lillard"
 ],
 "presaison_matchs": 1,
 "presaison_min": 12.0
@@ -9735,11 +9740,9 @@
 "presence": 0.94,
 "age": 36,
 "min_proj": 28.2,
-"rang_poste": 2,
+"rang_poste": 1,
 "poste_espn": "SG",
-"devant": [
-"Damian Lillard"
-],
+"devant": [],
 "presaison_matchs": 3,
 "presaison_min": 18.3
 },
@@ -9757,7 +9760,7 @@
 "b2b_n": 0,
 "min_proj": 31.4,
 "rang_poste": 1,
-"poste_espn": "SG",
+"poste_espn": "PG",
 "devant": [],
 "presaison_matchs": 3,
 "presaison_min": 22.7
@@ -9851,7 +9854,7 @@
 "rang_poste": 2,
 "poste_espn": "PG",
 "devant": [
-"Ja Morant"
+"Damian Lillard"
 ],
 "presaison_matchs": 4,
 "presaison_min": 17.5
@@ -9988,12 +9991,12 @@
 "malus_b2b": 0.955,
 "age": 25,
 "b2b_n": 0,
-"rang_poste": 8,
-"poste_espn": "SF",
+"rang_poste": 7,
+"poste_espn": "SG",
 "devant": [
-"Toumani Camara",
-"Sidy Cissoko",
-"Vit Krejci"
+"Jrue Holiday",
+"Vit Krejci",
+"Damian Lillard"
 ],
 "presaison_matchs": 3,
 "presaison_min": 11.3
@@ -11874,6 +11877,6 @@
 "_source": "saison régulière 2025-26 (ESPN), mis à jour le 20/10/2026"
 },
 "roles": {
-"_source": "ESPN (hiérarchie + présaison), mis à jour le 31/10/2026"
+"_source": "ESPN (hiérarchie + présaison), mis à jour le 01/11/2026"
 }
 }
