@@ -165,19 +165,20 @@ Par prix :
   < 7 M$                  70 matchs | 0 min : 20 | biais  -6.1 | réel/projeté 0.73 | minutes 14.9
   ≥ 15 M$                149 matchs | 0 min :  9 | biais  -3.7 | réel/projeté 0.93 | minutes 33.0
 Par rang dans la hiérarchie ESPN (1 = titulaire) :
-  rang 1                 670 matchs | 0 min : 59 | biais  -1.8 | réel/projeté 0.95 | minutes 29.7
-  rang 2                 358 matchs | 0 min : 50 | biais  -4.8 | réel/projeté 0.81 | minutes 20.5
-  rang 3                  33 matchs | 0 min : 10 | biais -11.6 | réel/projeté 0.49 | minutes 14.4
+  rang 1                 670 matchs | 0 min : 60 | biais  -1.8 | réel/projeté 0.95 | minutes 29.7
+  rang 2                 349 matchs | 0 min : 48 | biais  -4.6 | réel/projeté 0.82 | minutes 20.5
+  rang 3                  38 matchs | 0 min : 10 | biais -12.5 | réel/projeté 0.49 | minutes 14.6
   rang 4                  15 matchs | 0 min : 11 | biais  -9.7 | réel/projeté 0.61 | minutes 11.5
-  rang 5                  23 matchs | 0 min : 12 | biais  -2.7 | réel/projeté 0.92 | minutes 22.5
-  rang 6                  33 matchs | 0 min : 24 | biais -10.3 | réel/projeté 0.63 | minutes 13.6
-  rang 8                  14 matchs | 0 min :  7 | biais  -2.0 | réel/projeté 0.96 | minutes 32.3
+  rang 5                  23 matchs | 0 min : 11 | biais  -3.4 | réel/projeté 0.89 | minutes 23.2
+  rang 6                  37 matchs | 0 min : 26 | biais  -7.8 | réel/projeté 0.75 | minutes 17.2
+  rang 8                   9 matchs | 0 min :  5 | biais  +4.9 | réel/projeté 1.10 | minutes 33.2
+  rang 9                   5 matchs | 0 min :  2 | biais -11.2 | réel/projeté 0.73 | minutes 31.0
   rang inconnu            25 matchs | 0 min : 15 | biais  -8.7 | réel/projeté 0.70 | minutes 21.8
 Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : 196 sur 1179
   - L.Doncic (LAL) (event 9) : projeté 65.5, statut actuel a, news : -
   - J.Embiid (PHI) (event 6) : projeté 48.5, statut actuel a, news : -
   - A.Edwards (MIN) (event 9) : projeté 48.4, statut actuel i, news : Knee expected back 2026-12-21
-  - A.Sengun (HOU) (event 9) : projeté 47.9, statut actuel i, news : Back expected back 2026-10-30
+  - A.Sengun (HOU) (event 9) : projeté 47.9, statut actuel i, news : Back expected back 2026-10-31
   - C.Flagg (DAL) (event 5) : projeté 47.0, statut actuel a, news : -
   - L.James (PHI) (event 5) : projeté 46.1, statut actuel a, news : -
   - K.Leonard (TOR) (event 6) : projeté 45.6, statut actuel i, news : Knee expected back 2026-11-23
@@ -216,6 +217,11 @@ CALIBRATION DU MODÈLE (points réels / points attendus, par rang)
   rang 2   :  447 joueurs-matchs | réel    7902 / attendu    7549 = 1.05 → facteur appliqué 1.044
   rang 3+  :  622 joueurs-matchs | réel    3015 / attendu    3745 = 0.81 → facteur appliqué 0.824
   rang ?   :  129 joueurs-matchs | réel     287 / attendu     923 = 0.31 → facteur appliqué 0.750
+Erreur restante du modèle par tranche de prix (après la calibration par rang) :
+  10-15 M$  :  320 joueurs-matchs | réel    9812 / attendu   10015 = 0.98 → facteur appliqué 0.981
+  7-10 M$   :  432 joueurs-matchs | réel    8857 / attendu    8437 = 1.05 → facteur appliqué 1.048
+  < 7 M$    :  843 joueurs-matchs | réel    4699 / attendu    5319 = 0.88 → facteur appliqué 0.892
+  ≥ 15 M$   :  114 joueurs-matchs | réel    5226 / attendu    5248 = 1.00 → facteur appliqué 0.996
 
 Vérification du barème (points du jeu vs formule des projections) :
   Statistiques fournies par le jeu : ['assists', 'blocks', 'in_dreamteam', 'minutes', 'played', 'points_scored', 'rebounds', 'steals', 'total_points']
@@ -230,16 +236,16 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       M.Uzan (BOS) : -
       N.Pringle (BKN) : -
       P.Connaughton (CHA) : -
-  statut i | chances ce Gameday 25 | prochain 25 : 45 joueurs
-      E.Dëmin (BKN) : Leg expected back 2026-11-07
-      T.Bilodeau (BKN) : Shoulder expected back 2026-11-01
-      G.Williams (CHA) : Hamstring expected back 2026-11-02
-      K.Knueppel (CHA) : Hamstring expected back 2026-11-02
-  statut i | chances ce Gameday 0 | prochain 0 : 37 joueurs
+  statut i | chances ce Gameday 0 | prochain 0 : 38 joueurs
       D.Carter (BOS) : Illness expected back 2026-11-08
       K.Boswell (CHA) : Knee expected back 2026-11-02
       N.Claxton (CHI) : Hamstring expected back 2026-11-04
       N.Tomlin (CLE) : Back expected back 2026-11-16
+  statut i | chances ce Gameday 25 | prochain 25 : 38 joueurs
+      E.Dëmin (BKN) : Leg expected back 2026-11-07
+      T.Bilodeau (BKN) : Shoulder expected back 2026-11-01
+      G.Williams (CHA) : Hamstring expected back 2026-11-02
+      K.Knueppel (CHA) : Hamstring expected back 2026-11-02
   statut u | chances ce Gameday 100 | prochain 100 : 13 joueurs
       I.McKneely (ATL) : -
       J.Poulakidas (DAL) : -
@@ -250,31 +256,24 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       H.Veesaar (ATL) : Knee expected back 2027-07-01
       R.Dillingham (CHI) : Wrist expected back 2026-11-06
       D.Eubanks (NYK) : Pectoral expected back 2027-01-01
-  statut d | chances ce Gameday 75 | prochain 75 : 5 joueurs
-      D.Schröder (CHA) : Foot expected back 2026-10-30
-      J.Smith (CHI) : Finger expected back 2026-10-30
-      A.Nesmith (IND) : Hamstring expected back 2026-10-30
-      A.Nembhard (IND) : Neck expected back 2026-10-30
-  statut d | chances ce Gameday 100 | prochain 75 : 3 joueurs
-      D.Swain (CHI) : Back expected back 2026-10-30
-      O.Toppin (IND) : Back expected back 2026-10-30
-      K.Towns (NYK) : Wrist expected back 2026-10-30
-  statut d | chances ce Gameday None | prochain 75 : 2 joueurs
-      N.Clowney (BKN) : Illness expected back 2026-10-30
+  statut d | chances ce Gameday 75 | prochain 75 : 3 joueurs
       Q.Post (MEM) : Ankle expected back 2026-10-31
-  statut i | chances ce Gameday 75 | prochain 25 : 2 joueurs
-      J.Tyson (CLE) : Ankle expected back 2026-11-02
-      R.Williams III (POR) : Knee expected back 2026-10-31
-  statut i | chances ce Gameday 100 | prochain 0 : 1 joueurs
-      J.Morant (POR) : Hamstring expected back 2026-12-01
+      T.Jerome (MEM) : Back expected back 2026-10-31
+      S.Pippen Jr. (MEM) : Back expected back 2026-10-31
+  statut i | chances ce Gameday 25 | prochain 75 : 1 joueurs
+      A.Sengun (HOU) : Back expected back 2026-10-31
+  statut i | chances ce Gameday 75 | prochain 25 : 1 joueurs
+      O.Toppin (IND) : Back expected back 2026-11-01
+  statut i | chances ce Gameday 25 | prochain 0 : 1 joueurs
+      C.Holmgren (OKC) : Knee expected back 2027-01-02
 
 ======================================================================
 LIGUE FIRST TEAM
 ======================================================================
-  Rang : 54 / 633 (+38 depuis la dernière journée) | total 1567 pts | dernière journée 193 pts
-  Écart avec le 1er : 491 pts
-  Écart avec le rang juste devant (53e) : 3 pts
-  Avance sur le rang juste derrière (56e) : 2 pts
-  Joueurs les plus présents chez les 53 équipes devant toi (Gameday 10) : Y.Lendeborg (GSW) 48, D.Acuff Jr. (SAC) 42, T.Jerome (MEM) 32, L.Doncic (LAL) 18, V.Wembanyama (SAS) 18, D.Sabonis (SAC) 16, W.Kessler (LAL) 13, J.Johnson (ATL) 13, M.Hezonja (CLE) 12, T.Brazile (DEN) 11, C.Wilson (CHI) 11, A.Mara (OKC) 11, P.Achiuwa (SAC) 10, A.Reaves (LAL) 10, B.Williams (GSW) 9
-  All-Star : déjà joué par 18 des 53 équipes devant toi (34 %) ; par Gameday : event 2 : 4, event 3 : 7, event 5 : 2, event 8 : 3, event 9 : 2
-  Wildcard : déjà joué par 29 des 53 équipes devant toi (55 %) ; par Gameday : event 2 : 3, event 4 : 4, event 6 : 4, event 7 : 14, event 8 : 2, event 9 : 2
+  Rang : 72 / 635 (-18 depuis la dernière journée) | total 1668 pts | dernière journée 101 pts
+  Écart avec le 1er : 571 pts
+  Écart avec le rang juste devant (71e) : 3 pts
+  Avance sur le rang juste derrière (73e) : 1 pts
+  Joueurs les plus présents chez les 71 équipes devant toi (Gameday 11) : Y.Lendeborg (GSW) 61, D.Acuff Jr. (SAC) 58, T.Jerome (MEM) 41, L.Doncic (LAL) 29, V.Wembanyama (SAS) 21, D.Sabonis (SAC) 18, W.Kessler (LAL) 16, A.Mara (OKC) 15, C.Wilson (CHI) 15, T.Brazile (DEN) 15, M.Hezonja (CLE) 14, J.Johnson (ATL) 14, C.Boozer (MEM) 13, T.da Silva (ORL) 13, T.Shannon Jr. (MIN) 13
+  All-Star : déjà joué par 21 des 71 équipes devant toi (30 %) ; par Gameday : event 2 : 4, event 3 : 7, event 5 : 2, event 8 : 3, event 9 : 3, event 10 : 2
+  Wildcard : déjà joué par 36 des 71 équipes devant toi (51 %) ; par Gameday : event 2 : 4, event 4 : 4, event 6 : 4, event 7 : 16, event 8 : 2, event 9 : 2, event 11 : 4
