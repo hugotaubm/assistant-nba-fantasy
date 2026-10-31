@@ -319,20 +319,28 @@ def groupe_rang(rang):
     return "1" if rang == 1 else "2" if rang == 2 else "3+" if rang else "?"
 
 
+def tranche_prix(cout):
+    """Tranche de prix pour la calibration (cout en dixièmes de M$, comme dans le jeu)."""
+    m = cout / 10
+    return "< 7 M$" if m < 7 else "7-10 M$" if m < 10 else "10-15 M$" if m < 15 else "≥ 15 M$"
+
+
 def lire_calibration(cfg):
-    """Facteurs calculés par bilan.py : points réels / points projetés par le modèle, par groupe de rang."""
+    """Facteurs calculés par bilan.py : points réels / points projetés par le modèle, par groupe de rang
+    (appliqués à la projection d'avant-saison) et par tranche de prix (erreur restante, appliquée à tout)."""
     if not cfg.get("calibration_auto"):
-        return {}
+        return {}, {}
     try:
-        return json.loads((ICI / "rapport" / "calibration.json").read_text(encoding="utf-8"))["facteurs"]
+        c = json.loads((ICI / "rapport" / "calibration.json").read_text(encoding="utf-8"))
+        return c["facteurs"], c.get("prix", {})
     except Exception:
-        return {}
+        return {}, {}
 
 
 def projeter(boot, cfg, saison_commencee, saison=None):
     priors = json.loads((ICI / "priors.json").read_text(encoding="utf-8"))["joueurs"]
     equipes = {t["id"]: t["short_name"] for t in boot["teams"]}
-    calibration = lire_calibration(cfg)
+    calibration, calib_prix = lire_calibration(cfg)
     joueurs = {}
     for e in boot["elements"]:
         pid = e["id"]
@@ -381,7 +389,9 @@ def projeter(boot, cfg, saison_commencee, saison=None):
                         res = (1 - cfg["poids_forme"]) * res + cfg["poids_forme"] * forme
             return res * cfg["ajustements"].get(e["web_name"], 1.0)
         proj_brut = melange(prior)
-        proj = melange(prior * facteur)
+        # erreur restante du modèle par tranche de prix (bilan.py), sur la projection entière
+        fprix = calib_prix.get(tranche_prix(e["now_cost"]), 1.0)
+        proj = melange(prior * facteur) * fprix
         calib = proj / proj_brut if proj_brut else 1.0   # effet réel de la calibration sur la projection
         # Hiérarchie de l'équipe (ESPN) : en fin de rotation, risque de ne pas entrer en jeu
         if rang and rang >= 4:
@@ -417,7 +427,7 @@ def projeter(boot, cfg, saison_commencee, saison=None):
                             equipe_id=e["team"], equipe=equipes[e["team"]], poste=e["element_type"],
                             prix=e["now_cost"], proj=proj, dispo=dispo, dispo_prochain=dispo_prochain, fiabilite=fiab, b2b=b2b, retour=retour, statut=statut,
                             news=news, g=g_cur, possede=float(e.get("selected_by_percent") or 0),
-                            rang=grp, calib=calib, rang_poste=v.get("rang_poste"), min_proj=v.get("min_proj"))
+                            rang=grp, calib=calib, fprix=fprix, rang_poste=v.get("rang_poste"), min_proj=v.get("min_proj"))
     return joueurs
 
 
@@ -429,7 +439,8 @@ def enregistrer_projections(ev, joueurs, joue):
     for pid, p in joueurs.items():
         v = ev_jour(p, ev["id"], joue, date)
         if v > 0:
-            proj[str(pid)] = [round(v / p["calib"], 2), p["rang"]]
+            # [sans calibration, rang, avec la calibration par rang mais sans celle par prix, tranche]
+            proj[str(pid)] = [round(v / p["calib"], 2), p["rang"], round(v / p["fprix"], 2), tranche_prix(p["prix"])]
     dossier = ICI / "rapport" / "projections"
     dossier.mkdir(parents=True, exist_ok=True)
     (dossier / f"{ev['id']}.json").write_text(json.dumps(

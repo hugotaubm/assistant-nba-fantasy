@@ -26,6 +26,11 @@ CALIB_K = 400                  # pts projetés « fictifs » à 100 % : environ 
 CALIB_MIN, CALIB_MAX = 0.75, 1.15
 
 
+def tranche(cout):
+    m = cout / 10
+    return "< 7 M$" if m < 7 else "7-10 M$" if m < 10 else "10-15 M$" if m < 15 else "≥ 15 M$"
+
+
 def projections_modele(event_id):
     try:
         return json.loads((ICI / "rapport" / "projections" / f"{event_id}.json").read_text(encoding="utf-8"))["projections"]
@@ -85,6 +90,11 @@ def main():
     tous = []          # (pid, event, proj, réel, minutes, points du jeu, points formule)
     soirees = []       # tes soirées, pour le graphique de la page (rapport/soirees.json)
     calib = {}         # groupe → [réel, projeté par le modèle, matchs]
+    calib_prix = {}    # tranche de prix → [réel, projeté par le modèle (calibré par rang), matchs]
+    try:
+        facteurs_rang = json.loads((ICI / "rapport" / "calibration.json").read_text(encoding="utf-8"))["facteurs"]
+    except Exception:
+        facteurs_rang = {}
     exemple = None
     print("=" * 70)
     print("BILAN DES GAMEDAYS JOUÉS")
@@ -97,10 +107,23 @@ def main():
         equipes_jouent = {f["team_h"] for f in fixtures} | {f["team_a"] for f in fixtures}
         modele = projections_modele(e["id"])
         if modele:
-            for pid_s, (v, grp) in modele.items():
+            for pid_s, val in modele.items():
+                v, grp = val[0], val[1]
+                reel_ = stats.get(int(pid_s), {}).get("total_points", 0) / 10
                 c = calib.setdefault(grp, [0.0, 0.0, 0])
-                c[0] += stats.get(int(pid_s), {}).get("total_points", 0) / 10
+                c[0] += reel_
                 c[1] += v
+                c[2] += 1
+                # erreur restante par prix : projection avec la calibration par rang (anciens fichiers : estimée)
+                if len(val) >= 4:
+                    v_rang, tr = val[2], val[3]
+                elif int(pid_s) in el:
+                    v_rang, tr = v * facteurs_rang.get(grp, 1.0), tranche(el[int(pid_s)]["now_cost"])
+                else:
+                    continue
+                c = calib_prix.setdefault(tr, [0.0, 0.0, 0])
+                c[0] += reel_
+                c[1] += v_rang
                 c[2] += 1
         for pid, s in stats.items():
             if pid in el and el[pid]["team"] in equipes_jouent:
@@ -209,9 +232,17 @@ def main():
         facteurs[grp] = round(f, 3)
         print(f"  rang {grp:<3} : {n:>4} joueurs-matchs | réel {r:7.0f} / attendu {pr_:7.0f} = {r / pr_ if pr_ else 0:.2f} "
               f"→ facteur appliqué {f:.3f}")
+    prix_f = {}
+    print("Erreur restante du modèle par tranche de prix (après la calibration par rang) :")
+    for tr, (r, pr_, n) in sorted(calib_prix.items()):
+        f = min(CALIB_MAX, max(CALIB_MIN, (r + CALIB_K) / (pr_ + CALIB_K)))
+        prix_f[tr] = round(f, 3)
+        print(f"  {tr:<9} : {n:>4} joueurs-matchs | réel {r:7.0f} / attendu {pr_:7.0f} = {r / pr_ if pr_ else 0:.2f} "
+              f"→ facteur appliqué {f:.3f}")
     if facteurs:
         (ICI / "rapport" / "calibration.json").write_text(json.dumps(
             {"facteurs": facteurs, "detail": {g: [round(a, 1), round(b, 1), n] for g, (a, b, n) in calib.items()},
+             "prix": prix_f, "detail_prix": {g: [round(a, 1), round(b, 1), n] for g, (a, b, n) in calib_prix.items()},
              "k": CALIB_K}, ensure_ascii=False), encoding="utf-8")
     else:
         print("  Pas encore de projections du modèle enregistrées : la calibration démarre au prochain Gameday.")
