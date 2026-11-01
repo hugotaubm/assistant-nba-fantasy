@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-01T05:47:58.062471+00:00",
+ "lu": "2026-11-01T17:38:09.958721+00:00",
  "joueurs": {
   "jock landale": {
    "nom": "Jock Landale",
@@ -39,12 +39,12 @@
   },
   "mitchell robinson": {
    "nom": "Mitchell Robinson",
-   "statut": "Day-To-Day",
+   "statut": "Out",
    "blessure": "Other Rest",
-   "retour_espn": "2026-11-01",
+   "retour_espn": "2026-11-02",
    "retour_commentaire": null,
-   "commentaire": "Robinson (rest) is questionable for Sunday's game in Orlando, Jay King of The Athletic reports.",
-   "date": "2026-10-31"
+   "commentaire": "Robinson (rest) has been ruled out for Sunday's game against the Magic.",
+   "date": "2026-11-01"
   },
   "devin carter": {
    "nom": "Devin Carter",
@@ -118,6 +118,15 @@
    "commentaire": "Boswell (knee) is out for Wednesday's season opener against the Nets.",
    "date": "2026-10-20"
   },
+  "nic claxton": {
+   "nom": "Nic Claxton",
+   "statut": "Out",
+   "blessure": "Leg Hamstring",
+   "retour_espn": "2026-11-04",
+   "retour_commentaire": null,
+   "commentaire": "Claxton (hamstring) was a full participant in Sunday's practice, K.C. Johnson of Chicago Sports Network.",
+   "date": "2026-11-01"
+  },
   "dailyn swain": {
    "nom": "Dailyn Swain",
    "statut": "Day-To-Day",
@@ -126,15 +135,6 @@
    "retour_commentaire": null,
    "commentaire": "Swain (back) has been ruled out for Friday's game against Boston.",
    "date": "2026-10-31"
-  },
-  "nic claxton": {
-   "nom": "Nic Claxton",
-   "statut": "Out",
-   "blessure": "Leg Hamstring",
-   "retour_espn": "2026-11-04",
-   "retour_commentaire": "2026-11-09",
-   "commentaire": "Claxton (hamstring) participated in individual drills Monday morning and hopes to join the team for practice next week, Joe Cowley of the Chicago Sun-Times reports.",
-   "date": "2026-10-26"
   },
   "jaylon tyson": {
    "nom": "Jaylon Tyson",
@@ -302,10 +302,19 @@
    "nom": "Steven Adams",
    "statut": "Out",
    "blessure": "Right Leg Calf",
-   "retour_espn": "2026-11-02",
+   "retour_espn": "2026-11-09",
    "retour_commentaire": "2026-11-02",
    "commentaire": "Head coach Ime Udoka said Monday that Adams could be out \"a week or two\" due to his right soleus strain, Lachard Binkley of SI.com reports.",
    "date": "2026-10-26"
+  },
+  "t j mcconnell": {
+   "nom": "T.J. McConnell",
+   "statut": "Out",
+   "blessure": "Right Leg Hamstring",
+   "retour_espn": "2026-11-02",
+   "retour_commentaire": null,
+   "commentaire": "Indiana recalled McConnell (hamstring) from the G League's Noblesville Boom on Saturday.",
+   "date": "2026-11-01"
   },
   "ivica zubac": {
    "nom": "Ivica Zubac",
@@ -334,15 +343,6 @@
    "commentaire": "Toppin (back) is questionable for Sunday's game against the Nets.",
    "date": "2026-10-31"
   },
-  "t j mcconnell": {
-   "nom": "T.J. McConnell",
-   "statut": "Out",
-   "blessure": "Right Leg Hamstring",
-   "retour_espn": "2026-11-02",
-   "retour_commentaire": null,
-   "commentaire": "McConnell (hamstring) is practicing in the G League at Noblesville Boom training camp, per Alex Golden of SI.com.",
-   "date": "2026-10-30"
-  },
   "johnny furphy": {
    "nom": "Johnny Furphy",
    "statut": "Out",
@@ -370,15 +370,6 @@
    "commentaire": "Haliburton (hamstring) will miss at least the next two weeks of action, Shams Charania of ESPN reports.",
    "date": "2026-10-28"
   },
-  "yanic konan niederhauser": {
-   "nom": "Yanic Konan Niederhauser",
-   "statut": "Out",
-   "blessure": "Right Leg Foot",
-   "retour_espn": "2026-11-08",
-   "retour_commentaire": null,
-   "commentaire": "Niederhauser (foot) had his third-year team option picked up Thursday by the Clippers, Ohm Youngmisuk of ESPN.com reports.",
-   "date": "2026-10-29"
-  },
   "max strus": {
    "nom": "Max Strus",
    "statut": "Out",
@@ -386,15 +377,6 @@
    "retour_espn": "2026-11-08",
    "retour_commentaire": "2026-11-05",
    "commentaire": "Strus (foot) is making progress but is set to miss at least one more week, Ohm Youngmisuk of ESPN.com reports.",
-   "date": "2026-10-29"
-  },
-  "brandon ingram": {
-   "nom": "Brandon Ingram",
-   "statut": "Out",
-   "blessure": "Right Leg Achilles",
-   "retour_espn": "2026-11-08",
-   "retour_commentaire": "2026-11-05",
-   "commentaire": "Ingram (Achilles) is making progress but is set to miss at least one more week, Ohm Youngmisuk of ESPN.com reports.",
    "date": "2026-10-29"
   },
   "bradley beal": {
@@ -415,6 +397,15 @@
    "commentaire": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic.",
    "date": "2026-08-26"
   },
+  "adou thiero": {
+   "nom": "Adou Thiero",
+   "statut": "Out",
+   "blessure": "Left Leg Knee",
+   "retour_espn": "2026-11-09",
+   "retour_commentaire": null,
+   "commentaire": "Thiero (knee) has been ruled out for Sunday's game against the Raptors.",
+   "date": "2026-11-01"
+  },
   "ziaire williams": {
    "nom": "Ziaire Williams",
    "statut": "Day-To-Day",
@@ -423,15 +414,6 @@
    "retour_commentaire": null,
    "commentaire": "Williams (foot) is questionable for Sunday's game against the Raptors, Law Murray of The Athletic reports.",
    "date": "2026-11-01"
-  },
-  "adou thiero": {
-   "nom": "Adou Thiero",
-   "statut": "Out",
-   "blessure": "Left Leg Knee",
-   "retour_espn": "2026-11-01",
-   "retour_commentaire": null,
-   "commentaire": "Thiero (knee) has been ruled out for Friday's game against the Warriors.",
-   "date": "2026-10-30"
   },
   "quinten post": {
    "nom": "Quinten Post",

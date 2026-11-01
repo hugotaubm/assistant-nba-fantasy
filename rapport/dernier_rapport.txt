@@ -1,4 +1,4 @@
-Calcul lancé le 01/11/2026 à 06:47:56
+Calcul lancé le 01/11/2026 à 18:38:07
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
@@ -12,8 +12,8 @@ Optimisation (jusqu'à deux minutes)…
 📅 Jours creux du plan conseillé — semaine suivante : Day 3 1 vide(s) | semaine d'après (Gameweek 4, sans transfert) : 30 matchs pour ton effectif, 12 place(s) vide(s) ; joueurs dispo par jour : 2-7-7-0-8-3-3
 🧩 Combler les 1 place(s) vide(s) de la semaine suivante : impossible avec tes transferts (pas assez de joueurs qui jouent ces jours-là dans ton budget).
 🛡️ Effet adversaire (points fantasy concédés par poste, déjà dans les prévisions) — face aux arrières, les plus perméables : LAC +10 %, GSW +6 %, PHX +4 % ; les plus dures : ATL -9 %, DET -8 %, WAS -7 % | face aux intérieurs, les plus perméables : ATL +11 %, CHI +7 %, SAC +7 % ; les plus dures : LAC -9 %, SAS -6 %, LAL -5 %
-📉 Vont perdre des minutes (retour d'un coéquipier blessé) : K.Dunn (LAC) -22 % dès le 08/11 (retour : B.Beal, M.Strus) ; D.Schröder (CHA) -15 % dès le 02/11 (retour : C.White, K.Knueppel) ; Z.Risacher (DAL) -15 % dès le 02/11 (retour : D.Lively II, S.Aldama) ; J.Walker (IND) -15 % dès le 02/11 (retour : I.Zubac) ; D.Gafford (DAL) -12 % dès le 02/11 (retour : D.Lively II, S.Aldama) ; M.Diabate (CHA) -12 % dès le 02/11 (retour : G.Williams) ; L.Shamet (NYK) -11 % dès le 04/11 (retour : J.Alvarado) ; J.Kuminga (MIN) -10 % dès le 02/11 (retour : R.Gobert)
-📈 Profitent d'une blessure (minutes libérées) : C.Bassey (GSW) +60 % sur 4 j. (absent : D.Green, J.Butler, K.Porzingis) ; T.McConnell (IND) +60 % sur 3 j. (absent : B.Sheppard, J.Furphy, T.Haliburton) ; K.Ellis (BKN) +50 % sur 3 j. (absent : E.Dëmin, M.Brown Jr.) ; D.Melton (GSW) +47 % sur 4 j. (absent : M.Moody, S.Curry) ; B.Hyland (MIN) +47 % sur 4 j. (absent : A.Edwards, D.DiVincenzo) ; G.Santos (GSW) +43 % sur 4 j. (absent : D.Green, J.Butler, K.Porzingis) ; I.Jackson (LAC) +42 % sur 3 j. (absent : B.Ingram, J.Broome) ; N.Traore (BKN) +37 % sur 3 j. (absent : E.Dëmin, M.Brown Jr.)
+📉 Vont perdre des minutes (retour d'un coéquipier blessé) : K.Dunn (LAC) -22 % dès le 08/11 (retour : B.Beal, M.Strus) ; D.Schröder (CHA) -15 % dès le 02/11 (retour : C.White, K.Knueppel) ; Z.Risacher (DAL) -15 % dès le 02/11 (retour : D.Lively II, S.Aldama) ; N.Essengue (CHI) -15 % dès le 04/11 (retour : N.Claxton) ; J.Walker (IND) -15 % dès le 02/11 (retour : I.Zubac) ; D.Gafford (DAL) -12 % dès le 02/11 (retour : D.Lively II, S.Aldama) ; J.Smith (CHI) -12 % dès le 04/11 (retour : N.Claxton) ; M.Diabate (CHA) -12 % dès le 02/11 (retour : G.Williams)
+📈 Profitent d'une blessure (minutes libérées) : C.Bassey (GSW) +60 % sur 4 j. (absent : D.Green, J.Butler, K.Porzingis) ; T.McConnell (IND) +60 % sur 3 j. (absent : B.Sheppard, J.Furphy, T.Haliburton) ; K.Ellis (BKN) +50 % sur 3 j. (absent : E.Dëmin, M.Brown Jr.) ; D.Melton (GSW) +47 % sur 4 j. (absent : M.Moody, S.Curry) ; B.Hyland (MIN) +47 % sur 4 j. (absent : A.Edwards, D.DiVincenzo) ; G.Santos (GSW) +43 % sur 4 j. (absent : D.Green, J.Butler, K.Porzingis) ; N.Traore (BKN) +37 % sur 3 j. (absent : E.Dëmin, M.Brown Jr.) ; I.Hartenstein (OKC) +37 % sur 4 j. (absent : C.Holmgren)
 ⚠ ALERTES
   - T.Jerome (MEM) : Back expected back 2026-11-02 | ESPN (Day-To-Day) : Jerome (back) won't play in Saturday's game versus Sacramento, Chris Herrington of The Daily Memphian. (chance de jouer 85 %)
   - J.Johnson (ATL) : Ankle expected back 2026-11-02 | ESPN (Day-To-Day) : Johnson (ankle) did not return to Saturday's 121-99 loss to the Pelicans. He finished with 13 points (5-11 FG, 1-3 3Pt, 2-2 FT), seven rebounds, four assists an (chance de jouer 85 %)
@@ -46,15 +46,15 @@ Optimisation (jusqu'à deux minutes)…
 
 ▶ SEMAINE SUIVANTE, JOUR PAR JOUR (indicatif, avec les transferts prévus) : 1 place(s) vide(s) au total
   Day 1  deadline mar. 03/11 00h30 : J.Johnson, Y.Lendeborg (B2B), D.Lillard, D.Sabonis, D.Acuff Jr.  [~218 pts]
-  Day 2  deadline jeu. 05/11 00h30 : J.Tatum, K.Dunn, D.Lillard, D.Sabonis, D.Acuff Jr.  [~222 pts] ← après J.Johnson→J.Tatum
+  Day 2  deadline jeu. 05/11 00h30 : J.Tatum (C), K.Dunn, D.Lillard, D.Sabonis, D.Acuff Jr.  [~275 pts] ← après J.Johnson→J.Tatum
   Day 3  deadline ven. 06/11 02h30 : Y.Lendeborg, D.Mitchell (B2B), W.Carter Jr., T.da Silva  (1 place(s) vide(s))  [~133 pts] ← après K.Dunn→D.Mitchell
   Day 4  deadline sam. 07/11 00h30 : J.Tatum, T.Jerome, D.Lillard, D.Sabonis, D.Acuff Jr.  [~213 pts]
   Day 5  deadline sam. 07/11 22h30 : N.Traore, Y.Lendeborg, W.Carter Jr., T.da Silva, D.Lillard (B2B)  [~144 pts]
-  Day 6  deadline dim. 08/11 21h00 : J.Tatum (C), N.Traore (B2B), D.Mitchell, D.Sabonis, D.Acuff Jr.  [~258 pts]
+  Day 6  deadline dim. 08/11 21h00 : J.Tatum, N.Traore (B2B), D.Mitchell, D.Sabonis, D.Acuff Jr.  [~205 pts]
 
 Projection Gameweek (jours restants) : ~155 pts  |  sans transfert : ~155 pts
 Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) = non utilisé, mon équipe = my-team (connecté, à jour en direct)
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 01/11/2026 à 06:48:01 (code de sortie : 0)
+Terminé le 01/11/2026 à 18:38:17 (code de sortie : 0)

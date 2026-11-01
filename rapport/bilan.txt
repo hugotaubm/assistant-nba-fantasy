@@ -168,8 +168,8 @@ BILAN DES GAMEDAYS JOUÉS
   → Titulaires : 101.0 pts réels pour 157.9 projetés (-56.9) [projection du modèle].
   → Meilleur cinq possible après coup : 101.0 pts (hors capitaine), soit 0.0 pts laissés sur le banc.
 
---- Gameweek 2 - Day 6 : moyenne des joueurs 94.4 | meilleur 358.0
-  Ton score : 172.0 | banc : 0.0 | rang : 5042 | transferts : 0 (coût 0)
+--- Gameweek 2 - Day 6 : moyenne des joueurs 127.4 | meilleur 358.0
+  Ton score : 172.0 | banc : 0.0 | rang : 10513 | transferts : 0 (coût 0)
   TITULAIRE D.Lillard (POR)              26 min        réel  44.0 | projeté  36.8
   TITULAIRE D.Acuff Jr. (SAC)            37 min        réel  53.0 | projeté  40.0
   TITULAIRE T.Jerome (MEM)                0 min        réel   0.0 | projeté  37.0
@@ -265,12 +265,12 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       M.Uzan (BOS) : -
       N.Pringle (BKN) : -
       P.Connaughton (CHA) : -
-  statut i | chances ce Gameday 0 | prochain 0 : 39 joueurs
+  statut i | chances ce Gameday 0 | prochain 0 : 36 joueurs
       D.Carter (BOS) : Illness expected back 2026-11-08
       K.Boswell (CHA) : Knee expected back 2026-11-02
-      N.Claxton (CHI) : Hamstring expected back 2026-11-04
       N.Tomlin (CLE) : Back expected back 2026-11-16
-  statut i | chances ce Gameday 25 | prochain 25 : 35 joueurs
+      J.Strawther (DEN) : Knee expected back 2026-11-29
+  statut i | chances ce Gameday 25 | prochain 25 : 34 joueurs
       E.Dëmin (BKN) : Leg expected back 2026-11-07
       T.Bilodeau (BKN) : Shoulder expected back 2026-11-06
       G.Williams (CHA) : Hamstring expected back 2026-11-02
@@ -285,31 +285,35 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       H.Veesaar (ATL) : Knee expected back 2027-07-01
       R.Dillingham (CHI) : Wrist expected back 2026-11-06
       D.Eubanks (NYK) : Pectoral expected back 2027-01-01
-  statut d | chances ce Gameday 100 | prochain 75 : 4 joueurs
-      J.Johnson (ATL) : Ankle expected back 2026-11-02
-      M.Robinson (BOS) : Rest expected back 2026-11-01
-      G.Santos (GSW) : Knee expected back 2026-11-01
-      A.Nesmith (IND) : Hamstring expected back 2026-11-01
+  statut i | chances ce Gameday 100 | prochain 25 : 4 joueurs
+      J.Landale (ATL) : Hip expected back 2026-11-02
+      M.Robinson (BOS) : Rest expected back 2026-11-02
+      M.Brown Jr. (BKN) : Rest expected back 2026-11-02
+      D.Murray (NOP) : Personal expected back 2026-11-02
   statut i | chances ce Gameday 75 | prochain 25 : 4 joueurs
       Q.Post (MEM) : Ankle expected back 2026-11-02
       T.Jerome (MEM) : Back expected back 2026-11-02
       S.Pippen Jr. (MEM) : Back expected back 2026-11-02
       R.Gobert (MIN) : Back expected back 2026-11-02
-  statut i | chances ce Gameday 100 | prochain 25 : 3 joueurs
-      J.Landale (ATL) : Hip expected back 2026-11-02
-      M.Brown Jr. (BKN) : Rest expected back 2026-11-02
-      D.Murray (NOP) : Personal expected back 2026-11-02
+  statut d | chances ce Gameday 100 | prochain 75 : 3 joueurs
+      J.Johnson (ATL) : Ankle expected back 2026-11-02
+      G.Santos (GSW) : Knee expected back 2026-11-01
+      A.Nesmith (IND) : Hamstring expected back 2026-11-01
   statut i | chances ce Gameday 100 | prochain 75 : 2 joueurs
       S.Curry (GSW) : Rest expected back 2026-11-02
       D.Green (GSW) : Rest expected back 2026-11-02
+  statut i | chances ce Gameday 0 | prochain 25 : 1 joueurs
+      N.Claxton (CHI) : Hamstring expected back 2026-11-04
+  statut i | chances ce Gameday 25 | prochain 0 : 1 joueurs
+      A.Thiero (LAL) : Knee expected back 2026-11-09
 
 ======================================================================
 LIGUE FIRST TEAM
 ======================================================================
-  Rang : 76 / 636 (0 depuis la dernière journée) | total 1840 pts | dernière journée 172 pts
+  Rang : 78 / 636 (-2 depuis la dernière journée) | total 1840 pts | dernière journée 172 pts
   Écart avec le 1er : 585 pts
-  Écart avec le rang juste devant (75e) : 0 pts
-  Avance sur le rang juste derrière (77e) : 1 pts
+  Écart avec le rang juste devant (77e) : 0 pts
+  Avance sur le rang juste derrière (79e) : 1 pts
   Joueurs les plus présents chez les 75 équipes devant toi (Gameday 12) : D.Acuff Jr. (SAC) 63, Y.Lendeborg (GSW) 63, T.Jerome (MEM) 39, V.Wembanyama (SAS) 29, L.Doncic (LAL) 24, D.Sabonis (SAC) 20, T.Maxey (PHI) 18, J.Johnson (ATL) 17, C.Boozer (MEM) 16, W.Kessler (LAL) 16, T.Shannon Jr. (MIN) 16, M.Hezonja (CLE) 15, A.Mara (OKC) 15, T.Brazile (DEN) 15, C.Wilson (CHI) 15
   All-Star : déjà joué par 23 des 75 équipes devant toi (31 %) ; par Gameday : event 2 : 4, event 3 : 7, event 5 : 1, event 8 : 3, event 9 : 3, event 10 : 3, event 11 : 1, event 12 : 1
   Wildcard : déjà joué par 40 des 75 équipes devant toi (53 %) ; par Gameday : event 2 : 4, event 4 : 4, event 6 : 5, event 7 : 16, event 8 : 2, event 9 : 2, event 10 : 1, event 11 : 4, event 12 : 2
