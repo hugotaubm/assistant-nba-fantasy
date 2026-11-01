@@ -341,6 +341,12 @@ def projeter(boot, cfg, saison_commencee, saison=None):
     priors = json.loads((ICI / "priors.json").read_text(encoding="utf-8"))["joueurs"]
     equipes = {t["id"]: t["short_name"] for t in boot["teams"]}
     calibration, calib_prix = lire_calibration(cfg)
+    try:   # blessures vues par ESPN (date de retour plus réaliste que celle du jeu)
+        import blessures as bl
+        espn = bl.blessures() if cfg.get("blessures_espn", True) else {}
+    except Exception as ex:
+        bl, espn = None, {}
+        print(f"  (blessures ESPN indisponibles : {ex!r})")
     joueurs = {}
     for e in boot["elements"]:
         pid = e["id"]
@@ -407,6 +413,17 @@ def projeter(boot, cfg, saison_commencee, saison=None):
                 retour = dt.date.fromisoformat(news.split("expected back")[1].strip()[:10])
             except ValueError:
                 pass
+        # ESPN : le jeu annonce souvent un retour « au prochain match » par défaut ; on garde la date la
+        # plus tardive (date ESPN ou durée lue dans le commentaire, ex. « out 2-3 weeks »)
+        info = espn.get(bl.cle(f"{e['first_name']} {e['second_name']}")) if espn else None
+        if info and statut != "a":
+            r_espn = bl.retour_estime(info)
+            if r_espn and r_espn > dt.date.today() and (retour is None or r_espn > retour):
+                retour = r_espn
+                if statut == "i" or statut == "d":
+                    news = f"{news} | ESPN : retour estimé le {r_espn:%d/%m}".strip(" |")
+            if info.get("commentaire"):
+                news = f"{news} | ESPN ({info.get('statut')}) : {info['commentaire'][:160]}".strip(" |")
         # Chances de jouer, d'après le rapport de blessures du jeu (paliers NBA : 0 out, 25 doubtful,
         # 50 questionable, 75 probable, 100 disponible) :
         #  - prochain Gameday : chance_of_playing_next_round telle quelle ;
