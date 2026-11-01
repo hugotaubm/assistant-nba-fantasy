@@ -7402,12 +7402,10 @@
 "b2b_presence": 0.92,
 "presence": 0.95,
 "age": 25,
-"rang_poste": 4,
+"rang_poste": 2,
 "poste_espn": "C",
 "devant": [
-"Yves Missi",
-"DeAndre Jordan",
-"Derik Queen"
+"Yves Missi"
 ],
 "presaison_matchs": 4,
 "presaison_min": 14.8
@@ -7616,10 +7614,11 @@
 "b2b_presence": 1.0,
 "presence": 0.73,
 "age": 38,
-"rang_poste": 2,
+"rang_poste": 3,
 "poste_espn": "C",
 "devant": [
-"Yves Missi"
+"Yves Missi",
+"Karlo Matkovic"
 ],
 "presaison_matchs": 1,
 "presaison_min": 4.0
@@ -9629,8 +9628,8 @@
 "poste_espn": "PG",
 "devant": [
 "Damian Lillard",
-"Scoot Henderson",
-"Jrue Holiday"
+"Jrue Holiday",
+"Deni Avdija"
 ],
 "presaison_matchs": 4,
 "presaison_min": 20.8
@@ -9696,7 +9695,7 @@
 "rang_poste": 2,
 "poste_espn": "SG",
 "devant": [
-"Jrue Holiday"
+"Scoot Henderson"
 ],
 "presaison_matchs": 4,
 "presaison_min": 16.0
@@ -9717,7 +9716,7 @@
 "rang_poste": 6,
 "poste_espn": "SG",
 "devant": [
-"Jrue Holiday",
+"Scoot Henderson",
 "Vit Krejci",
 "Damian Lillard"
 ],
@@ -9740,9 +9739,11 @@
 "presence": 0.94,
 "age": 36,
 "min_proj": 28.2,
-"rang_poste": 1,
-"poste_espn": "SG",
-"devant": [],
+"rang_poste": 2,
+"poste_espn": "PG",
+"devant": [
+"Damian Lillard"
+],
 "presaison_matchs": 3,
 "presaison_min": 18.3
 },
@@ -9851,11 +9852,9 @@
 "presence": 0.97,
 "age": 22,
 "min_proj": 27.0,
-"rang_poste": 2,
-"poste_espn": "PG",
-"devant": [
-"Damian Lillard"
-],
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
 "presaison_matchs": 4,
 "presaison_min": 17.5
 },
@@ -9994,7 +9993,7 @@
 "rang_poste": 7,
 "poste_espn": "SG",
 "devant": [
-"Jrue Holiday",
+"Scoot Henderson",
 "Vit Krejci",
 "Damian Lillard"
 ],
@@ -11877,6 +11876,6 @@
 "_source": "saison régulière 2025-26 (ESPN), mis à jour le 20/10/2026"
 },
 "roles": {
-"_source": "ESPN (hiérarchie + présaison), mis à jour le 01/11/2026"
+"_source": "ESPN (hiérarchie + présaison), mis à jour le 02/11/2026"
 }
 }
