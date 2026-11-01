@@ -33,9 +33,15 @@
   ],
   "joueurs_bloques": [],
   "ajustements": {},
-  "imposer_au_depart": ["V.Wembanyama"],
+  "imposer_au_depart": [
+    "V.Wembanyama"
+  ],
   "malus_back_to_back": 0.92,
-  "idees": [],
+  "idees": [
+    "J.Johnson>V.Wembanyama@3.1+T.da Silva>?@3.1",
+    "J.Johnson>L.Doncic@3.1+T.da Silva>?@3.1",
+    "J.Johnson>V.Wembanyama@3.2+K.Dunn>?@3.2"
+  ],
   "transferts_payants": false,
   "seuil_joker": 300,
   "seuil_joker_debut": 400,
