@@ -37,11 +37,7 @@
     "V.Wembanyama"
   ],
   "malus_back_to_back": 0.92,
-  "idees": [
-    "D.Lillard>L.Doncic@3.1+J.Johnson>?@3.1",
-    "D.Lillard>L.Doncic@3.1+D.Sabonis>?@3.1",
-    "T.Jerome>L.Doncic@3.1+J.Johnson>?@3.1"
-  ],
+  "idees": [],
   "transferts_payants": false,
   "seuil_joker": 300,
   "seuil_joker_debut": 400,
