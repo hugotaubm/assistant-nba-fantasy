@@ -285,7 +285,7 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       N.Tomlin (CLE) : Back expected back 2026-11-16
       J.Strawther (DEN) : Knee expected back 2026-11-29
       J.Duren (DET) : Hamstring expected back 2026-11-09
-  statut i | chances ce Gameday 25 | prochain 25 : 26 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 27 joueurs
       J.Landale (ATL) : Hip expected back 2026-11-04
       E.Dëmin (BKN) : Leg expected back 2026-11-07
       T.Bilodeau (BKN) : Shoulder expected back 2026-11-06
@@ -304,17 +304,17 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       J.Smith (CHI) : Finger expected back 2026-11-02
       T.Awaka (CHI) : Ankle expected back 2026-11-02
       P.Watson (CLE) : Hamstring expected back 2026-11-02
-      K.Irving (DAL) : Knee expected back 2026-11-04
+      K.Irving (DAL) : Knee expected back 2026-11-02
   statut u | chances ce Gameday 0 | prochain 0 : 9 joueurs
       M.Gueye (ATL) : Foot expected back 2026-11-20
       H.Veesaar (ATL) : Knee expected back 2027-07-01
       R.Dillingham (CHI) : Wrist expected back 2026-11-06
       D.Eubanks (NYK) : Pectoral expected back 2027-01-01
-  statut d | chances ce Gameday 25 | prochain 75 : 5 joueurs
+  statut d | chances ce Gameday 25 | prochain 75 : 4 joueurs
       N.Claxton (CHI) : Hamstring expected back 2026-11-02
       S.Aldama (DAL) : Knee expected back 2026-11-02
       A.Diallo (DEN) : Wrist expected back 2026-11-02
-      D.Murray (NOP) : Personal expected back 2026-11-02
+      J.Alvarado (NYK) : Ankle expected back 2026-11-02
   statut i | chances ce Gameday 25 | prochain 0 : 2 joueurs
       D.Lively II (DAL) : Foot expected back 2026-11-12
       T.Biberovic (DAL) : Heel expected back 2026-11-12
