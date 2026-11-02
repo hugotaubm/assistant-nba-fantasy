@@ -239,6 +239,63 @@ def wildcard(code_execution=None):
     print(f"POST titulaires : {code} | réponse : {str(rep)[:300]}")
 
 
+def transferts_plan(code_execution=None):
+    """Transferts gratuits conseillés avant la prochaine deadline (rapport/dernier_plan.json), sans chip.
+    Jamais de transfert payant : arrêt si les transferts gratuits restants ne suffisent pas."""
+    plan = json.loads((ICI / "rapport" / "dernier_plan.json").read_text(encoding="utf-8"))
+    boot = json.loads(urllib.request.urlopen(urllib.request.Request(API + "bootstrap-static/", headers=entetes()), timeout=60).read())
+    el = {e["id"]: e for e in boot["elements"]}
+    eid, mt = equipe_actuelle()
+    actuels = [p["element"] for p in mt["picks"]]
+    vente = {p["element"]: p.get("selling_price", el[p["element"]]["now_cost"]) for p in mt["picks"]}
+    t = mt.get("transfers") or {}
+    paires_ = [(o, i) for ev, o, i in plan.get("transferts", []) if ev == plan["prochaine"] and o in actuels and i not in actuels]
+    nom = lambda q: f"{el[q]['web_name']} ({el[q]['now_cost'] / 10:.1f} M$)"
+    print(f"Transferts conseillés avant {plan.get('prochaine_nom')} (calcul du {plan.get('calcul', '?')}) :")
+    for o, i in paires_:
+        print(f"  vendre {nom(o)} (revente {vente[o] / 10:.1f}) → acheter {nom(i)}")
+    erreurs = []
+    if not paires_:
+        erreurs.append("aucun transfert à faire")
+    gratuits = t.get("limit", 0) - t.get("made", 0) if t.get("status") == "cost" else (99 if t.get("status") == "unlimited" else 0)
+    print(f"  transferts gratuits restants : {gratuits} | état du site : {t}")
+    if len(paires_) > gratuits:
+        erreurs.append(f"{len(paires_)} transferts pour {gratuits} gratuit(s) : un transfert serait payant (-100)")
+    if any(el[o]["element_type"] != el[i]["element_type"] for o, i in paires_):
+        erreurs.append("un transfert change de poste")
+    cible = [q for q in actuels if q not in [o for o, _ in paires_]] + [i for _, i in paires_]
+    equipes = [el[q]["team"] for q in cible]
+    if max(equipes.count(x) for x in equipes) > 2:
+        erreurs.append("plus de 2 joueurs d'une même équipe NBA")
+    budget = t.get("bank", 0) + sum(vente[o] for o, _ in paires_) - sum(el[i]["now_cost"] for _, i in paires_)
+    print(f"  banque après : {budget / 10:.1f} M$")
+    if budget < 0:
+        erreurs.append(f"budget dépassé de {-budget / 10:.1f} M$")
+    for _, i in paires_:
+        if el[i]["status"] in ("i", "u", "s", "n"):
+            erreurs.append(f"{el[i]['web_name']} est indisponible ({el[i]['news']})")
+    envoi = {"chip": None, "entry": eid, "event": plan["prochaine"],
+             "transfers": [{"element_out": o, "selling_price": vente[o], "element_in": i, "purchase_price": el[i]["now_cost"]} for o, i in paires_]}
+    code_attendu = hashlib.sha1(json.dumps(envoi, sort_keys=True).encode()).hexdigest()[:6]
+    if erreurs:
+        print("❌ ARRÊT, rien n'est envoyé : " + " ; ".join(erreurs))
+        sys.exit(1)
+    if code_execution != code_attendu:
+        print(f"SIMULATION : rien n'est envoyé. Code d'exécution pour ces transferts exacts : {code_attendu}")
+        return
+    code, _, rep = appel("POST", "transfers/", envoi)
+    print(f"POST transferts : {code}" + ("" if code in (200, 201, 202) else f" | réponse : {str(rep)[:400]}"))
+    if code not in (200, 201, 202):
+        sys.exit(1)
+    _, mt2 = equipe_actuelle()
+    print(f"  état du site après : {mt2.get('transfers')}")
+    nouveaux = [p["element"] for p in mt2["picks"]]
+    print("Équipe sur le site = équipe conseillée :", sorted(nouveaux) == sorted(cible))
+    tit = [q for q in plan.get("titulaires", []) if q in nouveaux]
+    if len(tit) == 5:
+        titulaires(tit)
+
+
 if __name__ == "__main__":
     mode = sys.argv[1] if len(sys.argv) > 1 else "sonde"
     if mode == "sonde":
@@ -247,6 +304,8 @@ if __name__ == "__main__":
         test_sauvegarde()
     elif mode == "titulaires":
         titulaires([int(x) for x in sys.argv[2].split(",")])
+    elif mode == "transferts":
+        transferts_plan(sys.argv[2] if len(sys.argv) > 2 and sys.argv[2] else None)
     elif mode == "wildcard":
         wildcard(sys.argv[3] if len(sys.argv) > 3 and sys.argv[2] == "--executer" else None)
     else:
