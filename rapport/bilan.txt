@@ -183,8 +183,8 @@ BILAN DES GAMEDAYS JOUÉS
   → Titulaires : 172.0 pts réels pour 211.6 projetés (-39.6) [projection du modèle].
   → Meilleur cinq possible après coup : 172.0 pts (hors capitaine), soit 0.0 pts laissés sur le banc.
 
---- Gameweek 2 - Day 7 : moyenne des joueurs 66.0 | meilleur 379.0
-  Ton score : 192.0 | banc : 0.0 | rang : 2128 | transferts : 0 (coût 0)
+--- Gameweek 2 - Day 7 : moyenne des joueurs 89.1 | meilleur 379.0
+  Ton score : 192.0 | banc : 0.0 | rang : 3404 | transferts : 0 (coût 0)
   TITULAIRE N.Traore (BKN)               30 min        réel  33.0 | projeté  25.7
   TITULAIRE K.Dunn (LAC)                 26 min        réel  43.0 | projeté  37.9
   TITULAIRE Y.Lendeborg (GSW)            33 min        réel  56.0 | projeté  38.8
@@ -280,12 +280,12 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       M.Uzan (BOS) : -
       N.Pringle (BKN) : -
       P.Connaughton (CHA) : -
-  statut i | chances ce Gameday 0 | prochain 0 : 35 joueurs
+  statut i | chances ce Gameday 0 | prochain 0 : 34 joueurs
       D.Carter (BOS) : Illness expected back 2026-11-08
       N.Tomlin (CLE) : Back expected back 2026-11-16
       J.Strawther (DEN) : Knee expected back 2026-11-29
       J.Duren (DET) : Hamstring expected back 2026-11-09
-  statut i | chances ce Gameday 25 | prochain 25 : 30 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 27 joueurs
       J.Landale (ATL) : Hip expected back 2026-11-04
       M.Robinson (BOS) : Rest expected back 2026-11-02
       E.Dëmin (BKN) : Leg expected back 2026-11-07
@@ -305,10 +305,15 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       T.Awaka (CHI) : Ankle expected back 2026-11-02
       P.Watson (CLE) : Hamstring expected back 2026-11-02
       K.Irving (DAL) : Knee expected back 2026-11-02
-  statut d | chances ce Gameday 25 | prochain 75 : 3 joueurs
-      S.Aldama (DAL) : Knee expected back 2026-11-04
+  statut d | chances ce Gameday 25 | prochain 75 : 4 joueurs
+      N.Claxton (CHI) : Hamstring expected back 2026-11-02
+      S.Aldama (DAL) : Knee expected back 2026-11-02
       A.Diallo (DEN) : Wrist expected back 2026-11-02
       J.Alvarado (NYK) : Ankle expected back 2026-11-02
+  statut i | chances ce Gameday 100 | prochain 25 : 3 joueurs
+      Y.Niederhäuser (LAC) : Foot expected back 2026-11-08
+      B.Ingram (LAC) : Achilles expected back 2026-11-08
+      A.Black (ORL) : Rest expected back 2026-11-05
   statut i | chances ce Gameday 25 | prochain 0 : 2 joueurs
       D.Lively II (DAL) : Foot expected back 2026-11-12
       T.Biberovic (DAL) : Heel expected back 2026-11-12
@@ -318,9 +323,6 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
   statut i | chances ce Gameday 25 | prochain 75 : 2 joueurs
       O.Toppin (IND) : Back expected back 2026-11-02
       Z.Williams (LAL) : Foot expected back 2026-11-02
-  statut i | chances ce Gameday 100 | prochain 25 : 2 joueurs
-      Y.Niederhäuser (LAC) : Foot expected back 2026-11-08
-      B.Ingram (LAC) : Achilles expected back 2026-11-08
   statut d | chances ce Gameday 75 | prochain 75 : 1 joueurs
       J.Johnson (ATL) : Ankle expected back 2026-11-02
   statut s | chances ce Gameday 100 | prochain 25 : 1 joueurs
@@ -331,6 +333,8 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       D.Jones Jr. (LAC) : Knee expected back 2026-11-02
   statut d | chances ce Gameday None | prochain 75 : 1 joueurs
       T.Murphy III (NOP) : Knee expected back 2026-11-02
+  statut i | chances ce Gameday 0 | prochain 25 : 1 joueurs
+      K.Murray (SAC) : Ankle expected back 2026-11-10
   statut d | chances ce Gameday 0 | prochain 75 : 1 joueurs
       D.Cardwell (SAC) : Calf expected back 2026-11-02
   statut i | chances ce Gameday 100 | prochain 75 : 1 joueurs
@@ -339,10 +343,10 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
 ======================================================================
 LIGUE FIRST TEAM
 ======================================================================
-  Rang : 52 / 636 (+26 depuis la dernière journée) | total 2032 pts | dernière journée 192 pts
+  Rang : 55 / 636 (+23 depuis la dernière journée) | total 2032 pts | dernière journée 192 pts
   Écart avec le 1er : 580 pts
-  Écart avec le rang juste devant (51e) : 1 pts
-  Avance sur le rang juste derrière (53e) : 5 pts
+  Écart avec le rang juste devant (54e) : 1 pts
+  Avance sur le rang juste derrière (56e) : 5 pts
   Joueurs les plus présents chez les 51 équipes devant toi (Gameday 13) : Y.Lendeborg (GSW) 45, D.Acuff Jr. (SAC) 41, L.Doncic (LAL) 27, T.Jerome (MEM) 25, V.Wembanyama (SAS) 13, W.Kessler (LAL) 13, C.Boozer (MEM) 11, A.Reaves (LAL) 11, J.Tatum (BOS) 10, T.da Silva (ORL) 10, D.Sabonis (SAC) 10, T.Shannon Jr. (MIN) 10, P.Achiuwa (SAC) 9, A.Mara (OKC) 9, J.Walter (TOR) 9
   All-Star : déjà joué par 18 des 51 équipes devant toi (35 %) ; par Gameday : event 2 : 3, event 3 : 6, event 5 : 1, event 8 : 1, event 9 : 1, event 10 : 1, event 12 : 1, event 13 : 4
   Wildcard : déjà joué par 31 des 51 équipes devant toi (61 %) ; par Gameday : event 2 : 4, event 4 : 3, event 6 : 3, event 7 : 13, event 8 : 2, event 9 : 2, event 11 : 3, event 12 : 1
