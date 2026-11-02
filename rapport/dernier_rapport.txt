@@ -1,8 +1,8 @@
-Calcul lancé le 02/11/2026 à 07:51:10
+Calcul lancé le 02/11/2026 à 08:00:17
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
-  (force des conseils : 35 s)
+  (force des conseils : 39 s)
 
 === Gameweek 3 — prochaine deadline : Gameweek 3 - Day 1 le mar. 03/11 00h30 (heure de Paris) ===
 Équipe lue depuis : my-team (connecté, à jour en direct) | Banque : 0.3 M$ | Transferts gratuits restants : 2 | Capitaine dispo : oui
@@ -21,9 +21,8 @@ Optimisation (jusqu'à deux minutes)…
 🛡️ Effet adversaire (points fantasy concédés par poste, déjà dans les prévisions) — face aux arrières, les plus perméables : LAC +10 %, GSW +7 %, PHX +4 % ; les plus dures : ATL -8 %, DET -8 %, WAS -7 % | face aux intérieurs, les plus perméables : ATL +11 %, IND +7 %, CHI +7 % ; les plus dures : LAC -8 %, SAS -6 %, GSW -5 %
 📉 Vont perdre des minutes (retour d'un coéquipier blessé) : J.Richardson (ORL) -28 % dès le 10/11 (retour : J.Suggs) ; K.Dunn (LAC) -17 % dès le 08/11 (retour : B.Beal, M.Strus) ; J.Mogbo (SAC) -17 % dès le 10/11 (retour : K.Murray) ; D.Schröder (CHA) -15 % dès le 09/11 (retour : K.Knueppel) ; Z.Risacher (DAL) -15 % dès le 12/11 (retour : D.Lively II, S.Aldama) ; N.Essengue (CHI) -15 % dès le 04/11 (retour : N.Claxton) ; P.Reed (DET) -13 % dès le 09/11 (retour : J.Duren) ; D.Gafford (DAL) -12 % dès le 12/11 (retour : D.Lively II, S.Aldama)
 📈 Profitent d'une blessure (minutes libérées) : T.McConnell (IND) +60 % sur 7 j. (absent : B.Sheppard, J.Furphy, T.Haliburton) ; C.Bassey (GSW) +57 % sur 6 j. (absent : G.Santos, J.Butler, K.Porzingis) ; B.Hyland (MIN) +47 % sur 6 j. (absent : A.Edwards, D.DiVincenzo) ; I.Jackson (LAC) +46 % sur 2 j. (absent : B.Ingram, J.Broome) ; G.Santos (GSW) +43 % sur 5 j. (absent : J.Butler, K.Porzingis) ; I.Hartenstein (OKC) +37 % sur 8 j. (absent : C.Holmgren) ; A.Horford (GSW) +35 % sur 6 j. (absent : G.Santos, J.Butler, K.Porzingis) ; T.Shannon Jr. (MIN) +34 % sur 6 j. (absent : A.Edwards, D.DiVincenzo)
-💭 Ton idée J.Johnson (ATL) → V.Wembanyama (SAS) (GW3 Day 3) + D.Lillard (POR) → A.Mitchell (OKC) (GW3 Day 3) : -41 pts projetés par rapport au plan conseillé (bilan -36). A.Mitchell : 34.9 pts/match projetés, fiabilité 0.92 ; cette saison 6 match(s) joué(s), 34.5 pts/match en 25 min. Banque en fin de semaine : 0.3 M$. Semaine suivante : Day 1 : K.Dunn → D.Brooks, Day 1 : D.Sabonis → C.Flagg. Jours creux — semaine suivante : Day 4 3 vide(s), Day 6 2 vide(s) | semaine d'après (Gameweek 5, sans transfert) : 34 matchs pour ton effectif, 8 place(s) vide(s) ; joueurs dispo par jour : 6-1-9-3-6-4-5.
+💭 Ton idée J.Johnson (ATL) → V.Wembanyama (SAS) (GW3 Day 3) + D.Lillard (POR) → A.Mitchell (OKC) (GW3 Day 3) : -44 pts projetés par rapport au plan conseillé (bilan -33). A.Mitchell : 34.9 pts/match projetés, fiabilité 0.92 ; cette saison 6 match(s) joué(s), 34.5 pts/match en 25 min. Banque en fin de semaine : 0.3 M$. Semaine suivante : Day 1 : D.Sabonis → C.Flagg, Day 4 : W.Carter Jr. → J.McDaniels. Jours creux — semaine suivante : Day 1 1 vide(s), Day 4 3 vide(s), Day 6 1 vide(s) | semaine d'après (Gameweek 5, sans transfert) : 34 matchs pour ton effectif, 4 place(s) vide(s) ; joueurs dispo par jour : 5-3-7-5-4-6-4.
 💭 Ton idée J.Johnson (ATL) → V.Wembanyama (SAS) (GW3 Day 2) + D.Lillard (POR) → A.Mitchell (OKC) (GW3 Day 2) : -20 pts projetés par rapport au plan conseillé (bilan -14). A.Mitchell : 34.9 pts/match projetés, fiabilité 0.92 ; cette saison 6 match(s) joué(s), 34.5 pts/match en 25 min. Banque en fin de semaine : 0.3 M$. Semaine suivante : Day 1 : D.Sabonis → C.Flagg, Day 4 : W.Carter Jr. → J.McDaniels. Jours creux — semaine suivante : Day 1 1 vide(s), Day 4 3 vide(s), Day 6 1 vide(s) | semaine d'après (Gameweek 5, sans transfert) : 34 matchs pour ton effectif, 4 place(s) vide(s) ; joueurs dispo par jour : 5-3-7-5-4-6-4.
-💭 Ton idée J.Johnson (ATL) → V.Wembanyama (SAS) (GW3 Day 1) + D.Lillard (POR) → A.Mitchell (OKC) (GW3 Day 1) : +0 pts projetés par rapport au plan conseillé (bilan +0). A.Mitchell : 34.9 pts/match projetés, fiabilité 0.92 ; cette saison 6 match(s) joué(s), 34.5 pts/match en 25 min. Banque en fin de semaine : 0.3 M$. Semaine suivante : Day 1 : D.Sabonis → C.Flagg, Day 4 : W.Carter Jr. → J.McDaniels. Jours creux — semaine suivante : Day 1 1 vide(s), Day 4 3 vide(s), Day 6 1 vide(s) | semaine d'après (Gameweek 5, sans transfert) : 34 matchs pour ton effectif, 4 place(s) vide(s) ; joueurs dispo par jour : 5-3-7-5-4-6-4.
 ⚠ ALERTES
   - J.Johnson (ATL) : Ankle expected back 2026-11-02 | ESPN (Day-To-Day) : Johnson (ankle) is questionable to play Monday against the Pacers. (chance de jouer 85 %)
 
@@ -77,4 +76,4 @@ Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) 
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 02/11/2026 à 07:51:55 (code de sortie : 0)
+Terminé le 02/11/2026 à 08:01:07 (code de sortie : 0)
