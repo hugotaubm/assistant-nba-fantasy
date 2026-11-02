@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-02T18:14:03.585068+00:00",
+ "lu": "2026-11-02T18:22:50.278936+00:00",
  "joueurs": {
   "kingston flemings": {
    "nom": "Kingston Flemings",
@@ -316,6 +316,42 @@
    "commentaire": "Head coach Ime Udoka said Monday that Adams could be out \"a week or two\" due to his right soleus strain, Lachard Binkley of SI.com reports.",
    "date": "2026-10-26"
   },
+  "aaron nesmith": {
+   "nom": "Aaron Nesmith",
+   "statut": "Out",
+   "blessure": "Other Rest",
+   "retour_espn": "2026-11-04",
+   "retour_commentaire": null,
+   "commentaire": "Nesmith (rest) is sitting out Monday against Atlanta.",
+   "date": "2026-11-02"
+  },
+  "larry nance": {
+   "nom": "Larry Nance Jr.",
+   "statut": "Day-To-Day",
+   "blessure": "Other Illness",
+   "retour_espn": "2026-11-02",
+   "retour_commentaire": null,
+   "commentaire": "Nance produced six points (2-4 FG, 2-2 3Pt), two rebounds, one assist, one block and four steals in 18 minutes off the bench during Friday's 145-125 loss to Miami.",
+   "date": "2026-11-02"
+  },
+  "andrew nembhard": {
+   "nom": "Andrew Nembhard",
+   "statut": "Out",
+   "blessure": "Head Neck",
+   "retour_espn": "2026-11-04",
+   "retour_commentaire": null,
+   "commentaire": "Nembhard (cervical strain) is out for Monday's game against Atlanta.",
+   "date": "2026-11-02"
+  },
+  "pascal siakam": {
+   "nom": "Pascal Siakam",
+   "statut": "Out",
+   "blessure": "Other Rest",
+   "retour_espn": "2026-11-04",
+   "retour_commentaire": null,
+   "commentaire": "Siakam will be rested against the Hawks on Monday.",
+   "date": "2026-11-02"
+  },
   "obi toppin": {
    "nom": "Obi Toppin",
    "statut": "Day-To-Day",
@@ -329,7 +365,7 @@
    "nom": "T.J. McConnell",
    "statut": "Out",
    "blessure": "Right Leg Hamstring",
-   "retour_espn": "2026-11-02",
+   "retour_espn": "2026-11-09",
    "retour_commentaire": null,
    "commentaire": "Indiana recalled McConnell (hamstring) from the G League's Noblesville Boom on Saturday.",
    "date": "2026-11-01"
@@ -338,7 +374,7 @@
    "nom": "Ivica Zubac",
    "statut": "Out",
    "blessure": "Left Leg Ankle",
-   "retour_espn": "2026-11-02",
+   "retour_espn": "2026-11-09",
    "retour_commentaire": null,
    "commentaire": "Zubac (ankle) will remain on the inactive list for Sunday's game against the Nets.",
    "date": "2026-10-31"
@@ -802,6 +838,24 @@
    "commentaire": "Nurkic will miss at least the next four weeks due to a partial plantar plate tear of second toe in right foot, Chris Haynes of NBA TV reports.",
    "date": "2026-10-07"
   },
+  "reece beekman": {
+   "nom": "Reece Beekman",
+   "statut": "Out",
+   "blessure": "Arm Shoulder",
+   "retour_espn": "2026-12-03",
+   "retour_commentaire": null,
+   "commentaire": "Beekman had his Exhibit 10 contract converted to a two-way deal by the Wizards on Saturday, Keith Smith of Spotrac.com reports.",
+   "date": "2026-11-02"
+  },
+  "anthony gill": {
+   "nom": "Anthony Gill",
+   "statut": "Out",
+   "blessure": "Torso Back",
+   "retour_espn": "2026-11-04",
+   "retour_commentaire": null,
+   "commentaire": "Gill (back) is questionable to suit up in Monday's contest against Orlando.",
+   "date": "2026-11-02"
+  },
   "alex sarr": {
    "nom": "Alex Sarr",
    "statut": "Out",
@@ -818,15 +872,6 @@
    "retour_espn": "2026-11-09",
    "retour_commentaire": "2026-12-01",
    "commentaire": "Vukcevic (hip) is listed as out for Monday's game against Orlando.",
-   "date": "2026-11-01"
-  },
-  "anthony gill": {
-   "nom": "Anthony Gill",
-   "statut": "Day-To-Day",
-   "blessure": "Torso Back",
-   "retour_espn": "2026-11-02",
-   "retour_commentaire": null,
-   "commentaire": "Gill (back) is questionable to suit up in Monday's contest against Orlando.",
    "date": "2026-11-01"
   },
   "justin champagnie": {
