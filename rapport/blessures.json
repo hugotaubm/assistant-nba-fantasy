@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-02T21:05:18.789860+00:00",
+ "lu": "2026-11-02T21:38:54.653407+00:00",
  "joueurs": {
   "kingston flemings": {
    "nom": "Kingston Flemings",
@@ -235,6 +235,24 @@
    "commentaire": "Duren will be re-evaluated in two weeks due to a right hamstring strain, Eric Vincent of ClutchPoints.com reports.",
    "date": "2026-10-25"
   },
+  "brandon williams": {
+   "nom": "Brandon Williams",
+   "statut": "Day-To-Day",
+   "blessure": "Left Leg Quadriceps",
+   "retour_espn": "2026-11-02",
+   "retour_commentaire": null,
+   "commentaire": "Williams (quadriceps) is listed as questionable for Monday's game against the Suns.",
+   "date": "2026-11-02"
+  },
+  "al horford": {
+   "nom": "Al Horford",
+   "statut": "Out",
+   "blessure": "Other Rest",
+   "retour_espn": "2026-11-05",
+   "retour_commentaire": null,
+   "commentaire": "Horford will be rested Monday against the Suns.",
+   "date": "2026-11-02"
+  },
   "gui santos": {
    "nom": "Gui Santos",
    "statut": "Out",
@@ -242,24 +260,6 @@
    "retour_espn": "2026-11-05",
    "retour_commentaire": null,
    "commentaire": "Santos did not play in the second half of Sunday's 124-112 win over the Clippers due to a knee injury and will not play against the Suns on Monday, Danny Emerman of SFStandard.com reports.",
-   "date": "2026-11-02"
-  },
-  "draymond green": {
-   "nom": "Draymond Green",
-   "statut": "Day-To-Day",
-   "blessure": "Other Rest",
-   "retour_espn": "2026-11-02",
-   "retour_commentaire": null,
-   "commentaire": "Green (back) is out for Sunday's game against the Clippers.",
-   "date": "2026-11-02"
-  },
-  "stephen curry": {
-   "nom": "Stephen Curry",
-   "statut": "Day-To-Day",
-   "blessure": "Other Rest",
-   "retour_espn": "2026-11-02",
-   "retour_commentaire": null,
-   "commentaire": "Curry (rest) won't play Sunday against the Clippers, Brett Siegel of ClutchPoints.com reports.",
    "date": "2026-11-02"
   },
   "kristaps porzingis": {
@@ -406,6 +406,24 @@
    "commentaire": "Haliburton (hamstring) will miss at least the next two weeks of action, Shams Charania of ESPN reports.",
    "date": "2026-10-28"
   },
+  "rui hachimura": {
+   "nom": "Rui Hachimura",
+   "statut": "Out",
+   "blessure": "Left Leg Quadriceps",
+   "retour_espn": "2026-11-04",
+   "retour_commentaire": null,
+   "commentaire": "Hachimura (quadriceps) has been ruled out for Monday's game against the Raptors.",
+   "date": "2026-11-02"
+  },
+  "derrick jones": {
+   "nom": "Derrick Jones Jr.",
+   "statut": "Out",
+   "blessure": "Right Leg Knee",
+   "retour_espn": "2026-11-04",
+   "retour_commentaire": null,
+   "commentaire": "Jones (knee) has been ruled out for Monday's game against the Raptors.",
+   "date": "2026-11-02"
+  },
   "yanic konan niederhauser": {
    "nom": "Yanic Konan Niederhauser",
    "statut": "Out",
@@ -422,24 +440,6 @@
    "retour_espn": "2026-11-08",
    "retour_commentaire": null,
    "commentaire": "The Clippers recalled Ingram (Achilles) from the G League's San Diego Clippers on Sunday.",
-   "date": "2026-11-02"
-  },
-  "max strus": {
-   "nom": "Max Strus",
-   "statut": "Out",
-   "blessure": "Right Leg Foot",
-   "retour_espn": "2026-11-08",
-   "retour_commentaire": null,
-   "commentaire": "The Clippers recalled Strus (foot) from the G League's San Diego Clippers on Sunday.",
-   "date": "2026-11-02"
-  },
-  "derrick jones": {
-   "nom": "Derrick Jones Jr.",
-   "statut": "Day-To-Day",
-   "blessure": "Right Leg Knee",
-   "retour_espn": "2026-11-02",
-   "retour_commentaire": null,
-   "commentaire": "Jones (right knee) has been ruled out for the rest of Sunday's game against the Clippers, Ohm Youngmisuk of ESPN.com reports.",
    "date": "2026-11-02"
   },
   "bradley beal": {
@@ -459,15 +459,6 @@
    "retour_commentaire": "2027-02-22",
    "commentaire": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic.",
    "date": "2026-08-26"
-  },
-  "ziaire williams": {
-   "nom": "Ziaire Williams",
-   "statut": "Out",
-   "blessure": "Left Leg Foot",
-   "retour_espn": "2026-11-02",
-   "retour_commentaire": null,
-   "commentaire": "Williams (foot) is out for Sunday's game against the Raptors.",
-   "date": "2026-11-01"
   },
   "adou thiero": {
    "nom": "Adou Thiero",
@@ -792,6 +783,15 @@
    "retour_commentaire": null,
    "commentaire": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports.",
    "date": "2026-10-05"
+  },
+  "scottie barnes": {
+   "nom": "Scottie Barnes",
+   "statut": "Day-To-Day",
+   "blessure": "Left Torso Hip",
+   "retour_espn": "2026-11-02",
+   "retour_commentaire": null,
+   "commentaire": "Barnes (hip) is listed as questionable for Monday's game against the Clippers.",
+   "date": "2026-11-02"
   },
   "jakob poeltl": {
    "nom": "Jakob Poeltl",

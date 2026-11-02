@@ -280,7 +280,7 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       M.Uzan (BOS) : -
       N.Pringle (BKN) : -
       P.Connaughton (CHA) : -
-  statut i | chances ce Gameday 0 | prochain 0 : 34 joueurs
+  statut i | chances ce Gameday 0 | prochain 0 : 33 joueurs
       D.Carter (BOS) : Illness expected back 2026-11-08
       N.Tomlin (CLE) : Back expected back 2026-11-16
       J.Strawther (DEN) : Knee expected back 2026-11-29
@@ -295,21 +295,21 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       J.Poulakidas (DAL) : -
       A.Toohey (GSW) : -
       R.Castro (HOU) : -
+  statut i | chances ce Gameday 100 | prochain 25 : 10 joueurs
+      P.George (BOS) : Rest expected back 2026-11-04
+      A.Horford (GSW) : Rest expected back 2026-11-05
+      C.Capela (HOU) : Ankle expected back 2026-11-04
+      A.Nembhard (IND) : Neck expected back 2026-11-04
+  statut d | chances ce Gameday 100 | prochain 75 : 10 joueurs
+      J.Smith (CHI) : Finger expected back 2026-11-02
+      T.Awaka (CHI) : Ankle expected back 2026-11-02
+      P.Watson (CLE) : Hamstring expected back 2026-11-02
+      K.Irving (DAL) : Knee expected back 2026-11-04
   statut u | chances ce Gameday 0 | prochain 0 : 9 joueurs
       M.Gueye (ATL) : Foot expected back 2026-11-20
       H.Veesaar (ATL) : Knee expected back 2027-07-01
       R.Dillingham (CHI) : Wrist expected back 2026-11-06
       D.Eubanks (NYK) : Pectoral expected back 2027-01-01
-  statut i | chances ce Gameday 100 | prochain 25 : 8 joueurs
-      P.George (BOS) : Rest expected back 2026-11-04
-      C.Capela (HOU) : Ankle expected back 2026-11-04
-      A.Nembhard (IND) : Neck expected back 2026-11-04
-      Y.Niederhäuser (LAC) : Foot expected back 2026-11-08
-  statut d | chances ce Gameday 100 | prochain 75 : 8 joueurs
-      J.Smith (CHI) : Finger expected back 2026-11-02
-      T.Awaka (CHI) : Ankle expected back 2026-11-02
-      P.Watson (CLE) : Hamstring expected back 2026-11-02
-      K.Irving (DAL) : Knee expected back 2026-11-04
   statut d | chances ce Gameday 25 | prochain 75 : 5 joueurs
       N.Claxton (CHI) : Hamstring expected back 2026-11-02
       S.Aldama (DAL) : Knee expected back 2026-11-02
@@ -318,23 +318,18 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
   statut i | chances ce Gameday 25 | prochain 0 : 2 joueurs
       D.Lively II (DAL) : Foot expected back 2026-11-12
       T.Biberovic (DAL) : Heel expected back 2026-11-12
-  statut i | chances ce Gameday 75 | prochain 75 : 2 joueurs
-      S.Curry (GSW) : Rest expected back 2026-11-02
-      D.Green (GSW) : Rest expected back 2026-11-02
   statut i | chances ce Gameday 75 | prochain 25 : 2 joueurs
       G.Santos (GSW) : Knee expected back 2026-11-05
       A.Nesmith (IND) : Rest expected back 2026-11-04
-  statut i | chances ce Gameday 25 | prochain 75 : 2 joueurs
-      O.Toppin (IND) : Back expected back 2026-11-02
-      Z.Williams (LAL) : Foot expected back 2026-11-02
+  statut i | chances ce Gameday None | prochain 25 : 2 joueurs
+      P.Siakam (IND) : Rest expected back 2026-11-04
+      D.Jones Jr. (LAC) : Knee expected back 2026-11-04
   statut d | chances ce Gameday 75 | prochain 75 : 1 joueurs
       J.Johnson (ATL) : Ankle expected back 2026-11-02
   statut s | chances ce Gameday 100 | prochain 25 : 1 joueurs
       K.Flemings (ATL) : Suspension expected back 2026-11-04
-  statut i | chances ce Gameday None | prochain 25 : 1 joueurs
-      P.Siakam (IND) : Rest expected back 2026-11-04
-  statut i | chances ce Gameday None | prochain 75 : 1 joueurs
-      D.Jones Jr. (LAC) : Knee expected back 2026-11-02
+  statut i | chances ce Gameday 25 | prochain 75 : 1 joueurs
+      O.Toppin (IND) : Back expected back 2026-11-02
   statut i | chances ce Gameday 0 | prochain 25 : 1 joueurs
       K.Murray (SAC) : Ankle expected back 2026-11-10
   statut d | chances ce Gameday 0 | prochain 75 : 1 joueurs
