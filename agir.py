@@ -90,8 +90,8 @@ def sonde():
         top = sorted(st.items(), key=lambda kv: -(kv[1].get("total_points") or 0))[:10]
         print("  meilleurs du soir : " + ", ".join(f"{el[q]['web_name']} {v.get('total_points', 0) / 10:.0f}" for q, v in top if q in el))
         print(f"  Doncic : {st.get(257, {}).get('total_points', 0) / 10:.0f} pts, {st.get(257, {}).get('minutes')} min")
-        for q in (279, 490):
-            print(f"  {el[q]['web_name']} : statut {el[q]['status']} | {el[q]['news']}")
+        for q in (279, 490, 257, 513):
+            print(f"  {el[q]['web_name']} : statut {el[q]['status']} | chance {el[q].get('chance_of_playing_next_round')} | ppg {el[q].get('points_per_game')} forme {el[q].get('form')} | {el[q]['news']}")
     except Exception as ex:
         print(f"(direct indisponible : {ex!r})")
     code, _, me = appel("GET", "me/")
