@@ -277,10 +277,10 @@ CALIBRATION DU MODÈLE (points réels / points attendus, par rang)
   rang 3+  : 1012 joueurs-matchs | réel    5217 / attendu    5551 = 0.94 → facteur appliqué 0.944
   rang ?   :  205 joueurs-matchs | réel     423 / attendu    1262 = 0.34 → facteur appliqué 0.750
 Erreur restante du modèle par tranche de prix (après la calibration par rang) :
-  10-15 M$  :  508 joueurs-matchs | réel   15609 / attendu   15776 = 0.99 → facteur appliqué 0.990
-  7-10 M$   :  689 joueurs-matchs | réel   13882 / attendu   13490 = 1.03 → facteur appliqué 1.028
-  < 7 M$    : 1399 joueurs-matchs | réel    8614 / attendu    9212 = 0.94 → facteur appliqué 0.938
-  ≥ 15 M$   :  179 joueurs-matchs | réel    8201 / attendu    7974 = 1.03 → facteur appliqué 1.027
+  10-15 M$  :  508 joueurs-matchs | réel   15609 / attendu   15750 = 0.99 → facteur appliqué 0.991
+  7-10 M$   :  689 joueurs-matchs | réel   13882 / attendu   13452 = 1.03 → facteur appliqué 1.031
+  < 7 M$    : 1399 joueurs-matchs | réel    8614 / attendu    9355 = 0.92 → facteur appliqué 0.924
+  ≥ 15 M$   :  179 joueurs-matchs | réel    8201 / attendu    7962 = 1.03 → facteur appliqué 1.029
 
 Vérification du barème (points du jeu vs formule des projections) :
   Statistiques fournies par le jeu : ['assists', 'blocks', 'in_dreamteam', 'minutes', 'played', 'points_scored', 'rebounds', 'steals', 'total_points']
@@ -290,51 +290,53 @@ Vérification du barème (points du jeu vs formule des projections) :
 ======================================================================
 STATUTS DU JEU (joueurs non disponibles à 100 %)
 ======================================================================
-  statut u | chances ce Gameday None | prochain None : 58 joueurs
+  statut u | chances ce Gameday None | prochain None : 50 joueurs
       T.DeVries (BOS) : -
       M.Uzan (BOS) : -
       N.Pringle (BKN) : -
       P.Connaughton (CHA) : -
-  statut i | chances ce Gameday 25 | prochain 25 : 44 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 43 joueurs
       J.Johnson (ATL) : Ankle expected back 2026-11-04
       J.Landale (ATL) : Hip expected back 2026-11-04
-      P.George (BOS) : Rest expected back 2026-11-04
       E.Dëmin (BKN) : Leg expected back 2026-11-07
+      T.Bilodeau (BKN) : Shoulder expected back 2026-11-06
   statut i | chances ce Gameday 0 | prochain 0 : 34 joueurs
       D.Carter (BOS) : Illness expected back 2026-11-08
       N.Tomlin (CLE) : Back expected back 2026-11-16
       D.Lively II (DAL) : Foot expected back 2026-11-12
       T.Biberovic (DAL) : Heel expected back 2026-11-12
-  statut u | chances ce Gameday 100 | prochain 100 : 19 joueurs
+  statut u | chances ce Gameday 100 | prochain 100 : 13 joueurs
       I.McKneely (ATL) : -
       J.Poulakidas (DAL) : -
-      R.Nembhard (DEN) : -
-      C.Johnson (DEN) : -
+      A.Toohey (GSW) : -
+      R.Castro (HOU) : -
   statut u | chances ce Gameday 0 | prochain 0 : 10 joueurs
       M.Gueye (ATL) : Foot expected back 2026-11-20
       H.Veesaar (ATL) : Knee expected back 2027-07-01
       R.Dillingham (CHI) : Wrist expected back 2026-11-06
       J.Strawther (DEN) : Knee expected back 2026-11-29
-  statut i | chances ce Gameday 25 | prochain 75 : 2 joueurs
+  statut d | chances ce Gameday 100 | prochain 75 : 4 joueurs
+      J.Tatum (BOS) : Rest expected back 2026-11-04
+      P.Pritchard (BOS) : Shoulder expected back 2026-11-04
+      J.Smith (CHI) : Finger expected back 2026-11-04
+      M.Christie (DAL) : Hip expected back 2026-11-04
+  statut i | chances ce Gameday 25 | prochain 75 : 3 joueurs
+      S.Jones (DEN) : Hamstring expected back 2026-11-04
       Q.Post (MEM) : Ankle expected back 2026-11-04
       S.Pippen Jr. (MEM) : Back expected back 2026-11-04
   statut i | chances ce Gameday 75 | prochain 75 : 2 joueurs
       D.Cardwell (SAC) : Calf expected back 2026-11-04
       J.Poeltl (TOR) : Shoulder expected back 2026-11-04
-  statut d | chances ce Gameday 100 | prochain 75 : 1 joueurs
-      M.Christie (DAL) : Hip expected back 2026-11-04
-  statut u | chances ce Gameday 25 | prochain 25 : 1 joueurs
-      S.Jones (DEN) : Hamstring expected back 2026-11-04
-  statut u | chances ce Gameday 75 | prochain 100 : 1 joueurs
-      A.Diallo (DEN) : -
   statut i | chances ce Gameday 75 | prochain 25 : 1 joueurs
       B.Williams (GSW) : Quadriceps expected back 2026-11-05
   statut i | chances ce Gameday None | prochain 75 : 1 joueurs
       K.Oubre Jr. (IND) : Knee expected back 2026-11-04
   statut i | chances ce Gameday 0 | prochain 25 : 1 joueurs
       A.Thiero (LAL) : Knee expected back 2026-11-06
+  statut i | chances ce Gameday 100 | prochain 0 : 1 joueurs
+      E.Freeman (MIN) : Undisclosed expected back 2027-01-01
   statut d | chances ce Gameday 25 | prochain 75 : 1 joueurs
-      N.Topic (OKC) : Back expected back 2026-11-06
+      N.Topic (OKC) : Back expected back 2026-11-04
   statut d | chances ce Gameday None | prochain 75 : 1 joueurs
       J.Goodwin (PHX) : Calf expected back 2026-11-04
 

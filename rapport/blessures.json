@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-03T11:04:38.630814+00:00",
+ "lu": "2026-11-03T21:50:42.404066+00:00",
  "joueurs": {
   "jock landale": {
    "nom": "Jock Landale",
@@ -37,13 +37,22 @@
    "commentaire": "Veesaar was diagnosed with a torn right ACL and is expected to miss the 2026-27 season, the Hawks announced Monday.",
    "date": "2026-09-21"
   },
-  "paul george": {
-   "nom": "Paul George",
+  "payton pritchard": {
+   "nom": "Payton Pritchard",
+   "statut": "Day-To-Day",
+   "blessure": "Right Arm Shoulder",
+   "retour_espn": "2026-11-04",
+   "retour_commentaire": null,
+   "commentaire": "Pritchard is listed as questionable for Wednesday's game against Milwaukee due to a right shoulder contusion, Taylor Snow of the Celtics' official site reports.",
+   "date": "2026-11-03"
+  },
+  "jayson tatum": {
+   "nom": "Jayson Tatum",
    "statut": "Day-To-Day",
    "blessure": "Other Rest",
    "retour_espn": "2026-11-04",
    "retour_commentaire": null,
-   "commentaire": "George will be rested Monday against Houston.",
+   "commentaire": "Tatum (rest) is questionable for Wednesday against the Bucks, Taylor Snow of the Celtics' official site reports.",
    "date": "2026-11-03"
   },
   "devin carter": {
@@ -97,8 +106,17 @@
    "blessure": "Leg Hamstring",
    "retour_espn": "2026-11-04",
    "retour_commentaire": null,
-   "commentaire": "Claxton (hamstring) is out for Monday's game against the 76ers.",
-   "date": "2026-11-02"
+   "commentaire": "Claxton (hamstring) is questionable for Wednesday against the Knicks.",
+   "date": "2026-11-03"
+  },
+  "jalen smith": {
+   "nom": "Jalen Smith",
+   "statut": "Day-To-Day",
+   "blessure": "Arm Finger",
+   "retour_espn": "2026-11-04",
+   "retour_commentaire": null,
+   "commentaire": "Smith is probable for Wednesday's game against the Knicks with a left finger sprain.",
+   "date": "2026-11-03"
   },
   "peyton watson": {
    "nom": "Peyton Watson",
@@ -194,10 +212,10 @@
    "nom": "Isaiah Joe",
    "statut": "Out",
    "blessure": "Right Torso Hip",
-   "retour_espn": "2026-11-04",
+   "retour_espn": "2026-11-08",
    "retour_commentaire": null,
-   "commentaire": "Joe (hip) is out for Monday against the Hornets.",
-   "date": "2026-11-02"
+   "commentaire": "Joe (hip) has been ruled out for Wednesday's game against Philadelphia.",
+   "date": "2026-11-03"
   },
   "jalen duren": {
    "nom": "Jalen Duren",
@@ -264,12 +282,12 @@
   },
   "clint capela": {
    "nom": "Clint Capela",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Right Leg Ankle",
    "retour_espn": "2026-11-04",
    "retour_commentaire": null,
    "commentaire": "Capela (ankle) has been ruled out for Monday's game against the Celtics.",
-   "date": "2026-11-02"
+   "date": "2026-11-03"
   },
   "steven adams": {
    "nom": "Steven Adams",
@@ -563,7 +581,7 @@
    "nom": "Nikola Topic",
    "statut": "Out",
    "blessure": "Torso Back",
-   "retour_espn": "2026-11-06",
+   "retour_espn": "2026-11-04",
    "retour_commentaire": null,
    "commentaire": "Topic (back) will remain on the inactive list for Wednesday's game in Dallas.",
    "date": "2026-10-27"
@@ -716,7 +734,7 @@
    "nom": "Tobias Harris",
    "statut": "Out",
    "blessure": "Left Leg Calf",
-   "retour_espn": "2026-11-06",
+   "retour_espn": "2026-11-09",
    "retour_commentaire": null,
    "commentaire": "Harris (calf) is listed as out for Saturday's game against Minnesota.",
    "date": "2026-10-30"
