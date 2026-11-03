@@ -6,7 +6,7 @@ on:
       mode:
         description: "sonde (lecture seule), test_sauvegarde (équipe identique), wildcard (simulation, ou exécution avec le code)"
         type: choice
-        options: [sonde, test_sauvegarde, titulaires, transferts, wildcard]
+        options: [sonde, test_sauvegarde, titulaires, transferts, wildcard, analyse_forme]
         default: sonde
       code:
         description: "wildcard : code affiché par la simulation (vide = simulation) ; titulaires : 5 id séparés par des virgules"
@@ -33,6 +33,8 @@ jobs:
           set -o pipefail
           if [ "${{ inputs.mode }}" = "wildcard" ] && [ -n "${{ inputs.code }}" ]; then
             python agir.py wildcard --executer "${{ inputs.code }}" 2>&1 | tee sortie.txt
+          elif [ "${{ inputs.mode }}" = "analyse_forme" ]; then
+            python analyse_forme.py 2>&1 | tee sortie.txt
           elif [ "${{ inputs.mode }}" = "transferts" ]; then
             python agir.py transferts "${{ inputs.code }}" 2>&1 | tee sortie.txt
           elif [ "${{ inputs.mode }}" = "titulaires" ]; then
