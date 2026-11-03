@@ -82,16 +82,16 @@ def sonde():
             s_ = st.get(p["element"], {})
             print(f"  {'TIT ' if p['position'] <= 5 else 'banc'} {el[p['element']]['web_name']:<14} x{p.get('multiplier')} "
                   f"{s_.get('total_points')} pts, {s_.get('minutes')} min")
-        _, _, fx = appel("GET", f"fixtures/?event={ev}")
-        eqs = {t["id"]: t["short_name"] for t in boot["teams"]}
-        for f in fx if isinstance(fx, list) else []:
-            print(f"  match {eqs.get(f['team_a'])} {f.get('team_a_score')} @ {eqs.get(f['team_h'])} {f.get('team_h_score')} | "
-                  f"commencé {f.get('started')} fini {f.get('finished') or f.get('finished_provisional')} | {f.get('kickoff_time')}")
         top = sorted(st.items(), key=lambda kv: -(kv[1].get("total_points") or 0))[:10]
         print("  meilleurs du soir : " + ", ".join(f"{el[q]['web_name']} {v.get('total_points', 0) / 10:.0f}" for q, v in top if q in el))
         print(f"  Doncic : {st.get(257, {}).get('total_points', 0) / 10:.0f} pts, {st.get(257, {}).get('minutes')} min")
         for q in (279, 490, 257, 513):
             print(f"  {el[q]['web_name']} : statut {el[q]['status']} | chance {el[q].get('chance_of_playing_next_round')} | ppg {el[q].get('points_per_game')} forme {el[q].get('form')} | {el[q]['news']}")
+        _, _, fx = appel("GET", f"fixtures/?event={ev}")
+        eqs = {t["id"]: t["short_name"] for t in boot["teams"]}
+        for f in fx if isinstance(fx, list) else []:
+            if False: print(f"  match {eqs.get(f['team_a'])} {f.get('team_a_score')} @ {eqs.get(f['team_h'])} {f.get('team_h_score')} | "
+                  f"commencé {f.get('started')} fini {f.get('finished') or f.get('finished_provisional')} | {f.get('kickoff_time')}")
     except Exception as ex:
         print(f"(direct indisponible : {ex!r})")
     code, _, me = appel("GET", "me/")
