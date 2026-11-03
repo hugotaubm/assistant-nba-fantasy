@@ -546,9 +546,11 @@
 "presence": 0.9,
 "age": 22,
 "min_proj": 21.5,
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "PF",
-"devant": [],
+"devant": [
+"Paul George"
+],
 "presaison_matchs": 4,
 "presaison_min": 18.0
 },
@@ -568,11 +570,9 @@
 "presence": 0.93,
 "age": 27,
 "min_proj": 23.6,
-"rang_poste": 2,
+"rang_poste": 1,
 "poste_espn": "C",
-"devant": [
-"Mitchell Robinson"
-],
+"devant": [],
 "presaison_matchs": 2,
 "presaison_min": 21.5
 },
@@ -595,7 +595,7 @@
 "rang_poste": 2,
 "poste_espn": "SG",
 "devant": [
-"Paul George"
+"Hugo Gonzalez"
 ],
 "presaison_matchs": 4,
 "presaison_min": 19.5
@@ -616,13 +616,9 @@
 "presence": 0.93,
 "age": 20,
 "min_proj": 21.7,
-"rang_poste": 4,
+"rang_poste": 1,
 "poste_espn": "SG",
-"devant": [
-"Paul George",
-"Baylor Scheierman",
-"Payton Pritchard"
-],
+"devant": [],
 "presaison_matchs": 4,
 "presaison_min": 20.0
 },
@@ -641,8 +637,8 @@
 "rang_poste": 5,
 "poste_espn": "C",
 "devant": [
-"Mitchell Robinson",
 "Neemias Queta",
+"Mitchell Robinson",
 "Luka Garza"
 ],
 "presaison_matchs": 3,
@@ -664,8 +660,8 @@
 "rang_poste": 3,
 "poste_espn": "C",
 "devant": [
-"Mitchell Robinson",
-"Neemias Queta"
+"Neemias Queta",
+"Mitchell Robinson"
 ],
 "presaison_matchs": 4,
 "presaison_min": 17.5
@@ -683,10 +679,10 @@
 "b2b_presence": 0.25,
 "presence": 0.48,
 "age": 26,
-"rang_poste": 6,
+"rang_poste": 5,
 "poste_espn": "SG",
 "devant": [
-"Paul George",
+"Hugo Gonzalez",
 "Baylor Scheierman",
 "Payton Pritchard"
 ],
@@ -734,9 +730,11 @@
 "presence": 0.77,
 "age": 28,
 "min_proj": 25.4,
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "C",
-"devant": [],
+"devant": [
+"Neemias Queta"
+],
 "presaison_matchs": 2,
 "presaison_min": 15.5
 },
@@ -757,7 +755,7 @@
 "age": 36,
 "min_proj": 33.2,
 "rang_poste": 1,
-"poste_espn": "SG",
+"poste_espn": "PF",
 "devant": [],
 "presaison_matchs": 2,
 "presaison_min": 24.5
@@ -774,8 +772,8 @@
 "rang_poste": 4,
 "poste_espn": "C",
 "devant": [
-"Mitchell Robinson",
 "Neemias Queta",
+"Mitchell Robinson",
 "Luka Garza"
 ],
 "presaison_matchs": 4,
@@ -3898,7 +3896,14 @@
 "presence": 0.74,
 "age": 24,
 "presaison_matchs": 5,
-"presaison_min": 14.2
+"presaison_min": 14.2,
+"rang_poste": 6,
+"poste_espn": "SG",
+"devant": [
+"Ajay Mitchell",
+"Jared McCain",
+"Bennett Stirtz"
+]
 },
 "193": {
 "nom": "O.Agbim",
@@ -4771,12 +4776,10 @@
 "presence": 0.73,
 "age": 30,
 "min_proj": 25.9,
-"rang_poste": 5,
-"poste_espn": "PF",
+"rang_poste": 2,
+"poste_espn": "SF",
 "devant": [
-"Rui Hachimura",
-"Kobe Sanders",
-"Gradey Dick"
+"Derrick Jones Jr."
 ],
 "presaison_matchs": 1,
 "presaison_min": 5.0
@@ -4907,7 +4910,7 @@
 "b2b_presence": 0.67,
 "presence": 0.7,
 "age": 21,
-"rang_poste": 6,
+"rang_poste": 7,
 "poste_espn": "SG",
 "devant": [
 "Kris Dunn",
@@ -5050,12 +5053,12 @@
 "malus_b2b": 1.022,
 "age": 22,
 "b2b_n": 0,
-"rang_poste": 5,
+"rang_poste": 6,
 "poste_espn": "SF",
 "devant": [
 "Derrick Jones Jr.",
-"Gradey Dick",
-"Kobe Sanders"
+"Max Strus",
+"Gradey Dick"
 ],
 "presaison_matchs": 3,
 "presaison_min": 18.7
@@ -5126,8 +5129,8 @@
 "poste_espn": "SF",
 "devant": [
 "Derrick Jones Jr.",
-"Gradey Dick",
-"Kobe Sanders"
+"Max Strus",
+"Gradey Dick"
 ]
 },
 "254": {
@@ -5146,10 +5149,11 @@
 "presence": 0.95,
 "age": 22,
 "min_proj": 25.8,
-"rang_poste": 2,
+"rang_poste": 3,
 "poste_espn": "SF",
 "devant": [
-"Derrick Jones Jr."
+"Derrick Jones Jr.",
+"Max Strus"
 ],
 "presaison_matchs": 3,
 "presaison_min": 16.0
@@ -5868,9 +5872,9 @@
 "rang_poste": 5,
 "poste_espn": "PF",
 "devant": [
+"Jaylin Williams",
 "Kenrich Williams",
-"Alex Caruso",
-"Jaylin Williams"
+"Alex Caruso"
 ]
 },
 "289": {
@@ -6440,9 +6444,9 @@
 "rang_poste": 4,
 "poste_espn": "PG",
 "devant": [
+"Brayden Burries",
 "Ryan Rollins",
-"Kasparas Jakucionis",
-"Brayden Burries"
+"Kasparas Jakucionis"
 ],
 "presaison_matchs": 3,
 "presaison_min": 12.3
@@ -6463,9 +6467,9 @@
 "rang_poste": 7,
 "poste_espn": "PG",
 "devant": [
+"Brayden Burries",
 "Ryan Rollins",
-"Kasparas Jakucionis",
-"Brayden Burries"
+"Kasparas Jakucionis"
 ],
 "presaison_matchs": 4,
 "presaison_min": 13.0
@@ -6554,9 +6558,10 @@
 "presence": 0.9,
 "age": 20,
 "min_proj": 22.6,
-"rang_poste": 2,
+"rang_poste": 3,
 "poste_espn": "PG",
 "devant": [
+"Brayden Burries",
 "Ryan Rollins"
 ],
 "presaison_matchs": 3,
@@ -6666,9 +6671,11 @@
 "presence": 0.93,
 "age": 24,
 "min_proj": 28.0,
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "PG",
-"devant": [],
+"devant": [
+"Brayden Burries"
+],
 "presaison_matchs": 4,
 "presaison_min": 18.5
 },
@@ -6787,12 +6794,9 @@
 "age": 21,
 "b2b_n": 0,
 "min_proj": 25.8,
-"rang_poste": 3,
+"rang_poste": 1,
 "poste_espn": "PG",
-"devant": [
-"Ryan Rollins",
-"Kasparas Jakucionis"
-],
+"devant": [],
 "presaison_matchs": 4,
 "presaison_min": 23.0
 },
@@ -8065,7 +8069,7 @@
 "rang_poste": 2,
 "poste_espn": "SF",
 "devant": [
-"Ajay Mitchell"
+"Kenrich Williams"
 ],
 "presaison_matchs": 3,
 "presaison_min": 16.0
@@ -8130,12 +8134,12 @@
 "presence": 0.88,
 "age": 24,
 "min_proj": 28.9,
-"rang_poste": 6,
+"rang_poste": 7,
 "poste_espn": "PF",
 "devant": [
+"Jaylin Williams",
 "Kenrich Williams",
-"Alex Caruso",
-"Jaylin Williams"
+"Alex Caruso"
 ]
 },
 "397": {
@@ -8155,7 +8159,7 @@
 "age": 31,
 "min_proj": 15.4,
 "rang_poste": 1,
-"poste_espn": "PF",
+"poste_espn": "SF",
 "devant": [],
 "presaison_matchs": 4,
 "presaison_min": 16.5
@@ -8176,12 +8180,12 @@
 "presence": 0.88,
 "age": 25,
 "min_proj": 32.8,
-"rang_poste": 8,
+"rang_poste": 9,
 "poste_espn": "SF",
 "devant": [
-"Ajay Mitchell",
+"Kenrich Williams",
 "Alex Caruso",
-"Kenrich Williams"
+"Ajay Mitchell"
 ],
 "presaison_matchs": 3,
 "presaison_min": 21.7
@@ -8202,11 +8206,9 @@
 "presence": 0.95,
 "age": 24,
 "min_proj": 19.0,
-"rang_poste": 2,
-"poste_espn": "C",
-"devant": [
-"Isaiah Hartenstein"
-]
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": []
 },
 "400": {
 "nom": "C.Wallace",
@@ -8229,7 +8231,7 @@
 "devant": [
 "Shai Gilgeous-Alexander",
 "Ajay Mitchell",
-"Bennett Stirtz"
+"Jared McCain"
 ],
 "presaison_matchs": 2,
 "presaison_min": 19.0
@@ -8251,7 +8253,7 @@
 "age": 24,
 "min_proj": 23.5,
 "rang_poste": 1,
-"poste_espn": "SF",
+"poste_espn": "SG",
 "devant": [],
 "presaison_matchs": 3,
 "presaison_min": 19.7
@@ -8273,7 +8275,7 @@
 "devant": [
 "Shai Gilgeous-Alexander",
 "Ajay Mitchell",
-"Bennett Stirtz"
+"Jared McCain"
 ]
 },
 "403": {
@@ -8292,9 +8294,9 @@
 "rang_poste": 4,
 "poste_espn": "PF",
 "devant": [
+"Jaylin Williams",
 "Kenrich Williams",
-"Alex Caruso",
-"Jaylin Williams"
+"Alex Caruso"
 ],
 "presaison_matchs": 5,
 "presaison_min": 23.6
@@ -8332,9 +8334,11 @@
 "presence": 0.94,
 "age": 22,
 "min_proj": 24.7,
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "SG",
-"devant": [],
+"devant": [
+"Ajay Mitchell"
+],
 "presaison_matchs": 4,
 "presaison_min": 18.2
 },
@@ -8392,10 +8396,10 @@
 "age": 23,
 "b2b_n": 0,
 "rang_poste": 3,
-"poste_espn": "PG",
+"poste_espn": "SG",
 "devant": [
-"Shai Gilgeous-Alexander",
-"Ajay Mitchell"
+"Ajay Mitchell",
+"Jared McCain"
 ],
 "presaison_matchs": 5,
 "presaison_min": 27.4
@@ -11876,6 +11880,6 @@
 "_source": "saison régulière 2025-26 (ESPN), mis à jour le 20/10/2026"
 },
 "roles": {
-"_source": "ESPN (hiérarchie + présaison), mis à jour le 03/11/2026"
+"_source": "ESPN (hiérarchie + présaison), mis à jour le 04/11/2026"
 }
 }
