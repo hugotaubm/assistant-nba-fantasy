@@ -26,4 +26,4 @@ Chaque case : moyenne sur les **7 derniers jours · 15 derniers jours** (matchs 
 - **Coby White** : Calf expected back 2026-11-04
 - **Ivica Zubac** : Ankle expected back 2026-11-04
 
-_Mis à jour le 04/11/2026 19:23 (heure de Paris). Sources : NBA Fantasy (statuts), feuilles de match NBA via nba_api._
+_Mis à jour le 04/11/2026 19:31 (heure de Paris). Sources : NBA Fantasy (statuts), feuilles de match NBA via nba_api._
