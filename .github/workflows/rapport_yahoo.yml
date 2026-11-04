@@ -1,0 +1,43 @@
+# Rapport quotidien de la ligue Yahoo (rapport_yahoo.md), vers 10 h à Paris.
+# Les heures du cron sont en UTC et GitHub retarde souvent les passages programmés : plusieurs
+# passages sont prévus, et rapport_yahoo.py --si-besoin ne fait le rapport qu'une fois par jour,
+# au premier passage après 10 h (heure de Paris), été comme hiver.
+# Il est aussi refait à chaque modification de joueurs_yahoo.txt (ou du script), et à la demande.
+name: rapport-yahoo
+on:
+  schedule:
+    - cron: "3 8,9,11,14 * * *"
+  push:
+    paths:
+      - joueurs_yahoo.txt
+      - rapport_yahoo.py
+      - .github/workflows/rapport_yahoo.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: rapport-yahoo
+  cancel-in-progress: false
+jobs:
+  rapport:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      TZ: Europe/Paris
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install "nba_api>=1.10"
+      - name: Rapport
+        run: python rapport_yahoo.py ${{ github.event_name == 'schedule' && '--si-besoin' || '' }}
+      - name: Enregistrer
+        if: always()
+        run: |
+          git config user.name "assistant-nba"
+          git config user.email "actions@users.noreply.github.com"
+          git add rapport_yahoo.md
+          git diff --cached --quiet && exit 0
+          git commit -qm "Rapport Yahoo $(date '+%d/%m %H:%M')"
+          for essai in 1 2 3; do git pull -q --rebase -X theirs && git push -q && break; sleep 5; done
