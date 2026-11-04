@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-04T06:05:41.945684+00:00",
+ "lu": "2026-11-04T17:30:26.817466+00:00",
  "joueurs": {
   "jock landale": {
    "nom": "Jock Landale",
@@ -145,6 +145,15 @@
    "commentaire": "Watson (hamstring) is out for Wednesday's game in Oklahoma City.",
    "date": "2026-11-03"
   },
+  "santi aldama": {
+   "nom": "Santi Aldama",
+   "statut": "Out",
+   "blessure": "Right Leg Knee",
+   "retour_espn": "2026-11-04",
+   "retour_commentaire": null,
+   "commentaire": "Aldama (knee) was spotted at Wednesday's morning shootaround, Brad Townsend of The Dallas Morning News reports.",
+   "date": "2026-11-04"
+  },
   "max christie": {
    "nom": "Max Christie",
    "statut": "Out",
@@ -152,15 +161,6 @@
    "retour_espn": "2026-11-06",
    "retour_commentaire": null,
    "commentaire": "Christie (hip) is out for Wednesday's game against the Spurs.",
-   "date": "2026-11-03"
-  },
-  "santi aldama": {
-   "nom": "Santi Aldama",
-   "statut": "Out",
-   "blessure": "Right Leg Knee",
-   "retour_espn": "2026-11-04",
-   "retour_commentaire": null,
-   "commentaire": "Aldama (knee) is questionable for Wednesday's game against the Spurs.",
    "date": "2026-11-03"
   },
   "tarik biberovic": {
@@ -244,6 +244,15 @@
    "commentaire": "Duren will be re-evaluated in two weeks due to a right hamstring strain, Eric Vincent of ClutchPoints.com reports.",
    "date": "2026-10-25"
   },
+  "kristaps porzingis": {
+   "nom": "Kristaps Porzingis",
+   "statut": "Out",
+   "blessure": "Other Illness",
+   "retour_espn": "2026-12-01",
+   "retour_commentaire": null,
+   "commentaire": "The Warriors have stopped issuing salary payments to Porzingis, who remains away from the team and is considering retirement, Anthony Slater and Shams Charania of ESPN reported Wednesday.",
+   "date": "2026-11-04"
+  },
   "brandon williams": {
    "nom": "Brandon Williams",
    "statut": "Day-To-Day",
@@ -270,15 +279,6 @@
    "retour_commentaire": null,
    "commentaire": "Horford will be rested Monday against the Suns.",
    "date": "2026-11-03"
-  },
-  "kristaps porzingis": {
-   "nom": "Kristaps Porzingis",
-   "statut": "Out",
-   "blessure": "Other Illness",
-   "retour_espn": "2026-12-01",
-   "retour_commentaire": null,
-   "commentaire": "The Warriors are exploring potential trades involving Porzingis (personal), who remains away from the team indefinitely while dealing with ongoing health concerns, Anthony Slater of ESPN.com reports.",
-   "date": "2026-10-28"
   },
   "moses moody": {
    "nom": "Moses Moody",
