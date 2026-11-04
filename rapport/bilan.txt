@@ -302,7 +302,7 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       N.Tomlin (CLE) : Back expected back 2026-11-16
       D.Lively II (DAL) : Foot expected back 2026-11-12
       T.Biberovic (DAL) : Heel expected back 2026-11-12
-  statut i | chances ce Gameday 25 | prochain 25 : 31 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 30 joueurs
       J.Johnson (ATL) : Ankle expected back 2026-11-04
       J.Landale (ATL) : Hip expected back 2026-11-06
       E.Dëmin (BKN) : Leg expected back 2026-11-07
@@ -317,11 +317,11 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       H.Veesaar (ATL) : Knee expected back 2027-07-01
       R.Dillingham (CHI) : Wrist expected back 2026-11-06
       J.Strawther (DEN) : Knee expected back 2026-11-29
-  statut d | chances ce Gameday 100 | prochain 75 : 9 joueurs
+  statut d | chances ce Gameday 100 | prochain 75 : 8 joueurs
       P.Pritchard (BOS) : Shoulder expected back 2026-11-04
       C.White (CHA) : Calf expected back 2026-11-04
       J.Smith (CHI) : Finger expected back 2026-11-04
-      C.Johnson (DEN) : Ankle expected back 2026-11-04
+      C.Johnson (DEN) : Lower Body expected back 2026-11-04
   statut d | chances ce Gameday None | prochain 75 : 4 joueurs
       I.Jackson (LAC) : Groin expected back 2026-11-04
       K.Jones (MIL) : Ankle expected back 2026-11-04
@@ -350,6 +350,8 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       Q.Post (MEM) : Ankle expected back 2026-11-04
   statut u | chances ce Gameday 100 | prochain 0 : 1 joueurs
       E.Freeman (MIN) : Undisclosed expected back 2027-01-01
+  statut i | chances ce Gameday None | prochain 25 : 1 joueurs
+      D.Plowden (SAC) : Illness expected back 2026-11-06
   statut i | chances ce Gameday 75 | prochain 75 : 1 joueurs
       J.Poeltl (TOR) : Shoulder expected back 2026-11-04
 

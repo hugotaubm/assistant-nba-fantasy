@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-04T21:05:37.070353+00:00",
+ "lu": "2026-11-04T22:47:25.017402+00:00",
  "joueurs": {
   "jock landale": {
    "nom": "Jock Landale",
@@ -103,20 +103,11 @@
   "nic claxton": {
    "nom": "Nic Claxton",
    "statut": "Out",
-   "blessure": "Leg Hamstring",
-   "retour_espn": "2026-11-04",
+   "blessure": "Left Leg Hamstring",
+   "retour_espn": "2026-11-08",
    "retour_commentaire": null,
-   "commentaire": "Claxton (hamstring) is questionable for Wednesday against the Knicks.",
-   "date": "2026-11-03"
-  },
-  "jalen smith": {
-   "nom": "Jalen Smith",
-   "statut": "Day-To-Day",
-   "blessure": "Arm Finger",
-   "retour_espn": "2026-11-04",
-   "retour_commentaire": null,
-   "commentaire": "Smith is probable for Wednesday's game against the Knicks with a left finger sprain.",
-   "date": "2026-11-03"
+   "commentaire": "Claxton (hamstring) is listed as out for Wednesday's game against New York.",
+   "date": "2026-11-04"
   },
   "jaylon tyson": {
    "nom": "Jaylon Tyson",
@@ -184,7 +175,7 @@
   "cameron johnson": {
    "nom": "Cameron Johnson",
    "statut": "Day-To-Day",
-   "blessure": "Leg Ankle",
+   "blessure": "Lower Body",
    "retour_espn": "2026-11-04",
    "retour_commentaire": null,
    "commentaire": "Johnson (lower body injury management) is listed as probable for Wednesday's game against Toronto.",
@@ -626,10 +617,10 @@
    "nom": "Dominick Barlow",
    "statut": "Out",
    "blessure": "Torso Back",
-   "retour_espn": "2026-11-12",
+   "retour_espn": "2026-11-18",
    "retour_commentaire": null,
-   "commentaire": "Barlow (back) won't play in Wednesday's game against the Pistons, Austin Krell of OnPattison.com reports.",
-   "date": "2026-11-03"
+   "commentaire": "Head coach Nick Nurse said Wednesday that Barlow (back) likely needs another 10-12 days before he's cleared to return to the court, Derek Bodner of AllPHLY.com reports.",
+   "date": "2026-11-04"
   },
   "ariel hukporti": {
    "nom": "Ariel Hukporti",
@@ -685,13 +676,13 @@
    "commentaire": "Sharpe suffered a torn meniscus in his knee and is expected to miss six months, per Shams Charania of ESPN.",
    "date": "2026-08-24"
   },
-  "precious achiuwa": {
-   "nom": "Precious Achiuwa",
-   "statut": "Day-To-Day",
-   "blessure": "Left Leg Ankle",
-   "retour_espn": "2026-11-04",
+  "daeqwon plowden": {
+   "nom": "Daeqwon Plowden",
+   "statut": "Out",
+   "blessure": "Other Illness",
+   "retour_espn": "2026-11-06",
    "retour_commentaire": null,
-   "commentaire": "Achiuwa (ankle) is listed as probable for Wednesday's game against the Lakers.",
+   "commentaire": "Plowden (illness) is out for Wednesday's game against the Lakers.",
    "date": "2026-11-04"
   },
   "maxime raynaud": {
@@ -810,15 +801,6 @@
    "retour_commentaire": null,
    "commentaire": "Coulibaly (illness) is questionable for Wednesday against the Hawks.",
    "date": "2026-11-04"
-  },
-  "anthony gill": {
-   "nom": "Anthony Gill",
-   "statut": "Day-To-Day",
-   "blessure": "Torso Back",
-   "retour_espn": "2026-11-04",
-   "retour_commentaire": null,
-   "commentaire": "Gill (back) is questionable for Wednesday against the Hawks.",
-   "date": "2026-11-03"
   },
   "alex sarr": {
    "nom": "Alex Sarr",
