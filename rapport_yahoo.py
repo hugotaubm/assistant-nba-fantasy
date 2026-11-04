@@ -80,21 +80,45 @@ def _minutes(iso):
     return (int(m.group(1) or 0) + float(m.group(2) or 0) / 60) if m else 0.0
 
 
+_CAL = {}
+
+
+def calendrier():
+    """Calendrier de la saison (cdn.nba.com), lu une seule fois."""
+    if "cal" not in _CAL:
+        import requests
+        from nba_api.live.nba.library.http import NBALiveHTTP
+        # cdn.nba.com refuse les clients inconnus : mêmes en-têtes de navigateur que nba_api.live
+        entetes = {**NBALiveHTTP.headers, "Accept-Encoding": "gzip, deflate", "Accept": "application/json, */*"}
+
+        def lire():
+            r = requests.get(CALENDRIER, headers=entetes, timeout=60)
+            r.raise_for_status()
+            return r.json()
+        _CAL["cal"] = avec_essais(lire)
+    return _CAL["cal"]
+
+
+def ce_soir(jour):
+    """Matchs de la nuit qui suit (date US = date du jour) : {équipe: « @BKN 01:00 » / « MEM 02:00 »}, heure de Paris."""
+    res = {}
+    for jd in calendrier()["leagueSchedule"]["gameDates"]:
+        for g in jd["games"]:
+            if g["gameDateEst"][:10] != jour.isoformat() or not g["gameId"].startswith("002"):
+                continue
+            heure = dt.datetime.fromisoformat(g["gameDateTimeUTC"].replace("Z", "+00:00")).astimezone(PARIS).strftime("%H:%M")
+            dom, ext = g["homeTeam"]["teamTricode"], g["awayTeam"]["teamTricode"]
+            res[dom] = f"{ext} {heure}"
+            res[ext] = f"@{dom} {heure}"
+    return res
+
+
 def matchs_live(debut, fin):
     """Feuilles de match via nba_api.live (cdn.nba.com, joignable depuis GitHub Actions)."""
     from concurrent.futures import ThreadPoolExecutor
     from nba_api.live.nba.endpoints import boxscore
 
-    import requests
-    from nba_api.live.nba.library.http import NBALiveHTTP
-    # cdn.nba.com refuse les clients inconnus : mêmes en-têtes de navigateur que nba_api.live
-    entetes = {**NBALiveHTTP.headers, "Accept-Encoding": "gzip, deflate", "Accept": "application/json, */*"}
-
-    def lire_cal():
-        r = requests.get(CALENDRIER, headers=entetes, timeout=60)
-        r.raise_for_status()
-        return r.json()
-    cal = avec_essais(lire_cal)
+    cal = calendrier()
     a_lire = []  # (id du match, date US)
     for jd in cal["leagueSchedule"]["gameDates"]:
         for g in jd["games"]:
@@ -179,17 +203,18 @@ def fmt(m, k):
     return f"{v:.1f}"
 
 
-def rapport(jour, noms, bl, logs, erreur_stats=None):
+def rapport(jour, noms, bl, logs, erreur_stats=None, soir=None):
     titre = f"# Rapport Yahoo — {JOURS[jour.weekday()]} {jour.day} {MOIS[jour.month - 1]} {jour.year}"
     # repère du mode --si-besoin ; absent si les stats manquent, pour réessayer au passage suivant
     repere = "<!-- date: incomplet -->" if erreur_stats else f"<!-- date: {jour.isoformat()} -->"
     out = [titre, repere, "",
            "Chaque case : moyenne sur les **7 derniers jours · 15 derniers jours** (matchs joués : MJ). "
-           "FG% et FT% calculés sur le total des tirs.", ""]
+           "FG% et FT% calculés sur le total des tirs. « Ce soir » : match de la nuit qui vient "
+           "(@ = à l'extérieur), heure de Paris.", ""]
     if erreur_stats:
         out += [f"> ⚠️ Statistiques NBA indisponibles aujourd'hui ({erreur_stats}).", ""]
-    out.append("| Joueur | Éq. | Statut | " + " | ".join(t for _, t in COLONNES) + " |")
-    out.append("|---|---|---|" + "---:|" * len(COLONNES))
+    out.append("| Joueur | Éq. | Statut | Ce soir | " + " | ".join(t for _, t in COLONNES) + " |")
+    out.append("|---|---|---|---|" + "---:|" * len(COLONNES))
     notes, absents = [], []
     for nom in noms:
         k = cle(nom)
@@ -200,7 +225,8 @@ def rapport(jour, noms, bl, logs, erreur_stats=None):
             notes.append(f"- **{nom}** : {news}")
         m7, m15 = (moyennes(logs.get(k, []), jour, n) for n in FENETRES)
         cases = ["–" if m7 is None and m15 is None else f"{fmt(m7, c)} · {fmt(m15, c)}" for c, _ in COLONNES]
-        out.append(f"| {nom} | {equipe} | {statut} | " + " | ".join(cases) + " |")
+        match = "?" if soir is None else soir.get(equipe, "–")
+        out.append(f"| {nom} | {equipe} | {statut} | {match} | " + " | ".join(cases) + " |")
     if notes:
         out += ["", "**Blessures / nouvelles**", ""] + notes
     if absents:
@@ -230,7 +256,13 @@ def main():
     except Exception as ex:
         logs, erreur = {}, f"{type(ex).__name__}"
         print(f"  stats NBA non lues : {ex!r}")
-    SORTIE.write_text(rapport(jour, noms, bl, logs, erreur), encoding="utf-8")
+    try:
+        soir = ce_soir(jour)
+        print(f"  ce soir : {len(soir) // 2} matchs")
+    except Exception as ex:
+        soir = None
+        print(f"  calendrier de ce soir non lu : {ex!r}")
+    SORTIE.write_text(rapport(jour, noms, bl, logs, erreur, soir), encoding="utf-8")
     print(f"  écrit : {SORTIE.name}")
     sans_match = [n for n in noms if cle(n) not in logs]
     if sans_match and not erreur:
