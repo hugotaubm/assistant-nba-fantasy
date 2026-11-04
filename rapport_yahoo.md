@@ -1,31 +1,29 @@
 # Rapport Yahoo — mercredi 4 novembre 2026
-<!-- date: incomplet -->
+<!-- date: 2026-11-04 -->
 
 Chaque case : moyenne sur les **7 derniers jours · 15 derniers jours** (matchs joués : MJ). FG% et FT% calculés sur le total des tirs.
 
-> ⚠️ Statistiques NBA indisponibles aujourd'hui (ReadTimeout).
-
 | Joueur | Éq. | Statut | MJ | MIN | FG% | FT% | 3PM | PTS | REB | AST | STL | BLK | TO |
 |---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| De'Aaron Fox | SAS | OK | – | – | – | – | – | – | – | – | – | – | – |
-| Derrick White | BOS | OK | – | – | – | – | – | – | – | – | – | – | – |
-| Coby White | CHA | Incertain (75 %) | – | – | – | – | – | – | – | – | – | – | – |
-| Deni Avdija | POR | OK | – | – | – | – | – | – | – | – | – | – | – |
-| Jonathan Kuminga | MIN | OK | – | – | – | – | – | – | – | – | – | – | – |
-| P.J. Washington | DAL | OK | – | – | – | – | – | – | – | – | – | – | – |
-| Victor Wembanyama | SAS | OK | – | – | – | – | – | – | – | – | – | – | – |
-| Andrew Wiggins | MIA | OK | – | – | – | – | – | – | – | – | – | – | – |
-| LeBron James | PHI | OK | – | – | – | – | – | – | – | – | – | – | – |
-| Kyshawn George | WAS | OK | – | – | – | – | – | – | – | – | – | – | – |
-| Darryn Peterson | UTA | OK | – | – | – | – | – | – | – | – | – | – | – |
-| Joan Beringer | MIN | OK | – | – | – | – | – | – | – | – | – | – | – |
-| Isaiah Jackson | LAC | OK | – | – | – | – | – | – | – | – | – | – | – |
-| Aaron Nesmith | IND | OK | – | – | – | – | – | – | – | – | – | – | – |
-| Ivica Zubac | IND | Incertain (75 %) | – | – | – | – | – | – | – | – | – | – | – |
+| De'Aaron Fox | SAS | OK | 3 · 7 | 32.0 · 30.8 | .600 · .582 | .769 · .781 | 0.7 · 1.1 | 16.0 · 15.9 | 4.3 · 4.4 | 4.7 · 6.4 | 1.3 · 1.4 | 0.7 · 0.4 | 2.7 · 2.9 |
+| Derrick White | BOS | OK | 3 · 7 | 29.7 · 29.9 | .423 · .435 | 1.000 · 1.000 | 1.3 · 1.6 | 9.3 · 11.1 | 2.0 · 3.1 | 3.0 · 4.9 | 1.7 · 1.4 | 0.0 · 0.1 | 1.7 · 2.7 |
+| Coby White | CHA | Incertain (75 %) | 1 · 1 | 15.9 · 15.9 | .333 · .333 | – · – | 1.0 · 1.0 | 7.0 · 7.0 | 0.0 · 0.0 | 3.0 · 3.0 | 0.0 · 0.0 | 0.0 · 0.0 | 3.0 · 3.0 |
+| Deni Avdija | POR | OK | 3 · 6 | 32.4 · 31.9 | .480 · .485 | .706 · .667 | 1.3 · 1.8 | 25.3 · 23.8 | 5.7 · 6.3 | 4.7 · 5.5 | 0.3 · 0.8 | 0.3 · 0.2 | 1.7 · 2.2 |
+| Jonathan Kuminga | MIN | OK | 4 · 8 | 31.8 · 30.8 | .417 · .434 | .667 · .550 | 2.0 · 1.9 | 13.0 · 12.2 | 5.0 · 5.4 | 2.8 · 2.6 | 0.5 · 1.2 | 1.5 · 1.0 | 1.2 · 0.8 |
+| P.J. Washington | DAL | OK | 3 · 7 | 32.7 · 34.1 | .303 · .400 | .800 · .720 | 1.7 · 1.9 | 11.0 · 13.6 | 8.0 · 7.7 | 0.7 · 1.1 | 0.7 · 0.6 | 0.3 · 0.9 | 1.3 · 1.9 |
+| Victor Wembanyama | SAS | OK | 3 · 7 | 32.2 · 31.2 | .486 · .469 | .750 · .738 | 2.3 · 1.6 | 30.3 · 25.7 | 10.7 · 10.7 | 4.7 · 3.3 | 1.7 · 1.3 | 3.7 · 4.0 | 2.7 · 2.3 |
+| Andrew Wiggins | MIA | OK | 3 · 7 | 27.6 · 26.8 | .520 · .446 | .600 · .667 | 2.7 · 1.4 | 12.3 · 10.3 | 1.3 · 2.6 | 1.7 · 1.4 | 0.7 · 0.6 | 1.0 · 0.7 | 1.0 · 1.0 |
+| LeBron James | PHI | OK | 3 · 6 | 32.7 · 33.1 | .475 · .451 | .600 · .621 | 1.3 · 0.8 | 16.0 · 16.2 | 7.0 · 7.0 | 9.0 · 7.3 | 1.0 · 1.5 | 1.0 · 0.8 | 1.7 · 2.3 |
+| Kyshawn George | WAS | OK | 3 · 7 | 35.4 · 32.3 | .486 · .483 | .000 · .789 | 2.7 · 1.7 | 14.0 · 16.1 | 3.0 · 4.3 | 6.3 · 4.6 | 0.3 · 0.6 | 1.0 · 1.3 | 1.0 · 3.1 |
+| Darryn Peterson | UTA | OK | 3 · 7 | 31.6 · 30.3 | .366 · .363 | .909 · .889 | 2.7 · 1.7 | 16.0 · 13.4 | 4.3 · 4.3 | 4.3 · 3.3 | 1.7 · 1.3 | 1.3 · 0.7 | 2.0 · 1.1 |
+| Joan Beringer | MIN | OK | 4 · 8 | 21.6 · 18.1 | .500 · .568 | .700 · .714 | 0.0 · 0.0 | 6.2 · 6.5 | 6.8 · 6.9 | 1.5 · 0.9 | 0.5 · 0.4 | 1.0 · 0.8 | 0.2 · 0.5 |
+| Isaiah Jackson | LAC | OK | 4 · 7 | 22.1 · 22.1 | .556 · .604 | .875 · .667 | 0.2 · 0.1 | 9.5 · 9.6 | 7.0 · 6.4 | 2.2 · 2.3 | 1.0 · 1.4 | 1.0 · 0.9 | 1.8 · 2.0 |
+| Aaron Nesmith | IND | OK | 3 · 6 | 26.0 · 23.1 | .357 · .393 | .933 · .864 | 1.3 · 1.7 | 12.7 · 12.2 | 2.7 · 2.2 | 2.3 · 1.8 | 1.0 · 0.7 | 0.0 · 0.2 | 2.0 · 1.7 |
+| Ivica Zubac | IND | Incertain (75 %) | – · 3 | – · 21.4 | – · .600 | – · .500 | – · 0.0 | – · 9.0 | – · 9.0 | – · 1.3 | – · 0.0 | – · 1.0 | – · 1.7 |
 
 **Blessures / nouvelles**
 
 - **Coby White** : Calf expected back 2026-11-04
 - **Ivica Zubac** : Ankle expected back 2026-11-04
 
-_Mis à jour le 04/11/2026 19:22 (heure de Paris). Sources : NBA Fantasy (statuts), feuilles de match NBA via nba_api._
+_Mis à jour le 04/11/2026 19:23 (heure de Paris). Sources : NBA Fantasy (statuts), feuilles de match NBA via nba_api._
