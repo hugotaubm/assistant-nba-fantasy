@@ -1,5 +1,5 @@
 # Rapport Yahoo — mercredi 4 novembre 2026
-<!-- date: 2026-11-04 -->
+<!-- date: incomplet -->
 
 Chaque case : moyenne sur les **7 derniers jours · 15 derniers jours** (matchs joués : MJ). FG% et FT% calculés sur le total des tirs.
 
@@ -28,4 +28,4 @@ Chaque case : moyenne sur les **7 derniers jours · 15 derniers jours** (matchs 
 - **Coby White** : Calf expected back 2026-11-04
 - **Ivica Zubac** : Ankle expected back 2026-11-04
 
-_Mis à jour le 04/11/2026 19:20 (heure de Paris). Sources : NBA Fantasy (statuts), stats.nba.com via nba_api._
+_Mis à jour le 04/11/2026 19:22 (heure de Paris). Sources : NBA Fantasy (statuts), feuilles de match NBA via nba_api._
