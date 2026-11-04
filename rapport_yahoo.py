@@ -2,7 +2,7 @@
 
 Pour chaque joueur de joueurs_yahoo.txt :
   - statut de blessure lu sur NBA Fantasy (bootstrap-static) ;
-  - sur les 7 et 15 derniers jours (nba_api) : matchs joués, minutes et moyennes des 9 catégories.
+  - sur les 7 et 15 derniers jours (nba_api : module live, cdn.nba.com ; repli sur stats.nba.com) : matchs joués, minutes et moyennes des 9 catégories.
 Écrit rapport_yahoo.md (un tableau, une ligne par joueur ; chaque case donne « 7 j · 15 j »).
 
     python3 rapport_yahoo.py              # rapport tout de suite
@@ -71,18 +71,75 @@ def saison(jour):
     return f"{a}-{(a + 1) % 100:02d}"
 
 
-def matchs(jour):
-    """Feuilles de match (saison régulière) des 15 derniers jours, tous joueurs : {nom normalisé: [lignes]}."""
+CALENDRIER = "https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json"
+
+
+def _minutes(iso):
+    """« PT34M12.00S » -> 34.2"""
+    m = re.match(r"PT(?:(\d+)M)?(?:([\d.]+)S)?", iso or "")
+    return (int(m.group(1) or 0) + float(m.group(2) or 0) / 60) if m else 0.0
+
+
+def matchs_live(debut, fin):
+    """Feuilles de match via nba_api.live (cdn.nba.com, joignable depuis GitHub Actions)."""
+    from concurrent.futures import ThreadPoolExecutor
+    from nba_api.live.nba.endpoints import boxscore
+
+    def lire_cal():
+        with urllib.request.urlopen(urllib.request.Request(CALENDRIER, headers=UA), timeout=60) as r:
+            return json.load(r)
+    cal = avec_essais(lire_cal)
+    a_lire = []  # (id du match, date US)
+    for jd in cal["leagueSchedule"]["gameDates"]:
+        for g in jd["games"]:
+            date_us = dt.date.fromisoformat(g["gameDateEst"][:10])
+            # saison régulière (id 002…) ; matchs terminés (gameStatus 3) de la fenêtre
+            if g["gameId"].startswith("002") and g.get("gameStatus") == 3 and debut <= date_us <= fin:
+                a_lire.append((g["gameId"], date_us))
+
+    def feuille(m):
+        gid, date_us = m
+        d = avec_essais(lambda: boxscore.BoxScore(gid, timeout=30).get_dict()["game"])
+        lignes = []
+        for camp in ("homeTeam", "awayTeam"):
+            for j in d[camp]["players"]:
+                st = j.get("statistics") or {}
+                if j.get("played") != "1":
+                    continue
+                lignes.append(dict(PLAYER_NAME=j["name"], GAME_ID=gid, GAME_DATE=date_us.isoformat(),
+                                   MIN=_minutes(st.get("minutes")), FGM=st.get("fieldGoalsMade"),
+                                   FGA=st.get("fieldGoalsAttempted"), FTM=st.get("freeThrowsMade"),
+                                   FTA=st.get("freeThrowsAttempted"), FG3M=st.get("threePointersMade"),
+                                   PTS=st.get("points"), REB=st.get("reboundsTotal"), AST=st.get("assists"),
+                                   STL=st.get("steals"), BLK=st.get("blocks"), TOV=st.get("turnovers")))
+        return lignes
+    with ThreadPoolExecutor(6) as ex:
+        feuilles = list(ex.map(feuille, a_lire))
+    print(f"  {len(a_lire)} matchs lus sur cdn.nba.com")
+    return [l for f in feuilles for l in f]
+
+
+def matchs_stats(jour, debut, fin):
+    """Feuilles de match via nba_api.stats (stats.nba.com, souvent bloqué depuis les serveurs cloud)."""
     from nba_api.stats.endpoints import playergamelogs
+    return playergamelogs.PlayerGameLogs(
+        season_nullable=saison(jour), season_type_nullable="Regular Season",
+        date_from_nullable=debut.strftime("%m/%d/%Y"), date_to_nullable=fin.strftime("%m/%d/%Y"),
+        timeout=30).get_normalized_dict()["PlayerGameLogs"]
+
+
+def matchs(jour):
+    """Feuilles de match (saison régulière) des 15 derniers jours, tous joueurs : {nom normalisé: [lignes]}.
+    Dates des matchs à l'heure américaine : au réveil à Paris, les matchs de la nuit sont « hier »."""
     debut = jour - dt.timedelta(days=max(FENETRES))
     fin = jour - dt.timedelta(days=1)
-    def lire():
-        return playergamelogs.PlayerGameLogs(
-            season_nullable=saison(jour), season_type_nullable="Regular Season",
-            date_from_nullable=debut.strftime("%m/%d/%Y"), date_to_nullable=fin.strftime("%m/%d/%Y"),
-            timeout=60).get_normalized_dict()["PlayerGameLogs"]
+    try:
+        lignes = matchs_live(debut, fin)
+    except Exception as ex:
+        print(f"  cdn.nba.com non lu ({ex!r}) ; essai sur stats.nba.com")
+        lignes = matchs_stats(jour, debut, fin)
     res = {}
-    for l in avec_essais(lire):
+    for l in lignes:
         res.setdefault(cle(l["PLAYER_NAME"]), {})[l["GAME_ID"]] = l
     return {k: list(v.values()) for k, v in res.items()}
 
@@ -118,7 +175,9 @@ def fmt(m, k):
 
 def rapport(jour, noms, bl, logs, erreur_stats=None):
     titre = f"# Rapport Yahoo — {JOURS[jour.weekday()]} {jour.day} {MOIS[jour.month - 1]} {jour.year}"
-    out = [titre, f"<!-- date: {jour.isoformat()} -->", "",
+    # repère du mode --si-besoin ; absent si les stats manquent, pour réessayer au passage suivant
+    repere = "<!-- date: incomplet -->" if erreur_stats else f"<!-- date: {jour.isoformat()} -->"
+    out = [titre, repere, "",
            "Chaque case : moyenne sur les **7 derniers jours · 15 derniers jours** (matchs joués : MJ). "
            "FG% et FT% calculés sur le total des tirs.", ""]
     if erreur_stats:
@@ -141,7 +200,7 @@ def rapport(jour, noms, bl, logs, erreur_stats=None):
     if absents:
         out += ["", f"_Non trouvés sur NBA Fantasy : {', '.join(absents)}._"]
     maj = dt.datetime.now(PARIS).strftime("%d/%m/%Y %H:%M")
-    out += ["", f"_Mis à jour le {maj} (heure de Paris). Sources : NBA Fantasy (statuts), stats.nba.com via nba_api._", ""]
+    out += ["", f"_Mis à jour le {maj} (heure de Paris). Sources : NBA Fantasy (statuts), feuilles de match NBA via nba_api._", ""]
     return "\n".join(out)
 
 
