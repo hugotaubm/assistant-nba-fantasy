@@ -85,9 +85,15 @@ def matchs_live(debut, fin):
     from concurrent.futures import ThreadPoolExecutor
     from nba_api.live.nba.endpoints import boxscore
 
+    import requests
+    from nba_api.live.nba.library.http import NBALiveHTTP
+    # cdn.nba.com refuse les clients inconnus : mêmes en-têtes de navigateur que nba_api.live
+    entetes = {**NBALiveHTTP.headers, "Accept-Encoding": "gzip, deflate", "Accept": "application/json, */*"}
+
     def lire_cal():
-        with urllib.request.urlopen(urllib.request.Request(CALENDRIER, headers=UA), timeout=60) as r:
-            return json.load(r)
+        r = requests.get(CALENDRIER, headers=entetes, timeout=60)
+        r.raise_for_status()
+        return r.json()
     cal = avec_essais(lire_cal)
     a_lire = []  # (id du match, date US)
     for jd in cal["leagueSchedule"]["gameDates"]:
