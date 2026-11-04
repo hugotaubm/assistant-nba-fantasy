@@ -225,13 +225,15 @@ Par prix :
   < 7 M$                 106 matchs | 0 min : 33 | biais  -4.9 | réel/projeté 0.78 | minutes 16.0
   ≥ 15 M$                226 matchs | 0 min : 24 | biais  -3.2 | réel/projeté 0.94 | minutes 32.9
 Par rang dans la hiérarchie ESPN (1 = titulaire) :
-  rang 1                 1001 matchs | 0 min : 107 | biais  -1.6 | réel/projeté 0.96 | minutes 29.8
-  rang 2                 522 matchs | 0 min : 77 | biais  -4.5 | réel/projeté 0.82 | minutes 20.7
-  rang 3                  49 matchs | 0 min : 17 | biais -11.2 | réel/projeté 0.55 | minutes 15.9
+  rang 1                 1008 matchs | 0 min : 106 | biais  -1.6 | réel/projeté 0.96 | minutes 29.6
+  rang 2                 529 matchs | 0 min : 84 | biais  -4.6 | réel/projeté 0.82 | minutes 20.8
+  rang 3                  42 matchs | 0 min : 17 | biais -12.4 | réel/projeté 0.50 | minutes 15.7
   rang 4                  21 matchs | 0 min : 15 | biais  -9.0 | réel/projeté 0.64 | minutes 12.8
-  rang 5                  37 matchs | 0 min : 22 | biais  -2.3 | réel/projeté 0.92 | minutes 22.8
-  rang 6                  70 matchs | 0 min : 50 | biais  -9.0 | réel/projeté 0.74 | minutes 19.6
-  rang 8                  22 matchs | 0 min : 15 | biais  -2.0 | réel/projeté 0.96 | minutes 32.3
+  rang 5                  30 matchs | 0 min : 16 | biais  -3.0 | réel/projeté 0.90 | minutes 22.8
+  rang 6                  63 matchs | 0 min : 46 | biais -10.2 | réel/projeté 0.69 | minutes 17.8
+  rang 7                  20 matchs | 0 min : 17 | biais  -1.9 | réel/projeté 0.95 | minutes 29.3
+  rang 8                  15 matchs | 0 min : 11 | biais  +4.9 | réel/projeté 1.10 | minutes 33.2
+  rang 9                   7 matchs | 0 min :  4 | biais -11.2 | réel/projeté 0.73 | minutes 31.0
   rang inconnu            36 matchs | 0 min : 23 | biais  -9.0 | réel/projeté 0.69 | minutes 21.8
 Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : 339 sur 1771
   - L.Doncic (LAL) (event 9) : projeté 65.5, statut actuel a, news : -
@@ -295,50 +297,58 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       M.Uzan (BOS) : -
       N.Pringle (BKN) : -
       P.Connaughton (CHA) : -
-  statut i | chances ce Gameday 25 | prochain 25 : 43 joueurs
-      J.Johnson (ATL) : Ankle expected back 2026-11-04
-      J.Landale (ATL) : Hip expected back 2026-11-04
-      E.Dëmin (BKN) : Leg expected back 2026-11-07
-      T.Bilodeau (BKN) : Shoulder expected back 2026-11-06
   statut i | chances ce Gameday 0 | prochain 0 : 34 joueurs
       D.Carter (BOS) : Illness expected back 2026-11-08
       N.Tomlin (CLE) : Back expected back 2026-11-16
       D.Lively II (DAL) : Foot expected back 2026-11-12
       T.Biberovic (DAL) : Heel expected back 2026-11-12
+  statut i | chances ce Gameday 25 | prochain 25 : 32 joueurs
+      J.Johnson (ATL) : Ankle expected back 2026-11-04
+      J.Landale (ATL) : Hip expected back 2026-11-06
+      E.Dëmin (BKN) : Leg expected back 2026-11-07
+      T.Bilodeau (BKN) : Shoulder expected back 2026-11-06
   statut u | chances ce Gameday 100 | prochain 100 : 13 joueurs
       I.McKneely (ATL) : -
       J.Poulakidas (DAL) : -
       A.Toohey (GSW) : -
       R.Castro (HOU) : -
+  statut d | chances ce Gameday 100 | prochain 75 : 11 joueurs
+      J.Tatum (BOS) : Rest expected back 2026-11-04
+      P.Pritchard (BOS) : Shoulder expected back 2026-11-04
+      C.White (CHA) : Calf expected back 2026-11-04
+      J.Smith (CHI) : Finger expected back 2026-11-04
   statut u | chances ce Gameday 0 | prochain 0 : 10 joueurs
       M.Gueye (ATL) : Foot expected back 2026-11-20
       H.Veesaar (ATL) : Knee expected back 2027-07-01
       R.Dillingham (CHI) : Wrist expected back 2026-11-06
       J.Strawther (DEN) : Knee expected back 2026-11-29
-  statut d | chances ce Gameday 100 | prochain 75 : 4 joueurs
-      J.Tatum (BOS) : Rest expected back 2026-11-04
-      P.Pritchard (BOS) : Shoulder expected back 2026-11-04
-      J.Smith (CHI) : Finger expected back 2026-11-04
-      M.Christie (DAL) : Hip expected back 2026-11-04
-  statut i | chances ce Gameday 25 | prochain 75 : 3 joueurs
-      S.Jones (DEN) : Hamstring expected back 2026-11-04
-      Q.Post (MEM) : Ankle expected back 2026-11-04
-      S.Pippen Jr. (MEM) : Back expected back 2026-11-04
-  statut i | chances ce Gameday 75 | prochain 75 : 2 joueurs
-      D.Cardwell (SAC) : Calf expected back 2026-11-04
-      J.Poeltl (TOR) : Shoulder expected back 2026-11-04
+  statut d | chances ce Gameday 25 | prochain 75 : 3 joueurs
+      K.Knueppel (CHA) : Hamstring expected back 2026-11-04
+      O.Toppin (IND) : Back expected back 2026-11-04
+      I.Zubac (IND) : Ankle expected back 2026-11-04
+  statut d | chances ce Gameday None | prochain 75 : 3 joueurs
+      J.Goodwin (PHX) : Calf expected back 2026-11-04
+      R.Fleming (PHX) : Ankle expected back 2026-11-04
+      M.Bamba (UTA) : Ankle expected back 2026-11-04
+  statut i | chances ce Gameday 25 | prochain 0 : 2 joueurs
+      N.Topic (OKC) : Back expected back 2026-11-13
+      T.Sorber (OKC) : Knee expected back 2026-11-13
+  statut i | chances ce Gameday 100 | prochain 25 : 1 joueurs
+      M.Christie (DAL) : Hip expected back 2026-11-06
+  statut d | chances ce Gameday 75 | prochain 75 : 1 joueurs
+      A.Diallo (DEN) : Wrist expected back 2026-11-04
   statut i | chances ce Gameday 75 | prochain 25 : 1 joueurs
       B.Williams (GSW) : Quadriceps expected back 2026-11-05
   statut i | chances ce Gameday None | prochain 75 : 1 joueurs
       K.Oubre Jr. (IND) : Knee expected back 2026-11-04
   statut i | chances ce Gameday 0 | prochain 25 : 1 joueurs
       A.Thiero (LAL) : Knee expected back 2026-11-06
-  statut i | chances ce Gameday 100 | prochain 0 : 1 joueurs
+  statut i | chances ce Gameday 25 | prochain 75 : 1 joueurs
+      Q.Post (MEM) : Ankle expected back 2026-11-04
+  statut u | chances ce Gameday 100 | prochain 0 : 1 joueurs
       E.Freeman (MIN) : Undisclosed expected back 2027-01-01
-  statut d | chances ce Gameday 25 | prochain 75 : 1 joueurs
-      N.Topic (OKC) : Back expected back 2026-11-04
-  statut d | chances ce Gameday None | prochain 75 : 1 joueurs
-      J.Goodwin (PHX) : Calf expected back 2026-11-04
+  statut i | chances ce Gameday 75 | prochain 75 : 1 joueurs
+      J.Poeltl (TOR) : Shoulder expected back 2026-11-04
 
 ======================================================================
 LIGUE FIRST TEAM
