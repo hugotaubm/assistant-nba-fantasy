@@ -59,6 +59,7 @@ def lire_config():
     cfg.setdefault("poids_minutes_avant_saison", 3)    # matchs « fictifs » donnés aux minutes projetées
     cfg.setdefault("poids_points_avant_saison", 8)     # matchs « fictifs » donnés à la projection d'avant-saison
     cfg.setdefault("plafond_minutes", 1.3)             # hausse max de la projection quand un joueur joue plus que prévu
+    cfg.setdefault("capitaine_attente", 0.02)          # capitaine : bonus réduit de 2 % par Gameday d'attente (départage)
     cfg.setdefault("poids_forme", 0.25)                # part de la forme récente (à partir de 5 matchs)
     cfg.setdefault("fiabilite_rang", {"3": 0.9, "4+": 0.75})   # 3e ou au-delà dans la hiérarchie de son poste
     cfg.setdefault("seuil_joker", 300)          # gain (pts, semaine + suivante pondérée) à partir duquel le joker vaut le coup (alerte)
@@ -882,7 +883,10 @@ def optimiser(joueurs, equipe, banque, prix_vente, gratuits, cap_dispo, jours, j
         ys = [i for i in range(n) if ("y", i, d) in idx]
         for i in ys:
             v = poids[d] * ev_jour(cand[i], e["id"], joue, dates[e["id"]])
-            obj[idx[("y", i, d)]] = -v; obj[idx[("c", i, d)]] = -v
+            # capitaine : à gain presque égal, le plus tôt (un capitaine gardé pour plus tard peut se blesser,
+            # être mis au repos ou voir son soir passer) ; -2 % par Gameday d'attente dans la semaine
+            rang_sem = sum(1 for dd in range(d) if sem[dd] == sem[d])
+            obj[idx[("y", i, d)]] = -v; obj[idx[("c", i, d)]] = -v * (1 - cfg["capitaine_attente"] * rang_sem)
             row({idx[("y", i, d)]: 1, idx[("s", i, d)]: -1}, -np.inf, 0)
             row({idx[("c", i, d)]: 1, idx[("y", i, d)]: -1}, -np.inf, 0)
         if ys:
