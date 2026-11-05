@@ -253,7 +253,7 @@ Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : 383 sur 2001
   - L.Doncic (LAL) (event 9) : projeté 65.5, statut actuel a, news : -
   - J.Johnson (ATL) (event 14) : projeté 53.4, statut actuel i, news : Ankle expected back 2026-11-06
   - J.Johnson (ATL) (event 15) : projeté 53.4, statut actuel i, news : Ankle expected back 2026-11-06
-  - J.Tatum (BOS) (event 15) : projeté 51.5, statut actuel i, news : Rest expected back 2026-11-06
+  - J.Tatum (BOS) (event 15) : projeté 51.5, statut actuel a, news : -
   - J.Embiid (PHI) (event 6) : projeté 48.5, statut actuel a, news : -
   - J.Embiid (PHI) (event 12) : projeté 48.5, statut actuel a, news : -
   - A.Edwards (MIN) (event 9) : projeté 48.4, statut actuel i, news : Knee expected back 2026-12-21
@@ -293,10 +293,10 @@ CALIBRATION DU MODÈLE (points réels / points attendus, par rang)
   rang 3+  : 1167 joueurs-matchs | réel    6003 / attendu    6223 = 0.96 → facteur appliqué 0.967
   rang ?   :  235 joueurs-matchs | réel     511 / attendu    1376 = 0.37 → facteur appliqué 0.750
 Erreur restante du modèle par tranche de prix (après la calibration par rang) :
-  10-15 M$  :  587 joueurs-matchs | réel   18084 / attendu   18096 = 1.00 → facteur appliqué 0.999
-  7-10 M$   :  791 joueurs-matchs | réel   15757 / attendu   15483 = 1.02 → facteur appliqué 1.017
-  < 7 M$    : 1616 joueurs-matchs | réel   10011 / attendu   10688 = 0.94 → facteur appliqué 0.939
-  ≥ 15 M$   :  205 joueurs-matchs | réel    9447 / attendu    9054 = 1.04 → facteur appliqué 1.042
+  10-15 M$  :  587 joueurs-matchs | réel   18084 / attendu   18129 = 1.00 → facteur appliqué 0.998
+  7-10 M$   :  791 joueurs-matchs | réel   15757 / attendu   15416 = 1.02 → facteur appliqué 1.022
+  < 7 M$    : 1616 joueurs-matchs | réel   10011 / attendu   10735 = 0.93 → facteur appliqué 0.935
+  ≥ 15 M$   :  205 joueurs-matchs | réel    9447 / attendu    9083 = 1.04 → facteur appliqué 1.038
 
 Vérification du barème (points du jeu vs formule des projections) :
   Statistiques fournies par le jeu : ['assists', 'blocks', 'in_dreamteam', 'minutes', 'played', 'points_scored', 'rebounds', 'steals', 'total_points']
@@ -306,7 +306,7 @@ Vérification du barème (points du jeu vs formule des projections) :
 ======================================================================
 STATUTS DU JEU (joueurs non disponibles à 100 %)
 ======================================================================
-  statut u | chances ce Gameday None | prochain None : 49 joueurs
+  statut u | chances ce Gameday None | prochain None : 48 joueurs
       T.DeVries (BOS) : -
       M.Uzan (BOS) : -
       N.Pringle (BKN) : -
@@ -316,11 +316,11 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       D.Carter (BOS) : Illness expected back 2026-11-08
       N.Tomlin (CLE) : Back expected back 2026-11-16
       D.Lively II (DAL) : Foot expected back 2026-11-12
-  statut i | chances ce Gameday 25 | prochain 25 : 33 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 32 joueurs
       J.Johnson (ATL) : Ankle expected back 2026-11-06
-      J.Landale (ATL) : Hip expected back 2026-11-06
-      J.Tatum (BOS) : Rest expected back 2026-11-06
-      E.Dëmin (BKN) : Leg expected back 2026-11-07
+      J.Landale (ATL) : Hip expected back 2026-11-07
+      E.Dëmin (BKN) : Leg expected back 2026-11-11
+      T.Bilodeau (BKN) : Shoulder expected back 2026-11-06
   statut u | chances ce Gameday 100 | prochain 100 : 13 joueurs
       I.McKneely (ATL) : -
       J.Poulakidas (DAL) : -
@@ -331,20 +331,21 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       R.Dillingham (CHI) : Wrist expected back 2026-11-06
       J.Strawther (DEN) : Knee expected back 2026-11-29
       E.Freeman (MIN) : Undisclosed expected back 2027-01-01
-  statut d | chances ce Gameday 100 | prochain 75 : 9 joueurs
-      A.Newell (ATL) : Toe expected back 2026-11-06
+  statut d | chances ce Gameday 100 | prochain 75 : 10 joueurs
       P.Pritchard (BOS) : Eye expected back 2026-11-06
       N.Clowney (BKN) : Knee expected back 2026-11-07
-      J.Smith (CHI) : Hand expected back 2026-11-08
-  statut i | chances ce Gameday 100 | prochain 25 : 2 joueurs
-      K.Knueppel (CHA) : Leg expected back 2026-11-06
+      M.Diabate (CHA) : Quadriceps expected back 2026-11-06
+      D.Schröder (CHA) : Thigh expected back 2026-11-06
+  statut i | chances ce Gameday 100 | prochain 25 : 4 joueurs
+      A.Newell (ATL) : Toe expected back 2026-11-07
+      K.Gilbert (ATL) : Knee expected back 2026-11-08
+      K.Knueppel (CHA) : Hamstring expected back 2026-11-09
       D.DeRozan (DEN) : Back expected back 2026-11-07
-  statut i | chances ce Gameday 75 | prochain 25 : 2 joueurs
+  statut i | chances ce Gameday 75 | prochain 25 : 4 joueurs
       K.Oubre Jr. (IND) : Calf expected back 2026-11-07
       K.Jones (MIL) : Ankle expected back 2026-11-06
-  statut i | chances ce Gameday 75 | prochain 75 : 2 joueurs
-      J.Goodwin (PHX) : Calf expected back 2026-11-05
-      R.Fleming (PHX) : Ankle expected back 2026-11-05
+      J.Goodwin (PHX) : Calf expected back 2026-11-07
+      R.Fleming (PHX) : Ankle expected back 2026-11-07
   statut i | chances ce Gameday None | prochain 0 : 1 joueurs
       V.Krejci (POR) : Ankle expected back 2027-01-02
 
