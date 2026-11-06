@@ -9346,8 +9346,8 @@
 "rang_poste": 7,
 "poste_espn": "C",
 "devant": [
-"Khaman Maluach",
 "Oso Ighodaro",
+"Khaman Maluach",
 "Duop Reath"
 ]
 },
@@ -9502,11 +9502,9 @@
 "presence": 1.0,
 "age": 24,
 "min_proj": 27.6,
-"rang_poste": 2,
+"rang_poste": 1,
 "poste_espn": "C",
-"devant": [
-"Khaman Maluach"
-],
+"devant": [],
 "presaison_matchs": 3,
 "presaison_min": 17.7
 },
@@ -9582,9 +9580,11 @@
 "presence": 0.62,
 "age": 20,
 "min_proj": 23.0,
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "C",
-"devant": [],
+"devant": [
+"Oso Ighodaro"
+],
 "presaison_matchs": 5,
 "presaison_min": 20.4
 },
@@ -11877,6 +11877,6 @@
 "_source": "saison régulière 2025-26 (ESPN), mis à jour le 20/10/2026"
 },
 "roles": {
-"_source": "ESPN (hiérarchie + présaison), mis à jour le 06/11/2026"
+"_source": "ESPN (hiérarchie + présaison), mis à jour le 07/11/2026"
 }
 }
