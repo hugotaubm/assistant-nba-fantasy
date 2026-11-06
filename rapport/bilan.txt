@@ -307,10 +307,10 @@ CALIBRATION DU MODÈLE (points réels / points attendus, par rang)
   rang 3+  : 1182 joueurs-matchs | réel    6085 / attendu    6294 = 0.97 → facteur appliqué 0.969
   rang ?   :  241 joueurs-matchs | réel     514 / attendu    1401 = 0.37 → facteur appliqué 0.750
 Erreur restante du modèle par tranche de prix (après la calibration par rang) :
-  10-15 M$  :  596 joueurs-matchs | réel   18387 / attendu   18396 = 1.00 → facteur appliqué 1.000
-  7-10 M$   :  806 joueurs-matchs | réel   16082 / attendu   15753 = 1.02 → facteur appliqué 1.020
-  < 7 M$    : 1645 joueurs-matchs | réel   10243 / attendu   10943 = 0.94 → facteur appliqué 0.938
-  ≥ 15 M$   :  209 joueurs-matchs | réel    9620 / attendu    9248 = 1.04 → facteur appliqué 1.039
+  10-15 M$  :  596 joueurs-matchs | réel   18387 / attendu   18415 = 1.00 → facteur appliqué 0.999
+  7-10 M$   :  806 joueurs-matchs | réel   16082 / attendu   15755 = 1.02 → facteur appliqué 1.020
+  < 7 M$    : 1645 joueurs-matchs | réel   10243 / attendu   10948 = 0.94 → facteur appliqué 0.938
+  ≥ 15 M$   :  209 joueurs-matchs | réel    9620 / attendu    9259 = 1.04 → facteur appliqué 1.037
 
 Vérification du barème (points du jeu vs formule des projections) :
   Statistiques fournies par le jeu : ['assists', 'blocks', 'in_dreamteam', 'minutes', 'played', 'points_scored', 'rebounds', 'steals', 'total_points']
@@ -325,31 +325,43 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       M.Uzan (BOS) : -
       N.Pringle (BKN) : -
       P.Connaughton (CHA) : -
-  statut i | chances ce Gameday 25 | prochain 25 : 39 joueurs
+  statut i | chances ce Gameday 0 | prochain 0 : 38 joueurs
+      M.Gueye (ATL) : Foot expected back 2026-11-20
+      N.Tomlin (CLE) : Back expected back 2026-11-16
+      D.Lively II (DAL) : Foot expected back 2026-11-12
+      T.Biberovic (DAL) : Heel expected back 2026-11-12
+  statut i | chances ce Gameday 25 | prochain 25 : 36 joueurs
       J.Johnson (ATL) : Ankle expected back 2026-11-06
       A.Newell (ATL) : Toe expected back 2026-11-07
       J.Landale (ATL) : Hip expected back 2026-11-07
       K.Gilbert (ATL) : Knee expected back 2026-11-07
-  statut i | chances ce Gameday 0 | prochain 0 : 39 joueurs
-      M.Gueye (ATL) : Foot expected back 2026-11-20
-      D.Carter (BOS) : Illness expected back 2026-11-08
-      N.Tomlin (CLE) : Back expected back 2026-11-16
-      D.Lively II (DAL) : Foot expected back 2026-11-12
   statut u | chances ce Gameday 100 | prochain 100 : 14 joueurs
       I.McKneely (ATL) : -
       R.Minix (CLE) : -
       J.Poulakidas (DAL) : -
       A.Toohey (GSW) : -
-  statut d | chances ce Gameday 75 | prochain 75 : 12 joueurs
-      P.Pritchard (BOS) : Eye expected back 2026-11-06
-      N.Clowney (BKN) : Knee expected back 2026-11-07
-      M.Diabate (CHA) : Quadriceps expected back 2026-11-06
-      D.Schröder (CHA) : Thigh expected back 2026-11-06
   statut u | chances ce Gameday 0 | prochain 0 : 10 joueurs
       H.Veesaar (ATL) : Knee expected back 2027-07-01
-      R.Dillingham (CHI) : Wrist expected back 2026-11-06
+      R.Dillingham (CHI) : Wrist expected back 2027-01-01
       J.Strawther (DEN) : Knee expected back 2026-11-29
       E.Freeman (MIN) : Undisclosed expected back 2027-01-01
+  statut d | chances ce Gameday 75 | prochain 75 : 10 joueurs
+      N.Clowney (BKN) : Knee expected back 2026-11-07
+      M.Diabate (CHA) : Quadriceps expected back 2026-11-09
+      J.Smith (CHI) : Hand expected back 2026-11-08
+      Z.Collins (CHI) : Illness expected back 2026-11-08
+  statut d | chances ce Gameday 100 | prochain 75 : 4 joueurs
+      K.Irving (DAL) : Illness expected back 2026-11-06
+      I.Quickley (TOR) : Hamstring expected back 2026-11-06
+      J.Poeltl (TOR) : Shoulder expected back 2026-11-06
+      K.Anderson (TOR) : Illness expected back 2026-11-06
+  statut d | chances ce Gameday 25 | prochain 75 : 2 joueurs
+      K.Jones (MIL) : Ankle expected back 2026-11-06
+      T.Alexander (UTA) : Knee expected back 2026-11-06
+  statut d | chances ce Gameday 0 | prochain 75 : 1 joueurs
+      D.Carter (BOS) : Illness expected back 2026-11-06
+  statut i | chances ce Gameday 75 | prochain 25 : 1 joueurs
+      D.Schröder (CHA) : Thigh expected back 2026-11-09
 
 ======================================================================
 LIGUE FIRST TEAM
