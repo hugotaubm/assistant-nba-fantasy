@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-06T00:45:55.448030+00:00",
+ "lu": "2026-11-06T12:50:50.924383+00:00",
  "joueurs": {
   "keshon gilbert": {
    "nom": "Keshon Gilbert",
@@ -7,7 +7,7 @@
    "blessure": "Left Leg Knee",
    "retour_espn": "2026-11-07",
    "retour_commentaire": null,
-   "commentaire": "Gilbert (knee) is available for Friday's preseason finale against the Mavericks, Brad Rowland of the Locked On Podcast Network reports.",
+   "commentaire": "Gilbert is out for Friday's game against the Wizards due to left knee inflammation.",
    "date": "2026-11-05"
   },
   "asa newell": {
@@ -300,12 +300,12 @@
   },
   "gui santos": {
    "nom": "Gui Santos",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Leg Knee",
    "retour_espn": "2026-11-07",
    "retour_commentaire": null,
    "commentaire": "Santos (knee) has been ruled out for Thursday's game against the Heat.",
-   "date": "2026-11-05"
+   "date": "2026-11-06"
   },
   "kristaps porzingis": {
    "nom": "Kristaps Porzingis",
@@ -433,14 +433,14 @@
    "commentaire": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic.",
    "date": "2026-08-26"
   },
-  "adou thiero": {
-   "nom": "Adou Thiero",
-   "statut": "Out",
-   "blessure": "Left Leg Knee",
+  "sandro mamukelashvili": {
+   "nom": "Sandro Mamukelashvili",
+   "statut": "Day-To-Day",
+   "blessure": "Other Illness",
    "retour_espn": "2026-11-06",
    "retour_commentaire": null,
-   "commentaire": "The Lakers recalled Thiero (knee) from the G League's Coachella Valley Lakers on Thursday, per Ryan Ward of SI.com.",
-   "date": "2026-11-05"
+   "commentaire": "Mamukelashvili (illness) is listed as questionable for Friday's game against Portland.",
+   "date": "2026-11-06"
   },
   "isaiah stewart": {
    "nom": "Isaiah Stewart",
@@ -649,23 +649,23 @@
    "commentaire": "Hukporti has sustained a season-ending ruptured right Achilles tendon, per Shams Charania of ESPN.",
    "date": "2026-10-06"
   },
-  "rasheer fleming": {
-   "nom": "Rasheer Fleming",
-   "statut": "Out",
-   "blessure": "Left Leg Ankle",
-   "retour_espn": "2026-11-07",
-   "retour_commentaire": null,
-   "commentaire": "Fleming is out for Thursday's game against the Magic due to a sprained left ankle.",
-   "date": "2026-11-05"
-  },
   "jordan goodwin": {
    "nom": "Jordan Goodwin",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Left Leg Calf",
    "retour_espn": "2026-11-07",
    "retour_commentaire": null,
    "commentaire": "Goodwin (calf) is out for Thursday's game against Orlando.",
-   "date": "2026-11-05"
+   "date": "2026-11-06"
+  },
+  "rasheer fleming": {
+   "nom": "Rasheer Fleming",
+   "statut": "Day-To-Day",
+   "blessure": "Left Leg Ankle",
+   "retour_espn": "2026-11-07",
+   "retour_commentaire": null,
+   "commentaire": "Fleming is out for Thursday's game against the Magic due to a sprained left ankle.",
+   "date": "2026-11-06"
   },
   "mark williams": {
    "nom": "Mark Williams",
@@ -747,6 +747,15 @@
    "retour_commentaire": null,
    "commentaire": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports.",
    "date": "2026-10-05"
+  },
+  "scottie barnes": {
+   "nom": "Scottie Barnes",
+   "statut": "Day-To-Day",
+   "blessure": "Left Groin Groin",
+   "retour_espn": "2026-11-06",
+   "retour_commentaire": null,
+   "commentaire": "Barnes (groin) is questionable to play Friday's game against the Bucks.",
+   "date": "2026-11-06"
   },
   "kawhi leonard": {
    "nom": "Kawhi Leonard",
