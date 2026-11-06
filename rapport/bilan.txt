@@ -265,8 +265,8 @@ Par rang dans la hiérarchie ESPN (1 = titulaire) :
   rang inconnu            41 matchs | 0 min : 26 | biais  -9.1 | réel/projeté 0.68 | minutes 21.6
 Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : 390 sur 2034
   - L.Doncic (LAL) (event 9) : projeté 65.5, statut actuel a, news : -
-  - J.Johnson (ATL) (event 14) : projeté 53.4, statut actuel i, news : Ankle expected back 2026-11-06
-  - J.Johnson (ATL) (event 15) : projeté 53.4, statut actuel i, news : Ankle expected back 2026-11-06
+  - J.Johnson (ATL) (event 14) : projeté 53.4, statut actuel i, news : Ankle expected back 2026-11-07
+  - J.Johnson (ATL) (event 15) : projeté 53.4, statut actuel i, news : Ankle expected back 2026-11-07
   - J.Tatum (BOS) (event 15) : projeté 51.5, statut actuel a, news : -
   - J.Embiid (PHI) (event 6) : projeté 48.5, statut actuel a, news : -
   - J.Embiid (PHI) (event 12) : projeté 48.5, statut actuel a, news : -
@@ -330,11 +330,11 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       N.Tomlin (CLE) : Back expected back 2026-11-16
       D.Lively II (DAL) : Foot expected back 2026-11-12
       T.Biberovic (DAL) : Heel expected back 2026-11-12
-  statut i | chances ce Gameday 25 | prochain 25 : 36 joueurs
-      J.Johnson (ATL) : Ankle expected back 2026-11-06
+  statut i | chances ce Gameday 25 | prochain 25 : 35 joueurs
       A.Newell (ATL) : Toe expected back 2026-11-07
       J.Landale (ATL) : Hip expected back 2026-11-07
       K.Gilbert (ATL) : Knee expected back 2026-11-07
+      E.Dëmin (BKN) : Leg expected back 2026-11-11
   statut u | chances ce Gameday 100 | prochain 100 : 14 joueurs
       I.McKneely (ATL) : -
       R.Minix (CLE) : -
@@ -345,23 +345,27 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       R.Dillingham (CHI) : Wrist expected back 2027-01-01
       J.Strawther (DEN) : Knee expected back 2026-11-29
       E.Freeman (MIN) : Undisclosed expected back 2027-01-01
-  statut d | chances ce Gameday 75 | prochain 75 : 10 joueurs
-      N.Clowney (BKN) : Knee expected back 2026-11-07
+  statut d | chances ce Gameday 75 | prochain 75 : 7 joueurs
       M.Diabate (CHA) : Quadriceps expected back 2026-11-09
       J.Smith (CHI) : Hand expected back 2026-11-08
       Z.Collins (CHI) : Illness expected back 2026-11-08
-  statut d | chances ce Gameday 100 | prochain 75 : 4 joueurs
+      J.Allen (CLE) : Knee expected back 2026-11-06
+  statut d | chances ce Gameday 100 | prochain 75 : 7 joueurs
       K.Irving (DAL) : Illness expected back 2026-11-06
-      I.Quickley (TOR) : Hamstring expected back 2026-11-06
-      J.Poeltl (TOR) : Shoulder expected back 2026-11-06
-      K.Anderson (TOR) : Illness expected back 2026-11-06
+      D.Green (GSW) : Elbow expected back 2026-11-07
+      G.Payton II (GSW) : Calf expected back 2026-11-07
+      D.Hunter (SAC) : Illness expected back 2026-11-06
   statut d | chances ce Gameday 25 | prochain 75 : 2 joueurs
       K.Jones (MIL) : Ankle expected back 2026-11-06
       T.Alexander (UTA) : Knee expected back 2026-11-06
+  statut i | chances ce Gameday 25 | prochain 75 : 1 joueurs
+      J.Johnson (ATL) : Ankle expected back 2026-11-07
   statut d | chances ce Gameday 0 | prochain 75 : 1 joueurs
       D.Carter (BOS) : Illness expected back 2026-11-06
   statut i | chances ce Gameday 75 | prochain 25 : 1 joueurs
       D.Schröder (CHA) : Thigh expected back 2026-11-09
+  statut i | chances ce Gameday 75 | prochain 75 : 1 joueurs
+      A.Davis (WAS) : Ankle expected back 2026-11-07
 
 ======================================================================
 LIGUE FIRST TEAM
