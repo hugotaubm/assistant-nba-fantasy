@@ -240,14 +240,13 @@ Par prix :
   < 7 M$                 128 matchs | 0 min : 40 | biais  -5.4 | réel/projeté 0.76 | minutes 16.0
   ≥ 15 M$                256 matchs | 0 min : 29 | biais  -2.9 | réel/projeté 0.94 | minutes 32.9
 Par rang dans la hiérarchie ESPN (1 = titulaire) :
-  rang 1                 1140 matchs | 0 min : 119 | biais  -1.5 | réel/projeté 0.96 | minutes 29.8
-  rang 2                 600 matchs | 0 min : 87 | biais  -4.7 | réel/projeté 0.81 | minutes 20.4
-  rang 3                  56 matchs | 0 min : 22 | biais -11.1 | réel/projeté 0.55 | minutes 16.0
-  rang 5                  23 matchs | 0 min : 16 | biais  -6.0 | réel/projeté 0.84 | minutes 28.9
-  rang 6                  86 matchs | 0 min : 68 | biais -10.8 | réel/projeté 0.67 | minutes 17.0
-  rang 7                  22 matchs | 0 min : 19 | biais  -1.9 | réel/projeté 0.95 | minutes 29.3
-  rang 8                  17 matchs | 0 min : 13 | biais  +4.9 | réel/projeté 1.10 | minutes 33.2
-  rang 9                   8 matchs | 0 min :  5 | biais -11.2 | réel/projeté 0.73 | minutes 31.0
+  rang 1                 1148 matchs | 0 min : 123 | biais  -1.5 | réel/projeté 0.96 | minutes 29.7
+  rang 2                 577 matchs | 0 min : 75 | biais  -4.7 | réel/projeté 0.82 | minutes 20.8
+  rang 3                  56 matchs | 0 min : 22 | biais -11.8 | réel/projeté 0.50 | minutes 14.8
+  rang 5                  46 matchs | 0 min : 25 | biais -12.2 | réel/projeté 0.54 | minutes 14.8
+  rang 6                  70 matchs | 0 min : 61 | biais  -6.7 | réel/projeté 0.82 | minutes 23.9
+  rang 7                  30 matchs | 0 min : 25 | biais  -2.6 | réel/projeté 0.94 | minutes 27.6
+  rang 8                  25 matchs | 0 min : 18 | biais  -2.0 | réel/projeté 0.96 | minutes 32.3
   rang inconnu            41 matchs | 0 min : 26 | biais  -9.1 | réel/projeté 0.68 | minutes 21.6
 Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : 383 sur 2001
   - L.Doncic (LAL) (event 9) : projeté 65.5, statut actuel a, news : -
@@ -316,16 +315,16 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       D.Carter (BOS) : Illness expected back 2026-11-08
       N.Tomlin (CLE) : Back expected back 2026-11-16
       D.Lively II (DAL) : Foot expected back 2026-11-12
-  statut i | chances ce Gameday 25 | prochain 25 : 32 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 31 joueurs
       J.Johnson (ATL) : Ankle expected back 2026-11-06
       J.Landale (ATL) : Hip expected back 2026-11-07
       E.Dëmin (BKN) : Leg expected back 2026-11-11
       T.Bilodeau (BKN) : Shoulder expected back 2026-11-06
-  statut u | chances ce Gameday 100 | prochain 100 : 13 joueurs
+  statut u | chances ce Gameday 100 | prochain 100 : 14 joueurs
       I.McKneely (ATL) : -
+      R.Minix (CLE) : -
       J.Poulakidas (DAL) : -
       A.Toohey (GSW) : -
-      R.Castro (HOU) : -
   statut u | chances ce Gameday 0 | prochain 0 : 10 joueurs
       H.Veesaar (ATL) : Knee expected back 2027-07-01
       R.Dillingham (CHI) : Wrist expected back 2026-11-06
@@ -336,14 +335,14 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       N.Clowney (BKN) : Knee expected back 2026-11-07
       M.Diabate (CHA) : Quadriceps expected back 2026-11-06
       D.Schröder (CHA) : Thigh expected back 2026-11-06
-  statut i | chances ce Gameday 100 | prochain 25 : 4 joueurs
+  statut i | chances ce Gameday 100 | prochain 25 : 5 joueurs
       A.Newell (ATL) : Toe expected back 2026-11-07
-      K.Gilbert (ATL) : Knee expected back 2026-11-08
+      K.Gilbert (ATL) : Knee expected back 2026-11-07
       K.Knueppel (CHA) : Hamstring expected back 2026-11-09
       D.DeRozan (DEN) : Back expected back 2026-11-07
   statut i | chances ce Gameday 75 | prochain 25 : 4 joueurs
       K.Oubre Jr. (IND) : Calf expected back 2026-11-07
-      K.Jones (MIL) : Ankle expected back 2026-11-06
+      K.Jones (MIL) : Ankle expected back 2026-11-08
       J.Goodwin (PHX) : Calf expected back 2026-11-07
       R.Fleming (PHX) : Ankle expected back 2026-11-07
   statut i | chances ce Gameday None | prochain 0 : 1 joueurs

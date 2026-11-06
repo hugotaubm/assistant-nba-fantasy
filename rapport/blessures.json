@@ -1,11 +1,11 @@
 {
- "lu": "2026-11-05T23:04:12.396094+00:00",
+ "lu": "2026-11-06T00:45:55.448030+00:00",
  "joueurs": {
   "keshon gilbert": {
    "nom": "Keshon Gilbert",
    "statut": "Out",
    "blessure": "Left Leg Knee",
-   "retour_espn": "2026-11-08",
+   "retour_espn": "2026-11-07",
    "retour_commentaire": null,
    "commentaire": "Gilbert (knee) is available for Friday's preseason finale against the Mavericks, Brad Rowland of the Locked On Podcast Network reports.",
    "date": "2026-11-05"
@@ -151,7 +151,7 @@
    "blessure": "Left Leg Hamstring",
    "retour_espn": "2026-11-08",
    "retour_commentaire": null,
-   "commentaire": "The Bulls assigned Claxton (hamstring) to the G League's Windy City Bulls on Thursday.",
+   "commentaire": "Claxton (hamstring) was recalled from the G League's Windy City Bulls on Thursday.",
    "date": "2026-11-05"
   },
   "zach collins": {
@@ -444,30 +444,30 @@
   },
   "isaiah stewart": {
    "nom": "Isaiah Stewart",
-   "statut": "Day-To-Day",
+   "statut": "Out",
    "blessure": "Right Leg Knee",
-   "retour_espn": "2026-11-06",
+   "retour_espn": "2026-11-09",
    "retour_commentaire": null,
-   "commentaire": "Stewart (knee) exited Wednesday's 107-103 loss to the Pacers and did not return, finishing with six points (3-4 FG) and one rebound in 10 minutes.",
+   "commentaire": "Stewart (knee) has been ruled out for Friday's game against the Thunder.",
    "date": "2026-11-05"
   },
   "scotty pippen": {
    "nom": "Scotty Pippen Jr.",
    "statut": "Out",
    "blessure": "Torso Back",
-   "retour_espn": "2026-11-06",
+   "retour_espn": "2026-11-09",
    "retour_commentaire": null,
-   "commentaire": "Pippen (back) won't play Wednesday against the Pacers.",
-   "date": "2026-11-03"
+   "commentaire": "Pippen (back) has been ruled out for Friday's game against Oklahoma City.",
+   "date": "2026-11-05"
   },
   "kam jones": {
    "nom": "Kam Jones",
-   "statut": "Day-To-Day",
+   "statut": "Out",
    "blessure": "Right Leg Ankle",
-   "retour_espn": "2026-11-06",
+   "retour_espn": "2026-11-08",
    "retour_commentaire": null,
-   "commentaire": "Jones (ankle) won't play Wednesday in Boston.",
-   "date": "2026-11-05"
+   "commentaire": "Jones (ankle/two-way player) is out for Friday's game against Toronto.",
+   "date": "2026-11-06"
   },
   "terrence shannon": {
    "nom": "Terrence Shannon Jr.",
@@ -475,7 +475,7 @@
    "blessure": "Left Torso Hip",
    "retour_espn": "2026-11-06",
    "retour_commentaire": null,
-   "commentaire": "Shannon (hip) is out for Wednesday against the Rockets.",
+   "commentaire": "Shannon (hip) is questionable for Friday's game against New Orleans.",
    "date": "2026-11-05"
   },
   "anthony edwards": {
@@ -500,7 +500,7 @@
    "nom": "Yves Missi",
    "statut": "Out",
    "blessure": "Left Leg Knee",
-   "retour_espn": "2026-11-08",
+   "retour_espn": "2026-11-09",
    "retour_commentaire": null,
    "commentaire": "Missi (knee) is out for Friday's game against Minnesota.",
    "date": "2026-11-05"
@@ -525,11 +525,11 @@
   },
   "jaylin williams": {
    "nom": "Jaylin Williams",
-   "statut": "Day-To-Day",
+   "statut": "Out",
    "blessure": "Torso Back",
-   "retour_espn": "2026-11-06",
-   "retour_commentaire": "2026-11-06",
-   "commentaire": "Williams (back) is listed as out for Wednesday's game versus Cleveland, Clemente Almanza of USA Today reports.",
+   "retour_espn": "2026-11-07",
+   "retour_commentaire": null,
+   "commentaire": "Williams (back) has been ruled out for Friday's game against the Grizzlies.",
    "date": "2026-11-05"
   },
   "nikola topic": {
@@ -703,15 +703,6 @@
    "commentaire": "Sharpe suffered a torn meniscus in his knee and is expected to miss six months, per Shams Charania of ESPN.",
    "date": "2026-08-24"
   },
-  "daeqwon plowden": {
-   "nom": "Daeqwon Plowden",
-   "statut": "Day-To-Day",
-   "blessure": "Other Illness",
-   "retour_espn": "2026-11-06",
-   "retour_commentaire": null,
-   "commentaire": "Plowden (illness) is out for Wednesday's game against the Lakers.",
-   "date": "2026-11-05"
-  },
   "maxime raynaud": {
    "nom": "Maxime Raynaud",
    "statut": "Out",
@@ -808,7 +799,7 @@
    "blessure": "Right Leg Ankle",
    "retour_espn": "2026-11-06",
    "retour_commentaire": null,
-   "commentaire": "Davis finished with 26 points (12-19 FG, 0-1 3Pt, 2-2 FT), 10 rebounds, three assists and three blocks over 30 minutes in Wednesday's 120-105 loss to Atlanta.",
+   "commentaire": "Davis is questionable for Friday's game against the Hawks due to a right ankle sprain, Josh Robbins of The Athletic reports.",
    "date": "2026-11-05"
   },
   "reece beekman": {
