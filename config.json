@@ -37,7 +37,11 @@
     "V.Wembanyama"
   ],
   "malus_back_to_back": 0.92,
-  "idees": [],
+  "idees": [
+    "T.Jerome>L.Doncic@4.1+V.Wembanyama>?@4.1",
+    "K.Dunn>L.Doncic@4.1+V.Wembanyama>?@4.1",
+    "N.Traore>L.Doncic@4.1+V.Wembanyama>?@4.1"
+  ],
   "transferts_payants": false,
   "seuil_joker": 300,
   "seuil_joker_debut": 400,
