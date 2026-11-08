@@ -13,6 +13,11 @@ on:
       - rapport_yahoo.py
       - .github/workflows/rapport_yahoo.yml
   workflow_dispatch:
+    inputs:
+      joueurs:
+        description: "Autres joueurs à analyser, séparés par des virgules (résultat dans le journal, rapport inchangé)"
+        type: string
+        default: ""
 permissions:
   contents: write
 concurrency:
@@ -31,7 +36,11 @@ jobs:
           python-version: "3.12"
       - run: pip install "nba_api>=1.10"
       - name: Rapport
-        run: python rapport_yahoo.py ${{ github.event_name == 'schedule' && '--si-besoin' || '' }}
+        env:
+          JOUEURS: ${{ inputs.joueurs }}
+        run: |
+          if [ -n "$JOUEURS" ]; then python rapport_yahoo.py --joueurs "$JOUEURS"
+          else python rapport_yahoo.py ${{ github.event_name == 'schedule' && '--si-besoin' || '' }}; fi
       - name: Enregistrer
         if: always()
         run: |

@@ -6,6 +6,7 @@ Pour chaque joueur de joueurs_yahoo.txt :
 Écrit rapport_yahoo.md (un tableau, une ligne par joueur ; chaque case donne « 7 j · 15 j »).
 
     python3 rapport_yahoo.py              # rapport tout de suite
+    python3 rapport_yahoo.py --joueurs "Luka Garza, Danny Wolf"  # autres joueurs, affichés seulement
     python3 rapport_yahoo.py --si-besoin  # seulement s'il est au moins 10 h à Paris et pas encore fait aujourd'hui
 """
 import datetime as dt, json, re, sys, time, unicodedata, urllib.request
@@ -245,7 +246,9 @@ def main():
         if maintenant.hour < HEURE or deja:
             print(f"Rien à faire ({'rapport du jour déjà fait' if deja else f'avant {HEURE} h à Paris'}).")
             return 0
-    noms = lire_liste()
+    # --joueurs "Nom 1, Nom 2" : tableau des joueurs donnés (ex. joueurs libres), affiché sans toucher au rapport
+    autres = sys.argv[sys.argv.index("--joueurs") + 1] if "--joueurs" in sys.argv else ""
+    noms = [n.strip() for n in autres.split(",") if n.strip()] or lire_liste()
     print(f"{len(noms)} joueurs, rapport du {jour}")
     bl = blessures()
     print(f"  statuts NBA Fantasy : {len(bl)} joueurs lus")
@@ -262,6 +265,9 @@ def main():
     except Exception as ex:
         soir = None
         print(f"  calendrier de ce soir non lu : {ex!r}")
+    if autres:
+        print(rapport(jour, noms, bl, logs, erreur, soir))
+        return 1 if erreur else 0
     SORTIE.write_text(rapport(jour, noms, bl, logs, erreur, soir), encoding="utf-8")
     print(f"  écrit : {SORTIE.name}")
     sans_match = [n for n in noms if cle(n) not in logs]
