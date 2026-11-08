@@ -2292,7 +2292,7 @@
 "malus_b2b": 0.955,
 "age": 26,
 "b2b_n": 0,
-"rang_poste": 7,
+"rang_poste": 8,
 "poste_espn": "SF",
 "devant": [
 "Peyton Watson",
@@ -5869,12 +5869,12 @@
 "b2b_presence": 0.83,
 "presence": 0.83,
 "age": 25,
-"rang_poste": 5,
+"rang_poste": 6,
 "poste_espn": "SF",
 "devant": [
 "Alex Caruso",
 "Kenrich Williams",
-"Josh Dix"
+"Nique Clifford"
 ]
 },
 "289": {
@@ -8182,7 +8182,7 @@
 "devant": [
 "Alex Caruso",
 "Kenrich Williams",
-"Josh Dix"
+"Nique Clifford"
 ],
 "presaison_matchs": 3,
 "presaison_min": 21.7
@@ -8288,12 +8288,12 @@
 "b2b_presence": 0.6,
 "presence": 0.59,
 "age": 24,
-"rang_poste": 4,
+"rang_poste": 5,
 "poste_espn": "SF",
 "devant": [
 "Alex Caruso",
 "Kenrich Williams",
-"Josh Dix"
+"Nique Clifford"
 ],
 "presaison_matchs": 5,
 "presaison_min": 23.6
@@ -10036,7 +10036,7 @@
 "b2b_presence": 1.0,
 "presence": 0.9,
 "age": 28,
-"rang_poste": 6,
+"rang_poste": 5,
 "poste_espn": "SG",
 "devant": [
 "Zach LaVine",
@@ -10171,12 +10171,11 @@
 "presence": 0.96,
 "age": 24,
 "min_proj": 27.4,
-"rang_poste": 5,
-"poste_espn": "SG",
+"rang_poste": 3,
+"poste_espn": "SF",
 "devant": [
-"Zach LaVine",
-"Emanuel Sharp",
-"Darius Acuff Jr."
+"Alex Caruso",
+"Kenrich Williams"
 ],
 "presaison_matchs": 5,
 "presaison_min": 22.2
@@ -11877,6 +11876,6 @@
 "_source": "saison régulière 2025-26 (ESPN), mis à jour le 20/10/2026"
 },
 "roles": {
-"_source": "ESPN (hiérarchie + présaison), mis à jour le 08/11/2026"
+"_source": "ESPN (hiérarchie + présaison), mis à jour le 09/11/2026"
 }
 }
