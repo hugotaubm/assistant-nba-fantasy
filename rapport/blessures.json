@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-08T17:33:00.265759+00:00",
+ "lu": "2026-11-08T19:14:47.583287+00:00",
  "joueurs": {
   "asa newell": {
    "nom": "Asa Newell",
@@ -45,6 +45,15 @@
    "retour_commentaire": null,
    "commentaire": "Veesaar was diagnosed with a torn right ACL and is expected to miss the 2026-27 season, the Hawks announced Monday.",
    "date": "2026-09-21"
+  },
+  "mitchell robinson": {
+   "nom": "Mitchell Robinson",
+   "statut": "Day-To-Day",
+   "blessure": "Other Illness",
+   "retour_espn": "2026-11-08",
+   "retour_commentaire": null,
+   "commentaire": "Robinson (illness) is questionable for Sunday's game versus Milwaukee, Bobby Krivitsky of Forbes.com reports.",
+   "date": "2026-11-08"
   },
   "grant nelson": {
    "nom": "Grant Nelson",
@@ -120,11 +129,11 @@
   },
   "norman powell": {
    "nom": "Norman Powell",
-   "statut": "Day-To-Day",
+   "statut": "Out",
    "blessure": "Right Arm Shoulder",
-   "retour_espn": "2026-11-08",
+   "retour_espn": "2026-11-11",
    "retour_commentaire": null,
-   "commentaire": "Powell (shoulder) is listed as questionable for Sunday's game against the 76ers.",
+   "commentaire": "Powell (shoulder) has been ruled out for Sunday's game against the 76ers, Adam Aaronson of PhillyVoice.com reports.",
    "date": "2026-11-08"
   },
   "tobe awaka": {
@@ -143,15 +152,6 @@
    "retour_espn": "2026-11-08",
    "retour_commentaire": null,
    "commentaire": "Smith (finger) is probable for Sunday's game against Philadelphia.",
-   "date": "2026-11-07"
-  },
-  "nic claxton": {
-   "nom": "Nic Claxton",
-   "statut": "Out",
-   "blessure": "Left Leg Hamstring",
-   "retour_espn": "2026-11-08",
-   "retour_commentaire": null,
-   "commentaire": "Claxton (hamstring) has been downgraded to questionable for Sunday's game against the 76ers.",
    "date": "2026-11-07"
   },
   "zach collins": {
@@ -363,12 +363,12 @@
   },
   "luka doncic": {
    "nom": "Luka Doncic",
-   "statut": "Day-To-Day",
+   "statut": "Out",
    "blessure": "Torso Back",
-   "retour_espn": "2026-11-08",
+   "retour_espn": "2026-11-09",
    "retour_commentaire": null,
-   "commentaire": "Doncic (back) is questionable for Sunday's game against the Pistons.",
-   "date": "2026-11-07"
+   "commentaire": "Doncic has been ruled out for Sunday's game at Detroit due to lower-back tightness, Trevor Lane of LakersNation.com reports.",
+   "date": "2026-11-08"
   },
   "richie saunders": {
    "nom": "Richie Saunders",
@@ -396,6 +396,15 @@
    "retour_commentaire": null,
    "commentaire": "Pippen (back) has been ruled out for Friday's game against Oklahoma City.",
    "date": "2026-11-05"
+  },
+  "gary trent": {
+   "nom": "Gary Trent Jr.",
+   "statut": "Day-To-Day",
+   "blessure": "Other Illness",
+   "retour_espn": "2026-11-08",
+   "retour_commentaire": null,
+   "commentaire": "Trent (illness) has been downgraded to questionable for Sunday's game against Boston.",
+   "date": "2026-11-08"
   },
   "anthony edwards": {
    "nom": "Anthony Edwards",
