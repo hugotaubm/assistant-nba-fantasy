@@ -26,4 +26,4 @@ Chaque case : moyenne sur les **7 derniers jours · 15 derniers jours** (matchs 
 - **Joan Beringer** : Fracture expected back 2026-11-08
 - **Isaiah Jackson** : Groin expected back 2026-11-10
 
-_Mis à jour le 08/11/2026 15:47 (heure de Paris). Sources : NBA Fantasy (statuts), feuilles de match NBA via nba_api._
+_Mis à jour le 08/11/2026 17:34 (heure de Paris). Sources : NBA Fantasy (statuts), feuilles de match NBA via nba_api._
