@@ -309,8 +309,8 @@ Par rang dans la hiérarchie ESPN (1 = titulaire) :
   rang 8                  30 matchs | 0 min : 23 | biais  -2.0 | réel/projeté 0.96 | minutes 32.3
   rang inconnu            50 matchs | 0 min : 31 | biais  -7.9 | réel/projeté 0.73 | minutes 21.9
 Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : 475 sur 2415
-  - L.Doncic (LAL) (event 9) : projeté 65.5, statut actuel i, news : Back expected back 2026-11-09
-  - L.Doncic (LAL) (event 19) : projeté 65.5, statut actuel i, news : Back expected back 2026-11-09
+  - L.Doncic (LAL) (event 9) : projeté 65.5, statut actuel a, news : -
+  - L.Doncic (LAL) (event 19) : projeté 65.5, statut actuel a, news : -
   - J.Johnson (ATL) (event 14) : projeté 53.4, statut actuel a, news : -
   - J.Johnson (ATL) (event 15) : projeté 53.4, statut actuel a, news : -
   - J.Johnson (ATL) (event 17) : projeté 53.4, statut actuel a, news : -
@@ -375,7 +375,7 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       N.Tomlin (CLE) : Back expected back 2026-11-16
       D.Lively II (DAL) : Foot expected back 2026-11-12
       T.Biberovic (DAL) : Heel expected back 2026-11-12
-  statut i | chances ce Gameday 25 | prochain 25 : 34 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 33 joueurs
       A.Newell (ATL) : Toe expected back 2026-11-13
       J.Landale (ATL) : Hip expected back 2026-11-09
       K.Gilbert (ATL) : Knee expected back 2026-11-13
@@ -385,16 +385,16 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       T.Enaruna (CLE) : -
       J.Poulakidas (DAL) : -
       A.Toohey (GSW) : -
+  statut d | chances ce Gameday 100 | prochain 75 : 13 joueurs
+      M.Johnson (DAL) : Leg expected back 2026-11-09
+      C.Johnson (DEN) : Ankle expected back 2026-11-09
+      N.Jokic (DEN) : Elbow expected back 2026-11-09
+      A.Gordon (DEN) : Lower Body expected back 2026-11-09
   statut u | chances ce Gameday 0 | prochain 0 : 12 joueurs
       H.Veesaar (ATL) : Knee expected back 2027-07-01
       R.Dillingham (CHI) : Wrist expected back 2027-01-01
       J.Strawther (DEN) : Knee expected back 2026-11-29
       E.Freeman (MIN) : Undisclosed expected back 2027-01-01
-  statut d | chances ce Gameday 100 | prochain 75 : 9 joueurs
-      C.Johnson (DEN) : Lower Body expected back 2026-11-09
-      N.Jokic (DEN) : Elbow expected back 2026-11-09
-      A.Gordon (DEN) : Lower Body expected back 2026-11-09
-      J.Murray (DEN) : Lower Leg expected back 2026-11-09
   statut d | chances ce Gameday 75 | prochain 75 : 3 joueurs
       G.Nelson (BKN) : Knee expected back 2026-11-10
       M.Diabate (CHA) : Quadriceps expected back 2026-11-09
@@ -403,15 +403,16 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       B.Miller (CHA) : Groin expected back 2026-11-12
       G.Trent Jr. (MIL) : Illness expected back 2026-11-10
       L.Markkanen (UTA) : Wrist expected back 2026-11-10
+  statut i | chances ce Gameday 100 | prochain 25 : 3 joueurs
+      O.Tshiebwe (HOU) : Illness expected back 2026-11-11
+      D.Sabonis (SAC) : Knee expected back 2026-11-10
+      D.Vassell (SAS) : Groin expected back 2026-11-11
   statut i | chances ce Gameday 25 | prochain 0 : 2 joueurs
       K.Knueppel (CHA) : Hamstring expected back 2026-12-12
       D.Schröder (CHA) : Hamstring expected back 2026-11-25
-  statut i | chances ce Gameday None | prochain 25 : 1 joueurs
+  statut i | chances ce Gameday None | prochain 25 : 2 joueurs
       W.Richard (GSW) : Thumb expected back 2026-11-11
-  statut d | chances ce Gameday None | prochain 75 : 1 joueurs
-      Q.Grimes (LAL) : Finger expected back 2026-11-09
-  statut i | chances ce Gameday 100 | prochain 25 : 1 joueurs
-      D.Sabonis (SAC) : Knee expected back 2026-11-10
+      Q.Grimes (LAL) : Finger expected back 2026-11-11
 
 ======================================================================
 LIGUE FIRST TEAM
