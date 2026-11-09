@@ -319,6 +319,13 @@ def transferts_plan(code_execution=None):
     nouveaux = [p["element"] for p in mt2["picks"]]
     print("Équipe sur le site = équipe conseillée :", sorted(nouveaux) == sorted(cible))
     tit = [q for q in plan.get("titulaires", []) if q in nouveaux]
+    # moins de 5 joueurs qui jouent : on complète avec des remplaçants (2 à 3 par poste) pour un cinq valide
+    for q in nouveaux:
+        if len(tit) >= 5:
+            break
+        postes = [el[x]["element_type"] for x in tit]
+        if q not in tit and postes.count(el[q]["element_type"]) < 3 and (5 - len(tit) > sum(max(0, 2 - postes.count(t)) for t in (1, 2)) - (1 if postes.count(el[q]["element_type"]) < 2 else 0)):
+            tit.append(q)
     if len(tit) == 5:
         titulaires(tit)
 
