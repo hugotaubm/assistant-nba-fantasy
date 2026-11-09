@@ -61,7 +61,7 @@ def lire_config():
     cfg.setdefault("poids_points_avant_saison", 8)     # matchs « fictifs » donnés à la projection d'avant-saison
     cfg.setdefault("plafond_minutes", 1.3)             # hausse max de la projection quand un joueur joue plus que prévu
     cfg.setdefault("poids_semaine3", 0.5)              # semaine d'après la suivante : points comptés à 50 % (sans transfert)
-    cfg.setdefault("penalite_meme_equipe", 0.0)        # pts retirés par paire de joueurs d'une même équipe (calendriers liés)
+    cfg.setdefault("penalite_meme_equipe", 10.0)       # pts retirés par paire de joueurs d'une même équipe (calendriers liés)
     cfg.setdefault("capitaine_attente", 0.02)          # capitaine : bonus réduit de 2 % par Gameday d'attente (départage)
     cfg.setdefault("poids_forme", 0.25)                # part de la forme récente (à partir de 5 matchs)
     cfg.setdefault("fiabilite_rang", {"3": 0.9, "4+": 0.75})   # 3e ou au-delà dans la hiérarchie de son poste
