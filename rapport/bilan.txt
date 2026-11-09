@@ -352,10 +352,10 @@ CALIBRATION DU MODÈLE (points réels / points attendus, par rang)
   rang 3+  : 1426 joueurs-matchs | réel    7364 / attendu    7184 = 1.03 → facteur appliqué 1.024
   rang ?   :  289 joueurs-matchs | réel     709 / attendu    1608 = 0.44 → facteur appliqué 0.750
 Erreur restante du modèle par tranche de prix (après la calibration par rang) :
-  10-15 M$  :  724 joueurs-matchs | réel   22269 / attendu   22187 = 1.00 → facteur appliqué 1.004
-  7-10 M$   :  968 joueurs-matchs | réel   19337 / attendu   18920 = 1.02 → facteur appliqué 1.022
-  < 7 M$    : 2004 joueurs-matchs | réel   12776 / attendu   13323 = 0.96 → facteur appliqué 0.960
-  ≥ 15 M$   :  249 joueurs-matchs | réel   11267 / attendu   10975 = 1.03 → facteur appliqué 1.026
+  10-15 M$  :  724 joueurs-matchs | réel   22269 / attendu   22164 = 1.00 → facteur appliqué 1.005
+  7-10 M$   :  968 joueurs-matchs | réel   19337 / attendu   18893 = 1.02 → facteur appliqué 1.023
+  < 7 M$    : 2004 joueurs-matchs | réel   12776 / attendu   13366 = 0.96 → facteur appliqué 0.957
+  ≥ 15 M$   :  249 joueurs-matchs | réel   11267 / attendu   10964 = 1.03 → facteur appliqué 1.027
 
 Vérification du barème (points du jeu vs formule des projections) :
   Statistiques fournies par le jeu : ['assists', 'blocks', 'in_dreamteam', 'minutes', 'played', 'points_scored', 'rebounds', 'steals', 'total_points']
