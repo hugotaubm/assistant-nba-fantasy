@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-09T21:00:37.469930+00:00",
+ "lu": "2026-11-09T22:41:59.459846+00:00",
  "joueurs": {
   "asa newell": {
    "nom": "Asa Newell",
@@ -17,15 +17,6 @@
    "retour_espn": "2026-11-13",
    "retour_commentaire": null,
    "commentaire": "Gilbert (knee) has been ruled out for Monday's game against the Lakers.",
-   "date": "2026-11-08"
-  },
-  "jock landale": {
-   "nom": "Jock Landale",
-   "statut": "Out",
-   "blessure": "Left Torso Hip",
-   "retour_espn": "2026-11-09",
-   "retour_commentaire": null,
-   "commentaire": "Landale (hip) is listed as questionable for Monday's game against the Lakers.",
    "date": "2026-11-08"
   },
   "mouhamed gueye": {
@@ -75,11 +66,11 @@
   },
   "moussa diabate": {
    "nom": "Moussa Diabate",
-   "statut": "Day-To-Day",
+   "statut": "Out",
    "blessure": "Right Leg Quadriceps",
-   "retour_espn": "2026-11-09",
+   "retour_espn": "2026-11-12",
    "retour_commentaire": null,
-   "commentaire": "Diabate (quadriceps) is doubtful for Monday's game against the Cavaliers.",
+   "commentaire": "Diabate (quadriceps) has been downgraded to out for Monday's game against Cleveland.",
    "date": "2026-11-09"
   },
   "grant williams": {
@@ -442,6 +433,15 @@
    "commentaire": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic.",
    "date": "2026-08-26"
   },
+  "austin reaves": {
+   "nom": "Austin Reaves",
+   "statut": "Out",
+   "blessure": "Other Illness",
+   "retour_espn": "2026-11-11",
+   "retour_commentaire": null,
+   "commentaire": "Reaves is questionable for Monday's game against the Hawks due to an illness, per Dave McMenamin of ESPN.com.",
+   "date": "2026-11-09"
+  },
   "quentin grimes": {
    "nom": "Quentin Grimes",
    "statut": "Out",
@@ -449,15 +449,6 @@
    "retour_espn": "2026-11-11",
    "retour_commentaire": null,
    "commentaire": "Grimes (finger) is out for Monday's game against Atlanta, per Dave McMenamin of ESPN.com.",
-   "date": "2026-11-09"
-  },
-  "austin reaves": {
-   "nom": "Austin Reaves",
-   "statut": "Day-To-Day",
-   "blessure": "Other Illness",
-   "retour_espn": "2026-11-09",
-   "retour_commentaire": null,
-   "commentaire": "Reaves is questionable for Monday's game against the Hawks due to an illness, per Dave McMenamin of ESPN.com.",
    "date": "2026-11-09"
   },
   "scotty pippen": {
@@ -487,6 +478,15 @@
    "commentaire": "Saunders signed a two-way contract with the Grizzlies on Saturday, Shams Charania of ESPN reports.",
    "date": "2026-11-07"
   },
+  "tyler herro": {
+   "nom": "Tyler Herro",
+   "statut": "Day-To-Day",
+   "blessure": "Right Bruise",
+   "retour_espn": "2026-11-10",
+   "retour_commentaire": null,
+   "commentaire": "Herro (contusion) is listed as questionable for Tuesday's game against the Knicks.",
+   "date": "2026-11-09"
+  },
   "gary trent": {
    "nom": "Gary Trent Jr.",
    "statut": "Day-To-Day",
@@ -513,6 +513,15 @@
    "retour_commentaire": null,
    "commentaire": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports.",
    "date": "2026-10-05"
+  },
+  "zion williamson": {
+   "nom": "Zion Williamson",
+   "statut": "Out",
+   "blessure": "Other Rest",
+   "retour_espn": "2026-11-11",
+   "retour_commentaire": null,
+   "commentaire": "Williamson (rest) is out for Monday's game against the Warriors.",
+   "date": "2026-11-09"
   },
   "trendon watford": {
    "nom": "Trendon Watford",
@@ -547,8 +556,8 @@
    "blessure": "Leg Ankle",
    "retour_espn": "2026-11-10",
    "retour_commentaire": null,
-   "commentaire": "Hart is out for Saturday's game against the Cavaliers due to right ankle soreness.",
-   "date": "2026-11-08"
+   "commentaire": "Hart is questionable for Tuesday's game against the Bucks due to right ankle soreness.",
+   "date": "2026-11-09"
   },
   "jaylin williams": {
    "nom": "Jaylin Williams",
@@ -651,11 +660,11 @@
   },
   "adem bona": {
    "nom": "Adem Bona",
-   "statut": "Day-To-Day",
+   "statut": "Out",
    "blessure": "Torso Back",
-   "retour_espn": "2026-11-10",
+   "retour_espn": "2026-11-12",
    "retour_commentaire": null,
-   "commentaire": "Bona (back) is out for Sunday's game in Chicago.",
+   "commentaire": "Bona (back) is out for Tuesday's game against the Celtics.",
    "date": "2026-11-09"
   },
   "dominick barlow": {

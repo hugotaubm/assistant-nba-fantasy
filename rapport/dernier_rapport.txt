@@ -1,13 +1,12 @@
-Calcul lancé le 09/11/2026 à 22:00:33
+Calcul lancé le 09/11/2026 à 23:41:58
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
-  (force des conseils : 22 s)
+  (force des conseils : 24 s)
 
 === Gameweek 4 — prochaine deadline : Gameweek 4 - Day 1 le mar. 10/11 00h30 (heure de Paris) ===
 Équipe lue depuis : my-team (connecté, à jour en direct) | Banque : 0.8 M$ | Transferts gratuits restants : 1 | Capitaine dispo : oui
 
-Changements depuis le calcul de 15h10 : plus de transfert D.Sabonis → C.Flagg. Raison probable : pas de nouvelle info : simple écart entre plans presque équivalents.
 Option « transférer dès Day 1 » (seulement 4 titulaire(s) ce jour-là) : Day 1 : W.Carter Jr. (ORL) → K.George (WAS). Points projetés -46 par rapport au plan conseillé, mais avec moins de transferts en réserve pour remplacer un blessé : bilan -43 pts → l'assistant préfère attendre.
 ⭐ All-Star (si c'est bien « budget illimité pour un Gameday, puis retour à ton équipe ») : gain par soir GW4 Day 1 (16 équipes) -3 | GW4 Day 2 (12 équipes) +81 | GW4 Day 3 (20 équipes) +51 | GW4 Day 4 (8 équipes) +156 | GW4 Day 5 (18 équipes) +36 | GW4 Day 6 (10 équipes) +121 | GW4 Day 7 (18 équipes) +41. Meilleur soir : GW4 Day 4, 233 pts attendus au lieu de 77, avec C.Cunningham, T.Maxey, C.Flagg, L.Ball, K.George.
 🏆 Ligue First Team : 59e sur 639 (-18 depuis le 08/11), 1 pts du rang juste devant, 699 pts du 1er · devant toi, 38 sur 58 ont déjà joué leur wildcard et 27 leur All-Star · tes joueurs chez les 58 équipes devant toi : Y.Lendeborg 57, D.Acuff Jr. 57, V.Wembanyama 28, T.Jerome 19, C.Flagg 18, T.da Silva 13, A.Mitchell 12, N.Traore 6, K.Dunn 2, W.Carter Jr. 0
@@ -15,7 +14,7 @@ Option « transférer dès Day 1 » (seulement 4 titulaire(s) ce jour-là) : Day
 🧩 Combler les 2 place(s) vide(s) de la semaine suivante est possible : Day 4 : W.Carter Jr. → D.Robinson ; Day 1 : C.Flagg → D.Avdija ; Day 2 : N.Traore → D.Jenkins. Semaine suivante -5 pts, au total -17 pts par rapport au plan conseillé (cette semaine + suivante pondérée).
 🛡️ Effet adversaire (points fantasy concédés par poste, déjà dans les prévisions) — face aux arrières, les plus perméables : MIA +7 %, GSW +7 %, LAC +6 % ; les plus dures : ATL -12 %, DET -8 %, BOS -7 % | face aux intérieurs, les plus perméables : ATL +12 %, MIL +7 %, CHI +7 % ; les plus dures : OKC -7 %, LAL -5 %, SAS -5 %
 📉 Vont perdre des minutes (retour d'un coéquipier blessé) : J.Richardson (ORL) -40 % dès le 10/11 (retour : D.Bane, J.Suggs) ; L.Shamet (NYK) -16 % dès le 10/11 (retour : J.Hart) ; J.Mogbo (SAC) -12 % dès le 10/11 (retour : D.Sabonis) ; J.Green (UTA) -11 % dès le 10/11 (retour : K.George) ; A.Black (ORL) -11 % dès le 10/11 (retour : D.Bane, J.Suggs)
-📈 Profitent d'une blessure (minutes libérées) : T.McConnell (IND) +60 % sur 7 j. (absent : B.Sheppard, J.Furphy, T.Haliburton) ; B.Hyland (MIN) +45 % sur 6 j. (absent : A.Edwards, D.DiVincenzo) ; S.Cissoko (POR) +43 % sur 7 j. (absent : J.Morant, S.Sharpe, V.Krejci) ; G.Santos (GSW) +43 % sur 7 j. (absent : J.Butler, K.Porzingis) ; A.Caruso (OKC) +41 % sur 7 j. (absent : C.Wallace, J.Williams) ; I.Hartenstein (OKC) +37 % sur 7 j. (absent : C.Holmgren) ; T.Shannon Jr. (MIN) +35 % sur 6 j. (absent : A.Edwards, D.DiVincenzo) ; J.Williams (OKC) +33 % sur 7 j. (absent : C.Holmgren)
+📈 Profitent d'une blessure (minutes libérées) : T.McConnell (IND) +60 % sur 7 j. (absent : B.Sheppard, J.Furphy, T.Haliburton) ; R.Kalkbrenner (CHA) +47 % sur 1 j. (absent : B.Miller, G.Williams, M.Diabate) ; B.James (LAL) +46 % sur 1 j. (absent : A.Reaves, M.Johnson, Q.Grimes) ; B.Hyland (MIN) +45 % sur 6 j. (absent : A.Edwards, D.DiVincenzo) ; S.Cissoko (POR) +43 % sur 7 j. (absent : J.Morant, S.Sharpe, V.Krejci) ; G.Santos (GSW) +43 % sur 7 j. (absent : J.Butler, K.Porzingis) ; A.Caruso (OKC) +41 % sur 7 j. (absent : C.Wallace, J.Williams) ; R.O'Neale (CHA) +40 % sur 1 j. (absent : B.Miller, G.Williams, M.Diabate)
 ▶ CINQ DE DÉPART POUR LE PROCHAIN GAMEDAY
   BC  T.Jerome (MEM)               proj. 43.4
   FC  C.Flagg (DAL)                proj. 50.5
@@ -25,7 +24,7 @@ Option « transférer dès Day 1 » (seulement 4 titulaire(s) ce jour-là) : Day
 
 ▶ TRANSFERTS
   Avant la deadline de Gameweek 4 - Day 4 (ven. 13/11 00h30) :
-  - Vendre W.Carter Jr. (ORL)         → Acheter D.Robinson (DET) (7.5 M$, proj. 30.0)  [🟢 Fort : +105 pts vs garder W.Carter Jr. · plan B à 5 pts]
+  - Vendre W.Carter Jr. (ORL)         → Acheter D.Robinson (DET) (7.5 M$, proj. 30.0)  [🟢 Fort : +107 pts vs garder W.Carter Jr. · plan B à 5 pts]
   Gain attendu (cette semaine + suivante pondérée) : +206 pts vs ne rien faire
   Relance l'assistant avant chaque deadline : le conseil est recalculé avec les dernières blessures.
   Prévu la semaine suivante (indicatif) : Day 1 : C.Flagg→D.Avdija, T.da Silva→K.George
@@ -65,4 +64,4 @@ Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) 
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 09/11/2026 à 22:01:08 (code de sortie : 0)
+Terminé le 09/11/2026 à 23:42:31 (code de sortie : 0)
