@@ -239,6 +239,33 @@ def wildcard(code_execution=None):
     print(f"POST titulaires : {code} | réponse : {str(rep)[:300]}")
 
 
+def capitaine(q):
+    """Active le chip capitaine (phcapt) sur le joueur q, qui doit être titulaire ; vérifie ensuite sur le site."""
+    eid, mt = equipe_actuelle()
+    boot = json.loads(urllib.request.urlopen(urllib.request.Request(API + "bootstrap-static/", headers=entetes()), timeout=60).read())
+    el = {e["id"]: e for e in boot["elements"]}
+    picks = sorted(mt["picks"], key=lambda p: p["position"])
+    ch = next((c for c in mt.get("chips", []) if c.get("name") == "phcapt"), {})
+    print(f"Chip capitaine : {ch.get('status_for_entry')} (en attente : {ch.get('is_pending')})")
+    if ch.get("status_for_entry") not in ("available", None) or ch.get("is_pending"):
+        sys.exit("❌ ARRÊT : chip capitaine non disponible ou déjà activé (rien n'est envoyé).")
+    tit = [p["element"] for p in picks[:5]]
+    if q not in tit:
+        sys.exit(f"❌ ARRÊT : {el[q]['web_name']} n'est pas titulaire (rien n'est envoyé).")
+    vice = next(x for x in tit if x != q)
+    envoi = {"chip": "phcapt", "picks": [{"element": p["element"], "position": p["position"], "is_captain": p["element"] == q,
+                                          "is_vice_captain": p["element"] == vice} for p in picks]}
+    code, _, rep = appel("POST", f"my-team/{eid}/", envoi)
+    print(f"POST capitaine {el[q]['web_name']} : {code}" + ("" if code in (200, 201, 202) else f" | réponse : {str(rep)[:400]}"))
+    _, mt2 = equipe_actuelle()
+    ch2 = next((c for c in mt2.get("chips", []) if c.get("name") == "phcapt"), {})
+    cap2 = next((p["element"] for p in mt2["picks"] if p.get("is_captain")), None)
+    print(f"Après (relu sur le site) : chip {ch2.get('status_for_entry')} (en attente : {ch2.get('is_pending')}) | capitaine "
+          f"{el[cap2]['web_name'] if cap2 else '?'}")
+    print("✅ Capitaine activé" if (ch2.get("is_pending") or ch2.get("status_for_entry") == "active") and cap2 == q
+          else "❌ Le capitaine ne semble pas activé : vérifie dans l'appli")
+
+
 def transferts_plan(code_execution=None):
     """Transferts gratuits conseillés avant la prochaine deadline (rapport/dernier_plan.json), sans chip.
     Jamais de transfert payant : arrêt si les transferts gratuits restants ne suffisent pas."""
@@ -304,6 +331,8 @@ if __name__ == "__main__":
         test_sauvegarde()
     elif mode == "titulaires":
         titulaires([int(x) for x in sys.argv[2].split(",")])
+    elif mode == "capitaine":
+        capitaine(int(sys.argv[2]))
     elif mode == "transferts":
         transferts_plan(sys.argv[2] if len(sys.argv) > 2 and sys.argv[2] else None)
     elif mode == "wildcard":
