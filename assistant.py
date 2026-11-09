@@ -1140,6 +1140,9 @@ def tester_idees(plan, args_plan, base, cfg, joueurs, boot, saison):
         banque, prix_vente = args_plan[2], args_plan[3]
         reste = (banque + sum(prix_vente.get(q, joueurs[q]["prix"]) for q in f["sortants"])
                  - sum(joueurs[q]["prix"] for q in f["entrants"])) / 10
+        par_soir = lambda r, cle: "-".join(str(len(jp["titulaires"])) for jp in r[cle])
+        soirs_txt = (f" Joueurs alignés par soir — avec ton idée : cette semaine {par_soir(f, 'plan')}, suivante {par_soir(f, 'plan2')} "
+                     f"| plan conseillé : {par_soir(plan, 'plan')}, suivante {par_soir(plan, 'plan2')}.")
         try:
             creux_txt = creux(f, joueurs, args_plan[7], boot, args_plan[8])
         except Exception as ex:
@@ -1153,7 +1156,7 @@ def tester_idees(plan, args_plan, base, cfg, joueurs, boot, saison):
                if autres else "")
             + (" Semaine suivante : " + ", ".join(f"{d} : {nom(joueurs, a, False)} → {nom(joueurs, b, False)}" for d, a, b in suiv) + "."
                if suiv else "")
-            + f" Jours creux — {creux_txt}.")
+            + f" Jours creux — {creux_txt}." + soirs_txt)
     return lignes
 
 
