@@ -37,7 +37,12 @@
     "V.Wembanyama"
   ],
   "malus_back_to_back": 0.92,
-  "idees": [],
+  "idees": [
+    "D.Sabonis>C.Flagg@4.1+W.Carter Jr.>?@4.1",
+    "D.Sabonis>C.Flagg@4.1+T.da Silva>?@4.1",
+    "D.Sabonis>C.Flagg@4.1+N.Traore>?@4.1",
+    "D.Sabonis>C.Flagg@4.1+K.Dunn>?@4.1"
+  ],
   "transferts_payants": false,
   "seuil_joker": 300,
   "seuil_joker_debut": 400,
