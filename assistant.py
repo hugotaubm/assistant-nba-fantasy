@@ -36,6 +36,7 @@ B2B = set()          # (équipe, event) = 2e match d'un back-to-back, rempli par
 MALUS_B2B = [0.92]   # remplacé par config.json « malus_back_to_back »
 PROCHAIN = [None]    # id du prochain Gameday : ses chances de jouer viennent du rapport de blessures du jeu
 JOUE = [{}]          # calendrier (équipe -> events), pour les fonctions d'affichage
+SEMAINE3 = [[]]      # Gamedays de la semaine d'après la suivante (horizon long, sans transfert ; voir optimiser)
 BOOST = {}           # (joueur, event) -> facteur : minutes libérées par un coéquipier blessé (voir opportunites)
 ADVERSAIRE = {}      # (équipe, event) -> équipe adverse
 DEFENSE = {}         # (équipe, poste) -> facteur : points fantasy concédés à ce poste (voir defenses)
@@ -59,6 +60,8 @@ def lire_config():
     cfg.setdefault("poids_minutes_avant_saison", 3)    # matchs « fictifs » donnés aux minutes projetées
     cfg.setdefault("poids_points_avant_saison", 8)     # matchs « fictifs » donnés à la projection d'avant-saison
     cfg.setdefault("plafond_minutes", 1.3)             # hausse max de la projection quand un joueur joue plus que prévu
+    cfg.setdefault("poids_semaine3", 0.5)              # semaine d'après la suivante : points comptés à 50 % (sans transfert)
+    cfg.setdefault("penalite_meme_equipe", 0.0)        # pts retirés par paire de joueurs d'une même équipe (calendriers liés)
     cfg.setdefault("capitaine_attente", 0.02)          # capitaine : bonus réduit de 2 % par Gameday d'attente (départage)
     cfg.setdefault("poids_forme", 0.25)                # part de la forme récente (à partir de 5 matchs)
     cfg.setdefault("fiabilite_rang", {"3": 0.9, "4+": 0.75})   # 3e ou au-delà dans la hiérarchie de son poste
@@ -780,9 +783,13 @@ def optimiser(joueurs, equipe, banque, prix_vente, gratuits, cap_dispo, jours, j
             nb_suiv[eq] = sum(1 for ev in evs if gw_suiv["start_event"] <= ev <= gw_suiv["stop_event"])
     # semaine suivante : seulement si son calendrier est complet
     jours_suiv = gw_suiv.get("events", []) if (gw_suiv and sum(nb_suiv.values()) >= 60 and cfg["poids_futur"] > 0) else []
-    tous = list(jours) + list(jours_suiv)
-    sem = [0] * len(jours) + [1] * len(jours_suiv)
-    poids = [1.0 if w == 0 else cfg["poids_futur"] for w in sem]
+    # semaine d'après : l'effectif de fin de semaine suivante y joue sans transfert (anticiper les calendriers)
+    jours3 = [e for e in SEMAINE3[0] if e["id"] not in {x["id"] for x in jours_suiv}] if (jours_suiv and cfg["poids_semaine3"] > 0) else []
+    if sum(1 for evs in joue.values() for ev in evs if ev in {e["id"] for e in jours3}) < 60:
+        jours3 = []   # calendrier de cette semaine-là pas encore complet
+    tous = list(jours) + list(jours_suiv) + list(jours3)
+    sem = [0] * len(jours) + [1] * len(jours_suiv) + [2] * len(jours3)
+    poids = [1.0 if w == 0 else cfg["poids_futur"] if w == 1 else cfg["poids_futur"] * cfg["poids_semaine3"] for w in sem]
     dates = {e["id"]: (z(e["deadline_time"]) - dt.timedelta(hours=4)).date() for e in tous}
     D = len(tous)
 
@@ -800,6 +807,8 @@ def optimiser(joueurs, equipe, banque, prix_vente, gratuits, cap_dispo, jours, j
     libres = {0: gratuits, 1: cfg["transferts_gratuits_par_defaut"]}
     if assurance and transferts:
         for d in range(D):
+            if sem[d] not in libres:
+                continue
             for k in range(1, min(libres[sem[d]], 3) + 1):
                 add(("u", sem[d], k, d))   # u = 1 si au moins k transferts faits cette semaine à la fin du jour d
     N = c
@@ -850,7 +859,7 @@ def optimiser(joueurs, equipe, banque, prix_vente, gratuits, cap_dispo, jours, j
                     ub[S[i]] = 0      # pas acheté avant
             # petit bonus d'attente : à gain égal, on attend (plus d'infos sur les blessures)
             obj[v_in] = cfg["bonus_attente"] * (dernier_jour[sem[d]] - d)
-        if (not transferts and not (d == 0 and libre)) or (
+        if sem[d] == 2 or (not transferts and not (d == 0 and libre)) or (
                 jours_transfert is not None and sem[d] == 0 and tous[d]["id"] not in jours_transfert):
             for i in range(n):
                 ub[idx[("in", i, d)]] = 0   # jours_transfert : jours autorisés pour les transferts de cette semaine
@@ -896,7 +905,23 @@ def optimiser(joueurs, equipe, banque, prix_vente, gratuits, cap_dispo, jours, j
     for w in set(sem):   # un capitaine par Gameweek
         cs = [v for kk, v in idx.items() if kk[0] == "c" and sem[kk[2]] == w]
         if cs:
-            row({v: 1 for v in cs}, 0, 1 if (cap_dispo or w == 1) else 0)
+            row({v: 1 for v in cs}, 0, 1 if (cap_dispo or w >= 1) else 0)
+    # Paires d'une même équipe NBA : mêmes soirs de repos, donc des trous groupés au-delà de l'horizon.
+    # Pénalité (pts) par paire dans l'effectif de fin de semaine et de fin de semaine suivante.
+    if cfg["penalite_meme_equipe"] > 0:
+        for w in (0, 1):
+            if w not in set(sem):
+                continue
+            d = dernier_jour[w]
+            for eq in {p["equipe_id"] for p in cand}:
+                membres = [i for i, p in enumerate(cand) if p["equipe_id"] == eq]
+                if len(membres) < 2:
+                    continue
+                zv = len(obj)
+                obj = np.append(obj, cfg["penalite_meme_equipe"] * poids[d]); lb = np.append(lb, 0)
+                ub = np.append(ub, 1); integ = np.append(integ, 0)
+                row({**{idx[("s", i, d)]: 1 for i in membres}, zv: -1}, -np.inf, 1)   # z >= nb - 1
+                N += 1
 
     A = lil_matrix((len(rows), N))
     for r, co in enumerate(rows):
@@ -920,11 +945,12 @@ def optimiser(joueurs, equipe, banque, prix_vente, gratuits, cap_dispo, jours, j
                                b2b=[q for q in tit if (joueurs[q]["equipe_id"], e["id"]) in B2B],
                                points=sum(ev_jour(joueurs[q], e["id"], joue, dates[e["id"]]) for q in tit)
                                + (ev_jour(joueurs[cap], e["id"], joue, dates[e["id"]]) if cap else 0)))
-    plan, plan2 = jours_plan[:len(jours)], jours_plan[len(jours):]
+    plan, plan2 = jours_plan[:len(jours)], jours_plan[len(jours):len(jours) + len(jours_suiv)]
+    plan3 = jours_plan[len(jours) + len(jours_suiv):]
     final = plan[-1]["effectif"]
     hits = int(round(x[idx[("hit", 0)]]))
     hits2 = int(round(x[idx[("hit", 1)]]))
-    return dict(final=final, depart=depart, plan=plan, plan2=plan2, pts_semaine=sum(p["points"] for p in plan),
+    return dict(final=final, depart=depart, plan=plan, plan2=plan2, plan3=plan3, pts_semaine=sum(p["points"] for p in plan),
                 score=-res.fun, hits=hits, hits2=hits2, sortants=[p for p in depart if p not in final],
                 entrants=[p for p in final if p not in depart],
                 transferts=[(jp["event"], jp["sortants"], jp["entrants"]) for jp in plan if jp["entrants"]],
@@ -934,6 +960,7 @@ def optimiser(joueurs, equipe, banque, prix_vente, gratuits, cap_dispo, jours, j
 def points_projetes(r, cfg):
     """Points projetés d'un plan : cette semaine + suivante pondérée, moins les transferts payants des deux."""
     return (r["pts_semaine"] + cfg["poids_futur"] * sum(jp["points"] for jp in r["plan2"])
+            + cfg["poids_futur"] * cfg["poids_semaine3"] * sum(jp["points"] for jp in r.get("plan3", []))
             - 100 * r["hits"] - 100 * cfg["poids_futur"] * r.get("hits2", 0))
 
 
@@ -1713,6 +1740,9 @@ def main():
     PROCHAIN[0] = jours[0]["id"]
     if gw_suiv:
         gw_suiv = dict(gw_suiv, events=[e for e in boot["events"] if gw_suiv["start_event"] <= e["id"] <= gw_suiv["stop_event"]])
+        gw3 = next((p for p in boot["phases"] if p["name"].lower().startswith("gameweek")
+                    and p["start_event"] == gw_suiv["stop_event"] + 1), None)
+        SEMAINE3[0] = [e for e in boot["events"] if gw3 and gw3["start_event"] <= e["id"] <= gw3["stop_event"]]
     joue, matchs = construire_calendrier(boot, fixtures, sched)
     JOUE[0] = joue
     MALUS_B2B[0] = cfg["malus_back_to_back"]
