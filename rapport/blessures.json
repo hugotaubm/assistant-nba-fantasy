@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-10T23:08:58.769099+00:00",
+ "lu": "2026-11-10T23:20:18.566375+00:00",
  "joueurs": {
   "asa newell": {
    "nom": "Asa Newell",
@@ -37,6 +37,15 @@
    "commentaire": "Veesaar was diagnosed with a torn right ACL and is expected to miss the 2026-27 season, the Hawks announced Monday.",
    "date": "2026-09-21"
   },
+  "nolan traore": {
+   "nom": "Nolan Traore",
+   "statut": "Day-To-Day",
+   "blessure": "Right Leg Calf",
+   "retour_espn": "2026-11-11",
+   "retour_commentaire": null,
+   "commentaire": "Traore (calf) is listed as questionable for Wednesday's game against New Orleans.",
+   "date": "2026-11-10"
+  },
   "egor demin": {
    "nom": "Egor Demin",
    "statut": "Out",
@@ -44,15 +53,6 @@
    "retour_espn": "2026-11-11",
    "retour_commentaire": null,
    "commentaire": "Demin (leg) is probable for Wednesday's game against the Pelicans, Erik Slater of ClutchPoints.com reports.",
-   "date": "2026-11-10"
-  },
-  "nolan traore": {
-   "nom": "Nolan Traore",
-   "statut": "Day-To-Day",
-   "blessure": "Right Leg Calf",
-   "retour_espn": "2026-11-11",
-   "retour_commentaire": null,
-   "commentaire": "Traore registered 14 points (6-15 FG, 2-6 3Pt), a rebound and two assists across 21 minutes in Sunday's 130-93 loss to the Mavericks.",
    "date": "2026-11-10"
   },
   "grant nelson": {
@@ -370,22 +370,22 @@
    "commentaire": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic.",
    "date": "2026-08-26"
   },
-  "austin reaves": {
-   "nom": "Austin Reaves",
-   "statut": "Day-To-Day",
-   "blessure": "",
-   "retour_espn": null,
-   "retour_commentaire": null,
-   "commentaire": "Reaves (illness) has been ruled out for Monday's game against Atlanta, Benjamin Royer of The Orange County Register reports.",
-   "date": "2026-11-10"
-  },
   "quentin grimes": {
    "nom": "Quentin Grimes",
    "statut": "Day-To-Day",
    "blessure": "Arm Finger",
    "retour_espn": "2026-11-11",
    "retour_commentaire": null,
-   "commentaire": "Grimes (finger) is out for Monday's game against Atlanta, per Dave McMenamin of ESPN.com.",
+   "commentaire": "Grimes (finger) is listed as questionable for Wednesday's game in Milwaukee.",
+   "date": "2026-11-10"
+  },
+  "quinten post": {
+   "nom": "Quinten Post",
+   "statut": "Out",
+   "blessure": "Head Head",
+   "retour_espn": "2026-11-13",
+   "retour_commentaire": null,
+   "commentaire": "Post (head) didn't return to Monday's 118-102 win over the Raptors. He ended the night with one rebound in two minutes.",
    "date": "2026-11-10"
   },
   "isaiah stewart": {
@@ -395,15 +395,6 @@
    "retour_espn": "2026-11-11",
    "retour_commentaire": null,
    "commentaire": "Stewart (knee) has been ruled out for Monday's game against Toronto.",
-   "date": "2026-11-10"
-  },
-  "quinten post": {
-   "nom": "Quinten Post",
-   "statut": "Day-To-Day",
-   "blessure": "Head Head",
-   "retour_espn": "2026-11-11",
-   "retour_commentaire": null,
-   "commentaire": "Post (head) didn't return to Monday's 118-102 win over the Raptors. He ended the night with one rebound in two minutes.",
    "date": "2026-11-10"
   },
   "scotty pippen": {
@@ -498,11 +489,11 @@
   },
   "josh hart": {
    "nom": "Josh Hart",
-   "statut": "Day-To-Day",
+   "statut": "Out",
    "blessure": "Other Illness",
-   "retour_espn": "2026-11-10",
+   "retour_espn": "2026-11-11",
    "retour_commentaire": null,
-   "commentaire": "Hart is doubtful for Tuesday's game against the Bucks due to an illness.",
+   "commentaire": "Hart (illness) won't play Tuesday against the Bucks, Kristian Winfield of the New York Daily News reports.",
    "date": "2026-11-10"
   },
   "jaylin williams": {

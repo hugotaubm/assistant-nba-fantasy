@@ -315,9 +315,9 @@ Par prix :
   < 7 M$                 163 matchs | 0 min : 56 | biais  -4.7 | réel/projeté 0.79 | minutes 16.7
   ≥ 15 M$                325 matchs | 0 min : 42 | biais  -3.3 | réel/projeté 0.93 | minutes 32.8
 Par rang dans la hiérarchie ESPN (1 = titulaire) :
-  rang 1                 1468 matchs | 0 min : 164 | biais  -1.6 | réel/projeté 0.96 | minutes 29.5
-  rang 2                 726 matchs | 0 min : 97 | biais  -5.1 | réel/projeté 0.80 | minutes 20.6
-  rang 3                  84 matchs | 0 min : 28 | biais -11.8 | réel/projeté 0.51 | minutes 14.4
+  rang 1                 1447 matchs | 0 min : 158 | biais  -1.6 | réel/projeté 0.96 | minutes 29.7
+  rang 2                 735 matchs | 0 min : 102 | biais  -4.9 | réel/projeté 0.81 | minutes 20.5
+  rang 3                  96 matchs | 0 min : 29 | biais -10.5 | réel/projeté 0.56 | minutes 16.0
   rang 5                  49 matchs | 0 min : 35 | biais  -9.3 | réel/projeté 0.67 | minutes 19.3
   rang 6                  90 matchs | 0 min : 81 | biais  -6.7 | réel/projeté 0.82 | minutes 23.9
   rang 7                  40 matchs | 0 min : 35 | biais  -2.6 | réel/projeté 0.94 | minutes 27.6
@@ -390,7 +390,7 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       K.Knueppel (CHA) : Hamstring expected back 2026-12-12
       D.Schröder (CHA) : Hamstring expected back 2026-11-25
       N.Tomlin (CLE) : Back expected back 2026-11-16
-  statut i | chances ce Gameday 25 | prochain 25 : 34 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 32 joueurs
       A.Newell (ATL) : Toe expected back 2026-11-13
       K.Gilbert (ATL) : Knee expected back 2026-11-13
       E.Dëmin (BKN) : Leg expected back 2026-11-11
@@ -405,11 +405,11 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       R.Dillingham (CHI) : Wrist expected back 2027-01-01
       J.Strawther (DEN) : Knee expected back 2026-11-29
       E.Freeman (MIN) : Undisclosed expected back 2027-01-01
-  statut d | chances ce Gameday 100 | prochain 75 : 5 joueurs
+  statut d | chances ce Gameday 100 | prochain 75 : 4 joueurs
       N.Traore (BKN) : Calf expected back 2026-11-11
       T.Awaka (CHI) : Back expected back 2026-11-11
       C.Christie (LAC) : Ankle expected back 2026-11-10
-      Q.Post (MEM) : Head expected back 2026-11-11
+      T.Jackson-Davis (TOR) : Illness expected back 2026-11-11
   statut d | chances ce Gameday 75 | prochain 75 : 4 joueurs
       G.Nelson (BKN) : Knee expected back 2026-11-10
       T.McConnell (IND) : Hamstring expected back 2026-11-11
@@ -428,6 +428,10 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       G.Payton II (GSW) : Knee expected back 2026-11-13
   statut d | chances ce Gameday 25 | prochain 75 : 1 joueurs
       W.Richard (GSW) : Thumb expected back 2026-11-11
+  statut i | chances ce Gameday 100 | prochain 25 : 1 joueurs
+      Q.Post (MEM) : Head expected back 2026-11-13
+  statut i | chances ce Gameday 25 | prochain 0 : 1 joueurs
+      S.Pippen Jr. (MEM) : Back expected back 2026-11-21
   statut i | chances ce Gameday 0 | prochain 25 : 1 joueurs
       M.Raynaud (SAC) : Knee expected back 2026-11-15
   statut i | chances ce Gameday 75 | prochain 75 : 1 joueurs
