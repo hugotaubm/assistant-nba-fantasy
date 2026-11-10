@@ -288,8 +288,8 @@ BILAN DES GAMEDAYS JOUÉS
   → Titulaires : 109.0 pts réels pour 160.5 projetés (-51.5) [projection du modèle].
   → Meilleur cinq possible après coup : 109.0 pts (hors capitaine), soit 0.0 pts laissés sur le banc.
 
---- Gameweek 4 - Day 1 : moyenne des joueurs 140.6 | meilleur 418.0
-  Ton score : 323.0 | banc : 0.0 | rang : 761 | transferts : 1 (coût 0)
+--- Gameweek 4 - Day 1 : moyenne des joueurs 170.0 | meilleur 418.0
+  Ton score : 323.0 | banc : 0.0 | rang : 886 | transferts : 1 (coût 0)
   TITULAIRE T.Jerome (MEM)               31 min        réel  37.0 | projeté  42.5
   TITULAIRE A.Mitchell (OKC)             pas de match  réel   0.0 | projeté   0.0
   TITULAIRE C.Flagg (DAL)                38 min        réel  77.0 | projeté  44.2
@@ -367,10 +367,10 @@ CALIBRATION DU MODÈLE (points réels / points attendus, par rang)
   rang 3+  : 1509 joueurs-matchs | réel    7898 / attendu    7536 = 1.05 → facteur appliqué 1.046
   rang ?   :  308 joueurs-matchs | réel     785 / attendu    1689 = 0.46 → facteur appliqué 0.750
 Erreur restante du modèle par tranche de prix (après la calibration par rang) :
-  10-15 M$  :  764 joueurs-matchs | réel   23469 / attendu   23302 = 1.01 → facteur appliqué 1.007
-  7-10 M$   : 1029 joueurs-matchs | réel   20611 / attendu   20069 = 1.03 → facteur appliqué 1.026
-  < 7 M$    : 2121 joueurs-matchs | réel   13593 / attendu   14026 = 0.97 → facteur appliqué 0.970
-  ≥ 15 M$   :  265 joueurs-matchs | réel   11995 / attendu   11585 = 1.04 → facteur appliqué 1.034
+  10-15 M$  :  764 joueurs-matchs | réel   23469 / attendu   23343 = 1.01 → facteur appliqué 1.005
+  7-10 M$   : 1029 joueurs-matchs | réel   20611 / attendu   20099 = 1.03 → facteur appliqué 1.025
+  < 7 M$    : 2121 joueurs-matchs | réel   13593 / attendu   14111 = 0.96 → facteur appliqué 0.964
+  ≥ 15 M$   :  265 joueurs-matchs | réel   11995 / attendu   11609 = 1.03 → facteur appliqué 1.032
 
 Vérification du barème (points du jeu vs formule des projections) :
   Statistiques fournies par le jeu : ['assists', 'blocks', 'in_dreamteam', 'minutes', 'played', 'points_scored', 'rebounds', 'steals', 'total_points']
