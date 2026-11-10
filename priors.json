@@ -431,9 +431,9 @@
 "rang_poste": 4,
 "poste_espn": "PG",
 "devant": [
-"Derrick White",
+"Mike Conley",
 "Payton Pritchard",
-"Mike Conley"
+"Derrick White"
 ],
 "presaison_matchs": 1,
 "presaison_min": 25.0
@@ -477,7 +477,7 @@
 "age": 32,
 "min_proj": 34.3,
 "rang_poste": 1,
-"poste_espn": "PG",
+"poste_espn": "SG",
 "devant": [],
 "presaison_matchs": 2,
 "presaison_min": 23.0
@@ -501,7 +501,7 @@
 "rang_poste": 2,
 "poste_espn": "PG",
 "devant": [
-"Derrick White"
+"Mike Conley"
 ],
 "presaison_matchs": 2,
 "presaison_min": 26.5
@@ -592,9 +592,10 @@
 "presence": 0.97,
 "age": 26,
 "min_proj": 25.1,
-"rang_poste": 2,
+"rang_poste": 3,
 "poste_espn": "SG",
 "devant": [
+"Derrick White",
 "Hugo Gonzalez"
 ],
 "presaison_matchs": 4,
@@ -616,9 +617,11 @@
 "presence": 0.93,
 "age": 20,
 "min_proj": 21.7,
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "SG",
-"devant": [],
+"devant": [
+"Derrick White"
+],
 "presaison_matchs": 4,
 "presaison_min": 20.0
 },
@@ -682,9 +685,9 @@
 "rang_poste": 5,
 "poste_espn": "SG",
 "devant": [
+"Derrick White",
 "Hugo Gonzalez",
-"Baylor Scheierman",
-"Payton Pritchard"
+"Baylor Scheierman"
 ],
 "presaison_matchs": 2,
 "presaison_min": 20.5
@@ -705,12 +708,9 @@
 "presence": 0.79,
 "age": 39,
 "min_proj": 17.6,
-"rang_poste": 3,
+"rang_poste": 1,
 "poste_espn": "PG",
-"devant": [
-"Derrick White",
-"Payton Pritchard"
-],
+"devant": [],
 "presaison_matchs": 1,
 "presaison_min": 18.0
 },
@@ -2478,9 +2478,11 @@
 "presence": 0.95,
 "age": 23,
 "min_proj": 28.2,
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "SG",
-"devant": [],
+"devant": [
+"Caleb Martin"
+],
 "presaison_matchs": 3,
 "presaison_min": 20.3
 },
@@ -2500,11 +2502,9 @@
 "presence": 0.86,
 "age": 31,
 "min_proj": 17.0,
-"rang_poste": 2,
+"rang_poste": 1,
 "poste_espn": "SG",
-"devant": [
-"Max Christie"
-],
+"devant": [],
 "presaison_matchs": 3,
 "presaison_min": 16.0
 },
@@ -2626,8 +2626,8 @@
 "rang_poste": 7,
 "poste_espn": "SG",
 "devant": [
-"Max Christie",
 "Caleb Martin",
+"Max Christie",
 "Marcus Sasser"
 ],
 "presaison_matchs": 2,
@@ -2645,8 +2645,8 @@
 "rang_poste": 8,
 "poste_espn": "SG",
 "devant": [
-"Max Christie",
 "Caleb Martin",
+"Max Christie",
 "Marcus Sasser"
 ],
 "presaison_matchs": 3,
@@ -5174,9 +5174,11 @@
 "presence": 0.84,
 "age": 25,
 "min_proj": 23.0,
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "SF",
-"devant": [],
+"devant": [
+"Quentin Grimes"
+],
 "presaison_matchs": 2,
 "presaison_min": 16.0
 },
@@ -5338,9 +5340,9 @@
 "rang_poste": 8,
 "poste_espn": "SF",
 "devant": [
+"Quentin Grimes",
 "Ziaire Williams",
-"Jake LaRavia",
-"Quentin Grimes"
+"Jake LaRavia"
 ],
 "presaison_matchs": 5,
 "presaison_min": 12.4
@@ -5361,9 +5363,9 @@
 "rang_poste": 6,
 "poste_espn": "SF",
 "devant": [
+"Quentin Grimes",
 "Ziaire Williams",
-"Jake LaRavia",
-"Quentin Grimes"
+"Jake LaRavia"
 ],
 "presaison_matchs": 3,
 "presaison_min": 18.3
@@ -5384,9 +5386,10 @@
 "presence": 1.0,
 "age": 24,
 "min_proj": 29.2,
-"rang_poste": 2,
+"rang_poste": 3,
 "poste_espn": "SF",
 "devant": [
+"Quentin Grimes",
 "Ziaire Williams"
 ],
 "presaison_matchs": 5,
@@ -5434,11 +5437,9 @@
 "presence": 0.93,
 "age": 26,
 "min_proj": 30.8,
-"rang_poste": 2,
-"poste_espn": "SG",
-"devant": [
-"Austin Reaves"
-],
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
 "presaison_matchs": 5,
 "presaison_min": 25.0
 },
@@ -5542,9 +5543,9 @@
 "rang_poste": 7,
 "poste_espn": "SF",
 "devant": [
+"Quentin Grimes",
 "Ziaire Williams",
-"Jake LaRavia",
-"Quentin Grimes"
+"Jake LaRavia"
 ],
 "presaison_matchs": 5,
 "presaison_min": 14.2
@@ -5872,8 +5873,8 @@
 "rang_poste": 6,
 "poste_espn": "SF",
 "devant": [
-"Alex Caruso",
 "Kenrich Williams",
+"Alex Caruso",
 "Nique Clifford"
 ]
 },
@@ -8063,9 +8064,11 @@
 "presence": 0.78,
 "age": 32,
 "min_proj": 24.3,
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "SF",
-"devant": [],
+"devant": [
+"Kenrich Williams"
+],
 "presaison_matchs": 3,
 "presaison_min": 16.0
 },
@@ -8153,11 +8156,9 @@
 "presence": 0.91,
 "age": 31,
 "min_proj": 15.4,
-"rang_poste": 2,
+"rang_poste": 1,
 "poste_espn": "SF",
-"devant": [
-"Alex Caruso"
-],
+"devant": [],
 "presaison_matchs": 4,
 "presaison_min": 16.5
 },
@@ -8180,8 +8181,8 @@
 "rang_poste": 8,
 "poste_espn": "SF",
 "devant": [
-"Alex Caruso",
 "Kenrich Williams",
+"Alex Caruso",
 "Nique Clifford"
 ],
 "presaison_matchs": 3,
@@ -8291,8 +8292,8 @@
 "rang_poste": 5,
 "poste_espn": "SF",
 "devant": [
-"Alex Caruso",
 "Kenrich Williams",
+"Alex Caruso",
 "Nique Clifford"
 ],
 "presaison_matchs": 5,
@@ -10174,8 +10175,8 @@
 "rang_poste": 3,
 "poste_espn": "SF",
 "devant": [
-"Alex Caruso",
-"Kenrich Williams"
+"Kenrich Williams",
+"Alex Caruso"
 ],
 "presaison_matchs": 5,
 "presaison_min": 22.2
@@ -11876,6 +11877,6 @@
 "_source": "saison régulière 2025-26 (ESPN), mis à jour le 20/10/2026"
 },
 "roles": {
-"_source": "ESPN (hiérarchie + présaison), mis à jour le 10/11/2026"
+"_source": "ESPN (hiérarchie + présaison), mis à jour le 11/11/2026"
 }
 }
