@@ -266,7 +266,7 @@ def capitaine(q):
           else "❌ Le capitaine ne semble pas activé : vérifie dans l'appli")
 
 
-def transferts_plan(code_execution=None):
+def transferts_plan(code_execution=None, paires_explicites=None):
     """Transferts gratuits conseillés avant la prochaine deadline (rapport/dernier_plan.json), sans chip.
     Jamais de transfert payant : arrêt si les transferts gratuits restants ne suffisent pas."""
     plan = json.loads((ICI / "rapport" / "dernier_plan.json").read_text(encoding="utf-8"))
@@ -277,6 +277,10 @@ def transferts_plan(code_execution=None):
     vente = {p["element"]: p.get("selling_price", el[p["element"]]["now_cost"]) for p in mt["picks"]}
     t = mt.get("transfers") or {}
     paires_ = [(o, i) for ev, o, i in plan.get("transferts", []) if ev == plan["prochaine"] and o in actuels and i not in actuels]
+    if paires_explicites:   # « A.Mitchell>J.Shead,… » : transferts choisis par toi (noms du jeu)
+        par_nom = {e["web_name"].lower(): e["id"] for e in boot["elements"]}
+        paires_ = [(par_nom[a.strip().lower()], par_nom[b.strip().lower()]) for a, b in (x.split(">") for x in paires_explicites.split(","))]
+        plan["titulaires"] = []
     nom = lambda q: f"{el[q]['web_name']} ({el[q]['now_cost'] / 10:.1f} M$)"
     print(f"Transferts conseillés avant {plan.get('prochaine_nom')} (calcul du {plan.get('calcul', '?')}) :")
     for o, i in paires_:
@@ -318,6 +322,8 @@ def transferts_plan(code_execution=None):
     print(f"  état du site après : {mt2.get('transfers')}")
     nouveaux = [p["element"] for p in mt2["picks"]]
     print("Équipe sur le site = équipe conseillée :", sorted(nouveaux) == sorted(cible))
+    if not plan.get("titulaires"):
+        return   # transferts choisis par toi : titulaires à régler à part (mode titulaires)
     tit = [q for q in plan.get("titulaires", []) if q in nouveaux]
     # moins de 5 joueurs qui jouent : on complète avec des remplaçants (2 à 3 par poste) pour un cinq valide
     for q in nouveaux:
@@ -341,7 +347,10 @@ if __name__ == "__main__":
     elif mode == "capitaine":
         capitaine(int(sys.argv[2]))
     elif mode == "transferts":
-        transferts_plan(sys.argv[2] if len(sys.argv) > 2 and sys.argv[2] else None)
+        arg = sys.argv[2] if len(sys.argv) > 2 else ""
+        explicites, _, code_ = arg.rpartition("#") if ">" in arg else ("", "", arg)
+        explicites = explicites or (arg if ">" in arg and "#" not in arg else "")
+        transferts_plan(code_ or None if ">" not in code_ else None, explicites or None)
     elif mode == "wildcard":
         wildcard(sys.argv[3] if len(sys.argv) > 3 and sys.argv[2] == "--executer" else None)
     else:
