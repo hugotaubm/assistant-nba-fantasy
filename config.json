@@ -37,7 +37,10 @@
     "V.Wembanyama"
   ],
   "malus_back_to_back": 0.92,
-  "idees": [],
+  "idees": [
+    "A.Mitchell>?@3",
+    "N.Traore>?@3"
+  ],
   "transferts_payants": false,
   "seuil_joker": 300,
   "seuil_joker_debut": 400,
