@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-11T21:07:32.902928+00:00",
+ "lu": "2026-11-11T22:39:03.827538+00:00",
  "joueurs": {
   "asa newell": {
    "nom": "Asa Newell",
@@ -46,6 +46,15 @@
    "commentaire": "George (illness) has been ruled out for Wednesday's game against Toronto, Taylor Snow of the Celtics' official site reports.",
    "date": "2026-11-11"
   },
+  "nolan traore": {
+   "nom": "Nolan Traore",
+   "statut": "Out",
+   "blessure": "Right Leg Calf",
+   "retour_espn": "2026-11-14",
+   "retour_commentaire": null,
+   "commentaire": "Traore (calf) has been ruled out for Wednesday's game against the Pelicans, Ian Begley of SportsNet New York reports.",
+   "date": "2026-11-11"
+  },
   "mikel brown": {
    "nom": "Mikel Brown Jr.",
    "statut": "Out",
@@ -54,15 +63,6 @@
    "retour_commentaire": null,
    "commentaire": "Brown has been ruled out for Wednesday's game against the Pelicans due to an illness, Sharif Phillips-Keaton of USA Today reports.",
    "date": "2026-11-11"
-  },
-  "nolan traore": {
-   "nom": "Nolan Traore",
-   "statut": "Day-To-Day",
-   "blessure": "Right Leg Calf",
-   "retour_espn": "2026-11-11",
-   "retour_commentaire": null,
-   "commentaire": "Traore (calf) is listed as questionable for Wednesday's game against New Orleans.",
-   "date": "2026-11-10"
   },
   "brandon miller": {
    "nom": "Brandon Miller",
@@ -163,41 +163,41 @@
    "commentaire": "Tyson (ankle) is questionable to face the Knicks on Wednesday.",
    "date": "2026-11-10"
   },
-  "morez johnson": {
-   "nom": "Morez Johnson Jr.",
-   "statut": "Day-To-Day",
-   "blessure": "Leg Leg",
-   "retour_espn": "2026-11-12",
-   "retour_commentaire": null,
-   "commentaire": "Johnson (leg) has been ruled out for Monday's game against the Pacers.",
-   "date": "2026-11-10"
-  },
-  "sergio de larrea": {
-   "nom": "Sergio de Larrea",
+  "dereck lively": {
+   "nom": "Dereck Lively II",
    "statut": "Out",
-   "blessure": "Right Leg Knee",
-   "retour_espn": "2026-11-12",
+   "blessure": "Right Leg Foot",
+   "retour_espn": "2026-11-18",
    "retour_commentaire": null,
-   "commentaire": "De Larrea (knee) is out for Friday's game against Utah.",
-   "date": "2026-11-05"
+   "commentaire": "Lively (foot) is listed as out for Thursday's game in Minnesota.",
+   "date": "2026-11-11"
   },
   "tarik biberovic": {
    "nom": "Tarik Biberovic",
    "statut": "Out",
    "blessure": "Right Leg Heel",
-   "retour_espn": "2026-11-12",
+   "retour_espn": "2026-11-18",
    "retour_commentaire": null,
-   "commentaire": "Biberovic (heel) is listed as out for Monday's game against Sacramento.",
-   "date": "2026-11-01"
+   "commentaire": "Biberovic (heel) is out for Thursday's game against Minnesota.",
+   "date": "2026-11-11"
   },
-  "dereck lively": {
-   "nom": "Dereck Lively II",
+  "sergio de larrea": {
+   "nom": "Sergio de Larrea",
    "statut": "Out",
-   "blessure": "Right Leg Foot",
+   "blessure": "Right Leg Knee",
+   "retour_espn": "2026-11-18",
+   "retour_commentaire": null,
+   "commentaire": "De Larrea (knee) has been ruled out for Thursday's game at Minnesota.",
+   "date": "2026-11-11"
+  },
+  "morez johnson": {
+   "nom": "Morez Johnson Jr.",
+   "statut": "Day-To-Day",
+   "blessure": "Left Leg Lower Leg",
    "retour_espn": "2026-11-12",
    "retour_commentaire": null,
-   "commentaire": "Lively (foot) is listed as out for Monday's game against the Kings.",
-   "date": "2026-11-01"
+   "commentaire": "Johnson (shin) is listed as probable for Thursday's game against Minnesota.",
+   "date": "2026-11-11"
   },
   "julian strawther": {
    "nom": "Julian Strawther",
@@ -320,7 +320,7 @@
    "nom": "Tyrese Haliburton",
    "statut": "Out",
    "blessure": "Left Leg Hamstring",
-   "retour_espn": "2026-11-13",
+   "retour_espn": "2026-11-22",
    "retour_commentaire": null,
    "commentaire": "Haliburton (hamstring) is progressing well but does not have a timetable to return, Dustin Dopirak of The Indianapolis Star reports.",
    "date": "2026-11-07"
@@ -505,32 +505,23 @@
    "commentaire": "Missi (knee) is out for Friday's game against Minnesota.",
    "date": "2026-11-05"
   },
-  "karl anthony towns": {
-   "nom": "Karl-Anthony Towns",
-   "statut": "Day-To-Day",
-   "blessure": "Left Leg Calf",
-   "retour_espn": "2026-11-11",
-   "retour_commentaire": null,
-   "commentaire": "Towns (calf) is listed as questionable for Wednesday's game against Cleveland.",
-   "date": "2026-11-11"
-  },
-  "josh hart": {
-   "nom": "Josh Hart",
-   "statut": "Out",
-   "blessure": "Other Illness",
-   "retour_espn": "2026-11-11",
-   "retour_commentaire": null,
-   "commentaire": "Hart (illness) is probable for Wednesday's game against the Cavaliers.",
-   "date": "2026-11-11"
-  },
   "jaylin williams": {
    "nom": "Jaylin Williams",
    "statut": "Out",
    "blessure": "Torso Back",
-   "retour_espn": "2026-11-11",
+   "retour_espn": "2026-11-15",
    "retour_commentaire": null,
-   "commentaire": "Williams (back) has been ruled out for Tuesday's game against the Trail Blazers.",
-   "date": "2026-11-10"
+   "commentaire": "Williams (back) has been ruled out for Wednesday's game against Portland and remains out indefinitely.",
+   "date": "2026-11-11"
+  },
+  "ajay mitchell": {
+   "nom": "Ajay Mitchell",
+   "statut": "Out",
+   "blessure": "Left Leg Ankle",
+   "retour_espn": "2026-11-13",
+   "retour_commentaire": null,
+   "commentaire": "Mitchell has been ruled out for Wednesday's game against the Trail Blazers due to a left ankle sprain.",
+   "date": "2026-11-11"
   },
   "thomas sorber": {
    "nom": "Thomas Sorber",
@@ -635,10 +626,28 @@
    "nom": "Adem Bona",
    "statut": "Out",
    "blessure": "Torso Back",
+   "retour_espn": "2026-11-18",
+   "retour_commentaire": null,
+   "commentaire": "Bona (back) is out for Thursday's game against the Raptors, Kyle Neubeck of AllPHLY.com reports.",
+   "date": "2026-11-11"
+  },
+  "joel embiid": {
+   "nom": "Joel Embiid",
+   "statut": "Day-To-Day",
+   "blessure": "Right Leg Foot",
    "retour_espn": "2026-11-12",
    "retour_commentaire": null,
-   "commentaire": "Bona (back) is out for Tuesday's game against the Celtics.",
-   "date": "2026-11-09"
+   "commentaire": "Embiid (foot) is listed as questionable for Thursday's game against Toronto, Adam Aaronson of PhillyVoice.com reports.",
+   "date": "2026-11-11"
+  },
+  "lebron james": {
+   "nom": "LeBron James",
+   "statut": "Day-To-Day",
+   "blessure": "Torso Back",
+   "retour_espn": "2026-11-12",
+   "retour_commentaire": null,
+   "commentaire": "James (back) is questionable for Thursday's game against the Raptors, Kyle Neubeck of AllPHLY.com reports.",
+   "date": "2026-11-11"
   },
   "dominick barlow": {
    "nom": "Dominick Barlow",
@@ -666,6 +675,15 @@
    "retour_commentaire": null,
    "commentaire": "Williams underwent surgery Thursday to repair a torn labrum in his left shoulder and will miss an extended period of time, Shams Charania of ESPN reports.",
    "date": "2026-09-11"
+  },
+  "chris youngblood": {
+   "nom": "Chris Youngblood",
+   "statut": "Out",
+   "blessure": "Right Leg Foot",
+   "retour_espn": "2026-11-13",
+   "retour_commentaire": null,
+   "commentaire": "Youngblood has been ruled out for Wednesday's game against the Thunder.",
+   "date": "2026-11-11"
   },
   "vit krejci": {
    "nom": "Vit Krejci",
@@ -756,24 +774,6 @@
    "retour_commentaire": null,
    "commentaire": "Jackson-Davis (illness) has been ruled out for Wednesday's game against the Celtics, Blake Murphy of Sportsnet.ca reports.",
    "date": "2026-11-11"
-  },
-  "collin murray boyles": {
-   "nom": "Collin Murray-Boyles",
-   "statut": "Day-To-Day",
-   "blessure": "Other Illness",
-   "retour_espn": "2026-11-11",
-   "retour_commentaire": null,
-   "commentaire": "Murray-Boyles (illness) is questionable for Wednesday's game against the Celtics.",
-   "date": "2026-11-10"
-  },
-  "immanuel quickley": {
-   "nom": "Immanuel Quickley",
-   "statut": "Day-To-Day",
-   "blessure": "Right Leg Hamstring",
-   "retour_espn": "2026-11-11",
-   "retour_commentaire": null,
-   "commentaire": "Quickley (hamstring) is questionable for Wednesday's game against Boston.",
-   "date": "2026-11-10"
   },
   "scottie barnes": {
    "nom": "Scottie Barnes",
