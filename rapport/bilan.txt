@@ -330,13 +330,15 @@ Par prix :
   < 7 M$                 169 matchs | 0 min : 63 | biais  -4.4 | réel/projeté 0.81 | minutes 17.2
   ≥ 15 M$                314 matchs | 0 min : 41 | biais  -3.4 | réel/projeté 0.93 | minutes 32.6
 Par rang dans la hiérarchie ESPN (1 = titulaire) :
-  rang 1                 1502 matchs | 0 min : 163 | biais  -1.8 | réel/projeté 0.95 | minutes 29.6
-  rang 2                 759 matchs | 0 min : 104 | biais  -5.0 | réel/projeté 0.81 | minutes 20.4
-  rang 3                  99 matchs | 0 min : 34 | biais -10.2 | réel/projeté 0.58 | minutes 16.7
+  rang 1                 1460 matchs | 0 min : 148 | biais  -1.4 | réel/projeté 0.96 | minutes 29.7
+  rang 2                 781 matchs | 0 min : 103 | biais  -5.5 | réel/projeté 0.79 | minutes 20.4
+  rang 3                  87 matchs | 0 min : 33 | biais -10.5 | réel/projeté 0.57 | minutes 16.1
+  rang 4                  22 matchs | 0 min : 17 | biais -16.1 | réel/projeté 0.28 | minutes  7.8
   rang 5                  53 matchs | 0 min : 39 | biais  -9.3 | réel/projeté 0.67 | minutes 19.3
-  rang 6                  96 matchs | 0 min : 87 | biais  -6.7 | réel/projeté 0.82 | minutes 23.9
+  rang 6                 117 matchs | 0 min : 98 | biais  -7.4 | réel/projeté 0.81 | minutes 26.1
   rang 7                  42 matchs | 0 min : 37 | biais  -2.6 | réel/projeté 0.94 | minutes 27.6
-  rang 8                  32 matchs | 0 min : 25 | biais  -2.0 | réel/projeté 0.96 | minutes 32.3
+  rang 8                  21 matchs | 0 min : 17 | biais  +4.9 | réel/projeté 1.10 | minutes 33.2
+  rang 9                  11 matchs | 0 min :  8 | biais -11.2 | réel/projeté 0.73 | minutes 31.0
   rang inconnu            55 matchs | 0 min : 34 | biais  -8.5 | réel/projeté 0.71 | minutes 21.9
 Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : 534 sur 2649
   - L.Doncic (LAL) (event 9) : projeté 65.5, statut actuel a, news : -
@@ -442,14 +444,13 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
   statut i | chances ce Gameday 0 | prochain 25 : 2 joueurs
       D.Lively II (DAL) : Foot expected back 2026-11-18
       T.Biberovic (DAL) : Heel expected back 2026-11-18
-  statut d | chances ce Gameday 75 | prochain 75 : 2 joueurs
-      W.Richard (GSW) : Thumb expected back 2026-11-11
-      T.McConnell (IND) : Hamstring expected back 2026-11-11
   statut d | chances ce Gameday 100 | prochain 75 : 2 joueurs
       L.James (PHI) : Back expected back 2026-11-12
       J.Embiid (PHI) : Foot expected back 2026-11-12
   statut d | chances ce Gameday 25 | prochain 75 : 1 joueurs
       M.Johnson (DAL) : Lower Leg expected back 2026-11-12
+  statut d | chances ce Gameday 75 | prochain 75 : 1 joueurs
+      W.Richard (GSW) : Thumb expected back 2026-11-11
   statut u | chances ce Gameday None | prochain 0 : 1 joueurs
       Y.Kawamura (LAC) : Foot expected back 2026-11-13
   statut i | chances ce Gameday None | prochain 25 : 1 joueurs
@@ -465,5 +466,5 @@ LIGUE FIRST TEAM
   Écart avec le rang juste devant (38e) : 15 pts
   Avance sur le rang juste derrière (40e) : 0 pts
   Joueurs les plus présents chez les 38 équipes devant toi (Gameday 21) : D.Acuff Jr. (SAC) 37, Y.Lendeborg (GSW) 36, V.Wembanyama (SAS) 19, D.Mitchell (MIA) 16, C.Flagg (DAL) 16, L.Doncic (LAL) 15, T.Jerome (MEM) 11, D.Brooks (PHX) 11, A.Mara (OKC) 10, T.da Silva (ORL) 10, T.Brazile (DEN) 9, A.Mitchell (OKC) 9, J.Hayes (UTA) 8, G.Antetokounmpo (MIA) 8, F.Wagner (ORL) 8
-  All-Star : déjà joué par 17 des 33 équipes devant toi (52 %) ; par Gameday : event 2 : 2, event 3 : 6, event 9 : 1, event 12 : 1, event 13 : 4, event 15 : 1, event 16 : 1, event 18 : 1
-  Wildcard : déjà joué par 23 des 33 équipes devant toi (70 %) ; par Gameday : event 2 : 2, event 4 : 2, event 6 : 1, event 7 : 10, event 8 : 2, event 9 : 2, event 11 : 1, event 12 : 1, event 14 : 1, event 19 : 1
+  All-Star : déjà joué par 18 des 38 équipes devant toi (47 %) ; par Gameday : event 2 : 2, event 3 : 6, event 9 : 1, event 12 : 1, event 13 : 4, event 15 : 1, event 16 : 1, event 18 : 1, event 21 : 1
+  Wildcard : déjà joué par 27 des 38 équipes devant toi (71 %) ; par Gameday : event 2 : 2, event 4 : 2, event 6 : 2, event 7 : 11, event 8 : 2, event 9 : 2, event 11 : 1, event 12 : 1, event 14 : 1, event 19 : 1, event 20 : 1, event 21 : 1
