@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-10T23:20:18.566375+00:00",
+ "lu": "2026-11-11T11:24:32.229497+00:00",
  "joueurs": {
   "asa newell": {
    "nom": "Asa Newell",
@@ -325,6 +325,15 @@
    "commentaire": "Head coach Rick Carlise confirmed Sheppard will miss \"months\" after undergoing surgery to repair a torn meniscus in his left knee, Tony East of Forbes.com reports.",
    "date": "2026-10-28"
   },
+  "cam christie": {
+   "nom": "Cam Christie",
+   "statut": "Out",
+   "blessure": "Leg Ankle",
+   "retour_espn": "2026-11-13",
+   "retour_commentaire": null,
+   "commentaire": "Christie (ankle) is listed as out for Tuesday's game against Phoenix.",
+   "date": "2026-11-11"
+  },
   "yanic konan niederhauser": {
    "nom": "Yanic Konan Niederhauser",
    "statut": "Out",
@@ -342,15 +351,6 @@
    "retour_commentaire": null,
    "commentaire": "Ingram (Achilles) has been ruled out for Tuesday's game at Phoenix, Ohm Youngmisuk of ESPN.com reports.",
    "date": "2026-11-10"
-  },
-  "cam christie": {
-   "nom": "Cam Christie",
-   "statut": "Day-To-Day",
-   "blessure": "Leg Ankle",
-   "retour_espn": "2026-11-10",
-   "retour_commentaire": null,
-   "commentaire": "Christie is questionable for Tuesday's game against the Suns due to a right ankle sprain, Ohm Youngmisuk of ESPN.com reports.",
-   "date": "2026-11-09"
   },
   "bradley beal": {
    "nom": "Bradley Beal",
@@ -379,22 +379,13 @@
    "commentaire": "Grimes (finger) is listed as questionable for Wednesday's game in Milwaukee.",
    "date": "2026-11-10"
   },
-  "quinten post": {
-   "nom": "Quinten Post",
-   "statut": "Out",
-   "blessure": "Head Head",
-   "retour_espn": "2026-11-13",
-   "retour_commentaire": null,
-   "commentaire": "Post (head) didn't return to Monday's 118-102 win over the Raptors. He ended the night with one rebound in two minutes.",
-   "date": "2026-11-10"
-  },
   "isaiah stewart": {
    "nom": "Isaiah Stewart",
    "statut": "Day-To-Day",
    "blessure": "Right Leg Knee",
    "retour_espn": "2026-11-11",
    "retour_commentaire": null,
-   "commentaire": "Stewart (knee) has been ruled out for Monday's game against Toronto.",
+   "commentaire": "Stewart (knee) is listed as questionable for Wednesday's game versus the Nuggets.",
    "date": "2026-11-10"
   },
   "scotty pippen": {
@@ -403,8 +394,17 @@
    "blessure": "Torso Back",
    "retour_espn": "2026-11-21",
    "retour_commentaire": null,
-   "commentaire": "Pippen (back) won't play in Monday's game versus the Raptors.",
-   "date": "2026-11-08"
+   "commentaire": "Pippen (back) remains out for Wednesday's game against Denver, Michael Wallace of the Grizzlies' official site reports.",
+   "date": "2026-11-10"
+  },
+  "quinten post": {
+   "nom": "Quinten Post",
+   "statut": "Out",
+   "blessure": "Head Head",
+   "retour_espn": "2026-11-13",
+   "retour_commentaire": null,
+   "commentaire": "Post (concussion) has been ruled out for Wednesday's game against the Nuggets.",
+   "date": "2026-11-10"
   },
   "richie saunders": {
    "nom": "Richie Saunders",
@@ -415,32 +415,14 @@
    "commentaire": "Saunders signed a two-way contract with the Grizzlies on Saturday, Shams Charania of ESPN reports.",
    "date": "2026-11-07"
   },
-  "giannis antetokounmpo": {
-   "nom": "Giannis Antetokounmpo",
-   "statut": "Day-To-Day",
-   "blessure": "Right Arm Wrist",
-   "retour_espn": "2026-11-10",
-   "retour_commentaire": null,
-   "commentaire": "Antetokounmpo is probable for Tuesday's game against the Jazz due to a right wrist sprain.",
-   "date": "2026-11-09"
-  },
-  "kel el ware": {
-   "nom": "Kel'el Ware",
-   "statut": "Day-To-Day",
-   "blessure": "Left Leg Ankle",
-   "retour_espn": "2026-11-10",
-   "retour_commentaire": null,
-   "commentaire": "Ware is questionable for Tuesday's game against the Knicks due to a left ankle sprain.",
-   "date": "2026-11-10"
-  },
   "tyler herro": {
    "nom": "Tyler Herro",
-   "statut": "Day-To-Day",
+   "statut": "Out",
    "blessure": "Right Leg Knee",
-   "retour_espn": "2026-11-10",
+   "retour_espn": "2026-11-11",
    "retour_commentaire": null,
-   "commentaire": "Herro (contusion) is listed as questionable for Tuesday's game against the Knicks.",
-   "date": "2026-11-09"
+   "commentaire": "Herro (knee) is listed as out for Tuesday's game against New York.",
+   "date": "2026-11-10"
   },
   "anthony edwards": {
    "nom": "Anthony Edwards",
@@ -543,12 +525,12 @@
   },
   "tristan da silva": {
    "nom": "Tristan da Silva",
-   "statut": "Day-To-Day",
+   "statut": "Out",
    "blessure": "Left Leg Calf",
-   "retour_espn": "2026-11-10",
+   "retour_espn": "2026-11-11",
    "retour_commentaire": null,
-   "commentaire": "Da Silva is questionable for Tuesday's game against the Kings due to a left calf strain.",
-   "date": "2026-11-10"
+   "commentaire": "Da Silva (calf) has been ruled out for Tuesday's game against the Kings, Jason Beede of the Orlando Sentinel reports.",
+   "date": "2026-11-11"
   },
   "jalen suggs": {
    "nom": "Jalen Suggs",
@@ -657,6 +639,15 @@
    "retour_commentaire": "2027-02-20",
    "commentaire": "Sharpe suffered a torn meniscus in his knee and is expected to miss six months, per Shams Charania of ESPN.",
    "date": "2026-08-24"
+  },
+  "precious achiuwa": {
+   "nom": "Precious Achiuwa",
+   "statut": "Out",
+   "blessure": "Left Leg Lower Leg",
+   "retour_espn": "2026-11-13",
+   "retour_commentaire": null,
+   "commentaire": "Achiuwa left Tuesday's 107-100 loss to the Magic with a left lower leg contusion and did not return, Matt George of ABC 10 Sacramento reports.",
+   "date": "2026-11-11"
   },
   "maxime raynaud": {
    "nom": "Maxime Raynaud",
