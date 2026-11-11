@@ -395,7 +395,7 @@ Vérification du barème (points du jeu vs formule des projections) :
 ======================================================================
 STATUTS DU JEU (joueurs non disponibles à 100 %)
 ======================================================================
-  statut u | chances ce Gameday None | prochain None : 50 joueurs
+  statut u | chances ce Gameday None | prochain None : 48 joueurs
       T.DeVries (BOS) : -
       M.Uzan (BOS) : -
       N.Pringle (BKN) : -
@@ -405,11 +405,11 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       K.Knueppel (CHA) : Hamstring expected back 2026-12-12
       D.Schröder (CHA) : Hamstring expected back 2026-11-25
       N.Tomlin (CLE) : Back expected back 2026-11-16
-  statut i | chances ce Gameday 25 | prochain 25 : 35 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 34 joueurs
       A.Newell (ATL) : Toe expected back 2026-11-13
       K.Gilbert (ATL) : Knee expected back 2026-11-13
-      E.Dëmin (BKN) : Leg expected back 2026-11-11
       M.Diabate (CHA) : Quadriceps expected back 2026-11-12
+      G.Williams (CHA) : Hamstring expected back 2026-11-12
   statut u | chances ce Gameday 100 | prochain 100 : 14 joueurs
       I.McKneely (ATL) : -
       T.Enaruna (CLE) : -
@@ -420,20 +420,35 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       R.Dillingham (CHI) : Wrist expected back 2027-01-01
       J.Strawther (DEN) : Knee expected back 2026-11-29
       E.Freeman (MIN) : Undisclosed expected back 2027-01-01
-  statut d | chances ce Gameday 75 | prochain 75 : 6 joueurs
-      N.Traore (BKN) : Calf expected back 2026-11-11
-      G.Nelson (BKN) : Knee expected back 2026-11-10
-      T.Awaka (CHI) : Back expected back 2026-11-11
-      W.Richard (GSW) : Thumb expected back 2026-11-11
   statut i | chances ce Gameday 75 | prochain 75 : 6 joueurs
       T.Herro (MIL) : Knee expected back 2026-11-11
       J.Hart (NYK) : Illness expected back 2026-11-11
       J.Williams (OKC) : Back expected back 2026-11-11
       T.da Silva (ORL) : Calf expected back 2026-11-11
-  statut i | chances ce Gameday 75 | prochain 25 : 1 joueurs
-      C.Christie (LAC) : Ankle expected back 2026-11-13
-  statut i | chances ce Gameday 100 | prochain 25 : 1 joueurs
+  statut i | chances ce Gameday 100 | prochain 25 : 4 joueurs
+      P.George (BOS) : Illness expected back 2026-11-15
+      M.Brown Jr. (BKN) : Illness expected back 2026-11-14
+      M.Turner (MIL) : Rest expected back 2026-11-13
       P.Achiuwa (SAC) : Lower Leg expected back 2026-11-13
+  statut d | chances ce Gameday 75 | prochain 75 : 3 joueurs
+      N.Traore (BKN) : Calf expected back 2026-11-11
+      W.Richard (GSW) : Thumb expected back 2026-11-11
+      T.McConnell (IND) : Hamstring expected back 2026-11-11
+  statut d | chances ce Gameday None | prochain 75 : 3 joueurs
+      C.Wilson (CHI) : Hip expected back 2026-11-11
+      U.Onyenso (DET) : Foot expected back 2026-11-13
+      J.Cain (ORL) : Shoulder expected back 2026-11-11
+  statut i | chances ce Gameday 75 | prochain 25 : 2 joueurs
+      T.Awaka (CHI) : Back expected back 2026-11-13
+      C.Christie (LAC) : Ankle expected back 2026-11-13
+  statut u | chances ce Gameday None | prochain 0 : 1 joueurs
+      Y.Kawamura (LAC) : Foot expected back 2026-11-13
+  statut i | chances ce Gameday None | prochain 25 : 1 joueurs
+      B.Mathurin (NOP) : Thumb expected back 2026-11-13
+  statut d | chances ce Gameday 100 | prochain 75 : 1 joueurs
+      K.Towns (NYK) : Calf expected back 2026-11-11
+  statut i | chances ce Gameday 75 | prochain 0 : 1 joueurs
+      L.Markkanen (UTA) : Hand expected back 2027-01-04
 
 ======================================================================
 LIGUE FIRST TEAM
