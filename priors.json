@@ -431,9 +431,9 @@
 "rang_poste": 4,
 "poste_espn": "PG",
 "devant": [
-"Mike Conley",
+"Derrick White",
 "Payton Pritchard",
-"Derrick White"
+"Mike Conley"
 ],
 "presaison_matchs": 1,
 "presaison_min": 25.0
@@ -477,7 +477,7 @@
 "age": 32,
 "min_proj": 34.3,
 "rang_poste": 1,
-"poste_espn": "SG",
+"poste_espn": "PG",
 "devant": [],
 "presaison_matchs": 2,
 "presaison_min": 23.0
@@ -501,7 +501,7 @@
 "rang_poste": 2,
 "poste_espn": "PG",
 "devant": [
-"Mike Conley"
+"Derrick White"
 ],
 "presaison_matchs": 2,
 "presaison_min": 26.5
@@ -523,9 +523,9 @@
 "age": 28,
 "min_proj": 25.3,
 "rang_poste": 2,
-"poste_espn": "SF",
+"poste_espn": "PF",
 "devant": [
-"Jayson Tatum"
+"Paul George"
 ],
 "presaison_matchs": 2,
 "presaison_min": 19.5
@@ -546,11 +546,9 @@
 "presence": 0.9,
 "age": 22,
 "min_proj": 21.5,
-"rang_poste": 2,
-"poste_espn": "PF",
-"devant": [
-"Paul George"
-],
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
 "presaison_matchs": 4,
 "presaison_min": 18.0
 },
@@ -592,11 +590,10 @@
 "presence": 0.97,
 "age": 26,
 "min_proj": 25.1,
-"rang_poste": 3,
-"poste_espn": "SG",
+"rang_poste": 2,
+"poste_espn": "SF",
 "devant": [
-"Derrick White",
-"Hugo Gonzalez"
+"Jayson Tatum"
 ],
 "presaison_matchs": 4,
 "presaison_min": 19.5
@@ -620,7 +617,7 @@
 "rang_poste": 2,
 "poste_espn": "SG",
 "devant": [
-"Derrick White"
+"Jordan Walsh"
 ],
 "presaison_matchs": 4,
 "presaison_min": 20.0
@@ -682,10 +679,10 @@
 "b2b_presence": 0.25,
 "presence": 0.48,
 "age": 26,
-"rang_poste": 5,
+"rang_poste": 6,
 "poste_espn": "SG",
 "devant": [
-"Derrick White",
+"Jordan Walsh",
 "Hugo Gonzalez",
 "Baylor Scheierman"
 ],
@@ -708,9 +705,12 @@
 "presence": 0.79,
 "age": 39,
 "min_proj": 17.6,
-"rang_poste": 1,
+"rang_poste": 3,
 "poste_espn": "PG",
-"devant": [],
+"devant": [
+"Derrick White",
+"Payton Pritchard"
+],
 "presaison_matchs": 1,
 "presaison_min": 18.0
 },
@@ -799,8 +799,8 @@
 "poste_espn": "SF",
 "devant": [
 "Jayson Tatum",
-"Sam Hauser",
-"Paul George"
+"Baylor Scheierman",
+"Sam Hauser"
 ],
 "presaison_matchs": 4,
 "presaison_min": 16.2
@@ -924,7 +924,7 @@
 "age": 20,
 "min_proj": 32.3,
 "rang_poste": 1,
-"poste_espn": "PG",
+"poste_espn": "SG",
 "devant": [],
 "presaison_matchs": 4,
 "presaison_min": 21.2
@@ -945,9 +945,9 @@
 "rang_poste": 6,
 "poste_espn": "SG",
 "devant": [
-"Nolan Traore",
+"Egor Demin",
 "Keon Ellis",
-"Egor Demin"
+"Mikel Brown Jr."
 ],
 "presaison_matchs": 4,
 "presaison_min": 10.8
@@ -968,9 +968,9 @@
 "rang_poste": 6,
 "poste_espn": "PG",
 "devant": [
-"Egor Demin",
+"Nolan Traore",
 "Mikel Brown Jr.",
-"Nolan Traore"
+"Egor Demin"
 ],
 "presaison_matchs": 3,
 "presaison_min": 11.7
@@ -992,7 +992,7 @@
 "age": 20,
 "min_proj": 25.0,
 "rang_poste": 1,
-"poste_espn": "SG",
+"poste_espn": "PG",
 "devant": [],
 "presaison_matchs": 4,
 "presaison_min": 17.0
@@ -1145,7 +1145,7 @@
 "rang_poste": 2,
 "poste_espn": "PG",
 "devant": [
-"Egor Demin"
+"Nolan Traore"
 ],
 "presaison_matchs": 1,
 "presaison_min": 18.0
@@ -1169,7 +1169,7 @@
 "rang_poste": 2,
 "poste_espn": "SG",
 "devant": [
-"Nolan Traore"
+"Egor Demin"
 ],
 "presaison_matchs": 4,
 "presaison_min": 19.5
@@ -3119,7 +3119,7 @@
 "rang_poste": 2,
 "poste_espn": "SG",
 "devant": [
-"Duncan Robinson"
+"Daniss Jenkins"
 ],
 "presaison_matchs": 4,
 "presaison_min": 15.0
@@ -3140,7 +3140,7 @@
 "rang_poste": 2,
 "poste_espn": "PF",
 "devant": [
-"John Collins"
+"Ausar Thompson"
 ],
 "presaison_matchs": 4,
 "presaison_min": 10.5
@@ -3164,7 +3164,7 @@
 "rang_poste": 2,
 "poste_espn": "C",
 "devant": [
-"Jalen Duren"
+"John Collins"
 ],
 "presaison_matchs": 4,
 "presaison_min": 18.5
@@ -3207,9 +3207,13 @@
 "presence": 0.91,
 "age": 22,
 "min_proj": 31.0,
-"rang_poste": 1,
+"rang_poste": 6,
 "poste_espn": "C",
-"devant": [],
+"devant": [
+"John Collins",
+"Paul Reed",
+"Tolu Smith"
+],
 "presaison_matchs": 2,
 "presaison_min": 17.5
 },
@@ -3230,7 +3234,7 @@
 "age": 23,
 "min_proj": 26.8,
 "rang_poste": 1,
-"poste_espn": "SF",
+"poste_espn": "PF",
 "devant": [],
 "presaison_matchs": 4,
 "presaison_min": 18.2
@@ -3251,11 +3255,12 @@
 "presence": 0.97,
 "age": 21,
 "min_proj": 18.5,
-"rang_poste": 3,
+"rang_poste": 4,
 "poste_espn": "PF",
 "devant": [
-"John Collins",
-"Javonte Green"
+"Ausar Thompson",
+"Javonte Green",
+"John Collins"
 ],
 "presaison_matchs": 4,
 "presaison_min": 17.2
@@ -3273,11 +3278,9 @@
 "b2b_presence": 0.92,
 "presence": 0.9,
 "age": 25,
-"rang_poste": 2,
-"poste_espn": "PG",
-"devant": [
-"Cade Cunningham"
-],
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
 "presaison_matchs": 4,
 "presaison_min": 17.2
 },
@@ -3293,12 +3296,11 @@
 "b2b_presence": 0.5,
 "presence": 0.5,
 "age": 26,
-"rang_poste": 4,
+"rang_poste": 3,
 "poste_espn": "C",
 "devant": [
-"Jalen Duren",
-"Paul Reed",
-"John Collins"
+"John Collins",
+"Paul Reed"
 ],
 "presaison_matchs": 4,
 "presaison_min": 12.8
@@ -3319,9 +3321,9 @@
 "rang_poste": 7,
 "poste_espn": "SG",
 "devant": [
-"Duncan Robinson",
+"Daniss Jenkins",
 "Kevin Huerter",
-"Isaiah Joe"
+"Duncan Robinson"
 ],
 "presaison_matchs": 3,
 "presaison_min": 14.3
@@ -3343,7 +3345,7 @@
 "age": 32,
 "min_proj": 26.2,
 "rang_poste": 1,
-"poste_espn": "SG",
+"poste_espn": "SF",
 "devant": [],
 "presaison_matchs": 4,
 "presaison_min": 19.0
@@ -3365,7 +3367,7 @@
 "age": 29,
 "min_proj": 30.6,
 "rang_poste": 1,
-"poste_espn": "PF",
+"poste_espn": "C",
 "devant": [],
 "presaison_matchs": 4,
 "presaison_min": 19.0
@@ -3386,12 +3388,12 @@
 "presence": 0.92,
 "age": 32,
 "min_proj": 16.4,
-"rang_poste": 4,
+"rang_poste": 5,
 "poste_espn": "PF",
 "devant": [
-"John Collins",
+"Ausar Thompson",
 "Javonte Green",
-"Ronald Holland II"
+"John Collins"
 ],
 "presaison_matchs": 3,
 "presaison_min": 9.3
@@ -3432,7 +3434,7 @@
 "rang_poste": 2,
 "poste_espn": "SF",
 "devant": [
-"Ausar Thompson"
+"Duncan Robinson"
 ],
 "presaison_matchs": 4,
 "presaison_min": 16.5
@@ -3470,11 +3472,11 @@
 "age": 26,
 "b2b_n": 0,
 "rang_poste": 5,
-"poste_espn": "PF",
+"poste_espn": "C",
 "devant": [
 "John Collins",
-"Javonte Green",
-"Ronald Holland II"
+"Paul Reed",
+"Tolu Smith"
 ],
 "presaison_matchs": 4,
 "presaison_min": 9.0
@@ -3506,12 +3508,12 @@
 "malus_b2b": 1.022,
 "age": 22,
 "b2b_n": 0,
-"rang_poste": 5,
+"rang_poste": 4,
 "poste_espn": "C",
 "devant": [
-"Jalen Duren",
+"John Collins",
 "Paul Reed",
-"John Collins"
+"Tolu Smith"
 ],
 "presaison_matchs": 1,
 "presaison_min": 7.0
@@ -5042,7 +5044,14 @@
 "b2b_n": 0,
 "min_proj": 8.3,
 "presaison_matchs": 1,
-"presaison_min": 9.0
+"presaison_min": 9.0,
+"rang_poste": 4,
+"poste_espn": "C",
+"devant": [
+"Rudy Gobert",
+"Joan Beringer",
+"Trey Lyles"
+]
 },
 "249": {
 "nom": "N.Martinelli",
@@ -5177,7 +5186,7 @@
 "rang_poste": 2,
 "poste_espn": "SF",
 "devant": [
-"Quentin Grimes"
+"Matisse Thybulle"
 ],
 "presaison_matchs": 2,
 "presaison_min": 16.0
@@ -5267,7 +5276,7 @@
 "rang_poste": 3,
 "poste_espn": "PF",
 "devant": [
-"Matisse Thybulle",
+"Jake LaRavia",
 "Sandro Mamukelashvili"
 ],
 "presaison_matchs": 4,
@@ -5340,7 +5349,7 @@
 "rang_poste": 8,
 "poste_espn": "SF",
 "devant": [
-"Quentin Grimes",
+"Matisse Thybulle",
 "Ziaire Williams",
 "Jake LaRavia"
 ],
@@ -5363,7 +5372,7 @@
 "rang_poste": 6,
 "poste_espn": "SF",
 "devant": [
-"Quentin Grimes",
+"Matisse Thybulle",
 "Ziaire Williams",
 "Jake LaRavia"
 ],
@@ -5386,12 +5395,9 @@
 "presence": 1.0,
 "age": 24,
 "min_proj": 29.2,
-"rang_poste": 3,
-"poste_espn": "SF",
-"devant": [
-"Quentin Grimes",
-"Ziaire Williams"
-],
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
 "presaison_matchs": 5,
 "presaison_min": 23.2
 },
@@ -5437,9 +5443,11 @@
 "presence": 0.93,
 "age": 26,
 "min_proj": 30.8,
-"rang_poste": 1,
-"poste_espn": "SF",
-"devant": [],
+"rang_poste": 2,
+"poste_espn": "SG",
+"devant": [
+"Austin Reaves"
+],
 "presaison_matchs": 5,
 "presaison_min": 25.0
 },
@@ -5460,7 +5468,7 @@
 "age": 29,
 "min_proj": 19.1,
 "rang_poste": 1,
-"poste_espn": "PF",
+"poste_espn": "SF",
 "devant": [],
 "presaison_matchs": 4,
 "presaison_min": 21.2
@@ -5481,7 +5489,7 @@
 "rang_poste": 2,
 "poste_espn": "PF",
 "devant": [
-"Matisse Thybulle"
+"Jake LaRavia"
 ],
 "presaison_matchs": 5,
 "presaison_min": 20.0
@@ -5543,7 +5551,7 @@
 "rang_poste": 7,
 "poste_espn": "SF",
 "devant": [
-"Quentin Grimes",
+"Matisse Thybulle",
 "Ziaire Williams",
 "Jake LaRavia"
 ],
@@ -5871,11 +5879,11 @@
 "presence": 0.83,
 "age": 25,
 "rang_poste": 6,
-"poste_espn": "SF",
+"poste_espn": "PF",
 "devant": [
 "Kenrich Williams",
-"Alex Caruso",
-"Nique Clifford"
+"Jaylin Williams",
+"Alex Caruso"
 ]
 },
 "289": {
@@ -6119,8 +6127,8 @@
 "rang_poste": 6,
 "poste_espn": "SF",
 "devant": [
-"Andrew Wiggins",
 "Pelle Larsson",
+"Andrew Wiggins",
 "Klay Thompson"
 ],
 "presaison_matchs": 5,
@@ -6142,9 +6150,11 @@
 "presence": 0.91,
 "age": 31,
 "min_proj": 30.4,
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "SF",
-"devant": [],
+"devant": [
+"Pelle Larsson"
+],
 "presaison_matchs": 4,
 "presaison_min": 16.2
 },
@@ -6230,8 +6240,8 @@
 "rang_poste": 7,
 "poste_espn": "SF",
 "devant": [
-"Andrew Wiggins",
 "Pelle Larsson",
+"Andrew Wiggins",
 "Klay Thompson"
 ],
 "presaison_matchs": 2,
@@ -6250,11 +6260,9 @@
 "b2b_presence": 0.93,
 "presence": 0.93,
 "age": 25,
-"rang_poste": 2,
+"rang_poste": 1,
 "poste_espn": "SF",
-"devant": [
-"Andrew Wiggins"
-],
+"devant": [],
 "presaison_matchs": 2,
 "presaison_min": 18.0
 },
@@ -7121,7 +7129,7 @@
 "malus_b2b": 1.022,
 "age": 20,
 "b2b_n": 0,
-"rang_poste": 4,
+"rang_poste": 5,
 "poste_espn": "C",
 "devant": [
 "Rudy Gobert",
@@ -7244,7 +7252,7 @@
 "rang_poste": 2,
 "poste_espn": "SG",
 "devant": [
-"Jeremiah Fears"
+"Dejounte Murray"
 ],
 "presaison_matchs": 4,
 "presaison_min": 16.8
@@ -7319,7 +7327,7 @@
 "age": 30,
 "min_proj": 32.4,
 "rang_poste": 1,
-"poste_espn": "PG",
+"poste_espn": "SG",
 "devant": [],
 "presaison_matchs": 1,
 "presaison_min": 19.0
@@ -7453,7 +7461,7 @@
 "age": 20,
 "min_proj": 26.4,
 "rang_poste": 1,
-"poste_espn": "SG",
+"poste_espn": "PG",
 "devant": [],
 "presaison_matchs": 4,
 "presaison_min": 19.5
@@ -7545,9 +7553,10 @@
 "presence": 0.82,
 "age": 27,
 "min_proj": 22.1,
-"rang_poste": 2,
+"rang_poste": 3,
 "poste_espn": "PG",
 "devant": [
+"Jeremiah Fears",
 "Dejounte Murray"
 ],
 "presaison_matchs": 4,
@@ -7599,9 +7608,9 @@
 "rang_poste": 4,
 "poste_espn": "PG",
 "devant": [
+"Jeremiah Fears",
 "Dejounte Murray",
-"Jordan Poole",
-"Jeremiah Fears"
+"Jordan Poole"
 ],
 "presaison_matchs": 2,
 "presaison_min": 7.5
@@ -8067,7 +8076,7 @@
 "rang_poste": 2,
 "poste_espn": "SF",
 "devant": [
-"Kenrich Williams"
+"Ajay Mitchell"
 ],
 "presaison_matchs": 3,
 "presaison_min": 16.0
@@ -8135,8 +8144,8 @@
 "rang_poste": 7,
 "poste_espn": "PF",
 "devant": [
-"Jaylin Williams",
 "Kenrich Williams",
+"Jaylin Williams",
 "Alex Caruso"
 ]
 },
@@ -8157,7 +8166,7 @@
 "age": 31,
 "min_proj": 15.4,
 "rang_poste": 1,
-"poste_espn": "SF",
+"poste_espn": "PF",
 "devant": [],
 "presaison_matchs": 4,
 "presaison_min": 16.5
@@ -8178,12 +8187,12 @@
 "presence": 0.88,
 "age": 25,
 "min_proj": 32.8,
-"rang_poste": 8,
+"rang_poste": 9,
 "poste_espn": "SF",
 "devant": [
-"Kenrich Williams",
+"Ajay Mitchell",
 "Alex Caruso",
-"Nique Clifford"
+"Kenrich Williams"
 ],
 "presaison_matchs": 3,
 "presaison_min": 21.7
@@ -8204,9 +8213,11 @@
 "presence": 0.95,
 "age": 24,
 "min_proj": 19.0,
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "PF",
-"devant": []
+"devant": [
+"Kenrich Williams"
+]
 },
 "400": {
 "nom": "C.Wallace",
@@ -8251,7 +8262,7 @@
 "age": 24,
 "min_proj": 23.5,
 "rang_poste": 1,
-"poste_espn": "SG",
+"poste_espn": "SF",
 "devant": [],
 "presaison_matchs": 3,
 "presaison_min": 19.7
@@ -8290,11 +8301,11 @@
 "presence": 0.59,
 "age": 24,
 "rang_poste": 5,
-"poste_espn": "SF",
+"poste_espn": "PF",
 "devant": [
 "Kenrich Williams",
-"Alex Caruso",
-"Nique Clifford"
+"Jaylin Williams",
+"Alex Caruso"
 ],
 "presaison_matchs": 5,
 "presaison_min": 23.6
@@ -8332,11 +8343,9 @@
 "presence": 0.94,
 "age": 22,
 "min_proj": 24.7,
-"rang_poste": 2,
+"rang_poste": 1,
 "poste_espn": "SG",
-"devant": [
-"Ajay Mitchell"
-],
+"devant": [],
 "presaison_matchs": 4,
 "presaison_min": 18.2
 },
@@ -8466,7 +8475,7 @@
 "rang_poste": 2,
 "poste_espn": "PG",
 "devant": [
-"Jase Richardson"
+"Anthony Black"
 ],
 "presaison_matchs": 4,
 "presaison_min": 14.5
@@ -8488,7 +8497,7 @@
 "age": 28,
 "min_proj": 33.7,
 "rang_poste": 1,
-"poste_espn": "SF",
+"poste_espn": "SG",
 "devant": [],
 "presaison_matchs": 3,
 "presaison_min": 21.0
@@ -8509,11 +8518,9 @@
 "presence": 0.72,
 "age": 27,
 "min_proj": 19.3,
-"rang_poste": 2,
+"rang_poste": 1,
 "poste_espn": "SF",
-"devant": [
-"Desmond Bane"
-],
+"devant": [],
 "presaison_matchs": 4,
 "presaison_min": 17.5
 },
@@ -8630,9 +8637,9 @@
 "rang_poste": 5,
 "poste_espn": "PG",
 "devant": [
-"Jase Richardson",
+"Anthony Black",
 "Jevon Carter",
-"Anthony Black"
+"Jase Richardson"
 ],
 "presaison_matchs": 2,
 "presaison_min": 17.0
@@ -8679,7 +8686,7 @@
 "age": 22,
 "min_proj": 28.9,
 "rang_poste": 1,
-"poste_espn": "SG",
+"poste_espn": "PG",
 "devant": []
 },
 "423": {
@@ -8729,8 +8736,8 @@
 "rang_poste": 5,
 "poste_espn": "SF",
 "devant": [
-"Desmond Bane",
 "Jamal Cain",
+"Desmond Bane",
 "Franz Wagner"
 ],
 "presaison_matchs": 3,
@@ -8752,9 +8759,11 @@
 "presence": 0.72,
 "age": 21,
 "min_proj": 10.9,
-"rang_poste": 1,
-"poste_espn": "PG",
-"devant": [],
+"rang_poste": 2,
+"poste_espn": "SG",
+"devant": [
+"Desmond Bane"
+],
 "presaison_matchs": 4,
 "presaison_min": 19.8
 },
@@ -9714,12 +9723,12 @@
 "b2b_presence": 0.6,
 "presence": 0.6,
 "age": 24,
-"rang_poste": 6,
+"rang_poste": 7,
 "poste_espn": "SG",
 "devant": [
+"Sidy Cissoko",
 "Scoot Henderson",
-"Damian Lillard",
-"Jrue Holiday"
+"Damian Lillard"
 ],
 "presaison_matchs": 1,
 "presaison_min": 12.0
@@ -9853,9 +9862,11 @@
 "presence": 0.97,
 "age": 22,
 "min_proj": 27.0,
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "SG",
-"devant": [],
+"devant": [
+"Sidy Cissoko"
+],
 "presaison_matchs": 4,
 "presaison_min": 17.5
 },
@@ -9919,11 +9930,9 @@
 "presence": 0.96,
 "age": 22,
 "min_proj": 16.2,
-"rang_poste": 2,
-"poste_espn": "SF",
-"devant": [
-"Toumani Camara"
-],
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
 "presaison_matchs": 4,
 "presaison_min": 16.0
 },
@@ -9990,12 +9999,12 @@
 "malus_b2b": 0.955,
 "age": 25,
 "b2b_n": 0,
-"rang_poste": 7,
+"rang_poste": 8,
 "poste_espn": "SG",
 "devant": [
+"Sidy Cissoko",
 "Scoot Henderson",
-"Damian Lillard",
-"Jrue Holiday"
+"Damian Lillard"
 ],
 "presaison_matchs": 3,
 "presaison_min": 11.3
@@ -10172,11 +10181,12 @@
 "presence": 0.96,
 "age": 24,
 "min_proj": 27.4,
-"rang_poste": 3,
+"rang_poste": 4,
 "poste_espn": "SF",
 "devant": [
-"Kenrich Williams",
-"Alex Caruso"
+"Ajay Mitchell",
+"Alex Caruso",
+"Kenrich Williams"
 ],
 "presaison_matchs": 5,
 "presaison_min": 22.2
@@ -11120,13 +11130,9 @@
 "presence": 1.0,
 "age": 25,
 "min_proj": 18.3,
-"rang_poste": 6,
-"poste_espn": "SG",
-"devant": [
-"Darryn Peterson",
-"Svi Mykhailiuk",
-"Brice Sensabaugh"
-],
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
 "presaison_matchs": 3,
 "presaison_min": 10.0
 },
@@ -11158,7 +11164,7 @@
 "rang_poste": 2,
 "poste_espn": "PF",
 "devant": [
-"Lauri Markkanen"
+"Ace Bailey"
 ],
 "presaison_matchs": 4,
 "presaison_min": 16.8
@@ -11210,12 +11216,12 @@
 "malus_b2b": 1.022,
 "age": 23,
 "b2b_n": 0,
-"rang_poste": 6,
+"rang_poste": 5,
 "poste_espn": "PF",
 "devant": [
-"Lauri Markkanen",
+"Ace Bailey",
 "Josh Okogie",
-"Ace Bailey"
+"Brice Sensabaugh"
 ],
 "presaison_matchs": 4,
 "presaison_min": 7.5
@@ -11329,9 +11335,13 @@
 "presence": 0.8,
 "age": 29,
 "min_proj": 34.0,
-"rang_poste": 1,
-"poste_espn": "PF",
-"devant": [],
+"rang_poste": 6,
+"poste_espn": "SF",
+"devant": [
+"Josh Green",
+"Brice Sensabaugh",
+"Ace Bailey"
+],
 "presaison_matchs": 3,
 "presaison_min": 20.0
 },
@@ -11376,7 +11386,7 @@
 "rang_poste": 2,
 "poste_espn": "SF",
 "devant": [
-"Ace Bailey"
+"Josh Green"
 ],
 "presaison_matchs": 2,
 "presaison_min": 16.0
@@ -11447,7 +11457,7 @@
 "age": 20,
 "min_proj": 28.2,
 "rang_poste": 1,
-"poste_espn": "SF",
+"poste_espn": "PF",
 "devant": [],
 "presaison_matchs": 4,
 "presaison_min": 23.0
@@ -11877,6 +11887,6 @@
 "_source": "saison régulière 2025-26 (ESPN), mis à jour le 20/10/2026"
 },
 "roles": {
-"_source": "ESPN (hiérarchie + présaison), mis à jour le 11/11/2026"
+"_source": "ESPN (hiérarchie + présaison), mis à jour le 12/11/2026"
 }
 }
