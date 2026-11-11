@@ -1,4 +1,4 @@
-Calcul lancé le 11/11/2026 à 23:39:00
+Calcul lancé le 11/11/2026 à 23:49:49
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
@@ -10,7 +10,6 @@ Optimisation (jusqu'à deux minutes)…
 ⚠ À CORRIGER SUR LE SITE AVANT LA DEADLINE
   - Ordre du banc : mets T.da Silva en 1er remplaçant (A.Mitchell ne joue pas le Day 3) pour le remplacement automatique
 
-Changements depuis le calcul de 22h08 : titulaires modifiés. Raison probable : A.Mitchell : Ankle expected back 2026-11-13.
 Option « transférer dès Day 3 » (seulement 4 titulaire(s) ce jour-là) : Day 3 : W.Carter Jr. (ORL) → K.George (WAS). Points projetés -8 par rapport au plan conseillé, mais avec moins de transferts en réserve pour remplacer un blessé : bilan -10 pts → l'assistant préfère attendre.
 ⭐ All-Star (si c'est bien « budget illimité pour un Gameday, puis retour à ton équipe ») : gain par soir GW4 Day 3 (20 équipes) +93 | GW4 Day 4 (8 équipes) +152 | GW4 Day 5 (18 équipes) +33 | GW4 Day 6 (10 équipes) +133 | GW4 Day 7 (18 équipes) +44. Meilleur soir : GW4 Day 4, 234 pts attendus au lieu de 82, avec C.Cunningham, T.Maxey, C.Flagg, L.Ball, K.George.
 🏆 Ligue First Team : 39e sur 641 (-5 depuis le 10/11), 15 pts du rang juste devant, 635 pts du 1er · devant toi, 23 sur 33 ont déjà joué leur wildcard et 17 leur All-Star · tes joueurs chez les 38 équipes devant toi : D.Acuff Jr. 37, Y.Lendeborg 36, V.Wembanyama 19, C.Flagg 16, T.Jerome 11, T.da Silva 10, A.Mitchell 9, N.Traore 3, K.Dunn 1, W.Carter Jr. 0
@@ -71,4 +70,4 @@ Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) 
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 11/11/2026 à 23:39:33 (code de sortie : 0)
+Terminé le 11/11/2026 à 23:50:21 (code de sortie : 0)

@@ -102,7 +102,10 @@
  },
  "22": {
   "resume": "✅ Y.Lendeborg, T.Jerome, W.Carter Jr. (B2B), V.Wembanyama\n🔁 Aucun transfert\n⭐ Capitaine : non\n⚠️ Ordre du banc : mets T.da Silva en 1er remplaçant (A.Mitchell ne joue pas le Day 3) pour le remplacement automatique",
-  "resume_envoye": "Ordre du banc : mets T.da Silva en 1er remplaçant (A.Mitchell ne joue pas le Day 3) pour le remplacement automatique\n✅ Y.Lendeborg, T.Jerome, W.Carter Jr. (B2B), V.Wembanyama\n🔁 Aucun transfert\n⭐ Capitaine : non\n⚠️ Ordre du banc : mets T.da Silva en 1er remplaçant (A.Mitchell ne joue pas le Day 3) pour le remplacement automatique",
-  "a": "2026-11-11T21:07:28.579968+00:00"
+  "resume_envoye": "✅ Y.Lendeborg, T.Jerome, W.Carter Jr. (B2B), V.Wembanyama\n🔁 Aucun transfert\n⭐ Capitaine : non\n⚠️ Ordre du banc : mets T.da Silva en 1er remplaçant (A.Mitchell ne joue pas le Day 3) pour le remplacement automatique",
+  "a": "2026-11-11T21:07:28.579968+00:00",
+  "c": [
+   "Ordre du banc : mets T.da Silva en 1er remplaçant (A.Mitchell ne joue pas le Day 3) pour le remplacement automatique"
+  ]
  }
 }

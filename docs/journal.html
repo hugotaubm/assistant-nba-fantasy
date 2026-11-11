@@ -6,7 +6,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="theme-color" content="#1d428a">
 <link rel="manifest" href="manifest.json">
-<link rel="apple-touch-icon" href="icone-180.png"><meta charset="utf-8"><title>Journal</title></head><body style="font-family:-apple-system,system-ui,sans-serif;padding:16px"><p><a href="./">← Retour au rapport</a></p><pre style="white-space:pre-wrap;font-size:13px">Calcul lancé le 11/11/2026 à 23:39:00
+<link rel="apple-touch-icon" href="icone-180.png"><meta charset="utf-8"><title>Journal</title></head><body style="font-family:-apple-system,system-ui,sans-serif;padding:16px"><p><a href="./">← Retour au rapport</a></p><pre style="white-space:pre-wrap;font-size:13px">Calcul lancé le 11/11/2026 à 23:49:49
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu&#x27;à deux minutes)…
@@ -18,7 +18,6 @@ Optimisation (jusqu&#x27;à deux minutes)…
 ⚠ À CORRIGER SUR LE SITE AVANT LA DEADLINE
   - Ordre du banc : mets T.da Silva en 1er remplaçant (A.Mitchell ne joue pas le Day 3) pour le remplacement automatique
 
-Changements depuis le calcul de 22h08 : titulaires modifiés. Raison probable : A.Mitchell : Ankle expected back 2026-11-13.
 Option « transférer dès Day 3 » (seulement 4 titulaire(s) ce jour-là) : Day 3 : W.Carter Jr. (ORL) → K.George (WAS). Points projetés -8 par rapport au plan conseillé, mais avec moins de transferts en réserve pour remplacer un blessé : bilan -10 pts → l&#x27;assistant préfère attendre.
 ⭐ All-Star (si c&#x27;est bien « budget illimité pour un Gameday, puis retour à ton équipe ») : gain par soir GW4 Day 3 (20 équipes) +93 | GW4 Day 4 (8 équipes) +152 | GW4 Day 5 (18 équipes) +33 | GW4 Day 6 (10 équipes) +133 | GW4 Day 7 (18 équipes) +44. Meilleur soir : GW4 Day 4, 234 pts attendus au lieu de 82, avec C.Cunningham, T.Maxey, C.Flagg, L.Ball, K.George.
 🏆 Ligue First Team : 39e sur 641 (-5 depuis le 10/11), 15 pts du rang juste devant, 635 pts du 1er · devant toi, 23 sur 33 ont déjà joué leur wildcard et 17 leur All-Star · tes joueurs chez les 38 équipes devant toi : D.Acuff Jr. 37, Y.Lendeborg 36, V.Wembanyama 19, C.Flagg 16, T.Jerome 11, T.da Silva 10, A.Mitchell 9, N.Traore 3, K.Dunn 1, W.Carter Jr. 0
@@ -79,12 +78,12 @@ Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) 
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 11/11/2026 à 23:39:33 (code de sortie : 0)
+Terminé le 11/11/2026 à 23:50:21 (code de sortie : 0)
 </pre>
 <div id="aa-barre" style="position:fixed;left:0;right:0;bottom:0;z-index:99999;
   display:flex;align-items:center;gap:12px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));
   background:#1d428a;color:#fff;font:15px -apple-system,system-ui,sans-serif;box-shadow:0 -2px 8px rgba(0,0,0,.2)">
-  <span style="flex:1;min-width:0"><span id="aa-info">Rapport du 11/11 à 23:39</span> · <a href="journal.html" style="color:#fff">journal</a></span>
+  <span style="flex:1;min-width:0"><span id="aa-info">Rapport du 11/11 à 23:50</span> · <a href="journal.html" style="color:#fff">journal</a></span>
   <a id="aa-recalculer" href="https://github.com/hugotaubm/assistant-nba-fantasy/actions/workflows/assistant.yml" style="font:600 15px -apple-system,system-ui,sans-serif;padding:10px 16px;border-radius:10px;background:#fff;color:#1d428a;text-decoration:none;white-space:nowrap">Recalculer</a>
 </div>
 <div style="height:80px"></div>
@@ -105,7 +104,7 @@ Terminé le 11/11/2026 à 23:39:33 (code de sortie : 0)
   }
   // Ouverte par le raccourci avec ?attente=1 : on attend le nouveau rapport puis on recharge.
   if (!/[?&]attente=/.test(location.search)) return;
-  var info = document.getElementById("aa-info"), depart = Date.now(), actuel = "2026-11-11T23:39:33";
+  var info = document.getElementById("aa-info"), depart = Date.now(), actuel = "2026-11-11T23:50:21";
   info.textContent = "⏳ Calcul en cours… (2 à 4 min)";
   var minuteur = setInterval(function () {
     fetch("etat.json?t=" + Date.now(), {cache: "no-store"}).then(function (r) { return r.json(); }).then(function (e) {
