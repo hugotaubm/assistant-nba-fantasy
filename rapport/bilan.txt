@@ -399,10 +399,10 @@ CALIBRATION DU MODÈLE (points réels / points attendus, par rang)
   rang 3+  : 1671 joueurs-matchs | réel    8782 / attendu    8149 = 1.08 → facteur appliqué 1.074
   rang ?   :  344 joueurs-matchs | réel     895 / attendu    1832 = 0.49 → facteur appliqué 0.750
 Erreur restante du modèle par tranche de prix (après la calibration par rang) :
-  10-15 M$  :  860 joueurs-matchs | réel   26469 / attendu   26201 = 1.01 → facteur appliqué 1.010
-  7-10 M$   : 1141 joueurs-matchs | réel   22924 / attendu   22225 = 1.03 → facteur appliqué 1.031
-  < 7 M$    : 2371 joueurs-matchs | réel   15408 / attendu   15779 = 0.98 → facteur appliqué 0.977
-  ≥ 15 M$   :  282 joueurs-matchs | réel   12623 / attendu   12288 = 1.03 → facteur appliqué 1.026
+  10-15 M$  :  860 joueurs-matchs | réel   26469 / attendu   26234 = 1.01 → facteur appliqué 1.009
+  7-10 M$   : 1141 joueurs-matchs | réel   22924 / attendu   22248 = 1.03 → facteur appliqué 1.030
+  < 7 M$    : 2371 joueurs-matchs | réel   15408 / attendu   15845 = 0.97 → facteur appliqué 0.973
+  ≥ 15 M$   :  282 joueurs-matchs | réel   12623 / attendu   12304 = 1.03 → facteur appliqué 1.025
 
 Vérification du barème (points du jeu vs formule des projections) :
   Statistiques fournies par le jeu : ['assists', 'blocks', 'in_dreamteam', 'minutes', 'played', 'points_scored', 'rebounds', 'steals', 'total_points']
@@ -417,7 +417,7 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       M.Uzan (BOS) : -
       N.Pringle (BKN) : -
       P.Connaughton (CHA) : -
-  statut i | chances ce Gameday 25 | prochain 25 : 41 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 39 joueurs
       A.Newell (ATL) : Toe expected back 2026-11-13
       K.Gilbert (ATL) : Knee expected back 2026-11-13
       P.George (BOS) : Illness expected back 2026-11-15
@@ -437,22 +437,23 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       R.Dillingham (CHI) : Wrist expected back 2027-01-01
       J.Strawther (DEN) : Knee expected back 2026-11-29
       Y.Kawamura (LAC) : Foot expected back 2026-11-13
-  statut d | chances ce Gameday 100 | prochain 75 : 6 joueurs
-      S.Curry (GSW) : Abdomen expected back 2026-11-13
+  statut d | chances ce Gameday 100 | prochain 75 : 8 joueurs
       A.Nesmith (IND) : Knee expected back 2026-11-13
       C.Sexton (LAL) : Head expected back 2026-11-15
       L.Doncic (LAL) : Ankle expected back 2026-11-15
-  statut d | chances ce Gameday 75 | prochain 75 : 5 joueurs
-      C.Wilson (CHI) : Hand expected back 2026-11-13
-      M.Johnson (DAL) : Lower Leg expected back 2026-11-12
-      U.Onyenso (DET) : Foot expected back 2026-11-13
-      L.James (PHI) : Back expected back 2026-11-12
-  statut i | chances ce Gameday 75 | prochain 25 : 3 joueurs
+      A.Reaves (LAL) : Heel expected back 2026-11-15
+  statut i | chances ce Gameday 75 | prochain 25 : 5 joueurs
       D.Swain (CHI) : Back expected back 2026-11-13
       J.Cain (ORL) : Shoulder expected back 2026-11-13
       T.da Silva (ORL) : Calf expected back 2026-11-13
-  statut i | chances ce Gameday 75 | prochain 75 : 1 joueurs
-      T.Jackson-Davis (TOR) : Illness expected back 2026-11-12
+      L.James (PHI) : Back expected back 2026-11-15
+  statut d | chances ce Gameday 75 | prochain 75 : 4 joueurs
+      C.Wilson (CHI) : Hand expected back 2026-11-13
+      M.Johnson (DAL) : Lower Leg expected back 2026-11-12
+      U.Onyenso (DET) : Foot expected back 2026-11-13
+      J.Embiid (PHI) : Foot expected back 2026-11-12
+  statut i | chances ce Gameday 100 | prochain 0 : 1 joueurs
+      S.Curry (GSW) : Abdomen expected back 2026-12-12
 
 ======================================================================
 LIGUE FIRST TEAM
