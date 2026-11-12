@@ -417,16 +417,16 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       M.Uzan (BOS) : -
       N.Pringle (BKN) : -
       P.Connaughton (CHA) : -
-  statut i | chances ce Gameday 25 | prochain 25 : 39 joueurs
-      A.Newell (ATL) : Toe expected back 2026-11-13
-      K.Gilbert (ATL) : Knee expected back 2026-11-13
-      P.George (BOS) : Illness expected back 2026-11-15
-      N.Traore (BKN) : Calf expected back 2026-11-14
   statut i | chances ce Gameday 0 | prochain 0 : 38 joueurs
       M.Gueye (ATL) : Foot expected back 2026-11-20
       K.Knueppel (CHA) : Hamstring expected back 2026-12-12
       D.Schröder (CHA) : Hamstring expected back 2026-11-25
       N.Tomlin (CLE) : Back expected back 2026-11-16
+  statut i | chances ce Gameday 25 | prochain 25 : 38 joueurs
+      A.Newell (ATL) : Toe expected back 2026-11-13
+      K.Gilbert (ATL) : Knee expected back 2026-11-13
+      P.George (BOS) : Illness expected back 2026-11-15
+      N.Traore (BKN) : Calf expected back 2026-11-14
   statut u | chances ce Gameday 100 | prochain 100 : 14 joueurs
       I.McKneely (ATL) : -
       T.Enaruna (CLE) : -
@@ -437,7 +437,7 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       R.Dillingham (CHI) : Wrist expected back 2027-01-01
       J.Strawther (DEN) : Knee expected back 2026-11-29
       Y.Kawamura (LAC) : Foot expected back 2026-11-13
-  statut d | chances ce Gameday 100 | prochain 75 : 8 joueurs
+  statut d | chances ce Gameday 100 | prochain 75 : 9 joueurs
       A.Nesmith (IND) : Knee expected back 2026-11-13
       C.Sexton (LAL) : Head expected back 2026-11-15
       L.Doncic (LAL) : Ankle expected back 2026-11-15
@@ -454,6 +454,8 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       J.Embiid (PHI) : Foot expected back 2026-11-12
   statut i | chances ce Gameday 100 | prochain 0 : 1 joueurs
       S.Curry (GSW) : Abdomen expected back 2026-12-12
+  statut d | chances ce Gameday 25 | prochain 75 : 1 joueurs
+      Y.Missi (NOP) : Knee expected back 2026-11-13
 
 ======================================================================
 LIGUE FIRST TEAM

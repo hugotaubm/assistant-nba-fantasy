@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-12T21:02:50.933018+00:00",
+ "lu": "2026-11-12T21:09:05.645131+00:00",
  "joueurs": {
   "asa newell": {
    "nom": "Asa Newell",
@@ -338,7 +338,7 @@
    "nom": "Brandon Ingram",
    "statut": "Out",
    "blessure": "Right Leg Achilles",
-   "retour_espn": "2026-11-13",
+   "retour_espn": "2026-11-19",
    "retour_commentaire": null,
    "commentaire": "Ingram (Achilles) has been ruled out for Tuesday's game at Phoenix, Ohm Youngmisuk of ESPN.com reports.",
    "date": "2026-11-10"
@@ -478,13 +478,31 @@
    "commentaire": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports.",
    "date": "2026-10-05"
   },
+  "bryce mcgowens": {
+   "nom": "Bryce McGowens",
+   "statut": "Day-To-Day",
+   "blessure": "Left Arm Elbow",
+   "retour_espn": "2026-11-13",
+   "retour_commentaire": null,
+   "commentaire": "McGowens (elbow) is listed as doubtful for Friday's game against the Grizzlies.",
+   "date": "2026-11-12"
+  },
   "trendon watford": {
    "nom": "Trendon Watford",
    "statut": "Out",
    "blessure": "Right Leg Ankle",
    "retour_espn": "2026-11-14",
    "retour_commentaire": null,
-   "commentaire": "Watford (ankle) is out for Wednesday's game against the Nets.",
+   "commentaire": "Watford (ankle) is listed as out for Friday's game against the Grizzlies.",
+   "date": "2026-11-12"
+  },
+  "bennedict mathurin": {
+   "nom": "Bennedict Mathurin",
+   "statut": "Day-To-Day",
+   "blessure": "Right Arm Thumb",
+   "retour_espn": "2026-11-13",
+   "retour_commentaire": null,
+   "commentaire": "Mathurin (thumb) is listed as doubtful for Friday's game against Memphis.",
    "date": "2026-11-12"
   },
   "yves missi": {
@@ -503,15 +521,6 @@
    "retour_espn": "2026-11-13",
    "retour_commentaire": null,
    "commentaire": "Murphy (knee) is listed as doubtful for Friday's game against the Grizzlies.",
-   "date": "2026-11-12"
-  },
-  "bennedict mathurin": {
-   "nom": "Bennedict Mathurin",
-   "statut": "Day-To-Day",
-   "blessure": "Right Arm Thumb",
-   "retour_espn": "2026-11-13",
-   "retour_commentaire": null,
-   "commentaire": "Mathurin has been ruled out for Wednesday's game against the Nets due to a right thumb sprain.",
    "date": "2026-11-12"
   },
   "ajay mitchell": {
