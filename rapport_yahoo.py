@@ -114,6 +114,19 @@ def ce_soir(jour):
     return res
 
 
+def semaine(jour):
+    """Matchs restants d'ici dimanche (inclus, dates US), par équipe : la semaine Yahoo va du lundi au dimanche."""
+    dimanche = jour + dt.timedelta(days=6 - jour.weekday())
+    res = {}
+    for jd in calendrier()["leagueSchedule"]["gameDates"]:
+        for g in jd["games"]:
+            d = dt.date.fromisoformat(g["gameDateEst"][:10])
+            if jour <= d <= dimanche and g["gameId"].startswith("002"):
+                for camp in ("homeTeam", "awayTeam"):
+                    res[g[camp]["teamTricode"]] = res.get(g[camp]["teamTricode"], 0) + 1
+    return res
+
+
 def matchs_live(debut, fin):
     """Feuilles de match via nba_api.live (cdn.nba.com, joignable depuis GitHub Actions)."""
     from concurrent.futures import ThreadPoolExecutor
@@ -138,6 +151,7 @@ def matchs_live(debut, fin):
                 if j.get("played") != "1":
                     continue
                 lignes.append(dict(PLAYER_NAME=j["name"], GAME_ID=gid, GAME_DATE=date_us.isoformat(),
+                                   TEAM_ABBREVIATION=d[camp].get("teamTricode"),
                                    MIN=_minutes(st.get("minutes")), FGM=st.get("fieldGoalsMade"),
                                    FGA=st.get("fieldGoalsAttempted"), FTM=st.get("freeThrowsMade"),
                                    FTA=st.get("freeThrowsAttempted"), FG3M=st.get("threePointersMade"),
@@ -204,18 +218,18 @@ def fmt(m, k):
     return f"{v:.1f}"
 
 
-def rapport(jour, noms, bl, logs, erreur_stats=None, soir=None):
+def rapport(jour, noms, bl, logs, erreur_stats=None, soir=None, sem=None):
     titre = f"# Rapport Yahoo — {JOURS[jour.weekday()]} {jour.day} {MOIS[jour.month - 1]} {jour.year}"
     # repère du mode --si-besoin ; absent si les stats manquent, pour réessayer au passage suivant
     repere = "<!-- date: incomplet -->" if erreur_stats else f"<!-- date: {jour.isoformat()} -->"
     out = [titre, repere, "",
            "Chaque case : moyenne sur les **7 derniers jours · 15 derniers jours** (matchs joués : MJ). "
            "FG% et FT% calculés sur le total des tirs. « Ce soir » : match de la nuit qui vient "
-           "(@ = à l'extérieur), heure de Paris.", ""]
+           "(@ = à l'extérieur), heure de Paris. « Sem. » : matchs restants d'ici dimanche, ce soir compris.", ""]
     if erreur_stats:
         out += [f"> ⚠️ Statistiques NBA indisponibles aujourd'hui ({erreur_stats}).", ""]
-    out.append("| Joueur | Éq. | Statut | Ce soir | " + " | ".join(t for _, t in COLONNES) + " |")
-    out.append("|---|---|---|---|" + "---:|" * len(COLONNES))
+    out.append("| Joueur | Éq. | Statut | Ce soir | Sem. | " + " | ".join(t for _, t in COLONNES) + " |")
+    out.append("|---|---|---|---|---:|" + "---:|" * len(COLONNES))
     notes, absents = [], []
     for nom in noms:
         k = cle(nom)
@@ -226,8 +240,13 @@ def rapport(jour, noms, bl, logs, erreur_stats=None, soir=None):
             notes.append(f"- **{nom}** : {news}")
         m7, m15 = (moyennes(logs.get(k, []), jour, n) for n in FENETRES)
         cases = ["–" if m7 is None and m15 is None else f"{fmt(m7, c)} · {fmt(m15, c)}" for c, _ in COLONNES]
+        # équipe du dernier match joué (NBA Fantasy tarde à suivre les transferts)
+        recents = sorted(logs.get(k, []), key=lambda l: l["GAME_DATE"])
+        if recents and recents[-1].get("TEAM_ABBREVIATION"):
+            equipe = recents[-1]["TEAM_ABBREVIATION"]
         match = "?" if soir is None else soir.get(equipe, "–")
-        out.append(f"| {nom} | {equipe} | {statut} | {match} | " + " | ".join(cases) + " |")
+        reste = "?" if sem is None else sem.get(equipe, 0)
+        out.append(f"| {nom} | {equipe} | {statut} | {match} | {reste} | " + " | ".join(cases) + " |")
     if notes:
         out += ["", "**Blessures / nouvelles**", ""] + notes
     if absents:
@@ -260,15 +279,15 @@ def main():
         logs, erreur = {}, f"{type(ex).__name__}"
         print(f"  stats NBA non lues : {ex!r}")
     try:
-        soir = ce_soir(jour)
+        soir, sem = ce_soir(jour), semaine(jour)
         print(f"  ce soir : {len(soir) // 2} matchs")
     except Exception as ex:
-        soir = None
+        soir = sem = None
         print(f"  calendrier de ce soir non lu : {ex!r}")
     if autres:
-        print(rapport(jour, noms, bl, logs, erreur, soir))
+        print(rapport(jour, noms, bl, logs, erreur, soir, sem))
         return 1 if erreur else 0
-    SORTIE.write_text(rapport(jour, noms, bl, logs, erreur, soir), encoding="utf-8")
+    SORTIE.write_text(rapport(jour, noms, bl, logs, erreur, soir, sem), encoding="utf-8")
     print(f"  écrit : {SORTIE.name}")
     sans_match = [n for n in noms if cle(n) not in logs]
     if sans_match and not erreur:
