@@ -422,7 +422,7 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       K.Knueppel (CHA) : Hamstring expected back 2026-12-12
       D.Schröder (CHA) : Hamstring expected back 2026-11-25
       N.Tomlin (CLE) : Back expected back 2026-11-16
-  statut i | chances ce Gameday 25 | prochain 25 : 38 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 35 joueurs
       A.Newell (ATL) : Toe expected back 2026-11-13
       K.Gilbert (ATL) : Knee expected back 2026-11-13
       P.George (BOS) : Illness expected back 2026-11-15
@@ -437,25 +437,29 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       R.Dillingham (CHI) : Wrist expected back 2027-01-01
       J.Strawther (DEN) : Knee expected back 2026-11-29
       Y.Kawamura (LAC) : Foot expected back 2026-11-13
-  statut d | chances ce Gameday 100 | prochain 75 : 9 joueurs
+  statut d | chances ce Gameday 100 | prochain 75 : 10 joueurs
+      C.Bassey (GSW) : Toe expected back 2026-11-13
       A.Nesmith (IND) : Knee expected back 2026-11-13
       C.Sexton (LAL) : Head expected back 2026-11-15
       L.Doncic (LAL) : Ankle expected back 2026-11-15
-      A.Reaves (LAL) : Heel expected back 2026-11-15
   statut i | chances ce Gameday 75 | prochain 25 : 5 joueurs
       D.Swain (CHI) : Back expected back 2026-11-13
       J.Cain (ORL) : Shoulder expected back 2026-11-13
       T.da Silva (ORL) : Calf expected back 2026-11-13
       L.James (PHI) : Back expected back 2026-11-15
-  statut d | chances ce Gameday 75 | prochain 75 : 4 joueurs
-      C.Wilson (CHI) : Hand expected back 2026-11-13
+  statut d | chances ce Gameday 75 | prochain 75 : 3 joueurs
       M.Johnson (DAL) : Lower Leg expected back 2026-11-12
       U.Onyenso (DET) : Foot expected back 2026-11-13
       J.Embiid (PHI) : Foot expected back 2026-11-12
+  statut d | chances ce Gameday 25 | prochain 75 : 2 joueurs
+      Y.Missi (NOP) : Knee expected back 2026-11-13
+      J.Suggs (ORL) : Knee expected back 2026-11-13
+  statut i | chances ce Gameday 75 | prochain 0 : 1 joueurs
+      C.Wilson (CHI) : Hand expected back 2026-12-13
+  statut i | chances ce Gameday 100 | prochain 25 : 1 joueurs
+      E.Mobley (CLE) : Toe expected back 2026-11-14
   statut i | chances ce Gameday 100 | prochain 0 : 1 joueurs
       S.Curry (GSW) : Abdomen expected back 2026-12-12
-  statut d | chances ce Gameday 25 | prochain 75 : 1 joueurs
-      Y.Missi (NOP) : Knee expected back 2026-11-13
 
 ======================================================================
 LIGUE FIRST TEAM
