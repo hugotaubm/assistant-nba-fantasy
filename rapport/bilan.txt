@@ -437,16 +437,11 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       K.Knueppel (CHA) : Hamstring expected back 2026-12-12
       D.Schröder (CHA) : Hamstring expected back 2026-11-25
       C.Wilson (CHI) : Hand expected back 2026-12-13
-  statut i | chances ce Gameday 25 | prochain 25 : 39 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 38 joueurs
       A.Newell (ATL) : Toe expected back 2026-11-20
       K.Gilbert (ATL) : Knee expected back 2026-11-20
       P.George (BOS) : Illness expected back 2026-11-15
       N.Traore (BKN) : Calf expected back 2026-11-14
-  statut d | chances ce Gameday 75 | prochain 75 : 13 joueurs
-      K.Flemings (ATL) : Back expected back 2026-11-13
-      U.Onyenso (DET) : Foot expected back 2026-11-13
-      C.Bassey (GSW) : Toe expected back 2026-11-13
-      T.McConnell (IND) : Hamstring expected back 2026-11-13
   statut u | chances ce Gameday 0 | prochain 0 : 13 joueurs
       H.Veesaar (ATL) : Knee expected back 2027-07-01
       R.Dillingham (CHI) : Wrist expected back 2027-01-01
@@ -457,6 +452,15 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       T.Enaruna (CLE) : -
       J.Poulakidas (DAL) : -
       A.Toohey (GSW) : -
+  statut d | chances ce Gameday 75 | prochain 75 : 12 joueurs
+      K.Flemings (ATL) : Back expected back 2026-11-13
+      U.Onyenso (DET) : Foot expected back 2026-11-14
+      C.Bassey (GSW) : Toe expected back 2026-11-13
+      T.McConnell (IND) : Hamstring expected back 2026-11-13
+  statut d | chances ce Gameday 100 | prochain 75 : 3 joueurs
+      M.Christie (DAL) : Ankle expected back 2026-11-14
+      M.Johnson (DAL) : Lower Leg expected back 2026-11-14
+      K.McCullar Jr. (TOR) : Illness expected back 2026-11-14
   statut i | chances ce Gameday 100 | prochain 25 : 2 joueurs
       D.Murray (NOP) : Ankle expected back 2026-11-20
       C.Carrington (WAS) : Chest expected back 2026-11-15
@@ -471,10 +475,6 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       T.Sorber (OKC) : Knee expected back 2026-11-20
   statut d | chances ce Gameday None | prochain 75 : 1 joueurs
       D.Timme (PHX) : Hand expected back 2026-11-15
-  statut d | chances ce Gameday 25 | prochain 75 : 1 joueurs
-      P.Achiuwa (SAC) : Ankle expected back 2026-11-13
-  statut d | chances ce Gameday 100 | prochain 75 : 1 joueurs
-      K.McCullar Jr. (TOR) : Illness expected back 2026-11-14
 
 ======================================================================
 LIGUE FIRST TEAM

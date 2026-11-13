@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-13T21:02:10.864282+00:00",
+ "lu": "2026-11-13T22:33:57.152707+00:00",
  "joueurs": {
   "mouhamed gueye": {
    "nom": "Mouhamed Gueye",
@@ -55,23 +55,23 @@
    "commentaire": "George (illness) has been ruled out for Wednesday's game against Toronto, Taylor Snow of the Celtics' official site reports.",
    "date": "2026-11-12"
   },
-  "nolan traore": {
-   "nom": "Nolan Traore",
-   "statut": "Day-To-Day",
-   "blessure": "Right Leg Calf",
-   "retour_espn": "2026-11-14",
-   "retour_commentaire": null,
-   "commentaire": "Traore (calf) has been ruled out for Wednesday's game against the Pelicans, Ian Begley of SportsNet New York reports.",
-   "date": "2026-11-12"
-  },
   "mikel brown": {
    "nom": "Mikel Brown Jr.",
    "statut": "Day-To-Day",
    "blessure": "Other Illness",
    "retour_espn": "2026-11-14",
    "retour_commentaire": null,
-   "commentaire": "Brown has been ruled out for Wednesday's game against the Pelicans due to an illness, Sharif Phillips-Keaton of USA Today reports.",
-   "date": "2026-11-12"
+   "commentaire": "Brown (illness) is listed as questionable for Saturday's game against Memphis.",
+   "date": "2026-11-13"
+  },
+  "nolan traore": {
+   "nom": "Nolan Traore",
+   "statut": "Day-To-Day",
+   "blessure": "Right Leg Calf",
+   "retour_espn": "2026-11-14",
+   "retour_commentaire": null,
+   "commentaire": "Traore (calf) is listed as probable for Saturday's game against Memphis.",
+   "date": "2026-11-13"
   },
   "brandon miller": {
    "nom": "Brandon Miller",
@@ -153,6 +153,24 @@
    "retour_commentaire": null,
    "commentaire": "Merrill (elbow) is listed as out for Wednesday's game against the Knicks.",
    "date": "2026-11-10"
+  },
+  "max christie": {
+   "nom": "Max Christie",
+   "statut": "Day-To-Day",
+   "blessure": "Leg Ankle",
+   "retour_espn": "2026-11-14",
+   "retour_commentaire": null,
+   "commentaire": "Christie is questionable for Saturday's game against the Cavaliers due to a sprained left ankle.",
+   "date": "2026-11-13"
+  },
+  "morez johnson": {
+   "nom": "Morez Johnson Jr.",
+   "statut": "Day-To-Day",
+   "blessure": "Left Leg Lower Leg",
+   "retour_espn": "2026-11-14",
+   "retour_commentaire": null,
+   "commentaire": "Johnson (left shin contusion) is listed as probable for Saturday against Cleveland.",
+   "date": "2026-11-13"
   },
   "dereck lively": {
    "nom": "Dereck Lively II",
@@ -379,6 +397,15 @@
    "commentaire": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic.",
    "date": "2026-08-26"
   },
+  "quentin grimes": {
+   "nom": "Quentin Grimes",
+   "statut": "Day-To-Day",
+   "blessure": "Arm Finger",
+   "retour_espn": "2026-11-15",
+   "retour_commentaire": null,
+   "commentaire": "Grimes (finger) said he expects to return to action Sunday against the Suns, according to Ricardo Sandoval of Lakers on SI.",
+   "date": "2026-11-13"
+  },
   "austin reaves": {
    "nom": "Austin Reaves",
    "statut": "Day-To-Day",
@@ -396,15 +423,6 @@
    "retour_commentaire": null,
    "commentaire": "Head coach JJ Redick said Friday that Doncic (ankle) is \"fine,\" per Law Murray of The Athletic.",
    "date": "2026-11-13"
-  },
-  "quentin grimes": {
-   "nom": "Quentin Grimes",
-   "statut": "Day-To-Day",
-   "blessure": "Arm Finger",
-   "retour_espn": "2026-11-15",
-   "retour_commentaire": null,
-   "commentaire": "Grimes (finger) has been ruled out for Wednesday's game against the Bucks.",
-   "date": "2026-11-12"
   },
   "collin sexton": {
    "nom": "Collin Sexton",
@@ -595,33 +613,6 @@
    "commentaire": "Williams (leg) underwent successful surgery Wednesday to \"address a fractured left fibula and reconstruction of ankle ligaments following a fracture and dislocation.\" He will be re-evaluated before the end of the regular season, Tim MacMahon of ESPN.com reports.",
    "date": "2026-10-28"
   },
-  "jamal cain": {
-   "nom": "Jamal Cain",
-   "statut": "Day-To-Day",
-   "blessure": "Left Arm Shoulder",
-   "retour_espn": "2026-11-13",
-   "retour_commentaire": null,
-   "commentaire": "Cain (shoulder) participated in Friday morning's shootaround and remains questionable for Friday's game against the Bucks, Jason Beede of the Orlando Sentinel reports.",
-   "date": "2026-11-13"
-  },
-  "tristan da silva": {
-   "nom": "Tristan da Silva",
-   "statut": "Day-To-Day",
-   "blessure": "Left Leg Calf",
-   "retour_espn": "2026-11-13",
-   "retour_commentaire": null,
-   "commentaire": "Da Silva (calf) participated in Friday's morning shootaround and remains questionable for Friday's game against Milwaukee, Jason Beede of the Orlando Sentinel reports.",
-   "date": "2026-11-13"
-  },
-  "jalen suggs": {
-   "nom": "Jalen Suggs",
-   "statut": "Out",
-   "blessure": "Right Leg Knee",
-   "retour_espn": "2026-11-13",
-   "retour_commentaire": null,
-   "commentaire": "Suggs (knee) participated in Friday's morning shootaround and remains questionable for Friday's game against the Bucks, Jason Beede of the Orlando Sentinel reports.",
-   "date": "2026-11-13"
-  },
   "jonathan isaac": {
    "nom": "Jonathan Isaac",
    "statut": "Out",
@@ -750,11 +741,11 @@
   },
   "precious achiuwa": {
    "nom": "Precious Achiuwa",
-   "statut": "Day-To-Day",
+   "statut": "Out",
    "blessure": "Left Leg Ankle",
-   "retour_espn": "2026-11-13",
+   "retour_espn": "2026-11-15",
    "retour_commentaire": null,
-   "commentaire": "Achiuwa (ankle) is questionable to play Friday's game against the Trail Blazers.",
+   "commentaire": "Achiuwa (ankle) is out for Friday's game against the Trail Blazers.",
    "date": "2026-11-13"
   },
   "maxime raynaud": {
