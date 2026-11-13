@@ -1,4 +1,4 @@
-Calcul lancé le 13/11/2026 à 12:05:09
+Calcul lancé le 13/11/2026 à 14:27:56
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
@@ -13,8 +13,8 @@ Optimisation (jusqu'à deux minutes)…
   - D.Acuff Jr. joue le Day 5 mais est sur ton banc (conseillé titulaire)
   - V.Wembanyama joue le Day 5 mais est sur ton banc (conseillé titulaire)
 
-⭐ All-Star (si c'est bien « budget illimité pour un Gameday, puis retour à ton équipe ») : gain par soir GW4 Day 5 (18 équipes) +34 | GW4 Day 6 (10 équipes) +138 | GW4 Day 7 (18 équipes) +39. Meilleur soir : GW4 Day 6, 269 pts attendus au lieu de 132, avec N.Jokic, C.Cunningham, J.Murray, G.Antetokounmpo, C.Flagg.
-🏆 Ligue First Team : 52e sur 642 (-13 depuis le 11/11), 1 pts du rang juste devant, 593 pts du 1er · devant toi, 27 sur 38 ont déjà joué leur wildcard et 18 leur All-Star · tes joueurs chez les 51 équipes devant toi : Y.Lendeborg 50, D.Acuff Jr. 50, V.Wembanyama 30, C.Flagg 23, T.Jerome 17, A.Mitchell 12, T.da Silva 10, D.Robinson 7, N.Traore 4, K.Dunn 2
+⭐ All-Star (si c'est bien « budget illimité pour un Gameday, puis retour à ton équipe ») : gain par soir GW4 Day 5 (18 équipes) +35 | GW4 Day 6 (10 équipes) +140 | GW4 Day 7 (18 équipes) +40. Meilleur soir : GW4 Day 6, 271 pts attendus au lieu de 132, avec N.Jokic, C.Cunningham, J.Murray, G.Antetokounmpo, C.Flagg.
+🏆 Ligue First Team : 60e sur 642 (-8 depuis le 12/11), 1 pts du rang juste devant, 617 pts du 1er · devant toi, 48 sur 59 ont déjà joué leur wildcard et 30 leur All-Star · tes joueurs chez les 59 équipes devant toi : D.Acuff Jr. 55, Y.Lendeborg 53, C.Flagg 43, V.Wembanyama 34, T.Jerome 16, D.Robinson 11, A.Mitchell 11, T.da Silva 9, N.Traore 4, K.Dunn 2
 📅 Jours creux du plan conseillé — semaine suivante : Day 2 1 vide(s), Day 7 1 vide(s) | semaine d'après (Gameweek 6, sans transfert) : 34 matchs pour ton effectif, 5 place(s) vide(s) ; joueurs dispo par jour : 7-2-8-7-3-7
 🧩 Combler les 2 place(s) vide(s) de la semaine suivante est possible : Day 1 : C.Flagg → D.Avdija ; Day 2 : N.Traore → D.Jenkins. Semaine suivante -6 pts, au total -19 pts par rapport au plan conseillé (cette semaine + suivante pondérée).
 🛡️ Effet adversaire (points fantasy concédés par poste, déjà dans les prévisions) — face aux arrières, les plus perméables : LAL +8 %, LAC +7 %, WAS +7 % ; les plus dures : ATL -11 %, DET -11 %, IND -7 % | face aux intérieurs, les plus perméables : ATL +12 %, CHI +8 %, IND +7 % ; les plus dures : POR -7 %, LAL -6 %, OKC -6 %
@@ -27,44 +27,44 @@ Optimisation (jusqu'à deux minutes)…
 
 ▶ CINQ DE DÉPART POUR LE PROCHAIN GAMEDAY
   BC  K.Dunn (LAC)                 proj. 30.0
-  BC  T.Jerome (MEM)               proj. 42.7
-  BC  D.Acuff Jr. (SAC)            proj. 48.4
+  BC  T.Jerome (MEM)               proj. 42.6
+  BC  D.Acuff Jr. (SAC)            proj. 48.3
   FC  Y.Lendeborg (GSW)            proj. 41.8
-  FC  V.Wembanyama (SAS)           proj. 64.9
+  FC  V.Wembanyama (SAS)           proj. 65.5
 
 ▶ TRANSFERTS
   Aucun transfert recommandé cette semaine (gain attendu trop faible).
   Prévu la semaine suivante (indicatif) : Day 1 : C.Flagg→D.Avdija, T.da Silva→K.George
 
 ▶ TES JOUEURS, DU MOINS UTILE AU PLUS UTILE (points attendus ; semaine suivante pondérée × 0.8)
-  T.da Silva (ORL)              6.5 M$ | 21.9 pts/match, fiabilité 0.84 | cette semaine 1 m.    5 pts | suivante 4 m.   59 pts |  8.0 pts/M$
+  T.da Silva (ORL)              6.5 M$ | 22.0 pts/match, fiabilité 0.84 | cette semaine 1 m.    5 pts | suivante 4 m.   59 pts |  8.0 pts/M$
   A.Mitchell (OKC)              9.0 M$ | 32.9 pts/match, fiabilité 0.69 | cette semaine 2 m.   30 pts | suivante 3 m.   67 pts |  9.3 pts/M$
-  N.Traore (BKN)                6.5 M$ | 23.9 pts/match, fiabilité 0.90 | cette semaine 1 m.   18 pts | suivante 3 m.   56 pts |  9.7 pts/M$
-  C.Flagg (DAL)                14.7 M$ | 51.2 pts/match, fiabilité 0.91 | cette semaine 2 m.   88 pts | suivante 3 m.  132 pts | 13.2 pts/M$
-  V.Wembanyama (SAS)           19.6 M$ | 64.9 pts/match, fiabilité 0.97 | cette semaine 2 m.  135 pts | suivante 3 m.  199 pts | 15.0 pts/M$
+  N.Traore (BKN)                6.5 M$ | 24.0 pts/match, fiabilité 0.90 | cette semaine 1 m.   18 pts | suivante 3 m.   56 pts |  9.7 pts/M$
+  C.Flagg (DAL)                14.7 M$ | 51.5 pts/match, fiabilité 0.91 | cette semaine 2 m.   89 pts | suivante 3 m.  133 pts | 13.3 pts/M$
+  V.Wembanyama (SAS)           19.6 M$ | 65.5 pts/match, fiabilité 0.97 | cette semaine 2 m.  136 pts | suivante 3 m.  201 pts | 15.2 pts/M$
   D.Robinson (DET)              7.6 M$ | 29.6 pts/match, fiabilité 0.99 | cette semaine 1 m.   32 pts | suivante 4 m.  127 pts | 17.5 pts/M$
-  K.Dunn (LAC)                  8.0 M$ | 30.0 pts/match, fiabilité 0.98 | cette semaine 2 m.   67 pts | suivante 3 m.  101 pts | 18.4 pts/M$
-  T.Jerome (MEM)                9.7 M$ | 42.7 pts/match, fiabilité 0.89 | cette semaine 2 m.   81 pts | suivante 4 m.  172 pts | 22.6 pts/M$
+  K.Dunn (LAC)                  8.0 M$ | 30.0 pts/match, fiabilité 0.98 | cette semaine 2 m.   67 pts | suivante 3 m.  100 pts | 18.4 pts/M$
+  T.Jerome (MEM)                9.7 M$ | 42.6 pts/match, fiabilité 0.89 | cette semaine 2 m.   81 pts | suivante 4 m.  172 pts | 22.5 pts/M$
   Y.Lendeborg (GSW)             7.8 M$ | 41.8 pts/match, fiabilité 0.98 | cette semaine 1 m.   42 pts | suivante 4 m.  177 pts | 23.5 pts/M$
-  D.Acuff Jr. (SAC)             8.5 M$ | 48.4 pts/match, fiabilité 0.98 | cette semaine 2 m.   96 pts | suivante 3 m.  145 pts | 24.9 pts/M$
+  D.Acuff Jr. (SAC)             8.5 M$ | 48.3 pts/match, fiabilité 0.98 | cette semaine 2 m.   96 pts | suivante 3 m.  145 pts | 24.9 pts/M$
 
 ▶ PLAN JOUR PAR JOUR (cette Gameweek)
-  Day 5  deadline sam. 14/11 00h30 : Y.Lendeborg, K.Dunn, T.Jerome, D.Acuff Jr., V.Wembanyama  [~234 pts]
+  Day 5  deadline sam. 14/11 00h30 : Y.Lendeborg, K.Dunn, T.Jerome, D.Acuff Jr., V.Wembanyama  [~235 pts]
   Day 6  deadline dim. 15/11 00h30 : N.Traore, C.Flagg, D.Robinson, T.Jerome (B2B)  (1 place(s) vide(s))  [~132 pts]
   Day 7  deadline dim. 15/11 18h30 : C.Flagg (B2B), K.Dunn, A.Mitchell, D.Acuff Jr., V.Wembanyama  [~216 pts]
 
 ▶ SEMAINE SUIVANTE, JOUR PAR JOUR (indicatif, avec les transferts prévus) : 2 place(s) vide(s) au total
   Day 1  deadline mar. 17/11 00h30 : N.Traore, Y.Lendeborg, T.Jerome, D.Avdija, K.George (B2B)  [~198 pts] ← après C.Flagg→D.Avdija, T.da Silva→K.George
-  Day 2  deadline mer. 18/11 01h00 : D.Robinson, K.Dunn, D.Avdija (B2B), V.Wembanyama (C)  (1 place(s) vide(s))  [~255 pts]
+  Day 2  deadline mer. 18/11 01h00 : D.Robinson, K.Dunn, D.Avdija (B2B), V.Wembanyama (C)  (1 place(s) vide(s))  [~257 pts]
   Day 3  deadline jeu. 19/11 00h30 : D.Robinson (B2B), Y.Lendeborg, T.Jerome, D.Acuff Jr., K.George  [~201 pts]
   Day 4  deadline ven. 20/11 01h30 : Y.Lendeborg (B2B), K.Dunn, T.Jerome (B2B), D.Avdija, V.Wembanyama  [~230 pts]
   Day 5  deadline sam. 21/11 00h30 : N.Traore, D.Robinson, A.Mitchell, D.Acuff Jr., K.George  [~160 pts]
   Day 6  deadline sam. 21/11 18h30 : K.Dunn, T.Jerome, D.Avdija, D.Acuff Jr. (B2B), V.Wembanyama  [~233 pts]
   Day 7  deadline dim. 22/11 21h00 : D.Robinson, Y.Lendeborg, A.Mitchell, K.George  (1 place(s) vide(s))  [~137 pts]
 
-Projection Gameweek (jours restants) : ~581 pts  |  sans transfert : ~581 pts
+Projection Gameweek (jours restants) : ~582 pts  |  sans transfert : ~582 pts
 Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) = non utilisé, mon équipe = my-team (connecté, à jour en direct)
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 13/11/2026 à 12:05:18 (code de sortie : 0)
+Terminé le 13/11/2026 à 14:28:06 (code de sortie : 0)
