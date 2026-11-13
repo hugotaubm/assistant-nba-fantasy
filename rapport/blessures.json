@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-13T13:28:00.693074+00:00",
+ "lu": "2026-11-13T21:02:10.864282+00:00",
  "joueurs": {
   "mouhamed gueye": {
    "nom": "Mouhamed Gueye",
@@ -379,6 +379,24 @@
    "commentaire": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic.",
    "date": "2026-08-26"
   },
+  "austin reaves": {
+   "nom": "Austin Reaves",
+   "statut": "Day-To-Day",
+   "blessure": "Left Leg Heel",
+   "retour_espn": "2026-11-15",
+   "retour_commentaire": null,
+   "commentaire": "Reaves (heel) won't undergo imaging and is considered day-to-day ahead of Sunday's game against the Suns, Jovan Buha of The Athletic reports.",
+   "date": "2026-11-13"
+  },
+  "luka doncic": {
+   "nom": "Luka Doncic",
+   "statut": "Day-To-Day",
+   "blessure": "Right Leg Ankle",
+   "retour_espn": "2026-11-15",
+   "retour_commentaire": null,
+   "commentaire": "Head coach JJ Redick said Friday that Doncic (ankle) is \"fine,\" per Law Murray of The Athletic.",
+   "date": "2026-11-13"
+  },
   "quentin grimes": {
    "nom": "Quentin Grimes",
    "statut": "Day-To-Day",
@@ -395,24 +413,6 @@
    "retour_espn": "2026-11-15",
    "retour_commentaire": null,
    "commentaire": "Sexton did not return to Wednesday's 123-112 win over the Bucks and required stitches to close a cut on his forehead, Thuc Nhi Nguyen of the Los Angeles Times reports.",
-   "date": "2026-11-12"
-  },
-  "austin reaves": {
-   "nom": "Austin Reaves",
-   "statut": "Day-To-Day",
-   "blessure": "Left Leg Heel",
-   "retour_espn": "2026-11-15",
-   "retour_commentaire": null,
-   "commentaire": "Head coach JJ Redick said that X-rays on Reaves' left heel came back negative, but they won't have another update until he undergoes further imaging back in Los Angeles on Thursday, Dave McMenamin of ESPN.com reports.",
-   "date": "2026-11-12"
-  },
-  "luka doncic": {
-   "nom": "Luka Doncic",
-   "statut": "Day-To-Day",
-   "blessure": "Right Leg Ankle",
-   "retour_espn": "2026-11-15",
-   "retour_commentaire": null,
-   "commentaire": "Doncic finished Wednesday's 123-112 win over the Bucks with 32 points (10-25 FG, 5-12 3Pt, 7-10 FT), five rebounds, five assists and three steals across 32 minutes. He exited to the locker room late in the fourth quarter due to an apparent right ankle injury and did not return, Thuc Nhi Nguyen of th",
    "date": "2026-11-12"
   },
   "quinten post": {
@@ -457,17 +457,8 @@
    "blessure": "Left Leg Ankle",
    "retour_espn": "2026-11-13",
    "retour_commentaire": null,
-   "commentaire": "Thompson (ankle) is listed as questionable for Friday's game against the Cavaliers.",
-   "date": "2026-11-12"
-  },
-  "giannis antetokounmpo": {
-   "nom": "Giannis Antetokounmpo",
-   "statut": "Day-To-Day",
-   "blessure": "Arm Wrist",
-   "retour_espn": "2026-11-13",
-   "retour_commentaire": null,
-   "commentaire": "Antetokounmpo (wrist) is probable for Friday's game against Cleveland.",
-   "date": "2026-11-12"
+   "commentaire": "Thompson (ankle) is listed as probable for Friday's game against the Cavaliers.",
+   "date": "2026-11-13"
   },
   "pelle larsson": {
    "nom": "Pelle Larsson",
@@ -475,8 +466,8 @@
    "blessure": "Other Illness",
    "retour_espn": "2026-11-13",
    "retour_commentaire": null,
-   "commentaire": "Larsson (illness) is listed as questionable for Friday's game against Cleveland.",
-   "date": "2026-11-12"
+   "commentaire": "Larsson (illness) is listed as doubtful for Friday's game against Cleveland.",
+   "date": "2026-11-13"
   },
   "anthony edwards": {
    "nom": "Anthony Edwards",
@@ -496,14 +487,50 @@
    "commentaire": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports.",
    "date": "2026-10-05"
   },
+  "dejounte murray": {
+   "nom": "Dejounte Murray",
+   "statut": "Out",
+   "blessure": "Leg Ankle",
+   "retour_espn": "2026-11-20",
+   "retour_commentaire": null,
+   "commentaire": "Murray (ankle) is out for Friday's game against Memphis.",
+   "date": "2026-11-13"
+  },
   "bryce mcgowens": {
    "nom": "Bryce McGowens",
-   "statut": "Day-To-Day",
+   "statut": "Out",
    "blessure": "Left Arm Elbow",
+   "retour_espn": "2026-11-14",
+   "retour_commentaire": null,
+   "commentaire": "McGowens (elbow) is listed as out for Friday's game against the Grizzlies.",
+   "date": "2026-11-13"
+  },
+  "yves missi": {
+   "nom": "Yves Missi",
+   "statut": "Out",
+   "blessure": "Left Leg Knee",
+   "retour_espn": "2026-11-14",
+   "retour_commentaire": null,
+   "commentaire": "Missi (knee) is out for Friday's game against the Grizzlies.",
+   "date": "2026-11-13"
+  },
+  "bennedict mathurin": {
+   "nom": "Bennedict Mathurin",
+   "statut": "Day-To-Day",
+   "blessure": "Right Arm Thumb",
    "retour_espn": "2026-11-13",
    "retour_commentaire": null,
-   "commentaire": "McGowens (elbow) is listed as doubtful for Friday's game against the Grizzlies.",
-   "date": "2026-11-12"
+   "commentaire": "Mathurin (thumb) is listed as questionable for Friday's game against Memphis.",
+   "date": "2026-11-13"
+  },
+  "trey murphy": {
+   "nom": "Trey Murphy III",
+   "statut": "Out",
+   "blessure": "Leg Knee",
+   "retour_espn": "2026-11-14",
+   "retour_commentaire": null,
+   "commentaire": "Murphy (knee) is out for Friday's game against Memphis.",
+   "date": "2026-11-13"
   },
   "trendon watford": {
    "nom": "Trendon Watford",
@@ -512,33 +539,6 @@
    "retour_espn": "2026-11-14",
    "retour_commentaire": null,
    "commentaire": "Watford (ankle) is listed as out for Friday's game against the Grizzlies.",
-   "date": "2026-11-12"
-  },
-  "bennedict mathurin": {
-   "nom": "Bennedict Mathurin",
-   "statut": "Day-To-Day",
-   "blessure": "Right Arm Thumb",
-   "retour_espn": "2026-11-13",
-   "retour_commentaire": null,
-   "commentaire": "Mathurin (thumb) is listed as doubtful for Friday's game against Memphis.",
-   "date": "2026-11-12"
-  },
-  "yves missi": {
-   "nom": "Yves Missi",
-   "statut": "Out",
-   "blessure": "Left Leg Knee",
-   "retour_espn": "2026-11-13",
-   "retour_commentaire": null,
-   "commentaire": "Missi (knee) is listed as doubtful for Friday's game against the Grizzlies.",
-   "date": "2026-11-12"
-  },
-  "trey murphy": {
-   "nom": "Trey Murphy III",
-   "statut": "Day-To-Day",
-   "blessure": "Leg Knee",
-   "retour_espn": "2026-11-13",
-   "retour_commentaire": null,
-   "commentaire": "Murphy (knee) is listed as doubtful for Friday's game against the Grizzlies.",
    "date": "2026-11-12"
   },
   "thomas sorber": {
@@ -595,23 +595,23 @@
    "commentaire": "Williams (leg) underwent successful surgery Wednesday to \"address a fractured left fibula and reconstruction of ankle ligaments following a fracture and dislocation.\" He will be re-evaluated before the end of the regular season, Tim MacMahon of ESPN.com reports.",
    "date": "2026-10-28"
   },
-  "tristan da silva": {
-   "nom": "Tristan da Silva",
-   "statut": "Day-To-Day",
-   "blessure": "Left Leg Calf",
-   "retour_espn": "2026-11-13",
-   "retour_commentaire": null,
-   "commentaire": "Da Silva (calf) is questionable for Friday's game against Milwaukee.",
-   "date": "2026-11-12"
-  },
   "jamal cain": {
    "nom": "Jamal Cain",
    "statut": "Day-To-Day",
    "blessure": "Left Arm Shoulder",
    "retour_espn": "2026-11-13",
    "retour_commentaire": null,
-   "commentaire": "Cain (shoulder) is questionable for Friday's game against the Bucks.",
-   "date": "2026-11-12"
+   "commentaire": "Cain (shoulder) participated in Friday morning's shootaround and remains questionable for Friday's game against the Bucks, Jason Beede of the Orlando Sentinel reports.",
+   "date": "2026-11-13"
+  },
+  "tristan da silva": {
+   "nom": "Tristan da Silva",
+   "statut": "Day-To-Day",
+   "blessure": "Left Leg Calf",
+   "retour_espn": "2026-11-13",
+   "retour_commentaire": null,
+   "commentaire": "Da Silva (calf) participated in Friday's morning shootaround and remains questionable for Friday's game against Milwaukee, Jason Beede of the Orlando Sentinel reports.",
+   "date": "2026-11-13"
   },
   "jalen suggs": {
    "nom": "Jalen Suggs",
@@ -619,8 +619,8 @@
    "blessure": "Right Leg Knee",
    "retour_espn": "2026-11-13",
    "retour_commentaire": null,
-   "commentaire": "Suggs (knee) is questionable for Friday's game against Milwaukee.",
-   "date": "2026-11-12"
+   "commentaire": "Suggs (knee) participated in Friday's morning shootaround and remains questionable for Friday's game against the Bucks, Jason Beede of the Orlando Sentinel reports.",
+   "date": "2026-11-13"
   },
   "jonathan isaac": {
    "nom": "Jonathan Isaac",
@@ -693,6 +693,15 @@
    "retour_commentaire": "2027-04-04",
    "commentaire": "Hukporti has sustained a season-ending ruptured right Achilles tendon, per Shams Charania of ESPN.",
    "date": "2026-10-06"
+  },
+  "drew timme": {
+   "nom": "Drew Timme",
+   "statut": "Day-To-Day",
+   "blessure": "Right Arm Hand",
+   "retour_espn": "2026-11-15",
+   "retour_commentaire": null,
+   "commentaire": "The Suns claimed Timme off waivers Monday, per Michael Scotto of HoopsHype.com.",
+   "date": "2026-11-13"
   },
   "mark williams": {
    "nom": "Mark Williams",
@@ -801,6 +810,15 @@
    "retour_commentaire": null,
    "commentaire": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports.",
    "date": "2026-10-05"
+  },
+  "kevin mccullar": {
+   "nom": "Kevin McCullar Jr.",
+   "statut": "Day-To-Day",
+   "blessure": "Other Illness",
+   "retour_espn": "2026-11-14",
+   "retour_commentaire": null,
+   "commentaire": "McCullar signed a two-way contract with the Raptors on Thursday, Michael Scotto of HoopsHype.com reports.",
+   "date": "2026-11-13"
   },
   "trayce jackson davis": {
    "nom": "Trayce Jackson-Davis",
