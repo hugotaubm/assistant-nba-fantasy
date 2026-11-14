@@ -386,8 +386,8 @@ Par rang dans la hiérarchie ESPN (1 = titulaire) :
   rang 9                  13 matchs | 0 min : 10 | biais -11.2 | réel/projeté 0.73 | minutes 31.0
   rang inconnu            64 matchs | 0 min : 39 | biais  -9.0 | réel/projeté 0.69 | minutes 22.2
 Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : 623 sur 3036
-  - L.Doncic (LAL) (event 9) : projeté 65.5, statut actuel d, news : Ankle expected back 2026-11-15
-  - L.Doncic (LAL) (event 19) : projeté 65.5, statut actuel d, news : Ankle expected back 2026-11-15
+  - L.Doncic (LAL) (event 9) : projeté 65.5, statut actuel a, news : -
+  - L.Doncic (LAL) (event 19) : projeté 65.5, statut actuel a, news : -
   - J.Johnson (ATL) (event 14) : projeté 53.4, statut actuel a, news : -
   - J.Johnson (ATL) (event 15) : projeté 53.4, statut actuel a, news : -
   - J.Johnson (ATL) (event 17) : projeté 53.4, statut actuel a, news : -
@@ -429,10 +429,10 @@ CALIBRATION DU MODÈLE (points réels / points attendus, par rang)
   rang 3+  : 1797 joueurs-matchs | réel    9413 / attendu    8646 = 1.09 → facteur appliqué 1.085
   rang ?   :  372 joueurs-matchs | réel    1029 / attendu    1940 = 0.53 → facteur appliqué 0.750
 Erreur restante du modèle par tranche de prix (après la calibration par rang) :
-  10-15 M$  :  931 joueurs-matchs | réel   28801 / attendu   28386 = 1.01 → facteur appliqué 1.014
-  7-10 M$   : 1234 joueurs-matchs | réel   24789 / attendu   24107 = 1.03 → facteur appliqué 1.028
-  < 7 M$    : 2562 joueurs-matchs | réel   16793 / attendu   17094 = 0.98 → facteur appliqué 0.983
-  ≥ 15 M$   :  301 joueurs-matchs | réel   13666 / attendu   13123 = 1.04 → facteur appliqué 1.040
+  10-15 M$  :  931 joueurs-matchs | réel   28801 / attendu   28399 = 1.01 → facteur appliqué 1.014
+  7-10 M$   : 1234 joueurs-matchs | réel   24789 / attendu   24127 = 1.03 → facteur appliqué 1.027
+  < 7 M$    : 2562 joueurs-matchs | réel   16793 / attendu   17147 = 0.98 → facteur appliqué 0.980
+  ≥ 15 M$   :  301 joueurs-matchs | réel   13666 / attendu   13129 = 1.04 → facteur appliqué 1.040
 
 Vérification du barème (points du jeu vs formule des projections) :
   Statistiques fournies par le jeu : ['assists', 'blocks', 'in_dreamteam', 'minutes', 'played', 'points_scored', 'rebounds', 'steals', 'total_points']
@@ -447,7 +447,7 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       M.Uzan (BOS) : -
       N.Pringle (BKN) : -
       P.Connaughton (CHA) : -
-  statut i | chances ce Gameday 0 | prochain 0 : 40 joueurs
+  statut i | chances ce Gameday 0 | prochain 0 : 39 joueurs
       M.Gueye (ATL) : Foot expected back 2026-12-12
       K.Knueppel (CHA) : Hamstring expected back 2026-12-12
       D.Schröder (CHA) : Hamstring expected back 2026-11-25
@@ -462,30 +462,34 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       T.Enaruna (CLE) : -
       J.Poulakidas (DAL) : -
       A.Toohey (GSW) : -
+  statut d | chances ce Gameday 100 | prochain 75 : 12 joueurs
+      K.Flemings (ATL) : Back expected back 2026-11-15
+      N.Claxton (CHI) : Hamstring expected back 2026-11-14
+      J.Smith (CHI) : Finger expected back 2026-11-14
+      N.Powell (CHI) : Back expected back 2026-11-14
   statut u | chances ce Gameday 0 | prochain 0 : 12 joueurs
       H.Veesaar (ATL) : Knee expected back 2027-07-01
       R.Dillingham (CHI) : Wrist expected back 2027-01-01
       Y.Kawamura (LAC) : Foot expected back 2026-11-14
       E.Freeman (MIN) : Undisclosed expected back 2027-01-01
-  statut d | chances ce Gameday 75 | prochain 75 : 9 joueurs
+  statut d | chances ce Gameday 75 | prochain 75 : 8 joueurs
       M.Christie (DAL) : Ankle expected back 2026-11-14
       M.Johnson (DAL) : Lower Leg expected back 2026-11-14
       U.Onyenso (DET) : Foot expected back 2026-11-14
       C.Sexton (LAL) : Head expected back 2026-11-15
-  statut i | chances ce Gameday 75 | prochain 75 : 5 joueurs
+  statut i | chances ce Gameday 75 | prochain 75 : 3 joueurs
       K.Thompson (MIA) : Ankle expected back 2026-11-14
       P.Larsson (MIA) : Illness expected back 2026-11-14
-      T.Murphy III (NOP) : Knee expected back 2026-11-14
       Y.Missi (NOP) : Knee expected back 2026-11-14
-  statut d | chances ce Gameday 100 | prochain 75 : 4 joueurs
-      K.Flemings (ATL) : Back expected back 2026-11-15
-      J.Smith (CHI) : Hand expected back 2026-11-14
-      A.Nesmith (IND) : Hand expected back 2026-11-15
-      J.Hayes (UTA) : Knee expected back 2026-11-15
-  statut i | chances ce Gameday 25 | prochain 75 : 1 joueurs
-      D.Swain (CHI) : Back expected back 2026-11-14
+  statut i | chances ce Gameday 75 | prochain 25 : 2 joueurs
+      T.Murphy III (NOP) : Knee expected back 2026-11-16
+      B.McGowens (NOP) : Elbow expected back 2026-11-16
   statut s | chances ce Gameday 25 | prochain 25 : 1 joueurs
       M.Smart (HOU) : Suspension expected back 2026-11-18
+  statut i | chances ce Gameday 100 | prochain 25 : 1 joueurs
+      T.Jerome (MEM) : Hip expected back 2026-11-16
+  statut i | chances ce Gameday 0 | prochain 25 : 1 joueurs
+      N.Penda (ORL) : Hamstring expected back 2026-11-22
 
 ======================================================================
 LIGUE FIRST TEAM
