@@ -1,6 +1,15 @@
 {
- "lu": "2026-11-13T22:47:33.593876+00:00",
+ "lu": "2026-11-14T08:58:36.462044+00:00",
  "joueurs": {
+  "kingston flemings": {
+   "nom": "Kingston Flemings",
+   "statut": "Day-To-Day",
+   "blessure": "Torso Back",
+   "retour_espn": "2026-11-15",
+   "retour_commentaire": null,
+   "commentaire": "Flemings (back tightness) will not return to Friday's game against the Bulls.",
+   "date": "2026-11-14"
+  },
   "mouhamed gueye": {
    "nom": "Mouhamed Gueye",
    "statut": "Out",
@@ -26,15 +35,6 @@
    "retour_espn": "2026-11-20",
    "retour_commentaire": null,
    "commentaire": "Newell (toe) has been ruled out for Friday's game against Chicago.",
-   "date": "2026-11-12"
-  },
-  "kingston flemings": {
-   "nom": "Kingston Flemings",
-   "statut": "Day-To-Day",
-   "blessure": "Torso Back",
-   "retour_espn": "2026-11-13",
-   "retour_commentaire": null,
-   "commentaire": "Flemings (back) is questionable for Friday's game against the Bulls.",
    "date": "2026-11-12"
   },
   "henri veesaar": {
@@ -100,6 +100,24 @@
    "commentaire": "Schroder has been diagnosed with a left hamstring strain and will be reevaluated in two weeks, Michael Scotto of HoopsHype.com reports.",
    "date": "2026-11-08"
   },
+  "jalen smith": {
+   "nom": "Jalen Smith",
+   "statut": "Day-To-Day",
+   "blessure": "Left Arm Hand",
+   "retour_espn": "2026-11-14",
+   "retour_commentaire": null,
+   "commentaire": "Smith (hand) exited Friday's 125-117 win over the Hawks in overtime and did not return, finishing with 15 points (6-15 FG, 1-6 3Pt, 2-2 FT), 12 rebounds, three assists and three steals across 32 minutes.",
+   "date": "2026-11-14"
+  },
+  "dailyn swain": {
+   "nom": "Dailyn Swain",
+   "statut": "Out",
+   "blessure": "Right Torso Back",
+   "retour_espn": "2026-11-14",
+   "retour_commentaire": null,
+   "commentaire": "Swain (back) is out for Friday's game against the Hawks.",
+   "date": "2026-11-14"
+  },
   "tobe awaka": {
    "nom": "Tobe Awaka",
    "statut": "Out",
@@ -107,24 +125,6 @@
    "retour_espn": "2026-11-14",
    "retour_commentaire": null,
    "commentaire": "Awaka (back) has been ruled out for Friday's game against the Hawks.",
-   "date": "2026-11-12"
-  },
-  "dailyn swain": {
-   "nom": "Dailyn Swain",
-   "statut": "Day-To-Day",
-   "blessure": "Right Torso Back",
-   "retour_espn": "2026-11-13",
-   "retour_commentaire": null,
-   "commentaire": "Swain (back) is listed as questionable for Friday's game against Atlanta.",
-   "date": "2026-11-12"
-  },
-  "norman powell": {
-   "nom": "Norman Powell",
-   "statut": "Day-To-Day",
-   "blessure": "Right Arm Shoulder",
-   "retour_espn": "2026-11-13",
-   "retour_commentaire": null,
-   "commentaire": "Powell (shoulder) is questionable for Friday's game against the Hawks.",
    "date": "2026-11-12"
   },
   "caleb wilson": {
@@ -153,6 +153,15 @@
    "retour_commentaire": null,
    "commentaire": "Merrill (elbow) is listed as out for Wednesday's game against the Knicks.",
    "date": "2026-11-10"
+  },
+  "nae qwan tomlin": {
+   "nom": "Nae'Qwan Tomlin",
+   "statut": "Out",
+   "blessure": "Torso Back",
+   "retour_espn": "2026-11-16",
+   "retour_commentaire": "2026-11-10",
+   "commentaire": "Tomlin is set to miss several weeks with a lower back stress reaction, Chris Fedor of The Cleveland Plain Dealer reports.",
+   "date": "2026-10-20"
   },
   "max christie": {
    "nom": "Max Christie",
@@ -235,15 +244,6 @@
    "commentaire": "Duren (hamstring) has begun on-court activity and will be re-evaluated in two weeks, Hunter Patterson of The Athletic reports.",
    "date": "2026-11-08"
   },
-  "charles bassey": {
-   "nom": "Charles Bassey",
-   "statut": "Day-To-Day",
-   "blessure": "Left Leg Toe",
-   "retour_espn": "2026-11-13",
-   "retour_commentaire": null,
-   "commentaire": "Bassey is probable for Friday's game against the Spurs due to left toe soreness.",
-   "date": "2026-11-12"
-  },
   "stephen curry": {
    "nom": "Stephen Curry",
    "statut": "Out",
@@ -316,23 +316,14 @@
    "commentaire": "Head coach Ime Udoka said Monday that Adams could return as soon as Sunday's game at Washington, Lachard Binkley of SI.com reports.",
    "date": "2026-11-09"
   },
-  "t j mcconnell": {
-   "nom": "T.J. McConnell",
-   "statut": "Day-To-Day",
-   "blessure": "Right Leg Hamstring",
-   "retour_espn": "2026-11-13",
-   "retour_commentaire": null,
-   "commentaire": "McConnell is probable for Friday's game against the Knicks due to a right hamstring strain.",
-   "date": "2026-11-12"
-  },
   "aaron nesmith": {
    "nom": "Aaron Nesmith",
    "statut": "Day-To-Day",
-   "blessure": "Right Leg Knee",
-   "retour_espn": "2026-11-13",
+   "blessure": "Arm Hand",
+   "retour_espn": "2026-11-15",
    "retour_commentaire": null,
-   "commentaire": "Nesmith (knee) is questionable for Friday's game against the Knicks.",
-   "date": "2026-11-12"
+   "commentaire": "Nesmith exited to the locker room in the final seconds of Friday's 106-104 win over the Knicks due to an apparent hand/wrist injury, Tony East of Forbes.com reports. He posted 18 points (7-10 FG, 2-3 3Pt, 2-2 FT), seven rebounds and one assist in 33 minutes.",
+   "date": "2026-11-14"
   },
   "tyrese haliburton": {
    "nom": "Tyrese Haliburton",
@@ -471,20 +462,20 @@
   },
   "klay thompson": {
    "nom": "Klay Thompson",
-   "statut": "Day-To-Day",
+   "statut": "Out",
    "blessure": "Left Leg Ankle",
-   "retour_espn": "2026-11-13",
+   "retour_espn": "2026-11-14",
    "retour_commentaire": null,
-   "commentaire": "Thompson (ankle) is listed as probable for Friday's game against the Cavaliers.",
+   "commentaire": "Thompson (ankle) is out for Friday's game against the Cavaliers.",
    "date": "2026-11-13"
   },
   "pelle larsson": {
    "nom": "Pelle Larsson",
-   "statut": "Day-To-Day",
+   "statut": "Out",
    "blessure": "Other Illness",
-   "retour_espn": "2026-11-13",
+   "retour_espn": "2026-11-14",
    "retour_commentaire": null,
-   "commentaire": "Larsson (illness) is listed as doubtful for Friday's game against Cleveland.",
+   "commentaire": "Larsson (illness) is out for Friday's game against Cleveland.",
    "date": "2026-11-13"
   },
   "anthony edwards": {
@@ -532,15 +523,6 @@
    "commentaire": "Missi (knee) is out for Friday's game against the Grizzlies.",
    "date": "2026-11-13"
   },
-  "bennedict mathurin": {
-   "nom": "Bennedict Mathurin",
-   "statut": "Day-To-Day",
-   "blessure": "Right Arm Thumb",
-   "retour_espn": "2026-11-13",
-   "retour_commentaire": null,
-   "commentaire": "Mathurin (thumb) is listed as questionable for Friday's game against Memphis.",
-   "date": "2026-11-13"
-  },
   "trey murphy": {
    "nom": "Trey Murphy III",
    "statut": "Out",
@@ -559,6 +541,15 @@
    "commentaire": "Watford (ankle) is listed as out for Friday's game against the Grizzlies.",
    "date": "2026-11-12"
   },
+  "ajay mitchell": {
+   "nom": "Ajay Mitchell",
+   "statut": "Out",
+   "blessure": "Left Leg Ankle",
+   "retour_espn": "2026-11-15",
+   "retour_commentaire": null,
+   "commentaire": "Mitchell (ankle) has been ruled out for Friday's game against the Clippers.",
+   "date": "2026-11-14"
+  },
   "thomas sorber": {
    "nom": "Thomas Sorber",
    "statut": "Out",
@@ -566,15 +557,6 @@
    "retour_espn": "2026-11-20",
    "retour_commentaire": null,
    "commentaire": "Sorber (knee) has been ruled out for Friday's game against the Clippers.",
-   "date": "2026-11-13"
-  },
-  "ajay mitchell": {
-   "nom": "Ajay Mitchell",
-   "statut": "Day-To-Day",
-   "blessure": "Left Leg Ankle",
-   "retour_espn": "2026-11-13",
-   "retour_commentaire": null,
-   "commentaire": "Mitchell (ankle) is questionable for Friday's game against the Clippers.",
    "date": "2026-11-13"
   },
   "jaylin williams": {
@@ -766,24 +748,6 @@
    "commentaire": "Simmons underwent successful surgery Tuesday to repair a torn right Achilles tendon, James Ham of ESPN 1320 Sacramento reports.",
    "date": "2026-10-21"
   },
-  "devin vassell": {
-   "nom": "Devin Vassell",
-   "statut": "Day-To-Day",
-   "blessure": "Left Groin Groin",
-   "retour_espn": "2026-11-13",
-   "retour_commentaire": null,
-   "commentaire": "Vassell is questionable for Friday's game against the Warriors due to left adductor tightness.",
-   "date": "2026-11-12"
-  },
-  "de aaron fox": {
-   "nom": "De'Aaron Fox",
-   "statut": "Day-To-Day",
-   "blessure": "Left Torso Hip",
-   "retour_espn": "2026-11-13",
-   "retour_commentaire": null,
-   "commentaire": "Fox is questionable for Friday's game against the Warriors due to left hip soreness.",
-   "date": "2026-11-12"
-  },
   "tobias harris": {
    "nom": "Tobias Harris",
    "statut": "Out",
@@ -846,6 +810,15 @@
    "retour_commentaire": null,
    "commentaire": "Bittle (foot) is listed as out for Monday's game against Memphis.",
    "date": "2026-11-08"
+  },
+  "jaxson hayes": {
+   "nom": "Jaxson Hayes",
+   "statut": "Day-To-Day",
+   "blessure": "Left Leg Knee",
+   "retour_espn": "2026-11-15",
+   "retour_commentaire": null,
+   "commentaire": "Hayes won't return to Friday's game against the Rockets due to a left knee issue.",
+   "date": "2026-11-14"
   },
   "trey alexander": {
    "nom": "Trey Alexander",
