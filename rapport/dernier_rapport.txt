@@ -1,4 +1,4 @@
-Calcul lancé le 14/11/2026 à 22:08:38
+Calcul lancé le 14/11/2026 à 23:49:58
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
@@ -10,23 +10,22 @@ Optimisation (jusqu'à deux minutes)…
 ⚠ À CORRIGER SUR LE SITE AVANT LA DEADLINE
   - N.Traore : Calf expected back 2026-11-14 | ESPN (Day-To-Day) : Traore (calf) is listed as probable for Saturday's game against Memphis. (25 % de chances de jouer ce soir)
 
-Changements depuis le calcul de 09h58 : titulaires modifiés. Raison probable : T.Jerome : Hip expected back 2026-11-16.
 ⭐ All-Star (si c'est bien « budget illimité pour un Gameday, puis retour à ton équipe ») : gain par soir GW4 Day 6 (10 équipes) +190 | GW4 Day 7 (18 équipes) +45. Meilleur soir : GW4 Day 6, 273 pts attendus au lieu de 82, avec N.Jokic, C.Cunningham, J.Murray, L.Ball, C.Flagg.
 🏆 Ligue First Team : 70e sur 642 (-10 depuis le 13/11), 7 pts du rang juste devant, 722 pts du 1er · devant toi, 55 sur 69 ont déjà joué leur wildcard et 30 leur All-Star · tes joueurs chez les 69 équipes devant toi : D.Acuff Jr. 68, Y.Lendeborg 64, V.Wembanyama 48, C.Flagg 44, T.Jerome 22, D.Robinson 13, A.Mitchell 13, T.da Silva 10, N.Traore 5, K.Dunn 3
 📅 Jours creux du plan conseillé — semaine suivante : Day 2 1 vide(s), Day 7 1 vide(s) | semaine d'après (Gameweek 6, sans transfert) : 35 matchs pour ton effectif, 5 place(s) vide(s) ; joueurs dispo par jour : 7-2-8-7-3-8
 🧩 Combler les 2 place(s) vide(s) de la semaine suivante est possible : Day 1 : C.Flagg → D.Avdija ; Day 2 : N.Traore → D.Jenkins. Semaine suivante -9 pts, au total -13 pts par rapport au plan conseillé (cette semaine + suivante pondérée).
 🛡️ Effet adversaire (points fantasy concédés par poste, déjà dans les prévisions) — face aux arrières, les plus perméables : MIA +9 %, LAL +8 %, LAC +8 % ; les plus dures : DET -11 %, ATL -8 %, IND -7 % | face aux intérieurs, les plus perméables : ATL +12 %, MIL +8 %, NOP +7 % ; les plus dures : POR -7 %, LAL -6 %, OKC -6 %
-📉 Vont perdre des minutes (retour d'un coéquipier blessé) : T.Bryant (CLE) -15 % dès le 16/11 (retour : E.Mobley) ; A.Wiggins (ATL) -12 % dès le 15/11 (retour : K.Flemings) ; J.Mogbo (SAC) -12 % dès le 15/11 (retour : P.Achiuwa) ; K.Huerter (DET) -11 % dès le 17/11 (retour : I.Joe)
-📈 Profitent d'une blessure (minutes libérées) : T.McConnell (IND) +60 % sur 4 j. (absent : B.Sheppard, J.Furphy, T.Haliburton) ; J.Hayes (UTA) +60 % sur 5 j. (absent : J.Jackson Jr., J.Nurkic, L.Markkanen) ; B.Sensabaugh (UTA) +57 % sur 5 j. (absent : J.Jackson Jr., J.Nurkic, L.Markkanen) ; D.Melton (GSW) +47 % sur 4 j. (absent : M.Moody, S.Curry) ; B.Hyland (MIN) +45 % sur 5 j. (absent : A.Edwards, D.DiVincenzo) ; I.Jackson (LAC) +43 % sur 2 j. (absent : B.Ingram) ; G.Santos (GSW) +43 % sur 4 j. (absent : J.Butler, K.Porzingis) ; K.Filipowski (UTA) +40 % sur 5 j. (absent : J.Jackson Jr., J.Nurkic, L.Markkanen)
+📉 Vont perdre des minutes (retour d'un coéquipier blessé) : T.Bryant (CLE) -15 % dès le 16/11 (retour : E.Mobley) ; A.Wiggins (ATL) -12 % dès le 15/11 (retour : K.Flemings) ; J.Mogbo (SAC) -12 % dès le 15/11 (retour : K.Murray, P.Achiuwa) ; K.Huerter (DET) -11 % dès le 17/11 (retour : I.Joe)
+📈 Profitent d'une blessure (minutes libérées) : B.Bogdanovic (HOU) +60 % sur 4 j. (absent : F.VanVleet, M.Smart) ; T.McConnell (IND) +60 % sur 4 j. (absent : B.Sheppard, J.Furphy, T.Haliburton) ; J.Hayes (UTA) +60 % sur 5 j. (absent : J.Jackson Jr., J.Nurkic, L.Markkanen) ; B.Sensabaugh (UTA) +57 % sur 5 j. (absent : J.Jackson Jr., J.Nurkic, L.Markkanen) ; D.Melton (GSW) +47 % sur 4 j. (absent : M.Moody, S.Curry) ; B.Hyland (MIN) +45 % sur 5 j. (absent : A.Edwards, D.DiVincenzo) ; I.Jackson (LAC) +43 % sur 2 j. (absent : B.Ingram) ; G.Santos (GSW) +43 % sur 4 j. (absent : J.Butler, K.Porzingis)
 ⚠ ALERTES
   - T.Jerome (MEM) : Hip expected back 2026-11-16 | ESPN (Out) : Jerome (hip) has been ruled out for Saturday's game against the Nets. (chance de jouer 85 %)
   - N.Traore (BKN) : Calf expected back 2026-11-14 | ESPN (Day-To-Day) : Traore (calf) is listed as probable for Saturday's game against Memphis. (chance de jouer 85 %)
   - A.Mitchell (OKC) : Ankle expected back 2026-11-15 | ESPN (Day-To-Day) : Mitchell (ankle) has been ruled out for Friday's game against the Clippers. (chance de jouer 85 %)
 
 ▶ CINQ DE DÉPART POUR LE PROCHAIN GAMEDAY
-  BC  N.Traore (BKN)               proj. 24.2
+  BC  N.Traore (BKN)               proj. 24.1
   FC  C.Flagg (DAL)                proj. 51.5
-  FC  D.Robinson (DET)             proj. 29.6
+  FC  D.Robinson (DET)             proj. 29.5
   (seulement 3 de tes joueurs jouent ce jour-là)
 
 ▶ TRANSFERTS
@@ -34,15 +33,15 @@ Changements depuis le calcul de 09h58 : titulaires modifiés. Raison probable : 
   Prévu la semaine suivante (indicatif) : Day 1 : C.Flagg→F.Wagner, T.da Silva→D.Clingan
 
 ▶ TES JOUEURS, DU MOINS UTILE AU PLUS UTILE (points attendus ; semaine suivante pondérée × 0.8)
-  N.Traore (BKN)                6.5 M$ | 24.2 pts/match, fiabilité 0.90 | cette semaine 1 m.    5 pts | suivante 3 m.   56 pts |  7.7 pts/M$
-  T.da Silva (ORL)              6.5 M$ | 22.1 pts/match, fiabilité 0.85 | cette semaine 0 m.    0 pts | suivante 4 m.   71 pts |  8.7 pts/M$
+  N.Traore (BKN)                6.5 M$ | 24.1 pts/match, fiabilité 0.90 | cette semaine 1 m.    5 pts | suivante 3 m.   56 pts |  7.7 pts/M$
+  T.da Silva (ORL)              6.5 M$ | 22.0 pts/match, fiabilité 0.85 | cette semaine 0 m.    0 pts | suivante 4 m.   70 pts |  8.7 pts/M$
   A.Mitchell (OKC)              9.0 M$ | 32.3 pts/match, fiabilité 0.65 | cette semaine 1 m.   23 pts | suivante 3 m.   72 pts |  9.0 pts/M$
   V.Wembanyama (SAS)           19.6 M$ | 64.4 pts/match, fiabilité 0.98 | cette semaine 1 m.   69 pts | suivante 3 m.  199 pts | 11.7 pts/M$
-  T.Jerome (MEM)                9.7 M$ | 42.5 pts/match, fiabilité 0.90 | cette semaine 1 m.    0 pts | suivante 4 m.  145 pts | 12.0 pts/M$
+  T.Jerome (MEM)                9.7 M$ | 42.4 pts/match, fiabilité 0.90 | cette semaine 1 m.    0 pts | suivante 4 m.  145 pts | 12.0 pts/M$
   C.Flagg (DAL)                14.7 M$ | 51.5 pts/match, fiabilité 0.91 | cette semaine 2 m.   89 pts | suivante 3 m.  134 pts | 13.4 pts/M$
   K.Dunn (LAC)                  8.0 M$ | 28.9 pts/match, fiabilité 0.99 | cette semaine 1 m.   37 pts | suivante 3 m.  109 pts | 15.5 pts/M$
-  D.Robinson (DET)              7.6 M$ | 29.6 pts/match, fiabilité 0.99 | cette semaine 1 m.   31 pts | suivante 4 m.  127 pts | 17.4 pts/M$
-  D.Acuff Jr. (SAC)             8.5 M$ | 47.7 pts/match, fiabilité 0.98 | cette semaine 1 m.   47 pts | suivante 3 m.  143 pts | 19.0 pts/M$
+  D.Robinson (DET)              7.6 M$ | 29.5 pts/match, fiabilité 0.99 | cette semaine 1 m.   31 pts | suivante 4 m.  127 pts | 17.4 pts/M$
+  D.Acuff Jr. (SAC)             8.5 M$ | 47.7 pts/match, fiabilité 0.98 | cette semaine 1 m.   47 pts | suivante 3 m.  143 pts | 18.9 pts/M$
   Y.Lendeborg (GSW)             7.8 M$ | 39.9 pts/match, fiabilité 0.98 | cette semaine 0 m.    0 pts | suivante 4 m.  194 pts | 19.9 pts/M$
 
 ▶ PLAN JOUR PAR JOUR (cette Gameweek)
@@ -53,7 +52,7 @@ Changements depuis le calcul de 09h58 : titulaires modifiés. Raison probable : 
   Day 1  deadline mar. 17/11 00h30 : N.Traore, Y.Lendeborg, T.Jerome, F.Wagner, D.Clingan  [~196 pts] ← après C.Flagg→F.Wagner, T.da Silva→D.Clingan
   Day 2  deadline mer. 18/11 01h00 : D.Robinson, K.Dunn, D.Clingan (B2B), V.Wembanyama (C)  (1 place(s) vide(s))  [~250 pts]
   Day 3  deadline jeu. 19/11 00h30 : D.Robinson (B2B), Y.Lendeborg, T.Jerome, F.Wagner, D.Acuff Jr.  [~214 pts]
-  Day 4  deadline ven. 20/11 01h30 : Y.Lendeborg (B2B), K.Dunn, T.Jerome (B2B), D.Clingan, V.Wembanyama  [~219 pts]
+  Day 4  deadline ven. 20/11 01h30 : Y.Lendeborg (B2B), K.Dunn, T.Jerome (B2B), D.Clingan, V.Wembanyama  [~218 pts]
   Day 5  deadline sam. 21/11 00h30 : N.Traore, D.Robinson, A.Mitchell, F.Wagner, D.Acuff Jr.  [~175 pts]
   Day 6  deadline sam. 21/11 18h30 : K.Dunn, T.Jerome, D.Clingan, D.Acuff Jr. (B2B), V.Wembanyama  [~219 pts]
   Day 7  deadline dim. 22/11 21h00 : D.Robinson, Y.Lendeborg, A.Mitchell, F.Wagner  (1 place(s) vide(s))  [~156 pts]
@@ -63,4 +62,4 @@ Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) 
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 14/11/2026 à 22:08:50 (code de sortie : 0)
+Terminé le 14/11/2026 à 23:50:08 (code de sortie : 0)

@@ -395,8 +395,8 @@ Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : 623 sur 3036
   - A.Davis (WAS) (event 17) : projeté 49.8, statut actuel a, news : -
   - A.Davis (WAS) (event 18) : projeté 49.8, statut actuel a, news : -
   - D.Sabonis (SAC) (event 19) : projeté 49.1, statut actuel a, news : -
-  - J.Embiid (PHI) (event 6) : projeté 48.5, statut actuel a, news : -
-  - J.Embiid (PHI) (event 12) : projeté 48.5, statut actuel a, news : -
+  - J.Embiid (PHI) (event 6) : projeté 48.5, statut actuel i, news : Foot expected back 2026-11-16
+  - J.Embiid (PHI) (event 12) : projeté 48.5, statut actuel i, news : Foot expected back 2026-11-16
   - A.Edwards (MIN) (event 9) : projeté 48.4, statut actuel i, news : Knee expected back 2026-12-21
 Plus grosses surestimations :
   - S.Curry (GSW) (event 22) : projeté 44.0, réel 3.0 en 5 min
@@ -452,21 +452,21 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       K.Knueppel (CHA) : Hamstring expected back 2026-12-12
       D.Schröder (CHA) : Hamstring expected back 2026-11-25
       C.Wilson (CHI) : Hand expected back 2026-12-13
-  statut i | chances ce Gameday 25 | prochain 25 : 37 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 34 joueurs
       A.Newell (ATL) : Toe expected back 2026-11-20
       K.Gilbert (ATL) : Knee expected back 2026-11-20
-      P.George (BOS) : Illness expected back 2026-11-15
       N.Traore (BKN) : Calf expected back 2026-11-14
+      M.Brown Jr. (BKN) : Illness expected back 2026-11-14
+  statut d | chances ce Gameday 100 | prochain 75 : 16 joueurs
+      K.Flemings (ATL) : Back expected back 2026-11-15
+      N.Claxton (CHI) : Hamstring expected back 2026-11-14
+      J.Smith (CHI) : Finger expected back 2026-11-14
+      N.Powell (CHI) : Back expected back 2026-11-14
   statut u | chances ce Gameday 100 | prochain 100 : 13 joueurs
       I.McKneely (ATL) : -
       T.Enaruna (CLE) : -
       J.Poulakidas (DAL) : -
       A.Toohey (GSW) : -
-  statut d | chances ce Gameday 100 | prochain 75 : 12 joueurs
-      K.Flemings (ATL) : Back expected back 2026-11-15
-      N.Claxton (CHI) : Hamstring expected back 2026-11-14
-      J.Smith (CHI) : Finger expected back 2026-11-14
-      N.Powell (CHI) : Back expected back 2026-11-14
   statut u | chances ce Gameday 0 | prochain 0 : 12 joueurs
       H.Veesaar (ATL) : Knee expected back 2027-07-01
       R.Dillingham (CHI) : Wrist expected back 2027-01-01
@@ -477,17 +477,20 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       M.Johnson (DAL) : Lower Leg expected back 2026-11-14
       U.Onyenso (DET) : Foot expected back 2026-11-14
       C.Sexton (LAL) : Head expected back 2026-11-15
-  statut i | chances ce Gameday 75 | prochain 75 : 3 joueurs
+  statut i | chances ce Gameday 100 | prochain 25 : 3 joueurs
+      F.VanVleet (HOU) : Knee expected back 2026-11-16
+      T.Jerome (MEM) : Hip expected back 2026-11-16
+      J.Embiid (PHI) : Foot expected back 2026-11-16
+  statut i | chances ce Gameday 75 | prochain 75 : 2 joueurs
       K.Thompson (MIA) : Ankle expected back 2026-11-14
       P.Larsson (MIA) : Illness expected back 2026-11-14
-      Y.Missi (NOP) : Knee expected back 2026-11-14
   statut i | chances ce Gameday 75 | prochain 25 : 2 joueurs
       T.Murphy III (NOP) : Knee expected back 2026-11-16
       B.McGowens (NOP) : Elbow expected back 2026-11-16
   statut s | chances ce Gameday 25 | prochain 25 : 1 joueurs
       M.Smart (HOU) : Suspension expected back 2026-11-18
-  statut i | chances ce Gameday 100 | prochain 25 : 1 joueurs
-      T.Jerome (MEM) : Hip expected back 2026-11-16
+  statut i | chances ce Gameday None | prochain 25 : 1 joueurs
+      O.Dieng (MIL) : Finger expected back 2026-11-18
   statut i | chances ce Gameday 0 | prochain 25 : 1 joueurs
       N.Penda (ORL) : Hamstring expected back 2026-11-22
 
