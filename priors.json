@@ -62,7 +62,7 @@
 "presence": 0.95,
 "age": 23,
 "min_proj": 15.4,
-"rang_poste": 6,
+"rang_poste": 7,
 "poste_espn": "C",
 "devant": [
 "Onyeka Okongwu",
@@ -400,7 +400,7 @@
 "malus_b2b": 1.022,
 "age": 22,
 "b2b_n": 0,
-"rang_poste": 7,
+"rang_poste": 8,
 "poste_espn": "C",
 "devant": [
 "Onyeka Okongwu",
@@ -924,7 +924,7 @@
 "age": 20,
 "min_proj": 32.3,
 "rang_poste": 1,
-"poste_espn": "SG",
+"poste_espn": "PG",
 "devant": [],
 "presaison_matchs": 4,
 "presaison_min": 21.2
@@ -942,12 +942,12 @@
 "b2b_presence": 0.55,
 "presence": 0.84,
 "age": 21,
-"rang_poste": 6,
+"rang_poste": 7,
 "poste_espn": "SG",
 "devant": [
-"Egor Demin",
+"Michael Porter Jr.",
 "Keon Ellis",
-"Mikel Brown Jr."
+"Nolan Traore"
 ],
 "presaison_matchs": 4,
 "presaison_min": 10.8
@@ -968,9 +968,9 @@
 "rang_poste": 6,
 "poste_espn": "PG",
 "devant": [
-"Nolan Traore",
+"Egor Demin",
 "Mikel Brown Jr.",
-"Egor Demin"
+"Nolan Traore"
 ],
 "presaison_matchs": 3,
 "presaison_min": 11.7
@@ -991,9 +991,11 @@
 "presence": 0.84,
 "age": 20,
 "min_proj": 25.0,
-"rang_poste": 1,
-"poste_espn": "PG",
-"devant": [],
+"rang_poste": 2,
+"poste_espn": "SF",
+"devant": [
+"Danny Wolf"
+],
 "presaison_matchs": 4,
 "presaison_min": 17.0
 },
@@ -1013,12 +1015,9 @@
 "presence": 0.95,
 "age": 22,
 "min_proj": 24.1,
-"rang_poste": 3,
-"poste_espn": "C",
-"devant": [
-"Day'Ron Sharpe",
-"Moritz Wagner"
-],
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
 "presaison_matchs": 4,
 "presaison_min": 12.5
 },
@@ -1039,7 +1038,7 @@
 "age": 28,
 "min_proj": 33.5,
 "rang_poste": 1,
-"poste_espn": "SF",
+"poste_espn": "SG",
 "devant": [],
 "presaison_matchs": 3,
 "presaison_min": 22.7
@@ -1056,10 +1055,11 @@
 "b2b_presence": 1.0,
 "presence": 0.94,
 "age": 24,
-"rang_poste": 2,
-"poste_espn": "SF",
+"rang_poste": 3,
+"poste_espn": "PF",
 "devant": [
-"Michael Porter Jr."
+"Julius Randle",
+"Noah Clowney"
 ],
 "presaison_matchs": 4,
 "presaison_min": 15.0
@@ -1145,7 +1145,7 @@
 "rang_poste": 2,
 "poste_espn": "PG",
 "devant": [
-"Nolan Traore"
+"Egor Demin"
 ],
 "presaison_matchs": 1,
 "presaison_min": 18.0
@@ -1169,7 +1169,7 @@
 "rang_poste": 2,
 "poste_espn": "SG",
 "devant": [
-"Egor Demin"
+"Michael Porter Jr."
 ],
 "presaison_matchs": 4,
 "presaison_min": 19.5
@@ -3617,7 +3617,7 @@
 "devant": [
 "Brandin Podziemski",
 "Brandon Williams",
-"De'Anthony Melton"
+"LJ Cryer"
 ],
 "presaison_matchs": 5,
 "presaison_min": 18.0
@@ -3727,9 +3727,11 @@
 "presence": 0.85,
 "age": 24,
 "min_proj": 23.9,
-"rang_poste": 1,
-"poste_espn": "PF",
-"devant": [],
+"rang_poste": 2,
+"poste_espn": "SF",
+"devant": [
+"Will Richard"
+],
 "presaison_matchs": 5,
 "presaison_min": 21.4
 },
@@ -3752,9 +3754,9 @@
 "rang_poste": 7,
 "poste_espn": "SF",
 "devant": [
-"Yaxel Lendeborg",
 "Will Richard",
-"Gary Payton II"
+"Gui Santos",
+"Yaxel Lendeborg"
 ]
 },
 "184": {
@@ -3770,11 +3772,9 @@
 "b2b_presence": 1.0,
 "presence": 0.9,
 "age": 23,
-"rang_poste": 2,
+"rang_poste": 1,
 "poste_espn": "SF",
-"devant": [
-"Yaxel Lendeborg"
-],
+"devant": [],
 "presaison_matchs": 6,
 "presaison_min": 18.3
 },
@@ -3835,7 +3835,7 @@
 "b2b_n": 0,
 "min_proj": 24.6,
 "rang_poste": 1,
-"poste_espn": "SF",
+"poste_espn": "PF",
 "devant": [],
 "presaison_matchs": 5,
 "presaison_min": 23.2
@@ -3881,7 +3881,7 @@
 "rang_poste": 2,
 "poste_espn": "PF",
 "devant": [
-"Gui Santos"
+"Yaxel Lendeborg"
 ],
 "presaison_matchs": 5,
 "presaison_min": 17.0
@@ -11131,9 +11131,11 @@
 "presence": 1.0,
 "age": 25,
 "min_proj": 18.3,
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "SF",
-"devant": [],
+"devant": [
+"Josh Okogie"
+],
 "presaison_matchs": 3,
 "presaison_min": 10.0
 },
@@ -11162,11 +11164,9 @@
 "b2b_presence": 1.0,
 "presence": 0.96,
 "age": 28,
-"rang_poste": 2,
-"poste_espn": "PF",
-"devant": [
-"Ace Bailey"
-],
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": [],
 "presaison_matchs": 4,
 "presaison_min": 16.8
 },
@@ -11221,8 +11221,8 @@
 "poste_espn": "PF",
 "devant": [
 "Ace Bailey",
-"Josh Okogie",
-"Brice Sensabaugh"
+"Brice Sensabaugh",
+"Josh Okogie"
 ],
 "presaison_matchs": 4,
 "presaison_min": 7.5
@@ -11339,9 +11339,9 @@
 "rang_poste": 6,
 "poste_espn": "SF",
 "devant": [
+"Josh Okogie",
 "Josh Green",
-"Brice Sensabaugh",
-"Ace Bailey"
+"Brice Sensabaugh"
 ],
 "presaison_matchs": 3,
 "presaison_min": 20.0
@@ -11385,9 +11385,9 @@
 "age": 22,
 "min_proj": 21.6,
 "rang_poste": 2,
-"poste_espn": "SF",
+"poste_espn": "PF",
 "devant": [
-"Josh Green"
+"Ace Bailey"
 ],
 "presaison_matchs": 2,
 "presaison_min": 16.0
@@ -11888,6 +11888,6 @@
 "_source": "saison régulière 2025-26 (ESPN), mis à jour le 20/10/2026"
 },
 "roles": {
-"_source": "ESPN (hiérarchie + présaison), mis à jour le 15/11/2026"
+"_source": "ESPN (hiérarchie + présaison), mis à jour le 16/11/2026"
 }
 }
