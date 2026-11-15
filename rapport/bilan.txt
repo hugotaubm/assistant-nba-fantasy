@@ -444,9 +444,9 @@ CALIBRATION DU MODÈLE (points réels / points attendus, par rang)
   rang 3+  : 1851 joueurs-matchs | réel    9863 / attendu    8853 = 1.11 → facteur appliqué 1.109
   rang ?   :  381 joueurs-matchs | réel    1059 / attendu    1960 = 0.54 → facteur appliqué 0.750
 Erreur restante du modèle par tranche de prix (après la calibration par rang) :
-  10-15 M$  :  950 joueurs-matchs | réel   29349 / attendu   28924 = 1.01 → facteur appliqué 1.014
-  7-10 M$   : 1273 joueurs-matchs | réel   25687 / attendu   24899 = 1.03 → facteur appliqué 1.031
-  < 7 M$    : 2648 joueurs-matchs | réel   17585 / attendu   17706 = 0.99 → facteur appliqué 0.993
+  10-15 M$  :  950 joueurs-matchs | réel   29349 / attendu   28930 = 1.01 → facteur appliqué 1.014
+  7-10 M$   : 1273 joueurs-matchs | réel   25687 / attendu   24932 = 1.03 → facteur appliqué 1.030
+  < 7 M$    : 2648 joueurs-matchs | réel   17585 / attendu   17804 = 0.99 → facteur appliqué 0.988
   ≥ 15 M$   :  310 joueurs-matchs | réel   14047 / attendu   13527 = 1.04 → facteur appliqué 1.037
 
 Vérification du barème (points du jeu vs formule des projections) :
@@ -480,7 +480,7 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
   statut u | chances ce Gameday 0 | prochain 0 : 12 joueurs
       H.Veesaar (ATL) : Knee expected back 2027-07-01
       R.Dillingham (CHI) : Wrist expected back 2027-01-01
-      Y.Kawamura (LAC) : Foot expected back 2026-11-14
+      Y.Kawamura (LAC) : Foot expected back 2026-11-20
       E.Freeman (MIN) : Undisclosed expected back 2027-01-01
   statut d | chances ce Gameday 75 | prochain 75 : 10 joueurs
       U.Onyenso (DET) : Foot expected back 2026-11-14
