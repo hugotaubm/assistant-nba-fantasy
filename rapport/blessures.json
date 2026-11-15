@@ -1,6 +1,15 @@
 {
- "lu": "2026-11-15T16:44:18.029432+00:00",
+ "lu": "2026-11-15T21:22:16.573727+00:00",
  "joueurs": {
+  "jock landale": {
+   "nom": "Jock Landale",
+   "statut": "Day-To-Day",
+   "blessure": "Right Torso Hip",
+   "retour_espn": "2026-11-15",
+   "retour_commentaire": null,
+   "commentaire": "Landale (hip) is listed as questionable for Sunday's game against Milwakee.",
+   "date": "2026-11-15"
+  },
   "kingston flemings": {
    "nom": "Kingston Flemings",
    "statut": "Out",
@@ -172,13 +181,22 @@
    "commentaire": "Tomlin is set to miss several weeks with a lower back stress reaction, Chris Fedor of The Cleveland Plain Dealer reports.",
    "date": "2026-10-20"
   },
-  "daniel gafford": {
-   "nom": "Daniel Gafford",
+  "kyrie irving": {
+   "nom": "Kyrie Irving",
+   "statut": "Out",
+   "blessure": "Left Leg Knee",
+   "retour_espn": "2026-11-18",
+   "retour_commentaire": null,
+   "commentaire": "Irving (knee) is questionable to play in Sunday's game against the Celtics.",
+   "date": "2026-11-15"
+  },
+  "santi aldama": {
+   "nom": "Santi Aldama",
    "statut": "Day-To-Day",
-   "blessure": "Head Face",
+   "blessure": "Left Leg Ankle",
    "retour_espn": "2026-11-15",
    "retour_commentaire": null,
-   "commentaire": "Gafford (face) won't return to Saturday's game against the Cavaliers, Grant Afseth of DallasHoopsJournal.com reports.",
+   "commentaire": "Aldama (ankle) is listed as questionable for Sunday's game in Boston.",
    "date": "2026-11-15"
   },
   "max christie": {
@@ -187,7 +205,16 @@
    "blessure": "Left Leg Ankle",
    "retour_espn": "2026-11-15",
    "retour_commentaire": null,
-   "commentaire": "Christie (ankle) has been ruled out for Saturday's game against Cleveland.",
+   "commentaire": "Christie (ankle) is doubtful to play Sunday's game against the Celtics.",
+   "date": "2026-11-15"
+  },
+  "daniel gafford": {
+   "nom": "Daniel Gafford",
+   "statut": "Day-To-Day",
+   "blessure": "Right Arm Shoulder",
+   "retour_espn": "2026-11-15",
+   "retour_commentaire": null,
+   "commentaire": "Gafford (shoulder) is probable to play in Sunday's game against the Celtics.",
    "date": "2026-11-15"
   },
   "dereck lively": {
@@ -316,15 +343,6 @@
    "commentaire": "Capela (ankle) has been ruled out for Sunday's game at Washington.",
    "date": "2026-11-14"
   },
-  "steven adams": {
-   "nom": "Steven Adams",
-   "statut": "Out",
-   "blessure": "Right Leg Calf",
-   "retour_espn": "2026-11-15",
-   "retour_commentaire": null,
-   "commentaire": "Adams (calf) has been upgraded to probable for Sunday's game against the Wizards.",
-   "date": "2026-11-14"
-  },
   "fred vanvleet": {
    "nom": "Fred VanVleet",
    "statut": "Out",
@@ -347,28 +365,10 @@
    "nom": "Andrew Nembhard",
    "statut": "Day-To-Day",
    "blessure": "Left Torso Hip",
-   "retour_espn": "2026-11-15",
+   "retour_espn": "2026-11-18",
    "retour_commentaire": null,
-   "commentaire": "Nembhard is questionable for Sunday's game against the 76ers due to left hip soreness.",
+   "commentaire": "Nembhard (hip) has been ruled out for Sunday's game against the 76ers, Tony East of Forbes.com reports.",
    "date": "2026-11-15"
-  },
-  "t j mcconnell": {
-   "nom": "T.J. McConnell",
-   "statut": "Day-To-Day",
-   "blessure": "Right Leg Hamstring",
-   "retour_espn": "2026-11-15",
-   "retour_commentaire": null,
-   "commentaire": "McConnell (hamstring) is listed as probable for Sunday's game against the 76ers.",
-   "date": "2026-11-14"
-  },
-  "aaron nesmith": {
-   "nom": "Aaron Nesmith",
-   "statut": "Day-To-Day",
-   "blessure": "Left Arm Hand",
-   "retour_espn": "2026-11-15",
-   "retour_commentaire": null,
-   "commentaire": "Nesmith (hand) is listed as questionable for Sunday's game against Philadelphia.",
-   "date": "2026-11-14"
   },
   "tyrese haliburton": {
    "nom": "Tyrese Haliburton",
@@ -432,24 +432,6 @@
    "retour_commentaire": "2027-02-22",
    "commentaire": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic.",
    "date": "2026-08-26"
-  },
-  "adou thiero": {
-   "nom": "Adou Thiero",
-   "statut": "Day-To-Day",
-   "blessure": "Left Leg Ankle",
-   "retour_espn": "2026-11-15",
-   "retour_commentaire": null,
-   "commentaire": "Thiero (ankle) is questionable for Sunday's game against the Suns.",
-   "date": "2026-11-15"
-  },
-  "collin sexton": {
-   "nom": "Collin Sexton",
-   "statut": "Day-To-Day",
-   "blessure": "Head Head",
-   "retour_espn": "2026-11-15",
-   "retour_commentaire": null,
-   "commentaire": "Sexton (head) is questionable for Sunday's game against the Suns, Daniel Starkand of LakersNation.com reports.",
-   "date": "2026-11-15"
   },
   "austin reaves": {
    "nom": "Austin Reaves",
@@ -538,8 +520,17 @@
    "blessure": "Left Arm Finger",
    "retour_espn": "2026-11-18",
    "retour_commentaire": null,
-   "commentaire": "Dieng (finger) has been ruled out for Sunday's game against the Hawks.",
-   "date": "2026-11-14"
+   "commentaire": "Dieng (finger) is listed as out for Sunday's game versus the Hawks.",
+   "date": "2026-11-15"
+  },
+  "ryan rollins": {
+   "nom": "Ryan Rollins",
+   "statut": "Day-To-Day",
+   "blessure": "Other Illness",
+   "retour_espn": "2026-11-15",
+   "retour_commentaire": null,
+   "commentaire": "Rollins (illness) is questionable to play in Sunday's game against the Hawks.",
+   "date": "2026-11-15"
   },
   "jaylen clark": {
    "nom": "Jaylen Clark",
@@ -667,6 +658,15 @@
    "commentaire": "Williams (leg) underwent successful surgery Wednesday to \"address a fractured left fibula and reconstruction of ankle ligaments following a fracture and dislocation.\" He will be re-evaluated before the end of the regular season, Tim MacMahon of ESPN.com reports.",
    "date": "2026-10-28"
   },
+  "jonathan isaac": {
+   "nom": "Jonathan Isaac",
+   "statut": "Out",
+   "blessure": "Left Leg Knee",
+   "retour_espn": "2026-11-18",
+   "retour_commentaire": null,
+   "commentaire": "Isaac (knee) has been ruled out for Monday's game against the Celtics.",
+   "date": "2026-11-15"
+  },
   "noah penda": {
    "nom": "Noah Penda",
    "statut": "Out",
@@ -675,15 +675,6 @@
    "retour_commentaire": null,
    "commentaire": "Penda (hamstring) is making progress but remains without a timetable to return to game action, Jason Beede of the Orlando Sentinel reports.",
    "date": "2026-11-14"
-  },
-  "jonathan isaac": {
-   "nom": "Jonathan Isaac",
-   "statut": "Out",
-   "blessure": "Left Leg Knee",
-   "retour_espn": "2026-11-16",
-   "retour_commentaire": null,
-   "commentaire": "Isaac (knee) is out for Tuesday's game against Sacramento.",
-   "date": "2026-11-09"
   },
   "paolo banchero": {
    "nom": "Paolo Banchero",
@@ -705,12 +696,12 @@
   },
   "joel embiid": {
    "nom": "Joel Embiid",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Right Leg Foot",
    "retour_espn": "2026-11-16",
    "retour_commentaire": null,
    "commentaire": "Embiid (right foot injury management) has been ruled out for Sunday's game against the Pacers.",
-   "date": "2026-11-14"
+   "date": "2026-11-15"
   },
   "dominick barlow": {
    "nom": "Dominick Barlow",
@@ -802,15 +793,6 @@
    "commentaire": "Raynaud (knee) has been ruled out for Sunday's game against the Thunder.",
    "date": "2026-11-15"
   },
-  "keegan murray": {
-   "nom": "Keegan Murray",
-   "statut": "Day-To-Day",
-   "blessure": "Other Illness",
-   "retour_espn": "2026-11-15",
-   "retour_commentaire": null,
-   "commentaire": "Murray (illness) is questionable for Sunday's game against the Thunder.",
-   "date": "2026-11-15"
-  },
   "precious achiuwa": {
    "nom": "Precious Achiuwa",
    "statut": "Day-To-Day",
@@ -828,6 +810,15 @@
    "retour_commentaire": null,
    "commentaire": "Simmons underwent successful surgery Tuesday to repair a torn right Achilles tendon, James Ham of ESPN 1320 Sacramento reports.",
    "date": "2026-10-21"
+  },
+  "de aaron fox": {
+   "nom": "De'Aaron Fox",
+   "statut": "Out",
+   "blessure": "Left Torso Hip",
+   "retour_espn": "2026-11-17",
+   "retour_commentaire": null,
+   "commentaire": "Fox (hip) has been ruled out for Sunday's game against the Jazz.",
+   "date": "2026-11-15"
   },
   "tobias harris": {
    "nom": "Tobias Harris",
@@ -928,15 +919,6 @@
    "commentaire": "Jackson has been diagnosed with a torn MCL in his right knee and will be sidelined for 6-to-8 weeks, per Shams Charania of ESPN.",
    "date": "2026-10-27"
   },
-  "alex sarr": {
-   "nom": "Alex Sarr",
-   "statut": "Day-To-Day",
-   "blessure": "Other Illness",
-   "retour_espn": "2026-11-15",
-   "retour_commentaire": null,
-   "commentaire": "Sarr (illness) is listed as questionable for Sunday's game against Houston.",
-   "date": "2026-11-14"
-  },
   "tre johnson": {
    "nom": "Tre Johnson",
    "statut": "Day-To-Day",
@@ -944,15 +926,6 @@
    "retour_espn": "2026-11-15",
    "retour_commentaire": null,
    "commentaire": "Johnson is listed as questionable for Sunday's game against the Rockets due to lower-back soreness.",
-   "date": "2026-11-14"
-  },
-  "bub carrington": {
-   "nom": "Bub Carrington",
-   "statut": "Day-To-Day",
-   "blessure": "Torso Chest",
-   "retour_espn": "2026-11-15",
-   "retour_commentaire": null,
-   "commentaire": "Carrington (chest) is listed as questionable for Sunday's game against Houston.",
    "date": "2026-11-14"
   },
   "tristan vukcevic": {

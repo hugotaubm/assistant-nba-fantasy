@@ -457,16 +457,16 @@ Vérification du barème (points du jeu vs formule des projections) :
 ======================================================================
 STATUTS DU JEU (joueurs non disponibles à 100 %)
 ======================================================================
+  statut i | chances ce Gameday 25 | prochain 25 : 51 joueurs
+      A.Newell (ATL) : Toe expected back 2026-11-20
+      K.Flemings (ATL) : Back expected back 2026-11-18
+      K.Gilbert (ATL) : Knee expected back 2026-11-20
+      M.Porter Jr. (BKN) : Personal expected back 2026-11-16
   statut u | chances ce Gameday None | prochain None : 48 joueurs
       T.DeVries (BOS) : -
       M.Uzan (BOS) : -
       N.Pringle (BKN) : -
       P.Connaughton (CHA) : -
-  statut i | chances ce Gameday 25 | prochain 25 : 44 joueurs
-      A.Newell (ATL) : Toe expected back 2026-11-20
-      K.Flemings (ATL) : Back expected back 2026-11-18
-      K.Gilbert (ATL) : Knee expected back 2026-11-20
-      T.Awaka (CHI) : Back expected back 2026-11-16
   statut i | chances ce Gameday 0 | prochain 0 : 39 joueurs
       M.Gueye (ATL) : Foot expected back 2026-12-12
       K.Knueppel (CHA) : Hamstring expected back 2026-12-12
@@ -482,39 +482,29 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       R.Dillingham (CHI) : Wrist expected back 2027-01-01
       Y.Kawamura (LAC) : Foot expected back 2026-11-20
       E.Freeman (MIN) : Undisclosed expected back 2027-01-01
-  statut d | chances ce Gameday 75 | prochain 75 : 10 joueurs
+  statut d | chances ce Gameday 75 | prochain 75 : 8 joueurs
+      D.Gafford (DAL) : Shoulder expected back 2026-11-15
+      D.Robinson (DET) : Thigh expected back 2026-11-17
       U.Onyenso (DET) : Foot expected back 2026-11-14
-      T.McConnell (IND) : Hamstring expected back 2026-11-15
-      A.Nesmith (IND) : Hand expected back 2026-11-15
-      C.Sexton (LAL) : Head expected back 2026-11-15
-  statut i | chances ce Gameday 75 | prochain 25 : 6 joueurs
-      M.Porter Jr. (BKN) : Personal expected back 2026-11-16
-      N.Claxton (CHI) : Hamstring expected back 2026-11-16
-      J.Smith (CHI) : Finger expected back 2026-11-16
-      A.Reaves (LAL) : Heel expected back 2026-11-17
-  statut d | chances ce Gameday 100 | prochain 75 : 2 joueurs
-      A.Nembhard (IND) : Hip expected back 2026-11-15
-      A.Thiero (LAL) : Ankle expected back 2026-11-15
-  statut i | chances ce Gameday 100 | prochain 75 : 1 joueurs
-      D.Gafford (DAL) : Face expected back 2026-11-15
+      R.Rollins (MIL) : Illness expected back 2026-11-15
+  statut d | chances ce Gameday 100 | prochain 75 : 3 joueurs
+      J.Landale (ATL) : Hip expected back 2026-11-15
+      K.Irving (DAL) : Knee expected back 2026-11-15
+      S.Aldama (DAL) : Ankle expected back 2026-11-15
   statut i | chances ce Gameday 75 | prochain 75 : 1 joueurs
       M.Christie (DAL) : Ankle expected back 2026-11-15
-  statut d | chances ce Gameday None | prochain 75 : 1 joueurs
-      D.Robinson (DET) : Thigh expected back 2026-11-17
   statut s | chances ce Gameday 25 | prochain 25 : 1 joueurs
       M.Smart (HOU) : Suspension expected back 2026-11-18
   statut i | chances ce Gameday 100 | prochain 25 : 1 joueurs
-      G.Jackson (MEM) : Foot expected back 2026-11-16
-  statut i | chances ce Gameday None | prochain 25 : 1 joueurs
-      J.Clark (MIN) : Hamstring expected back 2026-11-16
+      D.Fox (SAS) : Hip expected back 2026-11-17
 
 ======================================================================
 LIGUE FIRST TEAM
 ======================================================================
-  Rang : 78 / 643 (-8 depuis la dernière journée) | total 4096 pts | dernière journée 71 pts
-  Écart avec le 1er : 872 pts
-  Écart avec le rang juste devant (77e) : 10 pts
-  Avance sur le rang juste derrière (79e) : 2 pts
-  Joueurs les plus présents chez les 77 équipes devant toi (Gameday 25) : D.Acuff Jr. (SAC) 72, Y.Lendeborg (GSW) 66, C.Flagg (DAL) 55, V.Wembanyama (SAS) 47, D.Mitchell (MIA) 39, K.George (WAS) 26, T.Jerome (MEM) 22, A.Mara (OKC) 19, T.Shannon Jr. (MIN) 18, L.Doncic (LAL) 18, G.Antetokounmpo (MIA) 17, F.Wagner (ORL) 17, T.Brazile (DEN) 16, D.Robinson (DET) 16, J.Hayes (UTA) 15
+  Rang : 87 / 643 (-9 depuis la dernière journée) | total 4096 pts | dernière journée 0 pts
+  Écart avec le 1er : 912 pts
+  Écart avec le rang juste devant (86e) : 5 pts
+  Avance sur le rang juste derrière (88e) : 6 pts
+  Joueurs les plus présents chez les 86 équipes devant toi (Gameday 26) : D.Acuff Jr. (SAC) 83, Y.Lendeborg (GSW) 78, C.Flagg (DAL) 55, V.Wembanyama (SAS) 55, D.Mitchell (MIA) 40, K.George (WAS) 31, T.Jerome (MEM) 28, A.Mara (OKC) 22, T.Shannon Jr. (MIN) 21, L.Doncic (LAL) 21, F.Wagner (ORL) 20, J.Hayes (UTA) 18, T.Brazile (DEN) 17, A.Mitchell (OKC) 17, D.Robinson (DET) 17
   All-Star : déjà joué par 38 des 77 équipes devant toi (49 %) ; par Gameday : event 2 : 2, event 3 : 7, event 5 : 1, event 8 : 2, event 9 : 2, event 10 : 2, event 12 : 1, event 13 : 4, event 14 : 4, event 15 : 1, event 16 : 2, event 18 : 1, event 21 : 1, event 23 : 4, event 25 : 4
   Wildcard : déjà joué par 63 des 77 équipes devant toi (82 %) ; par Gameday : event 2 : 3, event 4 : 2, event 6 : 4, event 7 : 20, event 8 : 2, event 9 : 2, event 10 : 2, event 11 : 4, event 12 : 1, event 13 : 3, event 14 : 2, event 16 : 2, event 17 : 1, event 19 : 1, event 20 : 2, event 21 : 1, event 22 : 3, event 23 : 6, event 25 : 2
