@@ -500,7 +500,7 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
   statut i | chances ce Gameday 75 | prochain 75 : 1 joueurs
       M.Christie (DAL) : Ankle expected back 2026-11-15
   statut d | chances ce Gameday None | prochain 75 : 1 joueurs
-      D.Robinson (DET) : Thigh expected back 2026-11-14
+      D.Robinson (DET) : Thigh expected back 2026-11-17
   statut s | chances ce Gameday 25 | prochain 25 : 1 joueurs
       M.Smart (HOU) : Suspension expected back 2026-11-18
   statut i | chances ce Gameday 100 | prochain 25 : 1 joueurs
