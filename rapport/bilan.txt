@@ -485,7 +485,7 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       K.Knueppel (CHA) : Hamstring expected back 2026-12-12
       D.Schröder (CHA) : Hamstring expected back 2026-11-25
       C.Wilson (CHI) : Hand expected back 2026-12-13
-  statut i | chances ce Gameday 25 | prochain 25 : 38 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 37 joueurs
       A.Newell (ATL) : Toe expected back 2026-11-20
       K.Flemings (ATL) : Back expected back 2026-11-18
       K.Gilbert (ATL) : Knee expected back 2026-11-20
@@ -500,24 +500,25 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       R.Dillingham (CHI) : Wrist expected back 2027-01-01
       Y.Kawamura (LAC) : Foot expected back 2026-11-20
       E.Freeman (MIN) : Undisclosed expected back 2027-01-01
-  statut i | chances ce Gameday 100 | prochain 25 : 6 joueurs
+  statut i | chances ce Gameday 100 | prochain 25 : 8 joueurs
       J.Landale (ATL) : Hip expected back 2026-11-18
       K.Irving (DAL) : Knee expected back 2026-11-18
       S.Aldama (DAL) : Ankle expected back 2026-11-18
-      Z.LaVine (SAC) : Illness expected back 2026-11-18
-  statut d | chances ce Gameday 100 | prochain 75 : 5 joueurs
+      I.Stewart (MEM) : Illness expected back 2026-11-18
+  statut d | chances ce Gameday 100 | prochain 75 : 6 joueurs
+      N.Queta (BOS) : Rest expected back 2026-11-16
       J.Tyson (CLE) : Ankle expected back 2026-11-16
       G.Santos (GSW) : Ankle expected back 2026-11-16
       J.Phillips (HOU) : Wrist expected back 2026-11-16
-      I.Stewart (MEM) : Illness expected back 2026-11-16
+  statut i | chances ce Gameday 25 | prochain 0 : 4 joueurs
+      G.Jackson (MEM) : Foot expected back 2027-01-18
+      O.Dieng (MIL) : Finger expected back 2026-12-14
+      J.Clark (MIN) : Hamstring expected back 2026-11-29
+      T.Harris (SAS) : Calf expected back 2026-12-03
   statut d | chances ce Gameday 75 | prochain 75 : 3 joueurs
       D.Robinson (DET) : Thigh expected back 2026-11-17
       K.McCullar Jr. (TOR) : Illness expected back 2026-11-16
       T.Alexander (UTA) : Ankle expected back 2026-11-16
-  statut i | chances ce Gameday 25 | prochain 0 : 3 joueurs
-      G.Jackson (MEM) : Foot expected back 2027-01-18
-      O.Dieng (MIL) : Finger expected back 2026-12-14
-      J.Clark (MIN) : Hamstring expected back 2026-11-29
   statut i | chances ce Gameday 75 | prochain 25 : 2 joueurs
       M.Christie (DAL) : Ankle expected back 2026-11-18
       R.Rollins (MIL) : Illness expected back 2026-11-18
@@ -527,6 +528,8 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       P.Watson (CLE) : Abdomen expected back 2026-11-16
   statut s | chances ce Gameday 25 | prochain 25 : 1 joueurs
       M.Smart (HOU) : Suspension expected back 2026-11-18
+  statut d | chances ce Gameday None | prochain 75 : 1 joueurs
+      R.Dunn (PHX) : Thumb expected back 2026-11-16
   statut i | chances ce Gameday 25 | prochain 75 : 1 joueurs
       C.Youngblood (POR) : Foot expected back 2026-11-17
   statut i | chances ce Gameday 75 | prochain 75 : 1 joueurs
