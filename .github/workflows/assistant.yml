@@ -39,6 +39,7 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - run: python planificateur.py --forcer
+      - run: python agir.py auto_titulaires >> rapport/auto_titulaires.log 2>&1 || true
       - run: python publier.py
       - name: Enregistrer
         run: |
@@ -80,6 +81,8 @@ jobs:
           while [ "$(date +%s)" -lt "$fin" ]; do
             git pull -q --rebase -X theirs || true
             python planificateur.py $forcer || true
+            # cinq de départ du dernier calcul mis en place avant la deadline (jamais de transfert ni de chip)
+            python agir.py auto_titulaires >> rapport/auto_titulaires.log 2>&1 || true
             # une fois par jour : rôle de chaque joueur (hiérarchie ESPN + présaison)
             if [ "$(cat rapport/roles.date 2>/dev/null)" != "$(date +%F)" ]; then
               python maj_roles.py && date +%F > rapport/roles.date || true

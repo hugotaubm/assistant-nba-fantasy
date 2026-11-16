@@ -269,6 +269,49 @@ def capitaine(q):
           else "❌ Le capitaine ne semble pas activé : vérifie dans l'appli")
 
 
+def completer_cinq(tit, effectif, el):
+    """Moins de 5 joueurs qui jouent : complète avec des remplaçants (2 à 3 par poste) pour un cinq valide."""
+    tit = list(tit)
+    for q in effectif:
+        if len(tit) >= 5:
+            break
+        postes = [el[x]["element_type"] for x in tit]
+        if q not in tit and postes.count(el[q]["element_type"]) < 3 and (5 - len(tit) > sum(max(0, 2 - postes.count(t)) for t in (1, 2)) - (1 if postes.count(el[q]["element_type"]) < 2 else 0)):
+            tit.append(q)
+    return tit
+
+
+def auto_titulaires(fenetre_min=150):
+    """Avant chaque deadline (veilleur) : met en place le cinq du dernier calcul. Uniquement les titulaires :
+    jamais de transfert ni de chip. Ne touche à rien si le capitaine activé n'est pas dans ce cinq."""
+    import datetime as dt
+    plan = json.loads((ICI / "rapport" / "dernier_plan.json").read_text(encoding="utf-8"))
+    maintenant = dt.datetime.now(dt.timezone.utc)
+    deadline = dt.datetime.fromisoformat(plan["deadline"].replace("Z", "+00:00"))
+    calcul = dt.datetime.fromisoformat(plan["calcul"])
+    reste = (deadline - maintenant).total_seconds() / 60
+    if not (0 < reste <= fenetre_min) or (maintenant - calcul).total_seconds() > 3 * 3600 or not plan.get("titulaires"):
+        return
+    eid, mt = equipe_actuelle()
+    boot = json.loads(urllib.request.urlopen(urllib.request.Request(API + "bootstrap-static/", headers=entetes()), timeout=60).read())
+    el = {e["id"]: e for e in boot["elements"]}
+    picks = sorted(mt["picks"], key=lambda p: p["position"])
+    effectif = [p["element"] for p in picks]
+    cible = completer_cinq([q for q in plan["titulaires"] if q in effectif], effectif, el)
+    actuels = effectif[:5]
+    heure = maintenant.astimezone(dt.timezone(dt.timedelta(hours=1))).strftime("%d/%m %H:%M")
+    if len(cible) != 5 or set(cible) == set(actuels):
+        print(f"{heure} {plan.get('prochaine_nom')} : cinq déjà en place" if len(cible) == 5 else f"{heure} : cinq incomplet, rien fait")
+        return
+    ch = next((c for c in mt.get("chips", []) if c.get("name") == "phcapt"), {})
+    cap = next((p["element"] for p in picks if p.get("is_captain")), None)
+    if (ch.get("is_pending") or ch.get("status_for_entry") == "active") and cap not in cible:
+        print(f"{heure} : capitaine activé hors du cinq conseillé, rien changé (à régler à la main)")
+        return
+    print(f"{heure} {plan.get('prochaine_nom')} : nouveau cinq", ", ".join(el[q]["web_name"] for q in cible))
+    titulaires(cible)
+
+
 def transferts_plan(code_execution=None, paires_explicites=None):
     """Transferts gratuits conseillés avant la prochaine deadline (rapport/dernier_plan.json), sans chip.
     Jamais de transfert payant : arrêt si les transferts gratuits restants ne suffisent pas."""
@@ -327,14 +370,7 @@ def transferts_plan(code_execution=None, paires_explicites=None):
     print("Équipe sur le site = équipe conseillée :", sorted(nouveaux) == sorted(cible))
     if not plan.get("titulaires"):
         return   # transferts choisis par toi : titulaires à régler à part (mode titulaires)
-    tit = [q for q in plan.get("titulaires", []) if q in nouveaux]
-    # moins de 5 joueurs qui jouent : on complète avec des remplaçants (2 à 3 par poste) pour un cinq valide
-    for q in nouveaux:
-        if len(tit) >= 5:
-            break
-        postes = [el[x]["element_type"] for x in tit]
-        if q not in tit and postes.count(el[q]["element_type"]) < 3 and (5 - len(tit) > sum(max(0, 2 - postes.count(t)) for t in (1, 2)) - (1 if postes.count(el[q]["element_type"]) < 2 else 0)):
-            tit.append(q)
+    tit = completer_cinq([q for q in plan.get("titulaires", []) if q in nouveaux], nouveaux, el)
     if len(tit) == 5:
         titulaires(tit)
 
@@ -347,6 +383,8 @@ if __name__ == "__main__":
         test_sauvegarde()
     elif mode == "titulaires":
         titulaires([int(x) for x in sys.argv[2].split(",")])
+    elif mode == "auto_titulaires":
+        auto_titulaires(int(sys.argv[2]) if len(sys.argv) > 2 and sys.argv[2] else 150)
     elif mode == "capitaine":
         capitaine(int(sys.argv[2]))
     elif mode == "transferts":
