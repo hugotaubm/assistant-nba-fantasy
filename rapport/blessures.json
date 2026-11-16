@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-16T21:09:03.880076+00:00",
+ "lu": "2026-11-16T22:41:02.397122+00:00",
  "joueurs": {
   "jock landale": {
    "nom": "Jock Landale",
@@ -48,11 +48,11 @@
   },
   "neemias queta": {
    "nom": "Neemias Queta",
-   "statut": "Day-To-Day",
+   "statut": "Out",
    "blessure": "Other Rest",
-   "retour_espn": "2026-11-16",
+   "retour_espn": "2026-11-18",
    "retour_commentaire": null,
-   "commentaire": "Queta (rest) is questionable for Monday's game against the Magic.",
+   "commentaire": "Queta (rest) won't play in Monday's game against the Magic, Taylor Snow of the Celtics' official site reports.",
    "date": "2026-11-16"
   },
   "kon knueppel": {
@@ -82,15 +82,6 @@
    "commentaire": "Awaka (back) has been ruled out for Monday's game against the Cavaliers.",
    "date": "2026-11-15"
   },
-  "jalen smith": {
-   "nom": "Jalen Smith",
-   "statut": "Day-To-Day",
-   "blessure": "Left Arm Finger",
-   "retour_espn": "2026-11-16",
-   "retour_commentaire": null,
-   "commentaire": "Smith (finger) is listed as questionable for Monday's game against Cleveland.",
-   "date": "2026-11-15"
-  },
   "caleb wilson": {
    "nom": "Caleb Wilson",
    "statut": "Out",
@@ -100,11 +91,20 @@
    "commentaire": "Wilson (hand) is expected to miss four to six weeks, Shams Charania of ESPN reports.",
    "date": "2026-11-12"
   },
+  "evan mobley": {
+   "nom": "Evan Mobley",
+   "statut": "Out",
+   "blessure": "Right Leg Toe",
+   "retour_espn": "2026-11-29",
+   "retour_commentaire": "2026-11-26",
+   "commentaire": "Mobley will receive treatment and participate in rehab after the team confirmed a diagnosis of a right great toe sprain, and he'll be re-evaluated in the next 7-to-10 days.",
+   "date": "2026-11-16"
+  },
   "jaylon tyson": {
    "nom": "Jaylon Tyson",
    "statut": "Day-To-Day",
    "blessure": "Right Leg Ankle",
-   "retour_espn": "2026-11-16",
+   "retour_espn": "2026-11-18",
    "retour_commentaire": null,
    "commentaire": "Tyson (ankle) has been downgraded to doubtful for Monday's game against the Bulls.",
    "date": "2026-11-16"
@@ -112,19 +112,10 @@
   "peyton watson": {
    "nom": "Peyton Watson",
    "statut": "Day-To-Day",
-   "blessure": "Right Torso Abdomen",
-   "retour_espn": "2026-11-16",
+   "blessure": "",
+   "retour_espn": null,
    "retour_commentaire": null,
    "commentaire": "Watson (abdominal soreness) is questionable to play in Monday's game against the Bulls.",
-   "date": "2026-11-15"
-  },
-  "evan mobley": {
-   "nom": "Evan Mobley",
-   "statut": "Out",
-   "blessure": "Left Leg Toe",
-   "retour_espn": "2026-11-18",
-   "retour_commentaire": null,
-   "commentaire": "Mobley (toe) has been ruled out for Monday's game against Chicago.",
    "date": "2026-11-15"
   },
   "sam merrill": {
@@ -210,12 +201,12 @@
   },
   "duncan robinson": {
    "nom": "Duncan Robinson",
-   "statut": "Day-To-Day",
-   "blessure": "Left Leg Thigh",
-   "retour_espn": "2026-11-17",
+   "statut": "Out",
+   "blessure": "Left Leg Quadriceps",
+   "retour_espn": "2026-11-18",
    "retour_commentaire": null,
-   "commentaire": "Robinson (thigh) did not return to Saturday's 137-117 win over the Pistons. He finished with 10 points (3-8 FG, 2-6 3Pt, 2-2 FT), one rebound and one assist across 17 minutes.",
-   "date": "2026-11-15"
+   "commentaire": "Robinson (quadriceps) has been ruled out for Tuesday's game against the Spurs.",
+   "date": "2026-11-16"
   },
   "isaiah joe": {
    "nom": "Isaiah Joe",
@@ -820,15 +811,6 @@
    "commentaire": "Harris (calf) is likely to be sidelined until early December, per Jeff Garcia of KENS 5 San Antonio.",
    "date": "2026-11-16"
   },
-  "de aaron fox": {
-   "nom": "De'Aaron Fox",
-   "statut": "Day-To-Day",
-   "blessure": "Left Torso Hip",
-   "retour_espn": "2026-11-17",
-   "retour_commentaire": null,
-   "commentaire": "Fox (hip) has been ruled out for Sunday's game against the Jazz.",
-   "date": "2026-11-16"
-  },
   "jayden quaintance": {
    "nom": "Jayden Quaintance",
    "statut": "Out",
@@ -909,15 +891,6 @@
    "retour_commentaire": "2026-12-22",
    "commentaire": "Jackson has been diagnosed with a torn MCL in his right knee and will be sidelined for 6-to-8 weeks, per Shams Charania of ESPN.",
    "date": "2026-10-27"
-  },
-  "tre johnson": {
-   "nom": "Tre Johnson",
-   "statut": "Day-To-Day",
-   "blessure": "Torso Back",
-   "retour_espn": "2026-11-16",
-   "retour_commentaire": null,
-   "commentaire": "Johnson (back) is listed as questionable for Monday's game against Memphis.",
-   "date": "2026-11-16"
   },
   "tristan vukcevic": {
    "nom": "Tristan Vukcevic",
