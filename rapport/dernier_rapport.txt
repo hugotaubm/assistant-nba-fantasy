@@ -1,4 +1,4 @@
-Calcul lancé le 17/11/2026 à 00:01:43
+Calcul lancé le 17/11/2026 à 00:13:13
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
@@ -8,14 +8,14 @@ Optimisation (jusqu'à deux minutes)…
 Équipe lue depuis : my-team (connecté, à jour en direct) | Banque : 2.8 M$ | Transferts gratuits restants : 0 | Capitaine dispo : oui
 
 ⭐ All-Star (si c'est bien « budget illimité pour un Gameday, puis retour à ton équipe ») : gain par soir GW5 Day 1 (16 équipes) +90 | GW5 Day 2 (10 équipes) +7 | GW5 Day 3 (24 équipes) +115 | GW5 Day 4 (8 équipes) +13 | GW5 Day 5 (18 équipes) +129 | GW5 Day 6 (12 équipes) +26 | GW5 Day 7 (14 équipes) +148. Meilleur soir : GW5 Day 7, 279 pts attendus au lieu de 130, avec N.Jokic, G.Antetokounmpo, J.Murray, K.Towns, C.Cunningham.
-🏆 Ligue First Team : 76e sur 643 (+11 depuis le 15/11), 7 pts du rang juste devant, 864 pts du 1er · devant toi, 62 sur 75 ont déjà joué leur wildcard et 38 leur All-Star · tes joueurs chez les 75 équipes devant toi : D.Acuff Jr. 74, Y.Lendeborg 70, V.Wembanyama 49, D.Robinson 15, A.Mitchell 14, T.da Silva 8, A.Dosunmu 7, N.Traore 4, K.Dunn 3, D.Avdija 2
+🏆 Ligue First Team : 76e sur 643, 7 pts du rang juste devant, 864 pts du 1er · devant toi, 62 sur 75 ont déjà joué leur wildcard et 38 leur All-Star · tes joueurs chez les 75 équipes devant toi : D.Acuff Jr. 74, Y.Lendeborg 70, V.Wembanyama 49, D.Robinson 15, A.Mitchell 14, T.da Silva 8, A.Dosunmu 7, N.Traore 4, K.Dunn 3, D.Avdija 2
 📅 Jours creux du plan conseillé — semaine suivante : Day 2 2 vide(s) | semaine d'après (Gameweek 7, sans transfert) : 17 matchs pour ton effectif, 15 place(s) vide(s) ; joueurs dispo par jour : 5-3-7-2-0-0
 🧩 Combler les 2 place(s) vide(s) de la semaine suivante : impossible avec tes transferts (pas assez de joueurs qui jouent ces jours-là dans ton budget).
 🛡️ Effet adversaire (points fantasy concédés par poste, déjà dans les prévisions) — face aux arrières, les plus perméables : MIA +11 %, LAL +9 %, LAC +7 % ; les plus dures : DET -11 %, BOS -9 %, ATL -8 % | face aux intérieurs, les plus perméables : ATL +12 %, DET +8 %, NOP +7 % ; les plus dures : LAL -8 %, POR -8 %, SAS -6 %
-📉 Vont perdre des minutes (retour d'un coéquipier blessé) : P.Reed (DET) -40 % dès le 18/11 (retour : D.Robinson, J.Duren) ; T.Bryant (CLE) -29 % dès le 29/11 (retour : E.Mobley) ; C.Martin (DAL) -26 % dès le 18/11 (retour : D.Lively II, S.Aldama) ; D.Wade (PHI) -24 % dès le 18/11 (retour : A.Bona, L.James) ; K.Huerter (DET) -13 % dès le 17/11 (retour : I.Joe) ; S.Bey (NOP) -12 % dès le 18/11 (retour : T.Murphy III) ; C.Murray-Boyles (TOR) -12 % dès le 23/11 (retour : K.Leonard) ; J.Mogbo (SAC) -12 % dès le 18/11 (retour : P.Achiuwa)
+📉 Vont perdre des minutes (retour d'un coéquipier blessé) : P.Reed (DET) -40 % dès le 18/11 (retour : D.Robinson, J.Duren, R.Holland II, T.Prince) ; T.Bryant (CLE) -29 % dès le 29/11 (retour : E.Mobley) ; C.Martin (DAL) -26 % dès le 18/11 (retour : D.Lively II, S.Aldama) ; D.Wade (PHI) -24 % dès le 18/11 (retour : A.Bona, L.James) ; C.Murray-Boyles (TOR) -20 % dès le 23/11 (retour : K.Leonard) ; K.Huerter (DET) -13 % dès le 17/11 (retour : I.Joe) ; S.Bey (NOP) -12 % dès le 18/11 (retour : T.Murphy III) ; J.Mogbo (SAC) -12 % dès le 18/11 (retour : P.Achiuwa)
 📈 Profitent d'une blessure (minutes libérées) : J.Hayes (UTA) +60 % sur 7 j. (absent : J.Jackson Jr., J.Nurkic, L.Markkanen) ; T.McConnell (IND) +60 % sur 6 j. (absent : B.Sheppard, J.Furphy, T.Haliburton) ; J.Clark (MIN) +56 % sur 1 j. (absent : A.Edwards, D.DiVincenzo) ; J.Poole (NOP) +53 % sur 2 j. (absent : B.Mathurin, D.Murray) ; T.Shannon Jr. (MIN) +50 % sur 8 j. (absent : A.Edwards, D.DiVincenzo, J.Clark) ; D.Melton (GSW) +47 % sur 7 j. (absent : M.Moody, S.Curry) ; I.Jackson (LAC) +47 % sur 1 j. (absent : B.Ingram) ; B.Hyland (MIN) +44 % sur 8 j. (absent : A.Edwards, D.DiVincenzo, J.Clark)
 ⚠ ALERTES
-  - D.Robinson (DET) : Thigh expected back 2026-11-17 | ESPN : retour estimé le 18/11 | ESPN (Out) : Robinson (quadriceps) has been ruled out for Tuesday's game against the Spurs. (chance de jouer 85 %)
+  - D.Robinson (DET) : Quadriceps expected back 2026-11-18 | ESPN (Out) : Robinson (quadriceps) has been ruled out for Tuesday's game against the Spurs. (chance de jouer 85 %)
 
 ▶ CINQ DE DÉPART POUR LE PROCHAIN GAMEDAY
   BC  N.Traore (BKN)               proj. 24.1
@@ -63,4 +63,4 @@ Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) 
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 17/11/2026 à 00:01:47 (code de sortie : 0)
+Terminé le 17/11/2026 à 00:13:16 (code de sortie : 0)

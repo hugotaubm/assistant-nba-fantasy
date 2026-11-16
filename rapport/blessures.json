@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-16T23:01:45.450129+00:00",
+ "lu": "2026-11-16T23:13:15.172111+00:00",
  "joueurs": {
   "jock landale": {
    "nom": "Jock Landale",
@@ -190,13 +190,22 @@
    "commentaire": "Strawther (knee) was diagnosed with a left knee sprain Friday and will be re-evaluated in six weeks, Vinny Benedetto of The Denver Gazette reports.",
    "date": "2026-10-17"
   },
+  "taurean prince": {
+   "nom": "Taurean Prince",
+   "statut": "Out",
+   "blessure": "Right Leg Knee",
+   "retour_espn": "2026-11-18",
+   "retour_commentaire": null,
+   "commentaire": "Prince (knee) has been ruled out for Tuesday's game against the Spurs.",
+   "date": "2026-11-16"
+  },
   "ronald holland": {
    "nom": "Ronald Holland II",
    "statut": "Out",
    "blessure": "Left Leg Knee",
    "retour_espn": "2026-11-18",
    "retour_commentaire": null,
-   "commentaire": "Holland finished with 18 points (6-10 FG, 2-5 3Pt, 4-7 FT), three rebounds, two assists, four steals and one block across 22 minutes in Friday's 110-94 victory over the Nets.",
+   "commentaire": "Holland is out for Tuesday's game against San Antonio due to a left knee contusion.",
    "date": "2026-11-16"
   },
   "isaiah joe": {

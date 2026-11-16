@@ -408,15 +408,15 @@ Par prix :
   < 7 M$                 237 matchs | 0 min : 82 | biais  -4.3 | réel/projeté 0.81 | minutes 18.2
   ≥ 15 M$                385 matchs | 0 min : 56 | biais  -3.0 | réel/projeté 0.94 | minutes 32.7
 Par rang dans la hiérarchie ESPN (1 = titulaire) :
-  rang 1                 1784 matchs | 0 min : 167 | biais  -1.3 | réel/projeté 0.97 | minutes 29.7
-  rang 2                 937 matchs | 0 min : 144 | biais  -5.5 | réel/projeté 0.78 | minutes 20.4
+  rang 1                 1771 matchs | 0 min : 171 | biais  -1.2 | réel/projeté 0.97 | minutes 29.7
+  rang 2                 937 matchs | 0 min : 139 | biais  -5.4 | réel/projeté 0.79 | minutes 20.6
   rang 3                 111 matchs | 0 min : 41 | biais -10.2 | réel/projeté 0.57 | minutes 16.3
   rang 4                  14 matchs | 0 min :  6 | biais -15.4 | réel/projeté 0.32 | minutes 11.0
-  rang 5                  66 matchs | 0 min : 51 | biais  -6.1 | réel/projeté 0.81 | minutes 20.1
-  rang 6                 157 matchs | 0 min : 138 | biais  -7.4 | réel/projeté 0.81 | minutes 26.1
-  rang 7                  64 matchs | 0 min : 51 | biais  -4.4 | réel/projeté 0.90 | minutes 23.9
+  rang 5                  52 matchs | 0 min : 41 | biais  -4.9 | réel/projeté 0.83 | minutes 18.0
+  rang 6                 157 matchs | 0 min : 134 | biais  -7.7 | réel/projeté 0.80 | minutes 26.0
+  rang 7                  78 matchs | 0 min : 65 | biais  -4.4 | réel/projeté 0.90 | minutes 23.9
   rang 8                  51 matchs | 0 min : 34 | biais  +0.2 | réel/projeté 1.01 | minutes 30.8
-  rang 9                  14 matchs | 0 min : 11 | biais -11.2 | réel/projeté 0.73 | minutes 31.0
+  rang 9                  27 matchs | 0 min : 12 | biais -10.8 | réel/projeté 0.61 | minutes 17.8
   rang inconnu            69 matchs | 0 min : 42 | biais  -8.1 | réel/projeté 0.72 | minutes 22.3
 Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : 685 sur 3267
   - L.Doncic (LAL) (event 9) : projeté 65.5, statut actuel a, news : -
@@ -500,7 +500,7 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       R.Dillingham (CHI) : Wrist expected back 2027-01-01
       Y.Kawamura (LAC) : Foot expected back 2026-11-20
       E.Freeman (MIN) : Undisclosed expected back 2027-01-01
-  statut i | chances ce Gameday 100 | prochain 25 : 9 joueurs
+  statut i | chances ce Gameday 100 | prochain 25 : 11 joueurs
       J.Landale (ATL) : Hip expected back 2026-11-18
       N.Queta (BOS) : Rest expected back 2026-11-18
       J.Tyson (CLE) : Ankle expected back 2026-11-18
@@ -510,19 +510,20 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       G.Jackson (MEM) : Foot expected back 2027-01-18
       O.Dieng (MIL) : Finger expected back 2026-12-14
       J.Clark (MIN) : Hamstring expected back 2026-11-29
-  statut d | chances ce Gameday 100 | prochain 75 : 4 joueurs
-      G.Santos (GSW) : Ankle expected back 2026-11-16
-      J.Phillips (HOU) : Wrist expected back 2026-11-16
-      A.Thompson (HOU) : Knee expected back 2026-11-16
-      N.Jovic (MIA) : Illness expected back 2026-11-16
   statut i | chances ce Gameday 75 | prochain 25 : 3 joueurs
       M.Christie (DAL) : Ankle expected back 2026-11-18
       D.Robinson (DET) : Quadriceps expected back 2026-11-18
       R.Rollins (MIL) : Illness expected back 2026-11-18
+  statut d | chances ce Gameday 100 | prochain 75 : 3 joueurs
+      G.Santos (GSW) : Ankle expected back 2026-11-16
+      J.Phillips (HOU) : Wrist expected back 2026-11-16
+      A.Thompson (HOU) : Knee expected back 2026-11-16
   statut u | chances ce Gameday 25 | prochain 25 : 1 joueurs
       K.Gilbert (ATL) : Knee expected back 2026-11-20
   statut i | chances ce Gameday 0 | prochain 25 : 1 joueurs
       N.Tomlin (CLE) : Back expected back 2026-11-18
+  statut i | chances ce Gameday None | prochain 25 : 1 joueurs
+      R.Holland II (DET) : Knee expected back 2026-11-18
   statut s | chances ce Gameday 25 | prochain 25 : 1 joueurs
       M.Smart (HOU) : Suspension expected back 2026-11-18
   statut d | chances ce Gameday None | prochain 75 : 1 joueurs
@@ -531,8 +532,8 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       C.Youngblood (POR) : Foot expected back 2026-11-17
   statut d | chances ce Gameday 75 | prochain 75 : 1 joueurs
       K.McCullar Jr. (TOR) : Illness expected back 2026-11-16
-  statut u | chances ce Gameday 75 | prochain 75 : 1 joueurs
-      T.Alexander (UTA) : Ankle expected back 2026-11-16
+  statut u | chances ce Gameday 75 | prochain 0 : 1 joueurs
+      T.Alexander (UTA) : Ankle expected back 2026-11-20
 
 ======================================================================
 LIGUE FIRST TEAM
