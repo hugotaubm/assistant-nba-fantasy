@@ -462,10 +462,10 @@ CALIBRATION DU MODÈLE (points réels / points attendus, par rang)
   rang 3+  : 1941 joueurs-matchs | réel   10375 / attendu    9158 = 1.13 → facteur appliqué 1.127
   rang ?   :  400 joueurs-matchs | réel    1178 / attendu    2024 = 0.58 → facteur appliqué 0.750
 Erreur restante du modèle par tranche de prix (après la calibration par rang) :
-  10-15 M$  : 1000 joueurs-matchs | réel   30735 / attendu   30365 = 1.01 → facteur appliqué 1.012
-  7-10 M$   : 1333 joueurs-matchs | réel   26866 / attendu   26001 = 1.03 → facteur appliqué 1.033
-  < 7 M$    : 2790 joueurs-matchs | réel   18921 / attendu   18741 = 1.01 → facteur appliqué 1.009
-  ≥ 15 M$   :  325 joueurs-matchs | réel   14740 / attendu   14142 = 1.04 → facteur appliqué 1.041
+  10-15 M$  : 1000 joueurs-matchs | réel   30735 / attendu   30356 = 1.01 → facteur appliqué 1.012
+  7-10 M$   : 1333 joueurs-matchs | réel   26866 / attendu   26057 = 1.03 → facteur appliqué 1.031
+  < 7 M$    : 2790 joueurs-matchs | réel   18921 / attendu   18833 = 1.00 → facteur appliqué 1.005
+  ≥ 15 M$   :  325 joueurs-matchs | réel   14740 / attendu   14131 = 1.04 → facteur appliqué 1.042
 
 Vérification du barème (points du jeu vs formule des projections) :
   Statistiques fournies par le jeu : ['assists', 'blocks', 'in_dreamteam', 'minutes', 'played', 'points_scored', 'rebounds', 'steals', 'total_points']
@@ -480,16 +480,16 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       M.Uzan (BOS) : -
       N.Pringle (BKN) : -
       P.Connaughton (CHA) : -
-  statut i | chances ce Gameday 25 | prochain 25 : 39 joueurs
-      A.Newell (ATL) : Toe expected back 2026-11-20
-      K.Flemings (ATL) : Back expected back 2026-11-18
-      K.Gilbert (ATL) : Knee expected back 2026-11-20
-      J.Smith (CHI) : Finger expected back 2026-11-16
   statut i | chances ce Gameday 0 | prochain 0 : 38 joueurs
       M.Gueye (ATL) : Foot expected back 2026-12-12
       K.Knueppel (CHA) : Hamstring expected back 2026-12-12
       D.Schröder (CHA) : Hamstring expected back 2026-11-25
       C.Wilson (CHI) : Hand expected back 2026-12-13
+  statut i | chances ce Gameday 25 | prochain 25 : 38 joueurs
+      A.Newell (ATL) : Toe expected back 2026-11-20
+      K.Flemings (ATL) : Back expected back 2026-11-18
+      K.Gilbert (ATL) : Knee expected back 2026-11-20
+      J.Smith (CHI) : Finger expected back 2026-11-16
   statut u | chances ce Gameday 100 | prochain 100 : 13 joueurs
       I.McKneely (ATL) : -
       T.Enaruna (CLE) : -
@@ -505,21 +505,22 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       K.Irving (DAL) : Knee expected back 2026-11-18
       S.Aldama (DAL) : Ankle expected back 2026-11-18
       Z.LaVine (SAC) : Illness expected back 2026-11-18
-  statut d | chances ce Gameday 75 | prochain 75 : 5 joueurs
-      D.Robinson (DET) : Thigh expected back 2026-11-17
-      U.Onyenso (DET) : Foot expected back 2026-11-14
-      D.Timme (PHX) : Hand expected back 2026-11-15
-      K.McCullar Jr. (TOR) : Illness expected back 2026-11-16
-  statut d | chances ce Gameday 100 | prochain 75 : 3 joueurs
+  statut d | chances ce Gameday 100 | prochain 75 : 5 joueurs
       J.Tyson (CLE) : Ankle expected back 2026-11-16
       G.Santos (GSW) : Ankle expected back 2026-11-16
+      J.Phillips (HOU) : Wrist expected back 2026-11-16
       I.Stewart (MEM) : Illness expected back 2026-11-16
+  statut d | chances ce Gameday 75 | prochain 75 : 3 joueurs
+      D.Robinson (DET) : Thigh expected back 2026-11-17
+      K.McCullar Jr. (TOR) : Illness expected back 2026-11-16
+      T.Alexander (UTA) : Ankle expected back 2026-11-16
+  statut i | chances ce Gameday 25 | prochain 0 : 3 joueurs
+      G.Jackson (MEM) : Foot expected back 2027-01-18
+      O.Dieng (MIL) : Finger expected back 2026-12-14
+      J.Clark (MIN) : Hamstring expected back 2026-11-29
   statut i | chances ce Gameday 75 | prochain 25 : 2 joueurs
       M.Christie (DAL) : Ankle expected back 2026-11-18
       R.Rollins (MIL) : Illness expected back 2026-11-18
-  statut i | chances ce Gameday 25 | prochain 0 : 2 joueurs
-      O.Dieng (MIL) : Finger expected back 2026-12-14
-      J.Clark (MIN) : Hamstring expected back 2026-11-29
   statut i | chances ce Gameday 0 | prochain 25 : 1 joueurs
       N.Tomlin (CLE) : Back expected back 2026-11-18
   statut d | chances ce Gameday 25 | prochain 75 : 1 joueurs
