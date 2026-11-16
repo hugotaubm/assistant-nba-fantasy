@@ -1,4 +1,4 @@
-Calcul lancé le 16/11/2026 à 23:40:54
+Calcul lancé le 17/11/2026 à 00:01:43
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
@@ -7,7 +7,7 @@ Optimisation (jusqu'à deux minutes)…
 === Gameweek 5 — prochaine deadline : Gameweek 5 - Day 1 le mar. 17/11 00h30 (heure de Paris) ===
 Équipe lue depuis : my-team (connecté, à jour en direct) | Banque : 2.8 M$ | Transferts gratuits restants : 0 | Capitaine dispo : oui
 
-⭐ All-Star (si c'est bien « budget illimité pour un Gameday, puis retour à ton équipe ») : gain par soir GW5 Day 1 (16 équipes) +87 | GW5 Day 2 (10 équipes) +7 | GW5 Day 3 (24 équipes) +115 | GW5 Day 4 (8 équipes) +13 | GW5 Day 5 (18 équipes) +129 | GW5 Day 6 (12 équipes) +26 | GW5 Day 7 (14 équipes) +148. Meilleur soir : GW5 Day 7, 279 pts attendus au lieu de 130, avec N.Jokic, G.Antetokounmpo, J.Murray, K.Towns, C.Cunningham.
+⭐ All-Star (si c'est bien « budget illimité pour un Gameday, puis retour à ton équipe ») : gain par soir GW5 Day 1 (16 équipes) +90 | GW5 Day 2 (10 équipes) +7 | GW5 Day 3 (24 équipes) +115 | GW5 Day 4 (8 équipes) +13 | GW5 Day 5 (18 équipes) +129 | GW5 Day 6 (12 équipes) +26 | GW5 Day 7 (14 équipes) +148. Meilleur soir : GW5 Day 7, 279 pts attendus au lieu de 130, avec N.Jokic, G.Antetokounmpo, J.Murray, K.Towns, C.Cunningham.
 🏆 Ligue First Team : 76e sur 643 (+11 depuis le 15/11), 7 pts du rang juste devant, 864 pts du 1er · devant toi, 62 sur 75 ont déjà joué leur wildcard et 38 leur All-Star · tes joueurs chez les 75 équipes devant toi : D.Acuff Jr. 74, Y.Lendeborg 70, V.Wembanyama 49, D.Robinson 15, A.Mitchell 14, T.da Silva 8, A.Dosunmu 7, N.Traore 4, K.Dunn 3, D.Avdija 2
 📅 Jours creux du plan conseillé — semaine suivante : Day 2 2 vide(s) | semaine d'après (Gameweek 7, sans transfert) : 17 matchs pour ton effectif, 15 place(s) vide(s) ; joueurs dispo par jour : 5-3-7-2-0-0
 🧩 Combler les 2 place(s) vide(s) de la semaine suivante : impossible avec tes transferts (pas assez de joueurs qui jouent ces jours-là dans ton budget).
@@ -63,4 +63,4 @@ Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) 
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 16/11/2026 à 23:41:04 (code de sortie : 0)
+Terminé le 17/11/2026 à 00:01:47 (code de sortie : 0)

@@ -156,11 +156,11 @@
 "age": 25,
 "min_proj": 18.0,
 "rang_poste": 7,
-"poste_espn": "SF",
+"poste_espn": "SG",
 "devant": [
-"Dyson Daniels",
-"Luguentz Dort",
-"Aaron Wiggins"
+"Nickeil Alexander-Walker",
+"Aaron Wiggins",
+"Luguentz Dort"
 ],
 "presaison_matchs": 4,
 "presaison_min": 17.0
@@ -546,11 +546,9 @@
 "presence": 0.9,
 "age": 22,
 "min_proj": 21.5,
-"rang_poste": 2,
-"poste_espn": "SF",
-"devant": [
-"Jayson Tatum"
-],
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
 "presaison_matchs": 4,
 "presaison_min": 18.0
 },
@@ -592,9 +590,11 @@
 "presence": 0.97,
 "age": 26,
 "min_proj": 25.1,
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "SG",
-"devant": [],
+"devant": [
+"Jordan Walsh"
+],
 "presaison_matchs": 4,
 "presaison_min": 19.5
 },
@@ -614,9 +614,10 @@
 "presence": 0.93,
 "age": 20,
 "min_proj": 21.7,
-"rang_poste": 2,
+"rang_poste": 3,
 "poste_espn": "SG",
 "devant": [
+"Jordan Walsh",
 "Baylor Scheierman"
 ],
 "presaison_matchs": 4,
@@ -682,9 +683,9 @@
 "rang_poste": 6,
 "poste_espn": "SG",
 "devant": [
+"Jordan Walsh",
 "Baylor Scheierman",
-"Hugo Gonzalez",
-"Jordan Walsh"
+"Hugo Gonzalez"
 ],
 "presaison_matchs": 2,
 "presaison_min": 20.5
@@ -1306,11 +1307,9 @@
 "b2b_presence": 1.0,
 "presence": 1.0,
 "age": 23,
-"rang_poste": 2,
+"rang_poste": 1,
 "poste_espn": "SG",
-"devant": [
-"Grayson Allen"
-],
+"devant": [],
 "presaison_matchs": 4,
 "presaison_min": 19.5
 },
@@ -1357,8 +1356,8 @@
 "rang_poste": 7,
 "poste_espn": "SG",
 "devant": [
-"Grayson Allen",
 "Sion James",
+"Grayson Allen",
 "Coby White"
 ]
 },
@@ -1381,8 +1380,8 @@
 "rang_poste": 5,
 "poste_espn": "SG",
 "devant": [
-"Grayson Allen",
 "Sion James",
+"Grayson Allen",
 "Coby White"
 ],
 "presaison_matchs": 4,
@@ -1513,9 +1512,11 @@
 "presence": 0.8,
 "age": 31,
 "min_proj": 26.1,
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "SG",
-"devant": [],
+"devant": [
+"Sion James"
+],
 "presaison_matchs": 1,
 "presaison_min": 14.0
 },
@@ -3795,7 +3796,15 @@
 "equipe": "GSW",
 "fppg": 10.44,
 "fiabilite": 0.92,
-"source": "selon le prix"
+"source": "selon le prix",
+"rang_poste": 3,
+"poste_espn": "PG",
+"devant": [
+"Brandin Podziemski",
+"Brandon Williams"
+],
+"presaison_matchs": 6,
+"presaison_min": 7.8
 },
 "187": {
 "nom": "A.Horford",
@@ -5610,9 +5619,9 @@
 "age": 25,
 "min_proj": 24.7,
 "rang_poste": 2,
-"poste_espn": "C",
+"poste_espn": "PF",
 "devant": [
-"Zach Edey"
+"Cameron Boozer"
 ],
 "presaison_matchs": 1,
 "presaison_min": 2.0
@@ -5727,10 +5736,12 @@
 "presence": 0.83,
 "age": 21,
 "min_proj": 23.0,
-"rang_poste": 2,
-"poste_espn": "PF",
+"rang_poste": 9,
+"poste_espn": "SF",
 "devant": [
-"Cameron Boozer"
+"Jaylen Wells",
+"Jerami Grant",
+"Cam Spencer"
 ],
 "presaison_matchs": 3,
 "presaison_min": 15.7
@@ -5929,12 +5940,12 @@
 "presence": 0.89,
 "age": 26,
 "min_proj": 21.9,
-"rang_poste": 5,
+"rang_poste": 4,
 "poste_espn": "PF",
 "devant": [
 "Cameron Boozer",
-"GG Jackson",
-"Isaiah Stewart"
+"Isaiah Stewart",
+"Jerami Grant"
 ],
 "presaison_matchs": 4,
 "presaison_min": 14.0
@@ -6015,12 +6026,12 @@
 "malus_b2b": 1.022,
 "age": 19,
 "b2b_n": 0,
-"rang_poste": 7,
+"rang_poste": 6,
 "poste_espn": "PF",
 "devant": [
 "Cameron Boozer",
-"GG Jackson",
-"Isaiah Stewart"
+"Isaiah Stewart",
+"Jerami Grant"
 ],
 "presaison_matchs": 4,
 "presaison_min": 8.8
@@ -7024,7 +7035,7 @@
 "age": 26,
 "min_proj": 31.7,
 "rang_poste": 1,
-"poste_espn": "SF",
+"poste_espn": "PF",
 "devant": [],
 "presaison_matchs": 4,
 "presaison_min": 20.8
@@ -7048,7 +7059,7 @@
 "rang_poste": 2,
 "poste_espn": "SF",
 "devant": [
-"Jaden McDaniels"
+"Jonathan Kuminga"
 ],
 "presaison_matchs": 6,
 "presaison_min": 14.5
@@ -7160,9 +7171,9 @@
 "rang_poste": 5,
 "poste_espn": "PF",
 "devant": [
-"Jonathan Kuminga",
+"Jaden McDaniels",
 "Trey Lyles",
-"Jaden McDaniels"
+"Jonathan Kuminga"
 ],
 "presaison_matchs": 6,
 "presaison_min": 16.3
@@ -7202,7 +7213,7 @@
 "age": 24,
 "min_proj": 27.3,
 "rang_poste": 1,
-"poste_espn": "PF",
+"poste_espn": "SF",
 "devant": [],
 "presaison_matchs": 3,
 "presaison_min": 18.3
@@ -7223,7 +7234,7 @@
 "rang_poste": 2,
 "poste_espn": "PF",
 "devant": [
-"Jonathan Kuminga"
+"Jaden McDaniels"
 ],
 "presaison_matchs": 5,
 "presaison_min": 15.4
@@ -7286,7 +7297,7 @@
 "b2b_presence": 1.0,
 "presence": 0.53,
 "age": 23,
-"rang_poste": 5,
+"rang_poste": 4,
 "poste_espn": "PG",
 "devant": [
 "Keyonte George",
@@ -8145,8 +8156,8 @@
 "rang_poste": 8,
 "poste_espn": "PF",
 "devant": [
-"Aday Mara",
 "Kenrich Williams",
+"Aday Mara",
 "Jaylin Williams"
 ]
 },
@@ -8166,11 +8177,9 @@
 "presence": 0.91,
 "age": 31,
 "min_proj": 15.4,
-"rang_poste": 2,
+"rang_poste": 1,
 "poste_espn": "PF",
-"devant": [
-"Aday Mara"
-],
+"devant": [],
 "presaison_matchs": 4,
 "presaison_min": 16.5
 },
@@ -8219,8 +8228,8 @@
 "rang_poste": 3,
 "poste_espn": "PF",
 "devant": [
-"Aday Mara",
-"Kenrich Williams"
+"Kenrich Williams",
+"Aday Mara"
 ]
 },
 "400": {
@@ -8369,9 +8378,11 @@
 "malus_b2b": 1.022,
 "age": 21,
 "b2b_n": 0,
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "PF",
-"devant": [],
+"devant": [
+"Kenrich Williams"
+],
 "presaison_matchs": 5,
 "presaison_min": 23.2
 },
@@ -10025,9 +10036,11 @@
 "presence": 0.97,
 "age": 27,
 "min_proj": 24.3,
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "PF",
-"devant": [],
+"devant": [
+"Keegan Murray"
+],
 "presaison_matchs": 5,
 "presaison_min": 22.2
 },
@@ -10136,11 +10149,9 @@
 "presence": 0.91,
 "age": 26,
 "min_proj": 34.1,
-"rang_poste": 2,
+"rang_poste": 1,
 "poste_espn": "PF",
-"devant": [
-"Precious Achiuwa"
-],
+"devant": [],
 "presaison_matchs": 3,
 "presaison_min": 14.7
 },
@@ -10819,8 +10830,8 @@
 "rang_poste": 3,
 "poste_espn": "C",
 "devant": [
-"Jakob Poeltl",
-"Collin Murray-Boyles"
+"Collin Murray-Boyles",
+"Jakob Poeltl"
 ],
 "presaison_matchs": 2,
 "presaison_min": 19.5
@@ -10885,9 +10896,11 @@
 "presence": 0.78,
 "age": 31,
 "min_proj": 27.0,
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "C",
-"devant": [],
+"devant": [
+"Collin Murray-Boyles"
+],
 "presaison_matchs": 4,
 "presaison_min": 21.0
 },
@@ -11030,11 +11043,9 @@
 "presence": 0.86,
 "age": 21,
 "min_proj": 22.9,
-"rang_poste": 2,
-"poste_espn": "PF",
-"devant": [
-"Scottie Barnes"
-],
+"rang_poste": 1,
+"poste_espn": "C",
+"devant": [],
 "presaison_matchs": 4,
 "presaison_min": 20.0
 },
@@ -11131,11 +11142,9 @@
 "presence": 1.0,
 "age": 25,
 "min_proj": 18.3,
-"rang_poste": 2,
+"rang_poste": 1,
 "poste_espn": "SF",
-"devant": [
-"Josh Okogie"
-],
+"devant": [],
 "presaison_matchs": 3,
 "presaison_min": 10.0
 },
@@ -11164,9 +11173,11 @@
 "b2b_presence": 1.0,
 "presence": 0.96,
 "age": 28,
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "SF",
-"devant": [],
+"devant": [
+"Josh Green"
+],
 "presaison_matchs": 4,
 "presaison_min": 16.8
 },
@@ -11243,12 +11254,12 @@
 "presence": 0.93,
 "age": 27,
 "min_proj": 31.4,
-"rang_poste": 5,
-"poste_espn": "C",
+"rang_poste": 6,
+"poste_espn": "PF",
 "devant": [
-"Jaxson Hayes",
-"Mo Bamba",
-"Kyle Filipowski"
+"Ace Bailey",
+"Brice Sensabaugh",
+"Josh Okogie"
 ],
 "presaison_matchs": 4,
 "presaison_min": 18.2
@@ -11289,7 +11300,7 @@
 "presence": 0.78,
 "age": 32,
 "min_proj": 23.1,
-"rang_poste": 6,
+"rang_poste": 7,
 "poste_espn": "C",
 "devant": [
 "Jaxson Hayes",
@@ -11339,8 +11350,8 @@
 "rang_poste": 6,
 "poste_espn": "SF",
 "devant": [
-"Josh Okogie",
 "Josh Green",
+"Josh Okogie",
 "Brice Sensabaugh"
 ],
 "presaison_matchs": 3,
@@ -11888,6 +11899,6 @@
 "_source": "saison régulière 2025-26 (ESPN), mis à jour le 20/10/2026"
 },
 "roles": {
-"_source": "ESPN (hiérarchie + présaison), mis à jour le 16/11/2026"
+"_source": "ESPN (hiérarchie + présaison), mis à jour le 17/11/2026"
 }
 }
