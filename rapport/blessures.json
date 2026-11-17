@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-17T22:59:31.120876+00:00",
+ "lu": "2026-11-17T23:04:48.540361+00:00",
  "joueurs": {
   "asa newell": {
    "nom": "Asa Newell",
@@ -154,13 +154,40 @@
    "commentaire": "Mobley will receive treatment and participate in rehab after the team confirmed a diagnosis of a right great toe sprain, and he'll be re-evaluated in the next 7-to-10 days.",
    "date": "2026-11-16"
   },
+  "sergio de larrea": {
+   "nom": "Sergio de Larrea",
+   "statut": "Out",
+   "blessure": "Right Leg Knee",
+   "retour_espn": "2026-11-27",
+   "retour_commentaire": null,
+   "commentaire": "De Larrea (knee) is listed as out for Wednesday's game against the Warriors.",
+   "date": "2026-11-17"
+  },
   "walter clayton": {
    "nom": "Walter Clayton Jr.",
    "statut": "Day-To-Day",
    "blessure": "Right Leg Ankle",
    "retour_espn": "2026-11-18",
    "retour_commentaire": null,
-   "commentaire": "Clayton produced six points (2-6 FG, 1-4 3Pt, 1-2 FT), six rebounds, four assists, one block and one steal across 25 minutes during Monday's 125-122 win over Indiana.",
+   "commentaire": "Clayton (ankle) is listed as probable for Wednesday's game against the Warriors.",
+   "date": "2026-11-17"
+  },
+  "dereck lively": {
+   "nom": "Dereck Lively II",
+   "statut": "Out",
+   "blessure": "Right Leg Foot",
+   "retour_espn": "2026-11-27",
+   "retour_commentaire": null,
+   "commentaire": "Lively (foot) is out for Wednesday's game against the Warriors.",
+   "date": "2026-11-17"
+  },
+  "tobi lawal": {
+   "nom": "Tobi Lawal",
+   "statut": "Day-To-Day",
+   "blessure": "Right Groin Groin",
+   "retour_espn": "2026-11-18",
+   "retour_commentaire": null,
+   "commentaire": "Lawal is doubtful for Wednesday's game against the Warriors due to tightness in his right groin.",
    "date": "2026-11-17"
   },
   "tarik biberovic": {
@@ -170,15 +197,6 @@
    "retour_espn": "2026-11-30",
    "retour_commentaire": null,
    "commentaire": "Biberovic (heel) is out for Wednesday's game against the Warriors.",
-   "date": "2026-11-17"
-  },
-  "tobi lawal": {
-   "nom": "Tobi Lawal",
-   "statut": "Day-To-Day",
-   "blessure": "Groin Groin",
-   "retour_espn": "2026-11-18",
-   "retour_commentaire": null,
-   "commentaire": "Lawal logged 16 points (4-6 FG, 8-8 FT), four rebounds, one steal and one block over 23 minutes in Wednesday's 101-97 preseason loss to New Orleans.",
    "date": "2026-11-17"
   },
   "max christie": {
@@ -198,24 +216,6 @@
    "retour_commentaire": null,
    "commentaire": "Aldama (ankle) is probable for Wednesday's game against the Warriors.",
    "date": "2026-11-17"
-  },
-  "dereck lively": {
-   "nom": "Dereck Lively II",
-   "statut": "Out",
-   "blessure": "Right Leg Foot",
-   "retour_espn": "2026-11-27",
-   "retour_commentaire": null,
-   "commentaire": "Lively (foot) is listed as out for Thursday's game in Minnesota.",
-   "date": "2026-11-11"
-  },
-  "sergio de larrea": {
-   "nom": "Sergio de Larrea",
-   "statut": "Out",
-   "blessure": "Right Leg Knee",
-   "retour_espn": "2026-11-27",
-   "retour_commentaire": null,
-   "commentaire": "De Larrea (knee) has been ruled out for Thursday's game at Minnesota.",
-   "date": "2026-11-11"
   },
   "julian strawther": {
    "nom": "Julian Strawther",
@@ -863,15 +863,6 @@
    "retour_espn": "2026-11-27",
    "retour_commentaire": "2026-11-24",
    "commentaire": "Leonard (knee) has progressed in his strength and conditioning program but will miss at least one more week, Michael Scotto of HoopsHype.com reports.",
-   "date": "2026-11-17"
-  },
-  "scottie barnes": {
-   "nom": "Scottie Barnes",
-   "statut": "Day-To-Day",
-   "blessure": "Other Illness",
-   "retour_espn": "2026-11-17",
-   "retour_commentaire": null,
-   "commentaire": "Barnes (illness) has been downgraded to questionable for Tuesday's game against the Knicks, Blake Murphy of Sportsnet.ca reports.",
    "date": "2026-11-17"
   },
   "nate bittle": {

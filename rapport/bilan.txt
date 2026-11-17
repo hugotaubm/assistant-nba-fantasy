@@ -423,10 +423,10 @@ Par prix :
   < 7 M$                 245 matchs | 0 min : 85 | biais  -4.2 | réel/projeté 0.81 | minutes 18.2
   ≥ 15 M$                390 matchs | 0 min : 58 | biais  -3.3 | réel/projeté 0.94 | minutes 32.5
 Par rang dans la hiérarchie ESPN (1 = titulaire) :
-  rang 1                 1845 matchs | 0 min : 179 | biais  -1.2 | réel/projeté 0.97 | minutes 29.7
-  rang 2                 971 matchs | 0 min : 147 | biais  -5.4 | réel/projeté 0.79 | minutes 20.6
+  rang 1                 1845 matchs | 0 min : 177 | biais  -1.2 | réel/projeté 0.97 | minutes 29.6
+  rang 2                 957 matchs | 0 min : 145 | biais  -5.4 | réel/projeté 0.79 | minutes 20.7
   rang 3                 115 matchs | 0 min : 42 | biais  -9.8 | réel/projeté 0.59 | minutes 16.5
-  rang 4                  14 matchs | 0 min :  6 | biais -15.4 | réel/projeté 0.32 | minutes 11.0
+  rang 4                  28 matchs | 0 min : 10 | biais  -8.1 | réel/projeté 0.65 | minutes 13.5
   rang 5                  54 matchs | 0 min : 43 | biais  -4.9 | réel/projeté 0.83 | minutes 18.0
   rang 6                 162 matchs | 0 min : 139 | biais  -7.7 | réel/projeté 0.80 | minutes 26.0
   rang 7                  81 matchs | 0 min : 68 | biais  -4.4 | réel/projeté 0.90 | minutes 23.9
@@ -515,7 +515,7 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       T.Enaruna (CLE) : -
       J.Poulakidas (DAL) : -
       A.Toohey (GSW) : -
-  statut d | chances ce Gameday 100 | prochain 75 : 11 joueurs
+  statut d | chances ce Gameday 100 | prochain 75 : 10 joueurs
       P.Williams (CHI) : Finger expected back 2026-11-18
       P.Watson (CLE) : Back expected back 2026-11-18
       T.Lawal (DAL) : Groin expected back 2026-11-18
@@ -559,5 +559,5 @@ LIGUE FIRST TEAM
   Écart avec le rang juste devant (76e) : 13 pts
   Avance sur le rang juste derrière (78e) : 3 pts
   Joueurs les plus présents chez les 76 équipes devant toi (Gameday 27) : D.Acuff Jr. (SAC) 75, Y.Lendeborg (GSW) 72, V.Wembanyama (SAS) 50, D.Mitchell (MIA) 41, F.Wagner (ORL) 38, K.George (WAS) 32, C.Flagg (DAL) 22, B.Hyland (MIN) 21, T.Shannon Jr. (MIN) 19, A.Mara (OKC) 19, L.Doncic (LAL) 18, A.Dosunmu (MIN) 17, D.Jenkins (DET) 15, D.Robinson (DET) 15, J.Hayes (UTA) 14
-  All-Star : déjà joué par 38 des 75 équipes devant toi (51 %) ; par Gameday : event 2 : 2, event 3 : 7, event 4 : 1, event 5 : 1, event 8 : 2, event 9 : 1, event 10 : 2, event 12 : 1, event 13 : 4, event 14 : 4, event 15 : 1, event 16 : 2, event 18 : 1, event 21 : 1, event 23 : 4, event 25 : 4
-  Wildcard : déjà joué par 62 des 75 équipes devant toi (83 %) ; par Gameday : event 2 : 3, event 4 : 2, event 6 : 2, event 7 : 19, event 8 : 3, event 9 : 2, event 10 : 3, event 11 : 3, event 12 : 1, event 13 : 3, event 14 : 2, event 16 : 2, event 17 : 1, event 19 : 1, event 20 : 2, event 21 : 1, event 22 : 3, event 23 : 6, event 25 : 2, event 26 : 1
+  All-Star : déjà joué par 38 des 76 équipes devant toi (50 %) ; par Gameday : event 2 : 2, event 3 : 8, event 5 : 1, event 8 : 1, event 9 : 2, event 10 : 1, event 12 : 1, event 13 : 4, event 14 : 4, event 15 : 2, event 16 : 2, event 18 : 1, event 21 : 1, event 23 : 4, event 25 : 4
+  Wildcard : déjà joué par 66 des 76 équipes devant toi (87 %) ; par Gameday : event 2 : 3, event 4 : 2, event 6 : 3, event 7 : 20, event 8 : 3, event 9 : 2, event 10 : 3, event 11 : 3, event 12 : 1, event 13 : 4, event 14 : 2, event 16 : 2, event 17 : 1, event 19 : 1, event 20 : 2, event 21 : 1, event 22 : 2, event 23 : 6, event 25 : 2, event 26 : 1, event 27 : 2
