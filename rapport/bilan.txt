@@ -495,12 +495,12 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       M.Uzan (BOS) : -
       N.Pringle (BKN) : -
       P.Connaughton (CHA) : -
-  statut i | chances ce Gameday 0 | prochain 0 : 42 joueurs
+  statut i | chances ce Gameday 0 | prochain 0 : 39 joueurs
       M.Gueye (ATL) : Foot expected back 2026-12-12
       K.Knueppel (CHA) : Hamstring expected back 2026-12-12
       D.Schröder (CHA) : Hamstring expected back 2026-11-25
       C.Wilson (CHI) : Hand expected back 2026-12-13
-  statut i | chances ce Gameday 25 | prochain 25 : 41 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 36 joueurs
       J.Landale (ATL) : Hip expected back 2026-11-18
       K.Flemings (ATL) : Back expected back 2026-11-18
       N.Queta (BOS) : Rest expected back 2026-11-18
@@ -510,38 +510,42 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       R.Dillingham (CHI) : Wrist expected back 2027-01-01
       Y.Kawamura (LAC) : Foot expected back 2026-11-20
       E.Freeman (MIN) : Undisclosed expected back 2027-01-01
-  statut u | chances ce Gameday 100 | prochain 100 : 13 joueurs
+  statut u | chances ce Gameday 100 | prochain 100 : 12 joueurs
       I.McKneely (ATL) : -
       T.Enaruna (CLE) : -
       J.Poulakidas (DAL) : -
       A.Toohey (GSW) : -
-  statut d | chances ce Gameday 100 | prochain 75 : 6 joueurs
+  statut d | chances ce Gameday 100 | prochain 75 : 11 joueurs
       P.Williams (CHI) : Finger expected back 2026-11-18
-      B.Adebayo (MIA) : Hip expected back 2026-11-18
-      J.Brown (PHI) : Hamstring expected back 2026-11-18
-      D.Avdija (POR) : Foot expected back 2026-11-17
+      P.Watson (CLE) : Back expected back 2026-11-18
+      T.Lawal (DAL) : Groin expected back 2026-11-18
+      W.Clayton Jr. (DAL) : Ankle expected back 2026-11-18
+  statut i | chances ce Gameday 0 | prochain 25 : 4 joueurs
+      T.Haliburton (IND) : Hamstring expected back 2026-11-28
+      I.Nelson (ORL) : Ankle expected back 2026-11-28
+      D.Barlow (PHI) : Back expected back 2026-11-21
+      K.Leonard (TOR) : Knee expected back 2026-11-27
+  statut i | chances ce Gameday 25 | prochain 0 : 3 joueurs
+      A.Newell (ATL) : Toe expected back 2027-03-17
+      T.Biberovic (DAL) : Heel expected back 2026-11-30
+      D.Robinson (DET) : Quadriceps expected back 2026-11-27
   statut i | chances ce Gameday 25 | prochain 75 : 3 joueurs
       I.Joe (DET) : Hip expected back 2026-11-18
       A.Reaves (LAL) : Heel expected back 2026-11-18
       J.Hayes (UTA) : Knee expected back 2026-11-18
-  statut i | chances ce Gameday 25 | prochain 0 : 2 joueurs
-      A.Newell (ATL) : Toe expected back 2027-03-17
-      D.Robinson (DET) : Quadriceps expected back 2026-11-27
-  statut i | chances ce Gameday 100 | prochain 25 : 2 joueurs
-      P.Watson (CLE) : Head expected back 2026-11-18
-      J.Kuminga (MIN) : Shoulder expected back 2026-11-19
   statut d | chances ce Gameday 75 | prochain 75 : 2 joueurs
       J.Phillips (HOU) : Wrist expected back 2026-11-17
       K.McCullar Jr. (TOR) : Illness expected back 2026-11-20
   statut i | chances ce Gameday 75 | prochain 25 : 2 joueurs
       A.Thompson (HOU) : Knee expected back 2026-11-18
       C.Youngblood (POR) : Heel expected back 2026-11-19
+  statut i | chances ce Gameday 100 | prochain 25 : 2 joueurs
+      J.Kuminga (MIN) : Shoulder expected back 2026-11-19
+      J.Brown (PHI) : Hamstring expected back 2026-11-21
   statut u | chances ce Gameday 25 | prochain 25 : 1 joueurs
       K.Gilbert (ATL) : Knee expected back 2026-11-20
   statut i | chances ce Gameday 100 | prochain 0 : 1 joueurs
       C.McCollum (ATL) : Calf expected back 2026-12-19
-  statut i | chances ce Gameday 0 | prochain 25 : 1 joueurs
-      T.Haliburton (IND) : Hamstring expected back 2026-11-28
   statut i | chances ce Gameday 100 | prochain 75 : 1 joueurs
       W.Kessler (LAL) : Lower Leg expected back 2026-11-18
   statut i | chances ce Gameday None | prochain 25 : 1 joueurs
