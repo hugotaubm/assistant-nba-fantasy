@@ -1,4 +1,4 @@
-Calcul lancé le 17/11/2026 à 12:22:20
+Calcul lancé le 17/11/2026 à 22:31:50
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
@@ -8,28 +8,24 @@ Optimisation (jusqu'à deux minutes)…
 Équipe lue depuis : my-team (connecté, à jour en direct) | Banque : 2.8 M$ | Transferts gratuits restants : 0 | Capitaine dispo : oui
 
 ⚠ À CORRIGER SUR LE SITE AVANT LA DEADLINE
-  - N.Traore est titulaire mais BKN ne joue pas le Day 2
-  - Y.Lendeborg est titulaire mais GSW ne joue pas le Day 2
-  - T.da Silva est titulaire mais ORL ne joue pas le Day 2
-  - K.Dunn joue le Day 2 mais est sur ton banc (conseillé titulaire)
-  - V.Wembanyama joue le Day 2 mais est sur ton banc (conseillé titulaire)
   - Active le capitaine le Day 2 sur V.Wembanyama
 
-⭐ All-Star (si c'est bien « budget illimité pour un Gameday, puis retour à ton équipe ») : gain par soir GW5 Day 2 (10 équipes) +8 | GW5 Day 3 (24 équipes) +115 | GW5 Day 4 (8 équipes) +12 | GW5 Day 5 (18 équipes) +128 | GW5 Day 6 (12 équipes) +27 | GW5 Day 7 (14 équipes) +151. Meilleur soir : GW5 Day 7, 280 pts attendus au lieu de 129, avec N.Jokic, G.Antetokounmpo, J.Murray, C.Cunningham, K.Towns.
-🏆 Ligue First Team : 76e sur 643, 7 pts du rang juste devant, 864 pts du 1er · devant toi, 62 sur 75 ont déjà joué leur wildcard et 38 leur All-Star · tes joueurs chez les 75 équipes devant toi : D.Acuff Jr. 74, Y.Lendeborg 70, V.Wembanyama 49, D.Robinson 15, A.Mitchell 14, T.da Silva 8, A.Dosunmu 7, N.Traore 4, K.Dunn 3, D.Avdija 2
+⭐ All-Star (si c'est bien « budget illimité pour un Gameday, puis retour à ton équipe ») : gain par soir GW5 Day 2 (10 équipes) +18 | GW5 Day 3 (24 équipes) +126 | GW5 Day 4 (8 équipes) +14 | GW5 Day 5 (18 équipes) +155 | GW5 Day 6 (12 équipes) +32 | GW5 Day 7 (14 équipes) +183. Meilleur soir : GW5 Day 7, 281 pts attendus au lieu de 98, avec N.Jokic, G.Antetokounmpo, J.Murray, C.Cunningham, K.Towns.
+🏆 Ligue First Team : 77e sur 643 (-1 depuis le 16/11), 13 pts du rang juste devant, 906 pts du 1er · devant toi, 62 sur 75 ont déjà joué leur wildcard et 38 leur All-Star · tes joueurs chez les 76 équipes devant toi : D.Acuff Jr. 75, Y.Lendeborg 72, V.Wembanyama 50, A.Dosunmu 17, D.Robinson 15, A.Mitchell 14, D.Avdija 10, T.da Silva 9, N.Traore 4, K.Dunn 2
 📅 Jours creux du plan conseillé — semaine suivante : Day 2 2 vide(s) | semaine d'après (Gameweek 7, sans transfert) : 17 matchs pour ton effectif, 15 place(s) vide(s) ; joueurs dispo par jour : 5-3-7-2-0-0
 🧩 Combler les 2 place(s) vide(s) de la semaine suivante : impossible avec tes transferts (pas assez de joueurs qui jouent ces jours-là dans ton budget).
 🛡️ Effet adversaire (points fantasy concédés par poste, déjà dans les prévisions) — face aux arrières, les plus perméables : LAL +9 %, MIA +9 %, CHI +8 % ; les plus dures : DET -11 %, BOS -8 %, ATL -7 % | face aux intérieurs, les plus perméables : ATL +12 %, DET +8 %, NOP +7 % ; les plus dures : LAL -8 %, POR -7 %, SAS -6 %
-📉 Vont perdre des minutes (retour d'un coéquipier blessé) : P.Reed (DET) -40 % dès le 18/11 (retour : D.Robinson, J.Duren, R.Holland II, T.Prince) ; T.Bryant (CLE) -31 % dès le 29/11 (retour : E.Mobley, P.Watson) ; D.Wade (PHI) -30 % dès le 18/11 (retour : A.Bona, L.James) ; C.Martin (DAL) -26 % dès le 18/11 (retour : D.Lively II, S.Aldama) ; C.Murray-Boyles (TOR) -20 % dès le 23/11 (retour : K.Leonard) ; J.Fears (NOP) -13 % dès le 20/11 (retour : B.Mathurin, D.Murray) ; C.Braun (DEN) -13 % dès le 29/11 (retour : J.Strawther) ; J.Mogbo (SAC) -12 % dès le 18/11 (retour : P.Achiuwa)
+📉 Vont perdre des minutes (retour d'un coéquipier blessé) : P.Reed (DET) -40 % dès le 24/11 (retour : D.Robinson, J.Duren, R.Holland II, T.Prince) ; T.Bryant (CLE) -31 % dès le 29/11 (retour : E.Mobley, P.Watson) ; D.Wade (PHI) -30 % dès le 18/11 (retour : A.Bona, L.James) ; C.Martin (DAL) -26 % dès le 18/11 (retour : D.Lively II, S.Aldama) ; C.Murray-Boyles (TOR) -20 % dès le 23/11 (retour : K.Leonard) ; J.Fears (NOP) -13 % dès le 20/11 (retour : B.Mathurin, D.Murray) ; K.Huerter (DET) -13 % dès le 18/11 (retour : I.Joe) ; C.Braun (DEN) -13 % dès le 29/11 (retour : J.Strawther)
 📈 Profitent d'une blessure (minutes libérées) : T.McConnell (IND) +60 % sur 6 j. (absent : B.Sheppard, J.Furphy, T.Haliburton) ; J.Hayes (UTA) +60 % sur 6 j. (absent : J.Jackson Jr., J.Nurkic, L.Markkanen) ; J.Clark (MIN) +56 % sur 1 j. (absent : A.Edwards, D.DiVincenzo) ; K.Filipowski (UTA) +54 % sur 7 j. (absent : J.Hayes, J.Jackson Jr., J.Nurkic, L.Markkanen) ; D.Melton (GSW) +47 % sur 6 j. (absent : M.Moody, S.Curry) ; I.Jackson (LAC) +47 % sur 1 j. (absent : B.Ingram) ; B.Hyland (MIN) +47 % sur 7 j. (absent : A.Edwards, D.DiVincenzo, J.Clark) ; M.Thybulle (LAL) +43 % sur 1 j. (absent : A.Reaves, M.Johnson)
 ⚠ ALERTES
-  - D.Robinson (DET) : Quadriceps expected back 2026-11-18 | ESPN (Out) : Robinson (quadriceps) has been ruled out for Tuesday's game against the Spurs. (chance de jouer 85 %)
+  - D.Robinson (DET) : Quadriceps expected back 2026-11-27 | ESPN (Out) : Robinson will be re-evaluated in one week due to a left quadriceps strain, Coty M. Davis of The Detroit News reports. (chance de jouer 85 %)
+  - D.Avdija (POR) : Foot expected back 2026-11-17 | ESPN (Day-To-Day) : Avdija (foot) is questionable for Tuesday's game against the Timberwolves. (chance de jouer 85 %)
 
 ▶ CINQ DE DÉPART POUR LE PROCHAIN GAMEDAY
-  BC  K.Dunn (LAC)                 proj. 27.9
+  BC  K.Dunn (LAC)                 proj. 28.0
   BC  A.Dosunmu (MIN)              proj. 34.5
   FC  D.Avdija (POR)               proj. 47.6
-  FC  V.Wembanyama (SAS)           proj. 64.9  ← CAPITAINE
+  FC  V.Wembanyama (SAS)           proj. 65.1  ← CAPITAINE
   (seulement 4 de tes joueurs jouent ce jour-là)
 
 ▶ TRANSFERTS
@@ -37,36 +33,36 @@ Optimisation (jusqu'à deux minutes)…
   Prévu la semaine suivante (indicatif) : Day 2 : D.Robinson→F.Wagner, D.Avdija→K.George
 
 ▶ TES JOUEURS, DU MOINS UTILE AU PLUS UTILE (points attendus ; semaine suivante pondérée × 0.8)
-  T.da Silva (ORL)              6.5 M$ | 23.5 pts/match, fiabilité 0.86 | cette semaine 3 m.   60 pts | suivante 3 m.   62 pts | 16.9 pts/M$
-  A.Mitchell (OKC)              9.0 M$ | 32.5 pts/match, fiabilité 0.67 | cette semaine 3 m.   90 pts | suivante 3 m.   86 pts | 17.7 pts/M$
-  N.Traore (BKN)                6.5 M$ | 25.1 pts/match, fiabilité 0.92 | cette semaine 2 m.   47 pts | suivante 4 m.   94 pts | 18.8 pts/M$
-  D.Robinson (DET)              7.6 M$ | 28.4 pts/match, fiabilité 0.99 | cette semaine 4 m.   87 pts | suivante 3 m.   74 pts | 19.3 pts/M$
-  D.Avdija (POR)               14.5 M$ | 47.6 pts/match, fiabilité 0.98 | cette semaine 3 m.  148 pts | suivante 4 m.  197 pts | 21.1 pts/M$
-  V.Wembanyama (SAS)           19.6 M$ | 64.9 pts/match, fiabilité 0.98 | cette semaine 3 m.  214 pts | suivante 4 m.  268 pts | 21.8 pts/M$
+  D.Robinson (DET)              7.6 M$ | 28.4 pts/match, fiabilité 0.99 | cette semaine 4 m.    0 pts | suivante 3 m.   50 pts |  5.3 pts/M$
+  T.da Silva (ORL)              6.5 M$ | 23.8 pts/match, fiabilité 0.86 | cette semaine 3 m.   61 pts | suivante 3 m.   63 pts | 17.0 pts/M$
+  D.Avdija (POR)               14.5 M$ | 47.6 pts/match, fiabilité 0.98 | cette semaine 3 m.  121 pts | suivante 4 m.  168 pts | 17.6 pts/M$
+  A.Mitchell (OKC)              9.0 M$ | 32.6 pts/match, fiabilité 0.67 | cette semaine 3 m.   90 pts | suivante 3 m.   87 pts | 17.7 pts/M$
+  N.Traore (BKN)                6.5 M$ | 25.4 pts/match, fiabilité 0.92 | cette semaine 2 m.   48 pts | suivante 4 m.   95 pts | 19.0 pts/M$
+  V.Wembanyama (SAS)           19.6 M$ | 65.1 pts/match, fiabilité 0.98 | cette semaine 3 m.  215 pts | suivante 4 m.  269 pts | 21.9 pts/M$
   A.Dosunmu (MIN)              10.1 M$ | 34.5 pts/match, fiabilité 0.98 | cette semaine 3 m.  116 pts | suivante 4 m.  159 pts | 24.1 pts/M$
-  K.Dunn (LAC)                  8.0 M$ | 27.9 pts/match, fiabilité 0.99 | cette semaine 3 m.  107 pts | suivante 4 m.  130 pts | 26.3 pts/M$
-  D.Acuff Jr. (SAC)             8.5 M$ | 47.2 pts/match, fiabilité 0.99 | cette semaine 3 m.  144 pts | suivante 3 m.  141 pts | 30.2 pts/M$
-  Y.Lendeborg (GSW)             7.9 M$ | 40.8 pts/match, fiabilité 0.98 | cette semaine 3 m.  141 pts | suivante 3 m.  135 pts | 31.6 pts/M$
+  K.Dunn (LAC)                  8.0 M$ | 28.0 pts/match, fiabilité 0.99 | cette semaine 3 m.  107 pts | suivante 4 m.  131 pts | 26.4 pts/M$
+  D.Acuff Jr. (SAC)             8.5 M$ | 47.3 pts/match, fiabilité 0.99 | cette semaine 3 m.  144 pts | suivante 3 m.  141 pts | 30.3 pts/M$
+  Y.Lendeborg (GSW)             7.9 M$ | 40.9 pts/match, fiabilité 0.98 | cette semaine 3 m.  142 pts | suivante 3 m.  136 pts | 31.7 pts/M$
 
 ▶ PLAN JOUR PAR JOUR (cette Gameweek)
-  Day 2  deadline mer. 18/11 01h00 : K.Dunn, A.Dosunmu (B2B), D.Avdija (B2B), V.Wembanyama (C)  (1 place(s) vide(s))  [~271 pts]
-  Day 3  deadline jeu. 19/11 00h30 : N.Traore, D.Robinson (B2B), Y.Lendeborg, A.Mitchell, D.Acuff Jr.  [~174 pts]
-  Day 4  deadline ven. 20/11 01h30 : Y.Lendeborg (B2B), K.Dunn, A.Dosunmu, D.Avdija, V.Wembanyama  [~241 pts]
-  Day 5  deadline sam. 21/11 00h30 : N.Traore, D.Robinson, A.Mitchell, T.da Silva, D.Acuff Jr.  [~152 pts]
-  Day 6  deadline sam. 21/11 18h30 : K.Dunn, A.Dosunmu, D.Avdija, D.Acuff Jr. (B2B), V.Wembanyama  [~241 pts]
-  Day 7  deadline dim. 22/11 21h00 : D.Robinson, Y.Lendeborg, A.Mitchell, T.da Silva  (1 place(s) vide(s))  [~129 pts]
+  Day 2  deadline mer. 18/11 01h00 : K.Dunn, A.Dosunmu (B2B), D.Avdija (B2B), V.Wembanyama (C)  (1 place(s) vide(s))  [~260 pts]
+  Day 3  deadline jeu. 19/11 00h30 : N.Traore, Y.Lendeborg, A.Mitchell, T.da Silva, D.Acuff Jr.  [~167 pts]
+  Day 4  deadline ven. 20/11 01h30 : Y.Lendeborg (B2B), K.Dunn, A.Dosunmu, D.Avdija, V.Wembanyama  [~234 pts]
+  Day 5  deadline sam. 21/11 00h30 : N.Traore, A.Mitchell, T.da Silva, D.Acuff Jr.  (1 place(s) vide(s))  [~125 pts]
+  Day 6  deadline sam. 21/11 18h30 : K.Dunn, A.Dosunmu, D.Avdija, D.Acuff Jr. (B2B), V.Wembanyama  [~234 pts]
+  Day 7  deadline dim. 22/11 21h00 : Y.Lendeborg, A.Mitchell, T.da Silva  (2 place(s) vide(s))  [~98 pts]
 
 ▶ SEMAINE SUIVANTE, JOUR PAR JOUR (indicatif, avec les transferts prévus) : 2 place(s) vide(s) au total
-  Day 1  deadline mar. 24/11 00h30 : K.Dunn, A.Dosunmu, D.Avdija, D.Acuff Jr., V.Wembanyama (C)  [~312 pts]
+  Day 1  deadline mar. 24/11 00h30 : K.Dunn, A.Dosunmu, D.Avdija, D.Acuff Jr., V.Wembanyama (C)  [~305 pts]
   Day 2  deadline mer. 25/11 00h30 : F.Wagner, T.da Silva, K.George  (2 place(s) vide(s))  [~110 pts] ← après D.Robinson→F.Wagner, D.Avdija→K.George
-  Day 3  deadline mer. 25/11 22h30 : Y.Lendeborg, K.Dunn, A.Dosunmu, D.Acuff Jr., V.Wembanyama  [~234 pts]
-  Day 4  deadline sam. 28/11 00h30 : N.Traore, Y.Lendeborg, K.Dunn, A.Dosunmu, V.Wembanyama  [~204 pts]
+  Day 3  deadline mer. 25/11 22h30 : Y.Lendeborg, K.Dunn, A.Dosunmu, D.Acuff Jr., V.Wembanyama  [~235 pts]
+  Day 4  deadline sam. 28/11 00h30 : N.Traore, Y.Lendeborg, K.Dunn, A.Dosunmu, V.Wembanyama  [~205 pts]
   Day 5  deadline sam. 28/11 22h30 : N.Traore (B2B), A.Mitchell, F.Wagner, T.da Silva, K.George  [~162 pts]
-  Day 6  deadline dim. 29/11 21h30 : Y.Lendeborg, A.Dosunmu, F.Wagner (B2B), D.Acuff Jr., V.Wembanyama  [~249 pts]
+  Day 6  deadline dim. 29/11 21h30 : Y.Lendeborg, A.Dosunmu, F.Wagner (B2B), D.Acuff Jr., V.Wembanyama  [~250 pts]
 
-Projection Gameweek (jours restants) : ~1209 pts  |  sans transfert : ~1209 pts
+Projection Gameweek (jours restants) : ~1118 pts  |  sans transfert : ~1118 pts
 Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) = non utilisé, mon équipe = my-team (connecté, à jour en direct)
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 17/11/2026 à 12:22:30 (code de sortie : 0)
+Terminé le 17/11/2026 à 22:31:59 (code de sortie : 0)
