@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-18T11:19:33.726126+00:00",
+ "lu": "2026-11-18T21:02:59.388619+00:00",
  "joueurs": {
   "jock landale": {
    "nom": "Jock Landale",
@@ -57,7 +57,7 @@
   },
   "grayson allen": {
    "nom": "Grayson Allen",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Head Concussion",
    "retour_espn": "2026-11-20",
    "retour_commentaire": null,
@@ -109,6 +109,24 @@
    "commentaire": "Wilson (hand) is expected to miss four to six weeks, Shams Charania of ESPN reports.",
    "date": "2026-11-12"
   },
+  "peyton watson": {
+   "nom": "Peyton Watson",
+   "statut": "Day-To-Day",
+   "blessure": "Torso Back",
+   "retour_espn": "2026-11-18",
+   "retour_commentaire": null,
+   "commentaire": "Watson (back) is doubtful for Wednesday's game versus Memphis.",
+   "date": "2026-11-18"
+  },
+  "jaylon tyson": {
+   "nom": "Jaylon Tyson",
+   "statut": "Out",
+   "blessure": "Right Leg Ankle",
+   "retour_espn": "2026-11-20",
+   "retour_commentaire": null,
+   "commentaire": "Tyson (ankle) has been ruled out for Wednesday's game against Memphis.",
+   "date": "2026-11-18"
+  },
   "nae qwan tomlin": {
    "nom": "Nae'Qwan Tomlin",
    "statut": "Out",
@@ -118,15 +136,6 @@
    "commentaire": "Tomlin (back) will remain on the inactive list for Wednesday's game against the Grizzlies.",
    "date": "2026-11-17"
   },
-  "jaylon tyson": {
-   "nom": "Jaylon Tyson",
-   "statut": "Day-To-Day",
-   "blessure": "Right Leg Ankle",
-   "retour_espn": "2026-11-18",
-   "retour_commentaire": null,
-   "commentaire": "Tyson (ankle) is listed as doubtful for Wednesday's game against the Grizzlies.",
-   "date": "2026-11-17"
-  },
   "sam merrill": {
    "nom": "Sam Merrill",
    "statut": "Out",
@@ -134,15 +143,6 @@
    "retour_espn": "2026-11-18",
    "retour_commentaire": null,
    "commentaire": "Merrill (elbow) is questionable to face the Grizzlies on Wednesday.",
-   "date": "2026-11-17"
-  },
-  "peyton watson": {
-   "nom": "Peyton Watson",
-   "statut": "Day-To-Day",
-   "blessure": "Torso Back",
-   "retour_espn": "2026-11-18",
-   "retour_commentaire": null,
-   "commentaire": "Watson (back) is listed as questionable for Wednesday's game against Memphis.",
    "date": "2026-11-17"
   },
   "evan mobley": {
@@ -226,14 +226,41 @@
    "commentaire": "Strawther (knee) was diagnosed with a left knee sprain Friday and will be re-evaluated in six weeks, Vinny Benedetto of The Denver Gazette reports.",
    "date": "2026-10-17"
   },
+  "cade cunningham": {
+   "nom": "Cade Cunningham",
+   "statut": "Day-To-Day",
+   "blessure": "Right Leg Knee",
+   "retour_espn": "2026-11-18",
+   "retour_commentaire": null,
+   "commentaire": "Cunningham is questionable for Wednesday's game against the Pelicans due to right knee soreness",
+   "date": "2026-11-18"
+  },
   "isaiah joe": {
    "nom": "Isaiah Joe",
    "statut": "Out",
    "blessure": "Right Torso Hip",
    "retour_espn": "2026-11-18",
    "retour_commentaire": null,
-   "commentaire": "Joe (hip) is out for Tuesday's game against the Spurs.",
-   "date": "2026-11-17"
+   "commentaire": "Joe (hip) is listed as questionable for Wednesday's game against the Pelicans.",
+   "date": "2026-11-18"
+  },
+  "taurean prince": {
+   "nom": "Taurean Prince",
+   "statut": "Out",
+   "blessure": "Right Leg Knee",
+   "retour_espn": "2026-11-20",
+   "retour_commentaire": null,
+   "commentaire": "Prince (knee) is out for Wednesday's game against the Pelicans.",
+   "date": "2026-11-18"
+  },
+  "ronald holland": {
+   "nom": "Ronald Holland II",
+   "statut": "Out",
+   "blessure": "Left Leg Knee",
+   "retour_espn": "2026-11-20",
+   "retour_commentaire": null,
+   "commentaire": "Holland (knee) is out for Wednesday's game against the Pelicans.",
+   "date": "2026-11-18"
   },
   "duncan robinson": {
    "nom": "Duncan Robinson",
@@ -244,24 +271,6 @@
    "commentaire": "Robinson will be re-evaluated in one week due to a left quadriceps strain, Coty M. Davis of The Detroit News reports.",
    "date": "2026-11-17"
   },
-  "taurean prince": {
-   "nom": "Taurean Prince",
-   "statut": "Out",
-   "blessure": "Right Leg Knee",
-   "retour_espn": "2026-11-18",
-   "retour_commentaire": null,
-   "commentaire": "Prince (knee) has been ruled out for Tuesday's game against the Spurs.",
-   "date": "2026-11-16"
-  },
-  "ronald holland": {
-   "nom": "Ronald Holland II",
-   "statut": "Out",
-   "blessure": "Left Leg Knee",
-   "retour_espn": "2026-11-18",
-   "retour_commentaire": null,
-   "commentaire": "Holland is out for Tuesday's game against San Antonio due to a left knee contusion.",
-   "date": "2026-11-16"
-  },
   "jalen duren": {
    "nom": "Jalen Duren",
    "statut": "Out",
@@ -270,6 +279,15 @@
    "retour_commentaire": "2026-11-22",
    "commentaire": "Duren (hamstring) has begun on-court activity and will be re-evaluated in two weeks, Hunter Patterson of The Athletic reports.",
    "date": "2026-11-08"
+  },
+  "brandon williams": {
+   "nom": "Brandon Williams",
+   "statut": "Out",
+   "blessure": "Left Leg Hamstring",
+   "retour_espn": "2026-11-22",
+   "retour_commentaire": null,
+   "commentaire": "Williams (hamstring) has progressed to on-court activities and will be re-evaluated Saturday.",
+   "date": "2026-11-18"
   },
   "draymond green": {
    "nom": "Draymond Green",
@@ -297,15 +315,6 @@
    "retour_commentaire": "2026-11-26",
    "commentaire": "Curry has been diagnosed with an oblique abdominal tear and will be re-evaluated in two weeks, Shams Charania of ESPN reports.",
    "date": "2026-11-12"
-  },
-  "brandon williams": {
-   "nom": "Brandon Williams",
-   "statut": "Out",
-   "blessure": "Left Leg Hamstring",
-   "retour_espn": "2026-11-22",
-   "retour_commentaire": "2026-11-17",
-   "commentaire": "Williams (hamstring) will miss at least one week, per Anthony Slater of ESPN.com.",
-   "date": "2026-11-10"
   },
   "kristaps porzingis": {
    "nom": "Kristaps Porzingis",
@@ -351,15 +360,6 @@
    "retour_commentaire": null,
    "commentaire": "Thompson (knee) is questionable for Wednesday's game against the Pacers.",
    "date": "2026-11-17"
-  },
-  "julian phillips": {
-   "nom": "Julian Phillips",
-   "statut": "Day-To-Day",
-   "blessure": "Right Arm Wrist",
-   "retour_espn": "2026-11-17",
-   "retour_commentaire": null,
-   "commentaire": "Phillips (illness) is available for Wednesday's game against Dallas.",
-   "date": "2026-11-16"
   },
   "t j mcconnell": {
    "nom": "T.J. McConnell",
@@ -442,23 +442,23 @@
    "commentaire": "Miller underwent surgery Wednesday to repair a torn left rotator cuff and will be re-evaluated in six months, per Law Murray of The Athletic.",
    "date": "2026-08-26"
   },
+  "austin reaves": {
+   "nom": "Austin Reaves",
+   "statut": "Day-To-Day",
+   "blessure": "Left Leg Heel",
+   "retour_espn": "2026-11-18",
+   "retour_commentaire": null,
+   "commentaire": "Reaves (heel) is out for Tuesday's game against the Hornets, Dave McMenamin of ESPN.com reports.",
+   "date": "2026-11-18"
+  },
   "walker kessler": {
    "nom": "Walker Kessler",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Right Leg Lower Leg",
    "retour_espn": "2026-11-18",
    "retour_commentaire": null,
    "commentaire": "Head coach JJ Redick said he expects Walker (leg) to be available for Wednesday's game against the Jazz, Thuc Nhi Nguyen of the Los Angeles Times reports.",
    "date": "2026-11-18"
-  },
-  "austin reaves": {
-   "nom": "Austin Reaves",
-   "statut": "Out",
-   "blessure": "Left Leg Heel",
-   "retour_espn": "2026-11-18",
-   "retour_commentaire": null,
-   "commentaire": "Reaves (heel) is out for Tuesday's game against the Hornets, Dave McMenamin of ESPN.com reports.",
-   "date": "2026-11-17"
   },
   "gg jackson": {
    "nom": "GG Jackson",
@@ -507,30 +507,21 @@
   },
   "myron gardner": {
    "nom": "Myron Gardner",
-   "statut": "Day-To-Day",
+   "statut": "Out",
    "blessure": "Leg Hamstring",
-   "retour_espn": "2026-11-18",
+   "retour_espn": "2026-11-22",
    "retour_commentaire": null,
-   "commentaire": "Gardner (hamstring) is questionable for Wednesday's game against the Bucks, per Ira Winderman of the South Florida Sun Sentinel.",
-   "date": "2026-11-17"
+   "commentaire": "Gardner (hamstring) is out for Wednesday's game against the Bucks.",
+   "date": "2026-11-18"
   },
-  "nikola jovic": {
-   "nom": "Nikola Jovic",
-   "statut": "Day-To-Day",
+  "ryan rollins": {
+   "nom": "Ryan Rollins",
+   "statut": "Out",
    "blessure": "Other Illness",
-   "retour_espn": "2026-11-18",
+   "retour_espn": "2026-11-19",
    "retour_commentaire": null,
-   "commentaire": "Jovic (illness) is listed as probable for Wednesday's game against Milwaukee, Ira Winderman of the South Florida Sun Sentinel reports.",
-   "date": "2026-11-17"
-  },
-  "bam adebayo": {
-   "nom": "Bam Adebayo",
-   "statut": "Day-To-Day",
-   "blessure": "Right Torso Hip",
-   "retour_espn": "2026-11-18",
-   "retour_commentaire": null,
-   "commentaire": "Adebayo (hip) is probable for Wednesday's game against the Bucks, per Ira Winderman of the South Florida Sun Sentinel.",
-   "date": "2026-11-17"
+   "commentaire": "Rollins (illness) has been ruled out for Wednesday's game at Miami.",
+   "date": "2026-11-18"
   },
   "ousmane dieng": {
    "nom": "Ousmane Dieng",
@@ -543,21 +534,21 @@
   },
   "zyon pullin": {
    "nom": "Zyon Pullin",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Right Leg Quadriceps",
    "retour_espn": "2026-11-19",
    "retour_commentaire": null,
    "commentaire": "Pullin (quadriceps) has been ruled out for Tuesday's game against Portland.",
-   "date": "2026-11-17"
+   "date": "2026-11-18"
   },
   "jonathan kuminga": {
    "nom": "Jonathan Kuminga",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Right Arm Shoulder",
    "retour_espn": "2026-11-19",
    "retour_commentaire": null,
    "commentaire": "Kuminga (shoulder) is out for Tuesday's game against Portland.",
-   "date": "2026-11-17"
+   "date": "2026-11-18"
   },
   "jaylen clark": {
    "nom": "Jaylen Clark",
@@ -682,8 +673,8 @@
    "blessure": "Left Leg Ankle",
    "retour_espn": "2026-11-28",
    "retour_commentaire": null,
-   "commentaire": "Nelson (ankle) has been ruled out for Wednesday's game against the 76ers.",
-   "date": "2026-11-17"
+   "commentaire": "Head coach Sean Sweeney said Wednesday that Nelson (ankle) has been doing \"some on-court stuff,\" though Sweeney added that the work has been \"minimal,\" Jason Beede of the Orlando Sentinel reports.",
+   "date": "2026-11-18"
   },
   "jonathan isaac": {
    "nom": "Jonathan Isaac",
@@ -711,6 +702,15 @@
    "retour_commentaire": "2026-12-05",
    "commentaire": "Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports.",
    "date": "2026-10-24"
+  },
+  "dean wade": {
+   "nom": "Dean Wade",
+   "statut": "Day-To-Day",
+   "blessure": "Left Leg Hamstring",
+   "retour_espn": "2026-11-18",
+   "retour_commentaire": null,
+   "commentaire": "Wade (hamstring) has been downgraded to questionable for Wednesday's game against the Magic.",
+   "date": "2026-11-18"
   },
   "dominick barlow": {
    "nom": "Dominick Barlow",
@@ -759,7 +759,7 @@
   },
   "deni avdija": {
    "nom": "Deni Avdija",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Leg Foot",
    "retour_espn": "2026-11-19",
    "retour_commentaire": null,
@@ -865,6 +865,24 @@
    "commentaire": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports.",
    "date": "2026-10-05"
   },
+  "rj barrett": {
+   "nom": "RJ Barrett",
+   "statut": "Day-To-Day",
+   "blessure": "Leg Hamstring",
+   "retour_espn": "2026-11-18",
+   "retour_commentaire": null,
+   "commentaire": "Barrett is questionable for Wednesday's game against the Wizards due to hamstring tightness, Esfandiar Baraheni of The Athletic reports.",
+   "date": "2026-11-18"
+  },
+  "scottie barnes": {
+   "nom": "Scottie Barnes",
+   "statut": "Out",
+   "blessure": "Groin Groin",
+   "retour_espn": "2026-11-20",
+   "retour_commentaire": null,
+   "commentaire": "Barnes (injury management) has been ruled out for Wednesday's game against Washington, Esfandiar Baraheni of The Athletic reports.",
+   "date": "2026-11-18"
+  },
   "kawhi leonard": {
    "nom": "Kawhi Leonard",
    "statut": "Out",
@@ -883,23 +901,14 @@
    "commentaire": "Bittle (foot) has been ruled out for Sunday's game against the Knicks, Zulfi Sheikh of Sportsnet.ca reports.",
    "date": "2026-11-14"
   },
-  "kevin mccullar": {
-   "nom": "Kevin McCullar Jr.",
-   "statut": "Day-To-Day",
-   "blessure": "Other Illness",
-   "retour_espn": "2026-11-20",
-   "retour_commentaire": null,
-   "commentaire": "McCullar signed a two-way contract with the Raptors on Thursday, Michael Scotto of HoopsHype.com reports.",
-   "date": "2026-11-13"
-  },
   "jaxson hayes": {
    "nom": "Jaxson Hayes",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Left Leg Knee",
    "retour_espn": "2026-11-18",
    "retour_commentaire": null,
    "commentaire": "Hayes (knee) has been ruled out for Tuesday's game against the Clippers.",
-   "date": "2026-11-17"
+   "date": "2026-11-18"
   },
   "lauri markkanen": {
    "nom": "Lauri Markkanen",
