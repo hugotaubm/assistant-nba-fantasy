@@ -515,7 +515,7 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       A.Newell (ATL) : Toe expected back 2027-03-17
       C.McCollum (ATL) : Calf expected back 2026-12-19
       K.Knueppel (CHA) : Hamstring expected back 2026-12-12
-  statut i | chances ce Gameday 25 | prochain 25 : 42 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 40 joueurs
       J.Landale (ATL) : Hip expected back 2026-11-20
       K.Flemings (ATL) : Back expected back 2026-11-20
       T.Awaka (CHI) : Back expected back 2026-11-25
@@ -540,18 +540,17 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       D.Green (GSW) : Elbow expected back 2026-11-18
       D.Wade (PHI) : Hamstring expected back 2026-11-18
       R.Barrett (TOR) : Hamstring expected back 2026-11-18
-  statut i | chances ce Gameday 75 | prochain 75 : 4 joueurs
-      I.Joe (DET) : Hip expected back 2026-11-18
-      A.Reaves (LAL) : Heel expected back 2026-11-18
-      W.Kessler (LAL) : Lower Leg expected back 2026-11-18
-      J.Hayes (UTA) : Knee expected back 2026-11-18
   statut i | chances ce Gameday 100 | prochain 25 : 3 joueurs
       G.Allen (CHA) : Concussion expected back 2026-11-20
       D.Harper (SAS) : Undisclosed expected back 2026-11-19
       S.Barnes (TOR) : Groin expected back 2026-11-20
-  statut i | chances ce Gameday 75 | prochain 25 : 2 joueurs
+  statut i | chances ce Gameday 75 | prochain 25 : 3 joueurs
+      A.Reaves (LAL) : Heel expected back 2026-11-20
       M.Gardner (MIA) : Hamstring expected back 2026-11-22
       D.Avdija (POR) : Foot expected back 2026-11-19
+  statut i | chances ce Gameday 75 | prochain 75 : 2 joueurs
+      I.Joe (DET) : Hip expected back 2026-11-18
+      J.Hayes (UTA) : Knee expected back 2026-11-18
   statut u | chances ce Gameday 25 | prochain 25 : 1 joueurs
       K.Gilbert (ATL) : Knee expected back 2026-11-20
   statut i | chances ce Gameday 100 | prochain 75 : 1 joueurs

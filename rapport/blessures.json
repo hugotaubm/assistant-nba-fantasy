@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-18T21:02:59.388619+00:00",
+ "lu": "2026-11-18T22:44:27.852671+00:00",
  "joueurs": {
   "jock landale": {
    "nom": "Jock Landale",
@@ -361,6 +361,15 @@
    "commentaire": "Thompson (knee) is questionable for Wednesday's game against the Pacers.",
    "date": "2026-11-17"
   },
+  "andrew nembhard": {
+   "nom": "Andrew Nembhard",
+   "statut": "Out",
+   "blessure": "Left Torso Hip",
+   "retour_espn": "2026-11-20",
+   "retour_commentaire": null,
+   "commentaire": "Nembhard (hip) won't play in Wednesday's game against the Rockets, Tony East of Forbes.com reports.",
+   "date": "2026-11-18"
+  },
   "t j mcconnell": {
    "nom": "T.J. McConnell",
    "statut": "Day-To-Day",
@@ -368,15 +377,6 @@
    "retour_espn": "2026-11-18",
    "retour_commentaire": null,
    "commentaire": "McConnell (hamstring) is probable to play Wednesday against the Rockets.",
-   "date": "2026-11-17"
-  },
-  "andrew nembhard": {
-   "nom": "Andrew Nembhard",
-   "statut": "Day-To-Day",
-   "blessure": "Left Torso Hip",
-   "retour_espn": "2026-11-18",
-   "retour_commentaire": null,
-   "commentaire": "Nembhard (hip) is questionable for Wednesday's game against Houston.",
    "date": "2026-11-17"
   },
   "tyrese haliburton": {
@@ -444,20 +444,11 @@
   },
   "austin reaves": {
    "nom": "Austin Reaves",
-   "statut": "Day-To-Day",
+   "statut": "Out",
    "blessure": "Left Leg Heel",
-   "retour_espn": "2026-11-18",
+   "retour_espn": "2026-11-20",
    "retour_commentaire": null,
-   "commentaire": "Reaves (heel) is out for Tuesday's game against the Hornets, Dave McMenamin of ESPN.com reports.",
-   "date": "2026-11-18"
-  },
-  "walker kessler": {
-   "nom": "Walker Kessler",
-   "statut": "Day-To-Day",
-   "blessure": "Right Leg Lower Leg",
-   "retour_espn": "2026-11-18",
-   "retour_commentaire": null,
-   "commentaire": "Head coach JJ Redick said he expects Walker (leg) to be available for Wednesday's game against the Jazz, Thuc Nhi Nguyen of the Los Angeles Times reports.",
+   "commentaire": "Reaves (heel) is out for Wednesday's game against the Jazz.",
    "date": "2026-11-18"
   },
   "gg jackson": {
@@ -703,6 +694,15 @@
    "commentaire": "Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports.",
    "date": "2026-10-24"
   },
+  "jaylen brown": {
+   "nom": "Jaylen Brown",
+   "statut": "Out",
+   "blessure": "Left Leg Hamstring",
+   "retour_espn": "2026-11-21",
+   "retour_commentaire": null,
+   "commentaire": "Brown (hamstring) will be re-evaluated at some point this weekend, per Kris Rihm of ESPN.com.",
+   "date": "2026-11-18"
+  },
   "dean wade": {
    "nom": "Dean Wade",
    "statut": "Day-To-Day",
@@ -719,15 +719,6 @@
    "retour_espn": "2026-11-21",
    "retour_commentaire": null,
    "commentaire": "Barlow (back) is out for Wednesday's game against Orlando.",
-   "date": "2026-11-17"
-  },
-  "jaylen brown": {
-   "nom": "Jaylen Brown",
-   "statut": "Out",
-   "blessure": "Left Leg Hamstring",
-   "retour_espn": "2026-11-21",
-   "retour_commentaire": null,
-   "commentaire": "Brown is out for Wednesday's game against the Magic with a left hamstring strain.",
    "date": "2026-11-17"
   },
   "adem bona": {
@@ -811,24 +802,6 @@
    "commentaire": "Raynaud (knee) will remain on the inactive list for Wednesday's game against the Suns.",
    "date": "2026-11-18"
   },
-  "de andre hunter": {
-   "nom": "De'Andre Hunter",
-   "statut": "Day-To-Day",
-   "blessure": "Left Torso Hip",
-   "retour_espn": "2026-11-18",
-   "retour_commentaire": null,
-   "commentaire": "Hunter (hip) is questionable for Wednesday's game against the Suns, James Ham of ESPN 1320 Sacramento reports.",
-   "date": "2026-11-18"
-  },
-  "precious achiuwa": {
-   "nom": "Precious Achiuwa",
-   "statut": "Day-To-Day",
-   "blessure": "Left Leg Ankle",
-   "retour_espn": "2026-11-18",
-   "retour_commentaire": null,
-   "commentaire": "Achiuwa (ankle) is questionable for Wednesday's game against the Suns, James Ham of ESPN 1320 Sacramento reports.",
-   "date": "2026-11-18"
-  },
   "ben simmons": {
    "nom": "Ben Simmons",
    "statut": "Out",
@@ -907,7 +880,7 @@
    "blessure": "Left Leg Knee",
    "retour_espn": "2026-11-18",
    "retour_commentaire": null,
-   "commentaire": "Hayes (knee) has been ruled out for Tuesday's game against the Clippers.",
+   "commentaire": "Hayes (knee) is questionable for Wednesday's game against the Lakers.",
    "date": "2026-11-18"
   },
   "lauri markkanen": {
