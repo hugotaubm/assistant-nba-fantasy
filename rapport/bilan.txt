@@ -453,14 +453,14 @@ Par prix :
   < 7 M$                 265 matchs | 0 min : 90 | biais  -4.3 | réel/projeté 0.81 | minutes 18.3
   ≥ 15 M$                422 matchs | 0 min : 66 | biais  -3.4 | réel/projeté 0.93 | minutes 32.6
 Par rang dans la hiérarchie ESPN (1 = titulaire) :
-  rang 1                 1995 matchs | 0 min : 197 | biais  -1.2 | réel/projeté 0.97 | minutes 29.7
-  rang 2                 1036 matchs | 0 min : 158 | biais  -5.4 | réel/projeté 0.79 | minutes 20.7
+  rang 1                 1980 matchs | 0 min : 198 | biais  -1.2 | réel/projeté 0.97 | minutes 29.7
+  rang 2                 1051 matchs | 0 min : 157 | biais  -5.4 | réel/projeté 0.79 | minutes 20.8
   rang 3                 124 matchs | 0 min : 43 | biais  -9.6 | réel/projeté 0.60 | minutes 16.7
   rang 4                  30 matchs | 0 min : 11 | biais  -8.5 | réel/projeté 0.63 | minutes 13.4
   rang 5                  58 matchs | 0 min : 47 | biais  -4.9 | réel/projeté 0.83 | minutes 18.0
   rang 6                 177 matchs | 0 min : 153 | biais  -7.7 | réel/projeté 0.80 | minutes 25.3
-  rang 7                  89 matchs | 0 min : 76 | biais  -4.4 | réel/projeté 0.90 | minutes 23.9
-  rang 8                  57 matchs | 0 min : 40 | biais  +0.2 | réel/projeté 1.01 | minutes 30.8
+  rang 7                  75 matchs | 0 min : 63 | biais  -2.0 | réel/projeté 0.95 | minutes 25.5
+  rang 8                  71 matchs | 0 min : 53 | biais  -1.6 | réel/projeté 0.96 | minutes 29.4
   rang 9                  30 matchs | 0 min : 15 | biais -10.8 | réel/projeté 0.61 | minutes 17.8
   rang inconnu            78 matchs | 0 min : 48 | biais  -8.9 | réel/projeté 0.70 | minutes 21.9
 Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : 788 sur 3674
@@ -531,9 +531,9 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       C.McCollum (ATL) : Calf expected back 2026-12-19
       K.Knueppel (CHA) : Hamstring expected back 2026-12-12
   statut i | chances ce Gameday 25 | prochain 25 : 39 joueurs
-      J.Landale (ATL) : Hip expected back 2026-11-20
+      J.Landale (ATL) : Hip expected back 2026-11-22
       K.Flemings (ATL) : Back expected back 2026-11-20
-      G.Allen (CHA) : Concussion expected back 2026-11-20
+      G.Allen (CHA) : Concussion expected back 2026-11-23
       T.Awaka (CHI) : Back expected back 2026-11-25
   statut u | chances ce Gameday 0 | prochain 0 : 13 joueurs
       H.Veesaar (ATL) : Knee expected back 2027-07-01
@@ -545,11 +545,16 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       T.Enaruna (CLE) : -
       R.Minix (CLE) : -
       J.Poulakidas (DAL) : -
-  statut i | chances ce Gameday 100 | prochain 25 : 6 joueurs
+  statut i | chances ce Gameday 100 | prochain 25 : 7 joueurs
       G.Nelson (BKN) : Ankle expected back 2026-11-23
+      G.Williams (CHA) : Hamstring expected back 2026-11-23
       Z.Edey (MEM) : Ankle expected back 2026-11-21
       M.Turner (MIL) : Shoulder expected back 2026-11-21
-      K.Kuzma (MIL) : Shoulder expected back 2026-11-21
+  statut d | chances ce Gameday 100 | prochain 75 : 5 joueurs
+      N.Essengue (CHI) : Wrist expected back 2026-11-20
+      U.Onyenso (DET) : Foot expected back 2026-11-21
+      A.Sengun (HOU) : Eye expected back 2026-11-20
+      S.Adams (HOU) : Quadriceps expected back 2026-11-20
   statut i | chances ce Gameday 75 | prochain 25 : 4 joueurs
       T.Lawal (DAL) : Groin expected back 2026-11-21
       C.Cunningham (DET) : Knee expected back 2026-11-20
@@ -559,9 +564,6 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       T.Prince (DET) : Knee expected back 2026-12-13
       D.Harper (SAS) : Hip expected back 2026-12-13
       R.Barrett (TOR) : Hamstring expected back 2026-12-13
-  statut d | chances ce Gameday 100 | prochain 75 : 2 joueurs
-      U.Onyenso (DET) : Foot expected back 2026-11-21
-      A.Sengun (HOU) : Eye expected back 2026-11-20
   statut d | chances ce Gameday None | prochain 75 : 2 joueurs
       L.Cryer (GSW) : Back expected back 2026-11-19
       B.Smith (IND) : Ankle expected back 2026-11-20

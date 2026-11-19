@@ -1,13 +1,13 @@
 {
- "lu": "2026-11-19T22:08:53.075523+00:00",
+ "lu": "2026-11-19T23:41:21.070463+00:00",
  "joueurs": {
   "jock landale": {
    "nom": "Jock Landale",
-   "statut": "Day-To-Day",
+   "statut": "Out",
    "blessure": "Right Torso Hip",
-   "retour_espn": "2026-11-20",
+   "retour_espn": "2026-11-22",
    "retour_commentaire": null,
-   "commentaire": "Landale (hip) won't play Wednesday in Oklahoma City.",
+   "commentaire": "Landale (hip) won't play in Friday's game against the Hornets, Brad Rowland of the Locked On Podcast Network reports.",
    "date": "2026-11-19"
   },
   "kingston flemings": {
@@ -16,7 +16,7 @@
    "blessure": "Torso Back",
    "retour_espn": "2026-11-20",
    "retour_commentaire": null,
-   "commentaire": "Flemings (back) is out for Wednesday's game against the Thunder.",
+   "commentaire": "Flemings (back) is questionable for Friday's game against the Hornets, Brad Rowland of the Locked On Podcast Network reports.",
    "date": "2026-11-19"
   },
   "asa newell": {
@@ -64,14 +64,23 @@
    "commentaire": "Nelson (ankle) has been ruled out for Friday's game against Orlando.",
    "date": "2026-11-19"
   },
+  "grant williams": {
+   "nom": "Grant Williams",
+   "statut": "Out",
+   "blessure": "Right Leg Hamstring",
+   "retour_espn": "2026-11-23",
+   "retour_commentaire": null,
+   "commentaire": "Williams (hamstring) is listed as out for Friday's game versus the Hawks.",
+   "date": "2026-11-19"
+  },
   "grayson allen": {
    "nom": "Grayson Allen",
-   "statut": "Day-To-Day",
+   "statut": "Out",
    "blessure": "Head Concussion",
-   "retour_espn": "2026-11-20",
+   "retour_espn": "2026-11-23",
    "retour_commentaire": null,
-   "commentaire": "Allen (concussion-like symptoms) has been ruled out for Tuesday's game against the Lakers.",
-   "date": "2026-11-18"
+   "commentaire": "Allen (concussion) has been ruled out for Friday's game against Atlanta.",
+   "date": "2026-11-19"
   },
   "kon knueppel": {
    "nom": "Kon Knueppel",
@@ -90,6 +99,15 @@
    "retour_commentaire": "2026-11-22",
    "commentaire": "Schroder has been diagnosed with a left hamstring strain and will be reevaluated in two weeks, Michael Scotto of HoopsHype.com reports.",
    "date": "2026-11-08"
+  },
+  "noa essengue": {
+   "nom": "Noa Essengue",
+   "statut": "Day-To-Day",
+   "blessure": "Arm Wrist",
+   "retour_espn": "2026-11-20",
+   "retour_commentaire": null,
+   "commentaire": "Essengue is listed as probable for Friday's game against Washington due to bilateral wrist soreness.",
+   "date": "2026-11-19"
   },
   "tobe awaka": {
    "nom": "Tobe Awaka",
@@ -316,23 +334,41 @@
    "commentaire": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports.",
    "date": "2026-10-16"
   },
-  "alperen sengun": {
-   "nom": "Alperen Sengun",
+  "steven adams": {
+   "nom": "Steven Adams",
    "statut": "Day-To-Day",
-   "blessure": "Head Eye",
+   "blessure": "Right Leg Quadriceps",
    "retour_espn": "2026-11-20",
    "retour_commentaire": null,
-   "commentaire": "Sengun (eye) will not return to Wednesday's game against the Pacers, Will Guillory of The Athletic reports.",
+   "commentaire": "Adams (quadriceps) is listed as questionable for Friday's game against Denver.",
    "date": "2026-11-19"
   },
   "clint capela": {
    "nom": "Clint Capela",
    "statut": "Out",
    "blessure": "Right Leg Ankle",
+   "retour_espn": "2026-11-23",
+   "retour_commentaire": null,
+   "commentaire": "Capela (ankle) is out for Friday's game against Denver.",
+   "date": "2026-11-19"
+  },
+  "alperen sengun": {
+   "nom": "Alperen Sengun",
+   "statut": "Day-To-Day",
+   "blessure": "Head Eye",
    "retour_espn": "2026-11-20",
    "retour_commentaire": null,
-   "commentaire": "Capela (ankle) has been ruled out for Wednesday's game against Indiana.",
-   "date": "2026-11-17"
+   "commentaire": "Sengun (eye) is questionable for Friday's game against the Nuggets.",
+   "date": "2026-11-19"
+  },
+  "t j mcconnell": {
+   "nom": "T.J. McConnell",
+   "statut": "Day-To-Day",
+   "blessure": "Right Leg Hamstring",
+   "retour_espn": "2026-11-20",
+   "retour_commentaire": null,
+   "commentaire": "McConnell (hamstring) is listed as probable for Friday's game in Cleveland.",
+   "date": "2026-11-19"
   },
   "andrew nembhard": {
    "nom": "Andrew Nembhard",
@@ -340,7 +376,7 @@
    "blessure": "Left Torso Hip",
    "retour_espn": "2026-11-20",
    "retour_commentaire": null,
-   "commentaire": "Nembhard (hip) won't play in Wednesday's game against the Rockets, Tony East of Forbes.com reports.",
+   "commentaire": "Nembhard (hip) is questionable for Friday's game in Cleveland.",
    "date": "2026-11-19"
   },
   "braden smith": {
@@ -349,7 +385,7 @@
    "blessure": "Right Leg Ankle",
    "retour_espn": "2026-11-20",
    "retour_commentaire": null,
-   "commentaire": "Smith suffered a right ankle sprain during Wednesday's game against the Wizards, Tony East of Forbes.com reports.",
+   "commentaire": "Smith (ankle) is listed as questionable for Friday's game against Cleveland.",
    "date": "2026-11-19"
   },
   "tyrese haliburton": {
@@ -592,7 +628,7 @@
    "blessure": "Right Torso Hip",
    "retour_espn": "2026-11-20",
    "retour_commentaire": null,
-   "commentaire": "Caruso won't return to Wednesday's game against the Hawks due to right hip soreness, Clemente Almanza of USA Today reports.",
+   "commentaire": "Caruso is questionable for Friday's game against the Pelicans due to right hip soreness, Justin Martinez of The Oklahoman reports.",
    "date": "2026-11-19"
   },
   "thomas sorber": {
