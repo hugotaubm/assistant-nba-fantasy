@@ -1244,11 +1244,9 @@
 "presence": 0.77,
 "age": 27,
 "min_proj": 19.4,
-"rang_poste": 2,
-"poste_espn": "PF",
-"devant": [
-"Naz Reid"
-]
+"rang_poste": 1,
+"poste_espn": "SF",
+"devant": []
 },
 "61": {
 "nom": "B.Miller",
@@ -1267,7 +1265,7 @@
 "age": 23,
 "min_proj": 34.0,
 "rang_poste": 1,
-"poste_espn": "SF",
+"poste_espn": "SG",
 "devant": [],
 "presaison_matchs": 3,
 "presaison_min": 25.0
@@ -1285,10 +1283,11 @@
 "b2b_presence": 0.75,
 "presence": 0.75,
 "age": 21,
-"rang_poste": 3,
+"rang_poste": 4,
 "poste_espn": "PF",
 "devant": [
 "Naz Reid",
+"Royce O'Neale",
 "Grant Williams"
 ],
 "presaison_matchs": 4,
@@ -1307,9 +1306,11 @@
 "b2b_presence": 1.0,
 "presence": 1.0,
 "age": 23,
-"rang_poste": 1,
-"poste_espn": "SG",
-"devant": [],
+"rang_poste": 2,
+"poste_espn": "SF",
+"devant": [
+"Grant Williams"
+],
 "presaison_matchs": 4,
 "presaison_min": 19.5
 },
@@ -1353,12 +1354,12 @@
 "presence": 0.99,
 "age": 21,
 "min_proj": 34.2,
-"rang_poste": 7,
+"rang_poste": 8,
 "poste_espn": "SG",
 "devant": [
-"Sion James",
+"Brandon Miller",
 "Grayson Allen",
-"Coby White"
+"Sion James"
 ]
 },
 "66": {
@@ -1377,12 +1378,12 @@
 "presence": 0.77,
 "age": 21,
 "min_proj": 19.5,
-"rang_poste": 5,
+"rang_poste": 6,
 "poste_espn": "SG",
 "devant": [
-"Sion James",
+"Brandon Miller",
 "Grayson Allen",
-"Coby White"
+"Sion James"
 ],
 "presaison_matchs": 4,
 "presaison_min": 20.5
@@ -1515,7 +1516,7 @@
 "rang_poste": 2,
 "poste_espn": "SG",
 "devant": [
-"Sion James"
+"Brandon Miller"
 ],
 "presaison_matchs": 1,
 "presaison_min": 14.0
@@ -1537,9 +1538,9 @@
 "age": 33,
 "min_proj": 24.5,
 "rang_poste": 2,
-"poste_espn": "SF",
+"poste_espn": "PF",
 "devant": [
-"Brandon Miller"
+"Naz Reid"
 ],
 "presaison_matchs": 4,
 "presaison_min": 18.8
@@ -4842,9 +4843,11 @@
 "presence": 0.92,
 "age": 24,
 "min_proj": 18.4,
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "C",
-"devant": [],
+"devant": [
+"Brook Lopez"
+],
 "presaison_matchs": 3,
 "presaison_min": 19.3
 },
@@ -4952,8 +4955,8 @@
 "rang_poste": 4,
 "poste_espn": "C",
 "devant": [
-"Isaiah Jackson",
 "Brook Lopez",
+"Isaiah Jackson",
 "Baba Miller"
 ]
 },
@@ -4992,11 +4995,9 @@
 "presence": 0.97,
 "age": 38,
 "min_proj": 26.2,
-"rang_poste": 2,
+"rang_poste": 1,
 "poste_espn": "C",
-"devant": [
-"Isaiah Jackson"
-],
+"devant": [],
 "presaison_matchs": 3,
 "presaison_min": 10.0
 },
@@ -5098,8 +5099,8 @@
 "rang_poste": 3,
 "poste_espn": "C",
 "devant": [
-"Isaiah Jackson",
-"Brook Lopez"
+"Brook Lopez",
+"Isaiah Jackson"
 ],
 "presaison_matchs": 3,
 "presaison_min": 19.0
@@ -5197,11 +5198,9 @@
 "presence": 0.84,
 "age": 25,
 "min_proj": 23.0,
-"rang_poste": 2,
-"poste_espn": "SF",
-"devant": [
-"Matisse Thybulle"
-],
+"rang_poste": 1,
+"poste_espn": "PF",
+"devant": [],
 "presaison_matchs": 2,
 "presaison_min": 16.0
 },
@@ -5288,9 +5287,9 @@
 "age": 27,
 "min_proj": 17.6,
 "rang_poste": 3,
-"poste_espn": "PF",
+"poste_espn": "C",
 "devant": [
-"Jake LaRavia",
+"Walker Kessler",
 "Sandro Mamukelashvili"
 ],
 "presaison_matchs": 4,
@@ -5312,7 +5311,7 @@
 "presence": 0.56,
 "age": 22,
 "min_proj": 11.9,
-"rang_poste": 5,
+"rang_poste": 4,
 "poste_espn": "PG",
 "devant": [
 "Luka Doncic",
@@ -5364,8 +5363,8 @@
 "poste_espn": "SF",
 "devant": [
 "Matisse Thybulle",
-"Ziaire Williams",
-"Jake LaRavia"
+"Jake LaRavia",
+"Ziaire Williams"
 ],
 "presaison_matchs": 5,
 "presaison_min": 12.4
@@ -5387,8 +5386,8 @@
 "poste_espn": "SF",
 "devant": [
 "Matisse Thybulle",
-"Ziaire Williams",
-"Jake LaRavia"
+"Jake LaRavia",
+"Ziaire Williams"
 ],
 "presaison_matchs": 3,
 "presaison_min": 18.3
@@ -5409,9 +5408,11 @@
 "presence": 1.0,
 "age": 24,
 "min_proj": 29.2,
-"rang_poste": 1,
-"poste_espn": "PF",
-"devant": [],
+"rang_poste": 2,
+"poste_espn": "SF",
+"devant": [
+"Matisse Thybulle"
+],
 "presaison_matchs": 5,
 "presaison_min": 23.2
 },
@@ -5501,9 +5502,9 @@
 "presence": 0.97,
 "age": 27,
 "rang_poste": 2,
-"poste_espn": "PF",
+"poste_espn": "C",
 "devant": [
-"Jake LaRavia"
+"Walker Kessler"
 ],
 "presaison_matchs": 5,
 "presaison_min": 20.0
@@ -5566,8 +5567,8 @@
 "poste_espn": "SF",
 "devant": [
 "Matisse Thybulle",
-"Ziaire Williams",
-"Jake LaRavia"
+"Jake LaRavia",
+"Ziaire Williams"
 ],
 "presaison_matchs": 5,
 "presaison_min": 14.2
@@ -6536,9 +6537,11 @@
 "presence": 0.95,
 "age": 25,
 "min_proj": 27.3,
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "SF",
-"devant": [],
+"devant": [
+"Kyle Kuzma"
+],
 "presaison_matchs": 4,
 "presaison_min": 20.5
 },
@@ -6561,7 +6564,7 @@
 "rang_poste": 2,
 "poste_espn": "C",
 "devant": [
-"Myles Turner"
+"Jericho Sims"
 ],
 "presaison_matchs": 5,
 "presaison_min": 24.2
@@ -6582,10 +6585,11 @@
 "presence": 0.9,
 "age": 20,
 "min_proj": 22.6,
-"rang_poste": 2,
-"poste_espn": "SF",
+"rang_poste": 3,
+"poste_espn": "PG",
 "devant": [
-"Jaime Jaquez Jr."
+"Brayden Burries",
+"Ryan Rollins"
 ],
 "presaison_matchs": 3,
 "presaison_min": 17.3
@@ -6607,7 +6611,7 @@
 "age": 30,
 "min_proj": 27.4,
 "rang_poste": 1,
-"poste_espn": "C",
+"poste_espn": "PF",
 "devant": [],
 "presaison_matchs": 4,
 "presaison_min": 22.0
@@ -6628,9 +6632,9 @@
 "rang_poste": 6,
 "poste_espn": "C",
 "devant": [
-"Myles Turner",
+"Jericho Sims",
 "Kel'el Ware",
-"Jericho Sims"
+"Myles Turner"
 ],
 "presaison_matchs": 4,
 "presaison_min": 13.2
@@ -6744,12 +6748,9 @@
 "presence": 0.85,
 "age": 28,
 "min_proj": 18.5,
-"rang_poste": 3,
+"rang_poste": 1,
 "poste_espn": "C",
-"devant": [
-"Myles Turner",
-"Kel'el Ware"
-],
+"devant": [],
 "presaison_matchs": 4,
 "presaison_min": 18.5
 },
@@ -6770,7 +6771,7 @@
 "age": 31,
 "min_proj": 25.7,
 "rang_poste": 1,
-"poste_espn": "PF",
+"poste_espn": "SF",
 "devant": [],
 "presaison_matchs": 3,
 "presaison_min": 20.0
@@ -6798,7 +6799,7 @@
 "rang_poste": 2,
 "poste_espn": "PF",
 "devant": [
-"Kyle Kuzma"
+"Myles Turner"
 ],
 "presaison_matchs": 2,
 "presaison_min": 12.0
@@ -6843,11 +6844,11 @@
 "presence": 0.87,
 "age": 23,
 "rang_poste": 4,
-"poste_espn": "PF",
+"poste_espn": "C",
 "devant": [
-"Kyle Kuzma",
-"Nate Ament",
-"Kel'el Ware"
+"Jericho Sims",
+"Kel'el Ware",
+"Myles Turner"
 ],
 "presaison_matchs": 3,
 "presaison_min": 24.7
@@ -6864,9 +6865,9 @@
 "rang_poste": 5,
 "poste_espn": "C",
 "devant": [
-"Myles Turner",
+"Jericho Sims",
 "Kel'el Ware",
-"Jericho Sims"
+"Myles Turner"
 ],
 "presaison_matchs": 3,
 "presaison_min": 14.0
@@ -8158,8 +8159,8 @@
 "rang_poste": 8,
 "poste_espn": "PF",
 "devant": [
-"Kenrich Williams",
 "Aday Mara",
+"Kenrich Williams",
 "Jaylin Williams"
 ]
 },
@@ -8179,9 +8180,11 @@
 "presence": 0.91,
 "age": 31,
 "min_proj": 15.4,
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "PF",
-"devant": [],
+"devant": [
+"Aday Mara"
+],
 "presaison_matchs": 4,
 "presaison_min": 16.5
 },
@@ -8230,8 +8233,8 @@
 "rang_poste": 3,
 "poste_espn": "PF",
 "devant": [
-"Kenrich Williams",
-"Aday Mara"
+"Aday Mara",
+"Kenrich Williams"
 ]
 },
 "400": {
@@ -8380,11 +8383,9 @@
 "malus_b2b": 1.022,
 "age": 21,
 "b2b_n": 0,
-"rang_poste": 2,
+"rang_poste": 1,
 "poste_espn": "PF",
-"devant": [
-"Kenrich Williams"
-],
+"devant": [],
 "presaison_matchs": 5,
 "presaison_min": 23.2
 },
@@ -11901,6 +11902,6 @@
 "_source": "saison régulière 2025-26 (ESPN), mis à jour le 20/10/2026"
 },
 "roles": {
-"_source": "ESPN (hiérarchie + présaison), mis à jour le 19/11/2026"
+"_source": "ESPN (hiérarchie + présaison), mis à jour le 20/11/2026"
 }
 }
