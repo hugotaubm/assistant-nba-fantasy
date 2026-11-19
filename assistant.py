@@ -688,6 +688,13 @@ def equipe_publique(cfg, boot, get):
                              status="unlimited" if wildcard else "cost"),
               chips=[dict(name="phcapt", start_event=phase["start_event"], stop_event=phase["stop_event"],
                           status_for_entry="played" if any(c.get("name") == "phcapt" for c in joues) else "available")])
+    # wildcard et All-Star : fenêtres du jeu ; « joué » si l'historique en montre un dans la fenêtre en cours
+    for c in boot.get("chips", []):
+        if c.get("name") in ("wildcard", "rich") and c["start_event"] <= prochain["id"] <= c["stop_event"]:
+            deja = any(h.get("name") == c["name"] and c["start_event"] <= (h.get("event") or 0) <= c["stop_event"]
+                       for h in (histo or {}).get("chips", []))
+            mt["chips"].append(dict(name=c["name"], start_event=c["start_event"], stop_event=c["stop_event"],
+                                    status_for_entry="played" if deja else "available"))
     mt["_source"] = f"API publique (picks du {passe['name']} + {faits} transfert(s) cette semaine)"
     return mt, mt["_source"]
 
