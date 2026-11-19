@@ -1051,8 +1051,9 @@ def fenetre_joker(boot, jours, mt):
     """Fenêtre du joker en cours (chips du jeu) : (début, fin, deadline de fin) ; None s'il est déjà joué."""
     for c in (mt or {}).get("chips") or []:
         if c.get("name") == "wildcard" and c.get("status_for_entry") not in (None, "available"):
-            s_, f_ = c.get("start_event") or 0, c.get("stop_event") or 0
-            if s_ <= jours[0]["id"] <= f_:
+            # my-team décrit le joker de la fenêtre en cours ; sans bornes fournies, « joué » vaut pour celle-ci
+            s_, f_ = c.get("start_event"), c.get("stop_event")
+            if s_ is None or f_ is None or s_ <= jours[0]["id"] <= f_:
                 return None
     for c in boot.get("chips", []):
         if c.get("name") == "wildcard" and c.get("start_event", 0) <= jours[0]["id"] <= c.get("stop_event", 0):
