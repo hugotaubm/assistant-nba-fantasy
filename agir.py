@@ -83,7 +83,7 @@ def sonde():
             print(f"  {'TIT ' if p['position'] <= 5 else 'banc'} {el[p['element']]['web_name']:<14} x{p.get('multiplier')} "
                   f"{s_.get('total_points')} pts, {s_.get('minutes')} min")
         for c in boot.get("chips", []):
-            print(f"  CHIP jeu : {json.dumps({k: c.get(k) for k in ('id', 'name', 'number', 'start_event', 'stop_event', 'chip_type')}, ensure_ascii=False)}")
+            if False: print(f"  CHIP jeu : {json.dumps({k: c.get(k) for k in ('id', 'name', 'number', 'start_event', 'stop_event', 'chip_type')}, ensure_ascii=False)}")
         _, _, mt_ = appel("GET", f"my-team/{eid}/")
         for c in mt_.get("chips", []) if isinstance(mt_, dict) else []:
             print(f"  CHIP équipe : {json.dumps(c, ensure_ascii=False)[:400]}")
