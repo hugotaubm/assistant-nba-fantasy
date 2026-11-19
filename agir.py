@@ -83,8 +83,10 @@ def sonde():
             print(f"  {'TIT ' if p['position'] <= 5 else 'banc'} {el[p['element']]['web_name']:<14} x{p.get('multiplier')} "
                   f"{s_.get('total_points')} pts, {s_.get('minutes')} min")
         for c in boot.get("chips", []):
-            if c.get("name") == "rich":
-                print(f"  CHIP rich : {json.dumps(c, ensure_ascii=False)[:700]}")
+            print(f"  CHIP jeu : {json.dumps({k: c.get(k) for k in ('id', 'name', 'number', 'start_event', 'stop_event', 'chip_type')}, ensure_ascii=False)}")
+        _, _, mt_ = appel("GET", f"my-team/{eid}/")
+        for c in mt_.get("chips", []) if isinstance(mt_, dict) else []:
+            print(f"  CHIP équipe : {json.dumps(c, ensure_ascii=False)[:400]}")
         top = sorted(st.items(), key=lambda kv: -(kv[1].get("total_points") or 0))[:10]
         print("  meilleurs du soir : " + ", ".join(f"{el[q]['web_name']} {v.get('total_points', 0) / 10:.0f}" for q, v in top if q in el))
         print(f"  Doncic : {st.get(257, {}).get('total_points', 0) / 10:.0f} pts, {st.get(257, {}).get('minutes')} min")
