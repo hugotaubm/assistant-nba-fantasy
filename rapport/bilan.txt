@@ -522,9 +522,9 @@ CALIBRATION DU MODÈLE (points réels / points attendus, par rang)
   rang 3+  : 2229 joueurs-matchs | réel   12042 / attendu   10218 = 1.18 → facteur appliqué 1.150
   rang ?   :  463 joueurs-matchs | réel    1364 / attendu    2246 = 0.61 → facteur appliqué 0.750
 Erreur restante du modèle par tranche de prix (après la calibration par rang) :
-  10-15 M$  : 1148 joueurs-matchs | réel   35420 / attendu   34812 = 1.02 → facteur appliqué 1.017
-  7-10 M$   : 1513 joueurs-matchs | réel   30905 / attendu   29855 = 1.04 → facteur appliqué 1.035
-  < 7 M$    : 3259 joueurs-matchs | réel   22808 / attendu   22084 = 1.03 → facteur appliqué 1.032
+  10-15 M$  : 1148 joueurs-matchs | réel   35420 / attendu   34813 = 1.02 → facteur appliqué 1.017
+  7-10 M$   : 1513 joueurs-matchs | réel   30905 / attendu   29861 = 1.03 → facteur appliqué 1.035
+  < 7 M$    : 3259 joueurs-matchs | réel   22808 / attendu   22087 = 1.03 → facteur appliqué 1.032
   ≥ 15 M$   :  366 joueurs-matchs | réel   16552 / attendu   15948 = 1.04 → facteur appliqué 1.037
 
 Vérification du barème (points du jeu vs formule des projections) :
@@ -535,16 +535,16 @@ Vérification du barème (points du jeu vs formule des projections) :
 ======================================================================
 STATUTS DU JEU (joueurs non disponibles à 100 %)
 ======================================================================
-  statut i | chances ce Gameday 25 | prochain 25 : 51 joueurs
-      J.Landale (ATL) : Hip expected back 2026-11-22
-      K.Flemings (ATL) : Back expected back 2026-11-20
-      G.Nelson (BKN) : Ankle expected back 2026-11-23
-      G.Williams (CHA) : Hamstring expected back 2026-11-23
   statut u | chances ce Gameday None | prochain None : 48 joueurs
       T.DeVries (BOS) : -
       M.Uzan (BOS) : -
       N.Pringle (BKN) : -
       P.Connaughton (CHA) : -
+  statut i | chances ce Gameday 25 | prochain 25 : 47 joueurs
+      J.Landale (ATL) : Hip expected back 2026-11-22
+      K.Flemings (ATL) : Back expected back 2026-11-20
+      G.Nelson (BKN) : Ankle expected back 2026-11-23
+      G.Williams (CHA) : Hamstring expected back 2026-11-23
   statut i | chances ce Gameday 0 | prochain 0 : 44 joueurs
       M.Gueye (ATL) : Foot expected back 2026-12-12
       A.Newell (ATL) : Toe expected back 2027-03-17
@@ -565,12 +565,20 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       U.Onyenso (DET) : Foot expected back 2026-11-21
       A.Sengun (HOU) : Eye expected back 2026-11-20
       S.Adams (HOU) : Quadriceps expected back 2026-11-20
-  statut d | chances ce Gameday 100 | prochain 75 : 3 joueurs
+  statut d | chances ce Gameday 100 | prochain 75 : 4 joueurs
+      J.Smith (CHI) : Illness expected back 2026-11-20
       J.Grant (MEM) : Calf expected back 2026-11-21
       P.Achiuwa (SAC) : Lower Leg expected back 2026-11-20
       D.Hunter (SAC) : Hip expected back 2026-11-20
+  statut i | chances ce Gameday 25 | prochain 0 : 2 joueurs
+      T.Haliburton (IND) : Hamstring expected back 2026-12-13
+      K.Leonard (TOR) : Knee expected back 2026-12-03
   statut u | chances ce Gameday 25 | prochain 25 : 1 joueurs
       K.Gilbert (ATL) : Knee expected back 2026-11-20
+  statut d | chances ce Gameday 25 | prochain 75 : 1 joueurs
+      R.Holland II (DET) : Knee expected back 2026-11-20
+  statut i | chances ce Gameday 100 | prochain 25 : 1 joueurs
+      N.Topic (OKC) : Hip expected back 2026-11-22
 
 ======================================================================
 LIGUE FIRST TEAM
