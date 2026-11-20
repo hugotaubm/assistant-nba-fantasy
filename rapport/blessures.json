@@ -1,6 +1,15 @@
 {
- "lu": "2026-11-20T21:06:18.358496+00:00",
+ "lu": "2026-11-20T22:48:13.435323+00:00",
  "joueurs": {
+  "kingston flemings": {
+   "nom": "Kingston Flemings",
+   "statut": "Out",
+   "blessure": "Torso Back",
+   "retour_espn": "2026-11-22",
+   "retour_commentaire": null,
+   "commentaire": "Flemings (back) is out for Friday's game against the Hornets, Brad Rowland of the Locked On Podcast Network reports.",
+   "date": "2026-11-20"
+  },
   "jock landale": {
    "nom": "Jock Landale",
    "statut": "Out",
@@ -8,15 +17,6 @@
    "retour_espn": "2026-11-22",
    "retour_commentaire": null,
    "commentaire": "Landale (hip) won't play in Friday's game against the Hornets, Brad Rowland of the Locked On Podcast Network reports.",
-   "date": "2026-11-19"
-  },
-  "kingston flemings": {
-   "nom": "Kingston Flemings",
-   "statut": "Day-To-Day",
-   "blessure": "Torso Back",
-   "retour_espn": "2026-11-20",
-   "retour_commentaire": null,
-   "commentaire": "Flemings (back) is questionable for Friday's game against the Hornets, Brad Rowland of the Locked On Podcast Network reports.",
    "date": "2026-11-19"
   },
   "asa newell": {
@@ -171,6 +171,24 @@
    "retour_commentaire": "2026-11-26",
    "commentaire": "Mobley will receive treatment and participate in rehab after the team confirmed a diagnosis of a right great toe sprain, and he'll be re-evaluated in the next 7-to-10 days.",
    "date": "2026-11-16"
+  },
+  "p j washington": {
+   "nom": "P.J. Washington",
+   "statut": "Day-To-Day",
+   "blessure": "Arm Shoulder",
+   "retour_espn": "2026-11-21",
+   "retour_commentaire": null,
+   "commentaire": "Washington posted 21 points (7-10 FG, 5-7 3Pt, 2-2 FT), five rebounds, two assists, three blocks and one steal over 25 minutes during Wednesday's 116-94 win over the Warriors.",
+   "date": "2026-11-20"
+  },
+  "walter clayton": {
+   "nom": "Walter Clayton Jr.",
+   "statut": "Day-To-Day",
+   "blessure": "Leg Knee",
+   "retour_espn": "2026-11-21",
+   "retour_commentaire": null,
+   "commentaire": "Clayton (ankle) is available for Wednesday's game against the Warriors.",
+   "date": "2026-11-20"
   },
   "dereck lively": {
    "nom": "Dereck Lively II",
@@ -514,24 +532,6 @@
    "commentaire": "Gardner (hamstring) is out for Wednesday's game against the Bucks.",
    "date": "2026-11-19"
   },
-  "myles turner": {
-   "nom": "Myles Turner",
-   "statut": "Day-To-Day",
-   "blessure": "Left Arm Shoulder",
-   "retour_espn": "2026-11-21",
-   "retour_commentaire": null,
-   "commentaire": "Turner (shoulder) has been ruled out for Thursday's game against Portland due to a left shoulder contusion,",
-   "date": "2026-11-20"
-  },
-  "kyle kuzma": {
-   "nom": "Kyle Kuzma",
-   "statut": "Day-To-Day",
-   "blessure": "Right Arm Shoulder",
-   "retour_espn": "2026-11-21",
-   "retour_commentaire": null,
-   "commentaire": "Kuzma (shoulder) has been ruled out for Thursday's game against Portland due to a right shoulder contusion.",
-   "date": "2026-11-20"
-  },
   "ousmane dieng": {
    "nom": "Ousmane Dieng",
    "statut": "Out",
@@ -612,6 +612,24 @@
    "retour_commentaire": null,
    "commentaire": "Murray (ankle) is out for Friday's game against Memphis.",
    "date": "2026-11-13"
+  },
+  "jordan clarkson": {
+   "nom": "Jordan Clarkson",
+   "statut": "Out",
+   "blessure": "Right Leg Foot",
+   "retour_espn": "2026-11-22",
+   "retour_commentaire": null,
+   "commentaire": "Clarkson (foot) won't play in Saturday's game against Portland.",
+   "date": "2026-11-20"
+  },
+  "og anunoby": {
+   "nom": "OG Anunoby",
+   "statut": "Day-To-Day",
+   "blessure": "Leg Calf",
+   "retour_espn": "2026-11-21",
+   "retour_commentaire": null,
+   "commentaire": "Anunoby (calf) is questionable for Saturday's game against Portland.",
+   "date": "2026-11-20"
   },
   "nikola topic": {
    "nom": "Nikola Topic",
@@ -703,6 +721,33 @@
    "commentaire": "Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports.",
    "date": "2026-10-24"
   },
+  "dominick barlow": {
+   "nom": "Dominick Barlow",
+   "statut": "Out",
+   "blessure": "Torso Back",
+   "retour_espn": "2026-11-21",
+   "retour_commentaire": null,
+   "commentaire": "Barlow (back) is probable for Saturday's game versus the Bucks.",
+   "date": "2026-11-20"
+  },
+  "dean wade": {
+   "nom": "Dean Wade",
+   "statut": "Out",
+   "blessure": "Left Leg Hamstring",
+   "retour_espn": "2026-11-23",
+   "retour_commentaire": null,
+   "commentaire": "Wade (hamstring) won't play Saturday against the Bucks.",
+   "date": "2026-11-20"
+  },
+  "tyrese maxey": {
+   "nom": "Tyrese Maxey",
+   "statut": "Day-To-Day",
+   "blessure": "Right Leg Foot",
+   "retour_espn": "2026-11-21",
+   "retour_commentaire": null,
+   "commentaire": "Maxey (foot) is questionable for Saturday's game against the Bucks.",
+   "date": "2026-11-20"
+  },
   "adem bona": {
    "nom": "Adem Bona",
    "statut": "Out",
@@ -712,15 +757,6 @@
    "commentaire": "Bona (back) participated in Friday's practice, though he still needs to go through a full practice with contact before being cleared to return to game action, Adam Aaronson of PhillyVoice.com reports.",
    "date": "2026-11-20"
   },
-  "tyrese maxey": {
-   "nom": "Tyrese Maxey",
-   "statut": "Day-To-Day",
-   "blessure": "Right Leg Foot",
-   "retour_espn": "2026-11-21",
-   "retour_commentaire": null,
-   "commentaire": "Maxey (foot) was a full participant in Friday's practice, Tony Jones of The Athletic reports.",
-   "date": "2026-11-20"
-  },
   "jaylen brown": {
    "nom": "Jaylen Brown",
    "statut": "Out",
@@ -728,15 +764,6 @@
    "retour_espn": "2026-11-23",
    "retour_commentaire": null,
    "commentaire": "Brown (hamstring) went through individual work during Friday's practice, Tony Jones of The Athletic reports.",
-   "date": "2026-11-20"
-  },
-  "dominick barlow": {
-   "nom": "Dominick Barlow",
-   "statut": "Out",
-   "blessure": "Torso Back",
-   "retour_espn": "2026-11-21",
-   "retour_commentaire": null,
-   "commentaire": "Barlow (back) is trending toward making his season debut in Saturday's game against the Bucks, Tony Jones of The Athletic reports.",
    "date": "2026-11-20"
   },
   "ariel hukporti": {
@@ -757,13 +784,13 @@
    "commentaire": "Williams underwent surgery Thursday to repair a torn labrum in his left shoulder and will miss an extended period of time, Shams Charania of ESPN reports.",
    "date": "2026-09-11"
   },
-  "robert williams": {
-   "nom": "Robert Williams III",
-   "statut": "Day-To-Day",
-   "blessure": "Other Rest",
-   "retour_espn": "2026-11-21",
+  "chris youngblood": {
+   "nom": "Chris Youngblood",
+   "statut": "Out",
+   "blessure": "Right Leg Heel",
+   "retour_espn": "2026-11-27",
    "retour_commentaire": null,
-   "commentaire": "Williams (rest) is listed as out for Thursday's game versus the Bucks.",
+   "commentaire": "Youngblood (heel) has been ruled out for Saturday's game against the Knicks.",
    "date": "2026-11-20"
   },
   "deni avdija": {
@@ -772,17 +799,8 @@
    "blessure": "Leg Foot",
    "retour_espn": "2026-11-21",
    "retour_commentaire": null,
-   "commentaire": "Avdija (foot) is listed as out for Thursday's game against the Bucks.",
+   "commentaire": "Avdija (foot) is listed as questionable for Saturday's game against the Knicks.",
    "date": "2026-11-20"
-  },
-  "chris youngblood": {
-   "nom": "Chris Youngblood",
-   "statut": "Out",
-   "blessure": "Right Leg Heel",
-   "retour_espn": "2026-11-21",
-   "retour_commentaire": null,
-   "commentaire": "Youngblood (heel) has been ruled out for Thursday's game against the Bucks.",
-   "date": "2026-11-19"
   },
   "vit krejci": {
    "nom": "Vit Krejci",
@@ -813,11 +831,11 @@
   },
   "precious achiuwa": {
    "nom": "Precious Achiuwa",
-   "statut": "Day-To-Day",
+   "statut": "Out",
    "blessure": "Left Leg Lower Leg",
-   "retour_espn": "2026-11-20",
+   "retour_espn": "2026-11-21",
    "retour_commentaire": null,
-   "commentaire": "Achiuwa is doubtful for Friday's game against the Lakers due to a left lower leg bruise.",
+   "commentaire": "Achiuwa (lower leg) has been ruled out for Friday's game against the Lakers.",
    "date": "2026-11-20"
   },
   "de andre hunter": {
@@ -914,9 +932,9 @@
    "nom": "Jusuf Nurkic",
    "statut": "Out",
    "blessure": "Right Leg Foot",
-   "retour_espn": "2026-11-27",
-   "retour_commentaire": null,
-   "commentaire": "Nurkic (toe) is listed as out for Friday's game against Phoenix.",
+   "retour_espn": "2026-11-29",
+   "retour_commentaire": "2026-11-27",
+   "commentaire": "Nurkic (foot) has been cleared for on-court work and will be re-evaluated in one week.",
    "date": "2026-11-20"
   },
   "lauri markkanen": {
