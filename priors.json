@@ -3547,8 +3547,8 @@
 "rang_poste": 5,
 "poste_espn": "C",
 "devant": [
-"Al Horford",
 "Charles Bassey",
+"Al Horford",
 "Draymond Green"
 ]
 },
@@ -3568,11 +3568,9 @@
 "presence": 0.67,
 "age": 25,
 "min_proj": 11.3,
-"rang_poste": 2,
+"rang_poste": 1,
 "poste_espn": "C",
-"devant": [
-"Al Horford"
-],
+"devant": [],
 "presaison_matchs": 6,
 "presaison_min": 16.2
 },
@@ -3592,8 +3590,8 @@
 "rang_poste": 4,
 "poste_espn": "PG",
 "devant": [
-"LJ Cryer",
 "De'Anthony Melton",
+"LJ Cryer",
 "Brandin Podziemski"
 ],
 "presaison_matchs": 5,
@@ -3618,8 +3616,8 @@
 "rang_poste": 7,
 "poste_espn": "PG",
 "devant": [
-"LJ Cryer",
 "De'Anthony Melton",
+"LJ Cryer",
 "Brandin Podziemski"
 ],
 "presaison_matchs": 5,
@@ -3803,9 +3801,11 @@
 "fppg": 10.44,
 "fiabilite": 0.92,
 "source": "selon le prix",
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "PG",
-"devant": [],
+"devant": [
+"De'Anthony Melton"
+],
 "presaison_matchs": 6,
 "presaison_min": 7.8
 },
@@ -3825,9 +3825,11 @@
 "presence": 0.66,
 "age": 40,
 "min_proj": 25.4,
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "C",
-"devant": [],
+"devant": [
+"Charles Bassey"
+],
 "presaison_matchs": 3,
 "presaison_min": 17.3
 },
@@ -3873,11 +3875,9 @@
 "presence": 0.75,
 "age": 28,
 "min_proj": 23.1,
-"rang_poste": 2,
+"rang_poste": 1,
 "poste_espn": "PG",
-"devant": [
-"LJ Cryer"
-],
+"devant": [],
 "presaison_matchs": 5,
 "presaison_min": 18.4
 },
@@ -3944,8 +3944,8 @@
 "rang_poste": 4,
 "poste_espn": "C",
 "devant": [
-"Al Horford",
 "Charles Bassey",
+"Al Horford",
 "Draymond Green"
 ],
 "presaison_matchs": 5,
@@ -4793,11 +4793,9 @@
 "presence": 0.73,
 "age": 30,
 "min_proj": 25.9,
-"rang_poste": 2,
-"poste_espn": "SF",
-"devant": [
-"Derrick Jones Jr."
-],
+"rang_poste": 1,
+"poste_espn": "SG",
+"devant": [],
 "presaison_matchs": 1,
 "presaison_min": 5.0
 },
@@ -4843,10 +4841,11 @@
 "presence": 0.92,
 "age": 24,
 "min_proj": 18.4,
-"rang_poste": 2,
+"rang_poste": 3,
 "poste_espn": "C",
 "devant": [
-"Brook Lopez"
+"Brook Lopez",
+"Yanic Konan Niederhauser"
 ],
 "presaison_matchs": 3,
 "presaison_min": 19.3
@@ -4910,9 +4909,11 @@
 "presence": 1.0,
 "age": 32,
 "min_proj": 22.0,
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "SG",
-"devant": [],
+"devant": [
+"Max Strus"
+],
 "presaison_matchs": 2,
 "presaison_min": 10.5
 },
@@ -4932,9 +4933,9 @@
 "rang_poste": 7,
 "poste_espn": "SG",
 "devant": [
+"Max Strus",
 "Kris Dunn",
-"Bradley Beal",
-"Keaton Wagler"
+"Bradley Beal"
 ],
 "presaison_matchs": 2,
 "presaison_min": 24.5
@@ -4952,12 +4953,10 @@
 "b2b_presence": 0.83,
 "presence": 0.74,
 "age": 23,
-"rang_poste": 4,
+"rang_poste": 2,
 "poste_espn": "C",
 "devant": [
-"Brook Lopez",
-"Isaiah Jackson",
-"Baba Miller"
+"Brook Lopez"
 ]
 },
 "244": {
@@ -5017,9 +5016,10 @@
 "presence": 0.6,
 "age": 33,
 "min_proj": 25.3,
-"rang_poste": 2,
+"rang_poste": 3,
 "poste_espn": "SG",
 "devant": [
+"Max Strus",
 "Kris Dunn"
 ]
 },
@@ -5081,8 +5081,8 @@
 "poste_espn": "SF",
 "devant": [
 "Derrick Jones Jr.",
-"Max Strus",
-"Gradey Dick"
+"Gradey Dick",
+"Max Strus"
 ],
 "presaison_matchs": 3,
 "presaison_min": 18.7
@@ -5096,10 +5096,11 @@
 "malus_b2b": 1.022,
 "age": 22,
 "b2b_n": 0,
-"rang_poste": 3,
+"rang_poste": 4,
 "poste_espn": "C",
 "devant": [
 "Brook Lopez",
+"Yanic Konan Niederhauser",
 "Isaiah Jackson"
 ],
 "presaison_matchs": 3,
@@ -5153,8 +5154,8 @@
 "poste_espn": "SF",
 "devant": [
 "Derrick Jones Jr.",
-"Max Strus",
-"Gradey Dick"
+"Gradey Dick",
+"Max Strus"
 ]
 },
 "254": {
@@ -5173,11 +5174,10 @@
 "presence": 0.95,
 "age": 22,
 "min_proj": 25.8,
-"rang_poste": 3,
+"rang_poste": 2,
 "poste_espn": "SF",
 "devant": [
-"Derrick Jones Jr.",
-"Max Strus"
+"Derrick Jones Jr."
 ],
 "presaison_matchs": 3,
 "presaison_min": 16.0
@@ -11902,6 +11902,6 @@
 "_source": "saison régulière 2025-26 (ESPN), mis à jour le 20/10/2026"
 },
 "roles": {
-"_source": "ESPN (hiérarchie + présaison), mis à jour le 20/11/2026"
+"_source": "ESPN (hiérarchie + présaison), mis à jour le 21/11/2026"
 }
 }
