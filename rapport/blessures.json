@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-19T23:47:52.766778+00:00",
+ "lu": "2026-11-20T11:51:50.409579+00:00",
  "joueurs": {
   "jock landale": {
    "nom": "Jock Landale",
@@ -273,21 +273,12 @@
   },
   "draymond green": {
    "nom": "Draymond Green",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Other Rest",
    "retour_espn": "2026-11-22",
    "retour_commentaire": null,
    "commentaire": "Green (elbow) is out for Thursday's game against the Grizzlies.",
-   "date": "2026-11-19"
-  },
-  "lj cryer": {
-   "nom": "LJ Cryer",
-   "statut": "Day-To-Day",
-   "blessure": "Torso Back",
-   "retour_espn": "2026-11-19",
-   "retour_commentaire": null,
-   "commentaire": "Cryer (back) is questionable for Thursday's game against Memphis.",
-   "date": "2026-11-19"
+   "date": "2026-11-20"
   },
   "brandon williams": {
    "nom": "Brandon Williams",
@@ -446,28 +437,28 @@
    "nom": "Austin Reaves",
    "statut": "Out",
    "blessure": "Left Leg Heel",
-   "retour_espn": "2026-11-20",
+   "retour_espn": "2026-11-23",
    "retour_commentaire": null,
-   "commentaire": "Head coach JJ Redick said Reaves' (heel) pregame workout went \"well,\" but he remains without an official timetable to return, Daniel Starkand of LakersNation.com reports.",
-   "date": "2026-11-19"
-  },
-  "isaiah stewart": {
-   "nom": "Isaiah Stewart",
-   "statut": "Day-To-Day",
-   "blessure": "Other Illness",
-   "retour_espn": "2026-11-19",
-   "retour_commentaire": null,
-   "commentaire": "Stewart is questionable for Thursday's game against the Warriors due to an illness.",
-   "date": "2026-11-19"
+   "commentaire": "Reaves (heel) is listed as out for Friday's game against the Kings.",
+   "date": "2026-11-20"
   },
   "zach edey": {
    "nom": "Zach Edey",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Leg Ankle",
    "retour_espn": "2026-11-21",
    "retour_commentaire": null,
    "commentaire": "Edey (hip) has been ruled out for Thursday's game against the Warriors.",
-   "date": "2026-11-19"
+   "date": "2026-11-20"
+  },
+  "jerami grant": {
+   "nom": "Jerami Grant",
+   "statut": "Day-To-Day",
+   "blessure": "Left Leg Calf",
+   "retour_espn": "2026-11-21",
+   "retour_commentaire": null,
+   "commentaire": "Grant won't return to Thursday's game against the Warriors due to a left calf injury. He'll finish with three points (1-2 FG, 1-1 3Pt) across five minutes.",
+   "date": "2026-11-20"
   },
   "ty jerome": {
    "nom": "Ty Jerome",
@@ -514,23 +505,23 @@
    "commentaire": "Gardner (hamstring) is out for Wednesday's game against the Bucks.",
    "date": "2026-11-19"
   },
-  "kyle kuzma": {
-   "nom": "Kyle Kuzma",
-   "statut": "Out",
-   "blessure": "Right Arm Shoulder",
-   "retour_espn": "2026-11-21",
-   "retour_commentaire": null,
-   "commentaire": "Kuzma (shoulder) has been ruled out for Thursday's game against Portland due to a right shoulder contusion.",
-   "date": "2026-11-19"
-  },
   "myles turner": {
    "nom": "Myles Turner",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Left Arm Shoulder",
    "retour_espn": "2026-11-21",
    "retour_commentaire": null,
    "commentaire": "Turner (shoulder) has been ruled out for Thursday's game against Portland due to a left shoulder contusion,",
-   "date": "2026-11-19"
+   "date": "2026-11-20"
+  },
+  "kyle kuzma": {
+   "nom": "Kyle Kuzma",
+   "statut": "Day-To-Day",
+   "blessure": "Right Arm Shoulder",
+   "retour_espn": "2026-11-21",
+   "retour_commentaire": null,
+   "commentaire": "Kuzma (shoulder) has been ruled out for Thursday's game against Portland due to a right shoulder contusion.",
+   "date": "2026-11-20"
   },
   "ousmane dieng": {
    "nom": "Ousmane Dieng",
@@ -540,15 +531,6 @@
    "retour_commentaire": null,
    "commentaire": "Dieng will undergo a procedure to repair a fractured left finger Monday, Justin Garcia of the Milwaukee Bucks Radio Network reports.",
    "date": "2026-11-15"
-  },
-  "jonathan kuminga": {
-   "nom": "Jonathan Kuminga",
-   "statut": "Day-To-Day",
-   "blessure": "Right Arm Shoulder",
-   "retour_espn": "2026-11-19",
-   "retour_commentaire": null,
-   "commentaire": "Kuminga (shoulder) is questionable for Thursday's game against the Knicks, Charlie Walton of ZoneCoverage.com reports.",
-   "date": "2026-11-18"
   },
   "jaylen clark": {
    "nom": "Jaylen Clark",
@@ -766,6 +748,24 @@
    "commentaire": "Williams underwent surgery Thursday to repair a torn labrum in his left shoulder and will miss an extended period of time, Shams Charania of ESPN reports.",
    "date": "2026-09-11"
   },
+  "robert williams": {
+   "nom": "Robert Williams III",
+   "statut": "Day-To-Day",
+   "blessure": "Other Rest",
+   "retour_espn": "2026-11-21",
+   "retour_commentaire": null,
+   "commentaire": "Williams (rest) is listed as out for Thursday's game versus the Bucks.",
+   "date": "2026-11-20"
+  },
+  "deni avdija": {
+   "nom": "Deni Avdija",
+   "statut": "Day-To-Day",
+   "blessure": "Leg Foot",
+   "retour_espn": "2026-11-21",
+   "retour_commentaire": null,
+   "commentaire": "Avdija (foot) is listed as out for Thursday's game against the Bucks.",
+   "date": "2026-11-20"
+  },
   "chris youngblood": {
    "nom": "Chris Youngblood",
    "statut": "Out",
@@ -774,33 +774,6 @@
    "retour_commentaire": null,
    "commentaire": "Youngblood (heel) has been ruled out for Thursday's game against the Bucks.",
    "date": "2026-11-19"
-  },
-  "robert williams": {
-   "nom": "Robert Williams III",
-   "statut": "Out",
-   "blessure": "Other Rest",
-   "retour_espn": "2026-11-21",
-   "retour_commentaire": null,
-   "commentaire": "Williams (rest) is listed as out for Thursday's game versus the Bucks.",
-   "date": "2026-11-18"
-  },
-  "deni avdija": {
-   "nom": "Deni Avdija",
-   "statut": "Day-To-Day",
-   "blessure": "Leg Foot",
-   "retour_espn": "2026-11-19",
-   "retour_commentaire": null,
-   "commentaire": "Avdija (foot) is listed as questionable ahead of Thursday's game against Milwaukee.",
-   "date": "2026-11-18"
-  },
-  "toumani camara": {
-   "nom": "Toumani Camara",
-   "statut": "Day-To-Day",
-   "blessure": "Other Rest",
-   "retour_espn": "2026-11-19",
-   "retour_commentaire": null,
-   "commentaire": "Camara is questionable to play Thursday against the Bucks due to general soreness.",
-   "date": "2026-11-18"
   },
   "vit krejci": {
    "nom": "Vit Krejci",
@@ -828,6 +801,24 @@
    "retour_commentaire": "2027-02-20",
    "commentaire": "Sharpe suffered a torn meniscus in his knee and is expected to miss six months, per Shams Charania of ESPN.",
    "date": "2026-08-24"
+  },
+  "precious achiuwa": {
+   "nom": "Precious Achiuwa",
+   "statut": "Day-To-Day",
+   "blessure": "Left Leg Lower Leg",
+   "retour_espn": "2026-11-20",
+   "retour_commentaire": null,
+   "commentaire": "Achiuwa is doubtful for Friday's game against the Lakers due to a left lower leg bruise.",
+   "date": "2026-11-20"
+  },
+  "de andre hunter": {
+   "nom": "De'Andre Hunter",
+   "statut": "Day-To-Day",
+   "blessure": "Left Torso Hip",
+   "retour_espn": "2026-11-20",
+   "retour_commentaire": null,
+   "commentaire": "Hunter (hip) is listed as questionable for Friday's game against the Lakers.",
+   "date": "2026-11-20"
   },
   "maxime raynaud": {
    "nom": "Maxime Raynaud",
@@ -910,6 +901,15 @@
    "commentaire": "Bittle (foot) has been ruled out for Sunday's game against the Knicks, Zulfi Sheikh of Sportsnet.ca reports.",
    "date": "2026-11-14"
   },
+  "jusuf nurkic": {
+   "nom": "Jusuf Nurkic",
+   "statut": "Out",
+   "blessure": "Right Leg Foot",
+   "retour_espn": "2026-11-27",
+   "retour_commentaire": null,
+   "commentaire": "Nurkic (toe) is listed as out for Friday's game against Phoenix.",
+   "date": "2026-11-20"
+  },
   "lauri markkanen": {
    "nom": "Lauri Markkanen",
    "statut": "Out",
@@ -918,15 +918,6 @@
    "retour_commentaire": "2026-12-11",
    "commentaire": "Markkanen has been diagnosed with a non-displaced fracture in his right hand and will be sidelined for at least one month, Shams Charania of ESPN reports.",
    "date": "2026-11-11"
-  },
-  "jusuf nurkic": {
-   "nom": "Jusuf Nurkic",
-   "statut": "Out",
-   "blessure": "Right Leg Foot",
-   "retour_espn": "2026-11-20",
-   "retour_commentaire": "2026-11-20",
-   "commentaire": "Nurkic (toe) has begun participating in on-court activities as he continues recovering from a right foot injury sustained during an Oct. 4 preseason game against Denver. He will be re-evaluated in two weeks, the Jazz announced Friday.",
-   "date": "2026-11-06"
   },
   "jaren jackson": {
    "nom": "Jaren Jackson Jr.",
