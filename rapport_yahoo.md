@@ -17,11 +17,12 @@ Chaque case : moyenne sur les **7 derniers jours · 15 derniers jours** (matchs 
 | Kyshawn George | WAS | OK | @CHI 02:00 | 2 | 3 · 8 | 36.1 · 34.6 | .462 · .460 | .750 · .792 | 2.3 · 3.0 | 16.3 · 18.4 | 3.3 · 4.2 | 3.0 · 4.1 | 1.7 · 0.9 | 1.0 · 1.2 | 1.3 · 2.4 |
 | Darryn Peterson | UTA | OK | PHX 03:30 | 2 | 4 · 8 | 29.5 · 30.9 | .400 · .444 | .750 · .824 | 2.5 · 2.9 | 17.2 · 20.4 | 4.5 · 4.2 | 2.8 · 3.6 | 1.0 · 1.1 | 0.5 · 0.8 | 2.2 · 2.5 |
 | Isaiah Jackson | LAC | OK | – | 1 | 4 · 5 | 15.0 · 15.3 | .591 · .600 | .833 · .833 | 0.2 · 0.2 | 8.0 · 7.2 | 3.5 · 3.6 | 1.8 · 1.4 | 1.0 · 1.0 | 2.0 · 1.6 | 0.8 · 0.6 |
-| Sion James | CHA | OK | @ATL 01:00 | 1 | 2 · 5 | 32.6 · 30.2 | .222 · .355 | 1.000 · .667 | 0.5 · 1.4 | 3.0 · 6.2 | 7.0 · 5.8 | 4.0 · 3.6 | 0.5 · 0.8 | 0.0 · 0.0 | 2.5 · 2.0 |
+| Landry Shamet | NYK | OK | – | 2 | 4 · 7 | 26.1 · 27.2 | .586 · .558 | 1.000 · 1.000 | 2.2 · 2.3 | 12.5 · 11.6 | 1.8 · 1.9 | 1.0 · 1.6 | 0.8 · 0.6 | 0.2 · 0.1 | 1.2 · 1.0 |
 | Ivica Zubac | IND | OK | @CLE 01:30 | 2 | 3 · 6 | 23.9 · 25.0 | .500 · .592 | 1.000 · .857 | 0.0 · 0.0 | 8.0 · 11.7 | 7.0 · 8.0 | 2.3 · 2.2 | 0.0 · 0.0 | 0.7 · 0.7 | 1.0 · 1.3 |
+| Terrence Shannon Jr. | MIN | OK | – | 1 | 4 · 6 | 25.6 · 23.6 | .583 · .490 | .889 · .871 | 1.0 · 0.7 | 17.5 · 13.5 | 3.5 · 3.2 | 3.2 · 3.3 | 0.5 · 0.5 | 0.0 · 0.0 | 2.2 · 1.7 |
 
 **Blessures / nouvelles**
 
 - **Deni Avdija** : Foot expected back 2026-11-21
 
-_Mis à jour le 20/11/2026 17:42 (heure de Paris). Sources : NBA Fantasy (statuts), feuilles de match NBA via nba_api._
+_Mis à jour le 20/11/2026 18:14 (heure de Paris). Sources : NBA Fantasy (statuts), feuilles de match NBA via nba_api._
