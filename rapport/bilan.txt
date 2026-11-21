@@ -560,7 +560,7 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       A.Newell (ATL) : Toe expected back 2027-03-17
       C.McCollum (ATL) : Calf expected back 2026-12-19
       K.Knueppel (CHA) : Hamstring expected back 2026-12-12
-  statut i | chances ce Gameday 25 | prochain 25 : 45 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 44 joueurs
       J.Landale (ATL) : Hip expected back 2026-11-22
       K.Flemings (ATL) : Back expected back 2026-11-22
       G.Nelson (BKN) : Ankle expected back 2026-11-23
@@ -585,14 +585,17 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       T.McConnell (IND) : Hamstring expected back 2026-11-22
       J.Grant (MEM) : Calf expected back 2026-11-23
       F.Okpara (WAS) : Back expected back 2026-11-22
-  statut d | chances ce Gameday 100 | prochain 75 : 2 joueurs
+  statut d | chances ce Gameday 100 | prochain 75 : 3 joueurs
       J.Tatum (BOS) : Rest expected back 2026-11-21
       D.White (BOS) : Shoulder expected back 2026-11-21
+      K.Towns (NYK) : Illness expected back 2026-11-21
   statut i | chances ce Gameday 100 | prochain 25 : 2 joueurs
       N.Traore (BKN) : Hamstring expected back 2026-11-23
       R.Dunn (PHX) : Quadriceps expected back 2026-11-23
   statut u | chances ce Gameday 25 | prochain 0 : 1 joueurs
       K.Gilbert (ATL) : Knee expected back 2027-01-01
+  statut i | chances ce Gameday 25 | prochain 75 : 1 joueurs
+      T.Lawal (DAL) : Groin expected back 2026-11-22
   statut i | chances ce Gameday 75 | prochain 75 : 1 joueurs
       P.Achiuwa (SAC) : Lower Leg expected back 2026-11-21
 
