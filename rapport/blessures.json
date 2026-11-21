@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-21T11:02:03.257632+00:00",
+ "lu": "2026-11-21T15:05:13.555675+00:00",
  "joueurs": {
   "kingston flemings": {
    "nom": "Kingston Flemings",
@@ -75,7 +75,7 @@
   },
   "nolan traore": {
    "nom": "Nolan Traore",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Right Leg Hamstring",
    "retour_espn": "2026-11-23",
    "retour_commentaire": null,
@@ -84,30 +84,30 @@
   },
   "grant nelson": {
    "nom": "Grant Nelson",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Right Leg Ankle",
    "retour_espn": "2026-11-23",
    "retour_commentaire": null,
    "commentaire": "Nelson (ankle) has been ruled out for Friday's game against Orlando.",
-   "date": "2026-11-19"
+   "date": "2026-11-21"
   },
   "grant williams": {
    "nom": "Grant Williams",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Right Leg Hamstring",
    "retour_espn": "2026-11-23",
    "retour_commentaire": null,
    "commentaire": "Williams (hamstring) is listed as out for Friday's game versus the Hawks.",
-   "date": "2026-11-19"
+   "date": "2026-11-21"
   },
   "grayson allen": {
    "nom": "Grayson Allen",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Head Concussion",
    "retour_espn": "2026-11-23",
    "retour_commentaire": null,
    "commentaire": "Allen (concussion) has been ruled out for Friday's game against Atlanta.",
-   "date": "2026-11-19"
+   "date": "2026-11-21"
   },
   "kon knueppel": {
    "nom": "Kon Knueppel",
@@ -363,7 +363,7 @@
   },
   "t j mcconnell": {
    "nom": "T.J. McConnell",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Left Leg Hamstring",
    "retour_espn": "2026-11-22",
    "retour_commentaire": null,
@@ -595,23 +595,23 @@
    "commentaire": "Anunoby (calf) is questionable for Saturday's game against Portland.",
    "date": "2026-11-20"
   },
-  "alex caruso": {
-   "nom": "Alex Caruso",
-   "statut": "Out",
-   "blessure": "Right Torso Hip",
-   "retour_espn": "2026-11-22",
-   "retour_commentaire": null,
-   "commentaire": "Caruso (hip) is listed as out for Friday's game against the Pelicans.",
-   "date": "2026-11-20"
-  },
   "nikola topic": {
    "nom": "Nikola Topic",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Left Torso Hip",
    "retour_espn": "2026-11-22",
    "retour_commentaire": null,
    "commentaire": "Topic (hip) is out for Friday's game against New Orleans.",
-   "date": "2026-11-20"
+   "date": "2026-11-21"
+  },
+  "alex caruso": {
+   "nom": "Alex Caruso",
+   "statut": "Day-To-Day",
+   "blessure": "Right Torso Hip",
+   "retour_espn": "2026-11-22",
+   "retour_commentaire": null,
+   "commentaire": "Caruso (hip) is listed as out for Friday's game against the Pelicans.",
+   "date": "2026-11-21"
   },
   "thomas sorber": {
    "nom": "Thomas Sorber",

@@ -537,10 +537,10 @@ CALIBRATION DU MODÈLE (points réels / points attendus, par rang)
   rang 3+  : 2310 joueurs-matchs | réel   12390 / attendu   10535 = 1.18 → facteur appliqué 1.150
   rang ?   :  490 joueurs-matchs | réel    1400 / attendu    2349 = 0.60 → facteur appliqué 0.750
 Erreur restante du modèle par tranche de prix (après la calibration par rang) :
-  10-15 M$  : 1194 joueurs-matchs | réel   36952 / attendu   36093 = 1.02 → facteur appliqué 1.024
-  7-10 M$   : 1573 joueurs-matchs | réel   32102 / attendu   31032 = 1.03 → facteur appliqué 1.034
-  < 7 M$    : 3399 joueurs-matchs | réel   23723 / attendu   22995 = 1.03 → facteur appliqué 1.031
-  ≥ 15 M$   :  381 joueurs-matchs | réel   17242 / attendu   16554 = 1.04 → facteur appliqué 1.041
+  10-15 M$  : 1194 joueurs-matchs | réel   36952 / attendu   36142 = 1.02 → facteur appliqué 1.022
+  7-10 M$   : 1573 joueurs-matchs | réel   32102 / attendu   31039 = 1.03 → facteur appliqué 1.034
+  < 7 M$    : 3399 joueurs-matchs | réel   23723 / attendu   22991 = 1.03 → facteur appliqué 1.031
+  ≥ 15 M$   :  381 joueurs-matchs | réel   17242 / attendu   16581 = 1.04 → facteur appliqué 1.039
 
 Vérification du barème (points du jeu vs formule des projections) :
   Statistiques fournies par le jeu : ['assists', 'blocks', 'in_dreamteam', 'minutes', 'played', 'points_scored', 'rebounds', 'steals', 'total_points']
@@ -568,7 +568,7 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
   statut u | chances ce Gameday 0 | prochain 0 : 13 joueurs
       H.Veesaar (ATL) : Knee expected back 2027-07-01
       R.Dillingham (CHI) : Wrist expected back 2027-01-01
-      Y.Kawamura (LAC) : Foot expected back 2026-11-20
+      Y.Kawamura (LAC) : Foot expected back 2026-11-22
       E.Freeman (MIN) : Undisclosed expected back 2027-01-01
   statut u | chances ce Gameday 100 | prochain 100 : 13 joueurs
       I.McKneely (ATL) : -
@@ -591,8 +591,8 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
   statut i | chances ce Gameday 100 | prochain 25 : 2 joueurs
       N.Traore (BKN) : Hamstring expected back 2026-11-23
       R.Dunn (PHX) : Quadriceps expected back 2026-11-23
-  statut u | chances ce Gameday 25 | prochain 25 : 1 joueurs
-      K.Gilbert (ATL) : Knee expected back 2026-11-20
+  statut u | chances ce Gameday 25 | prochain 0 : 1 joueurs
+      K.Gilbert (ATL) : Knee expected back 2027-01-01
   statut i | chances ce Gameday 75 | prochain 75 : 1 joueurs
       P.Achiuwa (SAC) : Lower Leg expected back 2026-11-21
 
