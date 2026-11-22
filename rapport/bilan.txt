@@ -575,11 +575,11 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       A.Newell (ATL) : Toe expected back 2027-03-17
       C.McCollum (ATL) : Calf expected back 2026-12-19
       K.Knueppel (CHA) : Hamstring expected back 2026-12-12
-  statut i | chances ce Gameday 25 | prochain 25 : 42 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 40 joueurs
       J.Landale (ATL) : Hip expected back 2026-11-27
-      K.Flemings (ATL) : Back expected back 2026-11-22
       N.Traore (BKN) : Hamstring expected back 2026-11-23
       G.Nelson (BKN) : Ankle expected back 2026-11-23
+      G.Williams (CHA) : Hamstring expected back 2026-11-23
   statut u | chances ce Gameday 0 | prochain 0 : 15 joueurs
       K.Gilbert (ATL) : Knee expected back 2027-01-01
       H.Veesaar (ATL) : Knee expected back 2027-07-01
@@ -590,23 +590,28 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       T.Enaruna (CLE) : -
       R.Minix (CLE) : -
       J.Poulakidas (DAL) : -
-  statut d | chances ce Gameday 100 | prochain 75 : 7 joueurs
+  statut d | chances ce Gameday 100 | prochain 75 : 8 joueurs
       N.Claxton (CHI) : Illness expected back 2026-11-22
       P.Williams (CHI) : Thumb expected back 2026-11-22
       C.Cunningham (DET) : Knee expected back 2026-11-22
       P.Siakam (IND) : Hip expected back 2026-11-22
-  statut i | chances ce Gameday 75 | prochain 75 : 6 joueurs
+  statut i | chances ce Gameday 75 | prochain 75 : 4 joueurs
       J.Tatum (BOS) : Rest expected back 2026-11-22
       D.White (BOS) : Shoulder expected back 2026-11-22
       P.Washington (DAL) : Illness expected back 2026-11-22
-      T.Lawal (DAL) : Groin expected back 2026-11-22
+      K.Towns (NYK) : Illness expected back 2026-11-22
   statut i | chances ce Gameday 100 | prochain 25 : 4 joueurs
       N.Powell (CHI) : Hamstring expected back 2026-11-28
       Z.Williamson (NOP) : Thigh expected back 2026-11-23
       T.Murphy III (NOP) : Knee expected back 2026-11-23
       J.Williams (OKC) : Back expected back 2026-11-23
+  statut i | chances ce Gameday 75 | prochain 25 : 2 joueurs
+      T.Lawal (DAL) : Groin expected back 2026-11-24
+      O.Anunoby (NYK) : Calf expected back 2026-11-25
   statut i | chances ce Gameday 100 | prochain 75 : 1 joueurs
       M.Robinson (BOS) : Illness expected back 2026-11-22
+  statut d | chances ce Gameday 75 | prochain 75 : 1 joueurs
+      W.Clayton Jr. (DAL) : Knee expected back 2026-11-22
   statut i | chances ce Gameday 0 | prochain 25 : 1 joueurs
       B.Williams (GSW) : Hamstring expected back 2026-11-25
   statut i | chances ce Gameday 25 | prochain 75 : 1 joueurs
