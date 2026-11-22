@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-22T11:05:39.540816+00:00",
+ "lu": "2026-11-22T17:38:33.970889+00:00",
  "joueurs": {
   "kingston flemings": {
    "nom": "Kingston Flemings",
@@ -55,32 +55,32 @@
    "commentaire": "Veesaar was diagnosed with a torn right ACL and is expected to miss the 2026-27 season, the Hawks announced Monday.",
    "date": "2026-09-21"
   },
-  "mitchell robinson": {
-   "nom": "Mitchell Robinson",
-   "statut": "Out",
-   "blessure": "Other Illness",
-   "retour_espn": "2026-11-22",
-   "retour_commentaire": null,
-   "commentaire": "Robinson (illness) has been ruled out for Saturday's game against the Kings, Keith Smith of Spotrac.com reports.",
-   "date": "2026-11-21"
-  },
   "derrick white": {
    "nom": "Derrick White",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Left Arm Shoulder",
    "retour_espn": "2026-11-22",
    "retour_commentaire": null,
    "commentaire": "White (shoulder) has been ruled out for Saturday's game against Sacramento.",
-   "date": "2026-11-21"
+   "date": "2026-11-22"
+  },
+  "mitchell robinson": {
+   "nom": "Mitchell Robinson",
+   "statut": "Day-To-Day",
+   "blessure": "Other Illness",
+   "retour_espn": "2026-11-22",
+   "retour_commentaire": null,
+   "commentaire": "Robinson (illness) has been ruled out for Saturday's game against the Kings, Keith Smith of Spotrac.com reports.",
+   "date": "2026-11-22"
   },
   "jayson tatum": {
    "nom": "Jayson Tatum",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Other Rest",
    "retour_espn": "2026-11-22",
    "retour_commentaire": null,
    "commentaire": "Tatum (rest) has been ruled out for Saturday's game against the Kings.",
-   "date": "2026-11-21"
+   "date": "2026-11-22"
   },
   "nolan traore": {
    "nom": "Nolan Traore",
@@ -136,6 +136,24 @@
    "commentaire": "Schroder has been diagnosed with a left hamstring strain and will be reevaluated in two weeks, Michael Scotto of HoopsHype.com reports.",
    "date": "2026-11-08"
   },
+  "nic claxton": {
+   "nom": "Nic Claxton",
+   "statut": "Day-To-Day",
+   "blessure": "Other Illness",
+   "retour_espn": "2026-11-22",
+   "retour_commentaire": null,
+   "commentaire": "Claxton ended with 11 points (4-8 FG, 3-3 FT), seven rebounds, one assist and two blocks across 29 minutes during Friday's 98-94 loss to Washington.",
+   "date": "2026-11-22"
+  },
+  "norman powell": {
+   "nom": "Norman Powell",
+   "statut": "Out",
+   "blessure": "Right Leg Hamstring",
+   "retour_espn": "2026-11-28",
+   "retour_commentaire": null,
+   "commentaire": "Powell has been diagnosed with a mild right hamstring strain and will be re-evaluated later this week.",
+   "date": "2026-11-22"
+  },
   "patrick williams": {
    "nom": "Patrick Williams",
    "statut": "Day-To-Day",
@@ -143,15 +161,6 @@
    "retour_espn": "2026-11-22",
    "retour_commentaire": null,
    "commentaire": "Williams is probable for Sunday's game against the Nuggets due to a left thumb sprain.",
-   "date": "2026-11-22"
-  },
-  "norman powell": {
-   "nom": "Norman Powell",
-   "statut": "Day-To-Day",
-   "blessure": "Right Leg Hamstring",
-   "retour_espn": "2026-11-22",
-   "retour_commentaire": null,
-   "commentaire": "Powell is questionable for Sunday's game against the Nuggets due to a right hamstring strain.",
    "date": "2026-11-22"
   },
   "jalen smith": {
@@ -162,15 +171,6 @@
    "retour_commentaire": null,
    "commentaire": "Smith (illness) is out for Friday's game against the Wizards, Joel Lorenzi of The Athletic reports.",
    "date": "2026-11-21"
-  },
-  "tobe awaka": {
-   "nom": "Tobe Awaka",
-   "statut": "Out",
-   "blessure": "Torso Back",
-   "retour_espn": "2026-11-25",
-   "retour_commentaire": null,
-   "commentaire": "Awaka (back) has been ruled out for Wednesday's game against the Nets.",
-   "date": "2026-11-17"
   },
   "caleb wilson": {
    "nom": "Caleb Wilson",
@@ -210,21 +210,21 @@
   },
   "p j washington": {
    "nom": "P.J. Washington",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Other Illness",
    "retour_espn": "2026-11-22",
    "retour_commentaire": null,
    "commentaire": "Washington (illness/shoulder) is listed as out for Saturday's game against the Clippers.",
-   "date": "2026-11-21"
+   "date": "2026-11-22"
   },
   "tobi lawal": {
    "nom": "Tobi Lawal",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Right Groin Groin",
    "retour_espn": "2026-11-22",
    "retour_commentaire": null,
    "commentaire": "Lawal (groin) is out for Saturday's game against the Clippers.",
-   "date": "2026-11-21"
+   "date": "2026-11-22"
   },
   "dereck lively": {
    "nom": "Dereck Lively II",
@@ -297,15 +297,6 @@
    "retour_commentaire": null,
    "commentaire": "Prince (knee) underwent surgery to address lingering issues and has no timeline for a return, Hunter Patterson of The Athletic reports.",
    "date": "2026-11-20"
-  },
-  "ugonna onyenso": {
-   "nom": "Ugonna Onyenso",
-   "statut": "Day-To-Day",
-   "blessure": "Left Leg Foot",
-   "retour_espn": "2026-11-21",
-   "retour_commentaire": null,
-   "commentaire": "Onyenso agreed to a two-way contract with the Pistons on Thursday.",
-   "date": "2026-11-19"
   },
   "duncan robinson": {
    "nom": "Duncan Robinson",
@@ -460,32 +451,32 @@
    "commentaire": "Head coach JJ Redick said he expects Reaves (heel) to return for Monday's matchup with Utah or Friday's game in San Antonio, Mark Medina of TheSportingTribune.com reports.",
    "date": "2026-11-21"
   },
-  "jerami grant": {
-   "nom": "Jerami Grant",
-   "statut": "Out",
-   "blessure": "Left Leg Calf",
-   "retour_espn": "2026-11-23",
-   "retour_commentaire": null,
-   "commentaire": "Grant (calf) is out for Saturday's game against the Timberwolves.",
-   "date": "2026-11-21"
-  },
   "javon small": {
    "nom": "Javon Small",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Other Personal",
    "retour_espn": "2026-11-23",
    "retour_commentaire": null,
    "commentaire": "Small won't play Saturday against the Timberwolves due to personal reasons.",
-   "date": "2026-11-20"
+   "date": "2026-11-22"
   },
   "cameron boozer": {
    "nom": "Cameron Boozer",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Leg Ankle",
    "retour_espn": "2026-11-23",
    "retour_commentaire": null,
    "commentaire": "Boozer is out for Saturday's game against Minnesota due to a right ankle sprain.",
-   "date": "2026-11-20"
+   "date": "2026-11-22"
+  },
+  "jerami grant": {
+   "nom": "Jerami Grant",
+   "statut": "Day-To-Day",
+   "blessure": "Left Leg Calf",
+   "retour_espn": "2026-11-23",
+   "retour_commentaire": null,
+   "commentaire": "Grant (calf) is out for Saturday's game against the Timberwolves.",
+   "date": "2026-11-22"
   },
   "gg jackson": {
    "nom": "GG Jackson",
@@ -570,7 +561,7 @@
   },
   "zion williamson": {
    "nom": "Zion Williamson",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Left Leg Thigh",
    "retour_espn": "2026-11-23",
    "retour_commentaire": null,
@@ -579,12 +570,12 @@
   },
   "trey murphy": {
    "nom": "Trey Murphy III",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Leg Knee",
    "retour_espn": "2026-11-23",
    "retour_commentaire": null,
    "commentaire": "Murphy (knee) has been ruled out for Saturday's game against the Spurs.",
-   "date": "2026-11-21"
+   "date": "2026-11-22"
   },
   "trendon watford": {
    "nom": "Trendon Watford",
@@ -759,12 +750,21 @@
   },
   "dean wade": {
    "nom": "Dean Wade",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Left Leg Hamstring",
    "retour_espn": "2026-11-23",
    "retour_commentaire": null,
    "commentaire": "Wade (hamstring) won't play Saturday against the Bucks.",
-   "date": "2026-11-20"
+   "date": "2026-11-22"
+  },
+  "jaylen brown": {
+   "nom": "Jaylen Brown",
+   "statut": "Day-To-Day",
+   "blessure": "Left Leg Hamstring",
+   "retour_espn": "2026-11-23",
+   "retour_commentaire": null,
+   "commentaire": "Brown (hamstring) went through individual work during Friday's practice, Tony Jones of The Athletic reports.",
+   "date": "2026-11-22"
   },
   "adem bona": {
    "nom": "Adem Bona",
@@ -773,15 +773,6 @@
    "retour_espn": "2026-11-23",
    "retour_commentaire": null,
    "commentaire": "Bona (back) participated in Friday's practice, though he still needs to go through a full practice with contact before being cleared to return to game action, Adam Aaronson of PhillyVoice.com reports.",
-   "date": "2026-11-20"
-  },
-  "jaylen brown": {
-   "nom": "Jaylen Brown",
-   "statut": "Out",
-   "blessure": "Left Leg Hamstring",
-   "retour_espn": "2026-11-23",
-   "retour_commentaire": null,
-   "commentaire": "Brown (hamstring) went through individual work during Friday's practice, Tony Jones of The Athletic reports.",
    "date": "2026-11-20"
   },
   "ariel hukporti": {
@@ -898,8 +889,8 @@
    "blessure": "Head Concussion",
    "retour_espn": "2026-11-23",
    "retour_commentaire": null,
-   "commentaire": "Murray-Boyles (concussion) has been ruled out for Friday's game against the Pistons.",
-   "date": "2026-11-21"
+   "commentaire": "Murray-Boyles (concussion) participated in Sunday's practice, Michael Grange of Sportsnet.ca reports.",
+   "date": "2026-11-22"
   },
   "kawhi leonard": {
    "nom": "Kawhi Leonard",

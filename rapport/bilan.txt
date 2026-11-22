@@ -552,10 +552,10 @@ CALIBRATION DU MODÈLE (points réels / points attendus, par rang)
   rang 3+  : 2373 joueurs-matchs | réel   12776 / attendu   10790 = 1.18 → facteur appliqué 1.150
   rang ?   :  501 joueurs-matchs | réel    1407 / attendu    2377 = 0.59 → facteur appliqué 0.750
 Erreur restante du modèle par tranche de prix (après la calibration par rang) :
-  10-15 M$  : 1228 joueurs-matchs | réel   37882 / attendu   37100 = 1.02 → facteur appliqué 1.021
-  7-10 M$   : 1615 joueurs-matchs | réel   33061 / attendu   31880 = 1.04 → facteur appliqué 1.037
-  < 7 M$    : 3490 joueurs-matchs | réel   24330 / attendu   23563 = 1.03 → facteur appliqué 1.032
-  ≥ 15 M$   :  388 joueurs-matchs | réel   17570 / attendu   16853 = 1.04 → facteur appliqué 1.042
+  10-15 M$  : 1228 joueurs-matchs | réel   37882 / attendu   37108 = 1.02 → facteur appliqué 1.021
+  7-10 M$   : 1615 joueurs-matchs | réel   33061 / attendu   31872 = 1.04 → facteur appliqué 1.037
+  < 7 M$    : 3490 joueurs-matchs | réel   24330 / attendu   23558 = 1.03 → facteur appliqué 1.032
+  ≥ 15 M$   :  388 joueurs-matchs | réel   17570 / attendu   16858 = 1.04 → facteur appliqué 1.041
 
 Vérification du barème (points du jeu vs formule des projections) :
   Statistiques fournies par le jeu : ['assists', 'blocks', 'in_dreamteam', 'minutes', 'played', 'points_scored', 'rebounds', 'steals', 'total_points']
@@ -575,7 +575,7 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       A.Newell (ATL) : Toe expected back 2027-03-17
       C.McCollum (ATL) : Calf expected back 2026-12-19
       K.Knueppel (CHA) : Hamstring expected back 2026-12-12
-  statut i | chances ce Gameday 25 | prochain 25 : 43 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 42 joueurs
       J.Landale (ATL) : Hip expected back 2026-11-27
       K.Flemings (ATL) : Back expected back 2026-11-22
       N.Traore (BKN) : Hamstring expected back 2026-11-23
@@ -590,24 +590,23 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       T.Enaruna (CLE) : -
       R.Minix (CLE) : -
       J.Poulakidas (DAL) : -
+  statut d | chances ce Gameday 100 | prochain 75 : 7 joueurs
+      N.Claxton (CHI) : Illness expected back 2026-11-22
+      P.Williams (CHI) : Thumb expected back 2026-11-22
+      C.Cunningham (DET) : Knee expected back 2026-11-22
+      P.Siakam (IND) : Hip expected back 2026-11-22
   statut i | chances ce Gameday 75 | prochain 75 : 6 joueurs
       J.Tatum (BOS) : Rest expected back 2026-11-22
       D.White (BOS) : Shoulder expected back 2026-11-22
       P.Washington (DAL) : Illness expected back 2026-11-22
       T.Lawal (DAL) : Groin expected back 2026-11-22
-  statut d | chances ce Gameday 100 | prochain 75 : 6 joueurs
-      P.Williams (CHI) : Thumb expected back 2026-11-22
-      N.Powell (CHI) : Hamstring expected back 2026-11-22
-      C.Cunningham (DET) : Knee expected back 2026-11-22
-      P.Siakam (IND) : Hip expected back 2026-11-22
-  statut i | chances ce Gameday 100 | prochain 25 : 3 joueurs
+  statut i | chances ce Gameday 100 | prochain 25 : 4 joueurs
+      N.Powell (CHI) : Hamstring expected back 2026-11-28
       Z.Williamson (NOP) : Thigh expected back 2026-11-23
       T.Murphy III (NOP) : Knee expected back 2026-11-23
       J.Williams (OKC) : Back expected back 2026-11-23
   statut i | chances ce Gameday 100 | prochain 75 : 1 joueurs
       M.Robinson (BOS) : Illness expected back 2026-11-22
-  statut d | chances ce Gameday 75 | prochain 75 : 1 joueurs
-      U.Onyenso (DET) : Foot expected back 2026-11-21
   statut i | chances ce Gameday 0 | prochain 25 : 1 joueurs
       B.Williams (GSW) : Hamstring expected back 2026-11-25
   statut i | chances ce Gameday 25 | prochain 75 : 1 joueurs
