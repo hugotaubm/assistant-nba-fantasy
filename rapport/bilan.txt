@@ -471,41 +471,56 @@ BILAN DES GAMEDAYS JOUÉS
   → Titulaires : 83.0 pts réels pour 121.0 projetés (-38.0) [projection du modèle].
   → Meilleur cinq possible après coup : 83.0 pts (hors capitaine), soit 0.0 pts laissés sur le banc.
 
+--- Gameweek 5 - Day 6 : moyenne des joueurs 133.3 | meilleur 386.0
+  Ton score : 245.0 | banc : 0.0 | rang : 2292 | transferts : 0 (coût 0)
+  TITULAIRE A.Dosunmu (MIN)              33 min        réel  34.0 | projeté  34.5
+  TITULAIRE K.Dunn (LAC)                 18 min        réel  26.0 | projeté  29.8
+  TITULAIRE D.Acuff Jr. (SAC)            39 min        réel  43.0 | projeté  45.2
+  TITULAIRE D.Avdija (POR)               35 min        réel  45.0 | projeté   9.9
+  TITULAIRE V.Wembanyama (SAS)           31 min        réel  97.0 | projeté  67.4
+  banc      N.Traore (BKN)               pas de match  réel   0.0 | projeté   0.0
+  banc      T.da Silva (ORL)             pas de match  réel   0.0 | projeté   0.0
+  banc      A.Mitchell (OKC)             pas de match  réel   0.0 | projeté   0.0
+  banc      D.Robinson (DET)             pas de match  réel   0.0 | projeté   0.0
+  banc      Y.Lendeborg (GSW)            pas de match  réel   0.0 | projeté   0.0
+  → Titulaires : 245.0 pts réels pour 186.8 projetés (+58.2) [projection du modèle].
+  → Meilleur cinq possible après coup : 245.0 pts (hors capitaine), soit 0.0 pts laissés sur le banc.
+
 ======================================================================
 QUALITÉ DES PROJECTIONS (toute la ligue, joueurs projetés ≥ 20 pts)
 ======================================================================
-Matchs joués : 3045 | biais moyen (réel − projeté) : -2.9 pts | erreur moyenne : 9.6 pts
+Matchs joués : 3121 | biais moyen (réel − projeté) : -2.9 pts | erreur moyenne : 9.6 pts
 Corrélation projeté/réel : 0.63
 Minutes moyennes : 26.3
 Par prix :
-  10-15 M$               1586 matchs | 0 min : 361 | biais  -2.9 | réel/projeté 0.92 | minutes 28.9
-  7-10 M$                1595 matchs | 0 min : 321 | biais  -2.5 | réel/projeté 0.90 | minutes 23.0
-  < 7 M$                 266 matchs | 0 min : 94 | biais  -5.1 | réel/projeté 0.77 | minutes 17.9
-  ≥ 15 M$                444 matchs | 0 min : 70 | biais  -3.5 | réel/projeté 0.93 | minutes 32.7
+  10-15 M$               1629 matchs | 0 min : 376 | biais  -2.9 | réel/projeté 0.92 | minutes 28.9
+  7-10 M$                1642 matchs | 0 min : 331 | biais  -2.4 | réel/projeté 0.90 | minutes 23.1
+  < 7 M$                 273 matchs | 0 min : 96 | biais  -5.1 | réel/projeté 0.77 | minutes 17.8
+  ≥ 15 M$                452 matchs | 0 min : 72 | biais  -3.4 | réel/projeté 0.93 | minutes 32.7
 Par rang dans la hiérarchie ESPN (1 = titulaire) :
-  rang 1                 2097 matchs | 0 min : 216 | biais  -1.1 | réel/projeté 0.97 | minutes 29.8
-  rang 2                 1084 matchs | 0 min : 151 | biais  -5.5 | réel/projeté 0.79 | minutes 20.8
-  rang 3                 157 matchs | 0 min : 59 | biais  -7.8 | réel/projeté 0.66 | minutes 17.1
+  rang 1                 2153 matchs | 0 min : 227 | biais  -1.0 | réel/projeté 0.97 | minutes 29.8
+  rang 2                 1114 matchs | 0 min : 156 | biais  -5.5 | réel/projeté 0.79 | minutes 20.9
+  rang 3                 163 matchs | 0 min : 60 | biais  -7.8 | réel/projeté 0.66 | minutes 17.1
   rang 4                  32 matchs | 0 min : 12 | biais  -8.5 | réel/projeté 0.63 | minutes 13.4
-  rang 5                  62 matchs | 0 min : 51 | biais  -4.9 | réel/projeté 0.83 | minutes 18.0
-  rang 6                 188 matchs | 0 min : 163 | biais  -7.7 | réel/projeté 0.79 | minutes 24.7
+  rang 5                  64 matchs | 0 min : 53 | biais  -4.9 | réel/projeté 0.83 | minutes 18.0
+  rang 6                 194 matchs | 0 min : 168 | biais  -8.1 | réel/projeté 0.78 | minutes 24.0
   rang 7                  80 matchs | 0 min : 68 | biais  -2.0 | réel/projeté 0.95 | minutes 25.5
-  rang 8                  76 matchs | 0 min : 58 | biais  -1.6 | réel/projeté 0.96 | minutes 29.4
-  rang 9                  32 matchs | 0 min : 17 | biais -10.8 | réel/projeté 0.61 | minutes 17.8
-  rang inconnu            83 matchs | 0 min : 51 | biais  -9.7 | réel/projeté 0.67 | minutes 21.3
-Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : 846 sur 3891
+  rang 8                  78 matchs | 0 min : 60 | biais  -1.6 | réel/projeté 0.96 | minutes 29.4
+  rang 9                  33 matchs | 0 min : 18 | biais -10.8 | réel/projeté 0.61 | minutes 17.8
+  rang inconnu            85 matchs | 0 min : 53 | biais  -9.7 | réel/projeté 0.67 | minutes 21.3
+Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : 875 sur 3996
   - L.Doncic (LAL) (event 9) : projeté 65.5, statut actuel a, news : -
   - L.Doncic (LAL) (event 19) : projeté 65.5, statut actuel a, news : -
-  - C.Cunningham (DET) (event 29) : projeté 56.5, statut actuel a, news : -
+  - C.Cunningham (DET) (event 29) : projeté 56.5, statut actuel d, news : Knee expected back 2026-11-22
   - J.Johnson (ATL) (event 14) : projeté 53.4, statut actuel a, news : -
   - J.Johnson (ATL) (event 15) : projeté 53.4, statut actuel a, news : -
   - J.Johnson (ATL) (event 17) : projeté 53.4, statut actuel a, news : -
-  - J.Tatum (BOS) (event 15) : projeté 51.5, statut actuel d, news : Rest expected back 2026-11-21
+  - J.Tatum (BOS) (event 15) : projeté 51.5, statut actuel i, news : Rest expected back 2026-11-22
+  - J.Tatum (BOS) (event 32) : projeté 51.5, statut actuel i, news : Rest expected back 2026-11-22
   - A.Davis (WAS) (event 17) : projeté 49.8, statut actuel a, news : -
   - A.Davis (WAS) (event 18) : projeté 49.8, statut actuel a, news : -
   - D.Sabonis (SAC) (event 19) : projeté 49.1, statut actuel a, news : -
   - J.Embiid (PHI) (event 6) : projeté 48.5, statut actuel a, news : -
-  - J.Embiid (PHI) (event 12) : projeté 48.5, statut actuel a, news : -
 Plus grosses surestimations :
   - S.Curry (GSW) (event 22) : projeté 44.0, réel 3.0 en 5 min
   - L.Markkanen (UTA) (event 7) : projeté 39.8, réel 2.0 en 6 min
@@ -523,28 +538,28 @@ Plus grosses sous-estimations :
   - V.Wembanyama (SAS) (event 15) : projeté 58.9, réel 110.0 en 34 min
   - J.Fears (NOP) (event 10) : projeté 30.4, réel 74.0 en 29 min
   - B.Sensabaugh (UTA) (event 28) : projeté 22.7, réel 64.0 en 34 min
+  - T.Herro (MIL) (event 32) : projeté 39.4, réel 78.0 en 39 min
+  - V.Wembanyama (SAS) (event 32) : projeté 58.9, réel 97.0 en 31 min
   - D.Mitchell (MIA) (event 24) : projeté 27.1, réel 64.0 en 38 min
   - K.Huerter (DET) (event 19) : projeté 23.1, réel 60.0 en 35 min
   - A.Thompson (DET) (event 23) : projeté 31.4, réel 68.0 en 42 min
-  - D.Acuff Jr. (SAC) (event 10) : projeté 33.9, réel 68.0 en 40 min
-  - F.Wagner (ORL) (event 24) : projeté 39.9, réel 74.0 en 36 min
 
 ======================================================================
 CALIBRATION DU MODÈLE (points réels / points attendus, par rang)
 ======================================================================
-  rang 1   : 1992 joueurs-matchs | réel   65675 / attendu   62150 = 1.06 → facteur appliqué 1.056
-  rang 2   : 1755 joueurs-matchs | réel   30554 / attendu   29823 = 1.02 → facteur appliqué 1.024
-  rang 3+  : 2310 joueurs-matchs | réel   12390 / attendu   10535 = 1.18 → facteur appliqué 1.150
-  rang ?   :  490 joueurs-matchs | réel    1400 / attendu    2349 = 0.60 → facteur appliqué 0.750
+  rang 1   : 2048 joueurs-matchs | réel   67345 / attendu   63696 = 1.06 → facteur appliqué 1.057
+  rang 2   : 1799 joueurs-matchs | réel   31315 / attendu   30618 = 1.02 → facteur appliqué 1.022
+  rang 3+  : 2373 joueurs-matchs | réel   12776 / attendu   10790 = 1.18 → facteur appliqué 1.150
+  rang ?   :  501 joueurs-matchs | réel    1407 / attendu    2377 = 0.59 → facteur appliqué 0.750
 Erreur restante du modèle par tranche de prix (après la calibration par rang) :
-  10-15 M$  : 1194 joueurs-matchs | réel   36952 / attendu   36142 = 1.02 → facteur appliqué 1.022
-  7-10 M$   : 1573 joueurs-matchs | réel   32102 / attendu   31039 = 1.03 → facteur appliqué 1.034
-  < 7 M$    : 3399 joueurs-matchs | réel   23723 / attendu   22991 = 1.03 → facteur appliqué 1.031
-  ≥ 15 M$   :  381 joueurs-matchs | réel   17242 / attendu   16581 = 1.04 → facteur appliqué 1.039
+  10-15 M$  : 1228 joueurs-matchs | réel   37882 / attendu   37100 = 1.02 → facteur appliqué 1.021
+  7-10 M$   : 1615 joueurs-matchs | réel   33061 / attendu   31880 = 1.04 → facteur appliqué 1.037
+  < 7 M$    : 3490 joueurs-matchs | réel   24330 / attendu   23563 = 1.03 → facteur appliqué 1.032
+  ≥ 15 M$   :  388 joueurs-matchs | réel   17570 / attendu   16853 = 1.04 → facteur appliqué 1.042
 
 Vérification du barème (points du jeu vs formule des projections) :
   Statistiques fournies par le jeu : ['assists', 'blocks', 'in_dreamteam', 'minutes', 'played', 'points_scored', 'rebounds', 'steals', 'total_points']
-  Écart moyen jeu − formule : +0.40 pts (sur 5265 matchs) ; écart absolu moyen 0.88
+  Écart moyen jeu − formule : +0.39 pts (sur 5391 matchs) ; écart absolu moyen 0.87
   Rapport points du jeu / formule (médiane) : 10.12
 
 ======================================================================
@@ -555,57 +570,56 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       M.Uzan (BOS) : -
       N.Pringle (BKN) : -
       P.Connaughton (CHA) : -
-  statut i | chances ce Gameday 0 | prochain 0 : 46 joueurs
+  statut i | chances ce Gameday 0 | prochain 0 : 45 joueurs
       M.Gueye (ATL) : Foot expected back 2026-12-12
       A.Newell (ATL) : Toe expected back 2027-03-17
       C.McCollum (ATL) : Calf expected back 2026-12-19
       K.Knueppel (CHA) : Hamstring expected back 2026-12-12
-  statut i | chances ce Gameday 25 | prochain 25 : 44 joueurs
-      J.Landale (ATL) : Hip expected back 2026-11-22
+  statut i | chances ce Gameday 25 | prochain 25 : 43 joueurs
+      J.Landale (ATL) : Hip expected back 2026-11-27
       K.Flemings (ATL) : Back expected back 2026-11-22
+      N.Traore (BKN) : Hamstring expected back 2026-11-23
       G.Nelson (BKN) : Ankle expected back 2026-11-23
-      G.Williams (CHA) : Hamstring expected back 2026-11-23
-  statut u | chances ce Gameday 0 | prochain 0 : 13 joueurs
+  statut u | chances ce Gameday 0 | prochain 0 : 15 joueurs
+      K.Gilbert (ATL) : Knee expected back 2027-01-01
       H.Veesaar (ATL) : Knee expected back 2027-07-01
       R.Dillingham (CHI) : Wrist expected back 2027-01-01
       Y.Kawamura (LAC) : Foot expected back 2026-11-22
-      E.Freeman (MIN) : Undisclosed expected back 2027-01-01
-  statut u | chances ce Gameday 100 | prochain 100 : 13 joueurs
+  statut u | chances ce Gameday 100 | prochain 100 : 12 joueurs
       I.McKneely (ATL) : -
       T.Enaruna (CLE) : -
       R.Minix (CLE) : -
       J.Poulakidas (DAL) : -
-  statut d | chances ce Gameday 75 | prochain 75 : 4 joueurs
-      P.Washington (DAL) : Shoulder expected back 2026-11-21
-      W.Clayton Jr. (DAL) : Knee expected back 2026-11-21
-      U.Onyenso (DET) : Foot expected back 2026-11-21
-      O.Anunoby (NYK) : Calf expected back 2026-11-21
-  statut i | chances ce Gameday 75 | prochain 25 : 4 joueurs
-      R.Holland II (DET) : Knee expected back 2026-11-22
-      T.McConnell (IND) : Hamstring expected back 2026-11-22
-      J.Grant (MEM) : Calf expected back 2026-11-23
-      F.Okpara (WAS) : Back expected back 2026-11-22
-  statut d | chances ce Gameday 100 | prochain 75 : 3 joueurs
-      J.Tatum (BOS) : Rest expected back 2026-11-21
-      D.White (BOS) : Shoulder expected back 2026-11-21
-      K.Towns (NYK) : Illness expected back 2026-11-21
-  statut i | chances ce Gameday 100 | prochain 25 : 2 joueurs
-      N.Traore (BKN) : Hamstring expected back 2026-11-23
-      R.Dunn (PHX) : Quadriceps expected back 2026-11-23
-  statut u | chances ce Gameday 25 | prochain 0 : 1 joueurs
-      K.Gilbert (ATL) : Knee expected back 2027-01-01
-  statut i | chances ce Gameday 25 | prochain 75 : 1 joueurs
+  statut i | chances ce Gameday 75 | prochain 75 : 6 joueurs
+      J.Tatum (BOS) : Rest expected back 2026-11-22
+      D.White (BOS) : Shoulder expected back 2026-11-22
+      P.Washington (DAL) : Illness expected back 2026-11-22
       T.Lawal (DAL) : Groin expected back 2026-11-22
-  statut i | chances ce Gameday 75 | prochain 75 : 1 joueurs
-      P.Achiuwa (SAC) : Lower Leg expected back 2026-11-21
+  statut d | chances ce Gameday 100 | prochain 75 : 6 joueurs
+      P.Williams (CHI) : Thumb expected back 2026-11-22
+      N.Powell (CHI) : Hamstring expected back 2026-11-22
+      C.Cunningham (DET) : Knee expected back 2026-11-22
+      P.Siakam (IND) : Hip expected back 2026-11-22
+  statut i | chances ce Gameday 100 | prochain 25 : 3 joueurs
+      Z.Williamson (NOP) : Thigh expected back 2026-11-23
+      T.Murphy III (NOP) : Knee expected back 2026-11-23
+      J.Williams (OKC) : Back expected back 2026-11-23
+  statut i | chances ce Gameday 100 | prochain 75 : 1 joueurs
+      M.Robinson (BOS) : Illness expected back 2026-11-22
+  statut d | chances ce Gameday 75 | prochain 75 : 1 joueurs
+      U.Onyenso (DET) : Foot expected back 2026-11-21
+  statut i | chances ce Gameday 0 | prochain 25 : 1 joueurs
+      B.Williams (GSW) : Hamstring expected back 2026-11-25
+  statut i | chances ce Gameday 25 | prochain 75 : 1 joueurs
+      T.McConnell (IND) : Hamstring expected back 2026-11-23
 
 ======================================================================
 LIGUE FIRST TEAM
 ======================================================================
-  Rang : 107 / 646 (-17 depuis la dernière journée) | total 5040 pts | dernière journée 83 pts
-  Écart avec le 1er : 984 pts
-  Écart avec le rang juste devant (106e) : 1 pts
-  Avance sur le rang juste derrière (109e) : 4 pts
-  Joueurs les plus présents chez les 106 équipes devant toi (Gameday 31) : D.Acuff Jr. (SAC) 103, Y.Lendeborg (GSW) 100, V.Wembanyama (SAS) 81, D.Mitchell (MIA) 54, F.Wagner (ORL) 52, K.George (WAS) 40, T.Shannon Jr. (MIN) 32, A.Dosunmu (MIN) 26, A.Mara (OKC) 26, L.Doncic (LAL) 25, C.Flagg (DAL) 24, B.Hyland (MIN) 24, D.Jenkins (DET) 22, M.Bamba (UTA) 18, T.Brazile (DEN) 18
-  All-Star : déjà joué par 46 des 106 équipes devant toi (43 %) ; par Gameday : event 2 : 2, event 3 : 9, event 4 : 1, event 5 : 1, event 8 : 2, event 9 : 2, event 10 : 2, event 11 : 1, event 12 : 1, event 13 : 4, event 14 : 4, event 15 : 2, event 16 : 2, event 18 : 1, event 20 : 1, event 21 : 2, event 23 : 4, event 25 : 4, event 28 : 1
-  Wildcard : déjà joué par 86 des 106 équipes devant toi (81 %) ; par Gameday : event 2 : 3, event 4 : 2, event 6 : 4, event 7 : 23, event 8 : 5, event 9 : 3, event 10 : 3, event 11 : 3, event 12 : 1, event 13 : 6, event 14 : 4, event 16 : 2, event 17 : 1, event 19 : 3, event 20 : 3, event 21 : 1, event 22 : 2, event 23 : 6, event 24 : 1, event 25 : 2, event 26 : 1, event 27 : 4, event 28 : 2, event 30 : 1
+  Rang : 94 / 646 (+13 depuis la dernière journée) | total 5285 pts | dernière journée 245 pts
+  Écart avec le 1er : 1005 pts
+  Écart avec le rang juste devant (93e) : 6 pts
+  Avance sur le rang juste derrière (95e) : 4 pts
+  Joueurs les plus présents chez les 93 équipes devant toi (Gameday 32) : D.Acuff Jr. (SAC) 90, Y.Lendeborg (GSW) 87, V.Wembanyama (SAS) 76, F.Wagner (ORL) 48, D.Mitchell (MIA) 46, K.George (WAS) 35, T.Shannon Jr. (MIN) 29, C.Flagg (DAL) 24, A.Dosunmu (MIN) 23, D.Jenkins (DET) 23, B.Hyland (MIN) 22, A.Mara (OKC) 21, L.Doncic (LAL) 20, M.Bamba (UTA) 18, J.Fears (NOP) 15
+  All-Star : déjà joué par 41 des 93 équipes devant toi (44 %) ; par Gameday : event 2 : 2, event 3 : 7, event 4 : 1, event 5 : 1, event 8 : 2, event 9 : 1, event 10 : 2, event 11 : 1, event 12 : 1, event 13 : 4, event 14 : 4, event 15 : 1, event 16 : 2, event 18 : 1, event 20 : 1, event 21 : 1, event 23 : 4, event 25 : 4, event 28 : 1
+  Wildcard : déjà joué par 77 des 93 équipes devant toi (83 %) ; par Gameday : event 2 : 3, event 4 : 2, event 6 : 2, event 7 : 20, event 8 : 4, event 9 : 2, event 10 : 4, event 11 : 3, event 12 : 1, event 13 : 5, event 14 : 4, event 16 : 2, event 17 : 1, event 19 : 1, event 20 : 3, event 21 : 1, event 22 : 2, event 23 : 6, event 24 : 1, event 25 : 2, event 26 : 1, event 27 : 3, event 28 : 1, event 30 : 1, event 32 : 2
