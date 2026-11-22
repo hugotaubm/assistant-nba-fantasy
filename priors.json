@@ -10058,7 +10058,7 @@
 "b2b_presence": 1.0,
 "presence": 0.9,
 "age": 28,
-"rang_poste": 5,
+"rang_poste": 6,
 "poste_espn": "SG",
 "devant": [
 "Zach LaVine",
@@ -10354,7 +10354,7 @@
 "age": 30,
 "b2b_n": 0,
 "min_proj": 21.2,
-"rang_poste": 5,
+"rang_poste": 6,
 "poste_espn": "PG",
 "devant": [
 "Darius Acuff Jr.",
@@ -11900,6 +11900,6 @@
 "_source": "saison régulière 2025-26 (ESPN), mis à jour le 20/10/2026"
 },
 "roles": {
-"_source": "ESPN (hiérarchie + présaison), mis à jour le 22/11/2026"
+"_source": "ESPN (hiérarchie + présaison), mis à jour le 23/11/2026"
 }
 }
