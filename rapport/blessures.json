@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-23T21:04:55.482926+00:00",
+ "lu": "2026-11-23T22:47:02.979911+00:00",
  "joueurs": {
   "jock landale": {
    "nom": "Jock Landale",
@@ -46,23 +46,14 @@
    "commentaire": "Veesaar was diagnosed with a torn right ACL and is expected to miss the 2026-27 season, the Hawks announced Monday.",
    "date": "2026-09-21"
   },
-  "paul george": {
-   "nom": "Paul George",
-   "statut": "Day-To-Day",
-   "blessure": "Other Rest",
-   "retour_espn": "2026-11-24",
-   "retour_commentaire": null,
-   "commentaire": "George (rest) has been ruled out for Sunday's game against Golden State, Justin Turpin of WEEI.com reports.",
-   "date": "2026-11-23"
-  },
   "mitchell robinson": {
    "nom": "Mitchell Robinson",
    "statut": "Out",
    "blessure": "Other Illness",
-   "retour_espn": "2026-11-24",
+   "retour_espn": "2026-11-27",
    "retour_commentaire": null,
-   "commentaire": "Robinson (illness) has been ruled out for Sunday's game against Golden State, Justin Turpin of WEEI.com reports.",
-   "date": "2026-11-22"
+   "commentaire": "Robinson (illness) is out for Tuesday's game against Washington, Taylor Snow of the Celtics' official site reports.",
+   "date": "2026-11-23"
   },
   "nolan traore": {
    "nom": "Nolan Traore",
@@ -80,15 +71,6 @@
    "retour_espn": "2026-11-25",
    "retour_commentaire": null,
    "commentaire": "Allen (concussion) has been ruled out for Monday's game against the Grizzlies.",
-   "date": "2026-11-22"
-  },
-  "brandon miller": {
-   "nom": "Brandon Miller",
-   "statut": "Day-To-Day",
-   "blessure": "Right Leg Knee",
-   "retour_espn": "2026-11-23",
-   "retour_commentaire": null,
-   "commentaire": "Miller is probable for Monday's game against the Grizzlies due to a right knee contusion.",
    "date": "2026-11-22"
   },
   "grant williams": {
@@ -237,12 +219,30 @@
   },
   "ebuka okorie": {
    "nom": "Ebuka Okorie",
-   "statut": "Day-To-Day",
+   "statut": "Out",
    "blessure": "Left Torso Oblique",
+   "retour_espn": "2026-11-30",
+   "retour_commentaire": null,
+   "commentaire": "Okorie (oblique) won't play Tuesday in Orlando.",
+   "date": "2026-11-23"
+  },
+  "jalen duren": {
+   "nom": "Jalen Duren",
+   "statut": "Out",
+   "blessure": "Right Leg Hamstring",
+   "retour_espn": "2026-11-30",
+   "retour_commentaire": null,
+   "commentaire": "Duren (hamstring) has been ruled out for Tuesday's game against the Magic.",
+   "date": "2026-11-23"
+  },
+  "cade cunningham": {
+   "nom": "Cade Cunningham",
+   "statut": "Day-To-Day",
+   "blessure": "Leg Knee",
    "retour_espn": "2026-11-24",
    "retour_commentaire": null,
-   "commentaire": "Okorie (oblique) is out for Sunday's game in Atlanta.",
-   "date": "2026-11-22"
+   "commentaire": "Cunningham (knee) is probable for Tuesday's game against the Orlando.",
+   "date": "2026-11-23"
   },
   "taurean prince": {
    "nom": "Taurean Prince",
@@ -261,15 +261,6 @@
    "retour_commentaire": "2026-11-24",
    "commentaire": "Robinson will be re-evaluated in one week due to a left quadriceps strain, Coty M. Davis of The Detroit News reports.",
    "date": "2026-11-17"
-  },
-  "jalen duren": {
-   "nom": "Jalen Duren",
-   "statut": "Out",
-   "blessure": "Right Leg Hamstring",
-   "retour_espn": "2026-11-24",
-   "retour_commentaire": "2026-11-22",
-   "commentaire": "Duren (hamstring) has begun on-court activity and will be re-evaluated in two weeks, Hunter Patterson of The Athletic reports.",
-   "date": "2026-11-08"
   },
   "brandon williams": {
    "nom": "Brandon Williams",
@@ -858,11 +849,11 @@
   },
   "jaxson hayes": {
    "nom": "Jaxson Hayes",
-   "statut": "Day-To-Day",
+   "statut": "Out",
    "blessure": "Left Leg Knee",
-   "retour_espn": "2026-11-23",
+   "retour_espn": "2026-11-27",
    "retour_commentaire": null,
-   "commentaire": "Hayes (knee) has been ruled out for the remainder of Sunday's game against the Mavericks, Grant Afseth of DallasHoopsJournal.com reports.",
+   "commentaire": "Hayes (knee) has been ruled out for Monday's game against the Lakers.",
    "date": "2026-11-23"
   },
   "jusuf nurkic": {
@@ -896,10 +887,10 @@
    "nom": "Tristan Vukcevic",
    "statut": "Out",
    "blessure": "Left Torso Hip",
-   "retour_espn": "2026-11-24",
+   "retour_espn": "2026-11-30",
    "retour_commentaire": null,
-   "commentaire": "Vukcevic (hip) has been ruled out for Monday's game against Memphis.",
-   "date": "2026-11-16"
+   "commentaire": "Vukcevic (hip) has been ruled out for Tuesday's game against Boston.",
+   "date": "2026-11-23"
   },
   "reece beekman": {
    "nom": "Reece Beekman",
