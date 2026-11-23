@@ -37,11 +37,7 @@
     "V.Wembanyama"
   ],
   "malus_back_to_back": 0.92,
-  "idees": [
-    "D.Robinson>F.Wagner@2+N.Traore>?@2",
-    "N.Traore>?@2+D.Robinson>?@2",
-    "D.Robinson>F.Wagner@2+K.Dunn>?@2"
-  ],
+  "idees": [],
   "transferts_payants": false,
   "seuil_joker": 300,
   "seuil_joker_debut": 400,
