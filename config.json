@@ -19,7 +19,7 @@
   "transferts_restants_cette_semaine": null,
   "capitaine_deja_utilise_cette_semaine": false,
   "transferts_gratuits_par_defaut": 2,
-  "poids_futur": 0.8,
+  "poids_futur": 0.01,
   "_reactivite": "Saisir les séries de 1 à 3 semaines : les matchs réels et les minutes jouées comptent vite.",
   "poids_points_avant_saison": 3,
   "poids_minutes_avant_saison": 1.5,
@@ -45,5 +45,6 @@
   "seuil_changement_plan": 5,
   "force_fort": 25,
   "force_leger": 8,
-  "ntfy_recalcul": "nba-recalcul-da74154d082f"
+  "ntfy_recalcul": "nba-recalcul-da74154d082f",
+  "poids_futur_normal": 0.8
 }
