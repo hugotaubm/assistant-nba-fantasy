@@ -156,12 +156,12 @@
 "presence": 0.64,
 "age": 25,
 "min_proj": 18.0,
-"rang_poste": 7,
+"rang_poste": 6,
 "poste_espn": "SG",
 "devant": [
 "Nickeil Alexander-Walker",
-"Aaron Wiggins",
-"Luguentz Dort"
+"Corey Kispert",
+"Dyson Daniels"
 ],
 "presaison_matchs": 4,
 "presaison_min": 17.0
@@ -222,7 +222,7 @@
 "poste_espn": "PG",
 "devant": [
 "Kingston Flemings",
-"CJ McCollum",
+"Aaron Wiggins",
 "Nickeil Alexander-Walker"
 ],
 "presaison_matchs": 5,
@@ -290,9 +290,9 @@
 "age": 27,
 "min_proj": 20.3,
 "rang_poste": 2,
-"poste_espn": "SG",
+"poste_espn": "PG",
 "devant": [
-"Nickeil Alexander-Walker"
+"Kingston Flemings"
 ],
 "presaison_matchs": 4,
 "presaison_min": 19.2
@@ -306,11 +306,10 @@
 "malus_b2b": 1.022,
 "age": 22,
 "b2b_n": 0,
-"rang_poste": 3,
-"poste_espn": "C",
+"rang_poste": 2,
+"poste_espn": "PF",
 "devant": [
-"Onyeka Okongwu",
-"Jock Landale"
+"Jalen Johnson"
 ],
 "presaison_matchs": 5,
 "presaison_min": 13.8
@@ -357,12 +356,10 @@
 "presence": 0.93,
 "age": 27,
 "min_proj": 20.3,
-"rang_poste": 5,
-"poste_espn": "SF",
+"rang_poste": 2,
+"poste_espn": "SG",
 "devant": [
-"Dyson Daniels",
-"Luguentz Dort",
-"Aaron Wiggins"
+"Nickeil Alexander-Walker"
 ],
 "presaison_matchs": 5,
 "presaison_min": 18.6
@@ -383,10 +380,12 @@
 "presence": 1.0,
 "age": 35,
 "min_proj": 30.2,
-"rang_poste": 2,
+"rang_poste": 6,
 "poste_espn": "PG",
 "devant": [
-"Kingston Flemings"
+"Kingston Flemings",
+"Aaron Wiggins",
+"Nickeil Alexander-Walker"
 ],
 "presaison_matchs": 3,
 "presaison_min": 20.0
@@ -853,11 +852,11 @@
 "age": 30,
 "min_proj": 23.8,
 "rang_poste": 4,
-"poste_espn": "PF",
+"poste_espn": "PG",
 "devant": [
-"Julius Randle",
-"Noah Clowney",
-"Chaney Johnson"
+"Egor Demin",
+"Mikel Brown Jr.",
+"Keon Ellis"
 ],
 "presaison_matchs": 3,
 "presaison_min": 13.7
@@ -925,7 +924,7 @@
 "age": 20,
 "min_proj": 32.3,
 "rang_poste": 1,
-"poste_espn": "SG",
+"poste_espn": "PG",
 "devant": [],
 "presaison_matchs": 4,
 "presaison_min": 21.2
@@ -943,10 +942,10 @@
 "b2b_presence": 0.55,
 "presence": 0.84,
 "age": 21,
-"rang_poste": 7,
+"rang_poste": 6,
 "poste_espn": "SG",
 "devant": [
-"Egor Demin",
+"Michael Porter Jr.",
 "Keon Ellis",
 "Mikel Brown Jr."
 ],
@@ -966,12 +965,12 @@
 "b2b_presence": 1.0,
 "presence": 0.84,
 "age": 20,
-"rang_poste": 6,
+"rang_poste": 5,
 "poste_espn": "PG",
 "devant": [
-"Nolan Traore",
+"Egor Demin",
 "Mikel Brown Jr.",
-"Egor Demin"
+"Keon Ellis"
 ],
 "presaison_matchs": 3,
 "presaison_min": 11.7
@@ -992,9 +991,13 @@
 "presence": 0.84,
 "age": 20,
 "min_proj": 25.0,
-"rang_poste": 1,
+"rang_poste": 6,
 "poste_espn": "PG",
-"devant": [],
+"devant": [
+"Egor Demin",
+"Mikel Brown Jr.",
+"Keon Ellis"
+],
 "presaison_matchs": 4,
 "presaison_min": 17.0
 },
@@ -1014,11 +1017,9 @@
 "presence": 0.95,
 "age": 22,
 "min_proj": 24.1,
-"rang_poste": 2,
+"rang_poste": 1,
 "poste_espn": "SF",
-"devant": [
-"Michael Porter Jr."
-],
+"devant": [],
 "presaison_matchs": 4,
 "presaison_min": 12.5
 },
@@ -1039,7 +1040,7 @@
 "age": 28,
 "min_proj": 33.5,
 "rang_poste": 1,
-"poste_espn": "SF",
+"poste_espn": "SG",
 "devant": [],
 "presaison_matchs": 3,
 "presaison_min": 22.7
@@ -1146,7 +1147,7 @@
 "rang_poste": 2,
 "poste_espn": "PG",
 "devant": [
-"Nolan Traore"
+"Egor Demin"
 ],
 "presaison_matchs": 1,
 "presaison_min": 18.0
@@ -1170,7 +1171,7 @@
 "rang_poste": 2,
 "poste_espn": "SG",
 "devant": [
-"Egor Demin"
+"Michael Porter Jr."
 ],
 "presaison_matchs": 4,
 "presaison_min": 19.5
@@ -1444,11 +1445,11 @@
 "age": 33,
 "min_proj": 18.1,
 "rang_poste": 4,
-"poste_espn": "PF",
+"poste_espn": "C",
 "devant": [
-"Jalen Johnson",
-"Luguentz Dort",
-"Aaron Wiggins"
+"Onyeka Okongwu",
+"Jock Landale",
+"Zuby Ejiofor"
 ],
 "presaison_matchs": 3,
 "presaison_min": 11.0
@@ -4866,9 +4867,11 @@
 "presence": 0.96,
 "age": 29,
 "min_proj": 25.4,
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "SF",
-"devant": [],
+"devant": [
+"Brandon Ingram"
+],
 "presaison_matchs": 3,
 "presaison_min": 18.7
 },
@@ -5077,12 +5080,12 @@
 "malus_b2b": 1.022,
 "age": 22,
 "b2b_n": 0,
-"rang_poste": 6,
+"rang_poste": 7,
 "poste_espn": "SF",
 "devant": [
+"Brandon Ingram",
 "Derrick Jones Jr.",
-"Gradey Dick",
-"Max Strus"
+"Gradey Dick"
 ],
 "presaison_matchs": 3,
 "presaison_min": 18.7
@@ -5150,13 +5153,9 @@
 "presence": 0.95,
 "age": 29,
 "min_proj": 35.3,
-"rang_poste": 8,
+"rang_poste": 1,
 "poste_espn": "SF",
-"devant": [
-"Derrick Jones Jr.",
-"Gradey Dick",
-"Max Strus"
-]
+"devant": []
 },
 "254": {
 "nom": "G.Dick",
@@ -5174,9 +5173,10 @@
 "presence": 0.95,
 "age": 22,
 "min_proj": 25.8,
-"rang_poste": 2,
+"rang_poste": 3,
 "poste_espn": "SF",
 "devant": [
+"Brandon Ingram",
 "Derrick Jones Jr."
 ],
 "presaison_matchs": 3,
@@ -6467,8 +6467,8 @@
 "rang_poste": 6,
 "poste_espn": "PG",
 "devant": [
-"Brayden Burries",
 "Ryan Rollins",
+"Brayden Burries",
 "Kasparas Jakucionis"
 ],
 "presaison_matchs": 3,
@@ -6490,8 +6490,8 @@
 "rang_poste": 7,
 "poste_espn": "PG",
 "devant": [
-"Brayden Burries",
 "Ryan Rollins",
+"Brayden Burries",
 "Kasparas Jakucionis"
 ],
 "presaison_matchs": 4,
@@ -6586,8 +6586,8 @@
 "rang_poste": 3,
 "poste_espn": "PG",
 "devant": [
-"Brayden Burries",
-"Ryan Rollins"
+"Ryan Rollins",
+"Brayden Burries"
 ],
 "presaison_matchs": 3,
 "presaison_min": 17.3
@@ -6696,11 +6696,9 @@
 "presence": 0.93,
 "age": 24,
 "min_proj": 28.0,
-"rang_poste": 2,
+"rang_poste": 1,
 "poste_espn": "PG",
-"devant": [
-"Brayden Burries"
-],
+"devant": [],
 "presaison_matchs": 4,
 "presaison_min": 18.5
 },
@@ -6815,9 +6813,11 @@
 "age": 21,
 "b2b_n": 0,
 "min_proj": 25.8,
-"rang_poste": 1,
+"rang_poste": 2,
 "poste_espn": "PG",
-"devant": [],
+"devant": [
+"Ryan Rollins"
+],
 "presaison_matchs": 4,
 "presaison_min": 23.0
 },
@@ -10776,9 +10776,9 @@
 "rang_poste": 7,
 "poste_espn": "SF",
 "devant": [
-"RJ Barrett",
 "Jamison Battle",
-"Ja'Kobe Walter"
+"Ja'Kobe Walter",
+"Allen Graves"
 ],
 "presaison_matchs": 2,
 "presaison_min": 20.0
@@ -10853,9 +10853,13 @@
 "presence": 0.91,
 "age": 26,
 "min_proj": 30.8,
-"rang_poste": 1,
-"poste_espn": "SF",
-"devant": [],
+"rang_poste": 6,
+"poste_espn": "SG",
+"devant": [
+"Ja'Kobe Walter",
+"Jamal Shead",
+"Alijah Martin"
+],
 "presaison_matchs": 4,
 "presaison_min": 23.5
 },
@@ -10940,11 +10944,9 @@
 "b2b_presence": 0.82,
 "presence": 0.75,
 "age": 25,
-"rang_poste": 2,
+"rang_poste": 1,
 "poste_espn": "SF",
-"devant": [
-"RJ Barrett"
-],
+"devant": [],
 "presaison_matchs": 1,
 "presaison_min": 14.0
 },
@@ -11018,11 +11020,10 @@
 "b2b_presence": 0.75,
 "presence": 0.64,
 "age": 24,
-"rang_poste": 4,
+"rang_poste": 3,
 "poste_espn": "SG",
 "devant": [
 "Ja'Kobe Walter",
-"RJ Barrett",
 "Jamal Shead"
 ],
 "presaison_matchs": 2,
@@ -11091,12 +11092,12 @@
 "malus_b2b": 1.022,
 "age": 23,
 "b2b_n": 0,
-"rang_poste": 5,
-"poste_espn": "PG",
+"rang_poste": 4,
+"poste_espn": "SG",
 "devant": [
-"Immanuel Quickley",
+"Ja'Kobe Walter",
 "Jamal Shead",
-"Ja'Kobe Walter"
+"Alijah Martin"
 ],
 "presaison_matchs": 5,
 "presaison_min": 17.6
@@ -11110,10 +11111,9 @@
 "malus_b2b": 1.022,
 "age": 20,
 "b2b_n": 0,
-"rang_poste": 4,
+"rang_poste": 3,
 "poste_espn": "SF",
 "devant": [
-"RJ Barrett",
 "Jamison Battle",
 "Ja'Kobe Walter"
 ],
@@ -11900,6 +11900,6 @@
 "_source": "saison régulière 2025-26 (ESPN), mis à jour le 20/10/2026"
 },
 "roles": {
-"_source": "ESPN (hiérarchie + présaison), mis à jour le 23/11/2026"
+"_source": "ESPN (hiérarchie + présaison), mis à jour le 24/11/2026"
 }
 }
