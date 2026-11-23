@@ -394,7 +394,10 @@ def projeter(boot, cfg, saison_commencee, saison=None):
                 if g_cur > 0:
                     w = g_cur / (g_cur + cfg["poids_points_avant_saison"])
                     res = w * ppg + (1 - w) * base
-                    forme = float(e.get("form") or 0) / 10
+                    # forme : moyenne des 5 derniers matchs JOUÉS (la « form » du jeu compte aussi les matchs
+                    # manqués pour blessure, ce qui fait chuter un joueur qui revient)
+                    joues_ = [pts for _, pts, mi in (s or {}).get("matchs", []) if mi > 0][-5:]
+                    forme = sum(joues_) / len(joues_) if len(joues_) >= 3 else float(e.get("form") or 0) / 10
                     if g_cur >= 5 and forme > 0:
                         res = (1 - cfg["poids_forme"]) * res + cfg["poids_forme"] * forme
             return res * cfg["ajustements"].get(e["web_name"], 1.0)
