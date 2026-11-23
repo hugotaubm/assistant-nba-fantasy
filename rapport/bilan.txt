@@ -605,18 +605,21 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       T.Enaruna (CLE) : -
       R.Minix (CLE) : -
       J.Poulakidas (DAL) : -
+  statut i | chances ce Gameday 75 | prochain 25 : 4 joueurs
+      M.Robinson (BOS) : Illness expected back 2026-11-24
+      P.Washington (DAL) : Illness expected back 2026-11-24
+      T.McConnell (IND) : Hamstring expected back 2026-11-27
+      G.Antetokounmpo (MIA) : Groin expected back 2026-11-25
   statut d | chances ce Gameday 100 | prochain 75 : 4 joueurs
       B.Miller (CHA) : Knee expected back 2026-11-23
       J.Embiid (PHI) : Illness expected back 2026-11-23
       D.Fox (SAS) : Lower Leg expected back 2026-11-23
       V.Wembanyama (SAS) : Back expected back 2026-11-23
-  statut i | chances ce Gameday 75 | prochain 25 : 3 joueurs
-      M.Robinson (BOS) : Illness expected back 2026-11-24
-      P.Washington (DAL) : Illness expected back 2026-11-24
-      G.Antetokounmpo (MIA) : Groin expected back 2026-11-25
-  statut i | chances ce Gameday 75 | prochain 75 : 3 joueurs
+  statut i | chances ce Gameday 100 | prochain 25 : 2 joueurs
+      P.George (BOS) : Rest expected back 2026-11-24
+      A.Nesmith (IND) : Foot expected back 2026-11-27
+  statut i | chances ce Gameday 75 | prochain 75 : 2 joueurs
       N.Claxton (CHI) : Illness expected back 2026-11-23
-      T.McConnell (IND) : Hamstring expected back 2026-11-23
       S.Gilgeous-Alexander (OKC) : Back expected back 2026-11-23
   statut i | chances ce Gameday 100 | prochain 75 : 2 joueurs
       A.Mara (OKC) : Lower Leg expected back 2026-11-23
@@ -624,10 +627,10 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
   statut d | chances ce Gameday None | prochain 75 : 2 joueurs
       J.McLaughlin (SAS) : Shoulder expected back 2026-11-23
       J.Bradley (TOR) : Ankle expected back 2026-11-23
-  statut i | chances ce Gameday 100 | prochain 25 : 1 joueurs
-      P.George (BOS) : Rest expected back 2026-11-24
   statut i | chances ce Gameday 25 | prochain 0 : 1 joueurs
       N.Traore (BKN) : Hamstring expected back 2027-01-27
+  statut d | chances ce Gameday 75 | prochain 75 : 1 joueurs
+      P.Siakam (IND) : Hip expected back 2026-11-23
   statut d | chances ce Gameday 25 | prochain 0 : 1 joueurs
       J.Grant (MEM) : Calf expected back 2026-12-12
   statut d | chances ce Gameday 25 | prochain 75 : 1 joueurs
