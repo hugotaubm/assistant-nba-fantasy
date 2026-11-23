@@ -528,7 +528,7 @@ Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : 906 sur 4111
   - L.Doncic (LAL) (event 19) : projeté 65.5, statut actuel a, news : -
   - G.Antetokounmpo (MIA) (event 33) : projeté 60.2, statut actuel i, news : Groin expected back 2026-11-25
   - C.Cunningham (DET) (event 29) : projeté 56.5, statut actuel a, news : -
-  - S.Gilgeous-Alexander (OKC) (event 33) : projeté 55.4, statut actuel i, news : Back expected back 2026-11-23
+  - S.Gilgeous-Alexander (OKC) (event 33) : projeté 55.4, statut actuel a, news : -
   - J.Johnson (ATL) (event 14) : projeté 53.4, statut actuel a, news : -
   - J.Johnson (ATL) (event 15) : projeté 53.4, statut actuel a, news : -
   - J.Johnson (ATL) (event 17) : projeté 53.4, statut actuel a, news : -
@@ -590,7 +590,7 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       A.Newell (ATL) : Toe expected back 2027-03-17
       C.McCollum (ATL) : Calf expected back 2026-12-19
       K.Knueppel (CHA) : Hamstring expected back 2026-12-12
-  statut i | chances ce Gameday 25 | prochain 25 : 38 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 36 joueurs
       J.Landale (ATL) : Hip expected back 2026-11-27
       G.Williams (CHA) : Hamstring expected back 2026-11-25
       G.Allen (CHA) : Concussion expected back 2026-11-25
@@ -615,28 +615,27 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       J.Embiid (PHI) : Illness expected back 2026-11-23
       D.Fox (SAS) : Lower Leg expected back 2026-11-23
       V.Wembanyama (SAS) : Back expected back 2026-11-23
-  statut i | chances ce Gameday 100 | prochain 25 : 2 joueurs
+  statut i | chances ce Gameday 100 | prochain 25 : 3 joueurs
       P.George (BOS) : Rest expected back 2026-11-24
       A.Nesmith (IND) : Foot expected back 2026-11-27
-  statut i | chances ce Gameday 75 | prochain 75 : 2 joueurs
-      N.Claxton (CHI) : Illness expected back 2026-11-23
-      S.Gilgeous-Alexander (OKC) : Back expected back 2026-11-23
-  statut i | chances ce Gameday 100 | prochain 75 : 2 joueurs
-      A.Mara (OKC) : Lower Leg expected back 2026-11-23
-      J.Hayes (UTA) : Knee expected back 2026-11-23
+      A.Mara (OKC) : Lower Leg expected back 2026-11-25
   statut d | chances ce Gameday None | prochain 75 : 2 joueurs
       J.McLaughlin (SAS) : Shoulder expected back 2026-11-23
       J.Bradley (TOR) : Ankle expected back 2026-11-23
   statut i | chances ce Gameday 25 | prochain 0 : 1 joueurs
       N.Traore (BKN) : Hamstring expected back 2027-01-27
+  statut i | chances ce Gameday 75 | prochain 75 : 1 joueurs
+      N.Claxton (CHI) : Illness expected back 2026-11-23
+  statut d | chances ce Gameday 25 | prochain 75 : 1 joueurs
+      J.Smith (CHI) : Illness expected back 2026-11-23
   statut d | chances ce Gameday 75 | prochain 75 : 1 joueurs
       P.Siakam (IND) : Hip expected back 2026-11-23
   statut d | chances ce Gameday 25 | prochain 0 : 1 joueurs
       J.Grant (MEM) : Calf expected back 2026-12-12
-  statut d | chances ce Gameday 25 | prochain 75 : 1 joueurs
-      B.McGowens (NOP) : Elbow expected back 2026-11-23
   statut i | chances ce Gameday None | prochain 25 : 1 joueurs
       M.McBride (NYK) : Abdomen expected back 2026-11-25
+  statut i | chances ce Gameday 100 | prochain 75 : 1 joueurs
+      J.Hayes (UTA) : Knee expected back 2026-11-23
 
 ======================================================================
 LIGUE FIRST TEAM

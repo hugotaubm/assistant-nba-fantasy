@@ -1,4 +1,4 @@
-Calcul lancé le 23/11/2026 à 19:34:18
+Calcul lancé le 23/11/2026 à 22:04:51
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
@@ -11,7 +11,7 @@ Optimisation (jusqu'à deux minutes)…
   - A.Dosunmu joue le Day 1 mais est sur ton banc (conseillé titulaire)
 
 (Conseil précédent conservé : le nouveau plan ne gagnait que +1 pts.)
-⭐ All-Star (si c'est bien « budget illimité pour un Gameday, puis retour à ton équipe ») : gain par soir GW6 Day 1 (20 équipes) +40 | GW6 Day 2 (6 équipes) +134 | GW6 Day 3 (18 équipes) +27 | GW6 Day 4 (22 équipes) +86 | GW6 Day 5 (10 équipes) +88 | GW6 Day 6 (20 équipes) +49. Meilleur soir : GW6 Day 2, 276 pts attendus au lieu de 141, avec N.Jokic, F.Wagner, J.Murray, C.Cunningham, C.Flagg.
+⭐ All-Star (si c'est bien « budget illimité pour un Gameday, puis retour à ton équipe ») : gain par soir GW6 Day 1 (20 équipes) +40 | GW6 Day 2 (6 équipes) +134 | GW6 Day 3 (18 équipes) +27 | GW6 Day 4 (22 équipes) +86 | GW6 Day 5 (10 équipes) +92 | GW6 Day 6 (20 équipes) +49. Meilleur soir : GW6 Day 2, 276 pts attendus au lieu de 141, avec N.Jokic, F.Wagner, J.Murray, C.Cunningham, C.Flagg.
 🏆 Ligue First Team : 107e sur 646 (-13 depuis le 22/11), 3 pts du rang juste devant, 1049 pts du 1er · devant toi, 89 sur 106 ont déjà joué leur wildcard et 45 leur All-Star · tes joueurs chez les 106 équipes devant toi : D.Acuff Jr. 103, Y.Lendeborg 99, V.Wembanyama 83, A.Dosunmu 25, A.Mitchell 15, T.da Silva 12, D.Avdija 10, N.Traore 8, D.Robinson 8, K.Dunn 3
 📅 Jours creux du plan conseillé — semaine suivante : aucune place vide | semaine d'après (Gameweek 8, sans transfert) : 10 matchs pour ton effectif, 7 place(s) vide(s) ; joueurs dispo par jour : 0-5-5
 🛡️ Effet adversaire (points fantasy concédés par poste, déjà dans les prévisions) — face aux arrières, les plus perméables : MIA +10 %, LAL +8 %, LAC +7 % ; les plus dures : DET -11 %, BOS -9 %, NYK -8 % | face aux intérieurs, les plus perméables : ATL +10 %, CHI +8 %, MIL +7 % ; les plus dures : POR -9 %, SAS -8 %, LAL -7 %
@@ -62,4 +62,4 @@ Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) 
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 23/11/2026 à 19:34:31 (code de sortie : 0)
+Terminé le 23/11/2026 à 22:04:58 (code de sortie : 0)
