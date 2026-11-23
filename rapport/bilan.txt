@@ -590,11 +590,11 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       A.Newell (ATL) : Toe expected back 2027-03-17
       C.McCollum (ATL) : Calf expected back 2026-12-19
       K.Knueppel (CHA) : Hamstring expected back 2026-12-12
-  statut i | chances ce Gameday 25 | prochain 25 : 40 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 38 joueurs
       J.Landale (ATL) : Hip expected back 2026-11-27
-      N.Traore (BKN) : Hamstring expected back 2026-11-25
-      G.Nelson (BKN) : Ankle expected back 2026-11-23
       G.Williams (CHA) : Hamstring expected back 2026-11-25
+      G.Allen (CHA) : Concussion expected back 2026-11-25
+      N.Powell (CHI) : Hamstring expected back 2026-11-28
   statut u | chances ce Gameday 0 | prochain 0 : 15 joueurs
       K.Gilbert (ATL) : Knee expected back 2027-01-01
       H.Veesaar (ATL) : Knee expected back 2027-07-01
@@ -605,14 +605,15 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       T.Enaruna (CLE) : -
       R.Minix (CLE) : -
       J.Poulakidas (DAL) : -
+  statut d | chances ce Gameday 100 | prochain 75 : 4 joueurs
+      B.Miller (CHA) : Knee expected back 2026-11-23
+      J.Embiid (PHI) : Illness expected back 2026-11-23
+      D.Fox (SAS) : Lower Leg expected back 2026-11-23
+      V.Wembanyama (SAS) : Back expected back 2026-11-23
   statut i | chances ce Gameday 75 | prochain 25 : 3 joueurs
       M.Robinson (BOS) : Illness expected back 2026-11-24
       P.Washington (DAL) : Illness expected back 2026-11-24
       G.Antetokounmpo (MIA) : Groin expected back 2026-11-25
-  statut d | chances ce Gameday 100 | prochain 75 : 3 joueurs
-      B.Miller (CHA) : Knee expected back 2026-11-23
-      D.Fox (SAS) : Lower Leg expected back 2026-11-23
-      V.Wembanyama (SAS) : Back expected back 2026-11-23
   statut i | chances ce Gameday 75 | prochain 75 : 3 joueurs
       N.Claxton (CHI) : Illness expected back 2026-11-23
       T.McConnell (IND) : Hamstring expected back 2026-11-23
@@ -620,18 +621,19 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
   statut i | chances ce Gameday 100 | prochain 75 : 2 joueurs
       A.Mara (OKC) : Lower Leg expected back 2026-11-23
       J.Hayes (UTA) : Knee expected back 2026-11-23
+  statut d | chances ce Gameday None | prochain 75 : 2 joueurs
+      J.McLaughlin (SAS) : Shoulder expected back 2026-11-23
+      J.Bradley (TOR) : Ankle expected back 2026-11-23
   statut i | chances ce Gameday 100 | prochain 25 : 1 joueurs
       P.George (BOS) : Rest expected back 2026-11-24
+  statut i | chances ce Gameday 25 | prochain 0 : 1 joueurs
+      N.Traore (BKN) : Hamstring expected back 2027-01-27
   statut d | chances ce Gameday 25 | prochain 0 : 1 joueurs
       J.Grant (MEM) : Calf expected back 2026-12-12
-  statut d | chances ce Gameday 0 | prochain 75 : 1 joueurs
-      O.Dieng (MIL) : Finger expected back 2026-11-23
   statut d | chances ce Gameday 25 | prochain 75 : 1 joueurs
       B.McGowens (NOP) : Elbow expected back 2026-11-23
   statut i | chances ce Gameday None | prochain 25 : 1 joueurs
       M.McBride (NYK) : Abdomen expected back 2026-11-25
-  statut d | chances ce Gameday None | prochain 75 : 1 joueurs
-      J.McLaughlin (SAS) : Shoulder expected back 2026-11-23
 
 ======================================================================
 LIGUE FIRST TEAM

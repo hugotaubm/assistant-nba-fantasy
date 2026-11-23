@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-23T12:16:57.474918+00:00",
+ "lu": "2026-11-23T18:28:10.569165+00:00",
  "joueurs": {
   "jock landale": {
    "nom": "Jock Landale",
@@ -46,6 +46,15 @@
    "commentaire": "Veesaar was diagnosed with a torn right ACL and is expected to miss the 2026-27 season, the Hawks announced Monday.",
    "date": "2026-09-21"
   },
+  "paul george": {
+   "nom": "Paul George",
+   "statut": "Day-To-Day",
+   "blessure": "Other Rest",
+   "retour_espn": "2026-11-24",
+   "retour_commentaire": null,
+   "commentaire": "George (rest) has been ruled out for Sunday's game against Golden State, Justin Turpin of WEEI.com reports.",
+   "date": "2026-11-23"
+  },
   "mitchell robinson": {
    "nom": "Mitchell Robinson",
    "statut": "Out",
@@ -55,32 +64,14 @@
    "commentaire": "Robinson (illness) has been ruled out for Sunday's game against Golden State, Justin Turpin of WEEI.com reports.",
    "date": "2026-11-22"
   },
-  "paul george": {
-   "nom": "Paul George",
-   "statut": "Out",
-   "blessure": "Other Rest",
-   "retour_espn": "2026-11-24",
-   "retour_commentaire": null,
-   "commentaire": "George (rest) has been ruled out for Sunday's game against Golden State, Justin Turpin of WEEI.com reports.",
-   "date": "2026-11-22"
-  },
-  "grant nelson": {
-   "nom": "Grant Nelson",
-   "statut": "Day-To-Day",
-   "blessure": "Right Leg Ankle",
-   "retour_espn": "2026-11-23",
-   "retour_commentaire": null,
-   "commentaire": "Nelson (ankle) is probable for Monday's game against the Timberwolves.",
-   "date": "2026-11-22"
-  },
   "nolan traore": {
    "nom": "Nolan Traore",
    "statut": "Out",
    "blessure": "Right Leg Hamstring",
-   "retour_espn": "2026-11-25",
-   "retour_commentaire": null,
-   "commentaire": "Traore (hamstring) has been ruled out for Monday's game against the Timberwolves.",
-   "date": "2026-11-22"
+   "retour_espn": "2027-01-27",
+   "retour_commentaire": "2027-01-25",
+   "commentaire": "Traore will be re-evaluated in approximately 8-10 weeks due to a right hamstring strain, Michael Scotto of HoopsHype.com reports.",
+   "date": "2026-11-23"
   },
   "grayson allen": {
    "nom": "Grayson Allen",
@@ -129,12 +120,12 @@
   },
   "nic claxton": {
    "nom": "Nic Claxton",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Other Illness",
    "retour_espn": "2026-11-23",
    "retour_commentaire": null,
    "commentaire": "Claxton (illness) won't play in Sunday's game against the Nuggets.",
-   "date": "2026-11-22"
+   "date": "2026-11-23"
   },
   "norman powell": {
    "nom": "Norman Powell",
@@ -183,12 +174,12 @@
   },
   "p j washington": {
    "nom": "P.J. Washington",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Other Illness",
    "retour_espn": "2026-11-24",
    "retour_commentaire": null,
    "commentaire": "Washington (illness) has been ruled out for Sunday's game against the Jazz.",
-   "date": "2026-11-22"
+   "date": "2026-11-23"
   },
   "tobi lawal": {
    "nom": "Tobi Lawal",
@@ -316,14 +307,32 @@
    "commentaire": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports.",
    "date": "2026-10-16"
   },
+  "aaron nesmith": {
+   "nom": "Aaron Nesmith",
+   "statut": "Out",
+   "blessure": "Leg Foot",
+   "retour_espn": "2026-11-27",
+   "retour_commentaire": null,
+   "commentaire": "Nesmith finished with two points (1-7 FG, 0-3 3Pt), three rebounds, three assists, one block and one steal in 29 minutes during Wednesday's 119-104 loss to Houston.",
+   "date": "2026-11-23"
+  },
   "t j mcconnell": {
    "nom": "T.J. McConnell",
    "statut": "Out",
    "blessure": "Left Leg Hamstring",
-   "retour_espn": "2026-11-23",
+   "retour_espn": "2026-11-27",
    "retour_commentaire": null,
    "commentaire": "McConnell (hamstring) is listed as out for Sunday's game in New York.",
-   "date": "2026-11-21"
+   "date": "2026-11-23"
+  },
+  "pascal siakam": {
+   "nom": "Pascal Siakam",
+   "statut": "Day-To-Day",
+   "blessure": "Left Torso Hip",
+   "retour_espn": "2026-11-23",
+   "retour_commentaire": null,
+   "commentaire": "Siakam supplied 25 points (9-22 FG, 3-6 3Pt, 4-4 FT), six rebounds, one assist and two steals over 33 minutes during Sunday's 113-106 loss to the Knicks.",
+   "date": "2026-11-23"
   },
   "tyrese haliburton": {
    "nom": "Tyrese Haliburton",
@@ -426,21 +435,12 @@
   },
   "giannis antetokounmpo": {
    "nom": "Giannis Antetokounmpo",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Groin Groin",
    "retour_espn": "2026-11-25",
    "retour_commentaire": null,
    "commentaire": "Antetokounmpo (groin) won't play in Sunday's game against Oklahoma City, Clemente Almanza of USA Today reports.",
-   "date": "2026-11-22"
-  },
-  "ousmane dieng": {
-   "nom": "Ousmane Dieng",
-   "statut": "Out",
-   "blessure": "Left Arm Finger",
-   "retour_espn": "2026-11-23",
-   "retour_commentaire": null,
-   "commentaire": "Dieng (finger) is questionable for Monday's game against the Raptors.",
-   "date": "2026-11-22"
+   "date": "2026-11-23"
   },
   "jaylen clark": {
    "nom": "Jaylen Clark",
@@ -525,7 +525,7 @@
   },
   "miles mcbride": {
    "nom": "Miles McBride",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Left Torso Abdomen",
    "retour_espn": "2026-11-25",
    "retour_commentaire": null,
@@ -534,12 +534,12 @@
   },
   "og anunoby": {
    "nom": "OG Anunoby",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Left Leg Calf",
    "retour_espn": "2026-11-25",
    "retour_commentaire": null,
    "commentaire": "Anunoby (calf) won't play Sunday against the Pacers.",
-   "date": "2026-11-22"
+   "date": "2026-11-23"
   },
   "jordan clarkson": {
    "nom": "Jordan Clarkson",
@@ -552,48 +552,48 @@
   },
   "aday mara": {
    "nom": "Aday Mara",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Right Leg Lower Leg",
    "retour_espn": "2026-11-23",
    "retour_commentaire": null,
    "commentaire": "Mara (shin) is listed as out for Sunday's game versus Miami.",
-   "date": "2026-11-22"
+   "date": "2026-11-23"
   },
-  "shai gilgeous alexander": {
-   "nom": "Shai Gilgeous-Alexander",
-   "statut": "Out",
+  "jaylin williams": {
+   "nom": "Jaylin Williams",
+   "statut": "Day-To-Day",
    "blessure": "Torso Back",
    "retour_espn": "2026-11-23",
-   "retour_commentaire": null,
-   "commentaire": "Gilgeous-Alexander (back/neck) is listed as out for Sunday's game against the Heat.",
-   "date": "2026-11-22"
+   "retour_commentaire": "2026-11-24",
+   "commentaire": "Williams (back) is listed as out for Sunday's game against Miami.",
+   "date": "2026-11-23"
   },
   "nikola topic": {
    "nom": "Nikola Topic",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Left Torso Hip",
    "retour_espn": "2026-11-23",
    "retour_commentaire": null,
    "commentaire": "Topic (hip) is listed as out for Sunday's game versus the Heat.",
-   "date": "2026-11-21"
+   "date": "2026-11-23"
   },
-  "jaylin williams": {
-   "nom": "Jaylin Williams",
-   "statut": "Out",
+  "shai gilgeous alexander": {
+   "nom": "Shai Gilgeous-Alexander",
+   "statut": "Day-To-Day",
    "blessure": "Torso Back",
    "retour_espn": "2026-11-23",
-   "retour_commentaire": "2026-11-22",
-   "commentaire": "Williams (back) is listed as out for Sunday's game against Miami.",
-   "date": "2026-11-21"
+   "retour_commentaire": null,
+   "commentaire": "Gilgeous-Alexander (back/neck) is listed as out for Sunday's game against the Heat.",
+   "date": "2026-11-23"
   },
   "alex caruso": {
    "nom": "Alex Caruso",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Right Torso Hip",
    "retour_espn": "2026-11-23",
    "retour_commentaire": null,
    "commentaire": "Caruso (hip) won't play Sunday against the Heat.",
-   "date": "2026-11-21"
+   "date": "2026-11-23"
   },
   "thomas sorber": {
    "nom": "Thomas Sorber",
@@ -635,7 +635,7 @@
    "nom": "Jonathan Isaac",
    "statut": "Out",
    "blessure": "Left Leg Knee",
-   "retour_espn": "2026-11-28",
+   "retour_espn": "2026-11-29",
    "retour_commentaire": null,
    "commentaire": "Isaac (knee) is out for Sunday's game against the Wizards.",
    "date": "2026-11-21"
@@ -666,6 +666,15 @@
    "retour_commentaire": "2026-12-05",
    "commentaire": "Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports.",
    "date": "2026-10-24"
+  },
+  "joel embiid": {
+   "nom": "Joel Embiid",
+   "statut": "Day-To-Day",
+   "blessure": "Other Illness",
+   "retour_espn": "2026-11-23",
+   "retour_commentaire": null,
+   "commentaire": "Embiid (knee) has been downgraded to questionable for Monday's game against Portland.",
+   "date": "2026-11-23"
   },
   "adem bona": {
    "nom": "Adem Bona",
@@ -829,6 +838,15 @@
    "commentaire": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports.",
    "date": "2026-10-05"
   },
+  "jaden bradley": {
+   "nom": "Jaden Bradley",
+   "statut": "Day-To-Day",
+   "blessure": "Right Leg Ankle",
+   "retour_espn": "2026-11-23",
+   "retour_commentaire": null,
+   "commentaire": "Bradley is questionable for Monday's game against the Bucks due to an ankle sprain, Blake Murphy of Sportsnet.ca reports.",
+   "date": "2026-11-23"
+  },
   "collin murray boyles": {
    "nom": "Collin Murray-Boyles",
    "statut": "Day-To-Day",
@@ -867,7 +885,7 @@
   },
   "jaxson hayes": {
    "nom": "Jaxson Hayes",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Left Leg Knee",
    "retour_espn": "2026-11-23",
    "retour_commentaire": null,
