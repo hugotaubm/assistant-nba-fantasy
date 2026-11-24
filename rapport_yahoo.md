@@ -16,10 +16,9 @@ Chaque case : moyenne sur les **7 derniers jours · 15 derniers jours** (matchs 
 | LeBron James | PHI | OK | – | 3 | 3 · 5 | 32.2 · 31.8 | .581 · .540 | .846 · .857 | 1.7 · 1.2 | 22.0 · 18.4 | 5.0 · 6.0 | 5.0 · 6.2 | 1.0 · 0.6 | 0.3 · 0.4 | 1.0 · 1.2 |
 | Kyshawn George | WAS | OK | BOS 02:00 | 2 | 3 · 8 | 36.8 · 34.8 | .420 · .455 | .667 · .692 | 3.7 · 3.0 | 18.3 · 16.9 | 4.0 · 4.1 | 4.3 · 3.5 | 0.7 · 0.9 | 1.3 · 1.0 | 2.0 · 2.6 |
 | Darryn Peterson | UTA | OK | – | 2 | 5 · 9 | 27.0 · 29.7 | .386 · .407 | .696 · .763 | 0.6 · 1.8 | 12.6 · 17.2 | 5.0 · 5.0 | 4.6 · 4.2 | 0.8 · 1.0 | 0.2 · 0.4 | 2.4 · 2.4 |
-| Isaiah Jackson | LAC | OK | – | 3 | 4 · 7 | 12.4 · 14.0 | .556 · .562 | .000 · .714 | 0.0 · 0.1 | 5.0 · 6.0 | 3.8 · 3.4 | 1.0 · 1.3 | 1.0 · 0.9 | 1.2 · 1.3 | 0.8 · 0.7 |
 | Landry Shamet | NYK | OK | – | 3 | 4 · 8 | 30.4 · 28.7 | .525 · .548 | 1.000 · 1.000 | 3.2 · 2.8 | 14.8 · 13.6 | 1.2 · 1.9 | 2.2 · 2.0 | 0.5 · 0.5 | 0.0 · 0.1 | 0.5 · 0.8 |
 | Ivica Zubac | IND | OK | – | 2 | 4 · 8 | 27.0 · 26.9 | .538 · .557 | .875 · .850 | 0.0 · 0.0 | 12.2 · 13.1 | 10.5 · 9.4 | 2.0 · 1.5 | 0.0 · 0.0 | 1.0 · 0.9 | 1.2 · 1.2 |
-| Terrence Shannon Jr. | MIN | OK | – | 3 | 4 · 7 | 24.0 · 24.8 | .526 · .561 | .889 · .893 | 1.5 · 1.3 | 13.5 · 15.4 | 2.8 · 3.1 | 3.5 · 3.4 | 0.5 · 0.6 | 0.0 · 0.0 | 1.2 · 2.0 |
+| Isaac Okoro | CHI | OK | – | 2 | 4 · 8 | 30.6 · 31.2 | .481 · .433 | .800 · .737 | 2.5 · 1.9 | 11.0 · 10.1 | 3.8 · 4.1 | 2.5 · 2.8 | 1.0 · 1.1 | 0.2 · 0.2 | 1.2 · 1.0 |
 
 **Blessures / nouvelles**
 
@@ -27,4 +26,4 @@ Chaque case : moyenne sur les **7 derniers jours · 15 derniers jours** (matchs 
 - **P.J. Washington** : Illness expected back 2026-11-24
 - **Victor Wembanyama** : Back expected back 2026-11-25
 
-_Mis à jour le 24/11/2026 20:20 (heure de Paris). Sources : NBA Fantasy (statuts), feuilles de match NBA via nba_api._
+_Mis à jour le 24/11/2026 22:03 (heure de Paris). Sources : NBA Fantasy (statuts), feuilles de match NBA via nba_api._
