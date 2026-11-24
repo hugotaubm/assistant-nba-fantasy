@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-24T15:47:38.985592+00:00",
+ "lu": "2026-11-24T18:41:40.170599+00:00",
  "joueurs": {
   "jock landale": {
    "nom": "Jock Landale",
@@ -109,6 +109,15 @@
    "commentaire": "Schroder has been diagnosed with a left hamstring strain and will be reevaluated in two weeks, Michael Scotto of HoopsHype.com reports.",
    "date": "2026-11-08"
   },
+  "jalen smith": {
+   "nom": "Jalen Smith",
+   "statut": "Day-To-Day",
+   "blessure": "Other Illness",
+   "retour_espn": "2026-11-25",
+   "retour_commentaire": null,
+   "commentaire": "Smith (illness) is listed as questionable for Wednesday's game against the Hornets.",
+   "date": "2026-11-24"
+  },
   "norman powell": {
    "nom": "Norman Powell",
    "statut": "Out",
@@ -194,7 +203,7 @@
    "nom": "Ebuka Okorie",
    "statut": "Out",
    "blessure": "Left Torso Oblique",
-   "retour_espn": "2026-11-30",
+   "retour_espn": "2026-12-13",
    "retour_commentaire": null,
    "commentaire": "Okorie (oblique) won't play Tuesday in Orlando.",
    "date": "2026-11-23"
@@ -221,7 +230,7 @@
    "nom": "Taurean Prince",
    "statut": "Out",
    "blessure": "Right Leg Knee",
-   "retour_espn": "2026-12-13",
+   "retour_espn": "2026-12-26",
    "retour_commentaire": null,
    "commentaire": "Prince (knee) underwent surgery to address lingering issues and has no timeline for a return, Hunter Patterson of The Athletic reports.",
    "date": "2026-11-20"
@@ -280,6 +289,24 @@
    "commentaire": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports.",
    "date": "2026-10-16"
   },
+  "t j mcconnell": {
+   "nom": "T.J. McConnell",
+   "statut": "Day-To-Day",
+   "blessure": "Left Leg Hamstring",
+   "retour_espn": "2026-11-27",
+   "retour_commentaire": null,
+   "commentaire": "McConnell (hamstring) was assigned to the G League's Noblesville Boom on Tuesday.",
+   "date": "2026-11-24"
+  },
+  "tyrese haliburton": {
+   "nom": "Tyrese Haliburton",
+   "statut": "Out",
+   "blessure": "Left Leg Hamstring",
+   "retour_espn": "2026-12-13",
+   "retour_commentaire": "2026-12-08",
+   "commentaire": "Haliburton (hamstring) was assigned to the G League's Noblesville Boom on Tuesday.",
+   "date": "2026-11-24"
+  },
   "aaron nesmith": {
    "nom": "Aaron Nesmith",
    "statut": "Day-To-Day",
@@ -287,15 +314,6 @@
    "retour_espn": "2026-11-27",
    "retour_commentaire": null,
    "commentaire": "Nesmith is out for Monday's game against the Thunder due to right foot soreness.",
-   "date": "2026-11-24"
-  },
-  "t j mcconnell": {
-   "nom": "T.J. McConnell",
-   "statut": "Day-To-Day",
-   "blessure": "Left Leg Hamstring",
-   "retour_espn": "2026-11-27",
-   "retour_commentaire": null,
-   "commentaire": "McConnell is out for Monday's game against the Thunder due to left hamstring soreness.",
    "date": "2026-11-24"
   },
   "larry nance": {
@@ -306,24 +324,6 @@
    "retour_commentaire": null,
    "commentaire": "Nance exited Monday's game against the Thunder due to a sore right ankle and he will not return, Tony East of Forbes.com reports.",
    "date": "2026-11-24"
-  },
-  "tyrese haliburton": {
-   "nom": "Tyrese Haliburton",
-   "statut": "Out",
-   "blessure": "Left Leg Hamstring",
-   "retour_espn": "2026-12-13",
-   "retour_commentaire": "2026-12-04",
-   "commentaire": "Haliburton (hamstring) is expected to miss at least two more weeks, Shams Charania of ESPN reports.",
-   "date": "2026-11-20"
-  },
-  "johnny furphy": {
-   "nom": "Johnny Furphy",
-   "statut": "Out",
-   "blessure": "Right Leg Knee",
-   "retour_espn": "2027-01-02",
-   "retour_commentaire": null,
-   "commentaire": "Furphy (knee) is practicing with the G League's Noblesville Boom, per Alex Golden of SI.com.",
-   "date": "2026-10-30"
   },
   "ben sheppard": {
    "nom": "Ben Sheppard",
@@ -415,6 +415,15 @@
    "commentaire": "Antetokounmpo (groin) won't play in Sunday's game against Oklahoma City, Clemente Almanza of USA Today reports.",
    "date": "2026-11-23"
   },
+  "donte divincenzo": {
+   "nom": "Donte DiVincenzo",
+   "statut": "Out",
+   "blessure": "Right Leg Achilles",
+   "retour_espn": "2027-01-03",
+   "retour_commentaire": null,
+   "commentaire": "DiVincenzo (Achilles) has been cleared for team basketball activities and is targeting a return to game action in January, Jon Krawczynski of The Athletic reports.",
+   "date": "2026-11-24"
+  },
   "jaylen clark": {
    "nom": "Jaylen Clark",
    "statut": "Out",
@@ -432,15 +441,6 @@
    "retour_commentaire": "2026-12-28",
    "commentaire": "Edwards underwent a successful arthroscopic procedure on his right knee Thursday, the Timberwolves announced.",
    "date": "2026-10-29"
-  },
-  "donte divincenzo": {
-   "nom": "Donte DiVincenzo",
-   "statut": "Out",
-   "blessure": "Right Leg Achilles",
-   "retour_espn": "2027-04-02",
-   "retour_commentaire": null,
-   "commentaire": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports.",
-   "date": "2026-10-05"
   },
   "trendon watford": {
    "nom": "Trendon Watford",
@@ -792,6 +792,15 @@
    "retour_commentaire": "2026-12-22",
    "commentaire": "Jackson has been diagnosed with a torn MCL in his right knee and will be sidelined for 6-to-8 weeks, per Shams Charania of ESPN.",
    "date": "2026-10-27"
+  },
+  "tre mann": {
+   "nom": "Tre Mann",
+   "statut": "Day-To-Day",
+   "blessure": "Other Illness",
+   "retour_espn": "2026-11-24",
+   "retour_commentaire": null,
+   "commentaire": "Mann (illness) has been downgraded to questionable for Tuesday's game against Boston.",
+   "date": "2026-11-24"
   },
   "tristan vukcevic": {
    "nom": "Tristan Vukcevic",
