@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-23T22:47:02.979911+00:00",
+ "lu": "2026-11-24T07:40:57.272415+00:00",
  "joueurs": {
   "jock landale": {
    "nom": "Jock Landale",
@@ -64,6 +64,24 @@
    "commentaire": "Traore will be re-evaluated in approximately 8-10 weeks due to a right hamstring strain, Michael Scotto of HoopsHype.com reports.",
    "date": "2026-11-23"
   },
+  "grant williams": {
+   "nom": "Grant Williams",
+   "statut": "Day-To-Day",
+   "blessure": "Right Leg Hamstring",
+   "retour_espn": "2026-11-25",
+   "retour_commentaire": null,
+   "commentaire": "Williams (hamstring) won't play Monday's game against the Grizzlies.",
+   "date": "2026-11-24"
+  },
+  "ryan kalkbrenner": {
+   "nom": "Ryan Kalkbrenner",
+   "statut": "Day-To-Day",
+   "blessure": "Left Torso Hip",
+   "retour_espn": "2026-11-25",
+   "retour_commentaire": null,
+   "commentaire": "Kalkbrenner has been ruled out for the rest of Monday's game against Memphis due to left hip soreness. He'll end with two rebounds in nine minutes.",
+   "date": "2026-11-24"
+  },
   "grayson allen": {
    "nom": "Grayson Allen",
    "statut": "Out",
@@ -71,15 +89,6 @@
    "retour_espn": "2026-11-25",
    "retour_commentaire": null,
    "commentaire": "Allen (concussion) has been ruled out for Monday's game against the Grizzlies.",
-   "date": "2026-11-22"
-  },
-  "grant williams": {
-   "nom": "Grant Williams",
-   "statut": "Out",
-   "blessure": "Right Leg Hamstring",
-   "retour_espn": "2026-11-25",
-   "retour_commentaire": null,
-   "commentaire": "Williams (hamstring) won't play Monday's game against the Grizzlies.",
    "date": "2026-11-22"
   },
   "kon knueppel": {
@@ -100,24 +109,6 @@
    "commentaire": "Schroder has been diagnosed with a left hamstring strain and will be reevaluated in two weeks, Michael Scotto of HoopsHype.com reports.",
    "date": "2026-11-08"
   },
-  "jalen smith": {
-   "nom": "Jalen Smith",
-   "statut": "Day-To-Day",
-   "blessure": "Other Illness",
-   "retour_espn": "2026-11-23",
-   "retour_commentaire": null,
-   "commentaire": "Smith (illness) is probable for Monday's game against Cleveland.",
-   "date": "2026-11-23"
-  },
-  "nic claxton": {
-   "nom": "Nic Claxton",
-   "statut": "Day-To-Day",
-   "blessure": "Other Illness",
-   "retour_espn": "2026-11-23",
-   "retour_commentaire": null,
-   "commentaire": "Claxton (illness) is questionable for Monday's game against Cleveland.",
-   "date": "2026-11-23"
-  },
   "norman powell": {
    "nom": "Norman Powell",
    "statut": "Out",
@@ -135,15 +126,6 @@
    "retour_commentaire": "2026-12-24",
    "commentaire": "Wilson (hand) is expected to miss four to six weeks, Shams Charania of ESPN reports.",
    "date": "2026-11-12"
-  },
-  "jaylon tyson": {
-   "nom": "Jaylon Tyson",
-   "statut": "Out",
-   "blessure": "Right Leg Ankle",
-   "retour_espn": "2026-11-23",
-   "retour_commentaire": null,
-   "commentaire": "Tyson (ankle) is probable for Monday's game against the Bulls.",
-   "date": "2026-11-22"
   },
   "nae qwan tomlin": {
    "nom": "Nae'Qwan Tomlin",
@@ -163,23 +145,23 @@
    "commentaire": "Mobley will receive treatment and participate in rehab after the team confirmed a diagnosis of a right great toe sprain, and he'll be re-evaluated in the next 7-to-10 days.",
    "date": "2026-11-16"
   },
+  "tobi lawal": {
+   "nom": "Tobi Lawal",
+   "statut": "Out",
+   "blessure": "Right Groin Groin",
+   "retour_espn": "2026-11-27",
+   "retour_commentaire": null,
+   "commentaire": "Lawal (groin) is out for Tuesday's game against Denver.",
+   "date": "2026-11-23"
+  },
   "p j washington": {
    "nom": "P.J. Washington",
    "statut": "Day-To-Day",
    "blessure": "Other Illness",
    "retour_espn": "2026-11-24",
    "retour_commentaire": null,
-   "commentaire": "Washington (illness) has been ruled out for Sunday's game against the Jazz.",
+   "commentaire": "Washington (illness) is questionable for Tuesday's game against the Nuggets.",
    "date": "2026-11-23"
-  },
-  "tobi lawal": {
-   "nom": "Tobi Lawal",
-   "statut": "Out",
-   "blessure": "Right Groin Groin",
-   "retour_espn": "2026-11-24",
-   "retour_commentaire": null,
-   "commentaire": "Lawal (groin) has been ruled out for Sunday's game against the Jazz.",
-   "date": "2026-11-22"
   },
   "dereck lively": {
    "nom": "Dereck Lively II",
@@ -207,15 +189,6 @@
    "retour_commentaire": null,
    "commentaire": "Biberovic (heel) is out for Wednesday's game against the Warriors.",
    "date": "2026-11-17"
-  },
-  "julian strawther": {
-   "nom": "Julian Strawther",
-   "statut": "Out",
-   "blessure": "Left Leg Knee",
-   "retour_espn": "2026-11-29",
-   "retour_commentaire": "2026-11-28",
-   "commentaire": "Strawther (knee) was diagnosed with a left knee sprain Friday and will be re-evaluated in six weeks, Vinny Benedetto of The Denver Gazette reports.",
-   "date": "2026-10-17"
   },
   "ebuka okorie": {
    "nom": "Ebuka Okorie",
@@ -307,32 +280,32 @@
    "commentaire": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports.",
    "date": "2026-10-16"
   },
-  "t j mcconnell": {
-   "nom": "T.J. McConnell",
-   "statut": "Out",
-   "blessure": "Left Leg Hamstring",
-   "retour_espn": "2026-11-27",
-   "retour_commentaire": null,
-   "commentaire": "McConnell is out for Monday's game against the Thunder due to left hamstring soreness.",
-   "date": "2026-11-23"
-  },
   "aaron nesmith": {
    "nom": "Aaron Nesmith",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Leg Foot",
    "retour_espn": "2026-11-27",
    "retour_commentaire": null,
    "commentaire": "Nesmith is out for Monday's game against the Thunder due to right foot soreness.",
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
-  "pascal siakam": {
-   "nom": "Pascal Siakam",
+  "t j mcconnell": {
+   "nom": "T.J. McConnell",
    "statut": "Day-To-Day",
-   "blessure": "Left Torso Hip",
-   "retour_espn": "2026-11-23",
+   "blessure": "Left Leg Hamstring",
+   "retour_espn": "2026-11-27",
    "retour_commentaire": null,
-   "commentaire": "Siakam is questionable for Monday's game against Oklahoma City due to left hip injury management, according to the NBA's injury report.",
-   "date": "2026-11-23"
+   "commentaire": "McConnell is out for Monday's game against the Thunder due to left hamstring soreness.",
+   "date": "2026-11-24"
+  },
+  "larry nance": {
+   "nom": "Larry Nance Jr.",
+   "statut": "Day-To-Day",
+   "blessure": "Right Leg Ankle",
+   "retour_espn": "2026-11-27",
+   "retour_commentaire": null,
+   "commentaire": "Nance exited Monday's game against the Thunder due to a sore right ankle and he will not return, Tony East of Forbes.com reports.",
+   "date": "2026-11-24"
   },
   "tyrese haliburton": {
    "nom": "Tyrese Haliburton",
@@ -385,7 +358,16 @@
    "blessure": "Left Leg Heel",
    "retour_espn": "2026-11-27",
    "retour_commentaire": null,
-   "commentaire": "Reaves (heel) has been ruled out for Monday's game against the Jazz, Jovan Buha of The Athletic reports.",
+   "commentaire": "Coach JJ Redick stated Monday that the team is optimistic Reaves (heel) will return for Friday's game against San Antonio, Daniel Starkand of LakersNation.com reports.",
+   "date": "2026-11-24"
+  },
+  "cameron boozer": {
+   "nom": "Cameron Boozer",
+   "statut": "Out",
+   "blessure": "Right Leg Ankle",
+   "retour_espn": "2026-12-21",
+   "retour_commentaire": "2026-12-21",
+   "commentaire": "Boozer (ankle) will be re-evaluated in four weeks, Brett Siegel of ClutchPoints.com reports.",
    "date": "2026-11-23"
   },
   "jerami grant": {
@@ -396,15 +378,6 @@
    "retour_commentaire": "2026-12-07",
    "commentaire": "Grant was diagnosed with a grade 1 left calf strain and will be re-evaluated in two weeks.",
    "date": "2026-11-23"
-  },
-  "cameron boozer": {
-   "nom": "Cameron Boozer",
-   "statut": "Out",
-   "blessure": "Right Leg Ankle",
-   "retour_espn": "2026-11-25",
-   "retour_commentaire": null,
-   "commentaire": "Boozer (ankle) won't play Monday's game against the Hornets.",
-   "date": "2026-11-22"
   },
   "gg jackson": {
    "nom": "GG Jackson",
@@ -469,15 +442,6 @@
    "commentaire": "DiVincenzo (Achilles) remains confident that he'll return during the 2026-27 season, Jon Krawczynski of The Athletic reports.",
    "date": "2026-10-05"
   },
-  "zion williamson": {
-   "nom": "Zion Williamson",
-   "statut": "Day-To-Day",
-   "blessure": "Left Leg Thigh",
-   "retour_espn": "2026-11-23",
-   "retour_commentaire": null,
-   "commentaire": "Williamson (thigh) is probable for Monday's game against Phoenix.",
-   "date": "2026-11-22"
-  },
   "trendon watford": {
    "nom": "Trendon Watford",
    "statut": "Out",
@@ -534,12 +498,21 @@
   },
   "jaylin williams": {
    "nom": "Jaylin Williams",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Torso Back",
    "retour_espn": "2026-11-25",
    "retour_commentaire": null,
    "commentaire": "Williams (back) has been ruled out for Monday's game against the Pacers",
-   "date": "2026-11-23"
+   "date": "2026-11-24"
+  },
+  "aday mara": {
+   "nom": "Aday Mara",
+   "statut": "Day-To-Day",
+   "blessure": "Right Leg Lower Leg",
+   "retour_espn": "2026-11-25",
+   "retour_commentaire": null,
+   "commentaire": "Mara (shin) has been ruled out for Monday's game against the Pacers.",
+   "date": "2026-11-24"
   },
   "nikola topic": {
    "nom": "Nikola Topic",
@@ -548,15 +521,6 @@
    "retour_espn": "2026-11-25",
    "retour_commentaire": null,
    "commentaire": "Topic (hip) has been ruled out for Monday's game against the Pacers, according to the NBA's official injury report.",
-   "date": "2026-11-23"
-  },
-  "aday mara": {
-   "nom": "Aday Mara",
-   "statut": "Out",
-   "blessure": "Right Leg Lower Leg",
-   "retour_espn": "2026-11-25",
-   "retour_commentaire": null,
-   "commentaire": "Mara (shin) has been ruled out for Monday's game against the Pacers.",
    "date": "2026-11-23"
   },
   "jalen williams": {
@@ -644,37 +608,10 @@
    "nom": "Joel Embiid",
    "statut": "Day-To-Day",
    "blessure": "Other Illness",
-   "retour_espn": "2026-11-23",
+   "retour_espn": "2026-11-25",
    "retour_commentaire": null,
-   "commentaire": "Embiid (knee) has been downgraded to questionable for Monday's game against Portland.",
-   "date": "2026-11-23"
-  },
-  "adem bona": {
-   "nom": "Adem Bona",
-   "statut": "Out",
-   "blessure": "Torso Back",
-   "retour_espn": "2026-11-23",
-   "retour_commentaire": null,
-   "commentaire": "Bona (back) is listed as probable for Monday's game against the Trail Blazers.",
-   "date": "2026-11-22"
-  },
-  "jaylen brown": {
-   "nom": "Jaylen Brown",
-   "statut": "Day-To-Day",
-   "blessure": "Left Leg Hamstring",
-   "retour_espn": "2026-11-23",
-   "retour_commentaire": null,
-   "commentaire": "Brown (hamstring) is listed as probable for Monday's game versus Portland.",
-   "date": "2026-11-22"
-  },
-  "dean wade": {
-   "nom": "Dean Wade",
-   "statut": "Day-To-Day",
-   "blessure": "Left Leg Hamstring",
-   "retour_espn": "2026-11-23",
-   "retour_commentaire": null,
-   "commentaire": "Wade (hamstring) is listed as probable for Monday's game against Portland.",
-   "date": "2026-11-22"
+   "commentaire": "Embiid (illness) is out for Monday's game against Portland, Austin Krell of OnPattison.com reports.",
+   "date": "2026-11-24"
   },
   "ariel hukporti": {
    "nom": "Ariel Hukporti",
@@ -752,28 +689,19 @@
    "nom": "Victor Wembanyama",
    "statut": "Day-To-Day",
    "blessure": "Torso Back",
-   "retour_espn": "2026-11-23",
+   "retour_espn": "2026-11-25",
    "retour_commentaire": null,
-   "commentaire": "Wembanyama (back) is questionable for Monday's game against the Kings, Jared Weiss of The Athletic reports.",
-   "date": "2026-11-23"
+   "commentaire": "Wembanyama (back) won't play Monday against the Kings, Jeff McDonald of the San Antonio Express-News reports.",
+   "date": "2026-11-24"
   },
   "de aaron fox": {
    "nom": "De'Aaron Fox",
    "statut": "Day-To-Day",
    "blessure": "Right Leg Lower Leg",
-   "retour_espn": "2026-11-23",
+   "retour_espn": "2026-11-25",
    "retour_commentaire": null,
-   "commentaire": "Fox is questionable for Monday's game against the Kings due to a right shin contusion, Jared Weiss of The Athletic reports.",
-   "date": "2026-11-23"
-  },
-  "jordan mclaughlin": {
-   "nom": "Jordan McLaughlin",
-   "statut": "Day-To-Day",
-   "blessure": "Left Arm Shoulder",
-   "retour_espn": "2026-11-23",
-   "retour_commentaire": null,
-   "commentaire": "McLaughlin (shoulder) is listed as questionable for Monday's game against the Kings.",
-   "date": "2026-11-23"
+   "commentaire": "Fox (shin) has been ruled out for Monday's game against the Kings, Jeff McDonald of the San Antonio Express-News reports.",
+   "date": "2026-11-24"
   },
   "dylan harper": {
    "nom": "Dylan Harper",
@@ -801,24 +729,6 @@
    "retour_commentaire": null,
    "commentaire": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports.",
    "date": "2026-10-05"
-  },
-  "jaden bradley": {
-   "nom": "Jaden Bradley",
-   "statut": "Day-To-Day",
-   "blessure": "Right Leg Ankle",
-   "retour_espn": "2026-11-23",
-   "retour_commentaire": null,
-   "commentaire": "Bradley is questionable for Monday's game against the Bucks due to an ankle sprain, Blake Murphy of Sportsnet.ca reports.",
-   "date": "2026-11-23"
-  },
-  "collin murray boyles": {
-   "nom": "Collin Murray-Boyles",
-   "statut": "Day-To-Day",
-   "blessure": "Head Concussion",
-   "retour_espn": "2026-11-23",
-   "retour_commentaire": null,
-   "commentaire": "Murray-Boyles (concussion) is listed as probable for Monday's game against Milwaukee, Blake Murphy of Sportsnet.ca reports.",
-   "date": "2026-11-22"
   },
   "nate bittle": {
    "nom": "Nate Bittle",
@@ -849,12 +759,12 @@
   },
   "jaxson hayes": {
    "nom": "Jaxson Hayes",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Left Leg Knee",
    "retour_espn": "2026-11-27",
    "retour_commentaire": null,
    "commentaire": "Hayes (knee) has been ruled out for Monday's game against the Lakers.",
-   "date": "2026-11-23"
+   "date": "2026-11-24"
   },
   "jusuf nurkic": {
    "nom": "Jusuf Nurkic",
