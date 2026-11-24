@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-24T18:41:40.170599+00:00",
+ "lu": "2026-11-24T18:44:44.826419+00:00",
  "joueurs": {
   "jock landale": {
    "nom": "Jock Landale",
@@ -199,14 +199,23 @@
    "commentaire": "Biberovic (heel) is out for Wednesday's game against the Warriors.",
    "date": "2026-11-17"
   },
-  "ebuka okorie": {
-   "nom": "Ebuka Okorie",
+  "taurean prince": {
+   "nom": "Taurean Prince",
    "statut": "Out",
-   "blessure": "Left Torso Oblique",
-   "retour_espn": "2026-12-13",
+   "blessure": "Right Leg Knee",
+   "retour_espn": "2026-12-26",
+   "retour_commentaire": "2026-12-22",
+   "commentaire": "Prince underwent arthroscopic right knee surgery Nov. 18 and will be re-evaluated in four weeks, Eric Vincent of ClutchPoints.com reports.",
+   "date": "2026-11-24"
+  },
+  "duncan robinson": {
+   "nom": "Duncan Robinson",
+   "statut": "Out",
+   "blessure": "Left Leg Quadriceps",
+   "retour_espn": "2026-11-27",
    "retour_commentaire": null,
-   "commentaire": "Okorie (oblique) won't play Tuesday in Orlando.",
-   "date": "2026-11-23"
+   "commentaire": "Robinson (quadriceps) is considered day-to-day as he progresses in his rehab, Eric Vincent of ClutchPoints.com reports.",
+   "date": "2026-11-24"
   },
   "jalen duren": {
    "nom": "Jalen Duren",
@@ -214,7 +223,16 @@
    "blessure": "Right Leg Hamstring",
    "retour_espn": "2026-11-30",
    "retour_commentaire": null,
-   "commentaire": "Duren (hamstring) has been ruled out for Tuesday's game against the Magic.",
+   "commentaire": "Duren (hamstring) is being assigned to the Motor City Cruise on Wednesday for practice as he ramps up for a return, Eric Vincent of ClutchPoints.com reports.",
+   "date": "2026-11-24"
+  },
+  "ebuka okorie": {
+   "nom": "Ebuka Okorie",
+   "statut": "Out",
+   "blessure": "Left Torso Oblique",
+   "retour_espn": "2026-12-13",
+   "retour_commentaire": null,
+   "commentaire": "Okorie (oblique) won't play Tuesday in Orlando.",
    "date": "2026-11-23"
   },
   "cade cunningham": {
@@ -225,24 +243,6 @@
    "retour_commentaire": null,
    "commentaire": "Cunningham (knee) is probable for Tuesday's game against the Orlando.",
    "date": "2026-11-23"
-  },
-  "taurean prince": {
-   "nom": "Taurean Prince",
-   "statut": "Out",
-   "blessure": "Right Leg Knee",
-   "retour_espn": "2026-12-26",
-   "retour_commentaire": null,
-   "commentaire": "Prince (knee) underwent surgery to address lingering issues and has no timeline for a return, Hunter Patterson of The Athletic reports.",
-   "date": "2026-11-20"
-  },
-  "duncan robinson": {
-   "nom": "Duncan Robinson",
-   "statut": "Out",
-   "blessure": "Left Leg Quadriceps",
-   "retour_espn": "2026-11-27",
-   "retour_commentaire": "2026-11-24",
-   "commentaire": "Robinson will be re-evaluated in one week due to a left quadriceps strain, Coty M. Davis of The Detroit News reports.",
-   "date": "2026-11-17"
   },
   "brandon williams": {
    "nom": "Brandon Williams",
