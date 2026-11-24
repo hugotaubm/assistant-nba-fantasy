@@ -1,4 +1,4 @@
-Calcul lancé le 24/11/2026 à 21:21:22
+Calcul lancé le 24/11/2026 à 22:02:04
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
@@ -10,7 +10,6 @@ Optimisation (jusqu'à deux minutes)…
 ⚠ À CORRIGER SUR LE SITE AVANT LA DEADLINE
   - Active le capitaine le Day 2 sur F.Wagner
 
-Changements depuis le calcul de 19h44 : plus de transfert K.Dunn → Q.Jackson, plus de transfert D.Robinson → F.Wagner. Raison probable : pas de nouvelle info : simple écart entre plans presque équivalents.
 ⭐ All-Star (si c'est bien « budget illimité pour un Gameday, puis retour à ton équipe ») : gain par soir GW6 Day 2 (6 équipes) +121 | GW6 Day 3 (18 équipes) +26 | GW6 Day 4 (22 équipes) +81 | GW6 Day 5 (10 équipes) +103 | GW6 Day 6 (20 équipes) +38. Meilleur soir : GW6 Day 2, 263 pts attendus au lieu de 142, avec N.Jokic, F.Wagner, J.Murray, C.Flagg, T.Young.
 🏆 Ligue First Team : 109e sur 646 (-2 depuis le 23/11), 8 pts du rang juste devant, 1055 pts du 1er · devant toi, 86 sur 103 ont déjà joué leur wildcard et 41 leur All-Star · tes joueurs chez les 103 équipes devant toi : D.Acuff Jr. 100, Y.Lendeborg 94, V.Wembanyama 80, F.Wagner 62, A.Dosunmu 20, Q.Jackson 15, D.Avdija 14, A.Mitchell 14, T.da Silva 12, N.Traore 3
 📅 Jours creux du plan conseillé — semaine suivante : aucune place vide | semaine d'après (Gameweek 8, sans transfert) : 10 matchs pour ton effectif, 7 place(s) vide(s) ; joueurs dispo par jour : 0-5-5
@@ -53,4 +52,4 @@ Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) 
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 24/11/2026 à 21:21:28 (code de sortie : 0)
+Terminé le 24/11/2026 à 22:02:06 (code de sortie : 0)
