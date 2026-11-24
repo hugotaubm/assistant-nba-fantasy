@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-24T18:44:44.826419+00:00",
+ "lu": "2026-11-24T20:21:28.784464+00:00",
  "joueurs": {
   "jock landale": {
    "nom": "Jock Landale",
@@ -199,6 +199,15 @@
    "commentaire": "Biberovic (heel) is out for Wednesday's game against the Warriors.",
    "date": "2026-11-17"
   },
+  "ebuka okorie": {
+   "nom": "Ebuka Okorie",
+   "statut": "Out",
+   "blessure": "Left Torso Oblique",
+   "retour_espn": "2026-12-13",
+   "retour_commentaire": "2026-12-08",
+   "commentaire": "The Pistons announced Tuesday that Okorie (oblique) will miss at least two weeks, per Eric Vincent of ClutchPoints.com.",
+   "date": "2026-11-24"
+  },
   "taurean prince": {
    "nom": "Taurean Prince",
    "statut": "Out",
@@ -225,15 +234,6 @@
    "retour_commentaire": null,
    "commentaire": "Duren (hamstring) is being assigned to the Motor City Cruise on Wednesday for practice as he ramps up for a return, Eric Vincent of ClutchPoints.com reports.",
    "date": "2026-11-24"
-  },
-  "ebuka okorie": {
-   "nom": "Ebuka Okorie",
-   "statut": "Out",
-   "blessure": "Left Torso Oblique",
-   "retour_espn": "2026-12-13",
-   "retour_commentaire": null,
-   "commentaire": "Okorie (oblique) won't play Tuesday in Orlando.",
-   "date": "2026-11-23"
   },
   "cade cunningham": {
    "nom": "Cade Cunningham",
@@ -295,7 +295,7 @@
    "blessure": "Left Leg Hamstring",
    "retour_espn": "2026-11-27",
    "retour_commentaire": null,
-   "commentaire": "McConnell (hamstring) was assigned to the G League's Noblesville Boom on Tuesday.",
+   "commentaire": "McConnell (hamstring) was recalled from the G League's Noblesville Boom on Tuesday, Shams Charania of ESPN reports.",
    "date": "2026-11-24"
   },
   "tyrese haliburton": {
@@ -304,7 +304,7 @@
    "blessure": "Left Leg Hamstring",
    "retour_espn": "2026-12-13",
    "retour_commentaire": "2026-12-08",
-   "commentaire": "Haliburton (hamstring) was assigned to the G League's Noblesville Boom on Tuesday.",
+   "commentaire": "Haliburton (hamstring) was recalled from the G League's Noblesville Boom on Tuesday, Tony East of Forbes.com reports.",
    "date": "2026-11-24"
   },
   "aaron nesmith": {
@@ -412,8 +412,8 @@
    "blessure": "Groin Groin",
    "retour_espn": "2026-11-25",
    "retour_commentaire": null,
-   "commentaire": "Antetokounmpo (groin) won't play in Sunday's game against Oklahoma City, Clemente Almanza of USA Today reports.",
-   "date": "2026-11-23"
+   "commentaire": "Antetokounmpo (groin) participated in most of Tuesday's practice, Zachary Weinberger of ClutchPoints.com reports.",
+   "date": "2026-11-24"
   },
   "donte divincenzo": {
    "nom": "Donte DiVincenzo",
@@ -469,14 +469,14 @@
    "commentaire": "Murray (ankle) is out for Friday's game against Memphis.",
    "date": "2026-11-13"
   },
-  "miles mcbride": {
-   "nom": "Miles McBride",
-   "statut": "Day-To-Day",
-   "blessure": "Left Torso Abdomen",
+  "jordan clarkson": {
+   "nom": "Jordan Clarkson",
+   "statut": "Out",
+   "blessure": "Right Leg Foot",
    "retour_espn": "2026-11-25",
    "retour_commentaire": null,
-   "commentaire": "McBride (abdomen) has been ruled out for Sunday's game against the Pacers.",
-   "date": "2026-11-23"
+   "commentaire": "Clarkson (foot) didn't participate in Tuesday's practice, Jared Schwartz of the New York Post reports.",
+   "date": "2026-11-24"
   },
   "og anunoby": {
    "nom": "OG Anunoby",
@@ -484,17 +484,17 @@
    "blessure": "Left Leg Calf",
    "retour_espn": "2026-11-25",
    "retour_commentaire": null,
-   "commentaire": "Anunoby (calf) won't play Sunday against the Pacers.",
-   "date": "2026-11-23"
+   "commentaire": "Anunoby (calf) did not participate in Tuesday's practice, Jared Schwartz of the New York Post reports.",
+   "date": "2026-11-24"
   },
-  "jordan clarkson": {
-   "nom": "Jordan Clarkson",
-   "statut": "Out",
-   "blessure": "Right Leg Foot",
+  "miles mcbride": {
+   "nom": "Miles McBride",
+   "statut": "Day-To-Day",
+   "blessure": "Left Torso Abdomen",
    "retour_espn": "2026-11-25",
    "retour_commentaire": null,
-   "commentaire": "Clarkson (foot) has been ruled out for Sunday's game against Indiana.",
-   "date": "2026-11-22"
+   "commentaire": "McBride (groin) practiced Tuesday, per Jared Schwartz of the New York Post.",
+   "date": "2026-11-24"
   },
   "jaylin williams": {
    "nom": "Jaylin Williams",
