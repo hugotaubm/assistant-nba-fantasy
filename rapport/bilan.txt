@@ -605,7 +605,7 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       A.Newell (ATL) : Toe expected back 2027-03-17
       C.McCollum (ATL) : Calf expected back 2026-12-19
       N.Traore (BKN) : Hamstring expected back 2027-01-27
-  statut i | chances ce Gameday 25 | prochain 25 : 38 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 36 joueurs
       J.Landale (ATL) : Hip expected back 2026-11-27
       M.Robinson (BOS) : Illness expected back 2026-11-27
       G.Williams (CHA) : Hamstring expected back 2026-11-25
@@ -620,10 +620,14 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       T.Enaruna (CLE) : -
       R.Minix (CLE) : -
       J.Poulakidas (DAL) : -
-  statut d | chances ce Gameday 100 | prochain 75 : 3 joueurs
+  statut d | chances ce Gameday 100 | prochain 75 : 5 joueurs
       J.Smith (CHI) : Illness expected back 2026-11-25
       L.Nance Jr. (IND) : Ankle expected back 2026-11-27
-      T.Mann (WAS) : Illness expected back 2026-11-24
+      K.Towns (NYK) : Knee expected back 2026-11-25
+      J.Hart (NYK) : Shoulder expected back 2026-11-25
+  statut d | chances ce Gameday 25 | prochain 75 : 2 joueurs
+      M.McBride (NYK) : Groin expected back 2026-11-25
+      J.Embiid (PHI) : Illness expected back 2026-11-27
   statut i | chances ce Gameday 75 | prochain 25 : 2 joueurs
       D.Fox (SAS) : Lower Leg expected back 2026-11-25
       V.Wembanyama (SAS) : Back expected back 2026-11-25

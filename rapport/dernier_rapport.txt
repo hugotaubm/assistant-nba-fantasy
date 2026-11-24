@@ -1,4 +1,4 @@
-Calcul lancé le 24/11/2026 à 22:02:04
+Calcul lancé le 24/11/2026 à 23:43:18
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
@@ -14,7 +14,7 @@ Optimisation (jusqu'à deux minutes)…
 🏆 Ligue First Team : 109e sur 646 (-2 depuis le 23/11), 8 pts du rang juste devant, 1055 pts du 1er · devant toi, 86 sur 103 ont déjà joué leur wildcard et 41 leur All-Star · tes joueurs chez les 103 équipes devant toi : D.Acuff Jr. 100, Y.Lendeborg 94, V.Wembanyama 80, F.Wagner 62, A.Dosunmu 20, Q.Jackson 15, D.Avdija 14, A.Mitchell 14, T.da Silva 12, N.Traore 3
 📅 Jours creux du plan conseillé — semaine suivante : aucune place vide | semaine d'après (Gameweek 8, sans transfert) : 10 matchs pour ton effectif, 7 place(s) vide(s) ; joueurs dispo par jour : 0-5-5
 🛡️ Effet adversaire (points fantasy concédés par poste, déjà dans les prévisions) — face aux arrières, les plus perméables : MIA +10 %, LAL +7 %, LAC +6 % ; les plus dures : DET -11 %, BOS -9 %, NYK -8 % | face aux intérieurs, les plus perméables : ATL +10 %, MIL +8 %, ORL +7 % ; les plus dures : POR -9 %, SAS -8 %, CHA -7 %
-📉 Vont perdre des minutes (retour d'un coéquipier blessé) : P.Reed (DET) -27 % dès le 30/11 (retour : D.Robinson, J.Duren) ; M.Diabate (CHA) -24 % dès le 25/11 (retour : G.Williams, R.Kalkbrenner) ; J.Fears (NOP) -22 % dès le 27/11 (retour : B.Mathurin, D.Murray) ; D.Wade (PHI) -21 % dès le 25/11 (retour : J.Embiid) ; L.Shamet (NYK) -18 % dès le 25/11 (retour : J.Clarkson, M.McBride) ; B.Hield (CHI) -18 % dès le 28/11 (retour : N.Powell) ; M.Diawara (NYK) -16 % dès le 25/11 (retour : O.Anunoby) ; C.Martin (DAL) -15 % dès le 27/11 (retour : D.Lively II)
+📉 Vont perdre des minutes (retour d'un coéquipier blessé) : L.Shamet (NYK) -30 % dès le 25/11 (retour : J.Clarkson, J.Hart, M.McBride) ; P.Reed (DET) -27 % dès le 30/11 (retour : D.Robinson, J.Duren) ; M.Diabate (CHA) -24 % dès le 25/11 (retour : G.Williams, R.Kalkbrenner) ; J.Fears (NOP) -22 % dès le 27/11 (retour : B.Mathurin, D.Murray) ; D.Wade (PHI) -21 % dès le 27/11 (retour : J.Embiid) ; M.Diawara (NYK) -18 % dès le 27/11 (retour : K.Towns, O.Anunoby) ; B.Hield (CHI) -18 % dès le 28/11 (retour : N.Powell) ; C.Martin (DAL) -15 % dès le 27/11 (retour : D.Lively II)
 📈 Profitent d'une blessure (minutes libérées) : B.Hyland (MIN) +60 % sur 5 j. (absent : A.Edwards, D.DiVincenzo, J.Clark) ; B.Sensabaugh (UTA) +57 % sur 4 j. (absent : J.Jackson Jr., J.Nurkic, L.Markkanen) ; J.Hayes (UTA) +56 % sur 4 j. (absent : J.Jackson Jr., J.Nurkic, L.Markkanen) ; J.Clark (MIN) +56 % sur 3 j. (absent : A.Edwards, D.DiVincenzo) ; C.Murray-Boyles (TOR) +49 % sur 4 j. (absent : K.Leonard, R.Barrett) ; R.Holland II (DET) +48 % sur 3 j. (absent : D.Robinson, J.Duren, T.Prince) ; D.Melton (GSW) +47 % sur 4 j. (absent : M.Moody, S.Curry) ; T.McConnell (IND) +46 % sur 4 j. (absent : B.Sheppard, T.Haliburton)
 ⚠ ALERTES
   - V.Wembanyama (SAS) : Back expected back 2026-11-25 | ESPN (Day-To-Day) : Wembanyama (back) won't play Monday against the Kings, Jeff McDonald of the San Antonio Express-News reports. (chance de jouer 85 %)
@@ -52,4 +52,4 @@ Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) 
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 24/11/2026 à 22:02:06 (code de sortie : 0)
+Terminé le 24/11/2026 à 23:43:20 (code de sortie : 0)

@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-24T21:02:06.164891+00:00",
+ "lu": "2026-11-24T22:43:20.332177+00:00",
  "joueurs": {
   "jock landale": {
    "nom": "Jock Landale",
@@ -64,22 +64,31 @@
    "commentaire": "Traore will be re-evaluated in approximately 8-10 weeks due to a right hamstring strain, Michael Scotto of HoopsHype.com reports.",
    "date": "2026-11-23"
   },
-  "grant williams": {
-   "nom": "Grant Williams",
-   "statut": "Day-To-Day",
-   "blessure": "Right Leg Hamstring",
-   "retour_espn": "2026-11-25",
-   "retour_commentaire": null,
-   "commentaire": "Williams (hamstring) won't play Monday's game against the Grizzlies.",
-   "date": "2026-11-24"
-  },
   "ryan kalkbrenner": {
    "nom": "Ryan Kalkbrenner",
    "statut": "Day-To-Day",
    "blessure": "Left Torso Hip",
    "retour_espn": "2026-11-25",
    "retour_commentaire": null,
-   "commentaire": "Kalkbrenner has been ruled out for the rest of Monday's game against Memphis due to left hip soreness. He'll end with two rebounds in nine minutes.",
+   "commentaire": "Kalkbrenner (hip) is doubtful to play Wednesday against the Bulls.",
+   "date": "2026-11-24"
+  },
+  "dennis schroder": {
+   "nom": "Dennis Schroder",
+   "statut": "Out",
+   "blessure": "Left Leg Hamstring",
+   "retour_espn": "2026-12-12",
+   "retour_commentaire": null,
+   "commentaire": "Schroder (hamstring) is out for Wednesday's game the Bulls.",
+   "date": "2026-11-24"
+  },
+  "sion james": {
+   "nom": "Sion James",
+   "statut": "Day-To-Day",
+   "blessure": "Left Other Undisclosed",
+   "retour_espn": "2026-11-25",
+   "retour_commentaire": null,
+   "commentaire": "James is probable for Wednesday's game against the Bulls due to general soreness.",
    "date": "2026-11-24"
   },
   "grayson allen": {
@@ -88,8 +97,8 @@
    "blessure": "Head Concussion",
    "retour_espn": "2026-11-25",
    "retour_commentaire": null,
-   "commentaire": "Allen (concussion) has been ruled out for Monday's game against the Grizzlies.",
-   "date": "2026-11-22"
+   "commentaire": "Allen (concussion) is listed as questionable for Wednesday's game versus Chicago.",
+   "date": "2026-11-24"
   },
   "kon knueppel": {
    "nom": "Kon Knueppel",
@@ -98,15 +107,6 @@
    "retour_espn": "2026-12-12",
    "retour_commentaire": "2026-12-06",
    "commentaire": "Knueppel (hamstring) was diagnosed with a left hamstring strain Sunday and will be re-evaluated in four weeks.",
-   "date": "2026-11-08"
-  },
-  "dennis schroder": {
-   "nom": "Dennis Schroder",
-   "statut": "Out",
-   "blessure": "Left Leg Hamstring",
-   "retour_espn": "2026-11-25",
-   "retour_commentaire": "2026-11-22",
-   "commentaire": "Schroder has been diagnosed with a left hamstring strain and will be reevaluated in two weeks, Michael Scotto of HoopsHype.com reports.",
    "date": "2026-11-08"
   },
   "jalen smith": {
@@ -250,8 +250,8 @@
    "blessure": "Left Leg Hamstring",
    "retour_espn": "2026-11-25",
    "retour_commentaire": null,
-   "commentaire": "Head coach Steve Kerr said Monday that Williams (hamstring) is on track to return Wednesday against the Kings, Kenzo Fukuda of ClutchPoints.com reports.",
-   "date": "2026-11-23"
+   "commentaire": "Head coach Steve Kerr said Tuesday that Williams (hamstring) is questionable to play Wednesday against the Kings, per Dalton Johnson of NBC Sports Bay Area.",
+   "date": "2026-11-24"
   },
   "stephen curry": {
    "nom": "Stephen Curry",
@@ -412,7 +412,7 @@
    "blessure": "Groin Groin",
    "retour_espn": "2026-11-25",
    "retour_commentaire": null,
-   "commentaire": "Antetokounmpo (groin) participated in most of Tuesday's practice, Zachary Weinberger of ClutchPoints.com reports.",
+   "commentaire": "Antetokounmpo (groin) is questionable for Wednesday's game in Philadelphia.",
    "date": "2026-11-24"
   },
   "donte divincenzo": {
@@ -469,31 +469,49 @@
    "commentaire": "Murray (ankle) is out for Friday's game against Memphis.",
    "date": "2026-11-13"
   },
+  "miles mcbride": {
+   "nom": "Miles McBride",
+   "statut": "Day-To-Day",
+   "blessure": "Left Groin Groin",
+   "retour_espn": "2026-11-25",
+   "retour_commentaire": null,
+   "commentaire": "McBride (adductor) is listed as questionable for Wednesday's game versus Cleveland.",
+   "date": "2026-11-24"
+  },
   "jordan clarkson": {
    "nom": "Jordan Clarkson",
    "statut": "Out",
    "blessure": "Right Leg Foot",
+   "retour_espn": "2026-11-27",
+   "retour_commentaire": null,
+   "commentaire": "Clarkson (foot) is out for Wednesday's game against Cleveland.",
+   "date": "2026-11-24"
+  },
+  "josh hart": {
+   "nom": "Josh Hart",
+   "statut": "Day-To-Day",
+   "blessure": "Right Arm Shoulder",
    "retour_espn": "2026-11-25",
    "retour_commentaire": null,
-   "commentaire": "Clarkson (foot) didn't participate in Tuesday's practice, Jared Schwartz of the New York Post reports.",
+   "commentaire": "Hart (shoulder) is listed as questionable for Wednesday's game against Cleveland.",
    "date": "2026-11-24"
   },
   "og anunoby": {
    "nom": "OG Anunoby",
-   "statut": "Day-To-Day",
+   "statut": "Out",
    "blessure": "Left Leg Calf",
-   "retour_espn": "2026-11-25",
+   "retour_espn": "2026-11-27",
    "retour_commentaire": null,
-   "commentaire": "Anunoby (calf) did not participate in Tuesday's practice, Jared Schwartz of the New York Post reports.",
+   "commentaire": "Anunoby (calf) is out for Wednesday's game against Cleveland.",
    "date": "2026-11-24"
   },
-  "miles mcbride": {
-   "nom": "Miles McBride",
+  "karl anthony towns": {
+   "nom": "Karl-Anthony Towns",
    "statut": "Day-To-Day",
-   "blessure": "Left Torso Abdomen",
+   "blessure": "Leg Knee",
    "retour_espn": "2026-11-25",
    "retour_commentaire": null,
-   "commentaire": "McBride (groin) practiced Tuesday, per Jared Schwartz of the New York Post.",
+   "commentaire": "Towns (knee) is questionable for Wednesday's game against Cleveland.",
    "date": "2026-11-24"
   },
   "jaylin williams": {
@@ -608,9 +626,9 @@
    "nom": "Joel Embiid",
    "statut": "Day-To-Day",
    "blessure": "Other Illness",
-   "retour_espn": "2026-11-25",
+   "retour_espn": "2026-11-27",
    "retour_commentaire": null,
-   "commentaire": "Embiid (illness) is out for Monday's game against Portland, Austin Krell of OnPattison.com reports.",
+   "commentaire": "Embiid (illness) is listed as doubtful for Wednesday's game versus Miami.",
    "date": "2026-11-24"
   },
   "ariel hukporti": {
@@ -730,6 +748,15 @@
    "commentaire": "Quaintance has been around the team but has not yet been cleared for basketball activities, Matt Guzman of SI.com reports.",
    "date": "2026-10-05"
   },
+  "kawhi leonard": {
+   "nom": "Kawhi Leonard",
+   "statut": "Out",
+   "blessure": "Left Leg Knee",
+   "retour_espn": "2026-12-03",
+   "retour_commentaire": "2026-12-01",
+   "commentaire": "Leonard has begun individual on-court workouts following treatment to address swelling in his left knee, and he will be re-evaluated in one week, Marc J. Spears of ESPN.com reports.",
+   "date": "2026-11-24"
+  },
   "nate bittle": {
    "nom": "Nate Bittle",
    "statut": "Out",
@@ -738,15 +765,6 @@
    "retour_commentaire": null,
    "commentaire": "Bittle (foot) has been ruled out for Monday's game against the Bucks, Blake Murphy of Sportsnet.ca reports.",
    "date": "2026-11-22"
-  },
-  "kawhi leonard": {
-   "nom": "Kawhi Leonard",
-   "statut": "Out",
-   "blessure": "Left Leg Knee",
-   "retour_espn": "2026-12-03",
-   "retour_commentaire": "2026-11-27",
-   "commentaire": "Leonard (knee) could return in the next few weeks, per Shams Charania of ESPN.",
-   "date": "2026-11-20"
   },
   "rj barrett": {
    "nom": "RJ Barrett",
