@@ -501,8 +501,8 @@ BILAN DES GAMEDAYS JOUÉS
   → Titulaires : 79.0 pts réels pour 89.9 projetés (-10.9) [projection du modèle].
   → Meilleur cinq possible après coup : 79.0 pts (hors capitaine), soit 0.0 pts laissés sur le banc.
 
---- Gameweek 6 - Day 1 : moyenne des joueurs 93.4 | meilleur 307.0
-  Ton score : 130.0 | banc : 22.0 | rang : 11971 | transferts : 0 (coût 0)
+--- Gameweek 6 - Day 1 : moyenne des joueurs 126.9 | meilleur 307.0
+  Ton score : 130.0 | banc : 22.0 | rang : 26931 | transferts : 0 (coût 0)
   TITULAIRE A.Dosunmu (MIN)              30 min        réel  36.0 | projeté  33.7
   TITULAIRE A.Mitchell (OKC)             34 min        réel  22.0 | projeté  26.1
   TITULAIRE D.Acuff Jr. (SAC)            32 min        réel  21.0 | projeté  44.6
@@ -582,10 +582,10 @@ CALIBRATION DU MODÈLE (points réels / points attendus, par rang)
   rang 3+  : 2538 joueurs-matchs | réel   13798 / attendu   11495 = 1.20 → facteur appliqué 1.150
   rang ?   :  542 joueurs-matchs | réel    1566 / attendu    2506 = 0.62 → facteur appliqué 0.750
 Erreur restante du modèle par tranche de prix (après la calibration par rang) :
-  10-15 M$  : 1313 joueurs-matchs | réel   40593 / attendu   39507 = 1.03 → facteur appliqué 1.027
-  7-10 M$   : 1721 joueurs-matchs | réel   35373 / attendu   34096 = 1.04 → facteur appliqué 1.037
-  < 7 M$    : 3770 joueurs-matchs | réel   26754 / attendu   25587 = 1.05 → facteur appliqué 1.045
-  ≥ 15 M$   :  414 joueurs-matchs | réel   18693 / attendu   17933 = 1.04 → facteur appliqué 1.041
+  10-15 M$  : 1313 joueurs-matchs | réel   40593 / attendu   39519 = 1.03 → facteur appliqué 1.027
+  7-10 M$   : 1721 joueurs-matchs | réel   35373 / attendu   34105 = 1.04 → facteur appliqué 1.037
+  < 7 M$    : 3770 joueurs-matchs | réel   26754 / attendu   25590 = 1.05 → facteur appliqué 1.045
+  ≥ 15 M$   :  414 joueurs-matchs | réel   18693 / attendu   17939 = 1.04 → facteur appliqué 1.041
 
 Vérification du barème (points du jeu vs formule des projections) :
   Statistiques fournies par le jeu : ['assists', 'blocks', 'in_dreamteam', 'minutes', 'played', 'points_scored', 'rebounds', 'steals', 'total_points']
@@ -635,10 +635,10 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
 ======================================================================
 LIGUE FIRST TEAM
 ======================================================================
-  Rang : 104 / 646 (+3 depuis la dernière journée) | total 5494 pts | dernière journée 130 pts
+  Rang : 109 / 646 (-2 depuis la dernière journée) | total 5494 pts | dernière journée 130 pts
   Écart avec le 1er : 1055 pts
-  Écart avec le rang juste devant (103e) : 8 pts
-  Avance sur le rang juste derrière (105e) : 18 pts
+  Écart avec le rang juste devant (108e) : 8 pts
+  Avance sur le rang juste derrière (110e) : 21 pts
   Joueurs les plus présents chez les 103 équipes devant toi (Gameday 34) : D.Acuff Jr. (SAC) 100, Y.Lendeborg (GSW) 94, V.Wembanyama (SAS) 80, F.Wagner (ORL) 62, D.Mitchell (MIA) 51, K.George (WAS) 42, T.Shannon Jr. (MIN) 33, D.Jenkins (DET) 28, A.Mara (OKC) 24, M.Bamba (UTA) 24, L.Doncic (LAL) 24, C.Flagg (DAL) 22, B.Hyland (MIN) 21, A.Dosunmu (MIN) 20, A.Black (ORL) 20
   All-Star : déjà joué par 41 des 103 équipes devant toi (40 %) ; par Gameday : event 2 : 2, event 3 : 8, event 4 : 1, event 5 : 1, event 8 : 2, event 9 : 1, event 10 : 2, event 13 : 4, event 14 : 4, event 15 : 2, event 16 : 2, event 18 : 1, event 20 : 1, event 21 : 1, event 23 : 4, event 25 : 4, event 28 : 1
   Wildcard : déjà joué par 86 des 103 équipes devant toi (83 %) ; par Gameday : event 2 : 3, event 4 : 2, event 6 : 3, event 7 : 21, event 8 : 6, event 9 : 2, event 10 : 4, event 11 : 4, event 12 : 1, event 13 : 4, event 14 : 4, event 16 : 2, event 17 : 1, event 19 : 1, event 20 : 4, event 21 : 1, event 22 : 2, event 23 : 6, event 24 : 2, event 25 : 2, event 26 : 1, event 27 : 3, event 28 : 2, event 30 : 1, event 32 : 2, event 33 : 1, event 34 : 1
