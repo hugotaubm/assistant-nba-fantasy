@@ -447,6 +447,14 @@ def projeter(boot, cfg, saison_commencee, saison=None):
         else:
             dispo = 1.0
         dispo_prochain = None if (statut in ("u", "s", "n") or e.get("removed") or chance is None) else chance / 100
+        # ESPN plus à jour que le jeu pour le prochain match (« questionable » = 50 %, etc.) : on la suit
+        # quand elle est plus optimiste, sinon un joueur incertain sort du cinq alors qu'il peut jouer
+        if info and statut != "a" and info.get("date") and info["date"] >= (dt.date.today() - dt.timedelta(days=1)).isoformat():
+            com = (info.get("commentaire") or "").lower()
+            p_espn = (0.0 if any(m in com for m in ("ruled out", "won't play", "will not play", "is out", "out for"))
+                      else 0.75 if "probable" in com else 0.5 if "questionable" in com else 0.25 if "doubtful" in com else None)
+            if p_espn is not None and p_espn > (dispo_prochain or 0) and not (retour and retour > dt.date.today() + dt.timedelta(days=1)):
+                dispo_prochain = p_espn
         joueurs[pid] = dict(id=pid, nom=e["web_name"], nom_complet=f"{e['first_name']} {e['second_name']}",
                             equipe_id=e["team"], equipe=equipes[e["team"]], poste=e["element_type"],
                             prix=e["now_cost"], proj=proj, dispo=dispo, dispo_prochain=dispo_prochain, fiabilite=fiab, b2b=b2b, retour=retour, statut=statut,
