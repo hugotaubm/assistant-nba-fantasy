@@ -149,3 +149,8 @@ Après (relu sur le site) : titulaires A.Dosunmu, A.Mitchell, D.Acuff Jr., Y.Len
 25/11 21:05 Gameweek 6 - Day 3 : cinq déjà en place
 25/11 21:16 Gameweek 6 - Day 3 : cinq déjà en place
 25/11 21:17 Gameweek 6 - Day 3 : cinq déjà en place
+25/11 21:18 Gameweek 6 - Day 3 : nouveau cinq Y.Lendeborg, A.Dosunmu, D.Avdija, D.Acuff Jr., V.Wembanyama
+Avant : titulaires A.Dosunmu, A.Mitchell, D.Acuff Jr., Y.Lendeborg, D.Avdija | banc V.Wembanyama, T.da Silva, F.Wagner, Q.Jackson, N.Traore
+POST my-team : 200
+Après (relu sur le site) : titulaires A.Dosunmu, D.Acuff Jr., Y.Lendeborg, D.Avdija, V.Wembanyama | banc A.Mitchell, T.da Silva, F.Wagner, Q.Jackson, N.Traore
+✅ Changement confirmé sur le site
