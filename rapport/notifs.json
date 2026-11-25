@@ -188,8 +188,11 @@
   "a": "2026-11-24T21:02:04.255228+00:00"
  },
  "36": {
-  "resume": "✅ Y.Lendeborg, A.Dosunmu, A.Mitchell, D.Avdija, D.Acuff Jr.\n🔁 Aucun transfert\n⭐ Capitaine : non, garder pour Day 6 (V.Wembanyama)\n⚠️ V.Wembanyama : Back expected back 2026-11-25 | ESPN (Day-To-Day) : Wembanyama (back) is questionable for Wednesday's game in Portland. (25 % de chances de jouer ce soir)\n⚠️ Y.Lendeborg joue ce soir mais est sur ton banc (conseillé titulaire)\n⚠️ Ordre du banc : mets V.Wembanyama en 1er remplaçant (T.da Silva ne joue pas ce soir) pour le remplacement automatique",
-  "resume_envoye": "✅ Y.Lendeborg, A.Dosunmu, A.Mitchell, D.Avdija, D.Acuff Jr.\n🔁 Aucun transfert\n⭐ Capitaine : non, garder pour Day 6 (V.Wembanyama)\n⚠️ V.Wembanyama : Back expected back 2026-11-25 | ESPN (Day-To-Day) : Wembanyama (back) is questionable for Wednesday's game in Portland. (25 % de chances de jouer ce soir)\n⚠️ Y.Lendeborg joue ce soir mais est sur ton banc (conseillé titulaire)\n⚠️ Ordre du banc : mets V.Wembanyama en 1er remplaçant (T.da Silva ne joue pas ce soir) pour le remplacement automatique",
-  "a": "2026-11-25T19:05:14.318078+00:00"
+  "resume": "✅ Y.Lendeborg, A.Dosunmu, D.Avdija, D.Acuff Jr., V.Wembanyama\n🔁 Aucun transfert\n⭐ Capitaine : non, garder pour Day 6 (V.Wembanyama)\n⚠️ V.Wembanyama : Back expected back 2026-11-25 | ESPN (Day-To-Day) : Wembanyama (back) is questionable for Wednesday's game in Portland. (50 % de chances de jouer ce soir)",
+  "resume_envoye": "✅ Y.Lendeborg, A.Dosunmu, D.Avdija, D.Acuff Jr., V.Wembanyama\n🔁 Aucun transfert\n⭐ Capitaine : non, garder pour Day 6 (V.Wembanyama)\n⚠️ V.Wembanyama : Back expected back 2026-11-25 | ESPN (Day-To-Day) : Wembanyama (back) is questionable for Wednesday's game in Portland. (50 % de chances de jouer ce soir)",
+  "a": "2026-11-25T19:05:14.318078+00:00",
+  "c": [
+   "V.Wembanyama : Back expected back 2026-11-25 | ESPN (Day-To-Day) : Wembanyama (back) is questionable for Wednesday's game in Portland. (50 % de chances de jouer ce soir)"
+  ]
  }
 }

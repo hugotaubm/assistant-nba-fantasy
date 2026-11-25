@@ -1,4 +1,4 @@
-Calcul lancé le 25/11/2026 à 21:18:27
+Calcul lancé le 25/11/2026 à 21:46:13
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
@@ -9,9 +9,7 @@ Optimisation (jusqu'à deux minutes)…
 
 ⚠ À CORRIGER SUR LE SITE AVANT LA DEADLINE
   - V.Wembanyama : Back expected back 2026-11-25 | ESPN (Day-To-Day) : Wembanyama (back) is questionable for Wednesday's game in Portland. (50 % de chances de jouer ce soir)
-  - V.Wembanyama joue ce soir mais est sur ton banc (conseillé titulaire)
 
-Changements depuis le calcul de 21h16 : titulaires modifiés. Raison probable : pas de nouvelle info : simple écart entre plans presque équivalents.
 ⭐ All-Star (si c'est bien « budget illimité pour un Gameday, puis retour à ton équipe ») : gain par soir GW6 Day 3 (18 équipes) +47 | GW6 Day 4 (22 équipes) +84 | GW6 Day 5 (10 équipes) +103 | GW6 Day 6 (20 équipes) -24. Meilleur soir : GW6 Day 5, 231 pts attendus au lieu de 128, avec F.Wagner, A.Davis, S.Gilgeous-Alexander, A.Sengun, J.Giddey.
 🏆 Ligue First Team : 114e sur 646 (-5 depuis le 24/11), 0 pts du rang juste devant, 1044 pts du 1er · devant toi, 99 sur 113 ont déjà joué leur wildcard et 51 leur All-Star · tes joueurs chez les 113 équipes devant toi : D.Acuff Jr. 105, Y.Lendeborg 99, F.Wagner 79, V.Wembanyama 76, Q.Jackson 18, T.da Silva 15, A.Dosunmu 13, D.Avdija 11, A.Mitchell 10, N.Traore 1
 📅 Jours creux du plan conseillé — semaine suivante : aucune place vide | semaine d'après (Gameweek 8, sans transfert) : 10 matchs pour ton effectif, 7 place(s) vide(s) ; joueurs dispo par jour : 0-5-5
@@ -57,4 +55,4 @@ Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) 
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 25/11/2026 à 21:18:30 (code de sortie : 0)
+Terminé le 25/11/2026 à 21:46:15 (code de sortie : 0)

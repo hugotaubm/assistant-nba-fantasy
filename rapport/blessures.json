@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-25T20:18:30.253659+00:00",
+ "lu": "2026-11-25T20:46:14.745527+00:00",
  "joueurs": {
   "jock landale": {
    "nom": "Jock Landale",
@@ -358,8 +358,8 @@
    "blessure": "Left Leg Heel",
    "retour_espn": "2026-11-27",
    "retour_commentaire": null,
-   "commentaire": "Coach JJ Redick stated Monday that the team is optimistic Reaves (heel) will return for Friday's game against San Antonio, Daniel Starkand of LakersNation.com reports.",
-   "date": "2026-11-24"
+   "commentaire": "Reaves (heel) was a full participant in Wednesday's practice, Daniel Starkand of LakersNation.com reports.",
+   "date": "2026-11-25"
   },
   "scotty pippen": {
    "nom": "Scotty Pippen Jr.",
@@ -412,8 +412,8 @@
    "blessure": "Groin Groin",
    "retour_espn": "2026-11-25",
    "retour_commentaire": null,
-   "commentaire": "Antetokounmpo (groin) is questionable for Wednesday's game in Philadelphia.",
-   "date": "2026-11-24"
+   "commentaire": "Antetokounmpo (groin) has been upgraded to probable for Wednesday's game against the 76ers.",
+   "date": "2026-11-25"
   },
   "donte divincenzo": {
    "nom": "Donte DiVincenzo",
@@ -637,7 +637,7 @@
    "blessure": "Other Illness",
    "retour_espn": "2026-11-27",
    "retour_commentaire": null,
-   "commentaire": "Embiid (illness) is listed as doubtful for Wednesday's game versus Miami.",
+   "commentaire": "Embiid (illness) is out for Wednesday's game against Miami, Ira Winderman of the South Florida Sun Sentinel reports.",
    "date": "2026-11-25"
   },
   "ariel hukporti": {
