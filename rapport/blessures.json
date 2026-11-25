@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-25T11:08:29.885309+00:00",
+ "lu": "2026-11-25T19:05:17.798769+00:00",
  "joueurs": {
   "jock landale": {
    "nom": "Jock Landale",
@@ -66,12 +66,21 @@
   },
   "ryan kalkbrenner": {
    "nom": "Ryan Kalkbrenner",
-   "statut": "Day-To-Day",
+   "statut": "Out",
    "blessure": "Left Torso Hip",
-   "retour_espn": "2026-11-25",
+   "retour_espn": "2026-11-28",
    "retour_commentaire": null,
-   "commentaire": "Kalkbrenner (hip) is doubtful to play Wednesday against the Bulls.",
-   "date": "2026-11-24"
+   "commentaire": "Kalkbrenner (hip) has been ruled out for Wednesday's matchup with Chicago.",
+   "date": "2026-11-25"
+  },
+  "grayson allen": {
+   "nom": "Grayson Allen",
+   "statut": "Out",
+   "blessure": "Head Concussion",
+   "retour_espn": "2026-11-28",
+   "retour_commentaire": null,
+   "commentaire": "Allen (concussion) has been ruled out for Wednesday's game against Chicago.",
+   "date": "2026-11-25"
   },
   "dennis schroder": {
    "nom": "Dennis Schroder",
@@ -89,15 +98,6 @@
    "retour_espn": "2026-11-25",
    "retour_commentaire": null,
    "commentaire": "James is probable for Wednesday's game against the Bulls due to general soreness.",
-   "date": "2026-11-24"
-  },
-  "grayson allen": {
-   "nom": "Grayson Allen",
-   "statut": "Out",
-   "blessure": "Head Concussion",
-   "retour_espn": "2026-11-25",
-   "retour_commentaire": null,
-   "commentaire": "Allen (concussion) is listed as questionable for Wednesday's game versus Chicago.",
    "date": "2026-11-24"
   },
   "kon knueppel": {
@@ -442,6 +442,15 @@
    "commentaire": "Edwards underwent a successful arthroscopic procedure on his right knee Thursday, the Timberwolves announced.",
    "date": "2026-10-29"
   },
+  "julian reese": {
+   "nom": "Julian Reese",
+   "statut": "Day-To-Day",
+   "blessure": "Right Leg Knee",
+   "retour_espn": "2026-11-25",
+   "retour_commentaire": null,
+   "commentaire": "The Pelicans transferred Reese from the G League's Laketown Squadron, and he will be available for New Orleans' game against the Warriors on Monday.",
+   "date": "2026-11-25"
+  },
   "trendon watford": {
    "nom": "Trendon Watford",
    "statut": "Out",
@@ -469,14 +478,41 @@
    "commentaire": "Murray (ankle) is out for Friday's game against Memphis.",
    "date": "2026-11-13"
   },
-  "miles mcbride": {
-   "nom": "Miles McBride",
+  "josh hart": {
+   "nom": "Josh Hart",
    "statut": "Day-To-Day",
-   "blessure": "Left Groin Groin",
+   "blessure": "Right Arm Shoulder",
    "retour_espn": "2026-11-25",
    "retour_commentaire": null,
-   "commentaire": "McBride (adductor) is listed as questionable for Wednesday's game versus Cleveland.",
-   "date": "2026-11-24"
+   "commentaire": "Hart (shoulder) has been upgraded to probable for Wednesday's game against the Cavaliers.",
+   "date": "2026-11-25"
+  },
+  "miles mcbride": {
+   "nom": "Miles McBride",
+   "statut": "Out",
+   "blessure": "Left Groin Groin",
+   "retour_espn": "2026-11-27",
+   "retour_commentaire": null,
+   "commentaire": "McBride (adductor) has been ruled out for Wednesday's game against the Cavaliers.",
+   "date": "2026-11-25"
+  },
+  "karl anthony towns": {
+   "nom": "Karl-Anthony Towns",
+   "statut": "Day-To-Day",
+   "blessure": "Right Leg Knee",
+   "retour_espn": "2026-11-25",
+   "retour_commentaire": null,
+   "commentaire": "Towns (knee) is probable for Wednesday's game against Cleveland.",
+   "date": "2026-11-25"
+  },
+  "jalen brunson": {
+   "nom": "Jalen Brunson",
+   "statut": "Day-To-Day",
+   "blessure": "Other Illness",
+   "retour_espn": "2026-11-25",
+   "retour_commentaire": null,
+   "commentaire": "Brunson (illness) has been downgraded to questionable for Wednesday's game against the Cavaliers.",
+   "date": "2026-11-25"
   },
   "jordan clarkson": {
    "nom": "Jordan Clarkson",
@@ -487,15 +523,6 @@
    "commentaire": "Clarkson (foot) is out for Wednesday's game against Cleveland.",
    "date": "2026-11-24"
   },
-  "josh hart": {
-   "nom": "Josh Hart",
-   "statut": "Day-To-Day",
-   "blessure": "Right Arm Shoulder",
-   "retour_espn": "2026-11-25",
-   "retour_commentaire": null,
-   "commentaire": "Hart (shoulder) is listed as questionable for Wednesday's game against Cleveland.",
-   "date": "2026-11-24"
-  },
   "og anunoby": {
    "nom": "OG Anunoby",
    "statut": "Out",
@@ -503,15 +530,6 @@
    "retour_espn": "2026-11-27",
    "retour_commentaire": null,
    "commentaire": "Anunoby (calf) is out for Wednesday's game against Cleveland.",
-   "date": "2026-11-24"
-  },
-  "karl anthony towns": {
-   "nom": "Karl-Anthony Towns",
-   "statut": "Day-To-Day",
-   "blessure": "Leg Knee",
-   "retour_espn": "2026-11-25",
-   "retour_commentaire": null,
-   "commentaire": "Towns (knee) is questionable for Wednesday's game against Cleveland.",
    "date": "2026-11-24"
   },
   "nikola topic": {
@@ -682,7 +700,7 @@
    "blessure": "Right Leg Knee",
    "retour_espn": "2026-12-02",
    "retour_commentaire": null,
-   "commentaire": "Raynaud (knee) is out for Wednesday's game against the Warriors.",
+   "commentaire": "Raynaud (knee) was assigned to the G League's Stockton Kings on Wednesday, James Ham of ESPN 1320 Sacramento reports.",
    "date": "2026-11-25"
   },
   "ben simmons": {

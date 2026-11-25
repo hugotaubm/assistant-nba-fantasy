@@ -597,13 +597,13 @@ CALIBRATION DU MODÈLE (points réels / points attendus, par rang)
   rang 3+  : 2569 joueurs-matchs | réel   13924 / attendu   11620 = 1.20 → facteur appliqué 1.150
   rang ?   :  546 joueurs-matchs | réel    1583 / attendu    2549 = 0.62 → facteur appliqué 0.750
 Erreur restante du modèle par tranche de prix (après la calibration par rang) :
-  10-15 M$  : 1329 joueurs-matchs | réel   41107 / attendu   39987 = 1.03 → facteur appliqué 1.028
-  7-10 M$   : 1742 joueurs-matchs | réel   35769 / attendu   34515 = 1.04 → facteur appliqué 1.036
-  < 7 M$    : 3815 joueurs-matchs | réel   27082 / attendu   25891 = 1.05 → facteur appliqué 1.045
-  ≥ 15 M$   :  420 joueurs-matchs | réel   18945 / attendu   18210 = 1.04 → facteur appliqué 1.039
+  10-15 M$  : 1329 joueurs-matchs | réel   41107 / attendu   39996 = 1.03 → facteur appliqué 1.028
+  7-10 M$   : 1742 joueurs-matchs | réel   35769 / attendu   34514 = 1.04 → facteur appliqué 1.036
+  < 7 M$    : 3815 joueurs-matchs | réel   27082 / attendu   25888 = 1.05 → facteur appliqué 1.045
+  ≥ 15 M$   :  420 joueurs-matchs | réel   18945 / attendu   18215 = 1.04 → facteur appliqué 1.039
 
 Vérification du barème (points du jeu vs formule des projections) :
-  Statistiques fournies par le jeu : ['assists', 'blocks', 'in_dreamteam', 'minutes', 'played', 'points_scored', 'rebounds', 'steals', 'total_points']
+  Statistiques fournies par le jeu : ['assists', 'blocks', 'can_auto_sub_in', 'can_auto_sub_out', 'in_dreamteam', 'minutes', 'played', 'points_scored', 'rebounds', 'steals', 'total_points']
   Écart moyen jeu − formule : +0.40 pts (sur 5836 matchs) ; écart absolu moyen 0.88
   Rapport points du jeu / formule (médiane) : 10.12
 
@@ -623,7 +623,7 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
   statut i | chances ce Gameday 25 | prochain 25 : 36 joueurs
       J.Landale (ATL) : Hip expected back 2026-11-27
       M.Robinson (BOS) : Illness expected back 2026-11-27
-      G.Allen (CHA) : Concussion expected back 2026-11-25
+      G.Allen (CHA) : Concussion expected back 2026-11-28
       D.Schröder (CHA) : Hamstring expected back 2026-12-12
   statut u | chances ce Gameday 0 | prochain 0 : 15 joueurs
       K.Gilbert (ATL) : Knee expected back 2027-01-01
@@ -635,15 +635,21 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       T.Enaruna (CLE) : -
       R.Minix (CLE) : -
       J.Poulakidas (DAL) : -
-  statut d | chances ce Gameday 75 | prochain 75 : 9 joueurs
+  statut d | chances ce Gameday 75 | prochain 75 : 7 joueurs
       S.James (CHA) : Undisclosed expected back 2026-11-25
-      R.Kalkbrenner (CHA) : Hip expected back 2026-11-25
       J.Smith (CHI) : Illness expected back 2026-11-25
       Y.Lendeborg (GSW) : Illness expected back 2026-11-25
-  statut i | chances ce Gameday 75 | prochain 25 : 1 joueurs
+      L.Nance Jr. (IND) : Ankle expected back 2026-11-27
+  statut i | chances ce Gameday 75 | prochain 25 : 3 joueurs
+      R.Kalkbrenner (CHA) : Hip expected back 2026-11-28
       C.Cunningham (DET) : Knee expected back 2026-11-27
+      M.McBride (NYK) : Groin expected back 2026-11-27
   statut d | chances ce Gameday 0 | prochain 0 : 1 joueurs
       J.Grant (MEM) : Calf expected back 2026-12-12
+  statut d | chances ce Gameday None | prochain 75 : 1 joueurs
+      J.Reese (NOP) : Knee expected back 2026-11-25
+  statut d | chances ce Gameday 100 | prochain 75 : 1 joueurs
+      J.Brunson (NYK) : Illness expected back 2026-11-25
 
 ======================================================================
 LIGUE FIRST TEAM
