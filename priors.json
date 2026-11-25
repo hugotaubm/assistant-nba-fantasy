@@ -6649,7 +6649,13 @@
 "age": 26,
 "min_proj": 26.8,
 "presaison_matchs": 3,
-"presaison_min": 17.3
+"presaison_min": 17.3,
+"rang_poste": 3,
+"poste_espn": "PG",
+"devant": [
+"Jalen Suggs",
+"Jevon Carter"
+]
 },
 "324": {
 "nom": "A.Green",
@@ -8538,11 +8544,12 @@
 "presence": 0.72,
 "age": 27,
 "min_proj": 19.3,
-"rang_poste": 3,
+"rang_poste": 4,
 "poste_espn": "SG",
 "devant": [
 "Anthony Black",
-"Desmond Bane"
+"Desmond Bane",
+"Kevin Porter Jr."
 ],
 "presaison_matchs": 4,
 "presaison_min": 17.5
@@ -8777,12 +8784,12 @@
 "presence": 0.72,
 "age": 21,
 "min_proj": 10.9,
-"rang_poste": 4,
+"rang_poste": 5,
 "poste_espn": "PG",
 "devant": [
 "Jalen Suggs",
 "Jevon Carter",
-"Anthony Black"
+"Kevin Porter Jr."
 ],
 "presaison_matchs": 4,
 "presaison_min": 19.8
@@ -11916,6 +11923,6 @@
 "_source": "saison régulière 2025-26 (ESPN), mis à jour le 20/10/2026"
 },
 "roles": {
-"_source": "ESPN (hiérarchie + présaison), mis à jour le 25/11/2026"
+"_source": "ESPN (hiérarchie + présaison), mis à jour le 26/11/2026"
 }
 }
