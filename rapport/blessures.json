@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-25T19:05:17.798769+00:00",
+ "lu": "2026-11-25T20:16:57.962752+00:00",
  "joueurs": {
   "jock landale": {
    "nom": "Jock Landale",
@@ -192,12 +192,12 @@
   },
   "cade cunningham": {
    "nom": "Cade Cunningham",
-   "statut": "Out",
+   "statut": "Day-To-Day",
    "blessure": "Leg Knee",
    "retour_espn": "2026-11-27",
    "retour_commentaire": null,
    "commentaire": "Cunningham (knee) is listed as out for Tuesday's game against Orlando.",
-   "date": "2026-11-24"
+   "date": "2026-11-25"
   },
   "ebuka okorie": {
    "nom": "Ebuka Okorie",
@@ -633,12 +633,12 @@
   },
   "joel embiid": {
    "nom": "Joel Embiid",
-   "statut": "Day-To-Day",
+   "statut": "Out",
    "blessure": "Other Illness",
    "retour_espn": "2026-11-27",
    "retour_commentaire": null,
    "commentaire": "Embiid (illness) is listed as doubtful for Wednesday's game versus Miami.",
-   "date": "2026-11-24"
+   "date": "2026-11-25"
   },
   "ariel hukporti": {
    "nom": "Ariel Hukporti",

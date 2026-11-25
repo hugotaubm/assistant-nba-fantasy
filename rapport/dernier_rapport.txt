@@ -1,4 +1,4 @@
-Calcul lancé le 25/11/2026 à 20:05:14
+Calcul lancé le 25/11/2026 à 21:16:49
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu'à deux minutes)…
@@ -7,11 +7,6 @@ Optimisation (jusqu'à deux minutes)…
 === Gameweek 6 — prochaine deadline : Gameweek 6 - Day 3 le mer. 25/11 22h30 (heure de Paris) ===
 Équipe lue depuis : my-team (connecté, à jour en direct) | Banque : 0.1 M$ | Transferts gratuits restants : 0 | Capitaine dispo : oui
 
-⚠ À CORRIGER SUR LE SITE AVANT LA DEADLINE
-  - V.Wembanyama : Back expected back 2026-11-25 | ESPN (Day-To-Day) : Wembanyama (back) is questionable for Wednesday's game in Portland. (25 % de chances de jouer ce soir)
-  - Y.Lendeborg joue ce soir mais est sur ton banc (conseillé titulaire)
-  - Ordre du banc : mets V.Wembanyama en 1er remplaçant (T.da Silva ne joue pas ce soir) pour le remplacement automatique
-
 ⭐ All-Star (si c'est bien « budget illimité pour un Gameday, puis retour à ton équipe ») : gain par soir GW6 Day 3 (18 équipes) +50 | GW6 Day 4 (22 équipes) +84 | GW6 Day 5 (10 équipes) +103 | GW6 Day 6 (20 équipes) -24. Meilleur soir : GW6 Day 5, 231 pts attendus au lieu de 128, avec F.Wagner, A.Davis, S.Gilgeous-Alexander, A.Sengun, J.Giddey.
 🏆 Ligue First Team : 114e sur 646 (-5 depuis le 24/11), 0 pts du rang juste devant, 1044 pts du 1er · devant toi, 99 sur 113 ont déjà joué leur wildcard et 51 leur All-Star · tes joueurs chez les 113 équipes devant toi : D.Acuff Jr. 105, Y.Lendeborg 99, F.Wagner 79, V.Wembanyama 76, Q.Jackson 18, T.da Silva 15, A.Dosunmu 13, D.Avdija 11, A.Mitchell 10, N.Traore 1
 📅 Jours creux du plan conseillé — semaine suivante : aucune place vide | semaine d'après (Gameweek 8, sans transfert) : 10 matchs pour ton effectif, 7 place(s) vide(s) ; joueurs dispo par jour : 0-5-5
@@ -19,9 +14,9 @@ Optimisation (jusqu'à deux minutes)…
 📉 Vont perdre des minutes (retour d'un coéquipier blessé) : P.Reed (DET) -29 % dès le 30/11 (retour : D.Robinson, J.Duren) ; D.Wade (PHI) -24 % dès le 27/11 (retour : J.Embiid) ; J.Fears (NOP) -22 % dès le 27/11 (retour : B.Mathurin, D.Murray) ; L.Shamet (NYK) -18 % dès le 27/11 (retour : J.Clarkson, M.McBride) ; B.Hield (CHI) -18 % dès le 28/11 (retour : N.Powell) ; K.Huerter (DET) -17 % dès le 27/11 (retour : C.Cunningham) ; I.Okoro (CHI) -15 % dès le 28/11 (retour : N.Powell) ; C.Martin (DAL) -13 % dès le 27/11 (retour : D.Lively II)
 📈 Profitent d'une blessure (minutes libérées) : B.Hyland (MIN) +60 % sur 5 j. (absent : A.Edwards, D.DiVincenzo, J.Clark) ; T.Jackson-Davis (TOR) +57 % sur 4 j. (absent : K.Leonard, R.Barrett) ; B.Sensabaugh (UTA) +57 % sur 4 j. (absent : J.Jackson Jr., J.Nurkic, L.Markkanen) ; J.Hayes (UTA) +56 % sur 4 j. (absent : J.Jackson Jr., J.Nurkic, L.Markkanen) ; K.Murray (MEM) +55 % sur 5 j. (absent : C.Boozer, G.Jackson, J.Grant) ; D.Melton (GSW) +47 % sur 4 j. (absent : M.Moody, S.Curry) ; T.McConnell (IND) +47 % sur 4 j. (absent : B.Sheppard, T.Haliburton) ; T.Bryant (CLE) +45 % sur 1 j. (absent : E.Mobley)
 ⚠ ALERTES
+  - Y.Lendeborg (GSW) : Illness expected back 2026-11-25 | ESPN (Day-To-Day) : Lendeborg is questionable for Wednesday's game against the Kings with an illness. (chance de jouer 85 %)
   - V.Wembanyama (SAS) : Back expected back 2026-11-25 | ESPN (Day-To-Day) : Wembanyama (back) is questionable for Wednesday's game in Portland. (chance de jouer 85 %)
   - N.Traore (BKN) : Hamstring expected back 2027-01-27 | ESPN (Out) : Traore will be re-evaluated in approximately 8-10 weeks due to a right hamstring strain, Michael Scotto of HoopsHype.com reports. (chance de jouer 85 %)
-  - Y.Lendeborg (GSW) : Illness expected back 2026-11-25 | ESPN (Day-To-Day) : Lendeborg is questionable for Wednesday's game against the Kings with an illness. (chance de jouer 85 %)
 
 ▶ CINQ DE DÉPART POUR LE PROCHAIN GAMEDAY
   BC  A.Dosunmu (MIN)              proj. 34.0
@@ -57,4 +52,4 @@ Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) 
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 25/11/2026 à 20:05:18 (code de sortie : 0)
+Terminé le 25/11/2026 à 21:16:58 (code de sortie : 0)
