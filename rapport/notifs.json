@@ -196,8 +196,11 @@
   ]
  },
  "37": {
-  "resume": "✅ Y.Lendeborg, Q.Jackson, A.Dosunmu, D.Avdija, V.Wembanyama\n🔁 Aucun transfert\n⭐ Capitaine : non, garder pour Day 6 (V.Wembanyama)",
-  "resume_envoye": "✅ Y.Lendeborg, Q.Jackson, A.Dosunmu, D.Avdija, V.Wembanyama\n🔁 Aucun transfert\n⭐ Capitaine : non, garder pour Day 6 (V.Wembanyama)",
-  "a": "2026-11-27T21:04:22.441806+00:00"
+  "resume": "✅ Y.Lendeborg, Q.Jackson, A.Dosunmu, D.Avdija, V.Wembanyama\n🔁 Aucun transfert\n⭐ Capitaine : non, garder pour Day 6 (V.Wembanyama)\n⚠️ Capitaine activé le Day 4 alors que le conseil est de le garder pour le Day 6 (V.Wembanyama)",
+  "resume_envoye": "✅ Y.Lendeborg, Q.Jackson, A.Dosunmu, D.Avdija, V.Wembanyama\n🔁 Aucun transfert\n⭐ Capitaine : non, garder pour Day 6 (V.Wembanyama)\n⚠️ Capitaine activé le Day 4 alors que le conseil est de le garder pour le Day 6 (V.Wembanyama)",
+  "a": "2026-11-27T21:04:22.441806+00:00",
+  "c": [
+   "Capitaine activé le Day 4 alors que le conseil est de le garder pour le Day 6 (V.Wembanyama)"
+  ]
  }
 }

@@ -1,5 +1,5 @@
 {
- "lu": "2026-11-27T21:04:27.714531+00:00",
+ "lu": "2026-11-27T22:45:18.145196+00:00",
  "joueurs": {
   "jock landale": {
    "nom": "Jock Landale",
@@ -73,23 +73,23 @@
    "commentaire": "Traore will be re-evaluated in approximately 8-10 weeks due to a right hamstring strain, Michael Scotto of HoopsHype.com reports.",
    "date": "2026-11-23"
   },
-  "ryan kalkbrenner": {
-   "nom": "Ryan Kalkbrenner",
-   "statut": "Day-To-Day",
-   "blessure": "Left Torso Hip",
-   "retour_espn": "2026-11-28",
-   "retour_commentaire": null,
-   "commentaire": "Kalkbrenner (hip) has been ruled out for Wednesday's matchup with Chicago.",
-   "date": "2026-11-26"
-  },
   "grayson allen": {
    "nom": "Grayson Allen",
    "statut": "Out",
    "blessure": "Head Concussion",
    "retour_espn": "2026-11-28",
    "retour_commentaire": null,
-   "commentaire": "Allen (concussion) has been ruled out for Wednesday's game against Chicago.",
-   "date": "2026-11-25"
+   "commentaire": "Allen (concussion) is questionable for Saturday's game against the Nets.",
+   "date": "2026-11-27"
+  },
+  "ryan kalkbrenner": {
+   "nom": "Ryan Kalkbrenner",
+   "statut": "Day-To-Day",
+   "blessure": "Left Torso Hip",
+   "retour_espn": "2026-11-28",
+   "retour_commentaire": null,
+   "commentaire": "Kalkbrenner (hip) is probable for Saturday's matchup with Brooklyn.",
+   "date": "2026-11-27"
   },
   "dennis schroder": {
    "nom": "Dennis Schroder",
@@ -289,6 +289,15 @@
    "commentaire": "Butler (knee) could return sometime between January and February as he continues recovering from a torn right ACL, Anthony Slater of ESPN reports.",
    "date": "2026-10-16"
   },
+  "steven adams": {
+   "nom": "Steven Adams",
+   "statut": "Day-To-Day",
+   "blessure": "Leg Knee",
+   "retour_espn": "2026-11-28",
+   "retour_commentaire": null,
+   "commentaire": "Adams (knee) is questionable for Saturday's game against the 76ers.",
+   "date": "2026-11-27"
+  },
   "larry nance": {
    "nom": "Larry Nance Jr.",
    "statut": "Day-To-Day",
@@ -418,8 +427,8 @@
   "giannis antetokounmpo": {
    "nom": "Giannis Antetokounmpo",
    "statut": "Day-To-Day",
-   "blessure": "Right Groin Groin",
-   "retour_espn": "2026-11-27",
+   "blessure": "",
+   "retour_espn": null,
    "retour_commentaire": null,
    "commentaire": "Antetokounmpo is probable for Friday's game against the Knicks due to right groin tendinitis.",
    "date": "2026-11-26"
@@ -612,6 +621,24 @@
    "retour_commentaire": "2027-01-02",
    "commentaire": "Holmgren underwent a biological treatment Friday to address a small patellar tendon tear and will miss at least 8-10 weeks, Nick Crain of Slam reports.",
    "date": "2026-10-31"
+  },
+  "kevin porter": {
+   "nom": "Kevin Porter Jr.",
+   "statut": "Out",
+   "blessure": "Not Injury Related",
+   "retour_espn": "2026-11-29",
+   "retour_commentaire": null,
+   "commentaire": "Porter won't play Saturday against the Wizards as he's still in the process of getting up to speed on his conditioning.",
+   "date": "2026-11-27"
+  },
+  "anthony black": {
+   "nom": "Anthony Black",
+   "statut": "Day-To-Day",
+   "blessure": "Torso Back",
+   "retour_espn": "2026-11-28",
+   "retour_commentaire": null,
+   "commentaire": "Black (back) is questionable for Saturday's game against the Wizards.",
+   "date": "2026-11-27"
   },
   "colin castleton": {
    "nom": "Colin Castleton",

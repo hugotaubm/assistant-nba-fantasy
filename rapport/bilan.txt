@@ -650,17 +650,18 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       T.Enaruna (CLE) : -
       R.Minix (CLE) : -
       J.Poulakidas (DAL) : -
-  statut d | chances ce Gameday 100 | prochain 75 : 8 joueurs
+  statut d | chances ce Gameday 100 | prochain 75 : 10 joueurs
       N.Essengue (CHI) : Thumb expected back 2026-11-28
       K.Irving (DAL) : Knee expected back 2026-11-27
+      S.Adams (HOU) : Knee expected back 2026-11-28
       K.Oubre Jr. (IND) : Hand expected back 2026-11-27
-      I.Stewart (MEM) : Hip expected back 2026-11-27
   statut d | chances ce Gameday 75 | prochain 75 : 4 joueurs
       L.Nance Jr. (IND) : Ankle expected back 2026-11-27
       J.Reese (NOP) : Knee expected back 2026-12-01
       K.Towns (NYK) : Abdomen expected back 2026-11-27
       J.Embiid (PHI) : Illness expected back 2026-11-27
-  statut i | chances ce Gameday 100 | prochain 25 : 3 joueurs
+  statut i | chances ce Gameday 100 | prochain 25 : 4 joueurs
+      K.Porter Jr. (MIL) : Not Injury Related expected back 2026-11-29
       L.Ball (MIN) : Ankle expected back 2026-11-29
       A.Drummond (NYK) : Concussion expected back 2026-11-29
       D.Lillard (POR) : Calf expected back 2026-11-29

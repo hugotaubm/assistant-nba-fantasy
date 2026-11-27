@@ -6,7 +6,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="theme-color" content="#1d428a">
 <link rel="manifest" href="manifest.json">
-<link rel="apple-touch-icon" href="icone-180.png"><meta charset="utf-8"><title>Journal</title></head><body style="font-family:-apple-system,system-ui,sans-serif;padding:16px"><p><a href="./">← Retour au rapport</a></p><pre style="white-space:pre-wrap;font-size:13px">Calcul lancé le 27/11/2026 à 22:04:22
+<link rel="apple-touch-icon" href="icone-180.png"><meta charset="utf-8"><title>Journal</title></head><body style="font-family:-apple-system,system-ui,sans-serif;padding:16px"><p><a href="./">← Retour au rapport</a></p><pre style="white-space:pre-wrap;font-size:13px">Calcul lancé le 27/11/2026 à 23:45:16
 ----------------------------------------
 Récupération des données…
 Optimisation (jusqu&#x27;à deux minutes)…
@@ -14,6 +14,9 @@ Optimisation (jusqu&#x27;à deux minutes)…
 
 === Gameweek 6 — prochaine deadline : Gameweek 6 - Day 4 le sam. 28/11 00h30 (heure de Paris) ===
 Équipe lue depuis : my-team (connecté, à jour en direct) | Banque : 0.1 M$ | Transferts gratuits restants : 0 | Capitaine dispo : oui
+
+⚠ À CORRIGER SUR LE SITE AVANT LA DEADLINE
+  - Capitaine activé le Day 4 alors que le conseil est de le garder pour le Day 6 (V.Wembanyama)
 
 ⭐ All-Star (si c&#x27;est bien « budget illimité pour un Gameday, puis retour à ton équipe ») : gain par soir GW6 Day 4 (22 équipes) +77 | GW6 Day 5 (10 équipes) +106 | GW6 Day 6 (20 équipes) -38. Meilleur soir : GW6 Day 5, 233 pts attendus au lieu de 128, avec F.Wagner, A.Davis, A.Sengun, S.Gilgeous-Alexander, J.Giddey.
 🏆 Ligue First Team : 106e sur 646, 1 pts du rang juste devant, 1049 pts du 1er · devant toi, 93 sur 105 ont déjà joué leur wildcard et 49 leur All-Star · tes joueurs chez les 105 équipes devant toi : D.Acuff Jr. 100, Y.Lendeborg 95, V.Wembanyama 76, F.Wagner 72, Q.Jackson 17, A.Dosunmu 16, T.da Silva 14, D.Avdija 11, A.Mitchell 11, N.Traore 1
@@ -57,12 +60,12 @@ Sources : joueurs = en ligne, calendrier (fantasy) = en ligne, calendrier (NBA) 
 
 Rapport enregistré : /home/runner/work/assistant-nba-fantasy/assistant-nba-fantasy/rapport.html
 ----------------------------------------
-Terminé le 27/11/2026 à 22:04:27 (code de sortie : 0)
+Terminé le 27/11/2026 à 23:45:18 (code de sortie : 0)
 </pre>
 <div id="aa-barre" style="position:fixed;left:0;right:0;bottom:0;z-index:99999;
   display:flex;align-items:center;gap:12px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));
   background:#1d428a;color:#fff;font:15px -apple-system,system-ui,sans-serif;box-shadow:0 -2px 8px rgba(0,0,0,.2)">
-  <span style="flex:1;min-width:0"><span id="aa-info">Rapport du 27/11 à 22:04</span> · <a href="journal.html" style="color:#fff">journal</a></span>
+  <span style="flex:1;min-width:0"><span id="aa-info">Rapport du 27/11 à 23:45</span> · <a href="journal.html" style="color:#fff">journal</a></span>
   <a id="aa-recalculer" href="https://github.com/hugotaubm/assistant-nba-fantasy/actions/workflows/assistant.yml" style="font:600 15px -apple-system,system-ui,sans-serif;padding:10px 16px;border-radius:10px;background:#fff;color:#1d428a;text-decoration:none;white-space:nowrap">Recalculer</a>
 </div>
 <div style="height:80px"></div>
@@ -83,7 +86,7 @@ Terminé le 27/11/2026 à 22:04:27 (code de sortie : 0)
   }
   // Ouverte par le raccourci avec ?attente=1 : on attend le nouveau rapport puis on recharge.
   if (!/[?&]attente=/.test(location.search)) return;
-  var info = document.getElementById("aa-info"), depart = Date.now(), actuel = "2026-11-27T22:04:27";
+  var info = document.getElementById("aa-info"), depart = Date.now(), actuel = "2026-11-27T23:45:18";
   info.textContent = "⏳ Calcul en cours… (2 à 4 min)";
   var minuteur = setInterval(function () {
     fetch("etat.json?t=" + Date.now(), {cache: "no-store"}).then(function (r) { return r.json(); }).then(function (e) {
