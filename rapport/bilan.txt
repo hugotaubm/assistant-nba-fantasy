@@ -553,8 +553,8 @@ Matchs joués : 3476 | biais moyen (réel − projeté) : -2.8 pts | erreur moye
 Corrélation projeté/réel : 0.64
 Minutes moyennes : 26.4
 Par prix :
-  10-15 M$               1804 matchs | 0 min : 429 | biais  -2.7 | réel/projeté 0.92 | minutes 29.1
-  7-10 M$                1859 matchs | 0 min : 376 | biais  -2.4 | réel/projeté 0.91 | minutes 23.1
+  10-15 M$               1785 matchs | 0 min : 410 | biais  -2.7 | réel/projeté 0.92 | minutes 29.1
+  7-10 M$                1878 matchs | 0 min : 395 | biais  -2.4 | réel/projeté 0.91 | minutes 23.1
   < 7 M$                 306 matchs | 0 min : 109 | biais  -5.2 | réel/projeté 0.76 | minutes 17.8
   ≥ 15 M$                506 matchs | 0 min : 85 | biais  -3.1 | réel/projeté 0.94 | minutes 32.8
 Par rang dans la hiérarchie ESPN (1 = titulaire) :
@@ -571,10 +571,10 @@ Par rang dans la hiérarchie ESPN (1 = titulaire) :
 Projetés ≥ 20 pts mais 0 minute (absents / pas utilisés) : 999 sur 4475
   - L.Doncic (LAL) (event 9) : projeté 65.5, statut actuel a, news : -
   - L.Doncic (LAL) (event 19) : projeté 65.5, statut actuel a, news : -
-  - G.Antetokounmpo (MIA) (event 33) : projeté 60.2, statut actuel a, news : -
+  - G.Antetokounmpo (MIA) (event 33) : projeté 60.2, statut actuel d, news : Groin expected back 2026-11-27
   - V.Wembanyama (SAS) (event 34) : projeté 58.9, statut actuel a, news : -
-  - C.Cunningham (DET) (event 29) : projeté 56.5, statut actuel i, news : Knee expected back 2026-11-27
-  - C.Cunningham (DET) (event 35) : projeté 56.5, statut actuel i, news : Knee expected back 2026-11-27
+  - C.Cunningham (DET) (event 29) : projeté 56.5, statut actuel i, news : Knee expected back 2026-11-29
+  - C.Cunningham (DET) (event 35) : projeté 56.5, statut actuel i, news : Knee expected back 2026-11-29
   - S.Gilgeous-Alexander (OKC) (event 33) : projeté 55.4, statut actuel a, news : -
   - J.Johnson (ATL) (event 14) : projeté 53.4, statut actuel a, news : -
   - J.Johnson (ATL) (event 15) : projeté 53.4, statut actuel a, news : -
@@ -612,10 +612,10 @@ CALIBRATION DU MODÈLE (points réels / points attendus, par rang)
   rang 3+  : 2655 joueurs-matchs | réel   14161 / attendu   11950 = 1.19 → facteur appliqué 1.150
   rang ?   :  568 joueurs-matchs | réel    1609 / attendu    2606 = 0.62 → facteur appliqué 0.750
 Erreur restante du modèle par tranche de prix (après la calibration par rang) :
-  10-15 M$  : 1369 joueurs-matchs | réel   42426 / attendu   41231 = 1.03 → facteur appliqué 1.029
-  7-10 M$   : 1814 joueurs-matchs | réel   37293 / attendu   36029 = 1.04 → facteur appliqué 1.035
-  < 7 M$    : 3958 joueurs-matchs | réel   27876 / attendu   26828 = 1.04 → facteur appliqué 1.038
-  ≥ 15 M$   :  434 joueurs-matchs | réel   19629 / attendu   18762 = 1.05 → facteur appliqué 1.045
+  10-15 M$  : 1369 joueurs-matchs | réel   42426 / attendu   41241 = 1.03 → facteur appliqué 1.028
+  7-10 M$   : 1814 joueurs-matchs | réel   37293 / attendu   36027 = 1.04 → facteur appliqué 1.035
+  < 7 M$    : 3958 joueurs-matchs | réel   27876 / attendu   26826 = 1.04 → facteur appliqué 1.039
+  ≥ 15 M$   :  434 joueurs-matchs | réel   19629 / attendu   18767 = 1.05 → facteur appliqué 1.045
 
 Vérification du barème (points du jeu vs formule des projections) :
   Statistiques fournies par le jeu : ['assists', 'blocks', 'can_auto_sub_in', 'can_auto_sub_out', 'in_dreamteam', 'minutes', 'played', 'points_scored', 'rebounds', 'steals', 'total_points']
@@ -630,13 +630,13 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       M.Uzan (BOS) : -
       N.Pringle (BKN) : -
       P.Connaughton (CHA) : -
-  statut i | chances ce Gameday 0 | prochain 0 : 43 joueurs
+  statut i | chances ce Gameday 0 | prochain 0 : 41 joueurs
       M.Gueye (ATL) : Foot expected back 2026-12-12
       A.Newell (ATL) : Toe expected back 2027-03-17
       C.McCollum (ATL) : Calf expected back 2026-12-19
       N.Traore (BKN) : Hamstring expected back 2027-01-27
-  statut i | chances ce Gameday 25 | prochain 25 : 35 joueurs
-      J.Landale (ATL) : Hip expected back 2026-11-27
+  statut i | chances ce Gameday 25 | prochain 25 : 33 joueurs
+      J.Landale (ATL) : Hip expected back 2026-11-29
       M.Robinson (BOS) : Illness expected back 2026-11-27
       R.Kalkbrenner (CHA) : Hip expected back 2026-11-28
       G.Allen (CHA) : Concussion expected back 2026-11-28
@@ -645,30 +645,39 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       H.Veesaar (ATL) : Knee expected back 2027-07-01
       R.Dillingham (CHI) : Wrist expected back 2027-01-01
       Y.Kawamura (LAC) : Foot expected back 2026-11-29
-  statut u | chances ce Gameday 100 | prochain 100 : 12 joueurs
+  statut u | chances ce Gameday 100 | prochain 100 : 11 joueurs
       I.McKneely (ATL) : -
       T.Enaruna (CLE) : -
       R.Minix (CLE) : -
       J.Poulakidas (DAL) : -
+  statut d | chances ce Gameday 100 | prochain 75 : 8 joueurs
+      K.Oubre Jr. (IND) : Hand expected back 2026-11-27
+      I.Stewart (MEM) : Hip expected back 2026-11-27
+      Z.Edey (MEM) : Ankle expected back 2026-11-27
+      A.Wiggins (MIA) : Ankle expected back 2026-11-27
   statut d | chances ce Gameday 75 | prochain 75 : 3 joueurs
       L.Nance Jr. (IND) : Ankle expected back 2026-11-27
       J.Reese (NOP) : Knee expected back 2026-12-01
       J.Embiid (PHI) : Illness expected back 2026-11-27
-  statut d | chances ce Gameday 100 | prochain 75 : 3 joueurs
-      Z.Edey (MEM) : Ankle expected back 2026-11-27
-      L.Ball (MIN) : Ankle expected back 2026-11-27
-      A.Drummond (NYK) : Head expected back 2026-11-27
   statut i | chances ce Gameday 75 | prochain 25 : 2 joueurs
       J.Smith (CHI) : Illness expected back 2026-11-28
       Z.LaVine (SAC) : Knee expected back 2026-11-29
   statut i | chances ce Gameday None | prochain 75 : 1 joueurs
-      M.Wagner (BKN) : Knee expected back 2026-11-27
+      M.Wagner (BKN) : Knee expected back 2026-11-28
+  statut i | chances ce Gameday 0 | prochain 25 : 1 joueurs
+      D.Robinson (DET) : Quadriceps expected back 2026-11-29
   statut d | chances ce Gameday 0 | prochain 0 : 1 joueurs
       J.Grant (MEM) : Calf expected back 2026-12-12
+  statut d | chances ce Gameday None | prochain 75 : 1 joueurs
+      C.Castleton (ORL) : Calf expected back 2026-11-27
   statut i | chances ce Gameday 100 | prochain 75 : 1 joueurs
-      J.Brown (PHI) : Hamstring expected back 2026-11-27
+      J.Brown (PHI) : Hamstring expected back 2026-11-28
   statut i | chances ce Gameday 25 | prochain 75 : 1 joueurs
       D.Fox (SAS) : Lower Leg expected back 2026-11-27
+  statut d | chances ce Gameday 0 | prochain 75 : 1 joueurs
+      D.Harper (SAS) : Hip expected back 2026-11-27
+  statut d | chances ce Gameday 25 | prochain 75 : 1 joueurs
+      J.Nurkic (UTA) : Foot expected back 2026-11-27
 
 ======================================================================
 LIGUE FIRST TEAM
