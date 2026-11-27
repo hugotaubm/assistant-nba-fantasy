@@ -625,7 +625,7 @@ Vérification du barème (points du jeu vs formule des projections) :
 ======================================================================
 STATUTS DU JEU (joueurs non disponibles à 100 %)
 ======================================================================
-  statut u | chances ce Gameday None | prochain None : 49 joueurs
+  statut u | chances ce Gameday None | prochain None : 48 joueurs
       T.DeVries (BOS) : -
       M.Uzan (BOS) : -
       N.Pringle (BKN) : -
@@ -635,9 +635,9 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       A.Newell (ATL) : Toe expected back 2027-03-17
       C.McCollum (ATL) : Calf expected back 2026-12-19
       N.Traore (BKN) : Hamstring expected back 2027-01-27
-  statut i | chances ce Gameday 25 | prochain 25 : 33 joueurs
+  statut i | chances ce Gameday 25 | prochain 25 : 32 joueurs
       J.Landale (ATL) : Hip expected back 2026-11-29
-      M.Robinson (BOS) : Illness expected back 2026-11-27
+      M.Robinson (BOS) : Illness expected back 2026-11-29
       R.Kalkbrenner (CHA) : Hip expected back 2026-11-28
       G.Allen (CHA) : Concussion expected back 2026-11-28
   statut u | chances ce Gameday 0 | prochain 0 : 15 joueurs
@@ -651,17 +651,25 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       R.Minix (CLE) : -
       J.Poulakidas (DAL) : -
   statut d | chances ce Gameday 100 | prochain 75 : 8 joueurs
+      N.Essengue (CHI) : Thumb expected back 2026-11-28
+      K.Irving (DAL) : Knee expected back 2026-11-27
       K.Oubre Jr. (IND) : Hand expected back 2026-11-27
       I.Stewart (MEM) : Hip expected back 2026-11-27
-      Z.Edey (MEM) : Ankle expected back 2026-11-27
-      A.Wiggins (MIA) : Ankle expected back 2026-11-27
-  statut d | chances ce Gameday 75 | prochain 75 : 3 joueurs
+  statut d | chances ce Gameday 75 | prochain 75 : 4 joueurs
       L.Nance Jr. (IND) : Ankle expected back 2026-11-27
       J.Reese (NOP) : Knee expected back 2026-12-01
+      K.Towns (NYK) : Abdomen expected back 2026-11-27
       J.Embiid (PHI) : Illness expected back 2026-11-27
+  statut i | chances ce Gameday 100 | prochain 25 : 3 joueurs
+      L.Ball (MIN) : Ankle expected back 2026-11-29
+      A.Drummond (NYK) : Concussion expected back 2026-11-29
+      D.Lillard (POR) : Calf expected back 2026-11-29
   statut i | chances ce Gameday 75 | prochain 25 : 2 joueurs
       J.Smith (CHI) : Illness expected back 2026-11-28
       Z.LaVine (SAC) : Knee expected back 2026-11-29
+  statut i | chances ce Gameday 100 | prochain 75 : 2 joueurs
+      K.Jakučionis (MIL) : Ankle expected back 2026-11-28
+      J.Brown (PHI) : Hamstring expected back 2026-11-28
   statut i | chances ce Gameday None | prochain 75 : 1 joueurs
       M.Wagner (BKN) : Knee expected back 2026-11-28
   statut i | chances ce Gameday 0 | prochain 25 : 1 joueurs
@@ -670,8 +678,6 @@ STATUTS DU JEU (joueurs non disponibles à 100 %)
       J.Grant (MEM) : Calf expected back 2026-12-12
   statut d | chances ce Gameday None | prochain 75 : 1 joueurs
       C.Castleton (ORL) : Calf expected back 2026-11-27
-  statut i | chances ce Gameday 100 | prochain 75 : 1 joueurs
-      J.Brown (PHI) : Hamstring expected back 2026-11-28
   statut i | chances ce Gameday 25 | prochain 75 : 1 joueurs
       D.Fox (SAS) : Lower Leg expected back 2026-11-27
   statut d | chances ce Gameday 0 | prochain 75 : 1 joueurs
